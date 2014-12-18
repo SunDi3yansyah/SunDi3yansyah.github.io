@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | SunDi3yansyah]]></title>
+  <link href="http://sundi3yansyah.com/article/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2014-12-17T06:26:49+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
+  <author>
+    <name><![CDATA[SunDi3yansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Snippets Untuk Octopress Pada Sublimetext]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext/"/>
+    <updated>2014-11-19T14:02:37+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext</id>
+    <content type="html"><![CDATA[<p>Kali ini saya akan berbagi code snippets untuk kalian yang suka atau menggunakan framework octopress seperti saya ini dan tentunya menggunakan editor Sublimetext.</p>
+
+<p><strong>Syarat</strong></p>
+
+<ul>
+<li>Sudah install sublimetext pada OS yang kalian gunakan</li>
+</ul>
+
+
+<p><strong>How to Use?</strong></p>
+
+<!-- more -->
+
+
+<p>Bila anda sudah bergabung di Grup Facebook Octopress Indonesia, anda bisa mendownloadnya disini:</p>
+
+<p><a href="https://www.facebook.com/groups/OctopressID/1501500383467291/">https://www.facebook.com/groups/OctopressID/1501500383467291/</a></p>
+
+<p>Tapi alngkah bagusnya jika anda mengambil packages-nya di repository saya, disini</p>
+
+<p><a href="https://github.com/SunDi3yansyah/SunDi3yansyah.github.io/tree/master/downloads/packages/sublimetext">https://github.com/SunDi3yansyah/SunDi3yansyah.github.io/tree/master/downloads/packages/sublimetext</a></p>
+
+<p>Karena dengan anda mengambil packages snippets di sana, anda akan mendapatkan packages snippets yang up to date, karena saya akan selalu mengupdatenya.</p>
+
+<p>Cara menggunakannya silakan langsung saja melihat cuplikan dibawah ini.</p>
+
+<p><img class="center <a" src="href="https://lh5.googleusercontent.com/-EKAt4RR4ikU/VGwameH7NiI/AAAAAAAAAMg/TD5NTqMUXDA/s800/sundi3yansyah.gif">https://lh5.googleusercontent.com/-EKAt4RR4ikU/VGwameH7NiI/AAAAAAAAAMg/TD5NTqMUXDA/s800/sundi3yansyah.gif</a>&#8221; title=&#8221;&lsquo;Snippets untuk Octopress&rsquo; &lsquo;Snippets untuk Octopress&rsquo;&#8221; ></p>
+
+<p><strong>NB:</strong> Berlaku untuk di semua sistem operasi.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Konfigurasi SEO Keywords Dan Deskripsi Octopress]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/09/10/cara-konfigurasi-seo-keywords-dan-deskripsi-octopress/"/>
+    <updated>2014-09-10T03:49:47+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/09/10/cara-konfigurasi-seo-keywords-dan-deskripsi-octopress</id>
+    <content type="html"><![CDATA[<p>SEO itu asset terpenting dalam membangun website, tanya donk kenapa? Nanti akan di jawab dengan rumput yang bergoyang. <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a.! Ya pokoknya gitu deh&hellip;</p>
+
+<!-- more -->
+
+
+<p>Tutorial ini akan membuat Rakefile pada ruby anda ketika membuat post menghasilkan teks sepebagi berikut:</p>
+
+<h2><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/h2>
+</span><span class='line'>
+</span><span class='line'>&lt;p>layout: post
+</span><span class='line'>title: &ldquo;Cara Konfigurasi SEO Keywords dan deskripsi Octopress&rdquo;
+</span><span class='line'>date: 2014-09-10 03:49:47 +0700
+</span><span class='line'>comments: true
+</span><span class='line'>categories:
+</span><span class='line'>description:&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h2>keywords: &lt;/h2>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></p>
+
+<p>Pertama rubah dulu file <code>_config.yml</code></p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>url: &lt;a href="http://yoursite.com">http://yoursite.com&lt;/a>
+</span><span class='line'>title: My Octopress Blog
+</span><span class='line'>subtitle: A blogging framework for hackers.
+</span><span class='line'>author: Your Name
+</span><span class='line'>simple_search: &lt;a href="http://google.com/search">http://google.com/search&lt;/a>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>description: &ldquo;Description untuk blog anda&rdquo;
+</span><span class='line'>keywords: &ldquo;keyword1, keyword2, keyword3, dst&rdquo;</span></code></pre></td></tr></table></div></figure>
+Edit kurang lebih seperti diatas, jangan sama persis, tapi sesuaikan dengan blog kalian. Kalau sudah di save.</p>
+
+<p>Buka file <code>Rakefile</code></p>
+
+<p>Tambahkan puts seperti di bawah ini:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>post.puts &ldquo;description: &rdquo;
+</span><span class='line'>    post.puts &ldquo;keywords: &rdquo;</span></code></pre></td></tr></table></div></figure>
+Di taroh dimana ya? Liat contoh dibawah
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>usage rake new_post[my-new-post] or rake new_post[&lsquo;my new post&rsquo;] or rake new_post (defaults to &ldquo;new-post&rdquo;)&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>desc &ldquo;Begin a new post in #{source_dir}/#{posts_dir}&rdquo;
+</span><span class='line'>task :new_post, :title do |t, args|
+</span><span class='line'>  if args.title
+</span><span class='line'>    title = args.title
+</span><span class='line'>  else
+</span><span class='line'>    title = get_stdin(&ldquo;Enter a title for your post: &rdquo;)
+</span><span class='line'>  end
+</span><span class='line'>  raise &ldquo;### You haven&rsquo;t set anything up yet. First run &lt;code>rake install&lt;/code> to set up an Octopress theme.&rdquo; unless File.directory?(source_dir)
+</span><span class='line'>  mkdir_p &ldquo;#{source_dir}/#{posts_dir}&rdquo;
+</span><span class='line'>  filename = &ldquo;#{source_dir}/#{posts_dir}/#{Time.now.strftime(&lsquo;%Y-%m-%d&rsquo;)}-#{title.to_url}.#{new_post_ext}&rdquo;
+</span><span class='line'>  if File.exist?(filename)
+</span><span class='line'>    abort(&ldquo;rake aborted!&rdquo;) if ask(&ldquo;#{filename} already exists. Do you want to overwrite?&rdquo;, [&lsquo;y&rsquo;, &lsquo;n&rsquo;]) == &lsquo;n&rsquo;
+</span><span class='line'>  end
+</span><span class='line'>  puts &ldquo;Creating new post: #{filename}&rdquo;
+</span><span class='line'>  open(filename, &lsquo;w&rsquo;) do |post|
+</span><span class='line'>    post.puts &ldquo;&mdash;&rdquo;
+</span><span class='line'>    post.puts &ldquo;layout: post&rdquo;
+</span><span class='line'>    post.puts &ldquo;title: \&rdquo;#{title.gsub(/&amp;/,&lsquo;&amp;&rsquo;)}\&ldquo;&rdquo;
+</span><span class='line'>    post.puts &ldquo;date: #{Time.now.strftime(&lsquo;%Y-%m-%d %H:%M:%S %z&rsquo;)}&rdquo;
+</span><span class='line'>    post.puts &ldquo;comments: true&rdquo;
+</span><span class='line'>    post.puts &ldquo;categories: &rdquo;
+</span><span class='line'>    post.puts &ldquo;description: &rdquo;
+</span><span class='line'>    post.puts &ldquo;keywords: &rdquo;
+</span><span class='line'>    post.puts &ldquo;&mdash;&rdquo;
+</span><span class='line'>  end
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Lakukan juga untuk di <code>new_page</code></p>
+
+<p>Gak tau? Liat code dibawah:</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>usage rake new_page[my-new-page] or rake new_page[my-new-page.html] or rake new_page (defaults to &ldquo;new-page.markdown&rdquo;)&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>desc &ldquo;Create a new page in #{source_dir}/(filename)/index.#{new_page_ext}&rdquo;
+</span><span class='line'>task :new_page, :filename do |t, args|
+</span><span class='line'>  raise &ldquo;### You haven&rsquo;t set anything up yet. First run &lt;code>rake install&lt;/code> to set up an Octopress theme.&rdquo; unless File.directory?(source_dir)
+</span><span class='line'>  args.with_defaults(:filename => &lsquo;new-page&rsquo;)
+</span><span class='line'>  page_dir = [source_dir]
+</span><span class='line'>  if args.filename.downcase =~ /(^.+\/)?(.+)/
+</span><span class='line'>    filename, dot, extension = $2.rpartition(&lsquo;.&rsquo;).reject(&amp;:empty?)         # Get filename and extension
+</span><span class='line'>    title = filename
+</span><span class='line'>    page_dir.concat($1.downcase.sub(/^\//, &lsquo;&rsquo;).split(&lsquo;/&rsquo;)) unless $1.nil?  # Add path to page_dir Array
+</span><span class='line'>    if extension.nil?
+</span><span class='line'>      page_dir &lt;&lt; filename
+</span><span class='line'>      filename = &ldquo;index&rdquo;
+</span><span class='line'>    end
+</span><span class='line'>    extension ||= new_page_ext
+</span><span class='line'>    page_dir = page_dir.map! { |d| d = d.to_url }.join(&lsquo;/&rsquo;)                # Sanitize path
+</span><span class='line'>    filename = filename.downcase.to_url&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>mkdir_p page_dir
+</span><span class='line'>file = "#{page_dir}/#{filename}.#{extension}"
+</span><span class='line'>if File.exist?(file)
+</span><span class='line'>  abort("rake aborted!") if ask("#{file} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+</span><span class='line'>end
+</span><span class='line'>puts "Creating new page: #{file}"
+</span><span class='line'>open(file, 'w') do |page|
+</span><span class='line'>  page.puts "---"
+</span><span class='line'>  page.puts "layout: page"
+</span><span class='line'>  page.puts "title: \"#{title}\""
+</span><span class='line'>  page.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
+</span><span class='line'>  page.puts "comments: true"
+</span><span class='line'>  post.puts "description: "
+</span><span class='line'>  post.puts "keywords: "
+</span><span class='line'>  page.puts "sharing: true"
+</span><span class='line'>  page.puts "footer: true"
+</span><span class='line'>  page.puts "---"
+</span><span class='line'>end
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>  else
+</span><span class='line'>    puts &ldquo;Syntax error: #{args.filename} contains unsupported characters&rdquo;
+</span><span class='line'>  end
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Kalau sudah di save.</p>
+
+<p>Buka file <code>octopress-mu/source/_includes/head.html</code></p>
+
+<p>Cari kode ini:</p>
+
+<p><div><script src='https://gist.github.com/6d568fb5d4ef74a27708.js'></script>
+<noscript><pre><code>  {% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ content | raw_content }}{% endif %}{% endcapture %}
+  &lt;meta name=&quot;description&quot; content=&quot;{{ description | strip_html | condense_spaces | truncate:150 }}&quot;&gt;
+  {% if page.keywords %}&lt;meta name=&quot;keywords&quot; content=&quot;{{ page.keywords }}&quot;&gt;{% endif %}</code></pre></noscript></div>
+</p>
+
+<p>Rubah jadi seperti ini:</p>
+
+<p><div><script src='https://gist.github.com/65f31c0c570402dff9d1.js'></script>
+<noscript><pre><code>{% capture description %}{% if page.description %}{{ page.description }}{% elsif site.description %}{{ site.description }}{% else %}{{ content | raw_content }}{% endif %}{% endcapture %}
+&lt;meta name=&quot;description&quot; content=&quot;{{ description | strip_html | condense_spaces | truncate:150 }}&quot; /&gt;
+
+{% capture keywords %}{% if page.keywords %}{{ page.keywords }}{% elsif site.keywords %}{{ site.keywords }}{% endif %}{% endcapture %}
+&lt;meta name=&quot;keywords&quot; content=&quot;{{ keywords | strip_html | condense_spaces }}&quot; /&gt;</code></pre></noscript></div>
+</p>
+
+<p>Atau seperti ini juga bisa:</p>
+
+<p><div><script src='https://gist.github.com/a6638453d00c037caaff.js'></script>
+<noscript><pre><code>{% capture description %}{% if page.description %}{{ page.description }}{% elsif site.description %}{{ site.description }}{%else%}{{ content | raw_content }}{% endif %}{% endcapture %}
+&lt;meta name=&quot;description&quot; content=&quot;{{ description | strip_html | condense_spaces | truncate:150 }}&quot;&gt;
+{% if page.keywords %}&lt;meta name=&quot;keywords&quot; content=&quot;{{ page.keywords }}&quot;&gt;{%else%}&lt;meta name=&quot;keywords&quot; content=&quot;{{ site.keywords }}&quot;&gt;{% endif %}</code></pre></noscript></div>
+</p>
+
+<p>Silakan di pilih mana yang baik.</p>
+
+<p>Kemudian SAVE.</p>
+
+<p>Dan coba buat post baru <code>rake new_post["post-baru"]</code> halaman baru <code>rake new_page[page-baru]</code></p>
+
+<p>Ketika anda lihat filenya di folder <code>_posts</code> akan terlihat serperti ini:</p>
+
+<h2><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/h2>
+</span><span class='line'>
+</span><span class='line'>&lt;p>layout: post
+</span><span class='line'>title: &ldquo;Cara Konfigurasi SEO Keywords dan deskripsi Octopress&rdquo;
+</span><span class='line'>date: 2014-09-10 03:49:47 +0700
+</span><span class='line'>comments: true
+</span><span class='line'>categories:
+</span><span class='line'>description:&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h2>keywords: &lt;/h2>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></p>
+
+<p>Maka isilah kolom <code>description</code> dan <code>keywords</code> jika tidak diisi maka akan menampilkan <code>description</code> dan <code>keywords</code> default yang sudah kita seting sebelumnya di file <code>_config.yml</code></p>
+
+<p>Kalau gk paham ya ke laut aja, kan bisa komen di bawah ^_^</p>
+
+<p>Happy coding, happy hacking, happy coling. <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Jangan Ngaku Programmer Atau Hacker Kalau Tidak Mengerti Jekyll Dan Octopress]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/09/10/jangan-ngaku-programmer-atau-hacker-kalau-tidak-mengerti-jekyll-dan-octopress/"/>
+    <updated>2014-09-10T01:01:32+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/09/10/jangan-ngaku-programmer-atau-hacker-kalau-tidak-mengerti-jekyll-dan-octopress</id>
+    <content type="html"><![CDATA[<p>Apakah anda Programmer ataupun Hacker? Tidak ada yang mengaku kan, tapi seharusnya anda di akui jika anda punya sebuah project dan saling berkolaborasi, apakah anda punya blog artikel? Pasti kalau programmer dan hacker itu sudah pernah membuat Web blog artikel, tetapi jangan salah, sekarang saya tanya, Platform apa yang anda gunakan untuk nge Blog biar gk goblok? Sepintas pertanyaan tersebut pasti banyak yang menjawab CMS Wordpress, Joomla, Blogspot dan lain sebagainya. Cok&hellip;! Nulis code di Wordpress, Joomla, Blogspot itu kurang mudah. Atau mungkin bisa juga dibilang susah. Setelah itu saya melirik platform lain yaitu <a href="http://squarespace.com">Squarespace</a>, <a href="http://typepad.com">Typepad</a>, <a href="http://posthaven.com">Posthaven</a> dan juga <a href="http://ghost.org">Ghost</a>. Ke 4 platform tersebut mempunyai 1 kesamaan yang cukup menyebalkan. Layanan yang ditawarkan berbayar! Seperti kebanyakan orang Indonesia lainnya, tentu saja saya lebih suka barang gratisan. Tetapi dari ke 4 platform tersebut, jika suatu hari nanti saya sudah kembali ke jalan yang benar (mau membayar), saya akan memilih Ghost. Kenapa? Karena Ghost memenuhi ke 3 kriteria saya dengan sangat baik.</p>
+
+<!-- more -->
+
+
+<p>Pernah menggunakan <a href="http://praxmatig.tumblr.com">tumblr</a>? Mungkin dari beberapa kalian yang mempunyai kan. Tetapi saya tidak, saya pernah mencoba dan kemudian melupakannya. Sepintas saya memakai <a href="http://praxmatig.tumblr.com">tumblr</a> untuk blogging dan meskipun merupakan platform blogging yang cukup bagus-bagus hampir jelek,haha,,, apa yang jelek? SEOnya jelek! Pernah melihat postingan tumblr yang ada di halaman result 1 google.com? Oh jelas belum. Maka dari itu, saya mencari platform blogging yang lain untuk memuat tulisan-tulisan saya tentang programming development.</p>
+
+<h3>Jekyll</h3>
+
+<p><blockquote><p>Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through Markdown (or Textile) and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.</p><footer><strong>Jekyll <a href="http://jekyllrb.com/docs/home/">http://jekyllrb.com/docs/home/</a></strong></footer></blockquote></p>
+
+<p>Ngerti? Jadi intinya kamu hanya perlu menulis di file teks dengan format <a href="daringfireball.net/projects/markdown/">Markdown</a> atau <a href="http://textile.sitemonks.com/">Textile</a>, lalu Jekyll akan menggenerate website kamu. Website yang dihasilkan hanya berupa website statis yang berisi hanya html, css dan javascript. Tidak ada database, tidak ada code apapun. Sudah kelihatan bagusnya dimana? Belum? Oke, akan saya jelaskan.</p>
+
+<ul>
+<li><p>Cepat</p>
+
+<p>Performa sebuah website biasanya paling ditentukan oleh waktu yang diperlukan untuk melakukan query ke database dan juga overhead dari code kamu. Tetapi Jekyll menggenerate website statis untuk kamu yang tidak ada query database atau code apapun. Artinya? Betul sekali. Website kamu akan menjadi super cepat! Belum lagi jika kamu melakukan caching secara agressive, pembaca pasti akan sangat senang membaca blog kamu (tentunya jika artikel kamu semenarik artikel ini).</p></li>
+<li><p>Mudah</p>
+
+<p>Sudah pernah pakai Markdown? Kalau sudah silahkan skip ke point selanjutnya. Jika belum silahkan baca tentang <a href="http://daringfireball.net/projects/markdown">Markdown</a>. Intinya Markdown adalah tool untuk konversi text-to-HTML. Tetapi teks yang kamu tulis harus mengikuti <a href="http://daringfireball.net/projects/markdown/syntax">syntax</a> Markdown. Jangan khawatir, syntaxnya sangat mudah sekali. Cukup luangkan waktu setengah jam saja untuk menguasainya.</p></li>
+<li><p>Pakai teks editor kesayangan kamu</p>
+
+<p>Secara pribadi, saya kurang menyukai editor Wordpress, Blogger dan beberapa platform lainnya. Apakah kamu sependapat dengan saya? Jika ya, bagus sekali karena dengan Jekyll kamu dapat menulis postingan kamu dengan editor kesayangan kamu. Editor saya menggunakan vi, vim, nano, sublimetext, haroopad. Kenapa pakai itu? Dengan saya menggunakan sublimetext dan haroopad saya langsung bisa melihat isi postingan saya tanpa harus mem-publish dan kedua software ini sangat ringan digunakan.</p></li>
+</ul>
+
+
+<p>Keren bukan? Jelas keren banget, <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a. Kamu dapat membacanya secara lebih lengkap di situs <a href="http://jekyllrb.com/">Jekyll</a>. Sekarang saya akan menjelaskan tentang Octopress.</p>
+
+<h3>Octopress</h3>
+
+<p><blockquote><p>Octopress is a framework designed by Brandon Mathis for Jekyll, the blog aware static site generator powering Github Pages. To start blogging with Jekyll, you have to write your own HTML templates, CSS, Javascripts and set up your configuration. But with Octopress All of that is already taken care of. Simply clone or fork Octopress, install dependencies and the theme, and you&rsquo;re set.</p><footer><strong>Octopress <a href="http://octopress.org/">http://octopress.org/</a></strong></footer></blockquote></p>
+
+<p>Singkatnya Octopress hampir menyerupai Jekyll. Tetapi di Octopress kamu telah diberikan theme/template dasar. Selain template dasar, juga tersedia themes lain seperti yang dapat dilihat di <a href="http://opthemes.com/">opthemes.com</a>, <a href="http://octopressthemes.com/">octopressthemes.com</a> dan <a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">octopress wiki</a>. Octopress juga menyediakan plugin-plugin seperti code snippets, video tag, github gists, jsFiddle, syntax highlight dan plugin lainnya. Nah dari plugin-plugin diatas saya tarik lagi point di atas tentang software sublimetext, saya bisa membuat snippet sendiri di sublimetext dengan perintah <code>CTRL+SHIFT+P</code> kemudian mengetikkan nama snipet yang saya buat dan langsung muncul syntax dari plugin tersebut. Keren!</p>
+
+<p>Gimana? Tertarik untuk mencobanya? Saya sudah membuat tutorial tentang cara menginstall dan beberapa aspek tentang Octopress menggunakan <strong>VIDEO</strong> silakan di cai di arsip blog saya ini. Sesuai dengan konsep Octopress &ldquo;A blogging framework for hackers&rdquo;, kamu harusnya dapat melakukannya sendiri jika kamu merasa cukup pantas untuk dipanggil <code>programmer ataupun hacker</code></p>
+
+<p>Semua postingan jekyll/octopress saya terbuka, gk percaya? Silakan kunjungin repository blog saya ini disini:</p>
+
+<p><a href="https://github.com/SunDi3yansyah/SunDi3yansyah.github.io">https://github.com/SunDi3yansyah/SunDi3yansyah.github.io</a></p>
+
+<div class="github-widget" data-repo="SunDi3yansyah/SunDi3yansyah.github.io"></div>
+
+
+<p>Kalau anda mengatakan <code>dimana file public_html dan database blog saya ini</code> ya disana. :LOL: ~> <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a&hellip;</p>
+
+<p>Anda sudah membaca artikel saya sebelumnya belum? <a href="http://sundi3yansyah.com/article/2014/07/02/blogging-menggunakan-octopress-and-github/">Blogging Menggunakan Octopress &amp; Github</a>, memang sedikit hampir sama cuma disini saya menjelaskan sedikit spesifik kepenggunaanya dan melestarikan para pengguna Jekyll, Octopress dan Github.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Konfigurasi RSS Di Octopress]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/09/06/cara-konfigurasi-rss-di-octopress/"/>
+    <updated>2014-09-06T21:30:44+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/09/06/cara-konfigurasi-rss-di-octopress</id>
+    <content type="html"><![CDATA[<p>Langsung saja karena saya anggap anda sudah master<img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >dan sudah mengerti apa arti dari RSS itu sendiri dan gimana cara konfigurasi RSS / Email di Octopress yang secara default masih keadaan kosong di file <code>_config.yml</code> <!-- more --></p>
+
+<pre><code class="yaml"># RSS / Email (optional) subscription links (change if using something like Feedburner)
+subscribe_rss: /atom.xml
+subscribe_email: 
+# RSS feeds can list your email address if you like
+email: 
+</code></pre>
+
+<p>Bagaimaka caranya konfigurasi dari file YAML tersebut?</p>
+
+<p>Pertama anda daftar dulu disini <a href="http://feeds.feedburner.com">http://feeds.feedburner.com</a>, itu adalah RSS layanan dari google. Dan silakan di konfigurasi dulu akun anda disana jangan lupa untuk menyantumkan URL Blog Octopress kalian di feedburner tersebut dengan benar, kalau sudah.</p>
+
+<p>Edit file <code>_config.yml</code></p>
+
+<p>cari:</p>
+
+<pre><code class="yaml"># RSS / Email (optional) subscription links (change if using something like Feedburner)
+subscribe_rss: /atom.xml
+subscribe_email: 
+# RSS feeds can list your email address if you like
+email: 
+</code></pre>
+
+<p>Rubah kurang lebih seperti ini:</p>
+
+<pre><code class="yaml"># RSS / Email (optional) subscription links (change if using something like Feedburner)
+subscribe_rss: /atom.xml
+subscribe_email: feed://feeds.feedburner.com/FeedAddressKamu
+# RSS feeds can list your email address if you like
+email: email@kamu.com
+</code></pre>
+
+<h5>Note:</h5>
+
+<ul>
+<li>Rubah <code>feed://feeds.feedburner.com/FeedAddressKamu</code> dengan Feed Address anda sesungguhnya.</li>
+<li>Rubah <code>email@kamu.com</code> dengan email anda sesungguhnya.</li>
+</ul>
+
+
+<p>Kemudian save dan silakan di preview / deploy.</p>
+
+<p>Sampai sini sudah selesai, ketika RSS Feed yang ada di octopress kalian di klik (bagian atas) akan muncul POPUP subscribe RSS.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Buat Post Di Octopress]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/08/27/cara-buat-post-di-octopress/"/>
+    <updated>2014-08-27T11:28:16+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/08/27/cara-buat-post-di-octopress</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<iframe width="675" height="415" src="//www.youtube.com/embed/4OIPZ9gaNv0" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Control Panel | SunDi3yansyah]]></title>
+  <link href="http://sundi3yansyah.com/article/categories/control-panel/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2014-12-17T06:26:49+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
+  <author>
+    <name><![CDATA[SunDi3yansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install ZPanelCP 10.1.1]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/11/22/cara-install-zpanelcp-10-dot-1-1/"/>
+    <updated>2014-11-22T11:08:28+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/11/22/cara-install-zpanelcp-10-dot-1-1</id>
+    <content type="html"><![CDATA[<p>PEMBERITAHUAN: cek installer / upgrader untuk 32 atau 64 bit secara otomatis! Hanya satu script yang dibutuhkan.</p>
+
+<p>Ubuntu</p>
+
+<p><figure class='code'><figcaption><span>installer ubuntu </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>bash <span class="p">&amp;</span>lt<span class="p">;</span><span class="o">(</span>curl -Ss &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;https://raw.github.com/zpanel/installers/master/install/Ubuntu-12_04/10_1_1.sh&quot;</span>&gt;https://raw.github.com/zpanel/installers/master/install/Ubuntu-12_04/10_1_1.sh&lt;/a&gt;<span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<!--more-->
+
+
+<p>CentOS</p>
+
+<p><figure class='code'><figcaption><span>installer centos </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>bash <span class="p">&amp;</span>lt<span class="p">;</span><span class="o">(</span>curl -Ss &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;https://raw.github.com/zpanel/installers/master/install/CentOS-6_4/10_1_1.sh&quot;</span>&gt;https://raw.github.com/zpanel/installers/master/install/CentOS-6_4/10_1_1.sh&lt;/a&gt;<span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<hr />
+
+<p>Jika dari ZPanel kalian dalam keadaan versi 10.1.0, lakukan upgrade dibawah ini:</p>
+
+<p>Ubuntu</p>
+
+<p><figure class='code'><figcaption><span>installer ubuntu </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>bash <span class="p">&amp;</span>lt<span class="p">;</span><span class="o">(</span>curl -Ss &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;https://raw.github.com/zpanel/installers/master/upgrade/Ubuntu-12_04/10_1_1.sh&quot;</span>&gt;https://raw.github.com/zpanel/installers/master/upgrade/Ubuntu-12_04/10_1_1.sh&lt;/a&gt;<span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>CentOS</p>
+
+<p><figure class='code'><figcaption><span>installer centos </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>bash <span class="p">&amp;</span>lt<span class="p">;</span><span class="o">(</span>curl -Ss &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;https://raw.github.com/zpanel/installers/master/upgrade/CentOS-6_4/10_1_1.sh&quot;</span>&gt;https://raw.github.com/zpanel/installers/master/upgrade/CentOS-6_4/10_1_1.sh&lt;/a&gt;<span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<hr />
+
+<p>Installers for Microsoft Windows (10.1.0)</p>
+
+<p><a href="http://sourceforge.net/projects/zpanelcp/files/server_stack/10.0.2/zpanel-stack-1_0_2_php53.exe/download">Application Stack (Apache, PHP, MySQL etc.) Installer for Microsoft® Windows™</a>
+<a href="https://github.com/zpanel/zpanelx/releases/download/10.1.0/installer-10_1_0-win32.exe">ZPanel Installer (installs ZPanel on top of the Application stack)</a></p>
+
+<p>Upgrade for Microsoft Windows (10.1.0 to 10.1.1)</p>
+
+<p>For new 10.1.1 installs: Install as noted above (10.1.0) then follow the instructions below:
+<a href="http://forums.zpanelcp.com/Thread-HOW-TO-UPGRADE-10-1-1-WINDOWS?pid=76365#pid76365">Manual Update Tutorial for Microsoft Windows</a> Manually upgrade from ZPanel version 10.1.0 to 10.1.1</p>
+
+<p>Upgrade tools for Microsoft Windows (10.0.1/10.0.2 to 10.1.0)</p>
+
+<p><a href="https://github.com/zpanel/zpanelx/releases/download/10.1.0/updater-10_1_0-win32.exe">Updater for Microsoft Windows</a> Automatically upgrades from ZPanel version 10.0.1 or 10.0.2 to 10.1.0</p>
+
+<p>Bug yang di termukan adalah:</p>
+
+<p><a href="http://forums.zpanelcp.com/Thread-RoundCube-Urgent-Security-HotFix">RoundCube Vulnerability Bug</a>
+<a href="http://forums.zpanelcp.com/Thread-Pcharts-Urgent-Vulnerability-Fix">Pcharts Vulnerability Bug</a></p>
+]]></content>
+  </entry>
+  
+</feed>

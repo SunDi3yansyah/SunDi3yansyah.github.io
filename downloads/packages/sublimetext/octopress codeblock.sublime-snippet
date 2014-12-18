@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+{% codeblock lang:language title url link-text %}
+code snippet
+{% endcodeblock %}
+]]></content>
+octopress codeblock
+</snippet>

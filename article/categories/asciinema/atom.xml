@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Asciinema | SunDi3yansyah]]></title>
+  <link href="http://sundi3yansyah.com/article/categories/asciinema/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2014-12-17T06:26:49+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
+  <author>
+    <name><![CDATA[SunDi3yansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Asciinema Di Linux]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/11/26/cara-install-asciinema-di-linux/"/>
+    <updated>2014-11-26T18:52:38+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/11/26/cara-install-asciinema-di-linux</id>
+    <content type="html"><![CDATA[<p><img class="center <a" src="href="https://lh5.googleusercontent.com/-pLbkxy3l_oY/VHXFK4PJ0mI/AAAAAAAAASo/o_DUioz5j_U/s800/Screenshot+from+2014-11-26+18:54:05.png">https://lh5.googleusercontent.com/-pLbkxy3l_oY/VHXFK4PJ0mI/AAAAAAAAASo/o_DUioz5j_U/s800/Screenshot+from+2014-11-26+18:54:05.png</a>&#8221; title=&#8221;&lsquo;asciinema&rsquo; &lsquo;asciinema&rsquo;&#8221; ></p>
+
+<p>Apa itu ASCIINEMA?</p>
+
+<p>Dari kata-kata ASCII</p>
+
+<!--more-->
+
+
+<p><blockquote><p>Kode Standar Amerika untuk Pertukaran Informasi atau ASCII (American Standard Code for Information Interchange) merupakan suatu standar internasional dalam kode huruf dan simbol seperti Hex dan Unicode tetapi ASCII lebih bersifat universal, contohnya 124 adalah untuk karakter &ldquo;|&rdquo;.</p><footer><strong>wikipedia <a href="http://id.wikipedia.org/wiki/ASCII">http://id.wikipedia.org/wiki/ASCII</a> ASCII</strong></footer></blockquote></p>
+
+<p>Dan dari kata NEMA - Cinema kwkkwkwk <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; ></p>
+
+<p><blockquote><p>Sinema (akar kata dari cinema = kinematik = gerak). Film sebenarnya merupakan lapisan-lapisan cairan selulosa, biasa di kenal di dunia para sineas seluloid.</p></p><p><p>Pengertian secara harafiah film (sinema) adalah Cinemathographie yang berasal dari Cinema + tho = phytos (cahaya) + graphie = grhap (tulisan = gambar = citra), jadi pengertiannya adalah melukis gerak dengan cahaya. Agar kita dapat melukis gerak dengan cahaya, kita harus menggunakan alat khusus, yang biasa kita sebut dengan kamera V</p><footer><strong>wikipedia <a href="http://id.wikipedia.org/wiki/Sinema">http://id.wikipedia.org/wiki/Sinema</a> Sinema</strong></footer></blockquote></p>
+
+<p>Yah gitu lah, tapi jangan di gabungin, intinya Asciinema itu packages yang bisa merekam session di dalam terminal. Gini aja kalian buka aja profile saya disini <a href="https://asciinema.org/~SunDi3yansyah">https://asciinema.org/~SunDi3yansyah</a> dan scroll ke bawh, ada list videonya coba di pilih 1 dan di play, maka yang di rekam hanyalah di bagian windows terminalnya saja. Oke paham&hellip;? Sip&hellip; <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+
+<p>Saya disini akan menjelaskan cara install di Linux.</p>
+
+<h4>Ubuntu</h4>
+
+<pre><code class="sh">sudo apt-add-repository ppa:zanchey/asciinema
+</code></pre>
+
+<pre><code class="sh">sudo apt-get update
+</code></pre>
+
+<pre><code class="sh">sudo apt-get install asciinema
+</code></pre>
+
+<h4>Fedora (Fedora 19 dan 20)</h4>
+
+<pre><code class="sh">sudo yum install asciinema
+</code></pre>
+
+<h4>Arch Linux</h4>
+
+<pre><code class="sh">sudo yaourt -S asciinema
+</code></pre>
+
+<h4>Gentoo Linux</h4>
+
+<pre><code class="sh">sudo emerge asciinema
+</code></pre>
+
+<p>Source: <a href="https://asciinema.org/docs/installation">https://asciinema.org/docs/installation</a></p>
+
+<p>Nah setelah kalian install, kalian di berkenankan membuat akun disana, jangan lupa di verifikasi emailnya, setelah itu kalian bisa menggunakan asciinema ini di session terminal, tapi sebelum menggunakan saya sarankan untuk membuat auth config di asccinema kalian dengan akun di asscinema.org, cara nya buka terminal dan ketik ini
+<code>sh
+asciinema auth
+</code>
+Copy dan paste link yang ada di output kemudian di pastekan ke browser yang kalian pakai tadi untuk register ke asciinema.org.</p>
+
+<p>Setelah itu kalian bisa menggunakannya, dengan perintah di terminal.
+<code>sh
+asciinema rec
+</code>
+Maka akan membersihkan halaman terminal baru dan siap di rekam. Untuk keluar ketik perintah
+<code>sh
+exit
+</code>
+dan ENTER.
+Atau bisa juga dengan menekan tombil <strong>CTRL + D</strong></p>
+
+<p>Nah ketika akan berhenti dari rekaman kalian akan di beri perintah</p>
+
+<p><strong>Rekaman yang barusan di rekam mau di upload atau tidak?</strong></p>
+
+<p>Jika iya, maka ketik perintah <strong>Y</strong> dan tekan <strong>ENTER</strong> jika tidak ingin menguploadnya maka ketik perintah <strong>N</strong> dan tekan <strong>ENTER</strong>.</p>
+
+<p>Lama gak ya uploadnya?
+Jawabannya <strong>TIDAK</strong> seberapa lama anda merekam maka uploadnya akan tetap cepat, gak percaya? Silakan di buktikan&hellip; <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+
+<p>Jika memerlukan bantuan lebih lengkapnya, ketik perintah ini
+<code>sh
+asciinema -h
+</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Nginx, MySQL, PHP Di CentOS]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/"/>
+    <updated>2014-11-25T04:17:41+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos</id>
+    <content type="html"><![CDATA[<p>Pada artikel sebelumnya saya sudah menjelaskan tentang <a href="/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13/">Install LEMP Di CentOS 5-6 Dan Fedora 18-13</a>, namun disini saya akan menjabarkan lebih datail <strong>Cara Install Nginx, MySQL, PHP di CentOS</strong> menggunakan recorder.</p>
+
+<h4>Requirements</h4>
+
+<ul>
+<li> CentOS 6.*</li>
+<li> Architecture i386, x86_64</li>
+</ul>
+
+
+<p>Silakan di simak, recordernya. Remi repositorinya menyesuikan arsitektur OS yang kalian pakai</p>
+
+<!--more-->
+
+
+<script type="text/javascript" src="https://asciinema.org/a/14190.js" id="asciicast-14190" async></script>
+
+
+<p>Anda bisa melihat command line di bawah ini untuk mengikuti dari recorder di atas.</p>
+
+<p>64bit / x86_x64
+<code>
+rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+</code>
+32bit / i386
+<code>
+rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+</code></p>
+
+<p>Jika gagal download silakan menggunakan mirror, ganti <code>dl.fedoraproject.org</code> dengan <code>download.fedoraproject.org</code> tapi tetap hati-hati menggunakan mirror, takut terjadi gagal atau repositorinya 404, lanjutkan dibawah ini:</p>
+
+<pre><code>rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+</code></pre>
+
+<pre><code>nano /etc/yum.repos.d/nginx.repo
+</code></pre>
+
+<pre><code>[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=0
+enabled=1
+</code></pre>
+
+<pre><code>yum --enablerepo=remi,remi-test install nginx mysql mysql-server php php-common php-fpm
+</code></pre>
+
+<pre><code>yum --enablerepo=remi,remi-test install php-mysql php-pgsql php-sqlite php-pecl-memcache php-gd php-mbstring php-mcrypt php-xml php-pecl-apc php-cli php-pear php-pdo
+</code></pre>
+
+<pre><code>chkconfig --levels 235 httpd off
+</code></pre>
+
+<pre><code>service httpd stop
+</code></pre>
+
+<pre><code>chkconfig --add nginx
+</code></pre>
+
+<pre><code>chkconfig --add mysqld
+</code></pre>
+
+<pre><code>chkconfig --add php-fpm
+</code></pre>
+
+<pre><code>chkconfig --levels 235 nginx on
+</code></pre>
+
+<pre><code>chkconfig --levels 235 mysqld on
+</code></pre>
+
+<pre><code>chkconfig --levels 235 php-fpm on
+</code></pre>
+
+<pre><code>service nginx start
+</code></pre>
+
+<pre><code>service mysqld start
+</code></pre>
+
+<p>Konfigurasi MySQL
+<code>
+/usr/bin/mysql_secure_installation
+</code></p>
+
+<pre><code>service php-fpm start
+</code></pre>
+
+<p>Merubah user dan group
+<code>
+nano /etc/php-fpm.d/www.conf
+</code></p>
+
+<pre><code>user = nginx
+group = nginx
+</code></pre>
+
+<pre><code>nano /etc/nginx/conf.d/default.conf
+</code></pre>
+
+<p>Merubah config default server</p>
+
+<pre><code>server {
+    listen 80;
+    server_name DOMAINorIP;
+
+    location / {
+        root   /usr/share/nginx/html;
+        index index.php index.html index.htm;
+    }
+
+    error_page  404              /404.html;
+    location = /404.html {
+        root   /usr/share/nginx/html;
+    }
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+    location ~ \.php$ {
+        root           /usr/share/nginx/html;
+        fastcgi_pass   127.0.0.1:9000;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
+}
+</code></pre>
+
+<p>Selesai merubah config default server</p>
+
+<p>Test php info
+<code>
+nano /usr/share/nginx/html/info.php
+</code></p>
+
+<pre><code>service nginx restart
+</code></pre>
+
+<pre><code>service php-fpm restart
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Membuat Blog Jekyll Dalam Waktu Kurang Dari 1 Menit]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/"/>
+    <updated>2014-11-14T03:50:42+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit</id>
+    <content type="html"><![CDATA[<p><img class="center <a" src="href="https://lh4.googleusercontent.com/-xCp6nD01yA8/VGUb4oM55iI/AAAAAAAAAHM/0Hse4vDTwHk/s800/Screenshot+from+2014-11-14+04:00:02.png">https://lh4.googleusercontent.com/-xCp6nD01yA8/VGUb4oM55iI/AAAAAAAAAHM/0Hse4vDTwHk/s800/Screenshot+from+2014-11-14+04:00:02.png</a>&#8221; title=&#8221;&lsquo;jekyll&rsquo; &lsquo;jekyll&rsquo;&#8221; ></p>
+
+<p><blockquote><p>Jekyll is an open source program, written in Ruby by Tom Preston-Werner, GitHub&rsquo;s co-founder. Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. It is a file-based CMS; instead of using databases, Jekyll takes the content, renders Markdown or Textile and Liquid templates, and produces a complete, static website ready to be served by Apache HTTP Server, Nginx or another web server.[1] Jekyll is the engine behind GitHub Pages,[2] a GitHub feature that allows users to host websites based on their GitHub repositories.</p><footer><strong>en.wikipedia <a href="http://en.wikipedia.org/wiki/Jekyll_">http://en.wikipedia.org/wiki/Jekyll_</a>(software) Jekyll (software)</strong></footer></blockquote></p>
+
+<!-- more -->
+
+
+<p><blockquote><p>Jekyll merupakan open source program yang ditulis dalam Ruby oleh Tom Preston-Werner , GitHub yang co-founder. Jekyll adalah, sederhana blog -aware, situs statis generator situs pribadi, proyek, atau organisasi. Ini adalah file berbasis CMS ; alih-alih menggunakan database , Jekyll mengambil konten, membuat penurunan harga atau tekstil dan template Liquid , dan menghasilkan lengkap, website statis siap disajikan oleh Apache HTTP Server , Nginx atau server web lain. [ 1 ] Jekyll adalah mesin belakang GitHub Pages , [ 2 ] fitur GitHub yang memungkinkan pengguna untuk meng-host situs web berdasarkan repositori GitHub mereka.</p><footer><strong>id.wikipedia <a href="http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/">http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/</a> wikipedia version google translate</strong></footer></blockquote></p>
+
+<p>Terdengar aneh dengan judul ini? Yup&hellip;emang benar bikin blog pakai jekyll cepat sekali gk sampe 1 menit udah jadi selanjutnya kita rancang sendiri, semacam framework begitu bray<img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >&hellip;</p>
+
+<p>Asumsikan:</p>
+
+<ol>
+<li><a href="http://sundi3yansyah.com/article/categories/ruby/">Sudah install Ruby</a></li>
+<li><a href="http://sundi3yansyah.com/article/categories/ruby/">Sudah install RubyGems</a></li>
+<li>Sudah install jekyll <code>gem install jekyll</code></li>
+</ol>
+
+
+<p>Oke langcung ajah eak&hellip; :*</p>
+
+<h4>Install jekyll dari gems, jika belum kalian install</h4>
+
+<p><figure class='code'><figcaption><span>install jekyll </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>gem install jekyll
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Jika sudah install jekyll ya gk usah di install lg, mungkin perlu upgrade atau mau downgrade versi :v</p>
+
+<p>Asumsikan posisi saya ada di <code>/home/user/</code></p>
+
+<p>Saya akan membuat blog jekyll baru dengan folder <code>nggak-ada-1-menit</code><img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >maka:</p>
+
+<p><figure class='code'><figcaption><span>new jekyll blog </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>jekyll new nggak-ada-1-menit
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p><figure class='code'><figcaption><span>masuk ke foldernya </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nb">cd </span>nggak-ada-1-menit
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p><figure class='code'><figcaption><span>jalankan generate jekyll </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>jekyll serve
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Sebagai contoh:</p>
+
+<p><img class="center <a" src="href="https://lh5.googleusercontent.com/-VL7L0G8CoF0/VGUe7dueORI/AAAAAAAAAHw/ainRVh7_vxc/s800/Screenshot+from+2014-11-14+04:10:42.png">https://lh5.googleusercontent.com/-VL7L0G8CoF0/VGUe7dueORI/AAAAAAAAAHw/ainRVh7_vxc/s800/Screenshot+from+2014-11-14+04:10:42.png</a>&#8221; title=&#8221;&lsquo;buat jekyll blog&rsquo; &lsquo;buat jekyll blog&rsquo;&#8221; ></p>
+
+<p>Sekarang buka browser dan arahkan address bar ke <a href="http://localhost:4000">http://localhost:4000</a></p>
+
+<p>Hasilnya:</p>
+
+<p><img class="center <a" src="href="https://lh4.googleusercontent.com/-8eXMgIjNcds/VGUe7Zj7bkI/AAAAAAAAAH0/Yqu9YmhoTqk/s800/Screenshot+from+2014-11-14+04:12:21.png">https://lh4.googleusercontent.com/-8eXMgIjNcds/VGUe7Zj7bkI/AAAAAAAAAH0/Yqu9YmhoTqk/s800/Screenshot+from+2014-11-14+04:12:21.png</a>&#8221; title=&#8221;&lsquo;hasil generate jekyll&rsquo; &lsquo;hasil generate jekyll&rsquo;&#8221; ></p>
+
+<p>Atau bisa melihat video dibawah ini:</p>
+
+<script type="text/javascript" src="https://asciinema.org/a/14165.js" id="asciicast-14165" async></script>
+
+]]></content>
+  </entry>
+  
+</feed>

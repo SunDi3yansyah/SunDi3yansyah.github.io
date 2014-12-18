@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Github | SunDi3yansyah]]></title>
+  <link href="http://sundi3yansyah.com/article/categories/github/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2014-12-17T06:26:49+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
+  <author>
+    <name><![CDATA[SunDi3yansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Menghapus Repository Di GitHub]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/11/18/cara-menghapus-repository-di-github/"/>
+    <updated>2014-11-18T18:58:04+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/11/18/cara-menghapus-repository-di-github</id>
+    <content type="html"><![CDATA[<p>Masuk ke repos nya misalnya:</p>
+
+<pre><code>https://github.com/username/username.github.io
+</code></pre>
+
+<p>Klik wedget <strong>Settings</strong> disebelah kanan
+atau bisa juga kunjungi dengan URL sbb:
+<code>
+https://github.com/username/username.github.io/settings
+</code>
+Kemudian scroll kebawan sampai di box</p>
+
+<p><strong>Danger Zone</strong> > <strong>Delete this repository</strong>
+klik button
+<strong>Delete this repository</strong> nanti ada pop up baru masukan nama repos nya, misalnya
+<code>
+username.github.io
+</code></p>
+
+<p>Atau liat rekaman dibawah ini</p>
+
+<p><img class="center <a" src="href="https://lh6.googleusercontent.com/-nc-RsyLjBAY/VGve1G_8h1I/AAAAAAAAAKY/lVT6_ykBrB4/s800/menghapus+repos+github.gif">https://lh6.googleusercontent.com/-nc-RsyLjBAY/VGve1G_8h1I/AAAAAAAAAKY/lVT6_ykBrB4/s800/menghapus+repos+github.gif</a>&#8221; title=&#8221;&lsquo;Cara Menghapus Repository di GitHub&rsquo; &lsquo;Cara Menghapus Repository di GitHub&rsquo;&#8221; ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Membuat Custom 404 Pages Di GitHub]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/09/12/cara-membuat-custom-404-pages-di-github/"/>
+    <updated>2014-09-12T02:55:12+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/09/12/cara-membuat-custom-404-pages-di-github</id>
+    <content type="html"><![CDATA[<p>Berbagi ilmu itu indah, betul? Jos&hellip;<img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a. Kesekian kalinya saya membuat postingan disini, mungkin ini adalah postingan yang singkat untuk pengguna Github (Social Coding) sesuai judul &ldquo;<strong>Cara Membuat Custom 404 Pages di GitHub</strong>&rdquo; secara default Page 404 Not Found untuk GitHub adalah seperti gambar di bawah.</p>
+
+<!-- more -->
+
+
+<p><img class="center <a" src="href="http://i40.photobucket.com/albums/e228/sundi3yansyah/PagenotfoundmiddotGitHubPages-Chromium_003_zps7974ad2b.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/PagenotfoundmiddotGitHubPages-Chromium_003_zps7974ad2b.png</a>&#8221; title=&#8221;Cara Membuat Custom 404 Pages di GitHub&#8221; ></p>
+
+<blockquote><p>A: Lantas bisa di rubah? Dan bagaimana caranya?</p></blockquote>
+
+<hr />
+
+<blockquote><p>B: Oh bisa&hellip;</p></blockquote>
+
+<p>Seperti yang di katakan dalam artikel Help GitHub</p>
+
+<p><blockquote><p>You can provide custom 404 error pages when people try to access non-existent pages on your site.</p><footer><strong>GitHub Help <a href="https://help.github.com/articles/custom-404-pages">https://help.github.com/articles/custom-404-pages</a> Custom 404 Pages</strong></footer></blockquote></p>
+
+<h4>Berikut ini caranya</h4>
+
+<blockquote><p>Asumsikan anda sudah mempunyai repositori GitHub Pages, jika anda belum mempunyai silakan cari di blog saya ini untuk memperlajari bagaimana kita berkerja di GitHub Pages, baik itu menggunakan Static Manual Pages, menggunakan Jekyll Ruby, atau menggunakan Framework lainnya seperti Octopress dan masih banyak Framework Jekyll lainnya. Saya mempunyai beberapa refrensi untuk anda di bawah ini.</p></blockquote>
+
+<ul>
+<li><a href="http://sundi3yansyah.com/article/2014/09/12/cara-membuat-halaman-di-github/">Cara Membuat Halaman Di Github</a></li>
+<li><a href="http://sundi3yansyah.com/article/2014/08/27/cara-membuat-repository-baru-di-github/">Cara Membuat Repository Baru Di Github</a></li>
+<li><a href="http://sundi3yansyah.com/article/2014/07/02/cara-install-octopress/">Cara Install Octopress</a></li>
+</ul>
+
+
+<p><strong>Oke&hellip; langsung saja, disini saya tidak akan menjelaskan secara rinci tetapi saya akan menjelaskan dengan LOGIKA</strong></p>
+
+<ul>
+<li>Buat 1 file bernama <code>404.html</code>.</li>
+<li>Isi script/codenya berupa syntax HMTL, silakan anda design sendiri sesuka kalian mau seperti apa.</li>
+<li>Kemudian simpan file <code>404.html</code> di dalam folder repositori GitHub Pages kalian.</li>
+<li>Silakan di push/deploy repositori kalian.</li>
+<li>Yang pada akhirnya akan ter upload/push ke directori root repositori GitHub Pages kalian.</li>
+<li>Sebagai contoh <code>https://github.com/username/username.github.io/blob/master/404.html</code>.</li>
+</ul>
+
+
+<p><strong>Note:</strong></p>
+
+<blockquote><p>Jika menggunakan Octopress atau Jekyll anda bisa juga membuat dengan Generator Markdown.</p></blockquote>
+
+<h4>Demo:</h4>
+
+<p><a href="http://sundi3yansyah.com/gantengs">SunDi3yansyah - 404 Not Found</a></p>
+
+<h4>Source Code</h4>
+
+<p>&#8220;` html 404 <a href="https://github.com/SunDi3yansyah/SunDi3yansyah.github.io/blob/master/404.html">https://github.com/SunDi3yansyah/SunDi3yansyah.github.io/blob/master/404.html</a> 404.html
+<html>
+<head><title>404 Not Found</title><meta http-equiv="refresh" content="5;url=http://sundi3yansyah.com"></head>
+<body bgcolor="white"></p>
+
+<center><h1>404 Not Found</h1></center>
+
+
+<hr><center>nginx</center>
+
+
+<p></body>
+</html>
+&#8220;`</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Membuat Halaman Di Github]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/09/12/cara-membuat-halaman-di-github/"/>
+    <updated>2014-09-12T00:12:22+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/09/12/cara-membuat-halaman-di-github</id>
+    <content type="html"><![CDATA[<p><img class="center <a" src="href="http://www.wakanda.org/sites/default/files/blog/blog-github.png">http://www.wakanda.org/sites/default/files/blog/blog-github.png</a>&#8221; title=&#8221;github&#8221; ></p>
+
+<p>Pada kesempatan kali ini saya akan membahas sedikit tentang GitHub Pages. Anda pernah melihat halaman web atau blog orang dengan URL seperti ini <code>username.github.io</code>? ooohhh&hellip; pasti sering lihat kan kalau suka nongkrong di Google, <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a. Seperti blog saya ini sebelumnya adalah <code>sundi3yansyah.github.io</code> Yah itu yang akan nanti saya bahas. Sebelumnya saya pernah membuat tutorial tentang <a href="http://sundi3yansyah.com/article/2014/08/27/cara-membuat-repository-baru-di-github/">Cara Membuat Repository Baru Di Github</a> dan <a href="http://sundi3yansyah.com/article/2014/07/02/cara-install-octopress/">Cara Install Octopress</a> ya semua itu adalah hasil commiting repository ke github. Tetapi disini akan saya jelaskan secara General. Seperti yang di jelaskan di GitHub Pages</p>
+
+<!-- more -->
+
+
+<p><blockquote><p>Websites for you and your projects.<br/>Hosted directly from your GitHub repository. Just edit, push, and your changes are live.<br/>Roll vanilla, or generate a site for your project to quickly get started.<br/>You get one site per GitHub account and organization,<br/>and unlimited project sites. Ready? Let’s get started.</p><footer><strong>GitHub Pages <a href="https://pages.github.com/">https://pages.github.com/</a> GitHub</strong></footer></blockquote></p>
+
+<p>Paham? Oke&hellip; jadi maksudnya adalah kita bisa membuat sebuah repository yang nantinya akan menjadi sebuah halaman website baik menggunakan Akun maupun Organisasi dengan semau kita, kapan kita akan mengcommitnya dan mengnyuntingnya ataupun menghapusnya selayaknya hosting dengan sumber code terbuka (Open Source).</p>
+
+<p>Sebelum ke tutorialnya mari kita bahas dulu apa saja yang menjadi fitur utama disini.</p>
+
+<h4>Blogging with Jekyll</h4>
+
+<p><blockquote><p>Using Jekyll, you can blog using beautiful Markdown syntax, and without having to deal with any databases. Learn how to set up Jekyll.</p><footer><strong>GitHub Pages <a href="https://help.github.com/articles/using-jekyll-with-pages">https://help.github.com/articles/using-jekyll-with-pages</a> Blogging with Jekyll</strong></footer></blockquote></p>
+
+<p>Ngerti kgk&hellip;? Jadi disini kita bisa membuat halaman web kita dengan Jekyll yang di rancang dengan bahasa Ruby, disini kita bisa menggunakan syntax Markdown kemudian dari syntax markdown tersebut akan di generate menjadi halaman static HTML.</p>
+
+<h4>Custom URLs</h4>
+
+<p><blockquote><p>Want to use your own custom domain for a GitHub Pages site? Just create a file named CNAME and include your URL. Read more.</p><footer><strong>GitHub Pages <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">https://help.github.com/articles/setting-up-a-custom-domain-with-pages</a> Custom URLs</strong></footer></blockquote></p>
+
+<p>Ngerti kgk&hellip;? Jadi kita bisa membuat website di github page dengan kostum domain kita sendiri yang tadinya <code>username.github.io</code> menjadi <code>domain.com</code>.</p>
+
+<h4>Guides</h4>
+
+<p><blockquote><p>Learn how to create custom 404 pages, use submodules, and learn more about GitHub Pages.</p><footer><strong>GiHub Pages <a href="https://help.github.com/categories/20/articles">https://help.github.com/categories/20/articles</a> Guides</strong></footer></blockquote></p>
+
+<p>Ngerti kgk&hellip;? Secara default page 404 GitHub Page kita sudah di atur dengan GitHub tetapi disini kita bisa membuat kostum halaman 404 dengan keingin kita sendiri.</p>
+
+<p><strong>Mari kita mulai&hellip;</strong></p>
+
+<h3>1. Buat Repositori Baru (User or organization site)</h3>
+
+<p><a href="https://github.com/new">https://github.com/new</a> Beri nama <code>username.github.io</code> misalnya <code>SunDi3yansyah.github.io</code> isi bagian <strong>Description (optional)</strong> sesuka kalian kemudian klik tombol <strong>Create repository</strong>, kalau sudah kita biarkan saja silakan baca Step selanjutnya.</p>
+
+<p><img class="center <a" src="href="http://i1183.photobucket.com/albums/x469/adiemuse/Screenshotfrom2014-09-12010619_zps7ce8405f.png">http://i1183.photobucket.com/albums/x469/adiemuse/Screenshotfrom2014-09-12010619_zps7ce8405f.png</a>&#8221; title=&#8221;Cara Membuat Halaman di Github Step 1&#8221; ></p>
+
+<h3>?. Git Sistem Operasi yang digunakan (What git client are you using?)</h3>
+
+<p>Disini saya akan menjelaskan untuk di Platform Sistem Operasi Linux, bagaimana cara install Git di Linux?</p>
+
+<ul>
+<li><a href="http://git-scm.com/download/linux">Versi Official</a></li>
+<li><a href="http://sundi3yansyah.com/article/2014/07/03/cara-install-slash-upgrade-versi-git-core-terbaru/">Cara Install/Upgrade Versi Git Core Terbaru di Ubuntu</a></li>
+</ul>
+
+
+<p><img class="[left:right] <a" src="href="http://i1183.photobucket.com/albums/x469/adiemuse/Screenshotfrom2014-09-12012345_zps2fb6b58a.png">http://i1183.photobucket.com/albums/x469/adiemuse/Screenshotfrom2014-09-12012345_zps2fb6b58a.png</a>&#8221; title=&#8221;Cara Membuat Halaman di Github Step git OS&#8221; ></p>
+
+<h3>2. Masuk Terminal (Clone the repository)</h3>
+
+<blockquote><p>Buat direktori baru, terserah mau dimana saja direktorinya.</p></blockquote>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone &lt;a href="https://github.com/username/username.github.io">https://github.com/username/username.github.io&lt;/a></span></code></pre></td></tr></table></div></figure></p>
+
+<p>Ganti <code>username</code> dengan username kalian, misalnya</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone &lt;a href="https://github.com/sundi3yansyah/sundi3yansyah.github.io">https://github.com/sundi3yansyah/sundi3yansyah.github.io&lt;/a></span></code></pre></td></tr></table></div></figure></p>
+
+<p><img class="center <a" src="href="http://i1183.photobucket.com/albums/x469/adiemuse/Screenshotfrom2014-09-12011837_zps019998cc.png">http://i1183.photobucket.com/albums/x469/adiemuse/Screenshotfrom2014-09-12011837_zps019998cc.png</a>&#8221; title=&#8221;Cara Membuat Halaman di Github Step 2&#8221; ></p>
+
+<h3>3. Masuk ke direktori yang baru saja di Clone</h3>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd username.github.io</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Buat contoh halaman index</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>echo &ldquo;Hello World&rdquo; > index.html</span></code></pre></td></tr></table></div></figure></p>
+
+<p><code>Hello World</code> bisa anda ganti dengan apa saja.</p>
+
+<p><img class="center <a" src="href="http://i1183.photobucket.com/albums/x469/adiemuse/Screenshotfrom2014-09-12012436_zps341502fc.png">http://i1183.photobucket.com/albums/x469/adiemuse/Screenshotfrom2014-09-12012436_zps341502fc.png</a>&#8221; title=&#8221;Cara Membuat Halaman di Github Step 3&#8221; ></p>
+
+<h3>4. Publish ke Github (Push it)</h3>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git add &ndash;all</span></code></pre></td></tr></table></div></figure></p>
+
+<p><strong>NEXT</strong></p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git commit -m &ldquo;Initial commit&rdquo;</span></code></pre></td></tr></table></div></figure></p>
+
+<p><strong>NEXT</strong></p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git push</span></code></pre></td></tr></table></div></figure></p>
+
+<p><img class="center <a" src="href="http://i1183.photobucket.com/albums/x469/adiemuse/Screenshotfrom2014-09-12012456_zps77906b00.png">http://i1183.photobucket.com/albums/x469/adiemuse/Screenshotfrom2014-09-12012456_zps77906b00.png</a>&#8221; title=&#8221;Cara Membuat Halaman di Github Step 4&#8221; ></p>
+
+<h3>5. Selesai (…and you&rsquo;re done!)</h3>
+
+<blockquote><p>Sekarang arahkan ke browser favorite kalian (Chromium/Firefox) ke <a href="http://username.github.io">http://username.github.io</a></p></blockquote>
+
+<p><img class="center <a" src="href="http://i1183.photobucket.com/albums/x469/adiemuse/Screenshotfrom2014-09-12012512_zpsb7a03a5d.png">http://i1183.photobucket.com/albums/x469/adiemuse/Screenshotfrom2014-09-12012512_zpsb7a03a5d.png</a>&#8221; title=&#8221;Cara Membuat Halaman di Github Step 5&#8221; ></p>
+
+<p><strong>Note: Jika tidak muncul (404) mungkin anda harus menunggu beberapa menit untuk menerima resolv DNS internet kalian ke Server GitHub</strong></p>
+
+<blockquote><p>Oke&hellip; sekian postingan kali ini dari saya, nantikan postingan mengenai <strong>Custom URLs</strong> dan <strong>Guides 404 Pages</strong></p></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Jangan Ngaku Programmer Atau Hacker Kalau Tidak Mengerti Jekyll Dan Octopress]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/09/10/jangan-ngaku-programmer-atau-hacker-kalau-tidak-mengerti-jekyll-dan-octopress/"/>
+    <updated>2014-09-10T01:01:32+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/09/10/jangan-ngaku-programmer-atau-hacker-kalau-tidak-mengerti-jekyll-dan-octopress</id>
+    <content type="html"><![CDATA[<p>Apakah anda Programmer ataupun Hacker? Tidak ada yang mengaku kan, tapi seharusnya anda di akui jika anda punya sebuah project dan saling berkolaborasi, apakah anda punya blog artikel? Pasti kalau programmer dan hacker itu sudah pernah membuat Web blog artikel, tetapi jangan salah, sekarang saya tanya, Platform apa yang anda gunakan untuk nge Blog biar gk goblok? Sepintas pertanyaan tersebut pasti banyak yang menjawab CMS Wordpress, Joomla, Blogspot dan lain sebagainya. Cok&hellip;! Nulis code di Wordpress, Joomla, Blogspot itu kurang mudah. Atau mungkin bisa juga dibilang susah. Setelah itu saya melirik platform lain yaitu <a href="http://squarespace.com">Squarespace</a>, <a href="http://typepad.com">Typepad</a>, <a href="http://posthaven.com">Posthaven</a> dan juga <a href="http://ghost.org">Ghost</a>. Ke 4 platform tersebut mempunyai 1 kesamaan yang cukup menyebalkan. Layanan yang ditawarkan berbayar! Seperti kebanyakan orang Indonesia lainnya, tentu saja saya lebih suka barang gratisan. Tetapi dari ke 4 platform tersebut, jika suatu hari nanti saya sudah kembali ke jalan yang benar (mau membayar), saya akan memilih Ghost. Kenapa? Karena Ghost memenuhi ke 3 kriteria saya dengan sangat baik.</p>
+
+<!-- more -->
+
+
+<p>Pernah menggunakan <a href="http://praxmatig.tumblr.com">tumblr</a>? Mungkin dari beberapa kalian yang mempunyai kan. Tetapi saya tidak, saya pernah mencoba dan kemudian melupakannya. Sepintas saya memakai <a href="http://praxmatig.tumblr.com">tumblr</a> untuk blogging dan meskipun merupakan platform blogging yang cukup bagus-bagus hampir jelek,haha,,, apa yang jelek? SEOnya jelek! Pernah melihat postingan tumblr yang ada di halaman result 1 google.com? Oh jelas belum. Maka dari itu, saya mencari platform blogging yang lain untuk memuat tulisan-tulisan saya tentang programming development.</p>
+
+<h3>Jekyll</h3>
+
+<p><blockquote><p>Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through Markdown (or Textile) and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.</p><footer><strong>Jekyll <a href="http://jekyllrb.com/docs/home/">http://jekyllrb.com/docs/home/</a></strong></footer></blockquote></p>
+
+<p>Ngerti? Jadi intinya kamu hanya perlu menulis di file teks dengan format <a href="daringfireball.net/projects/markdown/">Markdown</a> atau <a href="http://textile.sitemonks.com/">Textile</a>, lalu Jekyll akan menggenerate website kamu. Website yang dihasilkan hanya berupa website statis yang berisi hanya html, css dan javascript. Tidak ada database, tidak ada code apapun. Sudah kelihatan bagusnya dimana? Belum? Oke, akan saya jelaskan.</p>
+
+<ul>
+<li><p>Cepat</p>
+
+<p>Performa sebuah website biasanya paling ditentukan oleh waktu yang diperlukan untuk melakukan query ke database dan juga overhead dari code kamu. Tetapi Jekyll menggenerate website statis untuk kamu yang tidak ada query database atau code apapun. Artinya? Betul sekali. Website kamu akan menjadi super cepat! Belum lagi jika kamu melakukan caching secara agressive, pembaca pasti akan sangat senang membaca blog kamu (tentunya jika artikel kamu semenarik artikel ini).</p></li>
+<li><p>Mudah</p>
+
+<p>Sudah pernah pakai Markdown? Kalau sudah silahkan skip ke point selanjutnya. Jika belum silahkan baca tentang <a href="http://daringfireball.net/projects/markdown">Markdown</a>. Intinya Markdown adalah tool untuk konversi text-to-HTML. Tetapi teks yang kamu tulis harus mengikuti <a href="http://daringfireball.net/projects/markdown/syntax">syntax</a> Markdown. Jangan khawatir, syntaxnya sangat mudah sekali. Cukup luangkan waktu setengah jam saja untuk menguasainya.</p></li>
+<li><p>Pakai teks editor kesayangan kamu</p>
+
+<p>Secara pribadi, saya kurang menyukai editor Wordpress, Blogger dan beberapa platform lainnya. Apakah kamu sependapat dengan saya? Jika ya, bagus sekali karena dengan Jekyll kamu dapat menulis postingan kamu dengan editor kesayangan kamu. Editor saya menggunakan vi, vim, nano, sublimetext, haroopad. Kenapa pakai itu? Dengan saya menggunakan sublimetext dan haroopad saya langsung bisa melihat isi postingan saya tanpa harus mem-publish dan kedua software ini sangat ringan digunakan.</p></li>
+</ul>
+
+
+<p>Keren bukan? Jelas keren banget, <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a. Kamu dapat membacanya secara lebih lengkap di situs <a href="http://jekyllrb.com/">Jekyll</a>. Sekarang saya akan menjelaskan tentang Octopress.</p>
+
+<h3>Octopress</h3>
+
+<p><blockquote><p>Octopress is a framework designed by Brandon Mathis for Jekyll, the blog aware static site generator powering Github Pages. To start blogging with Jekyll, you have to write your own HTML templates, CSS, Javascripts and set up your configuration. But with Octopress All of that is already taken care of. Simply clone or fork Octopress, install dependencies and the theme, and you&rsquo;re set.</p><footer><strong>Octopress <a href="http://octopress.org/">http://octopress.org/</a></strong></footer></blockquote></p>
+
+<p>Singkatnya Octopress hampir menyerupai Jekyll. Tetapi di Octopress kamu telah diberikan theme/template dasar. Selain template dasar, juga tersedia themes lain seperti yang dapat dilihat di <a href="http://opthemes.com/">opthemes.com</a>, <a href="http://octopressthemes.com/">octopressthemes.com</a> dan <a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">octopress wiki</a>. Octopress juga menyediakan plugin-plugin seperti code snippets, video tag, github gists, jsFiddle, syntax highlight dan plugin lainnya. Nah dari plugin-plugin diatas saya tarik lagi point di atas tentang software sublimetext, saya bisa membuat snippet sendiri di sublimetext dengan perintah <code>CTRL+SHIFT+P</code> kemudian mengetikkan nama snipet yang saya buat dan langsung muncul syntax dari plugin tersebut. Keren!</p>
+
+<p>Gimana? Tertarik untuk mencobanya? Saya sudah membuat tutorial tentang cara menginstall dan beberapa aspek tentang Octopress menggunakan <strong>VIDEO</strong> silakan di cai di arsip blog saya ini. Sesuai dengan konsep Octopress &ldquo;A blogging framework for hackers&rdquo;, kamu harusnya dapat melakukannya sendiri jika kamu merasa cukup pantas untuk dipanggil <code>programmer ataupun hacker</code></p>
+
+<p>Semua postingan jekyll/octopress saya terbuka, gk percaya? Silakan kunjungin repository blog saya ini disini:</p>
+
+<p><a href="https://github.com/SunDi3yansyah/SunDi3yansyah.github.io">https://github.com/SunDi3yansyah/SunDi3yansyah.github.io</a></p>
+
+<div class="github-widget" data-repo="SunDi3yansyah/SunDi3yansyah.github.io"></div>
+
+
+<p>Kalau anda mengatakan <code>dimana file public_html dan database blog saya ini</code> ya disana. :LOL: ~> <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a&hellip;</p>
+
+<p>Anda sudah membaca artikel saya sebelumnya belum? <a href="http://sundi3yansyah.com/article/2014/07/02/blogging-menggunakan-octopress-and-github/">Blogging Menggunakan Octopress &amp; Github</a>, memang sedikit hampir sama cuma disini saya menjelaskan sedikit spesifik kepenggunaanya dan melestarikan para pengguna Jekyll, Octopress dan Github.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Git Set Up Dan Generating SSH Keys]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/09/08/cara-git-set-up-dan-generating-ssh-keys/"/>
+    <updated>2014-09-08T00:48:14+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/09/08/cara-git-set-up-dan-generating-ssh-keys</id>
+    <content type="html"><![CDATA[<p>Oke kali ini saya akan memberikan tutorial <strong>Cara Git Set Up dan Generating SSH Keys di GitHUb</strong></p>
+
+<!-- more -->
+
+
+<h4>asked</h4>
+
+<blockquote><p>Emang fungsinya untuk apa sih itu?</p></blockquote>
+
+<h4>answer</h4>
+
+<blockquote><p><strong>Git Set Up</strong> adalah untuk menkonfugurasi akun git kita di komputer/laptop lokal.
+<strong>Generating SSH Keys</strong> sebuah identifikasi yang akan di buat di komputer/laptop kita, selayaknya password, yang merupakan kunci publik akun kita di github yang bersifat Secure Shell, tetapi sama sekali tidak bersangkutan dengan password kita di github lho&hellip; :P Jadi setelah komputer/laptop kita ter-Restart (reboot) dan di setiap kita akan menGenerate sebuah repository ke github kita akan memasukan sebuah <code>passphrase key</code>.</p></blockquote>
+
+<p>Seperti yang sudah di jelaskan dari halaman <code>help.github.com</code></p>
+
+<p><blockquote><p>At the heart of GitHub is an open source version control system (VCS) called Git. Git is responsible for everything GitHub-related that happens locally on your computer.</p><footer><strong>Set Up Git <a href="https://help.github.com/articles/set-up-git">https://help.github.com/articles/set-up-git</a></strong></footer></blockquote></p>
+
+<p><blockquote><p>SSH keys are a way to identify trusted computers, without involving passwords. The steps below will walk you through generating an SSH key and then adding the public key to your GitHub account.</p><footer><strong>Generating SSH Keys <a href="https://help.github.com/articles/generating-ssh-keys">https://help.github.com/articles/generating-ssh-keys</a></strong></footer></blockquote></p>
+
+<p>Kali ini saya akan memberikan tutorial langsung berupa video yang sudah saya upload ke youtube. Jadi silakan untuk langsung di simak yak videonya xD</p>
+
+<iframe width="675" height="415" src="//www.youtube.com/embed/BBzHl_j86bc" frameborder="0" allowfullscreen></iframe>
+
+
+<h6>Credit: SunDi3yansyah</h6>
+]]></content>
+  </entry>
+  
+</feed>

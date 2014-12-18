@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Gems | SunDi3yansyah]]></title>
+  <link href="http://sundi3yansyah.com/article/categories/gems/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2014-12-17T06:26:49+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
+  <author>
+    <name><![CDATA[SunDi3yansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install RubyGems]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/09/11/cara-install-rubygems/"/>
+    <updated>2014-09-11T00:24:50+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/09/11/cara-install-rubygems</id>
+    <content type="html"><![CDATA[<p>Apa itu RubyGems?
+<blockquote><p>RubyGems is a package manager for the Ruby programming language that provides a standard format for distributing Ruby programs and libraries (in a self-contained format called a &ldquo;gem&rdquo;), a tool designed to easily manage the installation of gems, and a server for distributing them. It is analogous to pip for the Python programming language. RubyGems was created in about November 2003 and is now part of the standard library from Ruby version 1.9.</p><footer><strong>RubyGems <a href="http://en.wikipedia.org/wiki/RubyGems">http://en.wikipedia.org/wiki/RubyGems</a> RubyGems - Wikipedia</strong> <cite>The Free Encyclopedia</cite></footer></blockquote></p>
+
+<!-- more -->
+
+
+<p>Paham&hellip;??? Jadi RubyGems itu adalah perpustakaan yang di ditrubusikan dari bahasa pemrograman Ruby, dan di dalam Gems tersebut banyak sekali perpustakaan yang bisa kita install.</p>
+
+<h4>Install RubyGems</h4>
+
+<p>Pertama buka halaman rubygems disini <a href="https://rubygems.org/pages/download">https://rubygems.org/pages/download</a></p>
+
+<p>Dan sorot ke URL <code>TGZ</code> kemudian kita download, misalnya gems saat ini versi <code>2.4.1</code> maka:
+<code>
+wget http://production.cf.rubygems.org/rubygems/rubygems-2.4.1.tgz
+</code>
+Jika sudah, sekarang kita buka arsipnya
+<code>
+tar zxvf rubygems-2.4.1.tgz
+</code>
+Maka arsip tadi akan menghasilkan folder yang bernama <code>rubygems-2.4.1</code>, sekarang kita masuk ke foldernya
+<code>
+cd rubygems-2.4.1
+</code>
+Saatnya kita lakukan eksekusi file setup
+<code>
+ruby setup.rb
+</code>
+Jika sudah, coba kita verfikasi dan lihat versi Gems kita dengan command sebagai berikut
+<code>
+gem -v
+</code>
+atau
+<code>
+gem --version
+</code></p>
+
+<p>Nah sampai disini kita bisa menginstall apapun yang ada di perpustakaan Gems yang di distribusikan di bahasa pemrograman Ruby.</p>
+
+<p>Misalnya saya mau</p>
+
+<p>Install Rails
+<code>
+gem install rails
+</code>
+Install Bundler
+<code>
+gem install bundler
+</code></p>
+
+<p>Dan masih banyak lagi. Kalian bisa browsing disni <a href="https://rubygems.org/gems/">https://rubygems.org/gems/</a></p>
+
+<p>Nah sampai disinilah postingan <strong>SunDi3yansyah</strong> kali ini ^_^</p>
+
+<p>Udah ah mau keluar</p>
+
+<pre><code>exit
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

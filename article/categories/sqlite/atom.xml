@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Sqlite | SunDi3yansyah]]></title>
+  <link href="http://sundi3yansyah.com/article/categories/sqlite/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2014-12-17T06:26:49+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
+  <author>
+    <name><![CDATA[SunDi3yansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install SQLite Di Linux]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/11/14/cara-install-sqlite-di-linux/"/>
+    <updated>2014-11-14T02:37:34+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/11/14/cara-install-sqlite-di-linux</id>
+    <content type="html"><![CDATA[<p><blockquote><p>SQLite merupakan sebuah sistem manajemen basisdata relasional yang bersifat ACID-compliant dan memiliki ukuran pustaka kode yang relatif kecil, ditulis dalam bahasa C. SQLite merupakan proyek yang bersifat public domain yang dikerjakan oleh D. Richard Hipp.</p></p><p><!-- more --></p><p><br/><p>Tidak seperti pada paradigma client-server umumnya, Inti SQLite bukanlah sebuah sistem yang mandiri yang berkomunikasi dengan sebuah program, melainkan sebagai bagian integral dari sebuah program secara keseluruhan. Sehingga protokol komunikasi utama yang digunakan adalah melalui pemanggilan API secara langsung melalui bahasa pemrograman. Mekanisme seperti ini tentunya membawa keuntungan karena dapat mereduksi overhead, latency times, dan secara keseluruhan lebih sederhana. Seluruh elemen basisdata (definisi data, tabel, indeks, dan data) disimpan sebagai sebuah file. Kesederhanaan dari sisi disain tersebut bisa diraih dengan cara mengunci keseluruhan file basis data pada saat sebuah transaksi dimulai.</p><footer><strong>id.wikipedia <a href="http://id.wikipedia.org/wiki/SQLite">http://id.wikipedia.org/wiki/SQLite</a> SQLite</strong></footer></blockquote></p>
+
+<p>Yah begitulah SQLie&hellip; kali ini saya akan memberikan informasi cara installasinya. Cek dulu apakah di linux kalian sudah ada package SQLite belum, caranya</p>
+
+<p><figure class='code'><figcaption><span>check version sqlite3 </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>sqlite3 <span class="p">&amp;</span>ndash<span class="p">;</span>version
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>dan kalau mau masuk ke SQLite nya ketik</p>
+
+<p><figure class='code'><figcaption><span>open sqlite3 </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>sqlite3
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>atau lihat bambar shell saya dibawah</p>
+
+<p><img class="center <a" src="href="https://lh5.googleusercontent.com/-XDu3mkhCiiQ/VGUTARCPrtI/AAAAAAAAAGg/AmI7GdeRd1g/s800/Screenshot+from+2014-11-14+03:20:10.png">https://lh5.googleusercontent.com/-XDu3mkhCiiQ/VGUTARCPrtI/AAAAAAAAAGg/AmI7GdeRd1g/s800/Screenshot+from+2014-11-14+03:20:10.png</a>&#8221; title=&#8221;&lsquo;sqlite3&rsquo; &lsquo;sqlite3&rsquo;&#8221; ></p>
+
+<p>Oke&hellip;! Bisa di mengertikan ya kaya wanita aja<img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >&hellip;</p>
+
+<p>Oke langsung saja&hellip;..</p>
+
+<h4>Cara Install SQLite di Linux</h4>
+
+<p>Buka archive download dari SQLite disini <a href="http://www.sqlite.org/download.html">http://www.sqlite.org/download.html</a> cari yang di bagian <strong>source code</strong> kemudian download kurang lebih seperti ini namanya <code>sqlite-autoconf-*.tar.gz</code>, bintang (*) adalah mewakili dari nomer versi saat ini, kemudian di  <strong>DOWNLOAD</strong>.</p>
+
+<p>Sebagai contoh
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://www.sqlite.org/2014/sqlite-autoconf-3080702.tar.gz&quot;</span>&gt;http://www.sqlite.org/2014/sqlite-autoconf-3080702.tar.gz&lt;/a&gt;
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Oke&hellip; saya anggap download sudah berhasil dan buka terminal kalian, asumsikan kita berada di folder <strong>Downloads</strong> (ketik <code>pwd</code> kalau anda bingung sedang posisi di direktori mana pakailah <code>cd</code> untuk masuk ke direktori yg di tuju)</p>
+
+<p>Kemudian langsung saja buka archivenya</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>tar xvfz sqlite-autoconf-*.tar.gz
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nb">cd </span>sqlite-autoconf-*
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p><strong>NB: Install depencies jika belum terinstall, seperti compiller etc.</strong></p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>./configure <span class="p">&amp;</span>ndash<span class="p">;</span><span class="nv">prefix</span><span class="o">=</span>/usr/local
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>make
+</span></code></pre></td></tr></table></div></figure>
+dan yang terakhir kita
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>make install
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Kalau terjadi error atau Not Permission ya gunakan <code>sudo</code></p>
+
+<p>Kemudian verifikasi untuk melihat versi sqlite3 yang barusan kita install</p>
+
+<pre><code class="sh">sqlite3 --version
+</code></pre>
+
+<p>Jika tidak muncul, seperti ini</p>
+
+<pre><code>SQLite header and source version mismatch
+</code></pre>
+
+<p>Maka salin file <code>libsqlite3.so.0.8.6</code> ke <code>/usr/lib/$arch</code></p>
+
+<p>Misalnya</p>
+
+<p>x86
+<code>sh
+cp /usr/local/lib/libsqlite3.so.0.8.6 /usr/lib/i386-linux-gnu/libsqlite3.so.0.8.6
+</code>
+x64
+<code>sh
+cp /usr/local/lib/libsqlite3.so.0.8.6 /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
+</code></p>
+
+<p>Silakan di cek kembali dengan</p>
+
+<pre><code class="sh">sqlite3 --version
+</code></pre>
+
+<p><img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+]]></content>
+  </entry>
+  
+</feed>

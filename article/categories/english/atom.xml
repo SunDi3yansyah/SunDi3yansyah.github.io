@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: English | SunDi3yansyah]]></title>
+  <link href="http://sundi3yansyah.com/article/categories/english/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2014-12-17T06:26:49+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
+  <author>
+    <name><![CDATA[SunDi3yansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[12 Open Source Microblogging Software]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/07/04/12-open-source-microblogging-software/"/>
+    <updated>2014-07-04T04:31:25+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/07/04/12-open-source-microblogging-software</id>
+    <content type="html"><![CDATA[<p><strong>Microblogging</strong> is a new trend on internet era. It is latest evolutions of the web  2.0 technology. One of popular <strong>microblogging service</strong> is Twitter. It was created in March 2006 by Jack Dorse. It become one of most popular social media and become rival of facebook. <a href="http://twitter.com/">Twitter</a> have 140 million active users as of 2012 that generating over 340 millions tweets dailyand handling over 1.6 billion search queries per day.</p>
+
+<p>Many people are trying to create microblogging service like Twitter, Tumblr or Plurk. You can use some <a href="http://smashfreakz.com/2012/05/12-open-source-microblogging-software/">microblogging software</a> to make <strong>twitter clone</strong> or other microblogging website. In this post we roundups the 12 open source <strong>microblogging software</strong> that can be used to build twitter clone or other your microblogging website.</p>
+
+<!-- more -->
+
+
+<h3>HERE IS LIST OF 12 OPEN SOURCE MICROBLOGGING SOFTWARE</h3>
+
+<h2>1. STATUSNET</h2>
+
+<p><img class="s<a" src="href="http://i2.wp.com/smashfreakz.com/wp-content/uploads/2012/05/statusnet-microblogging-cms-application1.jpg?resize=480%2C205">http://i2.wp.com/smashfreakz.com/wp-content/uploads/2012/05/statusnet-microblogging-cms-application1.jpg?resize=480%2C205</a>&#8221;>
+<a href="http://status.net/">http://status.net/</a>
+One of most popular microblogging CMS that built with PHP/MySQL. With this CMS you can built a unique community for open or closed group. Ask questions, share interesting information, read posts, and collaborate with your coworkers in real-time. It is mobile friendly so you can connect to your network using statusnet  iPhone or Android mobile applications.</p>
+
+<h2>2. JAIKUENGINE</h2>
+
+<p><img class="<a" src="href="http://i1.wp.com/smashfreakz.com/wp-content/uploads/2012/05/jaikuengine-microblogging-software.gif?resize=480%2C90">http://i1.wp.com/smashfreakz.com/wp-content/uploads/2012/05/jaikuengine-microblogging-software.gif?resize=480%2C90</a>&#8221;>
+<a href="http://code.google.com/p/jaikuengine/">http://code.google.com/p/jaikuengine/</a>
+JaikuEngine is a social microblogging platform that runs on AppEngine. It was built with Python and available tor the mobile client source</p>
+
+<h2>3. JISKO</h2>
+
+<p><img class="<a" src="href="http://i2.wp.com/smashfreakz.com/wp-content/uploads/2012/05/jisko-microblogging-software.jpg?resize=480%2C260">http://i2.wp.com/smashfreakz.com/wp-content/uploads/2012/05/jisko-microblogging-software.jpg?resize=480%2C260</a>&#8221;>
+<a href="http://jisko.net/">http://jisko.net/</a>
+Jisko is a light weight open source microblogging software that builth with PHP and MYSQL. It allows you to stay in contact with the people you want.</p>
+
+<h2>4. PAGECOOKERY</h2>
+
+<p><img class="<a" src="href="http://i1.wp.com/smashfreakz.com/wp-content/uploads/2012/05/pagecookery-microblogging-software.jpg?resize=480%2C248">http://i1.wp.com/smashfreakz.com/wp-content/uploads/2012/05/pagecookery-microblogging-software.jpg?resize=480%2C248</a>&#8221;>
+<a href="http://www.pagecookery.com/">http://www.pagecookery.com/</a>
+PageCookery is the single user version of the open source microblogging software. It based on PHP and MySQL architecture that more safety, efficiency and stability  to make microblogging website.</p>
+
+<h2>5. SHARETRONIX</h2>
+
+<p><img class="<a" src="href="http://i0.wp.com/smashfreakz.com/wp-content/uploads/2012/05/sharetronix-microblogging-software.jpg?resize=480%2C277">http://i0.wp.com/smashfreakz.com/wp-content/uploads/2012/05/sharetronix-microblogging-software.jpg?resize=480%2C277</a>&#8221;>
+<a href="http://developer.sharetronix.com/">http://developer.sharetronix.com/</a>
+Sharetronix is the one of favorite opensource microblogging software that built with PHP/MYSQL. Sharetronix enables people to exchange ideas and multimedia in real-time. Each Sharetronix user has a custom profile with detailed personal information, plus their network activity, groups, personal tags and more.</p>
+
+<h2>6. P2 MICROBLOGGING WORDPRESS THEME</h2>
+
+<p><img class="<a" src="href="http://i2.wp.com/smashfreakz.com/wp-content/uploads/2012/05/p2-wordpress-microblogging-theme.jpg?resize=480%2C210">http://i2.wp.com/smashfreakz.com/wp-content/uploads/2012/05/p2-wordpress-microblogging-theme.jpg?resize=480%2C210</a>&#8221;>
+<a href="http://p2theme.com/">http://p2theme.com/</a>
+P2 is a wordpress theme that transforms a standard wordpress website into microblogging website . This theme come with features like inline comments, a posting form right on the homepage, inline editing , real-time updates, and more.</p>
+
+<h2>7. ECHOWAVES MICROBLOGGING SOFTWARE</h2>
+
+<p><img class="<a" src="href="http://i2.wp.com/smashfreakz.com/wp-content/uploads/2012/05/echowaves-ruby-microblogging-software.jpg?resize=481%2C218">http://i2.wp.com/smashfreakz.com/wp-content/uploads/2012/05/echowaves-ruby-microblogging-software.jpg?resize=481%2C218</a>&#8221;>
+<a href="https://github.com/echowaves/echowaves">https://github.com/echowaves/echowaves</a>
+EchoWaves  is a Ruby on Rails open source microblogging software script. EchoWaves is a collaboration tool and a social network. EchoWaves is as powerful as Facebook, as simple to use as Twitter and as real-time as Meebo.</p>
+
+<h2>8. GELATO TUMBLELOG CMS</h2>
+
+<p><img class="<a" src="href="http://i1.wp.com/smashfreakz.com/wp-content/uploads/2012/05/gelato-cms-tumblr-clone.jpg?resize=480%2C150">http://i1.wp.com/smashfreakz.com/wp-content/uploads/2012/05/gelato-cms-tumblr-clone.jpg?resize=480%2C150</a>&#8221;>
+<a href="http://www.gelatocms.com/">http://www.gelatocms.com/</a>
+Gelato is a tumblelog CMS built on AJAX, PHP and MySQL. it can be used to make tublr clone. You install Gelato CMS on your own web hosting and start tumbling. Gelato also supports themes and plugin.</p>
+
+<h2>9. MINITWITTER</h2>
+
+<p><img class="<a" src="href="http://i0.wp.com/smashfreakz.com/wp-content/uploads/2012/05/mini-twitter-microblogging-software.jpg?resize=481%2C267">http://i0.wp.com/smashfreakz.com/wp-content/uploads/2012/05/mini-twitter-microblogging-software.jpg?resize=481%2C267</a>&#8221;>
+<a href="http://www.twotwitter.com/minitwitter/">http://www.twotwitter.com/minitwitter/</a>
+With Minitwitter you can have a private twitter for all the members of your business. Sometimes you wont show all the things you are doing to twitter.</p>
+
+<h2>10. SWEETTER</h2>
+
+<p><img class="<a" src="href="http://i1.wp.com/smashfreakz.com/wp-content/uploads/2012/05/sweetter-phyton-microblogging-software.jpg?resize=481%2C291">http://i1.wp.com/smashfreakz.com/wp-content/uploads/2012/05/sweetter-phyton-microblogging-software.jpg?resize=481%2C291</a>&#8221;>
+<a href="https://code.launchpad.net/sweetter">https://code.launchpad.net/sweetter</a>
+Sweetter is an opensource Twitter-like service that built with python. You can write whatever you want, if the crowd doesn’t like your posts, you can lose karma points.</p>
+
+<h2>11. TYPEPAD MOTION MICROBLOGGING SOFTWARE</h2>
+
+<p><img class="<a" src="href="http://i0.wp.com/smashfreakz.com/wp-content/uploads/2012/05/TypePad-Motion.jpg?resize=480%2C218">http://i0.wp.com/smashfreakz.com/wp-content/uploads/2012/05/TypePad-Motion.jpg?resize=480%2C218</a>&#8221;>
+<a href="http://www.typepad.com/go/motion/">http://www.typepad.com/go/motion/</a>
+TypePad Motion is awasome microblogging software that built with Python. It enables publishers to create communities that deepen loyalty with phyton</p>
+
+<h2>12. STORYTLR</h2>
+
+<p><img class="<a" src="href="http://i0.wp.com/smashfreakz.com/wp-content/uploads/2012/05/storytlr-open-source-microblogging-software.jpg?resize=480%2C182">http://i0.wp.com/smashfreakz.com/wp-content/uploads/2012/05/storytlr-open-source-microblogging-software.jpg?resize=480%2C182</a>&#8221;>
+<a href="http://storytlr.org/">http://storytlr.org/</a>
+Storytlr is an open source lifestreaming and microblogging software. You can easily post anything you find interesting, import your web 2.0 stuff and share your life online.</p>
+]]></content>
+  </entry>
+  
+</feed>

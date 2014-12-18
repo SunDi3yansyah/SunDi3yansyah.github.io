@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ruby | SunDi3yansyah]]></title>
+  <link href="http://sundi3yansyah.com/article/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2014-12-17T06:26:49+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
+  <author>
+    <name><![CDATA[SunDi3yansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Membuat Blog Jekyll Dalam Waktu Kurang Dari 1 Menit]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/"/>
+    <updated>2014-11-14T03:50:42+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit</id>
+    <content type="html"><![CDATA[<p><img class="center <a" src="href="https://lh4.googleusercontent.com/-xCp6nD01yA8/VGUb4oM55iI/AAAAAAAAAHM/0Hse4vDTwHk/s800/Screenshot+from+2014-11-14+04:00:02.png">https://lh4.googleusercontent.com/-xCp6nD01yA8/VGUb4oM55iI/AAAAAAAAAHM/0Hse4vDTwHk/s800/Screenshot+from+2014-11-14+04:00:02.png</a>&#8221; title=&#8221;&lsquo;jekyll&rsquo; &lsquo;jekyll&rsquo;&#8221; ></p>
+
+<p><blockquote><p>Jekyll is an open source program, written in Ruby by Tom Preston-Werner, GitHub&rsquo;s co-founder. Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. It is a file-based CMS; instead of using databases, Jekyll takes the content, renders Markdown or Textile and Liquid templates, and produces a complete, static website ready to be served by Apache HTTP Server, Nginx or another web server.[1] Jekyll is the engine behind GitHub Pages,[2] a GitHub feature that allows users to host websites based on their GitHub repositories.</p><footer><strong>en.wikipedia <a href="http://en.wikipedia.org/wiki/Jekyll_">http://en.wikipedia.org/wiki/Jekyll_</a>(software) Jekyll (software)</strong></footer></blockquote></p>
+
+<!-- more -->
+
+
+<p><blockquote><p>Jekyll merupakan open source program yang ditulis dalam Ruby oleh Tom Preston-Werner , GitHub yang co-founder. Jekyll adalah, sederhana blog -aware, situs statis generator situs pribadi, proyek, atau organisasi. Ini adalah file berbasis CMS ; alih-alih menggunakan database , Jekyll mengambil konten, membuat penurunan harga atau tekstil dan template Liquid , dan menghasilkan lengkap, website statis siap disajikan oleh Apache HTTP Server , Nginx atau server web lain. [ 1 ] Jekyll adalah mesin belakang GitHub Pages , [ 2 ] fitur GitHub yang memungkinkan pengguna untuk meng-host situs web berdasarkan repositori GitHub mereka.</p><footer><strong>id.wikipedia <a href="http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/">http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/</a> wikipedia version google translate</strong></footer></blockquote></p>
+
+<p>Terdengar aneh dengan judul ini? Yup&hellip;emang benar bikin blog pakai jekyll cepat sekali gk sampe 1 menit udah jadi selanjutnya kita rancang sendiri, semacam framework begitu bray<img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >&hellip;</p>
+
+<p>Asumsikan:</p>
+
+<ol>
+<li><a href="http://sundi3yansyah.com/article/categories/ruby/">Sudah install Ruby</a></li>
+<li><a href="http://sundi3yansyah.com/article/categories/ruby/">Sudah install RubyGems</a></li>
+<li>Sudah install jekyll <code>gem install jekyll</code></li>
+</ol>
+
+
+<p>Oke langcung ajah eak&hellip; :*</p>
+
+<h4>Install jekyll dari gems, jika belum kalian install</h4>
+
+<p><figure class='code'><figcaption><span>install jekyll </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>gem install jekyll
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Jika sudah install jekyll ya gk usah di install lg, mungkin perlu upgrade atau mau downgrade versi :v</p>
+
+<p>Asumsikan posisi saya ada di <code>/home/user/</code></p>
+
+<p>Saya akan membuat blog jekyll baru dengan folder <code>nggak-ada-1-menit</code><img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >maka:</p>
+
+<p><figure class='code'><figcaption><span>new jekyll blog </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>jekyll new nggak-ada-1-menit
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p><figure class='code'><figcaption><span>masuk ke foldernya </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nb">cd </span>nggak-ada-1-menit
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p><figure class='code'><figcaption><span>jalankan generate jekyll </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>jekyll serve
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Sebagai contoh:</p>
+
+<p><img class="center <a" src="href="https://lh5.googleusercontent.com/-VL7L0G8CoF0/VGUe7dueORI/AAAAAAAAAHw/ainRVh7_vxc/s800/Screenshot+from+2014-11-14+04:10:42.png">https://lh5.googleusercontent.com/-VL7L0G8CoF0/VGUe7dueORI/AAAAAAAAAHw/ainRVh7_vxc/s800/Screenshot+from+2014-11-14+04:10:42.png</a>&#8221; title=&#8221;&lsquo;buat jekyll blog&rsquo; &lsquo;buat jekyll blog&rsquo;&#8221; ></p>
+
+<p>Sekarang buka browser dan arahkan address bar ke <a href="http://localhost:4000">http://localhost:4000</a></p>
+
+<p>Hasilnya:</p>
+
+<p><img class="center <a" src="href="https://lh4.googleusercontent.com/-8eXMgIjNcds/VGUe7Zj7bkI/AAAAAAAAAH0/Yqu9YmhoTqk/s800/Screenshot+from+2014-11-14+04:12:21.png">https://lh4.googleusercontent.com/-8eXMgIjNcds/VGUe7Zj7bkI/AAAAAAAAAH0/Yqu9YmhoTqk/s800/Screenshot+from+2014-11-14+04:12:21.png</a>&#8221; title=&#8221;&lsquo;hasil generate jekyll&rsquo; &lsquo;hasil generate jekyll&rsquo;&#8221; ></p>
+
+<p>Atau bisa melihat video dibawah ini:</p>
+
+<script type="text/javascript" src="https://asciinema.org/a/14165.js" id="asciicast-14165" async></script>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install RubyGems]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/09/11/cara-install-rubygems/"/>
+    <updated>2014-09-11T00:24:50+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/09/11/cara-install-rubygems</id>
+    <content type="html"><![CDATA[<p>Apa itu RubyGems?
+<blockquote><p>RubyGems is a package manager for the Ruby programming language that provides a standard format for distributing Ruby programs and libraries (in a self-contained format called a &ldquo;gem&rdquo;), a tool designed to easily manage the installation of gems, and a server for distributing them. It is analogous to pip for the Python programming language. RubyGems was created in about November 2003 and is now part of the standard library from Ruby version 1.9.</p><footer><strong>RubyGems <a href="http://en.wikipedia.org/wiki/RubyGems">http://en.wikipedia.org/wiki/RubyGems</a> RubyGems - Wikipedia</strong> <cite>The Free Encyclopedia</cite></footer></blockquote></p>
+
+<!-- more -->
+
+
+<p>Paham&hellip;??? Jadi RubyGems itu adalah perpustakaan yang di ditrubusikan dari bahasa pemrograman Ruby, dan di dalam Gems tersebut banyak sekali perpustakaan yang bisa kita install.</p>
+
+<h4>Install RubyGems</h4>
+
+<p>Pertama buka halaman rubygems disini <a href="https://rubygems.org/pages/download">https://rubygems.org/pages/download</a></p>
+
+<p>Dan sorot ke URL <code>TGZ</code> kemudian kita download, misalnya gems saat ini versi <code>2.4.1</code> maka:
+<code>
+wget http://production.cf.rubygems.org/rubygems/rubygems-2.4.1.tgz
+</code>
+Jika sudah, sekarang kita buka arsipnya
+<code>
+tar zxvf rubygems-2.4.1.tgz
+</code>
+Maka arsip tadi akan menghasilkan folder yang bernama <code>rubygems-2.4.1</code>, sekarang kita masuk ke foldernya
+<code>
+cd rubygems-2.4.1
+</code>
+Saatnya kita lakukan eksekusi file setup
+<code>
+ruby setup.rb
+</code>
+Jika sudah, coba kita verfikasi dan lihat versi Gems kita dengan command sebagai berikut
+<code>
+gem -v
+</code>
+atau
+<code>
+gem --version
+</code></p>
+
+<p>Nah sampai disini kita bisa menginstall apapun yang ada di perpustakaan Gems yang di distribusikan di bahasa pemrograman Ruby.</p>
+
+<p>Misalnya saya mau</p>
+
+<p>Install Rails
+<code>
+gem install rails
+</code>
+Install Bundler
+<code>
+gem install bundler
+</code></p>
+
+<p>Dan masih banyak lagi. Kalian bisa browsing disni <a href="https://rubygems.org/gems/">https://rubygems.org/gems/</a></p>
+
+<p>Nah sampai disinilah postingan <strong>SunDi3yansyah</strong> kali ini ^_^</p>
+
+<p>Udah ah mau keluar</p>
+
+<pre><code>exit
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Ruby Di CentOS]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/09/10/cara-install-ruby-di-centos/"/>
+    <updated>2014-09-10T23:57:17+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/09/10/cara-install-ruby-di-centos</id>
+    <content type="html"><![CDATA[<p>Pada kesempatan kali ini saya akan mencoba untuk membagi pengalamn saya menggunakan CentOS Server maupun CentOS Dektop untuk menggunakan ruby, secara default ruby di turunan RPM belum terinstall maka kita akan menginstallnya terlebih dahulu sebelum memulai coding script ruby kita. Sebenarnya tidak jauh dari cara menginstall ruby di turunan DEB yaitu Debian/Ubuntu, tapi apa salahnya ya kan jika saya akan membagi pengalaman saya disini, ini murni apa yang saya lakukan di Server CentOS saya dan di Laptop Desktop CentOS saya.</p>
+
+<!-- more -->
+
+
+<p>Langung saja buka shell Terminal kalian.</p>
+
+<p>Sebelum kita menginstall rubynya kita install dulu dependensi untuk menginstall rubynya nanti.
+<code>
+yum -y install gcc g++ make automake zlib-devel curl-devel openssl-devel httpd-devel apr-devel apr-util-devel autoconf sqlite-devel
+</code>
+<code>
+sudo yum install ruby-rdoc ruby-devel
+</code>
+Sudah? Kalau sudah selesai kalain buka ini <a href="https://www.ruby-lang.org/en/downloads/"><a href="https://www.ruby-lang.org/en/downloads/">https://www.ruby-lang.org/en/downloads/</a></a></p>
+
+<p><img class="<a" src="href="http://i40.photobucket.com/albums/e228/sundi3yansyah/L2ry8bb_zps48c28ea5.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/L2ry8bb_zps48c28ea5.png</a>&#8221; title=&#8221;downloads ruby&#8221; ></p>
+
+<p>Dan pilih versi yang kalain inginkan, dan download.</p>
+
+<p>Downloadnya bisa menggunakan wget atau melalu browser, jika menggunakan wget misalnya.</p>
+
+<pre><code>wget http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.5.tar.gz
+</code></pre>
+
+<p>Dan balik lagi ke terminal masuk ke directori dimana file Ruby kalian berada, kemudian di buka arsipnya.
+<code>
+tar zxvf ruby-*.tar.gz
+</code>
+Masuk ke Direktori rubynya
+<code>
+cd ruby-*
+</code>
+Kemudian kita compiling
+<code>
+./configure
+</code>
+<code>
+make
+</code>
+<code>
+make install
+</code>
+Note: Jika terjadi <code>Permission denied</code> lakukan dengan <code>sudo</code></p>
+
+<p>Jika sudah semua coba kita verfikasi dan lihat versi ruby kita dengan command sebagai berikut
+<code>
+ruby -v
+</code>
+atau
+<code>
+riby --version
+</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Membuat Plugin Kategori List Di Sidebar Octopress]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/07/03/cara-membuat-plugin-kategori-list-di-sidebar-octopress/"/>
+    <updated>2014-07-03T21:24:46+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/07/03/cara-membuat-plugin-kategori-list-di-sidebar-octopress</id>
+    <content type="html"><![CDATA[<p>Pertama kita perlu menulis kode ruby ​​sedikit. Menambahkan file ke direktori plugin yang disebut <code>category_list_tag.rb</code>. Plug-in ini akan mengambil data kategori dari situs dan menghasilkan daftar item untuk setiap kategori. Pada line 17 tag <code>category_list</code> tersedia untuk liquid template engine (Lihat code di bawah).</p>
+
+<p>Pertaman buat file baru menggunakan editor kesukaan kalian, dan isi code Ruby nya seperti ini:</p>
+
+<!-- more -->
+
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah - category_list_tag.rb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="k">module</span> <span class="nn">Jekyll</span>
+</span><span class='line'>  <span class="k">class</span> <span class="nc">CategoryListTag</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="no">Liquid</span><span class="o">::</span><span class="no">Tag</span>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+</span><span class='line'>      <span class="n">html</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span>
+</span><span class='line'>      <span class="n">categories</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">registers</span><span class="o">[</span><span class="ss">:site</span><span class="o">].</span><span class="n">categories</span><span class="o">.</span><span class="n">keys</span>
+</span><span class='line'>      <span class="n">categories</span><span class="o">.</span><span class="n">sort</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">category</span><span class="o">|</span>
+</span><span class='line'>        <span class="n">posts_in_category</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">registers</span><span class="o">[</span><span class="ss">:site</span><span class="o">].</span><span class="n">categories</span><span class="o">[</span><span class="n">category</span><span class="o">].</span><span class="n">size</span>
+</span><span class='line'>        <span class="n">category_dir</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">registers</span><span class="o">[</span><span class="ss">:site</span><span class="o">].</span><span class="n">config</span><span class="o">[&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">category_dir</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span><span class="o">]</span>
+</span><span class='line'>        <span class="n">category_url</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">category_dir</span><span class="p">,</span> <span class="n">category</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="sr">/_|\P{Word}/</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">-&amp;</span><span class="n">rsquo</span><span class="p">;)</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="sr">/-{2,}/</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">-&amp;</span><span class="n">rsquo</span><span class="p">;)</span><span class="o">.</span><span class="n">downcase</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">html</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">&lt;</span><span class="n">li</span> <span class="n">class</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s1">&#39;http://sundi3yansyah.com/#{category_url}/&#39;</span><span class="o">&gt;</span><span class="c1">#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n&amp;rdquo;</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>      <span class="n">html</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;Liquid::Template.register_tag(&amp;lsquo;category_list&amp;rsquo;, Jekyll::CategoryListTag)</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Sekarang kita perlu membuat daftar kategori (category_list.html) template di dalam direktori <code>source/_includes/asides</code>, dengan menggunakan &ldquo;category_list&rdquo; tag dari plug-in di atas.</p>
+
+<p>Buat file baru di <code>source/_includes/asides</code> dengan nama <code>category_list.html</code> dengan isi code sebagi berikut:</p>
+
+<p><img class="<a" src="href="http://i40.photobucket.com/albums/e228/sundi3yansyah/category_list_zps7b19c7f9.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/category_list_zps7b19c7f9.png</a>&#8221; title=&#8221;category list&#8221; ></p>
+
+<p>Kemudian yang terakhir adalah meng-edit file <code>_config.yml</code> cari kode berikut ini:</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>default_asides</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Tambahkan <code>asides/category_list.html</code> ke dalam daftar asides-nya, misalnya punya saya seperti ini:</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah - _config.yml </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">default_asides</span><span class="p-Indicator">:</span> <span class="p-Indicator">[</span><span class="nv">asides/recent_posts.html</span><span class="p-Indicator">,</span> <span class="nv">asides/github.html</span><span class="p-Indicator">,</span> <span class="nv">asides/delicious.html</span><span class="p-Indicator">,</span> <span class="nv">asides/pinboard.html</span><span class="p-Indicator">,</span> <span class="nv">asides/googleplus.html</span><span class="p-Indicator">,</span> <span class="nv">asides/category_list.html</span><span class="p-Indicator">]</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Terakhir memperhabarui dengan perintah rake supaya kita bisa melihat hasilnya</p>
+
+<p>Jika di lokal server</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake preview</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Jika di server seprti GitHub atau yang lainnya.</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Maka hasilnya seperti ini kalau punya saya:</p>
+
+<p><img class="<a" src="href="http://i40.photobucket.com/albums/e228/sundi3yansyah/category_list_sundi3yansyah-labs_zps22bf2717.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/category_list_sundi3yansyah-labs_zps22bf2717.png</a>&#8221; title=&#8221;sundi3yansyah category list&#8221; ></p>
+
+<p>Good Luck&hellip;! Happy coding, happy hacking, happy homoer :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Dan Compile Ruby via Tarball Di Debian/Ubuntu]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/07/03/cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu/"/>
+    <updated>2014-07-03T03:21:25+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/07/03/cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu</id>
+    <content type="html"><![CDATA[<p>Banyak cara untuk meng-Install Ruby, tapi kali ini saya akan mengInsall Ruby menggunakan Tarball ini apa yang saya lakukan di Komputer saya, saya menggunakan Ruby versi 1.9.3 jika kalian ingin menginstall di versi atasnya juga gpp tutorial ini teteap berlaku untuk versi berapa saja dan ini saya menggunakan Sistem Operasi Debian/Ubuntu.</p>
+
+<p>Langsung saja buka terminal.
+Pertama kita perlu menginstal beberapa development tools dan libraries yang Ruby perlu untuk mengkompilasi.</p>
+
+<!-- more -->
+
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install build-essential vim git-core curl</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Lanjut&hellip;</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install bison openssl libreadline6 libreadline6-dev zlib1g zlib1g-dev libssl-dev libyaml-dev libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Lanjut&hellip;</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install libcurl4-openssl-dev libopenssl-ruby apache2-prefork-dev libapr1-dev libaprutil1-dev</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Lanjut&hellip;</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install libx11-dev libffi-dev tcl-dev tk-dev</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Sudah? Kalau sudah selesai kalain buka ini <a href="https://www.ruby-lang.org/en/downloads/"><a href="https://www.ruby-lang.org/en/downloads/">https://www.ruby-lang.org/en/downloads/</a></a></p>
+
+<p><img class="<a" src="href="http://i40.photobucket.com/albums/e228/sundi3yansyah/L2ry8bb_zps48c28ea5.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/L2ry8bb_zps48c28ea5.png</a>&#8221; title=&#8221;downloads ruby&#8221; ></p>
+
+<p>Dan pilih versi yang kalain inginkan, dan download.</p>
+
+<p>Downloadnya bisa menggunakan wget atau melalu browser, jika menggunakan wget misalnya.</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget &lt;a href="http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz">http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz&lt;/a></span></code></pre></td></tr></table></div></figure></p>
+
+<p>Dan balik lagi ke terminal masuk ke directori dimana file Ruby kalian berada, kemudian di buka arsipnya.</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>tar -xvf ruby-*.tar.gz&lt;br/></span></code></pre></td></tr></table></div></figure></p>
+
+<p>Kemudian masuk ke folder rubynya</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ruby-*</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Kemudian jalankan ini, bila perlu kalian baca-baca dulu <code>README.md</code> kalau gk butuh membaca ya lanjut lagi.</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>./configure</span></code></pre></td></tr></table></div></figure></p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>make</span></code></pre></td></tr></table></div></figure></p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>make test</span></code></pre></td></tr></table></div></figure></p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>make install</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Lanjut&hellip;!
+Install Bundler</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install bundler</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Butuh Rails nggak? ya kalau yang mau main rails silakan install. (Proses membutuhkan waktu kurang lebih 10menit, tergantung koneksi)</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install rails</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Kalau mau cari <code>gems</code> nya disini: <a href="https://rubygems.org/gems/">https://rubygems.org/gems/</a></p>
+
+<p>Selesai sudah, yuk keluar.</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>exit</span></code></pre></td></tr></table></div></figure></p>
+]]></content>
+  </entry>
+  
+</feed>

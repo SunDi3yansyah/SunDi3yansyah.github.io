@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Rails | SunDi3yansyah]]></title>
+  <link href="http://sundi3yansyah.com/article/categories/rails/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2014-12-17T06:26:49+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
+  <author>
+    <name><![CDATA[SunDi3yansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Dan Compile Ruby via Tarball Di Debian/Ubuntu]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/07/03/cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu/"/>
+    <updated>2014-07-03T03:21:25+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/07/03/cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu</id>
+    <content type="html"><![CDATA[<p>Banyak cara untuk meng-Install Ruby, tapi kali ini saya akan mengInsall Ruby menggunakan Tarball ini apa yang saya lakukan di Komputer saya, saya menggunakan Ruby versi 1.9.3 jika kalian ingin menginstall di versi atasnya juga gpp tutorial ini teteap berlaku untuk versi berapa saja dan ini saya menggunakan Sistem Operasi Debian/Ubuntu.</p>
+
+<p>Langsung saja buka terminal.
+Pertama kita perlu menginstal beberapa development tools dan libraries yang Ruby perlu untuk mengkompilasi.</p>
+
+<!-- more -->
+
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install build-essential vim git-core curl</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Lanjut&hellip;</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install bison openssl libreadline6 libreadline6-dev zlib1g zlib1g-dev libssl-dev libyaml-dev libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Lanjut&hellip;</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install libcurl4-openssl-dev libopenssl-ruby apache2-prefork-dev libapr1-dev libaprutil1-dev</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Lanjut&hellip;</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install libx11-dev libffi-dev tcl-dev tk-dev</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Sudah? Kalau sudah selesai kalain buka ini <a href="https://www.ruby-lang.org/en/downloads/"><a href="https://www.ruby-lang.org/en/downloads/">https://www.ruby-lang.org/en/downloads/</a></a></p>
+
+<p><img class="<a" src="href="http://i40.photobucket.com/albums/e228/sundi3yansyah/L2ry8bb_zps48c28ea5.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/L2ry8bb_zps48c28ea5.png</a>&#8221; title=&#8221;downloads ruby&#8221; ></p>
+
+<p>Dan pilih versi yang kalain inginkan, dan download.</p>
+
+<p>Downloadnya bisa menggunakan wget atau melalu browser, jika menggunakan wget misalnya.</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget &lt;a href="http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz">http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz&lt;/a></span></code></pre></td></tr></table></div></figure></p>
+
+<p>Dan balik lagi ke terminal masuk ke directori dimana file Ruby kalian berada, kemudian di buka arsipnya.</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>tar -xvf ruby-*.tar.gz&lt;br/></span></code></pre></td></tr></table></div></figure></p>
+
+<p>Kemudian masuk ke folder rubynya</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ruby-*</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Kemudian jalankan ini, bila perlu kalian baca-baca dulu <code>README.md</code> kalau gk butuh membaca ya lanjut lagi.</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>./configure</span></code></pre></td></tr></table></div></figure></p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>make</span></code></pre></td></tr></table></div></figure></p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>make test</span></code></pre></td></tr></table></div></figure></p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>make install</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Lanjut&hellip;!
+Install Bundler</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install bundler</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Butuh Rails nggak? ya kalau yang mau main rails silakan install. (Proses membutuhkan waktu kurang lebih 10menit, tergantung koneksi)</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install rails</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Kalau mau cari <code>gems</code> nya disini: <a href="https://rubygems.org/gems/">https://rubygems.org/gems/</a></p>
+
+<p>Selesai sudah, yuk keluar.</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>exit</span></code></pre></td></tr></table></div></figure></p>
+]]></content>
+  </entry>
+  
+</feed>

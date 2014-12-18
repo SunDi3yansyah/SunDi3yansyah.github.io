@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Centos | SunDi3yansyah]]></title>
+  <link href="http://sundi3yansyah.com/article/categories/centos/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2014-12-17T06:26:49+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
+  <author>
+    <name><![CDATA[SunDi3yansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Atau Upgrade Python Di CentOS]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/11/27/cara-install-atau-upgrade-python-di-centos/"/>
+    <updated>2014-11-27T17:18:37+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/11/27/cara-install-atau-upgrade-python-di-centos</id>
+    <content type="html"><![CDATA[<p>Pertama tampulkan dulu versi python yang sekarang
+<code>sh
+python --version
+</code>
+Jika versi di bawah 2.7.8 maka itu sudah kuno dan sudah saatnya di update <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+
+<!--more-->
+
+
+<p>update dulu systemnya</p>
+
+<pre><code class="sh">yum -y update
+</code></pre>
+
+<p>install development tools
+<code>sh
+yum groupinstall -y 'development tools'
+</code>
+setelah itu install depensi yang di butuhkan
+<code>sh
+yum install -y zlib-devel bzip2-devel openssl-devel xz-libs sqlite-devel
+</code>
+download python-nya, dan pilih salah satu saja.
+version 2.7.6
+<code>sh
+wget http://www.python.org/ftp/python/2.7.6/Python-2.7.6.tar.xz
+</code>
+version 3.3.3
+<code>sh
+wget http://www.python.org/ftp/python/3.3.3/Python-3.3.3.tar.xz
+</code></p>
+
+<p>kemudian di buka arsipnya
+<code>sh
+xz -d Python-*.tar.xz
+</code>
+<code>sh
+tar -xvf Python-*.tar
+</code>
+masuk ke direktorinya
+<code>sh
+cd Python-*
+</code>
+jalankan configure nya
+<code>sh
+./configure --prefix=/usr/local
+</code>
+lakukan compile, ini akan membutuhkan waktu yang lumayan lama <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; >
+<code>sh
+make
+</code>
+dan install
+<code>sh
+make altinstall
+</code>
+jika sudah selesai maka coba kita lihat versinya
+<code>sh
+python -V
+</code></p>
+
+<p>Mudah bukan <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+
+<p>Jika belum juga berubah dan tidak muncul output dengan versi yang kita compile tadi maka lakukan dengan menambah Environment Variable, anda bisa cari artikel saya sebelumnya <strong>Cara Menambah Environment Variable pada Linux</strong></p>
+
+<pre><code class="sh">exit
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Menambah Virtual Hosts Di Nginx]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx/"/>
+    <updated>2014-11-25T04:48:12+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx</id>
+    <content type="html"><![CDATA[<p>Kalau sebelumnya saya sudah menejalaskan tentang <a href="/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/">Cara Install Nginx, MySQL, PHP Di CentOS</a>, sekarang bagaimana jika kita ingin menambahkan domain kita ke server yang pada tempo lalu sudah di install NGINX dan kawan-kawannya? Yah&hellip; tulisan &amp; video di bawah ini yang akan menjawab, ini real saya praktekan langsung di domain saya, namun nama domain tsb adalah nama Nick teman saya <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+
+<p>Langsung saja ke videonya.</p>
+
+<!--more-->
+
+
+<script type="text/javascript" src="https://asciinema.org/a/14192.js" id="asciicast-14192" async></script>
+
+
+<p>Anda bisa melihat command line di bawah ini untuk mengikuti dari recorder di atas.</p>
+
+<p>Direktori root bisa dimana saja, silakan disesuaikan</p>
+
+<pre><code>mkdir -p /srv/www/formatdongkrak.com/logs
+</code></pre>
+
+<p>for security secure, keep using chown root</p>
+
+<pre><code>nano /etc/php.ini
+</code></pre>
+
+<p>press on the keyboard <code>CTRL+W</code>
+find
+<code>
+cgi.fix_pathinfo
+</code>
+you will see like this
+<code>
+;cgi.fix_pathinfo=0
+</code>
+replace
+<code>
+cgi.fix_pathinfo=0
+</code></p>
+
+<pre><code>mkdir /etc/nginx/sites-available
+</code></pre>
+
+<pre><code>mkdir /etc/nginx/sites-enabled
+</code></pre>
+
+<pre><code>nano /etc/nginx/nginx.conf
+</code></pre>
+
+<p>add the code below, to the bottom before the closing <code>}</code>
+<code>
+include /etc/nginx/sites-enabled/*;
+</code></p>
+
+<pre><code>nano /etc/nginx/sites-available/formatdongkrak.com
+</code></pre>
+
+<pre><code>server {
+    server_name formatdongkrak.com;
+    access_log /srv/www/formatdongkrak.com/logs/access.log;
+    error_log /srv/www/formatdongkrak.com/logs/error.log;
+    root /srv/www/formatdongkrak.com;
+
+    location / {
+        index index.php index.html index.htm;
+    }
+    location ~ .php$ {
+        include fastcgi_params;
+        fastcgi_pass  127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_buffer_size 16k;
+        fastcgi_buffers 4 16k;
+    }
+}
+</code></pre>
+
+<pre><code>cd /etc/nginx/sites-enabled/
+</code></pre>
+
+<pre><code>ln -s /etc/nginx/sites-available/formatdongkrak.com
+</code></pre>
+
+<pre><code>service nginx restart
+</code></pre>
+
+<pre><code>nano /srv/www/formatdongkrak.com/info.php
+</code></pre>
+
+<p>If permission denied
+<code>
+cd /srv/www
+</code>
+<code>
+find . -type d | while read folder ; do chmod 755 "$folder" ; done
+</code>
+<code>
+find . -type f | while read file ; do chmod 644 "$file" ; done
+</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Nginx, MySQL, PHP Di CentOS]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/"/>
+    <updated>2014-11-25T04:17:41+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos</id>
+    <content type="html"><![CDATA[<p>Pada artikel sebelumnya saya sudah menjelaskan tentang <a href="/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13/">Install LEMP Di CentOS 5-6 Dan Fedora 18-13</a>, namun disini saya akan menjabarkan lebih datail <strong>Cara Install Nginx, MySQL, PHP di CentOS</strong> menggunakan recorder.</p>
+
+<h4>Requirements</h4>
+
+<ul>
+<li> CentOS 6.*</li>
+<li> Architecture i386, x86_64</li>
+</ul>
+
+
+<p>Silakan di simak, recordernya. Remi repositorinya menyesuikan arsitektur OS yang kalian pakai</p>
+
+<!--more-->
+
+
+<script type="text/javascript" src="https://asciinema.org/a/14190.js" id="asciicast-14190" async></script>
+
+
+<p>Anda bisa melihat command line di bawah ini untuk mengikuti dari recorder di atas.</p>
+
+<p>64bit / x86_x64
+<code>
+rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+</code>
+32bit / i386
+<code>
+rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+</code></p>
+
+<p>Jika gagal download silakan menggunakan mirror, ganti <code>dl.fedoraproject.org</code> dengan <code>download.fedoraproject.org</code> tapi tetap hati-hati menggunakan mirror, takut terjadi gagal atau repositorinya 404, lanjutkan dibawah ini:</p>
+
+<pre><code>rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+</code></pre>
+
+<pre><code>nano /etc/yum.repos.d/nginx.repo
+</code></pre>
+
+<pre><code>[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=0
+enabled=1
+</code></pre>
+
+<pre><code>yum --enablerepo=remi,remi-test install nginx mysql mysql-server php php-common php-fpm
+</code></pre>
+
+<pre><code>yum --enablerepo=remi,remi-test install php-mysql php-pgsql php-sqlite php-pecl-memcache php-gd php-mbstring php-mcrypt php-xml php-pecl-apc php-cli php-pear php-pdo
+</code></pre>
+
+<pre><code>chkconfig --levels 235 httpd off
+</code></pre>
+
+<pre><code>service httpd stop
+</code></pre>
+
+<pre><code>chkconfig --add nginx
+</code></pre>
+
+<pre><code>chkconfig --add mysqld
+</code></pre>
+
+<pre><code>chkconfig --add php-fpm
+</code></pre>
+
+<pre><code>chkconfig --levels 235 nginx on
+</code></pre>
+
+<pre><code>chkconfig --levels 235 mysqld on
+</code></pre>
+
+<pre><code>chkconfig --levels 235 php-fpm on
+</code></pre>
+
+<pre><code>service nginx start
+</code></pre>
+
+<pre><code>service mysqld start
+</code></pre>
+
+<p>Konfigurasi MySQL
+<code>
+/usr/bin/mysql_secure_installation
+</code></p>
+
+<pre><code>service php-fpm start
+</code></pre>
+
+<p>Merubah user dan group
+<code>
+nano /etc/php-fpm.d/www.conf
+</code></p>
+
+<pre><code>user = nginx
+group = nginx
+</code></pre>
+
+<pre><code>nano /etc/nginx/conf.d/default.conf
+</code></pre>
+
+<p>Merubah config default server</p>
+
+<pre><code>server {
+    listen 80;
+    server_name DOMAINorIP;
+
+    location / {
+        root   /usr/share/nginx/html;
+        index index.php index.html index.htm;
+    }
+
+    error_page  404              /404.html;
+    location = /404.html {
+        root   /usr/share/nginx/html;
+    }
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+    location ~ \.php$ {
+        root           /usr/share/nginx/html;
+        fastcgi_pass   127.0.0.1:9000;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
+}
+</code></pre>
+
+<p>Selesai merubah config default server</p>
+
+<p>Test php info
+<code>
+nano /usr/share/nginx/html/info.php
+</code></p>
+
+<pre><code>service nginx restart
+</code></pre>
+
+<pre><code>service php-fpm restart
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Ruby Di CentOS]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/09/10/cara-install-ruby-di-centos/"/>
+    <updated>2014-09-10T23:57:17+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/09/10/cara-install-ruby-di-centos</id>
+    <content type="html"><![CDATA[<p>Pada kesempatan kali ini saya akan mencoba untuk membagi pengalamn saya menggunakan CentOS Server maupun CentOS Dektop untuk menggunakan ruby, secara default ruby di turunan RPM belum terinstall maka kita akan menginstallnya terlebih dahulu sebelum memulai coding script ruby kita. Sebenarnya tidak jauh dari cara menginstall ruby di turunan DEB yaitu Debian/Ubuntu, tapi apa salahnya ya kan jika saya akan membagi pengalaman saya disini, ini murni apa yang saya lakukan di Server CentOS saya dan di Laptop Desktop CentOS saya.</p>
+
+<!-- more -->
+
+
+<p>Langung saja buka shell Terminal kalian.</p>
+
+<p>Sebelum kita menginstall rubynya kita install dulu dependensi untuk menginstall rubynya nanti.
+<code>
+yum -y install gcc g++ make automake zlib-devel curl-devel openssl-devel httpd-devel apr-devel apr-util-devel autoconf sqlite-devel
+</code>
+<code>
+sudo yum install ruby-rdoc ruby-devel
+</code>
+Sudah? Kalau sudah selesai kalain buka ini <a href="https://www.ruby-lang.org/en/downloads/"><a href="https://www.ruby-lang.org/en/downloads/">https://www.ruby-lang.org/en/downloads/</a></a></p>
+
+<p><img class="<a" src="href="http://i40.photobucket.com/albums/e228/sundi3yansyah/L2ry8bb_zps48c28ea5.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/L2ry8bb_zps48c28ea5.png</a>&#8221; title=&#8221;downloads ruby&#8221; ></p>
+
+<p>Dan pilih versi yang kalain inginkan, dan download.</p>
+
+<p>Downloadnya bisa menggunakan wget atau melalu browser, jika menggunakan wget misalnya.</p>
+
+<pre><code>wget http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.5.tar.gz
+</code></pre>
+
+<p>Dan balik lagi ke terminal masuk ke directori dimana file Ruby kalian berada, kemudian di buka arsipnya.
+<code>
+tar zxvf ruby-*.tar.gz
+</code>
+Masuk ke Direktori rubynya
+<code>
+cd ruby-*
+</code>
+Kemudian kita compiling
+<code>
+./configure
+</code>
+<code>
+make
+</code>
+<code>
+make install
+</code>
+Note: Jika terjadi <code>Permission denied</code> lakukan dengan <code>sudo</code></p>
+
+<p>Jika sudah semua coba kita verfikasi dan lihat versi ruby kita dengan command sebagai berikut
+<code>
+ruby -v
+</code>
+atau
+<code>
+riby --version
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

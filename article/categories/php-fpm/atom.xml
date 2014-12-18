@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Php-fpm | SunDi3yansyah]]></title>
+  <link href="http://sundi3yansyah.com/article/categories/php-fpm/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2014-12-17T06:26:49+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
+  <author>
+    <name><![CDATA[SunDi3yansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Nginx, MySQL, PHP Di CentOS]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/"/>
+    <updated>2014-11-25T04:17:41+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos</id>
+    <content type="html"><![CDATA[<p>Pada artikel sebelumnya saya sudah menjelaskan tentang <a href="/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13/">Install LEMP Di CentOS 5-6 Dan Fedora 18-13</a>, namun disini saya akan menjabarkan lebih datail <strong>Cara Install Nginx, MySQL, PHP di CentOS</strong> menggunakan recorder.</p>
+
+<h4>Requirements</h4>
+
+<ul>
+<li> CentOS 6.*</li>
+<li> Architecture i386, x86_64</li>
+</ul>
+
+
+<p>Silakan di simak, recordernya. Remi repositorinya menyesuikan arsitektur OS yang kalian pakai</p>
+
+<!--more-->
+
+
+<script type="text/javascript" src="https://asciinema.org/a/14190.js" id="asciicast-14190" async></script>
+
+
+<p>Anda bisa melihat command line di bawah ini untuk mengikuti dari recorder di atas.</p>
+
+<p>64bit / x86_x64
+<code>
+rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+</code>
+32bit / i386
+<code>
+rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+</code></p>
+
+<p>Jika gagal download silakan menggunakan mirror, ganti <code>dl.fedoraproject.org</code> dengan <code>download.fedoraproject.org</code> tapi tetap hati-hati menggunakan mirror, takut terjadi gagal atau repositorinya 404, lanjutkan dibawah ini:</p>
+
+<pre><code>rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+</code></pre>
+
+<pre><code>nano /etc/yum.repos.d/nginx.repo
+</code></pre>
+
+<pre><code>[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=0
+enabled=1
+</code></pre>
+
+<pre><code>yum --enablerepo=remi,remi-test install nginx mysql mysql-server php php-common php-fpm
+</code></pre>
+
+<pre><code>yum --enablerepo=remi,remi-test install php-mysql php-pgsql php-sqlite php-pecl-memcache php-gd php-mbstring php-mcrypt php-xml php-pecl-apc php-cli php-pear php-pdo
+</code></pre>
+
+<pre><code>chkconfig --levels 235 httpd off
+</code></pre>
+
+<pre><code>service httpd stop
+</code></pre>
+
+<pre><code>chkconfig --add nginx
+</code></pre>
+
+<pre><code>chkconfig --add mysqld
+</code></pre>
+
+<pre><code>chkconfig --add php-fpm
+</code></pre>
+
+<pre><code>chkconfig --levels 235 nginx on
+</code></pre>
+
+<pre><code>chkconfig --levels 235 mysqld on
+</code></pre>
+
+<pre><code>chkconfig --levels 235 php-fpm on
+</code></pre>
+
+<pre><code>service nginx start
+</code></pre>
+
+<pre><code>service mysqld start
+</code></pre>
+
+<p>Konfigurasi MySQL
+<code>
+/usr/bin/mysql_secure_installation
+</code></p>
+
+<pre><code>service php-fpm start
+</code></pre>
+
+<p>Merubah user dan group
+<code>
+nano /etc/php-fpm.d/www.conf
+</code></p>
+
+<pre><code>user = nginx
+group = nginx
+</code></pre>
+
+<pre><code>nano /etc/nginx/conf.d/default.conf
+</code></pre>
+
+<p>Merubah config default server</p>
+
+<pre><code>server {
+    listen 80;
+    server_name DOMAINorIP;
+
+    location / {
+        root   /usr/share/nginx/html;
+        index index.php index.html index.htm;
+    }
+
+    error_page  404              /404.html;
+    location = /404.html {
+        root   /usr/share/nginx/html;
+    }
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+    location ~ \.php$ {
+        root           /usr/share/nginx/html;
+        fastcgi_pass   127.0.0.1:9000;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
+}
+</code></pre>
+
+<p>Selesai merubah config default server</p>
+
+<p>Test php info
+<code>
+nano /usr/share/nginx/html/info.php
+</code></p>
+
+<pre><code>service nginx restart
+</code></pre>
+
+<pre><code>service php-fpm restart
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Update Versi LEMP CentOS Dan Fedora]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/09/05/update-versi-lemp-centos-dan-fedora/"/>
+    <updated>2014-09-05T05:47:41+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/09/05/update-versi-lemp-centos-dan-fedora</id>
+    <content type="html"><![CDATA[<h4>update remi: nginx mysql mysql-server php php-common php-fpm <!-- more --></h4>
+
+<pre><code>yum --enablerepo=remi,remi-test update nginx mysql mysql-server php php-common php-fpm
+</code></pre>
+
+<h4>update remi modules PHP</h4>
+
+<pre><code>yum --enablerepo=remi,remi-test update php-mysql php-pgsql php-sqlite php-pecl-memcache php-gd php-mbstring php-mcrypt php-xml php-pecl-apc php-cli php-pear php-pdo
+</code></pre>
+
+<p>Pastikan nginx.repo seperti ini:</p>
+
+<h5>CentOS</h5>
+
+<pre><code>[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=0
+enabled=1
+</code></pre>
+
+<h5>RHEL</h5>
+
+<pre><code>[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/rhel/$releasever/$basearch/
+gpgcheck=0
+enabled=1
+</code></pre>
+
+<p>Tambahan jika  ingin update versi phpMyAdmin-nya</p>
+
+<h4>update phpmyadmin</h4>
+
+<pre><code>yum --enablerepo=remi update phpmyadmin
+</code></pre>
+
+<p>Sudah selesai sudah, jika ada persetujuan YES or NO di YES semua
+<code>
+y
+</code>
+Mudah bukan? <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a</p>
+
+<p>semoga berhasil&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Install LEMP Di CentOS 5-6 Dan Fedora 18-13]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13/"/>
+    <updated>2014-09-03T13:53:06+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13</id>
+    <content type="html"><![CDATA[<p>Apa itu LEMP bukan Lem yang buat nempelin kertas itu
+LEMP itu singkatan dari Linux, EngineX, MySQL, PHP&hellip; Orang-orang senior menyebutnya dengan LEMP Hmmm&hellip; terus Nginx itu apa? Yah gimana ya saya jelasiinya susah banget, mending googling dulu deh asumsikan kita udah ngerti LEMP disini saya menjelaskan untuk System Opreasi di CentOS/RHEL dan Fedora simak aja nanti repository nya untuk masing-masing versi</p>
+
+<!-- more -->
+
+
+<h2>Install Remi Repository on Fedora 18, 17, 16, 15</h2>
+
+<p>Sebelum install Repositorinya cek dulu OS kalian itu apa? nanti jangan di install semua Repo nya bisa ancur servernya cek aja, caranya:</p>
+
+<pre><code class="sh">uname -a
+</code></pre>
+
+<p>atau
+<code>sh
+uname -i
+</code>
+Jelaskan kalau udah jelas Install Remi Repository sesuai OS kalian dibawah ini:</p>
+
+<h4>Fedora</h4>
+
+<pre><code class="sh">rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm
+</code></pre>
+
+<pre><code class="sh">rpm -Uvh http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
+</code></pre>
+
+<h5>Fedora 18</h5>
+
+<pre><code class="sh">rpm -Uvh http://rpms.famillecollet.com/remi-release-18.rpm
+</code></pre>
+
+<h5>Fedora 17</h5>
+
+<pre><code class="sh">rpm -Uvh http://rpms.famillecollet.com/remi-release-17.rpm
+</code></pre>
+
+<h5>Fedora 16</h5>
+
+<pre><code class="sh">rpm -Uvh http://rpms.famillecollet.com/remi-release-16.rpm
+</code></pre>
+
+<h5>Fedora 15</h5>
+
+<pre><code class="sh">rpm -Uvh http://rpms.famillecollet.com/remi-release-15.rpm
+</code></pre>
+
+<h5>Fedora 14</h5>
+
+<pre><code class="sh">rpm -Uvh http://rpms.famillecollet.com/remi-release-14.rpm
+</code></pre>
+
+<h5>Fedora 13</h5>
+
+<pre><code class="sh">rpm -Uvh http://rpms.famillecollet.com/remi-release-13.rpm
+</code></pre>
+
+<h4>RHEL/CentOS 6.3-6.0</h4>
+
+<pre><code class="sh">rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+</code></pre>
+
+<pre><code class="sh">rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+</code></pre>
+
+<h4>RHEL/CentOS 5.4-5.0</h4>
+
+<pre><code class="sh">rpm -Uvh http://dl.fedoraproject.org/pub/epel/5/i386/epel-release-5-4.noarch.rpm
+</code></pre>
+
+<pre><code class="sh">rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-5.rpm
+</code></pre>
+
+<p>Asumsikan saya punya CentOS 6.3, untuk 32bit atau 64bit sama aja maka yang di install reponya seperti ini:
+<code>sh
+rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+</code>
+<code>sh
+rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+</code>
+Kalau sudah buat file baru dengan memasukan perintah seperti ini:
+<code>sh
+nano /etc/yum.repos.d/nginx.repo
+</code></p>
+
+<h6>Isinya seperti ini untuk RHEL 6.3/6.2/6.1/6/5.8</h6>
+
+<p><figure class='code'><figcaption><span>nginx </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[nginx]
+</span><span class='line'>name=nginx repo
+</span><span class='line'>baseurl=&lt;a href="http://nginx.org/packages/rhel/$releasever/$basearch/">http://nginx.org/packages/rhel/$releasever/$basearch/&lt;/a>
+</span><span class='line'>gpgcheck=0
+</span><span class='line'>enabled=1</span></code></pre></td></tr></table></div></figure></p>
+
+<h6>Isinya seperti ini untuk CentOS 6.3/6.2/6.1/6/5.8</h6>
+
+<p><figure class='code'><figcaption><span>nginx </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[nginx]
+</span><span class='line'>name=nginx repo
+</span><span class='line'>baseurl=&lt;a href="http://nginx.org/packages/centos/$releasever/$basearch/">http://nginx.org/packages/centos/$releasever/$basearch/&lt;/a>
+</span><span class='line'>gpgcheck=0
+</span><span class='line'>enabled=1</span></code></pre></td></tr></table></div></figure></p>
+
+<h5>Install Ngnix, MySQL 5.5.29, PHP 5.4.11 &amp; PHP-FPM</h5>
+
+<h6>Fedora 13, 14, 15, 16, 17, 18</h6>
+
+<pre><code class="sh">yum --enablerepo=remi install nginx mysql mysql-server php php-common php-fpm
+</code></pre>
+
+<h6>RHEL/CentOS 5-6</h6>
+
+<pre><code class="sh">yum --enablerepo=remi,remi-test install nginx mysql mysql-server php php-common php-fpm
+</code></pre>
+
+<h5>Install PHP 5.4.11 Modules</h5>
+
+<h6>Fedora 13, 14, 15, 16, 17, 18</h6>
+
+<pre><code class="sh">yum --enablerepo=remi install php-mysql php-pgsql php-sqlite php-pecl-memcache php-gd php-mbstring php-mcrypt php-xml php-pecl-apc php-cli php-pear php-pdo
+</code></pre>
+
+<h6>RHEL/CentOS 5-6</h6>
+
+<pre><code class="sh">yum --enablerepo=remi,remi-test install php-mysql php-pgsql php-sqlite php-pecl-memcache php-gd php-mbstring php-mcrypt php-xml php-pecl-apc php-cli php-pear php-pdo
+</code></pre>
+
+<h5>Matikan Apache</h5>
+
+<pre><code class="sh">chkconfig --levels 235 httpd off
+</code></pre>
+
+<pre><code class="sh">/etc/init.d/httpd stop
+</code></pre>
+
+<h5>Starting/Stopping/Status Nginx MySQL dan PHP-FPM</h5>
+
+<h6>Enable Nginx, MySQL dan PHP-FPM on Boot</h6>
+
+<pre><code class="sh">chkconfig --add nginx
+chkconfig --add mysqld
+chkconfig --add php-fpm
+</code></pre>
+
+<h6>Enable Nginx, MySQL dan PHP-FPM on Run Levels</h6>
+
+<pre><code class="sh">chkconfig --levels 235 nginx on
+chkconfig --levels 235 mysqld on
+chkconfig --levels 235 php-fpm on
+</code></pre>
+
+<h6>Nginx Startup Commands</h6>
+
+<pre><code class="sh">/etc/init.d/nginx start
+/etc/init.d/nginx stop
+/etc/init.d/nginx status
+</code></pre>
+
+<h6>MySQL Startup Commands</h6>
+
+<pre><code class="sh">/etc/init.d/mysqld start
+/usr/bin/mysql_secure_installation
+</code></pre>
+
+<h6>Bagaimana cara configurasi MySQL-Server, cari di forum Kampoeng Server</h6>
+
+<pre><code class="sh">/etc/init.d/mysqld stop
+/etc/init.d/mysqld status
+</code></pre>
+
+<h6>PHP-FPM Startup Commands</h6>
+
+<pre><code class="sh">/etc/init.d/php-fpm start
+/etc/init.d/php-fpm stop
+/etc/init.d/php-fpm status
+</code></pre>
+
+<p>Kalau berjalan semua coba untuk di Start semua
+<code>sh
+/etc/init.d/nginx start
+/etc/init.d/mysqld start
+/etc/init.d/php-fpm start
+</code></p>
+
+<h5>Website Direktori</h5>
+
+<h6>public_html direktori dan logs direktori</h6>
+
+<pre><code class="sh">mkdir -p /srv/www/domain.com/public_html
+mkdir /srv/www/domain.com/logs
+chown -R nginx:nginx /srv/www/domain.com
+</code></pre>
+
+<h5>Website Logs</h5>
+
+<h6>public_html direktori dan logs direktori</h6>
+
+<pre><code class="sh">mkdir -p /srv/www/domain.com/public_html
+mkdir -p /var/log/nginx/domain.com
+chown -R nginx:nginx /srv/www/domain.com
+chown -R nginx:nginx /var/log/nginx
+</code></pre>
+
+<h5>Konfigurasi Virtual Host Direktori</h5>
+
+<pre><code class="sh">mkdir /etc/nginx/sites-available
+mkdir /etc/nginx/sites-enabled
+</code></pre>
+
+<h6>Edit file nginx.conf</h6>
+
+<pre><code class="sh">nano /etc/nginx/nginx.conf
+</code></pre>
+
+<p>Tambahkan code ini:
+<code>sh
+include /etc/nginx/sites-enabled/*;
+</code>
+Sesudah baris ini:
+<code>sh
+include /etc/nginx/conf.d/*.conf;
+</code></p>
+
+<h5>Tambah Konfigurasi Virtual Host dengan Domain</h5>
+
+<p>Asumsikan kita punya <code>domain.com</code>
+<code>sh
+nano /etc/nginx/sites-available/domain.com
+</code>
+<figure class='code'><figcaption><span>domain </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>server {
+</span><span class='line'>    server_name domain.com;
+</span><span class='line'>    access_log /srv/www/domain.com/logs/access.log;
+</span><span class='line'>    error_log /srv/www/domain.com/logs/error.log;
+</span><span class='line'>    root /srv/www/domain.com/public_html;&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>location / {
+</span><span class='line'>    index index.html index.htm index.php;
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>location ~ .php$ {
+</span><span class='line'>    include /etc/nginx/fastcgi_params;
+</span><span class='line'>    fastcgi_pass  127.0.0.1:9000;
+</span><span class='line'>    fastcgi_index index.php;
+</span><span class='line'>    fastcgi_param SCRIPT_FILENAME /srv/www/domain.com/public_html$fastcgi_script_name;
+</span><span class='line'>}
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}</span></code></pre></td></tr></table></div></figure>
+<code>sh
+cd /etc/nginx/sites-enabled/
+</code>
+<code>sh
+ln -s /etc/nginx/sites-available/domain.com
+</code></p>
+
+<h6>Restart Nginx-nya</h6>
+
+<pre><code class="sh">/etc/init.d/nginx restart
+</code></pre>
+
+<p>Tambahkan 1 bari hosts domain yang baru saja di tambahkan ke Konfigurasi Nginx
+<code>sh
+nano /etc/hosts
+</code>
+<code>sh
+127.0.0.1 localhost.localdomain localhost domain.com
+</code>
+Coba tampilkan PHP Info
+<code>sh
+nano /srv/www/domain.com/public_html/phpinfo.php
+</code>
+<figure class='code'><figcaption><span>phpinfo.php </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">?</span><span class="nx">php</span>
+</span><span class='line'>     <span class="nb">phpinfo</span> <span class="p">();</span>
+</span><span class='line'><span class="cp">?&gt;</span><span class="x"></span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Jika muncul maka anda sudah berhasil.
+Happy coding, happy config ^_^</p>
+]]></content>
+  </entry>
+  
+</feed>

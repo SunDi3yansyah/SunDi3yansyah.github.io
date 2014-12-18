@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+{% blockquote author link title %}
+
+{% endblockquote %}
+]]></content>
+octopress blockquote
+</snippet>

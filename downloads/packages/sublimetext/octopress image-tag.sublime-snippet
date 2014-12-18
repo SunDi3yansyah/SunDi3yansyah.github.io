@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+{% img left/right/center /path/to/image width height 'title' 'alt' %}
+]]></content>
+octopress image-tag
+</snippet>

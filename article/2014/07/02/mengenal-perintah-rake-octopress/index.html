@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Mengenal Perintah Rake Octopress - SunDi3yansyah</title>
+  <meta name="author" content="SunDi3yansyah">
+
+
+<meta name="description" content="Mengenal Perintah Rake di Octopress dan bermacam-macam rake yang akan di gunakan di dalam framework octopress." />
+
+
+<meta name="keywords" content="Mengenal Perintah Rake Octopress, rake octopress, command rake octopress, who to rake octopress" />
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://sundi3yansyah.com/article/2014/07/02/mengenal-perintah-rake-octopress">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="SunDi3yansyah" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octo.js" type="text/javascript"></script>
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/javascripts/jquery.githubRepoWidget.min.js"></script>
+<link href="/assets/fa/css/font-awesome.min.css" rel="stylesheet">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-54356681-1']);
+    _gaq.push(['_setDomainName','com']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <span class="usr_bin_ruby">#!/usr/bin/ruby</span>
+  <span class="puts">puts </span><span class="ttk2">&#8220;</span><h1><a href="/">SunDi3yansyah</a></h1><span class="ttk2">&#8221;</span><span class="close_puts">;</span>
+  <i class="fa fa-code"></i>
+  <br>
+  
+  <span class="puts_h2">puts </span><span class="ttk2_h2">&#8220;</span><h2>I like to learn a programming language</h2><span class="ttk2_h2">&#8221;</span><span class="close_puts_h2">;</span>
+  
+</hgroup>
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
+  <li><a href="/atom.xml" target="_blank" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+    <li><a href="feed://feeds.feedburner.com/sundi3yansyah" rel="subscribe-email" title="subscribe via email">Email</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:sundi3yansyah.com">
+    <input class="search" type="text" name="q" results="0" placeholder="Search">
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+  <li><a href="/blog/archives"><i class="fa fa-archive"></i> Archives</a></li>
+  <li><a href="/service/"><i class="fa fa-cogs"></i> Service</a></li>
+  <li><a href="/history/"><i class="fa fa-user"></i> About</a></li>
+  <li><a href="/portfolio/" target="_blank"><i class="fa fa-graduation-cap"></i> Portfolio</a></li>
+</ul>
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h2 class="entry-title">Mengenal Perintah Rake Octopress</h2>
+    
+    
+      <p class="meta"><i class="fa fa-calendar"></i>
+        
+
+
+
+
+<time class='entry-date' datetime='2014-07-02T07:24:59+07:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2014</span></span> <span class='time'>7:24 am</span></time>
+         | <i class="fa fa-comments-o"></i> <a class="author-ca" href="#disqus_thread" data-disqus-identifier="http://sundi3yansyah.com">Comments</a> | <img alt="SunDi3yansyah" class="author-avatar" data-user="3952281" height="18" src="https://avatars1.githubusercontent.com/u/3952281?v=3&amp;s=36" width="18"> <a class="author-ca" href="https://github.com/SunDi3yansyah" target="_blank">SunDi3yansyah</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Bismillah. Alhamdulillah. Pembuat dan pengembang Octopress telah mengumpulkan berbagai perintah rumit menjadi perintah yang sangat sederhana. Perintah-perintah yang disederhanakan tersebut untuk memudahkan siapa saja dalam memanajemen blog yang dibangun dengan <strong>platform</strong> Jekyll Octopress. Sifat Octopress yang terbuka (<strong>Open Source</strong>) untuk dikembangkan memicu banyak pihak ikut serta mengembangkannya. Hal ini pula yang membuat Octopress makin hari semakin mudah untuk digunakan, bahkan oleh pengguna pemula sekalipun seperti halnya penulis.</p>
+
+<!-- more -->
+
+
+<p>Octopress sebagai salah satu turunan Jekyll memang memiliki banyak kelebihan dibandingkan turunan Jekyll yang lainnya. Diantara kelebihan Octopress adalah sekumpulan perintah-perintah CLI (<strong>Command-Line Interface</strong>) yang diambil dari module Ruby on Rails dibuat semudah mungkin untuk digunakan. Sebelum perintah-perintah tersebut disederhanakan, para pengguna terutama Jekyll cukup rumit untuk memanjemen blog ber-<strong>platform</strong> dasar Jekyll. Namun pada Octopress perintah-perintah CLI tersebut menjadi mudah untuk diingat dan digunakan karena perintah-perintah CLI tersebut disusun menggunakan Rake. Rake merupakan salah satu module (<strong>plugins</strong>) Ruby on Rails yang disusun untuk memudahkan (lebih tepatnya merangkum) berbagai perintah CLI yang fungsinya mirip dengan Make, makanya kemudian penamaan Rake diambil dari Ruby Make.</p>
+
+<h3>Daftar Perintah Rake</h3>
+
+<p>Perintah yang dibangun dengan Rake khusus untuk Octopress tidaklah terlalu banyak, sampai dengan artikel ini dibuat, perintah CLI Rake baru ada sekitar 19 perintah. Untuk mengetahui daftar perintah Rake yang digunakan untuk Octopress, cukup dengan mengetikan perintah <code>rake -T</code> melalui Git Bash pada folder Octopress, sehingga akan muncul informasi seperti dibawah ini:</p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake -T
+</span><span class='line'>rake clean                     # Clean out caches: .pygments-cache, .gist-c...
+</span><span class='line'>rake copydot[source,dest]      # copy dot files for deployment
+</span><span class='line'>rake deploy                    # Default deploy task
+</span><span class='line'>rake gen_deploy                # Generate website and deploy
+</span><span class='line'>rake generate                  # Generate jekyll site
+</span><span class='line'>rake install[theme]            # Initial setup for Octopress: copies the de...
+</span><span class='line'>rake integrate                 # Move all stashed posts back into the posts...
+</span><span class='line'>rake isolate[filename]         # Move all other posts than the one currentl...
+</span><span class='line'>rake list                      # list tasks
+</span><span class='line'>rake new_page[filename]        # Create a new page in source/(filename)/ind...
+</span><span class='line'>rake new_post[title]           # Begin a new post in source/_posts
+</span><span class='line'>rake preview                   # preview the site in a web browser
+</span><span class='line'>rake push                      # deploy public directory to github pages
+</span><span class='line'>rake rsync                     # Deploy website via rsync
+</span><span class='line'>rake set_root_dir[dir]         # Update configurations to support publishin...
+</span><span class='line'>rake setup_github_pages[repo]  # Set up _deploy folder and deploy branch fo...
+</span><span class='line'>rake update_source[theme]      # Move source to source.old, install source ...
+</span><span class='line'>rake update_style[theme]       # Move sass to sass.old, install sass theme ...
+</span><span class='line'>rake watch                     # Watch the site and regenerate when it changes</span></code></pre></td></tr></table></div></figure>
+
+
+<blockquote><p>Perhatian: Gunakan huruf T besar (Upper Case atau Kapital) dan jangan menggunakan huruf t kecil (<strong>Lower Case</strong>), karena perintah rake Git Bash bersifat Case Sensitive.</p></blockquote>
+
+<h3>Fungsi Perintah Rake</h3>
+
+<p>Untuk menggunakan perintah-perintah rake Octopress, kita harus berada pada Git Bash yang sedang berada didalam folder Octopress. Perintah-perintah rake Octopress akan dijelaskan dengan mengkategorikannya menjadi 3 kategori, namun penggunaan perintah rake ini akan dijelaskan secara detail pada artikel secara terpisah.</p>
+
+<h4>Pembuatan</h4>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake new_post[title]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah ini digunakan untuk membuat artikel baru pada Octopress. Perintah ini merupakan perintah rake yang paling sering digunakan, jadi jangan sampai lupa.</p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake new_page[filename]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah ini digunakan untuk membuat halaman baru pada Octopress, namun halaman ini tidak termasuk kedalam halaman artikel. Halaman ini biasanya digunakan untuk halaman project, portofolio, contact, about atau halaman-halaman lain yang dipandang perlu untuk memperkaya informasi tentang blog atau pengelola blog. Penggunaan perintah ini telah dijelaskan pada artikel “Membuat Halaman Baru Dan Menambahkan Menu Navigasi”.</p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake install[theme]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah ini digunakan untuk mengganti theme Octopress. Kita bisa dengan mudah meng-install theme baru yang dibuat oleh pihak ketiga. Penggunaan perintah ini telah dijelaskan pada artikel “Install Theme Octopress”.</p>
+
+<h4>Manajemen</h4>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake list</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah ini sama saja dengan perintah <code>rake -T</code>, namun perintah diatas hanya menampilkan informasi daftar perintah rake tanpa deskripsi fungsi.</p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah ini digunakan untuk meregenerasi file-file Octopress. Perintah ini juga akan sering digunakan, karena disetiap kita melakukan perubahan pada suatu file dan atau penambahan suatu file kedalam Octopress, maka perintah ini harus terlebih dahulu digunakan sebelum perintah lain. Perintah ini ibarat fungsi update pada perangkat lunak, tanpa perintah ini, file-file yang baru saja dimodifikasi atau dibuat tidak akan ditampilkan pada Browser. Perintah ini akan lebih dimengerti saat mengenal perintah berikutnya.</p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake watch</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah ini merupakan lanjutan perintah <code>rake generate</code> hanya saja ada sedikit perbedaan dan penempatan. <code>rake generate</code> biasanya digunakan untuk meyakinkan kita bahwa semua file Octopress telah memasuki final dan siap untuk diterbitkan sehingga penggunaannya biasanya disandingkan dengan perintah-perintah dalam kategori publikasi. Sedangkan perintah <code>rake watch</code> digunakan untuk meyakinkan bahwa setiap kita melakukan perubahan pada file-file Octopress maka otomatis file-file tersebut di <strong>generate</strong> tanpa harus lagi menggunakan perintah <code>rake generate</code>. Ini perintah <strong>realtime</strong> untuk memantau perubahan yang terjadi pada file-file Octopress. Disetiap kita melakukan perubahan pada file Octopress dan kemudian menyimpannya maka jendela Git Bash akan menampilkan informasi bahwa perubahan data telah diregenerasi. Contoh informasi yang ditampilkan Git Bash.
+<code>[2013-06-18 01:39:09] regeneration: 1 files changed</code></p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake preview</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah diatas merupakan perintah <strong>multitask</strong> (gabungan perintah) atau satu perintah yang menjalankan beberapa perintah sekaligus. Jika perintah <code>rake generate</code> digunakan hanya untuk meregenerasi perubahan atau penambahan file namun tidak digunakan secara <strong>realtime</strong> untuk memantau perubahan atau penambahan file. Perintah <code>rake watch</code> digunakan sebagai perintah <strong>realtime</strong> untuk memantau sekaligus meregenerasi perubahan atau penambahan file. Sedangkan perintah <code>rake preview</code> digunakan untuk; meregenerasi file, memantau perubahan atau penambahan file dan menjalankan server Ruby Jekyll localhost agar bisa ditampilkan pada browser.</p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake isolate[filename]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah ini digunakan untuk mengisolasi artikel (yang disebutkan pada <code>[filename]</code>) dan memindahkan artikel lainnya (yang tidak disebutkan pada <code>[filename]</code>) untuk dipindahkan dari folder <code>posts</code> ke folder <code>stash</code>. Ini biasanya digunakan untuk mempercepat proses regenerasi (<strong>generate</strong>) file. Misal; artikel yang kita buat sudah mencapai 500 artikel, maka disetiap kita melakukan regenerasi baik menggunakan <code>generate</code>, <code>watch</code> atau <code>preview</code> maka semua artikel tersebut sekaligus artikel yang baru saja kita buat akan diregenerasi, hal ini tentunya menghabiskan banyak sekali waktu. Maka untuk mempercepat proses regenerasi, kita hanya akan melakukan regenerasi pada file atau artikel yang baru saja kita buat, sedangkan artikel yang sudah kita buat dan terbitkan tidak akan diregenerasi.</p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake integrate</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah diatas merupakan kebalikan dari perintah <code>rake isolate</code> yaitu untuk mengembalikan artikel-artikel dari folder <code>stash</code> kedalam folder <code>posts</code>. Perintah ini biasanya digunakan ketika kita sudah yakin bahwa artikel terbaru telah siap untuk dipublikasikan.</p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake update_source[theme]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah ini digunakan untuk meng-update file-file yang terdapat pada folder <code>source</code>. Perintah ini akan memindahkan semua file-file yang ada pada folder <code>source</code> ke dalam folder <code>source.old</code>. Jika folder <code>source.old</code> belum tersedia maka perintah ini akan otomatis menciptakan folder <code>source.old</code> tersebut. Lebih tepatnya, perintah ini digunakan untuk mem-<strong>backup</strong> atau membuat salinan cadangan file-file yang terdapat pada folder <code>source</code>. Perintah ini kita gunakan pada saat akan melakukan modifikasi pada file-file yang terdapat pada folder <code>source</code>. Misal; kita akan menambah menu navigasi, maka lakukan perintah ini untuk membuat cadangan sebelum dilakukan perubahan, jika suatu hari kita membutuhkan file asal maka kita tinggal mengambilnya dari folder <code>source.old</code>.</p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake update_style[theme]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah ini hampir mirip dengan perintah <code>rake update_source</code> hanya saja berbeda target folder. Perintah ini digunakan untuk membuat salinan file SASS yang terdapat pada folder <code>sass</code> dan kemudian menyalinnya pada folder <code>sass.old</code>. Perintah ini biasanya digunakan saat kita ingin meng-<strong>install</strong> theme baru atau ingin memodifikasi style yang sudah ada. Jika kemudian hari style tersebut gagal atau kita ingin kembali ke style semula, maka kita tinggal mengambilnya dari folder <code>sass.old</code>.</p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake clean</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Semakin sering kita melakukan regenerasi file maka semakin banyak cache dari file-file tersebut. Tentunya sampah-sampah ini akan menumpuk dan membuat ukuran dan jumlah file pada Octopress semakin besar dan semakin banyak. Maka gunakan perintah diatas untuk membersihkan file-file cache yang tersimpan pada folder <code>.pygments-cache</code>, <code>.gist-cache</code> dan <code>.sass-cache</code>. Gunakan perintah ini sebulan sekali atau beberapa bulan sekali sesuai dengan frekwensi anda menulis dan menerbitkan artikel.</p>
+
+<h4>Publikasi</h4>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake set_root_dir[dir]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah ini digunakan untuk menge-set ulang atau meng-konfigurasi direktori root atau sub direktori yang akan diterbitkan sebagai direktori blog pada repositori. Mungkin masih agak membingungkan, karena hal ini berhubungan dengan subdirektori yangn justru digunakan sebagai blog-nya, bukan pada root direktori. Jika blog anda berada pada root direktori, maka perintah ini tidak usah digunakan. Penggunaan perintah ini mempengaruhi setting pada <code>_config.yml</code>. Ini akan dibahas pada artikel terpisah atau anda bisa baca pada artikel “<a href="http://octopress.org/docs/deploying/subdir/">Deploying to a Subdirectory</a> ”.</p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake setup_github_pages[repo]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah ini digunakan untuk men-setting dan atau mensinkronisasi folder antara localhost dengan repository pada Github. Perintah ini dilakukan sejak awal ketika kita berencana ingin membuat blog Octopress pada Github. Ini akan dibahas pada artikel tepisah atau baca pada artikel “<a href="http://octopress.org/docs/deploying/github/">Deploying to Github Pages</a> ”.</p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake copydot[source,dest]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah ini digunakan untuk menyalin dan memindahkan file atau direktori yang akan dideploy. Perintah ini jarang digunakan bagi mereka yang hanya sekedar membuat Octopress sebagai platform Blog. Akan dibahas lebih lanjut pada artikel terpisah.</p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Ini perintah yang lebih lengkap daripada <code>copydot</code>, karena selain menyalin dan memindahkan file atau direktori, perintah ini digunakan untuk meregenerasi file jika teryata ditemukan bahwa ada artikel yang telah dibuat tetapi tidak ditampilkan pada browser. Perintah ini digunakan apabila PC anda sudah tersedia aplikasi <a href="http://www.rsync.net/">RSync</a> . Jika belum tersedia aplikasi RSync maka Git Bash akan menampilkan pesan “## Deploying website via Rsync FAILED”.</p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake gen_deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah ini digunakan ketika file atau artikel Octopress siap di-deploy. Perintah ini merupakan rangkuman dari 3 perintah yaitu; <code>integrate</code>, <code>generate</code> dan <code>deploy</code>. Jika sudah memahami masing-masing perintah itu, berarti kita sudah memahami perintah <code>gen_deploy</code>.</p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake rsync</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah ini digunakan untuk men-deploy Octopress melalui aplikasi RSync. Tentang RSync akan dibahas pada artikel terpisah atau baca pada artikel “<a href="http://octopress.org/docs/deploying/rsync/">Deploying With Rsync</a>”.</p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake push</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah ini digunakan untuk men-deploy Octopress ke webservice repository Github. Sedangkan untuk pengguna repository non Github tidak cocok menggunakan perintah ini. Pada artikel mendatang akan dibahas cara deploy ke repository non Github.</p>
+
+<figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake terbitkan</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah ini digunakan untuk men-deploy Octopress ke webservice repository Heroku. Perintah ini telah dibahas pada artikel “Membuat Perintah Rake Deploy Heroku Pada Octopress”.</p>
+
+<h3>Kesimpulan</h3>
+
+<p>Perintah-perintah rake diatas memang ada yang sering kita gunakan, ada yang jarang digunakan dan ada yang hanya satu kali digunakan. Semua kembali pada kebiasaan kita dalam memanajemen blog. Perintah rake diatas adalah perintah default yang dibuat oleh pengembang Octopress, sedangkan Octopress bersifat terbuka yang siapa saja bisa memodifikasi, memperbaiki, dan menambahkan fungsi-fungsi baru. Bahkan kita bisa menyesuaikan dan menterjermahkan perintah-perintah dalam bahasa Inggris tersebut menjadi berbahasa Indonesia. Untuk memodifikasi perintah-perintah rake akan dibahas dikemudian hari.</p>
+
+<p>Selamat mencoba dan semoga berhasil. Happy Hacking :)</p>
+
+<p><a href="http://hendriono.herokuapp.com/blog/2013/06/17/mengenal-perintah-rake-octopress">Source</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      <div class="blog-feedback">
+    <h2 class="blog-feedback-header with-twitter">
+      Have feedback on this post? Let <a href="https://twitter.com/intent/tweet?text=@SunDi3yansyah%20&amp;related=SunDi3yansyah&amp;url=http://sundi3yansyah.com/article/2014/07/02/mengenal-perintah-rake-octopress/" target="blank">@SunDi3yansyah</a> know on Twitter.
+    </h2>
+    <p class="blog-feedback-description">
+      Need help or found a bug? <a href="http://sundi3yansyah.com/history/">Contact us</a>.
+    </p>
+</div>
+      
+
+<span class="categories cat-on-article"><h5>Categories : </h5>
+  
+    <a class='category' href='/article/categories/octopress/'>octopress</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing" style="padding-top:50px;">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://sundi3yansyah.com/article/2014/07/02/mengenal-perintah-rake-octopress/" data-via="SunDi3yansyah" data-counturl="http://sundi3yansyah.com/article/2014/07/02/mengenal-perintah-rake-octopress/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta previous-next">
+      
+        <a class="basic-alignment left" href="/article/2014/07/02/cara-install-octopress/" title="Previous Post: Cara Install Octopress"><i class="fa fa-mail-reply"></i></a>
+      
+      
+        <a class="basic-alignment right" href="/article/2014/07/02/membuat-halaman-baru-dan-menambahkan-menu-navigasi/" title="Next Post: Membuat Halaman Baru Dan Menambahkan Menu Navigasi"><i class="fa fa-mail-forward"></i></a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h5>Comments</h5>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section style="margin-top:-25px;">
+  <h4><i class="fa fa-user"></i> About Me</h4>
+  <p style="margin-top:10px;">Nama saya Cahyadi Triyansyah inisial &#8220;SunDi3yansyah&#8221;, saya kelahiran Palembang, namun saya adalah keturunan dari suku Jawa, sekarang saya sedang melanjutkan college (study) di Yogyakrata tepatnya di STMIK Amikom Yogyakarta, saya juga sedang membangun sebuah development Web (Kampoeng & Surabaya Blackhat), I like to learn a programming language.
+  <br><a href="/history/" style="color:#4183c4;">More&#8230;</a></p>
+</section>
+<section>
+  <h4><i class="fa fa-book"></i> Recent Posts</h4>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/article/2014/11/27/cara-install-go-lang-di-linux/"><i class="fa fa-sign-out"></i> Cara Install Go-lang Di Linux</a>
+      </li>
+    
+      <li class="post">
+        <a href="/article/2014/11/27/cara-install-atau-upgrade-python-di-centos/"><i class="fa fa-sign-out"></i> Cara Install Atau Upgrade Python Di CentOS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/article/2014/11/27/cara-mereset-environment-variable-pada-linux/"><i class="fa fa-sign-out"></i> Cara Mereset Environment Variable Pada Linux</a>
+      </li>
+    
+      <li class="post">
+        <a href="/article/2014/11/27/cara-menambah-environment-variable-pada-linux/"><i class="fa fa-sign-out"></i> Cara Menambah Environment Variable Pada Linux</a>
+      </li>
+    
+      <li class="post">
+        <a href="/article/2014/11/26/cara-install-asciinema-di-linux/"><i class="fa fa-sign-out"></i> Cara Install Asciinema Di Linux</a>
+      </li>
+    
+      <li class="post">
+        <a href="/article/2014/11/25/cara-update-versi-nodejs/"><i class="fa fa-sign-out"></i> Cara Update Versi NodeJS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx/"><i class="fa fa-sign-out"></i> Cara Menambah Virtual Hosts Di Nginx</a>
+      </li>
+    
+  </ul>
+</section>
+<script
+  data-name="SunDi3yansyah"
+  data-modules="base,details,stats,repos,eventsStatis,orgs"
+  data-reposNum="5"
+  src="http://octocard.in/o.js">
+</script><section>
+  <h4><i class="fa fa-search-plus"></i> Find Me</h4>
+  <ul id="find_me">
+    <li><i class="fa fa-envelope"></i> <a href="mailto:sundi3yansyah@gmail.com">E-Mail</a></li>
+    <li><i class="fa fa-github"></i> <a href="https://github.com/SunDi3yansyah" target="_blank">GitHub</a></li>
+    <li><i class="fa fa-stack-overflow"></i> <a href="http://stackoverflow.com/users/3757627/sundi3yansyah" target="_blank">Stack Overflow</a></li>
+    <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/SunDi3yansyah" target="_blank">Twitter</a></li>
+    <li><i class="fa fa-google-plus"></i> <a href="https://plus.google.com/u/0/113613533694994339551" target="_blank">Google+</a></li>
+    <li><i class="fa fa-linkedin-square"></i> <a href="http://id.linkedin.com/in/sundi3yansyah/" target="_blank">LinkedIn</a></li>
+    <li><i class="fa fa-facebook-square"></i> <a href="https://www.facebook.com/adiebiazajah" target="_blank">Facebook</a></li>
+    <li><i class="fa fa-youtube-square"></i> <a href="https://www.youtube.com/user/zpqwify" target="_blank">Youtube</a></li>
+    <li><i class="fa fa-youtube-play"></i> <a href="https://asciinema.org/~SunDi3yansyah" target="_blank">Asciinema</a></li>
+    <li><i class="fa fa-github-square"></i> <a href="https://speakerdeck.com/sundi3yansyah" target="_blank">Speaker Deck</a></li>
+    <li><i class="fa fa-dribbble"></i> <a href="https://dribbble.com/SunDi3yansyah" target="_blank">Dribbble</a></li>
+    <li><i class="fa fa-code"></i> <a href="https://www.openhub.net/accounts/SunDi3yansyah" target="_blank">Open Hub</a></li>
+    <li><i class="fa fa-code"></i> <a href="https://www.codeplex.com/site/users/view/SunDi3yansyah" target="_blank">CodePlex</a></li>
+  </ul>
+</section><section style="margin-top:15px;">
+<a class="twitter-timeline" href="https://twitter.com/SunDi3yansyah" data-widget-id="486239207929573376">Tweet oleh @SunDi3yansyah</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section><section>
+  <h4 class="cat-h4"><i class='fa fa-bookmark'></i> Categories</h4>
+  <li id="categories">
+    <a href='/article/categories/asciinema/' class='category'>asciinema<span class='number-cat'>3</span></a>
+<a href='/article/categories/bundler/' class='category'>bundler<span class='number-cat'>1</span></a>
+<a href='/article/categories/centos/' class='category'>centos<span class='number-cat'>4</span></a>
+<a href='/article/categories/control-panel/' class='category'>control panel<span class='number-cat'>1</span></a>
+<a href='/article/categories/crack/' class='category'>crack<span class='number-cat'>1</span></a>
+<a href='/article/categories/debian/' class='category'>debian<span class='number-cat'>1</span></a>
+<a href='/article/categories/dedicated/' class='category'>dedicated<span class='number-cat'>1</span></a>
+<a href='/article/categories/english/' class='category'>english<span class='number-cat'>1</span></a>
+<a href='/article/categories/exploit/' class='category'>exploit<span class='number-cat'>4</span></a>
+<a href='/article/categories/framework/' class='category'>framework<span class='number-cat'>1</span></a>
+<a href='/article/categories/gems/' class='category'>gems<span class='number-cat'>1</span></a>
+<a href='/article/categories/git/' class='category'>git<span class='number-cat'>1</span></a>
+<a href='/article/categories/github/' class='category'>github<span class='number-cat'>12</span></a>
+<a href='/article/categories/go-lang/' class='category'>go-lang<span class='number-cat'>1</span></a>
+<a href='/article/categories/jekyll/' class='category'>jekyll<span class='number-cat'>2</span></a>
+<a href='/article/categories/linux/' class='category'>linux<span class='number-cat'>12</span></a>
+<a href='/article/categories/mac/' class='category'>mac<span class='number-cat'>1</span></a>
+<a href='/article/categories/mybb/' class='category'>mybb<span class='number-cat'>3</span></a>
+<a href='/article/categories/mysql/' class='category'>mysql<span class='number-cat'>3</span></a>
+<a href='/article/categories/nginx/' class='category'>nginx<span class='number-cat'>11</span></a>
+<a href='/article/categories/nodejs/' class='category'>nodejs<span class='number-cat'>5</span></a>
+<a href='/article/categories/npm/' class='category'>npm<span class='number-cat'>3</span></a>
+<a href='/article/categories/octopress/' class='category'>octopress<span class='number-cat'>12</span></a>
+<a href='/article/categories/open-source/' class='category'>open source<span class='number-cat'>2</span></a>
+<a href='/article/categories/php/' class='category'>php<span class='number-cat'>3</span></a>
+<a href='/article/categories/php-fpm/' class='category'>php-fpm<span class='number-cat'>3</span></a>
+<a href='/article/categories/programmer/' class='category'>programmer<span class='number-cat'>2</span></a>
+<a href='/article/categories/python/' class='category'>python<span class='number-cat'>2</span></a>
+<a href='/article/categories/rails/' class='category'>rails<span class='number-cat'>1</span></a>
+<a href='/article/categories/ruby/' class='category'>ruby<span class='number-cat'>5</span></a>
+<a href='/article/categories/server/' class='category'>server<span class='number-cat'>2</span></a>
+<a href='/article/categories/sqlite/' class='category'>sqlite<span class='number-cat'>1</span></a>
+<a href='/article/categories/sublimetext/' class='category'>sublimetext<span class='number-cat'>4</span></a>
+<a href='/article/categories/twitter/' class='category'>twitter<span class='number-cat'>1</span></a>
+<a href='/article/categories/ubuntu/' class='category'>ubuntu<span class='number-cat'>5</span></a>
+<a href='/article/categories/vps/' class='category'>vps<span class='number-cat'>2</span></a>
+<a href='/article/categories/windows/' class='category'>windows<span class='number-cat'>2</span></a>
+<a href='/article/categories/youtube/' class='category'>youtube<span class='number-cat'>9</span></a>
+
+  </li>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 SunDi3yansyah -
+  <span class="credit">Framework <a href="http://octopress.org" target="_blank">Octopress</a>, Built with <a href="https://www.ruby-lang.org" target="_blank">Ruby</a> and Deploy on <a href="https://github.com/" target="_blank">GitHub</a>.</span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'sundi3yansyahlabs';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://sundi3yansyah.com/article/2014/07/02/mengenal-perintah-rake-octopress/';
+        var disqus_url = 'http://sundi3yansyah.com/article/2014/07/02/mengenal-perintah-rake-octopress/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

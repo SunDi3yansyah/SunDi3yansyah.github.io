@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+<iframe width="675" height="415" src="//www.youtube.com/embed/ID" frameborder="0" allowfullscreen></iframe>
+]]></content>
+octopress embed-video
+</snippet>

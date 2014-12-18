@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Go-lang | SunDi3yansyah]]></title>
+  <link href="http://sundi3yansyah.com/article/categories/go-lang/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2014-12-17T06:26:49+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
+  <author>
+    <name><![CDATA[SunDi3yansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Go-lang Di Linux]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/11/27/cara-install-go-lang-di-linux/"/>
+    <updated>2014-11-27T17:19:52+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/11/27/cara-install-go-lang-di-linux</id>
+    <content type="html"><![CDATA[<p>Pertama buka dulu page download arsip go-lang disini <a href="https://golang.org/dl/">https://golang.org/dl/</a> setelah itu ambil file arsipnya sesuai arsitektur pada distro linux kalian (x64 or x86), sebagai contoh:</p>
+
+<p>Buka terminal
+<code>sh
+cd Downloads ; mkdir go-lang ; cd go-lang
+</code></p>
+
+<!--more-->
+
+
+<p>x64
+<code>sh
+wget https://storage.googleapis.com/golang/go1.3.3.linux-amd64.tar.gz
+</code>
+x86
+<code>sh
+wget https://storage.googleapis.com/golang/go1.3.3.linux-386.tar.gz
+</code>
+Setelah itu buka arsipnya, dan di copy + paste ke direktori <code>/usr/local</code>
+x64
+<code>sh
+tar -C /usr/local -xzf go1.3.3.linux-amd64.tar.gz
+</code>
+x86
+<code>sh
+tar -C /usr/local -xzf go1.3.3.linux-386.tar.gz
+</code></p>
+
+<p>Setelah itu tambahkan <strong>Environment Variable</strong> nya</p>
+
+<pre><code class="sh">export PATH=$PATH:/usr/local/go/bin
+</code></pre>
+
+<p>Sekarang kita buat contoh apakah sudah work atau belum.</p>
+
+<pre><code class="sh">nano test.go
+</code></pre>
+
+<p><figure class='code'><figcaption><span>test.go </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='go'><span class='line'><span class="kn">package</span> <span class="nx">main</span><span class="p">&lt;</span><span class="o">/</span><span class="nx">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="nx">p</span><span class="p">&gt;</span><span class="kn">import</span> <span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">fmt</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;&lt;</span><span class="o">/</span><span class="nx">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="nx">p</span><span class="p">&gt;</span><span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">Hallo</span><span class="p">,</span> <span class="nx">dunia</span><span class="err">\</span><span class="nx">n</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;)</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Sekarang di jalankan</p>
+
+<pre><code class="sh">go run test.go
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
