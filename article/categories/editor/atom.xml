@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Editor | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/editor/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2014-12-22T14:29:38+07:00</updated>
+  <updated>2014-12-22T14:33:59+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -28,21 +28,32 @@ Saya menggunakan Distro Ubuntu dan bisa di pasang di distro lainnya</p>
 <!--more-->
 
 
-<p>pastikan sudah terinstall VIM minimal versi 7.3, jika belum kita install dulu
-<code>sh
-sudo apt-get install vim
-</code>
-jika di distro lain beda paket manager tinggal di ganti saja <strong>apt-get</strong> nya
+<p>pastikan sudah terinstall VIM minimal versi 7.3, jika belum kita install dulu</p>
+
+<p><figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>sudo apt-get install vim
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>jika di distro lain beda paket manager tinggal di ganti saja <strong>apt-get</strong> nya
 lanjut buat direktorinya</p>
 
-<pre><code class="sh">mkdir ~/.vim
-mkdir ~/.vim/colors
-mkdir ~/.vim/bundle
-mkdir ~/.vim/tmp
-mkdir ~/.vim/tmp/undo
-mkdir ~/.vim/tmp/backup
-mkdir ~/.vim/tmp/swap
-</code></pre>
+<p><figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>mkdir ~/.vim
+</span><span class='line'>mkdir ~/.vim/colors
+</span><span class='line'>mkdir ~/.vim/bundle
+</span><span class='line'>mkdir ~/.vim/tmp
+</span><span class='line'>mkdir ~/.vim/tmp/undo
+</span><span class='line'>mkdir ~/.vim/tmp/backup
+</span><span class='line'>mkdir ~/.vim/tmp/swap
+</span></code></pre></td></tr></table></div></figure></p>
 
 <h3>molokai</h3>
 
@@ -85,7 +96,7 @@ mkdir ~/.vim/tmp/swap
 
 <p>kita akan membutuhkan font <strong>DejaVuSansMono-Powerline</strong></p>
 
-<p><figure class='code'><figcaption><span>title url link-text </span></figcaption>
+<p><figure class='code'><figcaption><span>terminal </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class='sh'><span class='line'>wget &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;https://gist.github.com/toupeira/1630581/raw/bb7b21a7ad38a781b8975bcf6655d307237289c6/DejaVuSansMono-Powerline.ttf&quot;</span>&gt;https://gist.github.com/toupeira/1630581/raw/bb7b21a7ad38a781b8975bcf6655d307237289c6/DejaVuSansMono-Powerline.ttf&lt;/a&gt;
@@ -101,7 +112,7 @@ mkdir ~/.vim/tmp/swap
 
 <p>langsung saja clone numbers vim nya</p>
 
-<p><figure class='code'><figcaption><span>numbers </span></figcaption>
+<p><figure class='code'><figcaption><span>terminal </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='sh'><span class='line'>git clone &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;https://github.com/myusuf3/numbers.vim.git&quot;</span>&gt;https://github.com/myusuf3/numbers.vim.git&lt;/a&gt; ~/.vim/bundle/numbers
 </span></code></pre></td></tr></table></div></figure></p>
@@ -115,7 +126,7 @@ mkdir ~/.vim/tmp/swap
 
 <p>pakailah <strong>.vimrc</strong> saya ini, ke dalam <strong>.vimrc</strong> kalian di <strong>~/.vimrc</strong></p>
 
-<p><figure class='code'><figcaption><span>title  (.vimrc)</span> <a href='/downloads/code/.vimrc'>download</a></figcaption>
+<p><figure class='code'><figcaption><span>new file  (.vimrc)</span> <a href='/downloads/code/.vimrc'>download</a></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
