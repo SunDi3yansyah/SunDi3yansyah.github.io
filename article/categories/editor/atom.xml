@@ -1,153 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Cara Konfigurasi VIM Menggunakan Tema Dan Plugin - SunDi3yansyah</title>
-  <meta name="author" content="SunDi3yansyah">
-
-
-<meta name="description" content="Cara Konfigurasi VIM Menggunakan Tema dan Plugin" />
-
-
-<meta name="keywords" content="Cara Konfigurasi VIM Menggunakan Tema dan Plugin, vim, molokai, pathogen, powerline, numbers" />
-
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><![CDATA[Category: Editor | SunDi3yansyah]]></title>
+  <link href="http://sundi3yansyah.com/article/categories/editor/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2014-12-22T14:23:14+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
+  <author>
+    <name><![CDATA[SunDi3yansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
 
   
-  <link rel="canonical" href="http://sundi3yansyah.com/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="SunDi3yansyah" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octo.js" type="text/javascript"></script>
-  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/javascripts/jquery.githubRepoWidget.min.js"></script>
-<link href="/assets/fa/css/font-awesome.min.css" rel="stylesheet">
-
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-54356681-1']);
-    _gaq.push(['_setDomainName','com']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <span class="usr_bin_ruby">#!/usr/bin/ruby</span>
-  <span class="puts">puts </span><span class="ttk2">&#8220;</span><h1><a href="/">SunDi3yansyah</a></h1><span class="ttk2">&#8221;</span><span class="close_puts">;</span>
-  <i class="fa fa-code"></i>
-  <br>
-  
-  <span class="puts_h2">puts </span><span class="ttk2_h2">&#8220;</span><h2>I like to learn a programming language</h2><span class="ttk2_h2">&#8221;</span><span class="close_puts_h2">;</span>
-  
-</hgroup>
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
-  <li><a href="/atom.xml" target="_blank" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-    <li><a href="feed://feeds.feedburner.com/sundi3yansyah" rel="subscribe-email" title="subscribe via email">Email</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:sundi3yansyah.com">
-    <input class="search" type="text" name="q" results="0" placeholder="Search">
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
-  <li><a href="/blog/archives"><i class="fa fa-archive"></i> Archives</a></li>
-  <li><a href="/service/"><i class="fa fa-cogs"></i> Service</a></li>
-  <li><a href="/history/"><i class="fa fa-user"></i> About</a></li>
-  <li><a href="/portfolio/" target="_blank"><i class="fa fa-graduation-cap"></i> Portfolio</a></li>
-</ul>
-</nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
-    
-      <h2 class="entry-title">Cara Konfigurasi VIM Menggunakan Tema Dan Plugin</h2>
-    
-    
-      <p class="meta"><i class="fa fa-calendar"></i>
-        
-
-
-
-
-<time class='entry-date' datetime='2014-12-22T13:12:28+07:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2014</span></span> <span class='time'>1:12 pm</span></time>
-         | <i class="fa fa-comments-o"></i> <a class="author-ca" href="#disqus_thread" data-disqus-identifier="http://sundi3yansyah.com">Comments</a> | <img alt="SunDi3yansyah" class="author-avatar" data-user="3952281" height="18" src="https://avatars1.githubusercontent.com/u/3952281?v=3&amp;s=36" width="18"> <a class="author-ca" href="https://github.com/SunDi3yansyah" target="_blank">SunDi3yansyah</a>
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><p>Pertama liat dulu penampakannya</p>
+  <entry>
+    <title type="html"><![CDATA[Cara Konfigurasi VIM Menggunakan Tema Dan Plugin]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/"/>
+    <updated>2014-12-22T13:12:28+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin</id>
+    <content type="html"><![CDATA[<p>Pertama liat dulu penampakannya</p>
 
 <p><img src="https://lh4.googleusercontent.com/-EL817E9o1AQ/VJe2F8KdpmI/AAAAAAAAAdg/IdB5ryWNfks/s800/Screenshot+from+2014-12-22+13:08:19.png" alt="sundi3yansyah vim" /></p>
 
-<p>Mau? Yok&hellip; <img src="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png" width="20" height="20" title="smile" alt="smile">
+<p>Mau? Yok&hellip; <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; >
 Saya menggunakan Distro Ubuntu dan bisa di pasang di distro lainnya</p>
 
 <!--more-->
 
 
-<p>pastikan sudah terinstall VIM minimal versi 7.3, jika belum kita install dulu</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>sudo apt-get install vim
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>jika di distro lain beda paket manager tinggal di ganti saja <strong>apt-get</strong> nya
+<p>pastikan sudah terinstall VIM minimal versi 7.3, jika belum kita install dulu
+<code>sh
+sudo apt-get install vim
+</code>
+jika di distro lain beda paket manager tinggal di ganti saja <strong>apt-get</strong> nya
 lanjut buat direktorinya</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>mkdir ~/.vim
-</span><span class='line'>mkdir ~/.vim/colors
-</span><span class='line'>mkdir ~/.vim/bundle
-</span><span class='line'>mkdir ~/.vim/tmp
-</span><span class='line'>mkdir ~/.vim/tmp/undo
-</span><span class='line'>mkdir ~/.vim/tmp/backup
-</span><span class='line'>mkdir ~/.vim/tmp/swap
-</span></code></pre></td></tr></table></div></figure>
-
+<pre><code class="sh">mkdir ~/.vim
+mkdir ~/.vim/colors
+mkdir ~/.vim/bundle
+mkdir ~/.vim/tmp
+mkdir ~/.vim/tmp/undo
+mkdir ~/.vim/tmp/backup
+mkdir ~/.vim/tmp/swap
+</code></pre>
 
 <h3>molokai</h3>
 
 <p>simpan kode di bawah ini ke folder <strong>~/.vim/colors/</strong> dengan nama <strong>molokai.vim</strong></p>
 
-<figure class='code'><figcaption><span>new file  (molokai.vim)</span> <a href='/downloads/code/.vim/colors/molokai.vim'>download</a></figcaption>
+<p><figure class='code'><figcaption><span>new file  (molokai.vim)</span> <a href='/downloads/code/.vim/colors/molokai.vim'>download</a></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -700,8 +601,7 @@ lanjut buat direktorinya</p>
 </span><span class='line'><span class="c">&quot; Must be at the end, because of ctermbg=234 bug.</span>
 </span><span class='line'><span class="c">&quot; https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ</span>
 </span><span class='line'><span class="k">set</span> <span class="nb">background</span><span class="p">=</span><span class="nb">dark</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>source code</p>
 
@@ -712,13 +612,12 @@ lanjut buat direktorinya</p>
 
 <p>install plugin vim pathogen</p>
 
-<figure class='code'><figcaption><span>terminal </span></figcaption>
+<p><figure class='code'><figcaption><span>terminal </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>mkdir -p ~/.vim/autoload ~/.vim/bundle <span class="o">&amp;&amp;</span> <span class="se">\</span>
-</span><span class='line'>curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-</span></code></pre></td></tr></table></div></figure>
-
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>mkdir -p ~/.vim/autoload ~/.vim/bundle <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> <span class="se">\</span>
+</span><span class='line'>curl -LSso ~/.vim/autoload/pathogen.vim &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;https://tpo.pe/pathogen.vim&quot;</span>&gt;https://tpo.pe/pathogen.vim&lt;/a&gt;
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>source code</p>
 
@@ -729,25 +628,22 @@ lanjut buat direktorinya</p>
 
 <p>install plugin vim powerline, pastikan sudah install git</p>
 
-<p>clone dulu repo powerline</p>
-
+<p>clone dulu repo powerline
 <figure class='code'><figcaption><span>terminal </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nb">cd</span> ~/.vim/
 </span><span class='line'>git clone git://github.com/Lokaltog/vim-powerline.git bundle/powerline
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>kita akan membutuhkan font <strong>DejaVuSansMono-Powerline</strong></p>
 
-<figure class='code'><figcaption><span>title url link-text </span></figcaption>
+<p><figure class='code'><figcaption><span>title url link-text </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>wget https://gist.github.com/toupeira/1630581/raw/bb7b21a7ad38a781b8975bcf6655d307237289c6/DejaVuSansMono-Powerline.ttf
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>wget &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;https://gist.github.com/toupeira/1630581/raw/bb7b21a7ad38a781b8975bcf6655d307237289c6/DejaVuSansMono-Powerline.ttf&quot;</span>&gt;https://gist.github.com/toupeira/1630581/raw/bb7b21a7ad38a781b8975bcf6655d307237289c6/DejaVuSansMono-Powerline.ttf&lt;/a&gt;
 </span><span class='line'>sudo cp DejaVuSansMono-Powerline.ttf /usr/share/fonts/truetype
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>source code</p>
 
@@ -758,11 +654,10 @@ lanjut buat direktorinya</p>
 
 <p>langsung saja clone numbers vim nya</p>
 
-<figure class='code'><figcaption><span>numbers </span></figcaption>
+<p><figure class='code'><figcaption><span>numbers </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>git clone https://github.com/myusuf3/numbers.vim.git ~/.vim/bundle/numbers
-</span></code></pre></td></tr></table></div></figure>
-
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git clone &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;https://github.com/myusuf3/numbers.vim.git&quot;</span>&gt;https://github.com/myusuf3/numbers.vim.git&lt;/a&gt; ~/.vim/bundle/numbers
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>source code</p>
 
@@ -773,7 +668,7 @@ lanjut buat direktorinya</p>
 
 <p>pakailah <strong>.vimrc</strong> saya ini, ke dalam <strong>.vimrc</strong> kalian di <strong>~/.vimrc</strong></p>
 
-<figure class='code'><figcaption><span>title  (.vimrc)</span> <a href='/downloads/code/.vimrc'>download</a></figcaption>
+<p><figure class='code'><figcaption><span>title  (.vimrc)</span> <a href='/downloads/code/.vimrc'>download</a></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -900,246 +795,172 @@ lanjut buat direktorinya</p>
 </span><span class='line'>
 </span><span class='line'>nnoremap &lt;F3&gt; :NumbersToggle&lt;CR&gt;
 </span><span class='line'>nnoremap &lt;F4&gt; :NumbersOnOff&lt;CR&gt;
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <hr />
 
-<p>Apa sih fungsi dari plugin-plugin di atas? silakan di baca saja README nya di setiap packagenya <img src="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png" width="20" height="20" title="smile" alt="smile">
-Masih kurang puas dengan package yang saya berikan? Yok kita explorer VIM awesome berikut ini <a href="http://vimawesome.com/">vimawesome</a> <img src="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png" width="20" height="20" title="smiley" alt="smiley"></p>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      <div class="blog-feedback">
-    <h2 class="blog-feedback-header with-twitter">
-      Have feedback on this post? Let <a href="https://twitter.com/intent/tweet?text=@SunDi3yansyah%20&amp;related=SunDi3yansyah&amp;url=http://sundi3yansyah.com/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/" target="blank">@SunDi3yansyah</a> know on Twitter.
-    </h2>
-    <p class="blog-feedback-description">
-      Need help or found a bug? <a href="http://sundi3yansyah.com/history/">Contact us</a>.
-    </p>
-</div>
-      
-
-<span class="categories cat-on-article"><h5>Categories : </h5>
+<p>Apa sih fungsi dari plugin-plugin di atas? silakan di baca saja README nya di setiap packagenya <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; >
+Masih kurang puas dengan package yang saya berikan? Yok kita explorer VIM awesome berikut ini <a href="http://vimawesome.com/">vimawesome</a> <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; ></p>
+]]></content>
+  </entry>
   
-    <a class='category' href='/article/categories/editor/'>editor</a>, <a class='category' href='/article/categories/vim/'>vim,</a>
+  <entry>
+    <title type="html"><![CDATA[Snippets Untuk Octopress Pada Sublimetext]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext/"/>
+    <updated>2014-11-19T14:02:37+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext</id>
+    <content type="html"><![CDATA[<p>Kali ini saya akan berbagi code snippets untuk kalian yang suka atau menggunakan framework octopress seperti saya ini dan tentunya menggunakan editor Sublimetext.</p>
+
+<p><strong>Syarat</strong></p>
+
+<ul>
+<li>Sudah install sublimetext pada OS yang kalian gunakan</li>
+</ul>
+
+
+<p><strong>How to Use?</strong></p>
+
+<!-- more -->
+
+
+<p>Bila anda sudah bergabung di Grup Facebook Octopress Indonesia, anda bisa mendownloadnya disini:</p>
+
+<p><a href="https://www.facebook.com/groups/OctopressID/1501500383467291/">https://www.facebook.com/groups/OctopressID/1501500383467291/</a></p>
+
+<p>Tapi alngkah bagusnya jika anda mengambil packages-nya di repository saya, disini</p>
+
+<p><a href="https://github.com/SunDi3yansyah/SunDi3yansyah.github.io/tree/master/downloads/code/packages/sublimetext">https://github.com/SunDi3yansyah/SunDi3yansyah.github.io/tree/master/downloads/code/packages/sublimetext</a></p>
+
+<p>Karena dengan anda mengambil packages snippets di sana, anda akan mendapatkan packages snippets yang up to date, karena saya akan selalu mengupdatenya.</p>
+
+<p>Cara menggunakannya silakan langsung saja melihat cuplikan dibawah ini.</p>
+
+<p><img class="center <a" src="href="https://lh5.googleusercontent.com/-EKAt4RR4ikU/VGwameH7NiI/AAAAAAAAAMg/TD5NTqMUXDA/s800/sundi3yansyah.gif">https://lh5.googleusercontent.com/-EKAt4RR4ikU/VGwameH7NiI/AAAAAAAAAMg/TD5NTqMUXDA/s800/sundi3yansyah.gif</a>&#8221; title=&#8221;&lsquo;Snippets untuk Octopress&rsquo; &lsquo;Snippets untuk Octopress&rsquo;&#8221; ></p>
+
+<p><strong>NB:</strong> Berlaku untuk di semua sistem operasi.</p>
+]]></content>
+  </entry>
   
-</span>
+  <entry>
+    <title type="html"><![CDATA[Crack Sublime Text 3 Build 3065]]></title>
+    <link href="http://sundi3yansyah.com/article/2014/09/30/crack-sublime-text-3-build-3065/"/>
+    <updated>2014-09-30T05:44:13+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2014/09/30/crack-sublime-text-3-build-3065</id>
+    <content type="html"><![CDATA[<h3>Download Sublimeetxt Build 3065</h3>
+
+<h4><a href="http://www.sublimetext.com/3">http://www.sublimetext.com/3</a></h4>
+
+<p><blockquote><p>Release Date: 29 August 2014</p></blockquote></p>
+
+<p><strong>Download sesuai OS yang kalian gunakan kemudian install dan lakukan crack di bawah ini sesuai dengan OS kalian.</strong></p>
+
+<h4>MacOS</h4>
+
+<p>Download cracknya:</p>
+
+<p><a href="https://db.tt/UkPLsKrd">https://db.tt/UkPLsKrd</a></p>
+
+<p>atau</p>
+
+<p><a href="http://cl.ly/XJUe/Sublime%20Text%20mac%203065%20cracked%20build%203065">http://cl.ly/XJUe/Sublime%20Text%20mac%203065%20cracked%20build%203065</a></p>
+
+<p>Ubah nama file cracknya menjadi</p>
+
+<pre><code>Sublime Text
+</code></pre>
+
+<p>Ubah file menjadi executable</p>
+
+<pre><code>chmod u+x Sublime\ Text
+</code></pre>
+
+<p>Tumpuk file dengan</p>
+
+<pre><code>Sublime Text.app =&gt; Contents =&gt; MacOS =&gt; "Sublime Text"
+</code></pre>
+
+<!-- more -->
 
 
-    </p>
-    
-      <div class="sharing" style="padding-top:50px;">
+<h4>Windows x64</h4>
+
+<p>Download cracknya:</p>
+
+<p><a href="https://db.tt/rviitEyS">https://db.tt/rviitEyS</a></p>
+
+<p>atau</p>
+
+<p><a href="http://cl.ly/2b2b171Z3J1C/sublime_text%20cracked%20win64%20build%203065.exe">http://cl.ly/2b2b171Z3J1C/sublime_text%20cracked%20win64%20build%203065.exe</a></p>
+
+<p>Ubah nama file cracknya menjadi</p>
+
+<pre><code>sublime_text.exe
+</code></pre>
+
+<p>Tumpuk file crack ke folder installasi sublime_text, contoh:</p>
+
+<pre><code>C:\Program Files\sublime_text.exe
+</code></pre>
+
+<h4>Windows x86</h4>
+
+<p>Download cracknya:</p>
+
+<p><a href="https://db.tt/1lnRdzW3">https://db.tt/1lnRdzW3</a></p>
+
+<p>atau</p>
+
+<p><a href="http://cl.ly/1w2G0t3P133x/sublime_text%20cracked%20x86%20build%203065.exe">http://cl.ly/1w2G0t3P133x/sublime_text%20cracked%20x86%20build%203065.exe</a></p>
+
+<p>Ubah nama file cracknya menjadi</p>
+
+<pre><code>sublime_text.exe
+</code></pre>
+
+<p>Tumpuk file crack ke folder installasi sublime_text, contoh:</p>
+
+<pre><code>C:\Program Files\sublime_text.exe
+</code></pre>
+
+<h4>Linux x64</h4>
+
+<p>Download cracknya:</p>
+
+<p><a href="https://db.tt/zBKKF6Ba">https://db.tt/zBKKF6Ba</a></p>
+
+<p>atau</p>
+
+<p><a href="http://cl.ly/1z0S25150Y0I/sublime_text%20crack%20linux%2064%20build%203065">http://cl.ly/1z0S25150Y0I/sublime_text%20crack%20linux%2064%20build%203065</a></p>
+
+<p>Ubah nama file cracknya menjadi</p>
+
+<pre><code>sublime_text
+</code></pre>
+
+<p>Ubah file menjadi executable</p>
+
+<pre><code>chmod u+x sublime_text
+</code></pre>
+
+<p>Tumpuk file crack ke folder installasi sublime_text, contoh:</p>
+
+<pre><code>/opt/sublime_text/
+</code></pre>
+
+<h4>Linux x86 (NOT AVAILABLE)</h4>
+
+<hr />
+
+<h3>Alternative</h3>
+
+<h5>Link - 3059 ALL: <a href="http://cl.ly/3H2O2E3v233t">http://cl.ly/3H2O2E3v233t</a></h5>
+
+<h5>Link 2 - 3059 ALL: <a href="https://db.tt/nPK0r9e0">https://db.tt/nPK0r9e0</a></h5>
+
+<h5>Alternative Link - 3065 ALL: <a href="https://db.tt/EH5QQIzK">https://db.tt/EH5QQIzK</a></h5>
+
+<h5>Alternative Link 2 - 3065 ALL: <a href="http://cl.ly/1w2R230G2u14">http://cl.ly/1w2R230G2u14</a></h5>
+]]></content>
+  </entry>
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://sundi3yansyah.com/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/" data-via="SunDi3yansyah" data-counturl="http://sundi3yansyah.com/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/" >Tweet</a>
-  
-  
-  <div class="g-plusone" data-size="medium"></div>
-  
-  
-    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
-  
-</div>
-
-    
-    <p class="meta previous-next">
-      
-        <a class="basic-alignment left" href="/article/2014/11/27/cara-install-go-lang-di-linux/" title="Previous Post: Cara Install Go-lang di Linux"><i class="fa fa-mail-reply"></i></a>
-      
-      
-    </p>
-  </footer>
-</article>
-
-  <section>
-    <h5>Comments</h5>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-  </section>
-
-</div>
-
-<aside class="sidebar">
-  
-    <section style="margin-top:-25px;">
-  <h4><i class="fa fa-user"></i> About Me</h4>
-  <p style="margin-top:10px;">Nama saya Cahyadi Triyansyah inisial &#8220;SunDi3yansyah&#8221;, saya kelahiran Palembang, namun saya adalah keturunan dari suku Jawa, sekarang saya sedang melanjutkan college (study) di Yogyakrata tepatnya di STMIK Amikom Yogyakarta, saya juga sedang membangun sebuah development Web (Kampoeng & Surabaya Blackhat), I like to learn a programming language.
-  <br><a href="/history/" style="color:#4183c4;">More&#8230;</a></p>
-</section>
-<section>
-  <h4><i class="fa fa-book"></i> Recent Posts</h4>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/"><i class="fa fa-sign-out"></i> Cara Konfigurasi VIM Menggunakan Tema Dan Plugin</a>
-      </li>
-    
-      <li class="post">
-        <a href="/article/2014/11/27/cara-install-go-lang-di-linux/"><i class="fa fa-sign-out"></i> Cara Install Go-lang Di Linux</a>
-      </li>
-    
-      <li class="post">
-        <a href="/article/2014/11/27/cara-install-atau-upgrade-python-di-centos/"><i class="fa fa-sign-out"></i> Cara Install Atau Upgrade Python Di CentOS</a>
-      </li>
-    
-      <li class="post">
-        <a href="/article/2014/11/27/cara-mereset-environment-variable-pada-linux/"><i class="fa fa-sign-out"></i> Cara Mereset Environment Variable Pada Linux</a>
-      </li>
-    
-      <li class="post">
-        <a href="/article/2014/11/27/cara-menambah-environment-variable-pada-linux/"><i class="fa fa-sign-out"></i> Cara Menambah Environment Variable Pada Linux</a>
-      </li>
-    
-      <li class="post">
-        <a href="/article/2014/11/26/cara-install-asciinema-di-linux/"><i class="fa fa-sign-out"></i> Cara Install Asciinema Di Linux</a>
-      </li>
-    
-      <li class="post">
-        <a href="/article/2014/11/25/cara-update-versi-nodejs/"><i class="fa fa-sign-out"></i> Cara Update Versi NodeJS</a>
-      </li>
-    
-  </ul>
-</section>
-<script
-  data-name="SunDi3yansyah"
-  data-modules="base,details,stats,repos,eventsStatis,orgs"
-  data-reposNum="5"
-  src="http://octocard.in/o.js">
-</script><section>
-  <h4><i class="fa fa-search-plus"></i> Find Me</h4>
-  <ul id="find_me">
-    <li><i class="fa fa-envelope"></i> <a href="mailto:sundi3yansyah@gmail.com">E-Mail</a></li>
-    <li><i class="fa fa-github"></i> <a href="https://github.com/SunDi3yansyah" target="_blank">GitHub</a></li>
-    <li><i class="fa fa-stack-overflow"></i> <a href="http://stackoverflow.com/users/3757627/sundi3yansyah" target="_blank">Stack Overflow</a></li>
-    <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/SunDi3yansyah" target="_blank">Twitter</a></li>
-    <li><i class="fa fa-google-plus"></i> <a href="https://plus.google.com/u/0/113613533694994339551" target="_blank">Google+</a></li>
-    <li><i class="fa fa-linkedin-square"></i> <a href="http://id.linkedin.com/in/sundi3yansyah/" target="_blank">LinkedIn</a></li>
-    <li><i class="fa fa-facebook-square"></i> <a href="https://www.facebook.com/adiebiazajah" target="_blank">Facebook</a></li>
-    <li><i class="fa fa-youtube-square"></i> <a href="https://www.youtube.com/user/zpqwify" target="_blank">Youtube</a></li>
-    <li><i class="fa fa-youtube-play"></i> <a href="https://asciinema.org/~SunDi3yansyah" target="_blank">Asciinema</a></li>
-    <li><i class="fa fa-github-square"></i> <a href="https://speakerdeck.com/sundi3yansyah" target="_blank">Speaker Deck</a></li>
-    <li><i class="fa fa-dribbble"></i> <a href="https://dribbble.com/SunDi3yansyah" target="_blank">Dribbble</a></li>
-    <li><i class="fa fa-code"></i> <a href="https://www.openhub.net/accounts/SunDi3yansyah" target="_blank">Open Hub</a></li>
-    <li><i class="fa fa-code"></i> <a href="https://www.codeplex.com/site/users/view/SunDi3yansyah" target="_blank">CodePlex</a></li>
-  </ul>
-</section><section style="margin-top:15px;">
-<a class="twitter-timeline" href="https://twitter.com/SunDi3yansyah" data-widget-id="486239207929573376">Tweet oleh @SunDi3yansyah</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-</section><section>
-  <h4 class="cat-h4"><i class='fa fa-bookmark'></i> Categories</h4>
-  <li id="categories">
-    <a href='/article/categories/asciinema/' class='category'>asciinema<span class='number-cat'>3</span></a>
-<a href='/article/categories/bundler/' class='category'>bundler<span class='number-cat'>1</span></a>
-<a href='/article/categories/centos/' class='category'>centos<span class='number-cat'>4</span></a>
-<a href='/article/categories/control-panel/' class='category'>control panel<span class='number-cat'>1</span></a>
-<a href='/article/categories/crack/' class='category'>crack<span class='number-cat'>1</span></a>
-<a href='/article/categories/debian/' class='category'>debian<span class='number-cat'>1</span></a>
-<a href='/article/categories/dedicated/' class='category'>dedicated<span class='number-cat'>1</span></a>
-<a href='/article/categories/editor/' class='category'>editor<span class='number-cat'>3</span></a>
-<a href='/article/categories/english/' class='category'>english<span class='number-cat'>1</span></a>
-<a href='/article/categories/exploit/' class='category'>exploit<span class='number-cat'>4</span></a>
-<a href='/article/categories/framework/' class='category'>framework<span class='number-cat'>1</span></a>
-<a href='/article/categories/gems/' class='category'>gems<span class='number-cat'>1</span></a>
-<a href='/article/categories/git/' class='category'>git<span class='number-cat'>1</span></a>
-<a href='/article/categories/github/' class='category'>github<span class='number-cat'>12</span></a>
-<a href='/article/categories/go-lang/' class='category'>go-lang<span class='number-cat'>1</span></a>
-<a href='/article/categories/jekyll/' class='category'>jekyll<span class='number-cat'>2</span></a>
-<a href='/article/categories/linux/' class='category'>linux<span class='number-cat'>12</span></a>
-<a href='/article/categories/mac/' class='category'>mac<span class='number-cat'>1</span></a>
-<a href='/article/categories/mybb/' class='category'>mybb<span class='number-cat'>3</span></a>
-<a href='/article/categories/mysql/' class='category'>mysql<span class='number-cat'>3</span></a>
-<a href='/article/categories/nginx/' class='category'>nginx<span class='number-cat'>11</span></a>
-<a href='/article/categories/nodejs/' class='category'>nodejs<span class='number-cat'>5</span></a>
-<a href='/article/categories/npm/' class='category'>npm<span class='number-cat'>3</span></a>
-<a href='/article/categories/octopress/' class='category'>octopress<span class='number-cat'>12</span></a>
-<a href='/article/categories/open-source/' class='category'>open source<span class='number-cat'>2</span></a>
-<a href='/article/categories/php/' class='category'>php<span class='number-cat'>3</span></a>
-<a href='/article/categories/php-fpm/' class='category'>php-fpm<span class='number-cat'>3</span></a>
-<a href='/article/categories/programmer/' class='category'>programmer<span class='number-cat'>2</span></a>
-<a href='/article/categories/python/' class='category'>python<span class='number-cat'>2</span></a>
-<a href='/article/categories/rails/' class='category'>rails<span class='number-cat'>1</span></a>
-<a href='/article/categories/ruby/' class='category'>ruby<span class='number-cat'>5</span></a>
-<a href='/article/categories/server/' class='category'>server<span class='number-cat'>2</span></a>
-<a href='/article/categories/sqlite/' class='category'>sqlite<span class='number-cat'>1</span></a>
-<a href='/article/categories/sublimetext/' class='category'>sublimetext<span class='number-cat'>4</span></a>
-<a href='/article/categories/twitter/' class='category'>twitter<span class='number-cat'>1</span></a>
-<a href='/article/categories/ubuntu/' class='category'>ubuntu<span class='number-cat'>5</span></a>
-<a href='/article/categories/vim-/' class='category'>vim,<span class='number-cat'>1</span></a>
-<a href='/article/categories/vps/' class='category'>vps<span class='number-cat'>2</span></a>
-<a href='/article/categories/windows/' class='category'>windows<span class='number-cat'>2</span></a>
-<a href='/article/categories/youtube/' class='category'>youtube<span class='number-cat'>9</span></a>
-
-  </li>
-</section>
-
-  
-</aside>
-
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2014 SunDi3yansyah -
-  <span class="credit">Framework <a href="http://octopress.org" target="_blank">Octopress</a>, Built with <a href="https://www.ruby-lang.org" target="_blank">Ruby</a> and Deploy on <a href="https://github.com/" target="_blank">GitHub</a>.</span>
-</p>
-
-</footer>
-  
-
-<script type="text/javascript">
-      var disqus_shortname = 'sundi3yansyahlabs';
-      
-        
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://sundi3yansyah.com/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/';
-        var disqus_url = 'http://sundi3yansyah.com/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/';
-        var disqus_script = 'embed.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id; js.async = true;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-  <script type="text/javascript">
-    (function() {
-      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-      script.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-    })();
-  </script>
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>
