@@ -4,7 +4,7 @@
   <title><![CDATA[SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2014-12-22T14:09:54+07:00</updated>
+  <updated>2014-12-22T14:19:35+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -18,7 +18,7 @@
     <link href="http://sundi3yansyah.com/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/"/>
     <updated>2014-12-22T13:12:28+07:00</updated>
     <id>http://sundi3yansyah.com/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin</id>
-    <content type="html"><![CDATA[<p>Pertaman liat dulu penampakannya</p>
+    <content type="html"><![CDATA[<p>Pertama liat dulu penampakannya</p>
 
 <p><img src="https://lh4.googleusercontent.com/-EL817E9o1AQ/VJe2F8KdpmI/AAAAAAAAAdg/IdB5ryWNfks/s800/Screenshot+from+2014-12-22+13:08:19.png" alt="sundi3yansyah vim" /></p>
 
@@ -685,11 +685,140 @@ lanjut buat direktorinya</p>
 
 <p>pakailah <strong>.vimrc</strong> saya ini, ke dalam <strong>.vimrc</strong> kalian di <strong>~/.vimrc</strong></p>
 
-<p>File /.vimrc could not be found</p>
+<figure class='code'><figcaption><span>title  (.vimrc)</span> <a href='http://sundi3yansyah.com/downloads/code/.vimrc'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nb">set </span><span class="nv">encoding</span><span class="o">=</span>utf-8
+</span><span class='line'><span class="nb">set </span><span class="nv">laststatus</span><span class="o">=</span>2
+</span><span class='line'><span class="nb">set </span>number
+</span><span class='line'><span class="nb">set </span><span class="nv">tabstop</span><span class="o">=</span>4
+</span><span class='line'><span class="nb">set </span><span class="nv">shiftwidth</span><span class="o">=</span>4
+</span><span class='line'><span class="nb">set </span><span class="nv">softtabstop</span><span class="o">=</span>4
+</span><span class='line'><span class="nb">set </span>expandtab
+</span><span class='line'><span class="nb">set </span><span class="nv">colorcolumn</span><span class="o">=</span>+1
+</span><span class='line'><span class="nb">set </span>cursorline              <span class="s2">&quot; highligh current line</span>
+</span><span class='line'><span class="s2">set ignorecase</span>
+</span><span class='line'><span class="s2">set smartcase</span>
+</span><span class='line'><span class="s2">set showmatch</span>
+</span><span class='line'><span class="s2">set hlsearch</span>
+</span><span class='line'><span class="s2">set gdefault</span>
+</span><span class='line'><span class="s2">set virtualedit=block</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&quot;</span> colors
+</span><span class='line'>colorscheme molokai
+</span><span class='line'>syntax on
+</span><span class='line'><span class="nb">set </span><span class="nv">t_Co</span><span class="o">=</span>256
+</span><span class='line'><span class="nb">set </span><span class="nv">guifont</span><span class="o">=</span>DejaVu<span class="se">\ </span>Sans<span class="se">\ </span>Mono<span class="se">\ </span><span class="k">for</span><span class="se">\ </span>Powerline<span class="se">\ </span>10
+</span><span class='line'><span class="nb">let </span><span class="nv">Powerline_symbols</span> <span class="o">=</span> <span class="s1">&#39;fancy&#39;</span>
+</span><span class='line'>
+</span><span class='line'>inoremap &lt;c-a&gt; &lt;esc&gt;I
+</span><span class='line'>inoremap &lt;c-e&gt; &lt;esc&gt;A
+</span><span class='line'>
+</span><span class='line'><span class="s2">&quot; Return to the previously selected line in the file</span>
+</span><span class='line'><span class="s2">augroup line_return</span>
+</span><span class='line'><span class="s2">    au!</span>
+</span><span class='line'><span class="s2">    au BufReadPost *</span>
+</span><span class='line'><span class="s2">        \ if line(&quot;</span><span class="s1">&#39;\&quot;&quot;) &gt; 0 &amp;&amp; line(&quot;&#39;</span><span class="se">\&quot;</span><span class="s2">&quot;) &lt;= line(&quot;$&quot;) |</span>
+</span><span class='line'><span class="s2">        \ execute &#39;normal! g`&quot;</span>zvzz<span class="s1">&#39; |</span>
+</span><span class='line'><span class="s1">        \ endif</span>
+</span><span class='line'><span class="s1">augroup END</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">&quot; remove seach-highlights when pressing ,+&lt;space&gt;</span>
+</span><span class='line'><span class="s1">let mapleader=&quot;,&quot;</span>
+</span><span class='line'><span class="s1">noremap &lt;leader&gt;&lt;space&gt; :noh&lt;cr&gt;: call clearmatches()&lt;cr&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">&quot; Buffers, Backup &amp; Co</span>
+</span><span class='line'><span class="s1">set undodir=~/.vim/tmp/undo//</span>
+</span><span class='line'><span class="s1">set backupdir=~/.vim/tmp/backup//</span>
+</span><span class='line'><span class="s1">set directory=~/.vim/tmp/swap//</span>
+</span><span class='line'><span class="s1">set backup</span>
+</span><span class='line'><span class="s1">set noswapfile</span>
+</span><span class='line'><span class="s1">set ruler</span>
+</span><span class='line'><span class="s1">set history=10000</span>
+</span><span class='line'><span class="s1">set undofile</span>
+</span><span class='line'><span class="s1">set undoreload=10000</span>
+</span><span class='line'><span class="s1">set title</span>
+</span><span class='line'><span class="s1">set autoindent</span>
+</span><span class='line'><span class="s1">set autoread</span>
+</span><span class='line'><span class="s1">set lazyredraw</span>
+</span><span class='line'><span class="s1">set mouse=a</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">&quot; reload .vimrc on saving</span>
+</span><span class='line'><span class="s1">au BufWritePost .vimrc so ~/.vimrc</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">execute pathogen#infect()</span>
+</span><span class='line'><span class="s1">call pathogen#infect(&#39;</span>bundle/<span class="o">{}</span><span class="err">&#39;</span><span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>nnoremap &lt;F3&gt; :NumbersToggle&lt;CR&gt;
+</span><span class='line'>nnoremap &lt;F4&gt; :NumbersOnOff&lt;CR&gt;
+</span></code></pre></td></tr></table></div></figure>
+
 
 <hr />
 
-<p>Apa sih fungsi dari plugin-plugin di atas? silakan di baca saja README nya di setiap packagenya <img src="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png" width="20" height="20" title="smile" alt="smile"></p>
+<p>Apa sih fungsi dari plugin-plugin di atas? silakan di baca saja README nya di setiap packagenya <img src="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png" width="20" height="20" title="smile" alt="smile">
+Masih kurang puas dengan package yang saya berikan? Yok kita explorer VIM awesome berikut ini <a href="http://vimawesome.com/">vimawesome</a> <img src="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png" width="20" height="20" title="smiley" alt="smiley"></p>
 ]]></content>
   </entry>
   

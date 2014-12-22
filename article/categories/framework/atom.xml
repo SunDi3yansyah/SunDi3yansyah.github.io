@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Framework | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/framework/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2014-12-22T14:10:34+07:00</updated>
+  <updated>2014-12-22T14:19:35+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -67,11 +67,14 @@
 
 <p>Karena saat ini dalam contoh menggunakan Mysql jadi Setting di Config.php seperti berikut :</p>
 
-<p>{% codeblock Config.php %}
-ORM::configure(&lsquo;mysql:host=localhost; dbname=perpustakaan&rsquo;);
-ORM::configure(&lsquo;username&rsquo;, &lsquo;root&rsquo;);
-ORM::configure(&lsquo;password&rsquo;, &lsquo;1&rsquo;);
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>Config.php </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nx">ORM</span><span class="o">::</span><span class="na">configure</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">mysql</span><span class="o">:</span><span class="nx">host</span><span class="o">=</span><span class="nx">localhost</span><span class="p">;</span> <span class="nx">dbname</span><span class="o">=</span><span class="nx">perpustakaan</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;);</span>
+</span><span class='line'><span class="nx">ORM</span><span class="o">::</span><span class="na">configure</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">username</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">root</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;);</span>
+</span><span class='line'><span class="nx">ORM</span><span class="o">::</span><span class="na">configure</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">password</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="mi">1</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;);</span>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Secara default sudah bisa berjalan dengan lancar jika diakses <a href="http://domain.com">http://domain.com</a> atau <a href="http://localhost/folder">http://localhost/folder</a> dan dicontrollers sudah ada file indexController.php dan testController.php.</p>
 
@@ -79,25 +82,42 @@ ORM::configure(&lsquo;password&rsquo;, &lsquo;1&rsquo;);
 
 <p>Lalu buat sebuah tabel dengan nama books</p>
 
-<p>{% codeblock books.sql %}
-CREATE TABLE IF NOT EXISTS <code>books</code> (
-<code>id</code> int(11) NOT NULL,
-  <code>author</code> int(11) NOT NULL,
-  <code>title</code> varchar(70) NOT NULL,
-  <code>isbn</code> varchar(20) DEFAULT NULL,
-  <code>publisher</code> varchar(30) NOT NULL,
-  <code>year</code> int(4) NOT NULL,
-  <code>summary</code> text,
-  <code>coverMime</code> varchar(20) DEFAULT NULL,
-  <code>coverImage</code> blob,
-  <code>copies</code> tinyint(4) NOT NULL DEFAULT &lsquo;1&rsquo;
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;</p>
-
-<p>INSERT INTO <code>books</code> (<code>id</code>, <code>author</code>, <code>title</code>, <code>isbn</code>, <code>publisher</code>, <code>year</code>, <code>summary</code>, <code>coverMime</code>, <code>coverImage</code>, <code>copies</code>) VALUES
-(1, 1, &lsquo;Creating your MySQL Database: Practical Design Tips and\r\nTechniques&rsquo;, &lsquo;1904811302&rsquo;, &lsquo;Packt Publishing Ltd&rsquo;, 2006, &lsquo;A short guide for everyone on how to structure your data and\r\nset-up your MySQL database tables efficiently and easily.&rsquo;, NULL, NULL, 1),
-(2, 2, &lsquo;ImageMagick Tricks&rsquo;, &lsquo;1904811868&rsquo;, &lsquo;Packt Publishing\r\nLtd&rsquo;, 2006, &lsquo;Unleash the power of ImageMagick with this fast, friendly\r\ntutorial, and tips guide&rsquo;, NULL, NULL, 1),
-(3, 3, &lsquo;Building Websites with Plone&rsquo;, &lsquo;1904811027&rsquo;, &lsquo;Packt\r\nPublishing Ltd&rsquo;, 2004, &lsquo;An in-depth and comprehensive guide to the Plone content\r\nmanagement system&rsquo;, NULL, NULL, 1);
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>books.sql </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">IF</span> <span class="k">NOT</span> <span class="k">EXISTS</span> <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">books</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span> <span class="p">(</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">id</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">author</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">title</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">70</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">isbn</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="k">DEFAULT</span> <span class="k">NULL</span><span class="p">,</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">publisher</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="k">year</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">summary</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span> <span class="nb">text</span><span class="p">,</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">coverMime</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="k">DEFAULT</span> <span class="k">NULL</span><span class="p">,</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">coverImage</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span> <span class="nb">blob</span><span class="p">,</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">copies</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span> <span class="n">tinyint</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">DEFAULT</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="mi">1</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span>
+</span><span class='line'><span class="p">)</span> <span class="n">ENGINE</span><span class="o">=</span><span class="n">InnoDB</span>  <span class="k">DEFAULT</span> <span class="n">CHARSET</span><span class="o">=</span><span class="n">latin1</span> <span class="n">AUTO_INCREMENT</span><span class="o">=</span><span class="mi">4</span> <span class="p">;</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">books</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span> <span class="p">(</span><span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">id</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">author</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">title</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">isbn</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">publisher</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="k">year</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">summary</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">coverMime</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">coverImage</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">copies</span><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;</span><span class="p">)</span> <span class="k">VALUES</span>
+</span><span class='line'><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">Creating</span> <span class="n">your</span> <span class="n">MySQL</span> <span class="k">Database</span><span class="p">:</span> <span class="n">Practical</span> <span class="n">Design</span> <span class="n">Tips</span> <span class="k">and</span><span class="err">\</span><span class="n">r</span><span class="err">\</span><span class="n">nTechniques</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="mi">1904811302</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">Packt</span> <span class="n">Publishing</span> <span class="n">Ltd</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="mi">2006</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">A</span> <span class="n">short</span> <span class="n">guide</span> <span class="k">for</span> <span class="n">everyone</span> <span class="k">on</span> <span class="n">how</span> <span class="k">to</span> <span class="k">structure</span> <span class="n">your</span> <span class="k">data</span> <span class="k">and</span><span class="err">\</span><span class="n">r</span><span class="err">\</span><span class="n">nset</span><span class="o">-</span><span class="n">up</span> <span class="n">your</span> <span class="n">MySQL</span> <span class="k">database</span> <span class="n">tables</span> <span class="n">efficiently</span> <span class="k">and</span> <span class="n">easily</span><span class="p">.</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="k">NULL</span><span class="p">,</span> <span class="k">NULL</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+</span><span class='line'><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">ImageMagick</span> <span class="n">Tricks</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="mi">1904811868</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">Packt</span> <span class="n">Publishing</span><span class="err">\</span><span class="n">r</span><span class="err">\</span><span class="n">nLtd</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="mi">2006</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">Unleash</span> <span class="n">the</span> <span class="n">power</span> <span class="k">of</span> <span class="n">ImageMagick</span> <span class="k">with</span> <span class="n">this</span> <span class="n">fast</span><span class="p">,</span> <span class="n">friendly</span><span class="err">\</span><span class="n">r</span><span class="err">\</span><span class="n">ntutorial</span><span class="p">,</span> <span class="k">and</span> <span class="n">tips</span> <span class="n">guide</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="k">NULL</span><span class="p">,</span> <span class="k">NULL</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+</span><span class='line'><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">Building</span> <span class="n">Websites</span> <span class="k">with</span> <span class="n">Plone</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="mi">1904811027</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">Packt</span><span class="err">\</span><span class="n">r</span><span class="err">\</span><span class="n">nPublishing</span> <span class="n">Ltd</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="mi">2004</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">An</span> <span class="k">in</span><span class="o">-</span><span class="n">depth</span> <span class="k">and</span> <span class="n">comprehensive</span> <span class="n">guide</span> <span class="k">to</span> <span class="n">the</span> <span class="n">Plone</span> <span class="n">content</span><span class="err">\</span><span class="n">r</span><span class="err">\</span><span class="n">nmanagement</span> <span class="k">system</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="k">NULL</span><span class="p">,</span> <span class="k">NULL</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <h4>Model</h4>
 
@@ -107,45 +127,70 @@ CREATE TABLE IF NOT EXISTS <code>books</code> (
 
 <p>terlebih dahulu setting Configurasi database.</p>
 
-<p>{% codeblock SiteModel.php %}
-&lt;?php
-/**</p>
-
-<hr />
-
-<ul>
-<li>@author : Yudi Purwanto</li>
-<li>@link   : <a href="http://yudi-purwanto.com">http://yudi-purwanto.com</a></li>
-<li>@since  : 14 May 2014</li>
-<li>File    : SiteModel.php</li>
-<li></li>
-<li><p>**************************************/
-class SiteModel extends Model
-{
-public function getBooks()
-{
-$list = ORM::table(&lsquo;books&rsquo;)->find_many();
-return $list;
-}
-}</p></li>
-</ul>
-
-
-<p>/<em> End of file SiteModel.php </em>/
-/<em> Location: ./models/SiteModel.php </em>/
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>SiteModel.php </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">?</span><span class="nx">php</span>
+</span><span class='line'><span class="sd">/**&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sd">&lt;hr /&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sd">&lt;ul&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;@author : Yudi Purwanto&lt;/li&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;@link   : &lt;a href=&quot;http://yudi-purwanto.com&quot;&gt;http://yudi-purwanto.com&lt;/a&gt;&lt;/li&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;@since  : 14 May 2014&lt;/li&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;File    : SiteModel.php&lt;/li&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;&lt;/li&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;&lt;p&gt;**************************************/</span>
+</span><span class='line'><span class="k">class</span> <span class="nc">SiteModel</span> <span class="k">extends</span> <span class="nx">Model</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">public</span> <span class="k">function</span> <span class="nf">getBooks</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="nv">$list</span> <span class="o">=</span> <span class="nx">ORM</span><span class="o">::</span><span class="na">table</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">books</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;)</span><span class="o">-&gt;</span><span class="na">find_many</span><span class="p">();</span>
+</span><span class='line'><span class="k">return</span> <span class="nv">$list</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="nx">ul</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;/&lt;</span><span class="nx">em</span><span class="o">&gt;</span> <span class="nx">End</span> <span class="nx">of</span> <span class="nb">file</span> <span class="nx">SiteModel</span><span class="o">.</span><span class="nx">php</span> <span class="o">&lt;/</span><span class="nx">em</span><span class="o">&gt;/</span>
+</span><span class='line'><span class="o">/&lt;</span><span class="nx">em</span><span class="o">&gt;</span> <span class="nx">Location</span><span class="o">:</span> <span class="o">./</span><span class="nx">models</span><span class="o">/</span><span class="nx">SiteModel</span><span class="o">.</span><span class="nx">php</span> <span class="o">&lt;/</span><span class="nx">em</span><span class="o">&gt;/</span>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p><strong>Note : Untuk load sebuah model didalam sebuah controller dengan cara :</strong></p>
 
-<p>{% codeblock root@sundi3yansyah %}
-$this->loadModel(&lsquo;NamaModel&rsquo;);
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$this->loadModel(&lsquo;NamaModel&rsquo;);</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Contoh :</p>
 
-<p>{% codeblock root@sundi3yansyah %}
-$this->loadModel(&lsquo;Site&rsquo;);
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$this->loadModel(&lsquo;Site&rsquo;);</span></code></pre></td></tr></table></div></figure></p>
 
 <h4>Controller</h4>
 
@@ -153,42 +198,76 @@ $this->loadModel(&lsquo;Site&rsquo;);
 
 <p>Membuat sebuah controller, sebagai contoh :</p>
 
-<p>{% codeblock testController.php %}
-&lt;?php
-/**</p>
-
-<hr />
-
-<ul>
-<li>@author : Yudi Purwanto</li>
-<li>@link     : <a href="http://yudi-purwanto.com">http://yudi-purwanto.com</a></li>
-<li>@since   : 14 May 2014</li>
-<li>File         : testController.php</li>
-<li></li>
-<li><p>**************************************/
-class testController extends Controller
-{ <br/>
- //<-- * Index Error * --->
- public function index() {
-     header (&lsquo;HTTP/1.0 404 Not Found&rsquo;);
-     include &lsquo;public/error/404.php&rsquo;; // Show Error 404
- }</p>
-
-<p> public function test()
- {
-  $output = $this->loadModel(&lsquo;Site&rsquo;);
-  $this->view->title = &ldquo;Testing controller&rdquo;;
-  $this->view->list = $output->getBooks();
-/<em> Show Views </em>/
-     $this->view->render(&lsquo;index&rsquo;, null);
- }
-}</p></li>
-</ul>
-
-
-<p>/<em> End of file indexController.php </em>/
-/<em> Location: ./controllers/indexController.php </em>/
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>testController.php </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">?</span><span class="nx">php</span>
+</span><span class='line'><span class="sd">/**&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sd">&lt;hr /&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sd">&lt;ul&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;@author : Yudi Purwanto&lt;/li&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;@link     : &lt;a href=&quot;http://yudi-purwanto.com&quot;&gt;http://yudi-purwanto.com&lt;/a&gt;&lt;/li&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;@since   : 14 May 2014&lt;/li&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;File         : testController.php&lt;/li&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;&lt;/li&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;&lt;p&gt;**************************************/</span>
+</span><span class='line'><span class="k">class</span> <span class="nc">testController</span> <span class="k">extends</span> <span class="nx">Controller</span>
+</span><span class='line'><span class="p">{</span> <span class="o">&lt;</span><span class="nx">br</span><span class="o">/&gt;</span>
+</span><span class='line'> <span class="c1">//&lt;-- * Index Error * ---&gt;</span>
+</span><span class='line'> <span class="k">public</span> <span class="k">function</span> <span class="nf">index</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>     <span class="nb">header</span> <span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">HTTP</span><span class="o">/</span><span class="mf">1.0</span> <span class="mi">404</span> <span class="k">Not</span> <span class="nx">Found</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;);</span>
+</span><span class='line'>     <span class="k">include</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="k">public</span><span class="o">/</span><span class="nx">error</span><span class="o">/</span><span class="mf">404.</span><span class="nx">php</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;;</span> <span class="c1">// Show Error 404</span>
+</span><span class='line'> <span class="p">}</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span> <span class="k">public</span> <span class="k">function</span> <span class="nf">test</span><span class="p">()</span>
+</span><span class='line'> <span class="p">{</span>
+</span><span class='line'>  <span class="nv">$output</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">loadModel</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">Site</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;);</span>
+</span><span class='line'>  <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">view</span><span class="o">-&gt;</span><span class="na">title</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">Testing</span> <span class="nx">controller</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;;</span>
+</span><span class='line'>  <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">view</span><span class="o">-&gt;</span><span class="na">list</span> <span class="o">=</span> <span class="nv">$output</span><span class="o">-&gt;</span><span class="na">getBooks</span><span class="p">();</span>
+</span><span class='line'><span class="o">/&lt;</span><span class="nx">em</span><span class="o">&gt;</span> <span class="nx">Show</span> <span class="nx">Views</span> <span class="o">&lt;/</span><span class="nx">em</span><span class="o">&gt;/</span>
+</span><span class='line'>     <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">view</span><span class="o">-&gt;</span><span class="na">render</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">index</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="k">null</span><span class="p">);</span>
+</span><span class='line'> <span class="p">}</span>
+</span><span class='line'><span class="p">}</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="nx">ul</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;/&lt;</span><span class="nx">em</span><span class="o">&gt;</span> <span class="nx">End</span> <span class="nx">of</span> <span class="nb">file</span> <span class="nx">indexController</span><span class="o">.</span><span class="nx">php</span> <span class="o">&lt;/</span><span class="nx">em</span><span class="o">&gt;/</span>
+</span><span class='line'><span class="o">/&lt;</span><span class="nx">em</span><span class="o">&gt;</span> <span class="nx">Location</span><span class="o">:</span> <span class="o">./</span><span class="nx">controllers</span><span class="o">/</span><span class="nx">indexController</span><span class="o">.</span><span class="nx">php</span> <span class="o">&lt;/</span><span class="nx">em</span><span class="o">&gt;/</span>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <h4>View</h4>
 
@@ -196,57 +275,105 @@ class testController extends Controller
 
 <p><strong>Exstensi file view adalah .phtml jadi setiap membuat view dengan exstensi phtml</strong></p>
 
-<p>{% codeblock php Exstensi file view adalah .phtml jadi setiap membuat view dengan exstensi phtml %}
-&lt;!DOCTYPE html>
-<html>
-<head>
- <title>&lt;?php echo $this->title; ?></title>
- <link rel="stylesheet" type="text/css" href="<?php echo $layout['css']; ?>bootstrap.min.css&#8221;>
-</head>
-<body></p>
-
-<div class="container">
-
-<nav class="navbar navbar-inverse">
- <div class="navbar-header">
-  <a class="navbar-brand" href="<?php echo url; ?>&#8220;>Crud</a>
- </div>
-</nav>
-<h1>All Data</h1>
-
-<table class="table table-striped table-bordered">
- <thead>
-  <tr>
-  <td>Author and Title</td>
-  <td>ISBN</td>
-  <td>Publisher</td>
-  <td>Year</td>
-  <td>Summary</td>
-  <td>Copies</td>
-  </tr>
- </thead>
- <tbody>
-  <?php
-  $data = $this->list;
-  foreach($data as $value):
-  ?>
-  <tr>
-  <td><?php echo $value->title; ?></td>
-  <td><?php echo $value->isbn; ?></td>
-  <td><?php echo $value->publisher; ?></td>
-  <td><?php echo $value->year; ?></td>
-  <td><?php echo $value->summary; ?></td>
-  <td><?php echo $value->copies; ?></td>
-  </tr>
-  <?php endforeach ?>
- </tbody>
-</table>
-</div>
-
-
-<p></body>
-</html>
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>php Exstensi file view adalah .phtml jadi setiap membuat view dengan exstensi phtml </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;!DOCTYPE html>
+</span><span class='line'>&lt;html>
+</span><span class='line'>&lt;head>
+</span><span class='line'> &lt;title>&lt;?php echo $this->title; ?>&lt;/title>
+</span><span class='line'> &lt;link rel="stylesheet" type="text/css" href="&lt;?php echo $layout['css']; ?>bootstrap.min.css">
+</span><span class='line'>&lt;/head>
+</span><span class='line'>&lt;body>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;div class="container">
+</span><span class='line'>
+</span><span class='line'>&lt;nav class="navbar navbar-inverse">
+</span><span class='line'> &lt;div class="navbar-header">
+</span><span class='line'>  &lt;a class="navbar-brand" href="&lt;?php echo url; ?>">Crud&lt;/a>
+</span><span class='line'> &lt;/div>
+</span><span class='line'>&lt;/nav>
+</span><span class='line'>&lt;h1>All Data&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;table class="table table-striped table-bordered">
+</span><span class='line'> &lt;thead>
+</span><span class='line'>  &lt;tr>
+</span><span class='line'>  &lt;td>Author and Title&lt;/td>
+</span><span class='line'>  &lt;td>ISBN&lt;/td>
+</span><span class='line'>  &lt;td>Publisher&lt;/td>
+</span><span class='line'>  &lt;td>Year&lt;/td>
+</span><span class='line'>  &lt;td>Summary&lt;/td>
+</span><span class='line'>  &lt;td>Copies&lt;/td>
+</span><span class='line'>  &lt;/tr>
+</span><span class='line'> &lt;/thead>
+</span><span class='line'> &lt;tbody>
+</span><span class='line'>  &lt;?php
+</span><span class='line'>  $data = $this->list;
+</span><span class='line'>  foreach($data as $value):
+</span><span class='line'>  ?>
+</span><span class='line'>  &lt;tr>
+</span><span class='line'>  &lt;td>&lt;?php echo $value->title; ?>&lt;/td>
+</span><span class='line'>  &lt;td>&lt;?php echo $value->isbn; ?>&lt;/td>
+</span><span class='line'>  &lt;td>&lt;?php echo $value->publisher; ?>&lt;/td>
+</span><span class='line'>  &lt;td>&lt;?php echo $value->year; ?>&lt;/td>
+</span><span class='line'>  &lt;td>&lt;?php echo $value->summary; ?>&lt;/td>
+</span><span class='line'>  &lt;td>&lt;?php echo $value->copies; ?>&lt;/td>
+</span><span class='line'>  &lt;/tr>
+</span><span class='line'>  &lt;?php endforeach ?>
+</span><span class='line'> &lt;/tbody>
+</span><span class='line'>&lt;/table>
+</span><span class='line'>&lt;/div>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>&lt;p>&lt;/body>
+</span><span class='line'>&lt;/html></span></code></pre></td></tr></table></div></figure></p>
 
 <h4>Router</h4>
 
@@ -256,85 +383,158 @@ class testController extends Controller
 
 <p>Perhatikan baik baik, bisa dibilang susah susah gampang disaat mendaftarkan controller ke router.</p>
 
-<p>{% codeblock Router.php %}
-&lt;?php
-/**</p>
-
-<hr />
-
-<ul>
-<li>@author : Yudi Purwanto</li>
-<li>@link   : <a href="http://yudi-purwanto.com">http://yudi-purwanto.com</a></li>
-<li>@since  : 14 May 2014</li>
-<li>File    : Router.php</li>
-<li></li>
-<li><p>**************************************/
-class Router
-{
- private $<em>controller;
- private $</em>method;</p>
-
-<p> public function <em>_construct() {
-     $page        = $</em>GET[&lsquo;test&rsquo;];   //Test eg: <a href="http:website.com/test">http:website.com/test</a> dan jangan lupa setting htaccess</p>
-
-<pre><code> /* function method controller */
- $staticPages = array(
-                 'test'
- );
-
- //&lt;-- *  Pages Default * --&gt;
- if( !in_array( $page, $staticPages ) 
-     &amp;&amp; isset( $page ) 
- ) {
-      $this-&gt;_c $page );
-     $this-&gt;_method     = strtolower( $page );
-
- }
- //&lt;--- ************* Pages ********* ---&gt;
- else if( isset( $page ) 
-         &amp;&amp; in_array( $page, $staticPages )
- ) {
-     //load nama controller adalah test = load nama folder test di dalam folder views, jadi harus sama
-      $this-&gt;_c
-     $this-&gt;_method     = strtolower( $page );
- }
-
- //&lt;-- * if no have variables defined $ _GET showed index * --&gt;
- if( !$this-&gt;_controller ) {
-      $this-&gt;_c
- }
-
- if( !$this-&gt;_method ) {
-     $this-&gt;_method = 'index';
- }
-</code></pre>
-
-<p> } //<--- * End * --></p>
-
-<p> public function getController() {
-     return $this->_controller;
- }</p>
-
-<p> public function getMethod() {
-     return $this->_method;
- }</p></li>
-</ul>
-
-
-<p>} //<-- * End Class * --></p>
-
-<p>/<em> End of file Router.php </em>/
-/<em> Location: ./base/Router.php </em>/
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>Router.php </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">?</span><span class="nx">php</span>
+</span><span class='line'><span class="sd">/**&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sd">&lt;hr /&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sd">&lt;ul&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;@author : Yudi Purwanto&lt;/li&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;@link   : &lt;a href=&quot;http://yudi-purwanto.com&quot;&gt;http://yudi-purwanto.com&lt;/a&gt;&lt;/li&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;@since  : 14 May 2014&lt;/li&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;File    : Router.php&lt;/li&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;&lt;/li&gt;</span>
+</span><span class='line'><span class="sd">&lt;li&gt;&lt;p&gt;**************************************/</span>
+</span><span class='line'><span class="k">class</span> <span class="nc">Router</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'> <span class="k">private</span> <span class="err">$</span><span class="o">&lt;</span><span class="nx">em</span><span class="o">&gt;</span><span class="nx">controller</span><span class="p">;</span>
+</span><span class='line'> <span class="k">private</span> <span class="err">$</span><span class="o">&lt;/</span><span class="nx">em</span><span class="o">&gt;</span><span class="nx">method</span><span class="p">;</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span> <span class="k">public</span> <span class="k">function</span> <span class="err">&lt;</span><span class="nf">em</span><span class="o">&gt;</span><span class="nx">_construct</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>     <span class="nv">$page</span>        <span class="o">=</span> <span class="err">$</span><span class="o">&lt;/</span><span class="nx">em</span><span class="o">&gt;</span><span class="nx">GET</span><span class="p">[</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">test</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;];</span>   <span class="c1">//Test eg: &lt;a href=&quot;http:website.com/test&quot;&gt;http:website.com/test&lt;/a&gt; dan jangan lupa setting htaccess&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span> <span class="cm">/* function method controller */</span>
+</span><span class='line'> <span class="nv">$staticPages</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+</span><span class='line'>                 <span class="s1">&#39;test&#39;</span>
+</span><span class='line'> <span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'> <span class="c1">//&amp;lt;-- *  Pages Default * --&amp;gt;</span>
+</span><span class='line'> <span class="k">if</span><span class="p">(</span> <span class="o">!</span><span class="nb">in_array</span><span class="p">(</span> <span class="nv">$page</span><span class="p">,</span> <span class="nv">$staticPages</span> <span class="p">)</span>
+</span><span class='line'>     <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="nb">isset</span><span class="p">(</span> <span class="nv">$page</span> <span class="p">)</span>
+</span><span class='line'> <span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nv">$this</span><span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="nx">_c</span> <span class="nv">$page</span> <span class="p">);</span>
+</span><span class='line'>     <span class="nv">$this</span><span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="nx">_method</span>     <span class="o">=</span> <span class="nb">strtolower</span><span class="p">(</span> <span class="nv">$page</span> <span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'> <span class="p">}</span>
+</span><span class='line'> <span class="c1">//&amp;lt;--- ************* Pages ********* ---&amp;gt;</span>
+</span><span class='line'> <span class="k">else</span> <span class="k">if</span><span class="p">(</span> <span class="nb">isset</span><span class="p">(</span> <span class="nv">$page</span> <span class="p">)</span>
+</span><span class='line'>         <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span> <span class="nb">in_array</span><span class="p">(</span> <span class="nv">$page</span><span class="p">,</span> <span class="nv">$staticPages</span> <span class="p">)</span>
+</span><span class='line'> <span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>     <span class="c1">//load nama controller adalah test = load nama folder test di dalam folder views, jadi harus sama</span>
+</span><span class='line'>      <span class="nv">$this</span><span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="nx">_c</span>
+</span><span class='line'>     <span class="nv">$this</span><span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="nx">_method</span>     <span class="o">=</span> <span class="nb">strtolower</span><span class="p">(</span> <span class="nv">$page</span> <span class="p">);</span>
+</span><span class='line'> <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'> <span class="c1">//&amp;lt;-- * if no have variables defined $ _GET showed index * --&amp;gt;</span>
+</span><span class='line'> <span class="k">if</span><span class="p">(</span> <span class="o">!</span><span class="nv">$this</span><span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="nx">_controller</span> <span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nv">$this</span><span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="nx">_c</span>
+</span><span class='line'> <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'> <span class="k">if</span><span class="p">(</span> <span class="o">!</span><span class="nv">$this</span><span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="nx">_method</span> <span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>     <span class="nv">$this</span><span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="nx">_method</span> <span class="o">=</span> <span class="s1">&#39;index&#39;</span><span class="p">;</span>
+</span><span class='line'> <span class="p">}</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="nx">code</span><span class="o">&gt;&lt;/</span><span class="nx">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span> <span class="p">}</span> <span class="c1">//&lt;--- * End * --&gt;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span> <span class="k">public</span> <span class="k">function</span> <span class="nf">getController</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>     <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_controller</span><span class="p">;</span>
+</span><span class='line'> <span class="p">}</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span> <span class="k">public</span> <span class="k">function</span> <span class="nf">getMethod</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>     <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_method</span><span class="p">;</span>
+</span><span class='line'> <span class="p">}</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="nx">ul</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">}</span> <span class="c1">//&lt;-- * End Class * --&gt;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;/&lt;</span><span class="nx">em</span><span class="o">&gt;</span> <span class="nx">End</span> <span class="nx">of</span> <span class="nb">file</span> <span class="nx">Router</span><span class="o">.</span><span class="nx">php</span> <span class="o">&lt;/</span><span class="nx">em</span><span class="o">&gt;/</span>
+</span><span class='line'><span class="o">/&lt;</span><span class="nx">em</span><span class="o">&gt;</span> <span class="nx">Location</span><span class="o">:</span> <span class="o">./</span><span class="nx">base</span><span class="o">/</span><span class="nx">Router</span><span class="o">.</span><span class="nx">php</span> <span class="o">&lt;/</span><span class="nx">em</span><span class="o">&gt;/</span>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Untuk file htaccessnya anda bisa menambahkan seperti ini :</p>
 
-<p>{% codeblock .htaccess %}</p>
-
-<h1>Test</h1>
-
-<p>RewriteRule ^([a-zA-Z0-9-_]+)$ index.php?test=$1 [QSA,L]
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>.htaccess </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Test&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>RewriteRule ^([a-zA-Z0-9-_]+)$ index.php?test=$1 [QSA,L]</span></code></pre></td></tr></table></div></figure></p>
 
 <p><strong>Selamat Mencoba&hellip;!!!</strong></p>
 

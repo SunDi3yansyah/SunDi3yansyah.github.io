@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Git | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/git/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2014-12-22T14:10:34+07:00</updated>
+  <updated>2014-12-22T14:19:35+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -20,51 +20,54 @@
     <id>http://sundi3yansyah.com/article/2014/07/03/cara-install-slash-upgrade-versi-git-core-terbaru</id>
     <content type="html"><![CDATA[<p>Secara bawan OS khususnya basis Unix biasanya sudah terinstall <b>git</b>, jika belum maka:</p>
 
-<p>{% codeblock root@sundi3yansyah %}
-sudo apt-get install git
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install git</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Itu akan menghasilkan versi 1.7.9.5 biasanya:</p>
 
-<p>{% codeblock root@sundi3yansyah %}
-git &ndash;version
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git &ndash;version</span></code></pre></td></tr></table></div></figure></p>
 
 <!-- more -->
 
 
 <p>Output:</p>
 
-<p>{% codeblock root@sundi3yansyah %}
-git version 1.7.9.5
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git version 1.7.9.5</span></code></pre></td></tr></table></div></figure></p>
 
-<p>Nah biasanya lagi nih, {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a> 20 20 &lsquo;smiley&rsquo; &lsquo;smiley&rsquo; %}a banyak software-software atau module lainnya yang membutuhkan git di atas versi tersebut, maka kita harus update <b>git</b> kita:</p>
+<p>Nah biasanya lagi nih, <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a banyak software-software atau module lainnya yang membutuhkan git di atas versi tersebut, maka kita harus update <b>git</b> kita:</p>
 
-<p>{% codeblock root@sundi3yansyah %}
-sudo apt-get install python-software-properties
-sudo add-apt-repository ppa:git-core/ppa
-sudo apt-get update
-sudo apt-get install git
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install python-software-properties
+</span><span class='line'>sudo add-apt-repository ppa:git-core/ppa
+</span><span class='line'>sudo apt-get update
+</span><span class='line'>sudo apt-get install git</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Jika sudah selesai maka lakukan cek versi:</p>
 
-<p>{% codeblock root@sundi3yansyah %}
-git &ndash;version
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git &ndash;version</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Output:</p>
 
-<p>{% codeblock root@sundi3yansyah %}
-git version 2.0.1
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git version 2.0.1</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Baik cukup disini selamat bermain <b>git</b>, selamat hacking, selamat coding. Hahaha&hellip;</p>
 
-<p>{% codeblock root@sundi3yansyah %}
-exit
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>exit</span></code></pre></td></tr></table></div></figure></p>
 ]]></content>
   </entry>
   

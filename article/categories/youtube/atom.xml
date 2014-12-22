@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Youtube | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/youtube/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2014-12-22T14:10:34+07:00</updated>
+  <updated>2014-12-22T14:19:35+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -20,33 +20,33 @@
     <id>http://sundi3yansyah.com/article/2014/11/22/cara-install-youtube-dl</id>
     <content type="html"><![CDATA[<p>Menggunakan CURL</p>
 
-<p>{% codeblock lang:sh %}
-sudo curl <a href="https://yt-dl.org/downloads/2014.11.21.1/youtube-dl">https://yt-dl.org/downloads/2014.11.21.1/youtube-dl</a> -o /usr/local/bin/youtube-dl
-{% endcodeblock %}
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>sudo curl &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;https://yt-dl.org/downloads/2014.11.21.1/youtube-dl&quot;</span>&gt;https://yt-dl.org/downloads/2014.11.21.1/youtube-dl&lt;/a&gt; -o /usr/local/bin/youtube-dl
+</span></code></pre></td></tr></table></div></figure>
 NEXT
-{% codeblock lang:sh %}
-sudo chmod a+x /usr/local/bin/youtube-dl
-{% endcodeblock %}</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>sudo chmod a+x /usr/local/bin/youtube-dl
+</span></code></pre></td></tr></table></div></figure></p>
 
 <!--more-->
 
 
 <p>Bisa juga menggunakan WGET</p>
 
-<p>{% codeblock lang:sh %}
-sudo wget <a href="https://yt-dl.org/downloads/2014.11.21.1/youtube-dl">https://yt-dl.org/downloads/2014.11.21.1/youtube-dl</a> -O /usr/local/bin/youtube-dl
-{% endcodeblock %}</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>sudo wget &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;https://yt-dl.org/downloads/2014.11.21.1/youtube-dl&quot;</span>&gt;https://yt-dl.org/downloads/2014.11.21.1/youtube-dl&lt;/a&gt; -O /usr/local/bin/youtube-dl
+</span></code></pre></td></tr></table></div></figure></p>
 
-<p>{% codeblock lang:sh %}
-sudo chmod a+x /usr/local/bin/youtube-dl
-{% endcodeblock %}</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>sudo chmod a+x /usr/local/bin/youtube-dl
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p><strong>NOTE:</strong> Jika belum terinstall dari salah satu diatas maka install terlebih dahulu</p>
 
 <pre><code>sudo apt-get install curl wget
 </code></pre>
 
-<p>Tapi biasanya sudah terinstall {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a> 20 20 &lsquo;smile&rsquo; &lsquo;smile&rsquo; %}</p>
+<p>Tapi biasanya sudah terinstall <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
 ]]></content>
   </entry>
   
@@ -71,13 +71,9 @@ sudo chmod a+x /usr/local/bin/youtube-dl
 
 <p>Seperti yang sudah di jelaskan dari halaman <code>help.github.com</code></p>
 
-<p>{% blockquote Set Up Git <a href="https://help.github.com/articles/set-up-git">https://help.github.com/articles/set-up-git</a> %}
-At the heart of GitHub is an open source version control system (VCS) called Git. Git is responsible for everything GitHub-related that happens locally on your computer.
-{% endblockquote %}</p>
+<p><blockquote><p>At the heart of GitHub is an open source version control system (VCS) called Git. Git is responsible for everything GitHub-related that happens locally on your computer.</p><footer><strong>Set Up Git <a href="https://help.github.com/articles/set-up-git">https://help.github.com/articles/set-up-git</a></strong></footer></blockquote></p>
 
-<p>{% blockquote Generating SSH Keys <a href="https://help.github.com/articles/generating-ssh-keys">https://help.github.com/articles/generating-ssh-keys</a> %}
-SSH keys are a way to identify trusted computers, without involving passwords. The steps below will walk you through generating an SSH key and then adding the public key to your GitHub account.
-{% endblockquote %}</p>
+<p><blockquote><p>SSH keys are a way to identify trusted computers, without involving passwords. The steps below will walk you through generating an SSH key and then adding the public key to your GitHub account.</p><footer><strong>Generating SSH Keys <a href="https://help.github.com/articles/generating-ssh-keys">https://help.github.com/articles/generating-ssh-keys</a></strong></footer></blockquote></p>
 
 <p>Kali ini saya akan memberikan tutorial langsung berupa video yang sudah saya upload ke youtube. Jadi silakan untuk langsung di simak yak videonya xD</p>
 
