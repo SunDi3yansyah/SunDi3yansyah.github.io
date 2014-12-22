@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Jekyll | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/jekyll/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2014-12-17T06:26:49+07:00</updated>
+  <updated>2014-12-22T14:10:34+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -18,16 +18,20 @@
     <link href="http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/"/>
     <updated>2014-11-14T03:50:42+07:00</updated>
     <id>http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit</id>
-    <content type="html"><![CDATA[<p><img class="center <a" src="href="https://lh4.googleusercontent.com/-xCp6nD01yA8/VGUb4oM55iI/AAAAAAAAAHM/0Hse4vDTwHk/s800/Screenshot+from+2014-11-14+04:00:02.png">https://lh4.googleusercontent.com/-xCp6nD01yA8/VGUb4oM55iI/AAAAAAAAAHM/0Hse4vDTwHk/s800/Screenshot+from+2014-11-14+04:00:02.png</a>&#8221; title=&#8221;&lsquo;jekyll&rsquo; &lsquo;jekyll&rsquo;&#8221; ></p>
+    <content type="html"><![CDATA[<p>{% img center <a href="https://lh4.googleusercontent.com/-xCp6nD01yA8/VGUb4oM55iI/AAAAAAAAAHM/0Hse4vDTwHk/s800/Screenshot+from+2014-11-14+04:00:02.png">https://lh4.googleusercontent.com/-xCp6nD01yA8/VGUb4oM55iI/AAAAAAAAAHM/0Hse4vDTwHk/s800/Screenshot+from+2014-11-14+04:00:02.png</a> &lsquo;jekyll&rsquo; &lsquo;jekyll&rsquo; %}</p>
 
-<p><blockquote><p>Jekyll is an open source program, written in Ruby by Tom Preston-Werner, GitHub&rsquo;s co-founder. Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. It is a file-based CMS; instead of using databases, Jekyll takes the content, renders Markdown or Textile and Liquid templates, and produces a complete, static website ready to be served by Apache HTTP Server, Nginx or another web server.[1] Jekyll is the engine behind GitHub Pages,[2] a GitHub feature that allows users to host websites based on their GitHub repositories.</p><footer><strong>en.wikipedia <a href="http://en.wikipedia.org/wiki/Jekyll_">http://en.wikipedia.org/wiki/Jekyll_</a>(software) Jekyll (software)</strong></footer></blockquote></p>
+<p>{% blockquote en.wikipedia <a href="http://en.wikipedia.org/wiki/Jekyll_">http://en.wikipedia.org/wiki/Jekyll_</a>(software) Jekyll (software) %}
+Jekyll is an open source program, written in Ruby by Tom Preston-Werner, GitHub&rsquo;s co-founder. Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. It is a file-based CMS; instead of using databases, Jekyll takes the content, renders Markdown or Textile and Liquid templates, and produces a complete, static website ready to be served by Apache HTTP Server, Nginx or another web server.[1] Jekyll is the engine behind GitHub Pages,[2] a GitHub feature that allows users to host websites based on their GitHub repositories.
+{% endblockquote %}</p>
 
 <!-- more -->
 
 
-<p><blockquote><p>Jekyll merupakan open source program yang ditulis dalam Ruby oleh Tom Preston-Werner , GitHub yang co-founder. Jekyll adalah, sederhana blog -aware, situs statis generator situs pribadi, proyek, atau organisasi. Ini adalah file berbasis CMS ; alih-alih menggunakan database , Jekyll mengambil konten, membuat penurunan harga atau tekstil dan template Liquid , dan menghasilkan lengkap, website statis siap disajikan oleh Apache HTTP Server , Nginx atau server web lain. [ 1 ] Jekyll adalah mesin belakang GitHub Pages , [ 2 ] fitur GitHub yang memungkinkan pengguna untuk meng-host situs web berdasarkan repositori GitHub mereka.</p><footer><strong>id.wikipedia <a href="http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/">http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/</a> wikipedia version google translate</strong></footer></blockquote></p>
+<p>{% blockquote id.wikipedia <a href="http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/">http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/</a> wikipedia version google translate %}
+Jekyll merupakan open source program yang ditulis dalam Ruby oleh Tom Preston-Werner , GitHub yang co-founder. Jekyll adalah, sederhana blog -aware, situs statis generator situs pribadi, proyek, atau organisasi. Ini adalah file berbasis CMS ; alih-alih menggunakan database , Jekyll mengambil konten, membuat penurunan harga atau tekstil dan template Liquid , dan menghasilkan lengkap, website statis siap disajikan oleh Apache HTTP Server , Nginx atau server web lain. [ 1 ] Jekyll adalah mesin belakang GitHub Pages , [ 2 ] fitur GitHub yang memungkinkan pengguna untuk meng-host situs web berdasarkan repositori GitHub mereka.
+{% endblockquote %}</p>
 
-<p>Terdengar aneh dengan judul ini? Yup&hellip;emang benar bikin blog pakai jekyll cepat sekali gk sampe 1 menit udah jadi selanjutnya kita rancang sendiri, semacam framework begitu bray<img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >&hellip;</p>
+<p>Terdengar aneh dengan judul ini? Yup&hellip;emang benar bikin blog pakai jekyll cepat sekali gk sampe 1 menit udah jadi selanjutnya kita rancang sendiri, semacam framework begitu bray{% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a> 20 20 &lsquo;smiley&rsquo; &lsquo;smiley&rsquo; %}&hellip;</p>
 
 <p>Asumsikan:</p>
 
@@ -42,41 +46,37 @@
 
 <h4>Install jekyll dari gems, jika belum kalian install</h4>
 
-<p><figure class='code'><figcaption><span>install jekyll </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>gem install jekyll
-</span></code></pre></td></tr></table></div></figure></p>
+<p>{% codeblock lang:sh install jekyll %}
+gem install jekyll
+{% endcodeblock %}</p>
 
 <p>Jika sudah install jekyll ya gk usah di install lg, mungkin perlu upgrade atau mau downgrade versi :v</p>
 
 <p>Asumsikan posisi saya ada di <code>/home/user/</code></p>
 
-<p>Saya akan membuat blog jekyll baru dengan folder <code>nggak-ada-1-menit</code><img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >maka:</p>
+<p>Saya akan membuat blog jekyll baru dengan folder <code>nggak-ada-1-menit</code>{% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a> 20 20 &lsquo;smiley&rsquo; &lsquo;smiley&rsquo; %}maka:</p>
 
-<p><figure class='code'><figcaption><span>new jekyll blog </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>jekyll new nggak-ada-1-menit
-</span></code></pre></td></tr></table></div></figure></p>
+<p>{% codeblock lang:sh new jekyll blog %}
+jekyll new nggak-ada-1-menit
+{% endcodeblock %}</p>
 
-<p><figure class='code'><figcaption><span>masuk ke foldernya </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nb">cd </span>nggak-ada-1-menit
-</span></code></pre></td></tr></table></div></figure></p>
+<p>{% codeblock lang:sh masuk ke foldernya %}
+cd nggak-ada-1-menit
+{% endcodeblock %}</p>
 
-<p><figure class='code'><figcaption><span>jalankan generate jekyll </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>jekyll serve
-</span></code></pre></td></tr></table></div></figure></p>
+<p>{% codeblock lang:sh jalankan generate jekyll %}
+jekyll serve
+{% endcodeblock %}</p>
 
 <p>Sebagai contoh:</p>
 
-<p><img class="center <a" src="href="https://lh5.googleusercontent.com/-VL7L0G8CoF0/VGUe7dueORI/AAAAAAAAAHw/ainRVh7_vxc/s800/Screenshot+from+2014-11-14+04:10:42.png">https://lh5.googleusercontent.com/-VL7L0G8CoF0/VGUe7dueORI/AAAAAAAAAHw/ainRVh7_vxc/s800/Screenshot+from+2014-11-14+04:10:42.png</a>&#8221; title=&#8221;&lsquo;buat jekyll blog&rsquo; &lsquo;buat jekyll blog&rsquo;&#8221; ></p>
+<p>{% img center <a href="https://lh5.googleusercontent.com/-VL7L0G8CoF0/VGUe7dueORI/AAAAAAAAAHw/ainRVh7_vxc/s800/Screenshot+from+2014-11-14+04:10:42.png">https://lh5.googleusercontent.com/-VL7L0G8CoF0/VGUe7dueORI/AAAAAAAAAHw/ainRVh7_vxc/s800/Screenshot+from+2014-11-14+04:10:42.png</a> &lsquo;buat jekyll blog&rsquo; &lsquo;buat jekyll blog&rsquo; %}</p>
 
 <p>Sekarang buka browser dan arahkan address bar ke <a href="http://localhost:4000">http://localhost:4000</a></p>
 
 <p>Hasilnya:</p>
 
-<p><img class="center <a" src="href="https://lh4.googleusercontent.com/-8eXMgIjNcds/VGUe7Zj7bkI/AAAAAAAAAH0/Yqu9YmhoTqk/s800/Screenshot+from+2014-11-14+04:12:21.png">https://lh4.googleusercontent.com/-8eXMgIjNcds/VGUe7Zj7bkI/AAAAAAAAAH0/Yqu9YmhoTqk/s800/Screenshot+from+2014-11-14+04:12:21.png</a>&#8221; title=&#8221;&lsquo;hasil generate jekyll&rsquo; &lsquo;hasil generate jekyll&rsquo;&#8221; ></p>
+<p>{% img center <a href="https://lh4.googleusercontent.com/-8eXMgIjNcds/VGUe7Zj7bkI/AAAAAAAAAH0/Yqu9YmhoTqk/s800/Screenshot+from+2014-11-14+04:12:21.png">https://lh4.googleusercontent.com/-8eXMgIjNcds/VGUe7Zj7bkI/AAAAAAAAAH0/Yqu9YmhoTqk/s800/Screenshot+from+2014-11-14+04:12:21.png</a> &lsquo;hasil generate jekyll&rsquo; &lsquo;hasil generate jekyll&rsquo; %}</p>
 
 <p>Atau bisa melihat video dibawah ini:</p>
 
@@ -99,7 +99,9 @@
 
 <h3>Jekyll</h3>
 
-<p><blockquote><p>Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through Markdown (or Textile) and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.</p><footer><strong>Jekyll <a href="http://jekyllrb.com/docs/home/">http://jekyllrb.com/docs/home/</a></strong></footer></blockquote></p>
+<p>{% blockquote Jekyll <a href="http://jekyllrb.com/docs/home/">http://jekyllrb.com/docs/home/</a> %}
+Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through Markdown (or Textile) and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.
+{% endblockquote %}</p>
 
 <p>Ngerti? Jadi intinya kamu hanya perlu menulis di file teks dengan format <a href="daringfireball.net/projects/markdown/">Markdown</a> atau <a href="http://textile.sitemonks.com/">Textile</a>, lalu Jekyll akan menggenerate website kamu. Website yang dihasilkan hanya berupa website statis yang berisi hanya html, css dan javascript. Tidak ada database, tidak ada code apapun. Sudah kelihatan bagusnya dimana? Belum? Oke, akan saya jelaskan.</p>
 
@@ -116,11 +118,13 @@
 </ul>
 
 
-<p>Keren bukan? Jelas keren banget, <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a. Kamu dapat membacanya secara lebih lengkap di situs <a href="http://jekyllrb.com/">Jekyll</a>. Sekarang saya akan menjelaskan tentang Octopress.</p>
+<p>Keren bukan? Jelas keren banget, {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a> 20 20 &lsquo;smiley&rsquo; &lsquo;smiley&rsquo; %}a. Kamu dapat membacanya secara lebih lengkap di situs <a href="http://jekyllrb.com/">Jekyll</a>. Sekarang saya akan menjelaskan tentang Octopress.</p>
 
 <h3>Octopress</h3>
 
-<p><blockquote><p>Octopress is a framework designed by Brandon Mathis for Jekyll, the blog aware static site generator powering Github Pages. To start blogging with Jekyll, you have to write your own HTML templates, CSS, Javascripts and set up your configuration. But with Octopress All of that is already taken care of. Simply clone or fork Octopress, install dependencies and the theme, and you&rsquo;re set.</p><footer><strong>Octopress <a href="http://octopress.org/">http://octopress.org/</a></strong></footer></blockquote></p>
+<p>{% blockquote Octopress <a href="http://octopress.org/">http://octopress.org/</a> %}
+Octopress is a framework designed by Brandon Mathis for Jekyll, the blog aware static site generator powering Github Pages. To start blogging with Jekyll, you have to write your own HTML templates, CSS, Javascripts and set up your configuration. But with Octopress All of that is already taken care of. Simply clone or fork Octopress, install dependencies and the theme, and you&rsquo;re set.
+{% endblockquote %}</p>
 
 <p>Singkatnya Octopress hampir menyerupai Jekyll. Tetapi di Octopress kamu telah diberikan theme/template dasar. Selain template dasar, juga tersedia themes lain seperti yang dapat dilihat di <a href="http://opthemes.com/">opthemes.com</a>, <a href="http://octopressthemes.com/">octopressthemes.com</a> dan <a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">octopress wiki</a>. Octopress juga menyediakan plugin-plugin seperti code snippets, video tag, github gists, jsFiddle, syntax highlight dan plugin lainnya. Nah dari plugin-plugin diatas saya tarik lagi point di atas tentang software sublimetext, saya bisa membuat snippet sendiri di sublimetext dengan perintah <code>CTRL+SHIFT+P</code> kemudian mengetikkan nama snipet yang saya buat dan langsung muncul syntax dari plugin tersebut. Keren!</p>
 
@@ -133,7 +137,7 @@
 <div class="github-widget" data-repo="SunDi3yansyah/SunDi3yansyah.github.io"></div>
 
 
-<p>Kalau anda mengatakan <code>dimana file public_html dan database blog saya ini</code> ya disana. :LOL: ~> <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a&hellip;</p>
+<p>Kalau anda mengatakan <code>dimana file public_html dan database blog saya ini</code> ya disana. :LOL: ~> {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a> 20 20 &lsquo;smiley&rsquo; &lsquo;smiley&rsquo; %}a&hellip;</p>
 
 <p>Anda sudah membaca artikel saya sebelumnya belum? <a href="http://sundi3yansyah.com/article/2014/07/02/blogging-menggunakan-octopress-and-github/">Blogging Menggunakan Octopress &amp; Github</a>, memang sedikit hampir sama cuma disini saya menjelaskan sedikit spesifik kepenggunaanya dan melestarikan para pengguna Jekyll, Octopress dan Github.</p>
 ]]></content>

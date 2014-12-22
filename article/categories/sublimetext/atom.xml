@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Sublimetext | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/sublimetext/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2014-12-17T06:26:49+07:00</updated>
+  <updated>2014-12-22T14:10:34+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -38,13 +38,13 @@
 
 <p>Tapi alngkah bagusnya jika anda mengambil packages-nya di repository saya, disini</p>
 
-<p><a href="https://github.com/SunDi3yansyah/SunDi3yansyah.github.io/tree/master/downloads/packages/sublimetext">https://github.com/SunDi3yansyah/SunDi3yansyah.github.io/tree/master/downloads/packages/sublimetext</a></p>
+<p><a href="https://github.com/SunDi3yansyah/SunDi3yansyah.github.io/tree/master/downloads/code/packages/sublimetext">https://github.com/SunDi3yansyah/SunDi3yansyah.github.io/tree/master/downloads/code/packages/sublimetext</a></p>
 
 <p>Karena dengan anda mengambil packages snippets di sana, anda akan mendapatkan packages snippets yang up to date, karena saya akan selalu mengupdatenya.</p>
 
 <p>Cara menggunakannya silakan langsung saja melihat cuplikan dibawah ini.</p>
 
-<p><img class="center <a" src="href="https://lh5.googleusercontent.com/-EKAt4RR4ikU/VGwameH7NiI/AAAAAAAAAMg/TD5NTqMUXDA/s800/sundi3yansyah.gif">https://lh5.googleusercontent.com/-EKAt4RR4ikU/VGwameH7NiI/AAAAAAAAAMg/TD5NTqMUXDA/s800/sundi3yansyah.gif</a>&#8221; title=&#8221;&lsquo;Snippets untuk Octopress&rsquo; &lsquo;Snippets untuk Octopress&rsquo;&#8221; ></p>
+<p>{% img center <a href="https://lh5.googleusercontent.com/-EKAt4RR4ikU/VGwameH7NiI/AAAAAAAAAMg/TD5NTqMUXDA/s800/sundi3yansyah.gif">https://lh5.googleusercontent.com/-EKAt4RR4ikU/VGwameH7NiI/AAAAAAAAAMg/TD5NTqMUXDA/s800/sundi3yansyah.gif</a> &lsquo;Snippets untuk Octopress&rsquo; &lsquo;Snippets untuk Octopress&rsquo; %}</p>
 
 <p><strong>NB:</strong> Berlaku untuk di semua sistem operasi.</p>
 ]]></content>
@@ -59,7 +59,9 @@
 
 <h4><a href="http://www.sublimetext.com/3">http://www.sublimetext.com/3</a></h4>
 
-<p><blockquote><p>Release Date: 29 August 2014</p></blockquote></p>
+<p>{% blockquote %}
+Release Date: 29 August 2014
+{% endblockquote %}</p>
 
 <p><strong>Download sesuai OS yang kalian gunakan kemudian install dan lakukan crack di bawah ini sesuai dengan OS kalian.</strong></p>
 

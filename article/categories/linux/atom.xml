@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/linux/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2014-12-17T06:26:49+07:00</updated>
+  <updated>2014-12-22T14:10:34+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -56,22 +56,15 @@ tar -C /usr/local -xzf go1.3.3.linux-386.tar.gz
 <pre><code class="sh">nano test.go
 </code></pre>
 
-<p><figure class='code'><figcaption><span>test.go </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='go'><span class='line'><span class="kn">package</span> <span class="nx">main</span><span class="p">&lt;</span><span class="o">/</span><span class="nx">p</span><span class="p">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">&lt;</span><span class="nx">p</span><span class="p">&gt;</span><span class="kn">import</span> <span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">fmt</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;&lt;</span><span class="o">/</span><span class="nx">p</span><span class="p">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">&lt;</span><span class="nx">p</span><span class="p">&gt;</span><span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">Hallo</span><span class="p">,</span> <span class="nx">dunia</span><span class="err">\</span><span class="nx">n</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;)</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure></p>
+<p>{% codeblock lang:go test.go %}
+package main</p>
+
+<p>import &ldquo;fmt&rdquo;</p>
+
+<p>func main() {
+    fmt.Printf(&ldquo;Hallo, dunia\n&rdquo;)
+}
+{% endcodeblock %}</p>
 
 <p>Sekarang di jalankan</p>
 
@@ -104,7 +97,7 @@ export PATH=/usr/local/sbin:/usr/local/bin
 </code>
 Maka environment variables yang ada sekarang hanya <code>/usr/local/sbin:/usr/local/bin</code></p>
 
-<p>Mudah bukan <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+<p>Mudah bukan {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a> 20 20 &lsquo;smile&rsquo; &lsquo;smile&rsquo; %}</p>
 ]]></content>
   </entry>
   
@@ -127,7 +120,7 @@ export PATH=$PATH:/usr/local/go/bin
 </code>
 Itu yang artinya saya baru saja menambahkan environment variable dari bahasa pemrograman <strong>GOlang</strong> atau <strong>GO</strong></p>
 
-<p>Mudah bukan <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+<p>Mudah bukan {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a> 20 20 &lsquo;smile&rsquo; &lsquo;smile&rsquo; %}</p>
 ]]></content>
   </entry>
   
@@ -136,7 +129,7 @@ Itu yang artinya saya baru saja menambahkan environment variable dari bahasa pem
     <link href="http://sundi3yansyah.com/article/2014/11/26/cara-install-asciinema-di-linux/"/>
     <updated>2014-11-26T18:52:38+07:00</updated>
     <id>http://sundi3yansyah.com/article/2014/11/26/cara-install-asciinema-di-linux</id>
-    <content type="html"><![CDATA[<p><img class="center <a" src="href="https://lh5.googleusercontent.com/-pLbkxy3l_oY/VHXFK4PJ0mI/AAAAAAAAASo/o_DUioz5j_U/s800/Screenshot+from+2014-11-26+18:54:05.png">https://lh5.googleusercontent.com/-pLbkxy3l_oY/VHXFK4PJ0mI/AAAAAAAAASo/o_DUioz5j_U/s800/Screenshot+from+2014-11-26+18:54:05.png</a>&#8221; title=&#8221;&lsquo;asciinema&rsquo; &lsquo;asciinema&rsquo;&#8221; ></p>
+    <content type="html"><![CDATA[<p>{% img center <a href="https://lh5.googleusercontent.com/-pLbkxy3l_oY/VHXFK4PJ0mI/AAAAAAAAASo/o_DUioz5j_U/s800/Screenshot+from+2014-11-26+18:54:05.png">https://lh5.googleusercontent.com/-pLbkxy3l_oY/VHXFK4PJ0mI/AAAAAAAAASo/o_DUioz5j_U/s800/Screenshot+from+2014-11-26+18:54:05.png</a>  &lsquo;asciinema&rsquo; &lsquo;asciinema&rsquo; %}</p>
 
 <p>Apa itu ASCIINEMA?</p>
 
@@ -145,13 +138,19 @@ Itu yang artinya saya baru saja menambahkan environment variable dari bahasa pem
 <!--more-->
 
 
-<p><blockquote><p>Kode Standar Amerika untuk Pertukaran Informasi atau ASCII (American Standard Code for Information Interchange) merupakan suatu standar internasional dalam kode huruf dan simbol seperti Hex dan Unicode tetapi ASCII lebih bersifat universal, contohnya 124 adalah untuk karakter &ldquo;|&rdquo;.</p><footer><strong>wikipedia <a href="http://id.wikipedia.org/wiki/ASCII">http://id.wikipedia.org/wiki/ASCII</a> ASCII</strong></footer></blockquote></p>
+<p>{% blockquote wikipedia <a href="http://id.wikipedia.org/wiki/ASCII">http://id.wikipedia.org/wiki/ASCII</a> ASCII %}
+Kode Standar Amerika untuk Pertukaran Informasi atau ASCII (American Standard Code for Information Interchange) merupakan suatu standar internasional dalam kode huruf dan simbol seperti Hex dan Unicode tetapi ASCII lebih bersifat universal, contohnya 124 adalah untuk karakter &ldquo;|&rdquo;.
+{% endblockquote %}</p>
 
-<p>Dan dari kata NEMA - Cinema kwkkwkwk <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; ></p>
+<p>Dan dari kata NEMA - Cinema kwkkwkwk {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a> 20 20 &lsquo;smiley&rsquo; &lsquo;smiley&rsquo; %}</p>
 
-<p><blockquote><p>Sinema (akar kata dari cinema = kinematik = gerak). Film sebenarnya merupakan lapisan-lapisan cairan selulosa, biasa di kenal di dunia para sineas seluloid.</p></p><p><p>Pengertian secara harafiah film (sinema) adalah Cinemathographie yang berasal dari Cinema + tho = phytos (cahaya) + graphie = grhap (tulisan = gambar = citra), jadi pengertiannya adalah melukis gerak dengan cahaya. Agar kita dapat melukis gerak dengan cahaya, kita harus menggunakan alat khusus, yang biasa kita sebut dengan kamera V</p><footer><strong>wikipedia <a href="http://id.wikipedia.org/wiki/Sinema">http://id.wikipedia.org/wiki/Sinema</a> Sinema</strong></footer></blockquote></p>
+<p>{% blockquote wikipedia <a href="http://id.wikipedia.org/wiki/Sinema">http://id.wikipedia.org/wiki/Sinema</a> Sinema %}
+Sinema (akar kata dari cinema = kinematik = gerak). Film sebenarnya merupakan lapisan-lapisan cairan selulosa, biasa di kenal di dunia para sineas seluloid.</p>
 
-<p>Yah gitu lah, tapi jangan di gabungin, intinya Asciinema itu packages yang bisa merekam session di dalam terminal. Gini aja kalian buka aja profile saya disini <a href="https://asciinema.org/~SunDi3yansyah">https://asciinema.org/~SunDi3yansyah</a> dan scroll ke bawh, ada list videonya coba di pilih 1 dan di play, maka yang di rekam hanyalah di bagian windows terminalnya saja. Oke paham&hellip;? Sip&hellip; <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+<p>Pengertian secara harafiah film (sinema) adalah Cinemathographie yang berasal dari Cinema + tho = phytos (cahaya) + graphie = grhap (tulisan = gambar = citra), jadi pengertiannya adalah melukis gerak dengan cahaya. Agar kita dapat melukis gerak dengan cahaya, kita harus menggunakan alat khusus, yang biasa kita sebut dengan kamera V
+{% endblockquote %}</p>
+
+<p>Yah gitu lah, tapi jangan di gabungin, intinya Asciinema itu packages yang bisa merekam session di dalam terminal. Gini aja kalian buka aja profile saya disini <a href="https://asciinema.org/~SunDi3yansyah">https://asciinema.org/~SunDi3yansyah</a> dan scroll ke bawh, ada list videonya coba di pilih 1 dan di play, maka yang di rekam hanyalah di bagian windows terminalnya saja. Oke paham&hellip;? Sip&hellip; {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a> 20 20 &lsquo;smile&rsquo; &lsquo;smile&rsquo; %}</p>
 
 <p>Saya disini akan menjelaskan cara install di Linux.</p>
 
@@ -207,7 +206,7 @@ Atau bisa juga dengan menekan tombil <strong>CTRL + D</strong></p>
 <p>Jika iya, maka ketik perintah <strong>Y</strong> dan tekan <strong>ENTER</strong> jika tidak ingin menguploadnya maka ketik perintah <strong>N</strong> dan tekan <strong>ENTER</strong>.</p>
 
 <p>Lama gak ya uploadnya?
-Jawabannya <strong>TIDAK</strong> seberapa lama anda merekam maka uploadnya akan tetap cepat, gak percaya? Silakan di buktikan&hellip; <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+Jawabannya <strong>TIDAK</strong> seberapa lama anda merekam maka uploadnya akan tetap cepat, gak percaya? Silakan di buktikan&hellip; {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a> 20 20 &lsquo;smile&rsquo; &lsquo;smile&rsquo; %}</p>
 
 <p>Jika memerlukan bantuan lebih lengkapnya, ketik perintah ini
 <code>sh
@@ -227,7 +226,7 @@ Mungkin lebih jelas jika anda melihat diagram time-stamp (jejak waktu) dari lahi
 <!--more-->
 
 
-<p><img class="center <a" src="href="http://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Unix_history.en.svg/655px-Unix_history.en.svg.png">http://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Unix_history.en.svg/655px-Unix_history.en.svg.png</a>&#8221; title=&#8221;&lsquo;Turunan UNIX&rsquo; &lsquo;Turunan UNIX&rsquo;&#8221; ></p>
+<p>{% img center <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Unix_history.en.svg/655px-Unix_history.en.svg.png">http://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Unix_history.en.svg/655px-Unix_history.en.svg.png</a> &lsquo;Turunan UNIX&rsquo; &lsquo;Turunan UNIX&rsquo; %}</p>
 
 <p>Fakta yang menarik dan mungkin mengagetkan anda adalah Microsoft pernah merilis sebuah varian Unix dengan nama Xenix OS. Namun, entah karena kesulitan berkembang atau sedang terhimpit keadaan, Xenix akhirnya dijual kepada SCO (Santa Cruz Operation) yang kemudian membredeli dan menjualnya dengan nama SCO Unix .
 Wadooh, nah loe. Bukan tidak mungkin Windows yang sekarang kalian pake adalah hasil inspirasi dari Unix. , karena ada beberapa fitur windows yang mencontoh Unix nih.

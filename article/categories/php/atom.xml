@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Php | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/php/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2014-12-17T06:26:49+07:00</updated>
+  <updated>2014-12-22T14:10:34+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -169,7 +169,7 @@ nano /usr/share/nginx/html/info.php
     <link href="http://sundi3yansyah.com/article/2014/09/12/orang-ter-php-di-dunia/"/>
     <updated>2014-09-12T04:45:25+07:00</updated>
     <id>http://sundi3yansyah.com/article/2014/09/12/orang-ter-php-di-dunia</id>
-    <content type="html"><![CDATA[<p><img class="center <a" src="href="http://s40.photobucket.com/albums/e228/sundi3yansyah/php_rasmus_zpsb7755523.jpg">http://s40.photobucket.com/albums/e228/sundi3yansyah/php_rasmus_zpsb7755523.jpg</a>&#8221;></p>
+    <content type="html"><![CDATA[<p>{% img center <a href="http://s40.photobucket.com/albums/e228/sundi3yansyah/php_rasmus_zpsb7755523.jpg">http://s40.photobucket.com/albums/e228/sundi3yansyah/php_rasmus_zpsb7755523.jpg</a> %}</p>
 
 <p>Pasti pada tau donk dengan PHP, bahkan cewek akan kesel kalau dengar kata ini dari temannya, anyway busway ini bukan PHP singkatan dari “Pemberi Harapan Palsu” tapi singkatan dari Personal Home Page yaitu bahasa pemrograman yang berjalan dalam sebuah web server. PHP diciptakan oleh programmer Unix dan Perl asal Kanada yang bernama Rasmus Lerdrorf pada bulan Agustus-September 1994.</p>
 
@@ -178,7 +178,7 @@ nano /usr/share/nginx/html/info.php
 
 <p>Pada awalnya, Tujuan PHP diciptakan untuk memonitor siapa saja yang mengunjungi websitenya. Kemudian ia mengeluarkan Personal Home Page Tools versi 1.0 secara gratis. Versi ini pertama kali keluar pada tahun 1995. Isinya adalah sekumpulan script PERL yang dibuatnya untuk membuat halaman webnya menjadi dinamis. Kemudian pada tahun 1996 ia mengeluarkan PHP versi 2.0 yang kemampuannya telah dapat mengakses database dan dapat terintegrasi dengan HTML.</p>
 
-<p><img class="center <a" src="href="http://s40.photobucket.com/albums/e228/sundi3yansyah/php-350x245_zps056adb1f.jpg">http://s40.photobucket.com/albums/e228/sundi3yansyah/php-350x245_zps056adb1f.jpg</a>&#8221; title=&#8221;php&#8221; ></p>
+<p>{% img center <a href="http://s40.photobucket.com/albums/e228/sundi3yansyah/php-350x245_zps056adb1f.jpg">http://s40.photobucket.com/albums/e228/sundi3yansyah/php-350x245_zps056adb1f.jpg</a> php %}</p>
 
 <p>Perkembangan selanjutnya adalah Rasmus melepaskan kode sumber tersebut dan menamakannya PHP/FI, pada saat tersebut kepanjangan dari PHP/FI adalah Personal Home Page/Form Interpreter. Dengan pelepasan kode sumber ini menjadi open source, maka banyak programmer yang tertarik untuk ikut mengembangkan PHP.</p>
 
@@ -249,7 +249,7 @@ enabled=1
 <code>
 y
 </code>
-Mudah bukan? <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a</p>
+Mudah bukan? {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a> 20 20 &lsquo;smiley&rsquo; &lsquo;smiley&rsquo; %}a</p>
 
 <p>semoga berhasil&hellip;</p>
 ]]></content>

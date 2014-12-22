@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Centos | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/centos/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2014-12-17T06:26:49+07:00</updated>
+  <updated>2014-12-22T14:10:34+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -22,7 +22,7 @@
 <code>sh
 python --version
 </code>
-Jika versi di bawah 2.7.8 maka itu sudah kuno dan sudah saatnya di update <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+Jika versi di bawah 2.7.8 maka itu sudah kuno dan sudah saatnya di update {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a> 20 20 &lsquo;smile&rsquo; &lsquo;smile&rsquo; %}</p>
 
 <!--more-->
 
@@ -65,7 +65,7 @@ jalankan configure nya
 <code>sh
 ./configure --prefix=/usr/local
 </code>
-lakukan compile, ini akan membutuhkan waktu yang lumayan lama <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; >
+lakukan compile, ini akan membutuhkan waktu yang lumayan lama {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a> 20 20 &lsquo;smile&rsquo; &lsquo;smile&rsquo; %}
 <code>sh
 make
 </code>
@@ -78,7 +78,7 @@ jika sudah selesai maka coba kita lihat versinya
 python -V
 </code></p>
 
-<p>Mudah bukan <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+<p>Mudah bukan {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a> 20 20 &lsquo;smile&rsquo; &lsquo;smile&rsquo; %}</p>
 
 <p>Jika belum juga berubah dan tidak muncul output dengan versi yang kita compile tadi maka lakukan dengan menambah Environment Variable, anda bisa cari artikel saya sebelumnya <strong>Cara Menambah Environment Variable pada Linux</strong></p>
 
@@ -92,7 +92,7 @@ python -V
     <link href="http://sundi3yansyah.com/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx/"/>
     <updated>2014-11-25T04:48:12+07:00</updated>
     <id>http://sundi3yansyah.com/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx</id>
-    <content type="html"><![CDATA[<p>Kalau sebelumnya saya sudah menejalaskan tentang <a href="/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/">Cara Install Nginx, MySQL, PHP Di CentOS</a>, sekarang bagaimana jika kita ingin menambahkan domain kita ke server yang pada tempo lalu sudah di install NGINX dan kawan-kawannya? Yah&hellip; tulisan &amp; video di bawah ini yang akan menjawab, ini real saya praktekan langsung di domain saya, namun nama domain tsb adalah nama Nick teman saya <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+    <content type="html"><![CDATA[<p>Kalau sebelumnya saya sudah menejalaskan tentang <a href="/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/">Cara Install Nginx, MySQL, PHP Di CentOS</a>, sekarang bagaimana jika kita ingin menambahkan domain kita ke server yang pada tempo lalu sudah di install NGINX dan kawan-kawannya? Yah&hellip; tulisan &amp; video di bawah ini yang akan menjawab, ini real saya praktekan langsung di domain saya, namun nama domain tsb adalah nama Nick teman saya {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a> 20 20 &lsquo;smile&rsquo; &lsquo;smile&rsquo; %}</p>
 
 <p>Langsung saja ke videonya.</p>
 
@@ -362,7 +362,7 @@ sudo yum install ruby-rdoc ruby-devel
 </code>
 Sudah? Kalau sudah selesai kalain buka ini <a href="https://www.ruby-lang.org/en/downloads/"><a href="https://www.ruby-lang.org/en/downloads/">https://www.ruby-lang.org/en/downloads/</a></a></p>
 
-<p><img class="<a" src="href="http://i40.photobucket.com/albums/e228/sundi3yansyah/L2ry8bb_zps48c28ea5.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/L2ry8bb_zps48c28ea5.png</a>&#8221; title=&#8221;downloads ruby&#8221; ></p>
+<p>{% img <a href="http://i40.photobucket.com/albums/e228/sundi3yansyah/L2ry8bb_zps48c28ea5.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/L2ry8bb_zps48c28ea5.png</a> downloads ruby %}</p>
 
 <p>Dan pilih versi yang kalain inginkan, dan download.</p>
 

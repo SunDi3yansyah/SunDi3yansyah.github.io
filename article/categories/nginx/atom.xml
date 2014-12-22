@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Nginx | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/nginx/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2014-12-17T06:26:49+07:00</updated>
+  <updated>2014-12-22T14:10:34+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -18,7 +18,7 @@
     <link href="http://sundi3yansyah.com/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx/"/>
     <updated>2014-11-25T04:48:12+07:00</updated>
     <id>http://sundi3yansyah.com/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx</id>
-    <content type="html"><![CDATA[<p>Kalau sebelumnya saya sudah menejalaskan tentang <a href="/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/">Cara Install Nginx, MySQL, PHP Di CentOS</a>, sekarang bagaimana jika kita ingin menambahkan domain kita ke server yang pada tempo lalu sudah di install NGINX dan kawan-kawannya? Yah&hellip; tulisan &amp; video di bawah ini yang akan menjawab, ini real saya praktekan langsung di domain saya, namun nama domain tsb adalah nama Nick teman saya <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+    <content type="html"><![CDATA[<p>Kalau sebelumnya saya sudah menejalaskan tentang <a href="/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/">Cara Install Nginx, MySQL, PHP Di CentOS</a>, sekarang bagaimana jika kita ingin menambahkan domain kita ke server yang pada tempo lalu sudah di install NGINX dan kawan-kawannya? Yah&hellip; tulisan &amp; video di bawah ini yang akan menjawab, ini real saya praktekan langsung di domain saya, namun nama domain tsb adalah nama Nick teman saya {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a> 20 20 &lsquo;smile&rsquo; &lsquo;smile&rsquo; %}</p>
 
 <p>Langsung saja ke videonya.</p>
 
@@ -332,41 +332,25 @@ atau
 <code>
 /etc/nginx/sites-available/domain.com
 </code>
-<figure class='code'><figcaption><span>default atau vhost domain kalian </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>server {&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;h1>.. Setingan lainnya&lt;/h1>
-</span><span class='line'>
-</span><span class='line'>&lt;p>location ~ .php$ {
-</span><span class='line'>  root /folder/situs/utama;
-</span><span class='line'>  fastcgi_index index.php;
-</span><span class='line'>  include fastcgi_params;
-</span><span class='line'>  fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-</span><span class='line'>  fastcgi_pass 127.0.0.1:9000;&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;p>  # Ini adalah penambahan settingnya
-</span><span class='line'>  fastcgi_buffer_size 16k;
-</span><span class='line'>  fastcgi_buffers 4 16k;
-</span><span class='line'>}&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;p>}</span></code></pre></td></tr></table></div></figure>
+{% codeblock default atau vhost domain kalian %}
+server {</p>
+
+<h1>.. Setingan lainnya</h1>
+
+<p>location ~ .php$ {
+  root /folder/situs/utama;
+  fastcgi_index index.php;
+  include fastcgi_params;
+  fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+  fastcgi_pass 127.0.0.1:9000;</p>
+
+<p>  # Ini adalah penambahan settingnya
+  fastcgi_buffer_size 16k;
+  fastcgi_buffers 4 16k;
+}</p>
+
+<p>}
+{% endcodeblock %}
 Artinya kita hanya menambahkan config ini:
 <code>
 fastcgi_buffer_size 16k;
@@ -401,95 +385,54 @@ dan coba refresh kembali website . Semoga jalan dan gak ketemu lagi si 502 Bad G
 /etc/nginx/nginx.conf
 </code>
 Tambahkan beberapa baris berikut ini:
-<figure class='code'><figcaption><span>nginx </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gzip  on;
-</span><span class='line'>    gzip_min_length  1000;
-</span><span class='line'>    gzip_disable &ldquo;msie6&rdquo;;&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;pre>&lt;code>gzip_vary on;
-</span><span class='line'>gzip_proxied any;
-</span><span class='line'>gzip_comp_level 6;
-</span><span class='line'>gzip_buffers 16 8k;
-</span><span class='line'>gzip_http_version 1.1;
-</span><span class='line'>gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
-</span><span class='line'>&lt;/code>&lt;/pre>
-</span><span class='line'>
-</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure>
+{% codeblock nginx %}
+gzip  on;
+    gzip_min_length  1000;
+    gzip_disable &ldquo;msie6&rdquo;;</p>
+
+<pre><code>gzip_vary on;
+gzip_proxied any;
+gzip_comp_level 6;
+gzip_buffers 16 8k;
+gzip_http_version 1.1;
+gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+</code></pre>
+
+<p>{% endcodeblock %}
 Ke dalam deklarasi <strong>http</strong></p>
 
 <p>Misalnya:
-<figure class='code'><figcaption><span>nginx </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>http {
-</span><span class='line'>    # konfigurasi  lainnya&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;pre>&lt;code>include       /etc/nginx/mime.types;
-</span><span class='line'>default_type  application/octet-stream;
-</span><span class='line'>
-</span><span class='line'>log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
-</span><span class='line'>                  '$status $body_bytes_sent "$http_referer" '
-</span><span class='line'>                  '"$http_user_agent" "$http_x_forwarded_for"';
-</span><span class='line'>
-</span><span class='line'>access_log  /var/log/nginx/access.log  main;
-</span><span class='line'>
-</span><span class='line'># konfigurasi GZIP 
-</span><span class='line'>
-</span><span class='line'>gzip  on;
-</span><span class='line'>gzip_min_length  1000;
-</span><span class='line'>gzip_disable "msie6";
-</span><span class='line'>
-</span><span class='line'>gzip_vary on;
-</span><span class='line'>gzip_proxied any;
-</span><span class='line'>gzip_comp_level 6;
-</span><span class='line'>gzip_buffers 16 8k;
-</span><span class='line'>gzip_http_version 1.1;
-</span><span class='line'>gzip_types text/plain text/css application/x-javascript text/xml application/xml application/xml+rss text/javascript;
-</span><span class='line'>
-</span><span class='line'>include /etc/nginx/conf.d/*.conf;
-</span><span class='line'>&lt;/code>&lt;/pre>
-</span><span class='line'>
-</span><span class='line'>&lt;p>}</span></code></pre></td></tr></table></div></figure>
+{% codeblock nginx %}
+http {
+    # konfigurasi  lainnya</p>
+
+<pre><code>include       /etc/nginx/mime.types;
+default_type  application/octet-stream;
+
+log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                  '$status $body_bytes_sent "$http_referer" '
+                  '"$http_user_agent" "$http_x_forwarded_for"';
+
+access_log  /var/log/nginx/access.log  main;
+
+# konfigurasi GZIP 
+
+gzip  on;
+gzip_min_length  1000;
+gzip_disable "msie6";
+
+gzip_vary on;
+gzip_proxied any;
+gzip_comp_level 6;
+gzip_buffers 16 8k;
+gzip_http_version 1.1;
+gzip_types text/plain text/css application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+
+include /etc/nginx/conf.d/*.conf;
+</code></pre>
+
+<p>}
+{% endcodeblock %}
 Jangan lupa kalau sudah restart atau reload nginx nya
 <code>
 service nginx restart

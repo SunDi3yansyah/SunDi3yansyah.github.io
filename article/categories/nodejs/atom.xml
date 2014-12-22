@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Nodejs | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/nodejs/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2014-12-17T06:26:49+07:00</updated>
+  <updated>2014-12-22T14:10:34+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -80,7 +80,7 @@ make
 sudo make install
 </code></p>
 
-<p>Nah kesimpulannya apa? Hampir sama kan cara install di distro lainnya, hanya berbeda di devlopment untuk mengcimpilienya, karena beda nama package <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+<p>Nah kesimpulannya apa? Hampir sama kan cara install di distro lainnya, hanya berbeda di devlopment untuk mengcimpilienya, karena beda nama package {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a> 20 20 &lsquo;smile&rsquo; &lsquo;smile&rsquo; %}</p>
 ]]></content>
   </entry>
   
@@ -91,7 +91,7 @@ sudo make install
     <id>http://sundi3yansyah.com/article/2014/10/25/cara-install-nodejs-di-windows</id>
     <content type="html"><![CDATA[<h4>Cara Install NodeJS di Windows</h4>
 
-<p>Wah gampang banget ternyata, gw yakin kalian semua pasti bisa<img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >&hellip;</p>
+<p>Wah gampang banget ternyata, gw yakin kalian semua pasti bisa{% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a> 20 20 &lsquo;smiley&rsquo; &lsquo;smiley&rsquo; %}&hellip;</p>
 
 <p>Buka URL disini <a href="http://nodejs.org/download/">http://nodejs.org/download/</a>
 Kemudian download sesui arsitektur OS windows kalian x86 atau x64, mau yang Windows Installer (.msi) atau Windows Binary (.exe) sama saja&hellip;</p>
@@ -128,7 +128,7 @@ contohnya:
 <code>sh
 wget http://nodejs.org/dist/v0.10.33/node-v0.10.33-linux-x64.tar.gz
 </code>
-itu yang artinya saya mengambil binari source nodejs versi v0.10.33 dengan arsitektur 64bit, Oke <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; > lanjutkan, setelah download (Asumsikan anda sudah paham).
+itu yang artinya saya mengambil binari source nodejs versi v0.10.33 dengan arsitektur 64bit, Oke {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a> 20 20 &lsquo;smile&rsquo; &lsquo;smile&rsquo; %} lanjutkan, setelah download (Asumsikan anda sudah paham).
 <code>sh
 tar zxvf node-latest.tar.gz
 </code>
@@ -145,7 +145,7 @@ make
 make install
 </code></p>
 
-<p>Gampang kan <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+<p>Gampang kan {% img <a href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a> 20 20 &lsquo;smile&rsquo; &lsquo;smile&rsquo; %}</p>
 
 <p>Cara mengerahuinya
 <code>sh
@@ -161,44 +161,42 @@ node -v ; npm -v
     <id>http://sundi3yansyah.com/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu</id>
     <content type="html"><![CDATA[<p>Install dulu Depensial dari software python dan menambahkan PPA dari NodeJS untuk ubuntunya.</p>
 
-<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install python-software-properties
-</span><span class='line'>apt-add-repository ppa:chris-lea/node.js
-</span><span class='line'>apt-get update</span></code></pre></td></tr></table></div></figure></p>
+<p>{% codeblock root@sundi3yansyah %}
+apt-get install python-software-properties
+apt-add-repository ppa:chris-lea/node.js
+apt-get update
+{% endcodeblock %}</p>
 
 <!-- more -->
 
 
 <p>Kalau sudah lanjut ke installasi</p>
 
-<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install nodejs</span></code></pre></td></tr></table></div></figure></p>
+<p>{% codeblock root@sundi3yansyah %}
+apt-get install nodejs
+{% endcodeblock %}</p>
 
 <p>NB: Jika ada persetujuan di <b>Y</b></p>
 
 <p>Untuk melihat versi yang sudah terinstall tadi, caranya:</p>
 
-<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>node -v</span></code></pre></td></tr></table></div></figure></p>
+<p>{% codeblock root@sundi3yansyah %}
+node -v
+{% endcodeblock %}</p>
 
 <p>Contoh outputnya</p>
 
 <p><code>v0.10.29</code></p>
 
-<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install npm</span></code></pre></td></tr></table></div></figure></p>
+<p>{% codeblock root@sundi3yansyah %}
+apt-get install npm
+{% endcodeblock %}</p>
 
 <p>Untuk melihat versi yang sudah terinstall tadi, caranya:</p>
 
-<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>npm -v</span></code></pre></td></tr></table></div></figure></p>
+<p>{% codeblock root@sundi3yansyah %}
+npm -v
+{% endcodeblock %}</p>
 
 <p>Contoh outputnya</p>
 
