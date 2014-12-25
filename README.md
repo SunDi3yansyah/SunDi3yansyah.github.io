@@ -9,7 +9,7 @@ Nama saya Cahyadi Triyansyah inisial "SunDi3yansyah", saya kelahiran Palembang, 
 | Address       | Yogyakarta, Indonesia, selengkapnya di sensor |
 | Education     | STMIK Amikom Yogyakarta ( S1 : Teknik Informatika ) |
 | Age           | 2x an |
-| Hobby         | Coding, Pesbukan, Nongkrong di Github ama Terminal. etc |
+| Hobby         | Coding, Pesbukan, Nongkrong di GitHub, Terminal. etc |
 | Development   | Kampoeng, Surabaya Blackhat & Banten Cyber |
 
 ### Find Me
