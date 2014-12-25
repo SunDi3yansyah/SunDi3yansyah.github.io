@@ -1,16 +1,17 @@
-> Nama saya Cahyadi Triyansyah inisial "SunDi3yansyah", saya kelahiran Palembang, namun saya adalah keturunan dari suku Jawa, sekarang saya sedang melanjutkan college (study) di Yogyakrata tepatnya di STMIK Amikom Yogyakarta, saya juga sedang membangun sebuah development Web (Kampoeng & Surabaya Blackhat), I like to learn a programming language.
+Nama saya Cahyadi Triyansyah inisial "SunDi3yansyah", saya kelahiran Palembang, namun saya adalah keturunan dari suku Jawa, sekarang saya sedang melanjutkan college (study) di Yogyakrata tepatnya di STMIK Amikom Yogyakarta, saya juga sedang membangun sebuah development Web (Kampoeng & Surabaya Blackhat), I like to learn a programming language.
 
 ---
-Alias : SunDi3yansyah.
-* Name : Cahyadi Triyansyah.
-* Address : Yogyakarta, Indonesia, selengkapnya di sensor.
-* Education : STMIK Amikom Yogyakarta ( S1 : Teknik Informatika )
-* Age : 2x an.
-* Hobby : Coding, Pesbukan, Nongkrong di Github ama Terminal, Makan (ngemil), Nonton Bokep etc.
-* Development : Kampoeng & Surabaya Blackhat
+Alias: SunDi3yansyah.
+Name: Cahyadi Triyansyah.
+Address: Yogyakarta, Indonesia, selengkapnya di sensor.
+Education: STMIK Amikom Yogyakarta ( S1 : Teknik Informatika )
+Age: 2x an.
+Hobby: Coding, Pesbukan, Nongkrong di Github ama Terminal, Makan (ngemil), Nonton Bokep etc.
+Development: Kampoeng & Surabaya Blackhat
 ---
 
 ### Find Me
+
 <div id="find_me_on_history">
 <ul class="find_me_on_history">
 
@@ -34,6 +35,7 @@ Alias : SunDi3yansyah.
 </div>
 
 ### My Knowledge
+
 * CSS /3
 * HTML 4/5
 * JavaScript
@@ -50,7 +52,4 @@ Alias : SunDi3yansyah.
 * Ruby (slightly)
     * Jekyll
     * Rails
-* ...etc coming soon {% img https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png 20 20 'sundi3yansyah senang' 'sundi3yansyah senang' %}
-
-> Saya sangat menyukai Linux sebagai Operating System di komputer saya. Sejak tahun 2013 saya mendalami Operating System Linux, masih baru kan? {% img https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png 20 20 'smiley' 'smiley' %} Mantan pengguna Windows yang terlalu lama sejak 2008, mungkin kedepannya saya akan ber-ekperimen ke Hackintosh. Saya suka bermain Hacking tapi sorry...saya bukan orang jail yang suka merusak system website orang lain, mungkin sifat saya cenderung ke Whitehat walaupun saya berada di komunitas Blackhat. "Whitehat or Blackhat"
-"Deface bukanlah jalan menjadi seorang hacker. Budaya hacker adalah berbagi dan berkontribusi."
+* ...etc coming soon :smile:
