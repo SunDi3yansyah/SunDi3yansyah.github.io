@@ -1,14 +1,12 @@
-Nama saya Cahyadi Triyansyah inisial "SunDi3yansyah", saya kelahiran Palembang, namun saya adalah keturunan dari suku Jawa, sekarang saya sedang melanjutkan college (study) di Yogyakrata tepatnya di STMIK Amikom Yogyakarta, saya juga sedang membangun sebuah development Web (Kampoeng & Surabaya Blackhat), I like to learn a programming language.
+Nama saya Cahyadi Triyansyah inisial "SunDi3yansyah", saya kelahiran Palembang, namun saya adalah keturunan dari suku Jawa, sekarang saya sedang melanjutkan college (study) di Yogyakrata tepatnya di STMIK Amikom Yogyakarta.
 
----
-Alias: SunDi3yansyah.
-Name: Cahyadi Triyansyah.
-Address: Yogyakarta, Indonesia, selengkapnya di sensor.
-Education: STMIK Amikom Yogyakarta ( S1 : Teknik Informatika )
-Age: 2x an.
-Hobby: Coding, Pesbukan, Nongkrong di Github ama Terminal, Makan (ngemil), Nonton Bokep etc.
-Development: Kampoeng & Surabaya Blackhat
----
+| Alias         | SunDi3yansyah |
+| Name          | Cahyadi Triyansyah |
+| Address       | Yogyakarta, Indonesia, selengkapnya di sensor |
+| Education     | STMIK Amikom Yogyakarta ( S1 : Teknik Informatika ) |
+| Age           | 2x an |
+| Hobby         | Coding, Pesbukan, Nongkrong di Github ama Terminal, Makan (ngemil), Nonton Bokep etc |
+| Development   | Kampoeng & Surabaya Blackhat |
 
 ### Find Me
 
