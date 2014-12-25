@@ -9,19 +9,19 @@ Nama saya Cahyadi Triyansyah inisial "SunDi3yansyah", saya kelahiran Palembang, 
 | Address       | Yogyakarta, Indonesia, selengkapnya di sensor |
 | Education     | STMIK Amikom Yogyakarta ( S1 : Teknik Informatika ) |
 | Age           | 2x an |
-| Hobby         | Coding, Pesbukan, Nongkrong di Github ama Terminal, Makan (ngemil), Nonton Bokep etc |
+| Hobby         | Coding, Pesbukan, Nongkrong di Github ama Terminal. etc |
 | Development   | Kampoeng, Surabaya Blackhat & Banten Cyber |
 
 ### Find Me
 
-[E-Mail](mailto:sundi3yansyah@gmail.com)
-[GitHub](https://github.com/SunDi3yansyah)
-[Twitter](https://twitter.com/SunDi3yansyah)
-[Google+](https://plus.google.com/u/0/113613533694994339551)
-[LinkedIn](http://id.linkedin.com/in/sundi3yansyah/)
-[Facebook](https://www.facebook.com/adiebiazajah)
-[Youtube](https://www.youtube.com/user/zpqwify)
-[Asciinema](https://asciinema.org/~SunDi3yansyah)
+* [E-Mail](mailto:sundi3yansyah@gmail.com)
+* [GitHub](https://github.com/SunDi3yansyah)
+* [Twitter](https://twitter.com/SunDi3yansyah)
+* [Google+](https://plus.google.com/u/0/113613533694994339551)
+* [LinkedIn](http://id.linkedin.com/in/sundi3yansyah/)
+* [Facebook](https://www.facebook.com/adiebiazajah)
+* [Youtube](https://www.youtube.com/user/zpqwify)
+* [Asciinema](https://asciinema.org/~SunDi3yansyah)
 
 ### My Knowledge
 
