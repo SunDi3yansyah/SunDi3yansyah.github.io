@@ -1,4 +1,4 @@
-# [http://sundi3yansyah.com/history/](SunDi3yansyah)
+# SunDi3yansyah.com
 
 Nama saya Cahyadi Triyansyah inisial "SunDi3yansyah", saya kelahiran Palembang, namun saya adalah keturunan dari suku Jawa, sekarang saya sedang melanjutkan college (study) di Yogyakrata tepatnya di STMIK Amikom Yogyakarta.
 
