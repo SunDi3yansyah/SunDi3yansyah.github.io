@@ -22,7 +22,7 @@
 │   │   │   │   │   └── mengenal-perintah-rake-octopress
 │   │   │   │   │       └── index.html
 │   │   │   │   ├── 03
-│   │   │   │   │   ├── cara-install-dan-compile-ruby-via-tarball
+│   │   │   │   │   ├── cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu
 │   │   │   │   │   │   └── index.html
 │   │   │   │   │   ├── cara-install-slash-upgrade-versi-git-core-terbaru
 │   │   │   │   │   │   └── index.html
@@ -136,38 +136,69 @@
 │   │   │   │   └── 25
 │   │   │   │       └── cara-install-nodejs-di-windows
 │   │   │   │           └── index.html
-│   │   │   └── 11
-│   │   │       ├── 11
-│   │   │       │   └── perbaiki-adobe-flash-player-issue-dalam-chromium-di-ubuntu-14-dot-04
-│   │   │       │       └── index.html
-│   │   │       ├── 14
-│   │   │       │   ├── cara-install-sqlite-di-linux
-│   │   │       │   │   └── index.html
-│   │   │       │   └── membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit
-│   │   │       │       └── index.html
-│   │   │       ├── 16
-│   │   │       │   ├── cara-install-radio-di-server-linux
-│   │   │       │   │   └── index.html
-│   │   │       │   ├── perintah-chattr-pada-sistem-linux
-│   │   │       │   │   └── index.html
-│   │   │       │   └── solusi-pesan-error-the-following-signatures-were-invalid-pada-ubuntu
-│   │   │       │       └── index.html
-│   │   │       ├── 18
-│   │   │       │   ├── cara-convert-ogv-ke-mp4-di-linux
-│   │   │       │   │   └── index.html
-│   │   │       │   └── cara-menghapus-repository-di-github
-│   │   │       │       └── index.html
-│   │   │       ├── 19
-│   │   │       │   └── snippets-untuk-octopress-pada-sublimetext
-│   │   │       │       └── index.html
+│   │   │   ├── 11
+│   │   │   │   ├── 11
+│   │   │   │   │   └── perbaiki-adobe-flash-player-issue-dalam-chromium-di-ubuntu-14-dot-04
+│   │   │   │   │       └── index.html
+│   │   │   │   ├── 14
+│   │   │   │   │   ├── cara-install-sqlite-di-linux
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   └── membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit
+│   │   │   │   │       └── index.html
+│   │   │   │   ├── 16
+│   │   │   │   │   ├── cara-install-radio-di-server-linux
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   ├── perintah-chattr-pada-sistem-linux
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   └── solusi-pesan-error-the-following-signatures-were-invalid-pada-ubuntu
+│   │   │   │   │       └── index.html
+│   │   │   │   ├── 18
+│   │   │   │   │   ├── cara-convert-ogv-ke-mp4-di-linux
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   └── cara-menghapus-repository-di-github
+│   │   │   │   │       └── index.html
+│   │   │   │   ├── 19
+│   │   │   │   │   └── snippets-untuk-octopress-pada-sublimetext
+│   │   │   │   │       └── index.html
+│   │   │   │   ├── 22
+│   │   │   │   │   ├── cara-install-cpanel-di-vps-dedicated-servers
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   ├── cara-install-youtube-dl
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   └── cara-install-zpanelcp-10-dot-1-1
+│   │   │   │   │       └── index.html
+│   │   │   │   ├── 23
+│   │   │   │   │   ├── cara-install-nodejs-di-debian
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   └── singkat-dan-padat-untuk-turunan-unix
+│   │   │   │   │       └── index.html
+│   │   │   │   ├── 25
+│   │   │   │   │   ├── cara-install-nginx-mysql-php-di-centos
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   ├── cara-menambah-virtual-hosts-di-nginx
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   └── cara-update-versi-nodejs
+│   │   │   │   │       └── index.html
+│   │   │   │   ├── 26
+│   │   │   │   │   └── cara-install-asciinema-di-linux
+│   │   │   │   │       └── index.html
+│   │   │   │   └── 27
+│   │   │   │       ├── cara-install-atau-upgrade-python-di-centos
+│   │   │   │       │   └── index.html
+│   │   │   │       ├── cara-install-go-lang-di-linux
+│   │   │   │       │   └── index.html
+│   │   │   │       ├── cara-menambah-environment-variable-pada-linux
+│   │   │   │       │   └── index.html
+│   │   │   │       └── cara-mereset-environment-variable-pada-linux
+│   │   │   │           └── index.html
+│   │   │   └── 12
 │   │   │       └── 22
-│   │   │           ├── cara-install-cpanel-di-vps-dedicated-servers
-│   │   │           │   └── index.html
-│   │   │           ├── cara-install-youtube-dl
-│   │   │           │   └── index.html
-│   │   │           └── cara-install-zpanelcp-10-dot-1-1
+│   │   │           └── cara-konfigurasi-vim-menggunakan-tema-dan-plugin
 │   │   │               └── index.html
 │   │   └── categories
+│   │       ├── asciinema
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
 │   │       ├── bundler
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
@@ -180,7 +211,13 @@
 │   │       ├── crack
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
+│   │       ├── debian
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
 │   │       ├── dedicated
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
+│   │       ├── editor
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── english
@@ -199,6 +236,9 @@
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── github
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
+│   │       ├── go-lang
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── jekyll
@@ -262,6 +302,9 @@
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── ubuntu
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
+│   │       ├── vim
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── vps
@@ -350,23 +393,26 @@
 │   │       └── index.html
 │   ├── CNAME
 │   ├── downloads
-│   │   ├── code
-│   │   │   └── tipsy
-│   │   │       ├── README.md
-│   │   │       ├── tipsy.css
-│   │   │       └── tipsy.js
-│   │   └── packages
-│   │       └── sublimetext
-│   │           ├── octopress backtick codeblock.sublime-snippet
-│   │           ├── octopress blockquote.sublime-snippet
-│   │           ├── octopress codeblock.sublime-snippet
-│   │           ├── octopress embed-video.sublime-snippet
-│   │           ├── octopress gist-tag.sublime-snippet
-│   │           ├── octopress image-tag.sublime-snippet
-│   │           ├── octopress include-array.sublime-snippet
-│   │           ├── octopress include-code.sublime-snippet
-│   │           └── octopress more.sublime-snippet
-│   ├── dpkg.txt
+│   │   └── code
+│   │       ├── packages
+│   │       │   └── sublimetext
+│   │       │       ├── octopress backtick codeblock.sublime-snippet
+│   │       │       ├── octopress blockquote.sublime-snippet
+│   │       │       ├── octopress codeblock.sublime-snippet
+│   │       │       ├── octopress embed-video.sublime-snippet
+│   │       │       ├── octopress gist-tag.sublime-snippet
+│   │       │       ├── octopress image-tag.sublime-snippet
+│   │       │       ├── octopress include-array.sublime-snippet
+│   │       │       ├── octopress include-code.sublime-snippet
+│   │       │       └── octopress more.sublime-snippet
+│   │       ├── tipsy
+│   │       │   ├── README.md
+│   │       │   ├── tipsy.css
+│   │       │   └── tipsy.js
+│   │       └── vim
+│   │           └── colors
+│   │               └── molokai.vim
+│   ├── dpkg.md
 │   ├── favicon.png
 │   ├── googlee8260d982013ce83.html
 │   ├── history
@@ -398,6 +444,7 @@
 │   │   │   └── swfobject-dynamic.js
 │   │   ├── modernizr-2.0.js
 │   │   ├── octo.js
+│   │   ├── octopress.js
 │   │   ├── pinboard.js
 │   │   └── twitter.js
 │   ├── mac
@@ -446,7 +493,7 @@
 │   │   │       ├── jquery-ui-1.8.17.custom.min.js
 │   │   │       └── modernizr.js
 │   │   └── index.html
-│   ├── my_gems.txt
+│   ├── my_gems.md
 │   ├── portfolio
 │   │   ├── css
 │   │   │   ├── bootstrap.css
@@ -506,15 +553,18 @@
 │   │   │   └── index.html
 │   │   ├── 4
 │   │   │   └── index.html
-│   │   └── 5
+│   │   ├── 5
+│   │   │   └── index.html
+│   │   └── 6
 │   │       └── index.html
-│   ├── raw.txt
+│   ├── raw.md
 │   ├── robots.txt
 │   ├── service
 │   │   └── index.html
 │   ├── sitemap.xml
 │   ├── stylesheets
 │   │   └── screen.css
+│   ├── test.txt
 │   └── tree.md
 ├── deploy.sh
 ├── Gemfile
@@ -560,7 +610,7 @@
 │   │   │   │   │   └── mengenal-perintah-rake-octopress
 │   │   │   │   │       └── index.html
 │   │   │   │   ├── 03
-│   │   │   │   │   ├── cara-install-dan-compile-ruby-via-tarball
+│   │   │   │   │   ├── cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu
 │   │   │   │   │   │   └── index.html
 │   │   │   │   │   ├── cara-install-slash-upgrade-versi-git-core-terbaru
 │   │   │   │   │   │   └── index.html
@@ -674,38 +724,69 @@
 │   │   │   │   └── 25
 │   │   │   │       └── cara-install-nodejs-di-windows
 │   │   │   │           └── index.html
-│   │   │   └── 11
-│   │   │       ├── 11
-│   │   │       │   └── perbaiki-adobe-flash-player-issue-dalam-chromium-di-ubuntu-14-dot-04
-│   │   │       │       └── index.html
-│   │   │       ├── 14
-│   │   │       │   ├── cara-install-sqlite-di-linux
-│   │   │       │   │   └── index.html
-│   │   │       │   └── membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit
-│   │   │       │       └── index.html
-│   │   │       ├── 16
-│   │   │       │   ├── cara-install-radio-di-server-linux
-│   │   │       │   │   └── index.html
-│   │   │       │   ├── perintah-chattr-pada-sistem-linux
-│   │   │       │   │   └── index.html
-│   │   │       │   └── solusi-pesan-error-the-following-signatures-were-invalid-pada-ubuntu
-│   │   │       │       └── index.html
-│   │   │       ├── 18
-│   │   │       │   ├── cara-convert-ogv-ke-mp4-di-linux
-│   │   │       │   │   └── index.html
-│   │   │       │   └── cara-menghapus-repository-di-github
-│   │   │       │       └── index.html
-│   │   │       ├── 19
-│   │   │       │   └── snippets-untuk-octopress-pada-sublimetext
-│   │   │       │       └── index.html
+│   │   │   ├── 11
+│   │   │   │   ├── 11
+│   │   │   │   │   └── perbaiki-adobe-flash-player-issue-dalam-chromium-di-ubuntu-14-dot-04
+│   │   │   │   │       └── index.html
+│   │   │   │   ├── 14
+│   │   │   │   │   ├── cara-install-sqlite-di-linux
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   └── membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit
+│   │   │   │   │       └── index.html
+│   │   │   │   ├── 16
+│   │   │   │   │   ├── cara-install-radio-di-server-linux
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   ├── perintah-chattr-pada-sistem-linux
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   └── solusi-pesan-error-the-following-signatures-were-invalid-pada-ubuntu
+│   │   │   │   │       └── index.html
+│   │   │   │   ├── 18
+│   │   │   │   │   ├── cara-convert-ogv-ke-mp4-di-linux
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   └── cara-menghapus-repository-di-github
+│   │   │   │   │       └── index.html
+│   │   │   │   ├── 19
+│   │   │   │   │   └── snippets-untuk-octopress-pada-sublimetext
+│   │   │   │   │       └── index.html
+│   │   │   │   ├── 22
+│   │   │   │   │   ├── cara-install-cpanel-di-vps-dedicated-servers
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   ├── cara-install-youtube-dl
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   └── cara-install-zpanelcp-10-dot-1-1
+│   │   │   │   │       └── index.html
+│   │   │   │   ├── 23
+│   │   │   │   │   ├── cara-install-nodejs-di-debian
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   └── singkat-dan-padat-untuk-turunan-unix
+│   │   │   │   │       └── index.html
+│   │   │   │   ├── 25
+│   │   │   │   │   ├── cara-install-nginx-mysql-php-di-centos
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   ├── cara-menambah-virtual-hosts-di-nginx
+│   │   │   │   │   │   └── index.html
+│   │   │   │   │   └── cara-update-versi-nodejs
+│   │   │   │   │       └── index.html
+│   │   │   │   ├── 26
+│   │   │   │   │   └── cara-install-asciinema-di-linux
+│   │   │   │   │       └── index.html
+│   │   │   │   └── 27
+│   │   │   │       ├── cara-install-atau-upgrade-python-di-centos
+│   │   │   │       │   └── index.html
+│   │   │   │       ├── cara-install-go-lang-di-linux
+│   │   │   │       │   └── index.html
+│   │   │   │       ├── cara-menambah-environment-variable-pada-linux
+│   │   │   │       │   └── index.html
+│   │   │   │       └── cara-mereset-environment-variable-pada-linux
+│   │   │   │           └── index.html
+│   │   │   └── 12
 │   │   │       └── 22
-│   │   │           ├── cara-install-cpanel-di-vps-dedicated-servers
-│   │   │           │   └── index.html
-│   │   │           ├── cara-install-youtube-dl
-│   │   │           │   └── index.html
-│   │   │           └── cara-install-zpanelcp-10-dot-1-1
+│   │   │           └── cara-konfigurasi-vim-menggunakan-tema-dan-plugin
 │   │   │               └── index.html
 │   │   └── categories
+│   │       ├── asciinema
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
 │   │       ├── bundler
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
@@ -718,7 +799,13 @@
 │   │       ├── crack
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
+│   │       ├── debian
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
 │   │       ├── dedicated
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
+│   │       ├── editor
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── english
@@ -737,6 +824,9 @@
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── github
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
+│   │       ├── go-lang
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── jekyll
@@ -800,6 +890,9 @@
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── ubuntu
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
+│   │       ├── vim
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── vps
@@ -888,23 +981,26 @@
 │   │       └── index.html
 │   ├── CNAME
 │   ├── downloads
-│   │   ├── code
-│   │   │   └── tipsy
-│   │   │       ├── README.md
-│   │   │       ├── tipsy.css
-│   │   │       └── tipsy.js
-│   │   └── packages
-│   │       └── sublimetext
-│   │           ├── octopress backtick codeblock.sublime-snippet
-│   │           ├── octopress blockquote.sublime-snippet
-│   │           ├── octopress codeblock.sublime-snippet
-│   │           ├── octopress embed-video.sublime-snippet
-│   │           ├── octopress gist-tag.sublime-snippet
-│   │           ├── octopress image-tag.sublime-snippet
-│   │           ├── octopress include-array.sublime-snippet
-│   │           ├── octopress include-code.sublime-snippet
-│   │           └── octopress more.sublime-snippet
-│   ├── dpkg.txt
+│   │   └── code
+│   │       ├── packages
+│   │       │   └── sublimetext
+│   │       │       ├── octopress backtick codeblock.sublime-snippet
+│   │       │       ├── octopress blockquote.sublime-snippet
+│   │       │       ├── octopress codeblock.sublime-snippet
+│   │       │       ├── octopress embed-video.sublime-snippet
+│   │       │       ├── octopress gist-tag.sublime-snippet
+│   │       │       ├── octopress image-tag.sublime-snippet
+│   │       │       ├── octopress include-array.sublime-snippet
+│   │       │       ├── octopress include-code.sublime-snippet
+│   │       │       └── octopress more.sublime-snippet
+│   │       ├── tipsy
+│   │       │   ├── README.md
+│   │       │   ├── tipsy.css
+│   │       │   └── tipsy.js
+│   │       └── vim
+│   │           └── colors
+│   │               └── molokai.vim
+│   ├── dpkg.md
 │   ├── favicon.png
 │   ├── googlee8260d982013ce83.html
 │   ├── history
@@ -936,6 +1032,7 @@
 │   │   │   └── swfobject-dynamic.js
 │   │   ├── modernizr-2.0.js
 │   │   ├── octo.js
+│   │   ├── octopress.js
 │   │   ├── pinboard.js
 │   │   └── twitter.js
 │   ├── mac
@@ -984,7 +1081,7 @@
 │   │   │       ├── jquery-ui-1.8.17.custom.min.js
 │   │   │       └── modernizr.js
 │   │   └── index.html
-│   ├── my_gems.txt
+│   ├── my_gems.md
 │   ├── portfolio
 │   │   ├── css
 │   │   │   ├── bootstrap.css
@@ -1044,15 +1141,18 @@
 │   │   │   └── index.html
 │   │   ├── 4
 │   │   │   └── index.html
-│   │   └── 5
+│   │   ├── 5
+│   │   │   └── index.html
+│   │   └── 6
 │   │       └── index.html
-│   ├── raw.txt
+│   ├── raw.md
 │   ├── robots.txt
 │   ├── service
 │   │   └── index.html
 │   ├── sitemap.xml
 │   ├── stylesheets
 │   │   └── screen.css
+│   ├── test.txt
 │   └── tree.md
 ├── Rakefile
 ├── README.markdown
@@ -1178,22 +1278,25 @@
 │   │       └── index.html
 │   ├── CNAME
 │   ├── downloads
-│   │   ├── code
-│   │   │   └── tipsy
-│   │   │       ├── README.md
-│   │   │       ├── tipsy.css
-│   │   │       └── tipsy.js
-│   │   └── packages
-│   │       └── sublimetext
-│   │           ├── octopress backtick codeblock.sublime-snippet
-│   │           ├── octopress blockquote.sublime-snippet
-│   │           ├── octopress codeblock.sublime-snippet
-│   │           ├── octopress embed-video.sublime-snippet
-│   │           ├── octopress gist-tag.sublime-snippet
-│   │           ├── octopress image-tag.sublime-snippet
-│   │           ├── octopress include-array.sublime-snippet
-│   │           ├── octopress include-code.sublime-snippet
-│   │           └── octopress more.sublime-snippet
+│   │   └── code
+│   │       ├── packages
+│   │       │   └── sublimetext
+│   │       │       ├── octopress backtick codeblock.sublime-snippet
+│   │       │       ├── octopress blockquote.sublime-snippet
+│   │       │       ├── octopress codeblock.sublime-snippet
+│   │       │       ├── octopress embed-video.sublime-snippet
+│   │       │       ├── octopress gist-tag.sublime-snippet
+│   │       │       ├── octopress image-tag.sublime-snippet
+│   │       │       ├── octopress include-array.sublime-snippet
+│   │       │       ├── octopress include-code.sublime-snippet
+│   │       │       └── octopress more.sublime-snippet
+│   │       ├── tipsy
+│   │       │   ├── README.md
+│   │       │   ├── tipsy.css
+│   │       │   └── tipsy.js
+│   │       └── vim
+│   │           └── colors
+│   │               └── molokai.vim
 │   ├── dpkg.txt
 │   ├── favicon.png
 │   ├── googlee8260d982013ce83.html
@@ -1223,6 +1326,7 @@
 │   │   ├── asides
 │   │   │   ├── category_list.html
 │   │   │   ├── delicious.html
+│   │   │   ├── find_me_backup.html
 │   │   │   ├── find_me.html
 │   │   │   ├── github.html
 │   │   │   ├── google_adsense.html
@@ -1233,14 +1337,14 @@
 │   │   │   ├── recent_posts.html
 │   │   │   ├── twitter.html
 │   │   │   └── twitter_wjs.html
-│   │   ├── backup-des-key.html
+│   │   ├── backup-description-keywords.html
 │   │   ├── custom
 │   │   │   ├── after_footer.html
 │   │   │   ├── asides
 │   │   │   │   └── about.html
 │   │   │   ├── category_feed.xml
 │   │   │   ├── footer.html
-│   │   │   ├── header-backup.html
+│   │   │   ├── header_backup.html
 │   │   │   ├── header.html
 │   │   │   ├── head.html
 │   │   │   └── navigation.html
@@ -1256,6 +1360,7 @@
 │   │   ├── post
 │   │   │   ├── author.html
 │   │   │   ├── categories.html
+│   │   │   ├── date-backup.html
 │   │   │   ├── date.html
 │   │   │   ├── disqus_thread.html
 │   │   │   └── sharing.html
@@ -1271,6 +1376,7 @@
 │   │   │   └── swfobject-dynamic.js
 │   │   ├── modernizr-2.0.js
 │   │   ├── octo.js
+│   │   ├── octopress.js
 │   │   ├── pinboard.js
 │   │   └── twitter.js
 │   ├── _layouts
@@ -1324,7 +1430,7 @@
 │   │   │       ├── jquery-ui-1.8.17.custom.min.js
 │   │   │       └── modernizr.js
 │   │   └── index.html
-│   ├── my_gems.txt
+│   ├── my_gems.md
 │   ├── portfolio
 │   │   ├── css
 │   │   │   ├── bootstrap.css
@@ -1396,7 +1502,7 @@
 │   │   ├── 2014-07-02-fix-error-generate-font-awesome-on-octopress.markdown
 │   │   ├── 2014-07-02-membuat-halaman-baru-dan-menambahkan-menu-navigasi.markdown
 │   │   ├── 2014-07-02-mengenal-perintah-rake-octopress.markdown
-│   │   ├── 2014-07-03-cara-install-dan-compile-ruby-via-tarball.markdown
+│   │   ├── 2014-07-03-cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu.markdown
 │   │   ├── 2014-07-03-cara-install-slash-upgrade-versi-git-core-terbaru.markdown
 │   │   ├── 2014-07-03-cara-membuat-komentar-di-octopress-menggunakan-disqus.markdown
 │   │   ├── 2014-07-03-cara-membuat-plugin-kategori-list-di-sidebar-octopress.markdown
@@ -1454,8 +1560,19 @@
 │   │   ├── 2014-11-19-snippets-untuk-octopress-pada-sublimetext.markdown
 │   │   ├── 2014-11-22-cara-install-cpanel-di-vps-dedicated-servers.markdown
 │   │   ├── 2014-11-22-cara-install-youtube-dl.markdown
-│   │   └── 2014-11-22-cara-install-zpanelcp-10-dot-1-1.markdown
-│   ├── raw.txt
+│   │   ├── 2014-11-22-cara-install-zpanelcp-10-dot-1-1.markdown
+│   │   ├── 2014-11-23-cara-install-nodejs-di-debian.markdown
+│   │   ├── 2014-11-23-singkat-dan-padat-untuk-turunan-unix.markdown
+│   │   ├── 2014-11-25-cara-install-nginx-mysql-php-di-centos.markdown
+│   │   ├── 2014-11-25-cara-menambah-virtual-hosts-di-nginx.markdown
+│   │   ├── 2014-11-25-cara-update-versi-nodejs.markdown
+│   │   ├── 2014-11-26-cara-install-asciinema-di-linux.markdown
+│   │   ├── 2014-11-27-cara-install-atau-upgrade-python-di-centos.markdown
+│   │   ├── 2014-11-27-cara-install-go-lang-di-linux.markdown
+│   │   ├── 2014-11-27-cara-menambah-environment-variable-pada-linux.markdown
+│   │   ├── 2014-11-27-cara-mereset-environment-variable-pada-linux.markdown
+│   │   └── 2014-12-22-cara-konfigurasi-vim-menggunakan-tema-dan-plugin.markdown
+│   ├── raw.md
 │   ├── robots.txt
 │   ├── service
 │   │   └── index.markdown
@@ -1464,4 +1581,4 @@
 │   └── tree.md
 └── view.sh
 
-420 directories, 1044 files
+472 directories, 1109 files
