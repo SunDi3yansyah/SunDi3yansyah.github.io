@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://sundi3yansyah.com/article/2015/04/12/github-api-codeigniter-semanticui/</loc>
+    <lastmod>2015-04-12T10:27:40+07:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://sundi3yansyah.com/article/2014/12/26/cara-install-ruby-di-fedora/</loc>
     <lastmod>2014-12-26T03:48:32+07:00</lastmod>
     <priority>0.8</priority>
@@ -387,25 +392,25 @@
   </url>
   <url>
     <loc>http://sundi3yansyah.com/blog/archives/</loc>
-    <lastmod>2014-12-26T04:02:14+07:00</lastmod>
+    <lastmod>2015-04-12T10:45:26+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://sundi3yansyah.com/</loc>
-    <lastmod>2014-12-26T04:02:14+07:00</lastmod>
+    <lastmod>2015-04-12T10:45:26+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://sundi3yansyah.com/service/</loc>
-    <lastmod>2014-12-26T04:02:14+07:00</lastmod>
+    <lastmod>2015-04-12T10:45:26+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://sundi3yansyah.com/history/</loc>
-    <lastmod>2014-12-26T04:02:14+07:00</lastmod>
+    <lastmod>2015-04-12T10:45:26+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
