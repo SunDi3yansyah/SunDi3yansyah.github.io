@@ -1,4 +1,3 @@
-sundi3yansyah@library:~$ sudo dpkg --get-selections
 account-plugin-aim              install
 account-plugin-facebook             install
 account-plugin-flickr               install
