@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Php | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/php/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-04-15T14:36:18+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="http://sundi3yansyah.github.io/article/categories/php/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2015-08-27T13:22:49+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install Nginx, MySQL, PHP Di CentOS]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/"/>
     <updated>2014-11-25T04:17:41+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos</id>
+    <id>http://sundi3yansyah.github.io/article/2014/11/25/cara-install-nginx-mysql-php-di-centos</id>
     <content type="html"><![CDATA[<p>Pada artikel sebelumnya saya sudah menjelaskan tentang <a href="/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13/">Install LEMP Di CentOS 5-6 Dan Fedora 18-13</a>, namun disini saya akan menjabarkan lebih datail <strong>Cara Install Nginx, MySQL, PHP di CentOS</strong> menggunakan recorder.</p>
 
 <h4>Requirements</h4>
@@ -166,9 +166,9 @@ nano /usr/share/nginx/html/info.php
   
   <entry>
     <title type="html"><![CDATA[Orang Ter PHP Di Dunia]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/09/12/orang-ter-php-di-dunia/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/09/12/orang-ter-php-di-dunia/"/>
     <updated>2014-09-12T04:45:25+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/09/12/orang-ter-php-di-dunia</id>
+    <id>http://sundi3yansyah.github.io/article/2014/09/12/orang-ter-php-di-dunia</id>
     <content type="html"><![CDATA[<p><img class="center <a" src="href="http://s40.photobucket.com/albums/e228/sundi3yansyah/php_rasmus_zpsb7755523.jpg">http://s40.photobucket.com/albums/e228/sundi3yansyah/php_rasmus_zpsb7755523.jpg</a>&#8221;></p>
 
 <p>Pasti pada tau donk dengan PHP, bahkan cewek akan kesel kalau dengar kata ini dari temannya, anyway busway ini bukan PHP singkatan dari “Pemberi Harapan Palsu” tapi singkatan dari Personal Home Page yaitu bahasa pemrograman yang berjalan dalam sebuah web server. PHP diciptakan oleh programmer Unix dan Perl asal Kanada yang bernama Rasmus Lerdrorf pada bulan Agustus-September 1994.</p>
@@ -205,9 +205,9 @@ Sumber Gambar: <a href="http://www.inp-software.com">http://www.inp-software.com
   
   <entry>
     <title type="html"><![CDATA[Update Versi LEMP CentOS Dan Fedora]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/09/05/update-versi-lemp-centos-dan-fedora/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/09/05/update-versi-lemp-centos-dan-fedora/"/>
     <updated>2014-09-05T05:47:41+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/09/05/update-versi-lemp-centos-dan-fedora</id>
+    <id>http://sundi3yansyah.github.io/article/2014/09/05/update-versi-lemp-centos-dan-fedora</id>
     <content type="html"><![CDATA[<h4>update remi: nginx mysql mysql-server php php-common php-fpm <!-- more --></h4>
 
 <pre><code>yum --enablerepo=remi,remi-test update nginx mysql mysql-server php php-common php-fpm

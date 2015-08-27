@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Gem | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/gem/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-04-15T14:36:18+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="http://sundi3yansyah.github.io/article/categories/gem/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2015-08-27T13:22:49+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Blogging Menggunakan Octopress &amp; Github]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/07/02/blogging-menggunakan-octopress-and-github/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/07/02/blogging-menggunakan-octopress-and-github/"/>
     <updated>2014-07-02T08:06:29+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/07/02/blogging-menggunakan-octopress-and-github</id>
+    <id>http://sundi3yansyah.github.io/article/2014/07/02/blogging-menggunakan-octopress-and-github</id>
     <content type="html"><![CDATA[<p>Setelah lama menggunakan wordpress, blogger, joomla sebagai media untuk blogging akhirnya saya memutuskan untuk bermigrasi menggunakan octopress. Hmmm sebenernya ini tulisannya mas sugeng karena saya juga sejalan dengan beliau maka saya ingin menuliskannya kembali di blog saya ini&hellip;hehe&hellip; Alasan kenapa saya bermigrasi sebagai berikut:</p>
 
 <h3>Plugin Wordpress terlalu banyak</h3>

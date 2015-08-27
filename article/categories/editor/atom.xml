@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Editor | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/editor/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-04-15T14:36:18+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="http://sundi3yansyah.github.io/article/categories/editor/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2015-08-27T13:22:49+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Konfigurasi VIM Menggunakan Tema Dan Plugin]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/"/>
     <updated>2014-12-22T13:12:28+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin</id>
+    <id>http://sundi3yansyah.github.io/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin</id>
     <content type="html"><![CDATA[<p>Pertama liat dulu penampakannya</p>
 
 <p><img src="https://lh4.googleusercontent.com/-EL817E9o1AQ/VJe2F8KdpmI/AAAAAAAAAdg/IdB5ryWNfks/s800/Screenshot+from+2014-12-22+13:08:19.png" alt="sundi3yansyah vim" /></p>
@@ -817,9 +817,9 @@ Masih kurang puas dengan package yang saya berikan? Yok kita explorer VIM awesom
   
   <entry>
     <title type="html"><![CDATA[Snippets Untuk Octopress Pada Sublimetext]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext/"/>
     <updated>2014-11-19T14:02:37+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext</id>
+    <id>http://sundi3yansyah.github.io/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext</id>
     <content type="html"><![CDATA[<p>Kali ini saya akan berbagi code snippets untuk kalian yang suka atau menggunakan framework octopress seperti saya ini dan tentunya menggunakan editor Sublimetext.</p>
 
 <p><strong>Syarat</strong></p>
@@ -854,9 +854,9 @@ Masih kurang puas dengan package yang saya berikan? Yok kita explorer VIM awesom
   
   <entry>
     <title type="html"><![CDATA[Crack Sublime Text 3 Build 3065]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/09/30/crack-sublime-text-3-build-3065/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/09/30/crack-sublime-text-3-build-3065/"/>
     <updated>2014-09-30T05:44:13+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/09/30/crack-sublime-text-3-build-3065</id>
+    <id>http://sundi3yansyah.github.io/article/2014/09/30/crack-sublime-text-3-build-3065</id>
     <content type="html"><![CDATA[<h3>Download Sublimeetxt Build 3065</h3>
 
 <h4><a href="http://www.sublimetext.com/3">http://www.sublimetext.com/3</a></h4>

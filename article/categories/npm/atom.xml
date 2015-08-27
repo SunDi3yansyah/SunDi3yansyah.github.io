@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Npm | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/npm/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-04-15T14:36:18+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="http://sundi3yansyah.github.io/article/categories/npm/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2015-08-27T13:22:49+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Update Versi NodeJS]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/11/25/cara-update-versi-nodejs/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/25/cara-update-versi-nodejs/"/>
     <updated>2014-11-25T07:27:33+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/11/25/cara-update-versi-nodejs</id>
+    <id>http://sundi3yansyah.github.io/article/2014/11/25/cara-update-versi-nodejs</id>
     <content type="html"><![CDATA[<p>Cek dulu versi node kalian, caranya</p>
 
 <pre><code>node -v
@@ -46,9 +46,9 @@ tunggu sampai selesai proses download/update nya, jika sudah selesai, silakan di
   
   <entry>
     <title type="html"><![CDATA[Cara Install NodeJS Di Windows]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/10/25/cara-install-nodejs-di-windows/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/10/25/cara-install-nodejs-di-windows/"/>
     <updated>2014-10-25T11:59:26+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/10/25/cara-install-nodejs-di-windows</id>
+    <id>http://sundi3yansyah.github.io/article/2014/10/25/cara-install-nodejs-di-windows</id>
     <content type="html"><![CDATA[<h4>Cara Install NodeJS di Windows</h4>
 
 <p>Wah gampang banget ternyata, gw yakin kalian semua pasti bisa<img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >&hellip;</p>
@@ -62,9 +62,9 @@ Kemudian download sesui arsitektur OS windows kalian x86 atau x64, mau yang Wind
   
   <entry>
     <title type="html"><![CDATA[Cara Install NodeJS Dan NPM Di Ubuntu]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu/"/>
     <updated>2014-07-05T20:58:02+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu</id>
+    <id>http://sundi3yansyah.github.io/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu</id>
     <content type="html"><![CDATA[<p>Install dulu Depensial dari software python dan menambahkan PPA dari NodeJS untuk ubuntunya.</p>
 
 <p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>

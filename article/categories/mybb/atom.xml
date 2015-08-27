@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Mybb | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/mybb/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-04-15T14:36:18+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="http://sundi3yansyah.github.io/article/categories/mybb/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2015-08-27T13:22:49+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Youtube Cara Install MyBB]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/08/27/youtube-cara-install-mybb/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/08/27/youtube-cara-install-mybb/"/>
     <updated>2014-08-27T11:24:38+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/08/27/youtube-cara-install-mybb</id>
+    <id>http://sundi3yansyah.github.io/article/2014/08/27/youtube-cara-install-mybb</id>
     <content type="html"><![CDATA[<!-- more -->
 
 
@@ -28,9 +28,9 @@
   
   <entry>
     <title type="html"><![CDATA[Edit Template MyBB Menggunakan Inspect Element PART-1]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/08/27/edit-template-mybb-menggunakan-inspect-element-part-1/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/08/27/edit-template-mybb-menggunakan-inspect-element-part-1/"/>
     <updated>2014-08-27T11:23:31+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/08/27/edit-template-mybb-menggunakan-inspect-element-part-1</id>
+    <id>http://sundi3yansyah.github.io/article/2014/08/27/edit-template-mybb-menggunakan-inspect-element-part-1</id>
     <content type="html"><![CDATA[<!-- more -->
 
 
@@ -41,9 +41,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install MyBB]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/07/05/cara-install-mybb/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/07/05/cara-install-mybb/"/>
     <updated>2014-07-05T00:13:21+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/07/05/cara-install-mybb</id>
+    <id>http://sundi3yansyah.github.io/article/2014/07/05/cara-install-mybb</id>
     <content type="html"><![CDATA[<p>Langsung saja nonton videonya:</p>
 
 <h3>Cara Install MyBB</h3>

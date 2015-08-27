@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Vim | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/vim/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-04-15T14:36:18+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="http://sundi3yansyah.github.io/article/categories/vim/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2015-08-27T13:22:49+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Konfigurasi VIM Menggunakan Tema Dan Plugin]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/"/>
     <updated>2014-12-22T13:12:28+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin</id>
+    <id>http://sundi3yansyah.github.io/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin</id>
     <content type="html"><![CDATA[<p>Pertama liat dulu penampakannya</p>
 
 <p><img src="https://lh4.googleusercontent.com/-EL817E9o1AQ/VJe2F8KdpmI/AAAAAAAAAdg/IdB5ryWNfks/s800/Screenshot+from+2014-12-22+13:08:19.png" alt="sundi3yansyah vim" /></p>

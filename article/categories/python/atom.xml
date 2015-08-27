@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Python | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/python/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-04-15T14:36:18+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="http://sundi3yansyah.github.io/article/categories/python/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2015-08-27T13:22:49+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install Atau Upgrade Python Di CentOS]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/11/27/cara-install-atau-upgrade-python-di-centos/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/27/cara-install-atau-upgrade-python-di-centos/"/>
     <updated>2014-11-27T17:18:37+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/11/27/cara-install-atau-upgrade-python-di-centos</id>
+    <id>http://sundi3yansyah.github.io/article/2014/11/27/cara-install-atau-upgrade-python-di-centos</id>
     <content type="html"><![CDATA[<p>Pertama tampulkan dulu versi python yang sekarang
 <code>sh
 python --version
@@ -89,9 +89,9 @@ python -V
   
   <entry>
     <title type="html"><![CDATA[Joomla Com_User Auto Exploit With Python]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/08/30/joomla-com-user-auto-exploit-with-python/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/08/30/joomla-com-user-auto-exploit-with-python/"/>
     <updated>2014-08-30T05:55:39+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/08/30/joomla-com-user-auto-exploit-with-python</id>
+    <id>http://sundi3yansyah.github.io/article/2014/08/30/joomla-com-user-auto-exploit-with-python</id>
     <content type="html"><![CDATA[<h2>Exploit Joomla version 1.6 &amp; 1.7</h2>
 
 <h3>Require Install</h3>
