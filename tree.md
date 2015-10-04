@@ -192,8 +192,16 @@
 │   │   │   │       └── cara-mereset-environment-variable-pada-linux
 │   │   │   │           └── index.html
 │   │   │   └── 12
-│   │   │       └── 22
-│   │   │           └── cara-konfigurasi-vim-menggunakan-tema-dan-plugin
+│   │   │       ├── 22
+│   │   │       │   └── cara-konfigurasi-vim-menggunakan-tema-dan-plugin
+│   │   │       │       └── index.html
+│   │   │       └── 26
+│   │   │           └── cara-install-ruby-di-fedora
+│   │   │               └── index.html
+│   │   ├── 2015
+│   │   │   └── 04
+│   │   │       └── 12
+│   │   │           └── github-api-codeigniter-semanticui
 │   │   │               └── index.html
 │   │   └── categories
 │   │       ├── asciinema
@@ -203,6 +211,9 @@
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── centos
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
+│   │       ├── codeigniter
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── control-panel
@@ -226,7 +237,13 @@
 │   │       ├── exploit
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
+│   │       ├── fedora
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
 │   │       ├── framework
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
+│   │       ├── gem
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── gems
@@ -287,6 +304,9 @@
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── ruby
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
+│   │       ├── semantic-ui
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── server
@@ -413,6 +433,7 @@
 │   │           └── colors
 │   │               └── molokai.vim
 │   ├── dpkg.md
+│   ├── dpkg.txt
 │   ├── favicon.png
 │   ├── googlee8260d982013ce83.html
 │   ├── history
@@ -558,13 +579,14 @@
 │   │   └── 6
 │   │       └── index.html
 │   ├── raw.md
+│   ├── README.md
 │   ├── robots.txt
 │   ├── service
 │   │   └── index.html
 │   ├── sitemap.xml
 │   ├── stylesheets
 │   │   └── screen.css
-│   ├── test.txt
+│   ├── sudo_dpkg.sh
 │   └── tree.md
 ├── deploy.sh
 ├── Gemfile
@@ -780,8 +802,16 @@
 │   │   │   │       └── cara-mereset-environment-variable-pada-linux
 │   │   │   │           └── index.html
 │   │   │   └── 12
-│   │   │       └── 22
-│   │   │           └── cara-konfigurasi-vim-menggunakan-tema-dan-plugin
+│   │   │       ├── 22
+│   │   │       │   └── cara-konfigurasi-vim-menggunakan-tema-dan-plugin
+│   │   │       │       └── index.html
+│   │   │       └── 26
+│   │   │           └── cara-install-ruby-di-fedora
+│   │   │               └── index.html
+│   │   ├── 2015
+│   │   │   └── 04
+│   │   │       └── 12
+│   │   │           └── github-api-codeigniter-semanticui
 │   │   │               └── index.html
 │   │   └── categories
 │   │       ├── asciinema
@@ -791,6 +821,9 @@
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── centos
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
+│   │       ├── codeigniter
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── control-panel
@@ -814,7 +847,13 @@
 │   │       ├── exploit
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
+│   │       ├── fedora
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
 │   │       ├── framework
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
+│   │       ├── gem
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── gems
@@ -875,6 +914,9 @@
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── ruby
+│   │       │   ├── atom.xml
+│   │       │   └── index.html
+│   │       ├── semantic-ui
 │   │       │   ├── atom.xml
 │   │       │   └── index.html
 │   │       ├── server
@@ -1001,6 +1043,7 @@
 │   │           └── colors
 │   │               └── molokai.vim
 │   ├── dpkg.md
+│   ├── dpkg.txt
 │   ├── favicon.png
 │   ├── googlee8260d982013ce83.html
 │   ├── history
@@ -1146,13 +1189,14 @@
 │   │   └── 6
 │   │       └── index.html
 │   ├── raw.md
+│   ├── README.md
 │   ├── robots.txt
 │   ├── service
 │   │   └── index.html
 │   ├── sitemap.xml
 │   ├── stylesheets
 │   │   └── screen.css
-│   ├── test.txt
+│   ├── sudo_dpkg.sh
 │   └── tree.md
 ├── Rakefile
 ├── README.markdown
@@ -1297,6 +1341,7 @@
 │   │       └── vim
 │   │           └── colors
 │   │               └── molokai.vim
+│   ├── dpkg.md
 │   ├── dpkg.txt
 │   ├── favicon.png
 │   ├── googlee8260d982013ce83.html
@@ -1344,7 +1389,6 @@
 │   │   │   │   └── about.html
 │   │   │   ├── category_feed.xml
 │   │   │   ├── footer.html
-│   │   │   ├── header_backup.html
 │   │   │   ├── header.html
 │   │   │   ├── head.html
 │   │   │   └── navigation.html
@@ -1571,14 +1615,18 @@
 │   │   ├── 2014-11-27-cara-install-go-lang-di-linux.markdown
 │   │   ├── 2014-11-27-cara-menambah-environment-variable-pada-linux.markdown
 │   │   ├── 2014-11-27-cara-mereset-environment-variable-pada-linux.markdown
-│   │   └── 2014-12-22-cara-konfigurasi-vim-menggunakan-tema-dan-plugin.markdown
+│   │   ├── 2014-12-22-cara-konfigurasi-vim-menggunakan-tema-dan-plugin.markdown
+│   │   ├── 2014-12-26-cara-install-ruby-di-fedora.markdown
+│   │   └── 2015-04-12-github-api-codeigniter-semanticui.markdown
 │   ├── raw.md
+│   ├── README.md
 │   ├── robots.txt
 │   ├── service
 │   │   └── index.markdown
 │   ├── stylesheets
 │   │   └── screen.css
+│   ├── sudo_dpkg.sh
 │   └── tree.md
 └── view.sh
 
-472 directories, 1109 files
+492 directories, 1137 files
