@@ -392,25 +392,25 @@
   </url>
   <url>
     <loc>http://sundi3yansyah.github.io/blog/archives/</loc>
-    <lastmod>2015-10-05T02:37:03+07:00</lastmod>
+    <lastmod>2015-10-05T02:42:27+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://sundi3yansyah.github.io/</loc>
-    <lastmod>2015-10-05T02:37:03+07:00</lastmod>
+    <lastmod>2015-10-05T02:42:27+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://sundi3yansyah.github.io/service/</loc>
-    <lastmod>2015-10-05T02:37:03+07:00</lastmod>
+    <loc>http://sundi3yansyah.github.io/history/</loc>
+    <lastmod>2015-10-05T02:42:27+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://sundi3yansyah.github.io/history/</loc>
-    <lastmod>2015-10-05T02:37:03+07:00</lastmod>
+    <loc>http://sundi3yansyah.github.io/service/</loc>
+    <lastmod>2015-10-05T02:42:27+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -432,11 +432,6 @@
   <url>
     <loc>http://sundi3yansyah.github.io/iNdXULwDEdLtIBaXbjj8s7TuH7o.html</loc>
     <lastmod>2014-08-19T12:38:04+07:00</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>http://sundi3yansyah.github.io/portfolio/index.html</loc>
-    <lastmod>2014-11-21T04:23:45+07:00</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>
