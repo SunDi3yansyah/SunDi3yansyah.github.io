@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Python | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.github.io/article/categories/python/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.github.io/"/>
-  <updated>2015-10-05T02:29:29+07:00</updated>
+  <updated>2015-10-05T02:37:03+07:00</updated>
   <id>http://sundi3yansyah.github.io/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -22,7 +22,7 @@
 <code>sh
 python --version
 </code>
-Jika versi di bawah 2.7.8 maka itu sudah kuno dan sudah saatnya di update <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+Jika versi di bawah 2.7.8 maka itu sudah kuno dan sudah saatnya di update <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
 
 <!--more-->
 
@@ -65,7 +65,7 @@ jalankan configure nya
 <code>sh
 ./configure --prefix=/usr/local
 </code>
-lakukan compile, ini akan membutuhkan waktu yang lumayan lama <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; >
+lakukan compile, ini akan membutuhkan waktu yang lumayan lama <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; >
 <code>sh
 make
 </code>
@@ -78,7 +78,7 @@ jika sudah selesai maka coba kita lihat versinya
 python -V
 </code></p>
 
-<p>Mudah bukan <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+<p>Mudah bukan <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
 
 <p>Jika belum juga berubah dan tidak muncul output dengan versi yang kita compile tadi maka lakukan dengan menambah Environment Variable, anda bisa cari artikel saya sebelumnya <strong>Cara Menambah Environment Variable pada Linux</strong></p>
 

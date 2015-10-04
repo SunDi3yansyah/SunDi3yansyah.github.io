@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.github.io/article/categories/ruby/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.github.io/"/>
-  <updated>2015-10-05T02:29:29+07:00</updated>
+  <updated>2015-10-05T02:37:03+07:00</updated>
   <id>http://sundi3yansyah.github.io/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -156,7 +156,7 @@
 
 <p><blockquote><p>Jekyll merupakan open source program yang ditulis dalam Ruby oleh Tom Preston-Werner , GitHub yang co-founder. Jekyll adalah, sederhana blog -aware, situs statis generator situs pribadi, proyek, atau organisasi. Ini adalah file berbasis CMS ; alih-alih menggunakan database , Jekyll mengambil konten, membuat penurunan harga atau tekstil dan template Liquid , dan menghasilkan lengkap, website statis siap disajikan oleh Apache HTTP Server , Nginx atau server web lain. [ 1 ] Jekyll adalah mesin belakang GitHub Pages , [ 2 ] fitur GitHub yang memungkinkan pengguna untuk meng-host situs web berdasarkan repositori GitHub mereka.</p><footer><strong>id.wikipedia <a href="http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/">http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/</a> wikipedia version google translate</strong></footer></blockquote></p>
 
-<p>Terdengar aneh dengan judul ini? Yup&hellip;emang benar bikin blog pakai jekyll cepat sekali gk sampe 1 menit udah jadi selanjutnya kita rancang sendiri, semacam framework begitu bray<img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >&hellip;</p>
+<p>Terdengar aneh dengan judul ini? Yup&hellip;emang benar bikin blog pakai jekyll cepat sekali gk sampe 1 menit udah jadi selanjutnya kita rancang sendiri, semacam framework begitu bray<img src="ttps://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;" >&hellip;</p>
 
 <p>Asumsikan:</p>
 
@@ -180,7 +180,7 @@
 
 <p>Asumsikan posisi saya ada di <code>/home/user/</code></p>
 
-<p>Saya akan membuat blog jekyll baru dengan folder <code>nggak-ada-1-menit</code><img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >maka:</p>
+<p>Saya akan membuat blog jekyll baru dengan folder <code>nggak-ada-1-menit</code><img src="ttps://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;" >maka:</p>
 
 <p><figure class='code'><figcaption><span>new jekyll blog </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>

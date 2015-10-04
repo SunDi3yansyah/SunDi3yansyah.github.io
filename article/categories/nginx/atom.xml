@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Nginx | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.github.io/article/categories/nginx/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.github.io/"/>
-  <updated>2015-10-05T02:29:29+07:00</updated>
+  <updated>2015-10-05T02:37:03+07:00</updated>
   <id>http://sundi3yansyah.github.io/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -18,7 +18,7 @@
     <link href="http://sundi3yansyah.github.io/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx/"/>
     <updated>2014-11-25T04:48:12+07:00</updated>
     <id>http://sundi3yansyah.github.io/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx</id>
-    <content type="html"><![CDATA[<p>Kalau sebelumnya saya sudah menejalaskan tentang <a href="/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/">Cara Install Nginx, MySQL, PHP Di CentOS</a>, sekarang bagaimana jika kita ingin menambahkan domain kita ke server yang pada tempo lalu sudah di install NGINX dan kawan-kawannya? Yah&hellip; tulisan &amp; video di bawah ini yang akan menjawab, ini real saya praktekan langsung di domain saya, namun nama domain tsb adalah nama Nick teman saya <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+    <content type="html"><![CDATA[<p>Kalau sebelumnya saya sudah menejalaskan tentang <a href="/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/">Cara Install Nginx, MySQL, PHP Di CentOS</a>, sekarang bagaimana jika kita ingin menambahkan domain kita ke server yang pada tempo lalu sudah di install NGINX dan kawan-kawannya? Yah&hellip; tulisan &amp; video di bawah ini yang akan menjawab, ini real saya praktekan langsung di domain saya, namun nama domain tsb adalah nama Nick teman saya <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
 
 <p>Langsung saja ke videonya.</p>
 

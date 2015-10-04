@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.github.io/article/categories/octopress/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.github.io/"/>
-  <updated>2015-10-05T02:29:29+07:00</updated>
+  <updated>2015-10-05T02:37:03+07:00</updated>
   <id>http://sundi3yansyah.github.io/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -55,7 +55,7 @@
     <link href="http://sundi3yansyah.github.io/article/2014/09/10/cara-konfigurasi-seo-keywords-dan-deskripsi-octopress/"/>
     <updated>2014-09-10T03:49:47+07:00</updated>
     <id>http://sundi3yansyah.github.io/article/2014/09/10/cara-konfigurasi-seo-keywords-dan-deskripsi-octopress</id>
-    <content type="html"><![CDATA[<p>SEO itu asset terpenting dalam membangun website, tanya donk kenapa? Nanti akan di jawab dengan rumput yang bergoyang. <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a.! Ya pokoknya gitu deh&hellip;</p>
+    <content type="html"><![CDATA[<p>SEO itu asset terpenting dalam membangun website, tanya donk kenapa? Nanti akan di jawab dengan rumput yang bergoyang. <img src="ttps://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;" >a.! Ya pokoknya gitu deh&hellip;</p>
 
 <!-- more -->
 
@@ -338,7 +338,7 @@ Di taroh dimana ya? Liat contoh dibawah
 
 <p>Kalau gk paham ya ke laut aja, kan bisa komen di bawah ^_^</p>
 
-<p>Happy coding, happy hacking, happy coling. <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; ></p>
+<p>Happy coding, happy hacking, happy coling. <img src="ttps://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;" ></p>
 ]]></content>
   </entry>
   
@@ -373,7 +373,7 @@ Di taroh dimana ya? Liat contoh dibawah
 </ul>
 
 
-<p>Keren bukan? Jelas keren banget, <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a. Kamu dapat membacanya secara lebih lengkap di situs <a href="http://jekyllrb.com/">Jekyll</a>. Sekarang saya akan menjelaskan tentang Octopress.</p>
+<p>Keren bukan? Jelas keren banget, <img src="ttps://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;" >a. Kamu dapat membacanya secara lebih lengkap di situs <a href="http://jekyllrb.com/">Jekyll</a>. Sekarang saya akan menjelaskan tentang Octopress.</p>
 
 <h3>Octopress</h3>
 
@@ -390,7 +390,7 @@ Di taroh dimana ya? Liat contoh dibawah
 <div class="github-widget" data-repo="SunDi3yansyah/SunDi3yansyah.github.io"></div>
 
 
-<p>Kalau anda mengatakan <code>dimana file public_html dan database blog saya ini</code> ya disana. :LOL: ~> <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a&hellip;</p>
+<p>Kalau anda mengatakan <code>dimana file public_html dan database blog saya ini</code> ya disana. :LOL: ~> <img src="ttps://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;" >a&hellip;</p>
 
 <p>Anda sudah membaca artikel saya sebelumnya belum? <a href="http://sundi3yansyah.com/article/2014/07/02/blogging-menggunakan-octopress-and-github/">Blogging Menggunakan Octopress &amp; Github</a>, memang sedikit hampir sama cuma disini saya menjelaskan sedikit spesifik kepenggunaanya dan melestarikan para pengguna Jekyll, Octopress dan Github.</p>
 ]]></content>
@@ -401,7 +401,7 @@ Di taroh dimana ya? Liat contoh dibawah
     <link href="http://sundi3yansyah.github.io/article/2014/09/06/cara-konfigurasi-rss-di-octopress/"/>
     <updated>2014-09-06T21:30:44+07:00</updated>
     <id>http://sundi3yansyah.github.io/article/2014/09/06/cara-konfigurasi-rss-di-octopress</id>
-    <content type="html"><![CDATA[<p>Langsung saja karena saya anggap anda sudah master<img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >dan sudah mengerti apa arti dari RSS itu sendiri dan gimana cara konfigurasi RSS / Email di Octopress yang secara default masih keadaan kosong di file <code>_config.yml</code> <!-- more --></p>
+    <content type="html"><![CDATA[<p>Langsung saja karena saya anggap anda sudah master<img src="ttps://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;" >dan sudah mengerti apa arti dari RSS itu sendiri dan gimana cara konfigurasi RSS / Email di Octopress yang secara default masih keadaan kosong di file <code>_config.yml</code> <!-- more --></p>
 
 <pre><code class="yaml"># RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml

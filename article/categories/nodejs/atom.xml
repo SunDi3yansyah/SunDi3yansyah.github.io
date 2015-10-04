@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Nodejs | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.github.io/article/categories/nodejs/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.github.io/"/>
-  <updated>2015-10-05T02:29:29+07:00</updated>
+  <updated>2015-10-05T02:37:03+07:00</updated>
   <id>http://sundi3yansyah.github.io/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -80,7 +80,7 @@ make
 sudo make install
 </code></p>
 
-<p>Nah kesimpulannya apa? Hampir sama kan cara install di distro lainnya, hanya berbeda di devlopment untuk mengcimpilienya, karena beda nama package <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+<p>Nah kesimpulannya apa? Hampir sama kan cara install di distro lainnya, hanya berbeda di devlopment untuk mengcimpilienya, karena beda nama package <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
 ]]></content>
   </entry>
   
@@ -91,7 +91,7 @@ sudo make install
     <id>http://sundi3yansyah.github.io/article/2014/10/25/cara-install-nodejs-di-windows</id>
     <content type="html"><![CDATA[<h4>Cara Install NodeJS di Windows</h4>
 
-<p>Wah gampang banget ternyata, gw yakin kalian semua pasti bisa<img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png">https://gist-assets.github.com/assets/emoji/unicode/1f603-a7e5f2ffe051bf634046aa0288864958.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >&hellip;</p>
+<p>Wah gampang banget ternyata, gw yakin kalian semua pasti bisa<img src="ttps://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;" >&hellip;</p>
 
 <p>Buka URL disini <a href="http://nodejs.org/download/">http://nodejs.org/download/</a>
 Kemudian download sesui arsitektur OS windows kalian x86 atau x64, mau yang Windows Installer (.msi) atau Windows Binary (.exe) sama saja&hellip;</p>
@@ -128,7 +128,7 @@ contohnya:
 <code>sh
 wget http://nodejs.org/dist/v0.10.33/node-v0.10.33-linux-x64.tar.gz
 </code>
-itu yang artinya saya mengambil binari source nodejs versi v0.10.33 dengan arsitektur 64bit, Oke <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; > lanjutkan, setelah download (Asumsikan anda sudah paham).
+itu yang artinya saya mengambil binari source nodejs versi v0.10.33 dengan arsitektur 64bit, Oke <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; > lanjutkan, setelah download (Asumsikan anda sudah paham).
 <code>sh
 tar zxvf node-latest.tar.gz
 </code>
@@ -145,7 +145,7 @@ make
 make install
 </code></p>
 
-<p>Gampang kan <img class="<a" src="href="https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png">https://gist-assets.github.com/assets/emoji/unicode/1f604-b85cf6b6d09a33e9e5196aab683b2704.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+<p>Gampang kan <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
 
 <p>Cara mengerahuinya
 <code>sh
