@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Npm | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.github.io/article/categories/npm/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.github.io/"/>
-  <updated>2015-10-06T18:57:06+07:00</updated>
+  <updated>2015-10-07T15:22:37+07:00</updated>
   <id>http://sundi3yansyah.github.io/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -51,7 +51,7 @@ tunggu sampai selesai proses download/update nya, jika sudah selesai, silakan di
     <id>http://sundi3yansyah.github.io/article/2014/10/25/cara-install-nodejs-di-windows</id>
     <content type="html"><![CDATA[<h4>Cara Install NodeJS di Windows</h4>
 
-<p>Wah gampang banget ternyata, gw yakin kalian semua pasti bisa<img src="ttps://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;" >&hellip;</p>
+<p>Wah gampang banget ternyata, gw yakin kalian semua pasti bisa<img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >&hellip;</p>
 
 <p>Buka URL disini <a href="http://nodejs.org/download/">http://nodejs.org/download/</a>
 Kemudian download sesui arsitektur OS windows kalian x86 atau x64, mau yang Windows Installer (.msi) atau Windows Binary (.exe) sama saja&hellip;</p>

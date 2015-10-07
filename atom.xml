@@ -4,7 +4,7 @@
   <title><![CDATA[SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.github.io/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.github.io/"/>
-  <updated>2015-10-06T18:57:06+07:00</updated>
+  <updated>2015-10-07T15:22:37+07:00</updated>
   <id>http://sundi3yansyah.github.io/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -18,7 +18,7 @@
     <link href="http://sundi3yansyah.github.io/article/2015/04/12/github-api-codeigniter-semanticui/"/>
     <updated>2015-04-12T10:27:40+07:00</updated>
     <id>http://sundi3yansyah.github.io/article/2015/04/12/github-api-codeigniter-semanticui</id>
-    <content type="html"><![CDATA[<p>Hai&hellip; <img src="ttps://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="smiley" alt="smiley"> udah lama gk bikin post nih&hellip;</p>
+    <content type="html"><![CDATA[<p>Hai&hellip; <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="smiley" alt="smiley"> udah lama gk bikin post nih&hellip;</p>
 
 <p>Lagi iseng-iseng kemarin main di github nge bundle 3 repositori</p>
 
@@ -40,7 +40,7 @@
 
 <p><a href="http://sundi3yansyah.herokuapp.com">http://sundi3yansyah.herokuapp.com</a></p>
 
-<p>Mau fork? mau download? mau make juga? silakan&hellip; jangan lupa juga yak baca readme nya <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" width="20" height="20" title="smile" alt="smile"> tapi bahasa ingggris gpp yak, sengaja biar kelihatan internasional nya <img src="ttps://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="smiley" alt="smiley"></p>
+<p>Mau fork? mau download? mau make juga? silakan&hellip; jangan lupa juga yak baca readme nya <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" width="20" height="20" title="smile" alt="smile"> tapi bahasa ingggris gpp yak, sengaja biar kelihatan internasional nya <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="smiley" alt="smiley"></p>
 
 <div class="github-widget" data-repo="SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI"></div>
 
@@ -990,7 +990,7 @@ lanjut buat direktorinya</p>
 <hr />
 
 <p>Apa sih fungsi dari plugin-plugin di atas? silakan di baca saja README nya di setiap packagenya <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" width="20" height="20" title="smile" alt="smile">
-Masih kurang puas dengan package yang saya berikan? Yok kita explorer VIM awesome berikut ini <a href="http://vimawesome.com/">vimawesome</a> <img src="ttps://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="smiley" alt="smiley"></p>
+Masih kurang puas dengan package yang saya berikan? Yok kita explorer VIM awesome berikut ini <a href="http://vimawesome.com/">vimawesome</a> <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="smiley" alt="smiley"></p>
 ]]></content>
   </entry>
   
@@ -1274,7 +1274,7 @@ version 2.7.6</p>
 <blockquote><p>Kode Standar Amerika untuk Pertukaran Informasi atau ASCII (American Standard Code for Information Interchange) merupakan suatu standar internasional dalam kode huruf dan simbol seperti Hex dan Unicode tetapi ASCII lebih bersifat universal, contohnya 124 adalah untuk karakter &#8220;|&#8221;.</p><footer><strong>wikipedia</strong> <cite><a href='http://id.wikipedia.org/wiki/ASCII'>ASCII</a></cite></footer></blockquote>
 
 
-<p>Dan dari kata NEMA - Cinema kwkkwkwk <img src="ttps://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="smiley" alt="smiley"></p>
+<p>Dan dari kata NEMA - Cinema kwkkwkwk <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="smiley" alt="smiley"></p>
 
 <blockquote><p>Sinema (akar kata dari cinema = kinematik = gerak). Film sebenarnya merupakan lapisan-lapisan cairan selulosa, biasa di kenal di dunia para sineas seluloid.</p><p>Pengertian secara harafiah film (sinema) adalah Cinemathographie yang berasal dari Cinema + tho = phytos (cahaya) + graphie = grhap (tulisan = gambar = citra), jadi pengertiannya adalah melukis gerak dengan cahaya. Agar kita dapat melukis gerak dengan cahaya, kita harus menggunakan alat khusus, yang biasa kita sebut dengan kamera V</p><footer><strong>wikipedia</strong> <cite><a href='http://id.wikipedia.org/wiki/Sinema'>Sinema</a></cite></footer></blockquote>
 
@@ -2186,7 +2186,7 @@ Perintah <strong>chattr</strong> digunakan untuk melindungi sebuah file sehingga
 <p>Coba untuk melakukan uji coba seperti yang di atas.
 Maka semua file yang ada di folder sundi3yansyah tidak dapat di hapus, edit dan lain sebagainya.</p>
 
-<p>Gak PERCAYA? coba aja ndiri&hellip; <img src="ttps://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="smiley" alt="smiley">a</p>
+<p>Gak PERCAYA? coba aja ndiri&hellip; <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="smiley" alt="smiley">a</p>
 ]]></content>
   </entry>
   
