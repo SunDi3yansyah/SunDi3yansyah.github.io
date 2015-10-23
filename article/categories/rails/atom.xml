@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Rails | SunDi3yansyah]]></title>
-  <link href="https://sundi3yansyah.com/article/categories/rails/atom.xml" rel="self"/>
-  <link href="https://sundi3yansyah.com/"/>
-  <updated>2015-10-23T19:50:32+07:00</updated>
-  <id>https://sundi3yansyah.com/</id>
+  <link href="http://sundi3yansyah.com/article/categories/rails/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2015-10-23T19:59:29+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install Dan Compile Ruby via Tarball Di Debian/Ubuntu]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/07/03/cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu/"/>
+    <link href="http://sundi3yansyah.com/article/2014/07/03/cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu/"/>
     <updated>2014-07-03T03:21:25+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/07/03/cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu</id>
+    <id>http://sundi3yansyah.com/article/2014/07/03/cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu</id>
     <content type="html"><![CDATA[<p>Banyak cara untuk meng-Install Ruby, tapi kali ini saya akan mengInsall Ruby menggunakan Tarball ini apa yang saya lakukan di Komputer saya, saya menggunakan Ruby versi 1.9.3 jika kalian ingin menginstall di versi atasnya juga gpp tutorial ini teteap berlaku untuk versi berapa saja dan ini saya menggunakan Sistem Operasi Debian/Ubuntu.</p>
 
 <p>Langsung saja buka terminal.

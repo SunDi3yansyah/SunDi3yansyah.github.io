@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Youtube | SunDi3yansyah]]></title>
-  <link href="https://sundi3yansyah.com/article/categories/youtube/atom.xml" rel="self"/>
-  <link href="https://sundi3yansyah.com/"/>
-  <updated>2015-10-23T19:50:32+07:00</updated>
-  <id>https://sundi3yansyah.com/</id>
+  <link href="http://sundi3yansyah.com/article/categories/youtube/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2015-10-23T19:59:29+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install Youtube-dl]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/11/22/cara-install-youtube-dl/"/>
+    <link href="http://sundi3yansyah.com/article/2014/11/22/cara-install-youtube-dl/"/>
     <updated>2014-11-22T09:25:12+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/11/22/cara-install-youtube-dl</id>
+    <id>http://sundi3yansyah.com/article/2014/11/22/cara-install-youtube-dl</id>
     <content type="html"><![CDATA[<p>Menggunakan CURL</p>
 
 <p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -52,9 +52,9 @@ NEXT
   
   <entry>
     <title type="html"><![CDATA[Cara Git Set Up Dan Generating SSH Keys]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/09/08/cara-git-set-up-dan-generating-ssh-keys/"/>
+    <link href="http://sundi3yansyah.com/article/2014/09/08/cara-git-set-up-dan-generating-ssh-keys/"/>
     <updated>2014-09-08T00:48:14+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/09/08/cara-git-set-up-dan-generating-ssh-keys</id>
+    <id>http://sundi3yansyah.com/article/2014/09/08/cara-git-set-up-dan-generating-ssh-keys</id>
     <content type="html"><![CDATA[<p>Oke kali ini saya akan memberikan tutorial <strong>Cara Git Set Up dan Generating SSH Keys di GitHUb</strong></p>
 
 <!-- more -->
@@ -86,9 +86,9 @@ NEXT
   
   <entry>
     <title type="html"><![CDATA[Cara Membuat Repository Baru Di Github]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/08/27/cara-membuat-repository-baru-di-github/"/>
+    <link href="http://sundi3yansyah.com/article/2014/08/27/cara-membuat-repository-baru-di-github/"/>
     <updated>2014-08-27T11:29:33+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/08/27/cara-membuat-repository-baru-di-github</id>
+    <id>http://sundi3yansyah.com/article/2014/08/27/cara-membuat-repository-baru-di-github</id>
     <content type="html"><![CDATA[<!-- more -->
 
 
@@ -99,9 +99,9 @@ NEXT
   
   <entry>
     <title type="html"><![CDATA[Cara Buat Post Di Octopress]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/08/27/cara-buat-post-di-octopress/"/>
+    <link href="http://sundi3yansyah.com/article/2014/08/27/cara-buat-post-di-octopress/"/>
     <updated>2014-08-27T11:28:16+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/08/27/cara-buat-post-di-octopress</id>
+    <id>http://sundi3yansyah.com/article/2014/08/27/cara-buat-post-di-octopress</id>
     <content type="html"><![CDATA[<!-- more -->
 
 
@@ -112,9 +112,9 @@ NEXT
   
   <entry>
     <title type="html"><![CDATA[Cara Install Package Di SublimeText]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/08/27/cara-install-package-di-sublimetext/"/>
+    <link href="http://sundi3yansyah.com/article/2014/08/27/cara-install-package-di-sublimetext/"/>
     <updated>2014-08-27T11:26:46+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/08/27/cara-install-package-di-sublimetext</id>
+    <id>http://sundi3yansyah.com/article/2014/08/27/cara-install-package-di-sublimetext</id>
     <content type="html"><![CDATA[<!-- more -->
 
 
