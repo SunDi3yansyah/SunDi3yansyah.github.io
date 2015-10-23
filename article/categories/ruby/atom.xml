@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Ruby | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/ruby/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-10-23T19:32:35+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="https://sundi3yansyah.com/article/categories/ruby/atom.xml" rel="self"/>
+  <link href="https://sundi3yansyah.com/"/>
+  <updated>2015-10-23T19:50:32+07:00</updated>
+  <id>https://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install Ruby Di Fedora]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/12/26/cara-install-ruby-di-fedora/"/>
+    <link href="https://sundi3yansyah.com/article/2014/12/26/cara-install-ruby-di-fedora/"/>
     <updated>2014-12-26T03:48:32+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/12/26/cara-install-ruby-di-fedora</id>
+    <id>https://sundi3yansyah.com/article/2014/12/26/cara-install-ruby-di-fedora</id>
     <content type="html"><![CDATA[<p>Kalau di CentOS, Debian, Ubuntu, Windows dan lain-lainnya silakan di lihat di archive blog saya <strong>kan sudah</strong> nah kali ini saya akan menjelaskan bagaimana jika di <strong>Fedora</strong> kali ini berbeda dengan di Fedora cukup lakukan perintah <strong>yum yum dan yum</strong> kalian sudah bisa mendapatkan versi Ruby dan Gems lainnya dengan versi terbaru, langsung saja.</p>
 
 <p>Buka shell session kalian (terminal)</p>
@@ -144,9 +144,9 @@
   
   <entry>
     <title type="html"><![CDATA[Membuat Blog Jekyll Dalam Waktu Kurang Dari 1 Menit]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/"/>
+    <link href="https://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/"/>
     <updated>2014-11-14T03:50:42+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit</id>
+    <id>https://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit</id>
     <content type="html"><![CDATA[<p><img class="center <a" src="href="https://lh4.googleusercontent.com/-xCp6nD01yA8/VGUb4oM55iI/AAAAAAAAAHM/0Hse4vDTwHk/s800/Screenshot+from+2014-11-14+04:00:02.png">https://lh4.googleusercontent.com/-xCp6nD01yA8/VGUb4oM55iI/AAAAAAAAAHM/0Hse4vDTwHk/s800/Screenshot+from+2014-11-14+04:00:02.png</a>&#8221; title=&#8221;&lsquo;jekyll&rsquo; &lsquo;jekyll&rsquo;&#8221; ></p>
 
 <p><blockquote><p>Jekyll is an open source program, written in Ruby by Tom Preston-Werner, GitHub&rsquo;s co-founder. Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. It is a file-based CMS; instead of using databases, Jekyll takes the content, renders Markdown or Textile and Liquid templates, and produces a complete, static website ready to be served by Apache HTTP Server, Nginx or another web server.[1] Jekyll is the engine behind GitHub Pages,[2] a GitHub feature that allows users to host websites based on their GitHub repositories.</p><footer><strong>en.wikipedia <a href="http://en.wikipedia.org/wiki/Jekyll_">http://en.wikipedia.org/wiki/Jekyll_</a>(software) Jekyll (software)</strong></footer></blockquote></p>
@@ -216,9 +216,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install RubyGems]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/09/11/cara-install-rubygems/"/>
+    <link href="https://sundi3yansyah.com/article/2014/09/11/cara-install-rubygems/"/>
     <updated>2014-09-11T00:24:50+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/09/11/cara-install-rubygems</id>
+    <id>https://sundi3yansyah.com/article/2014/09/11/cara-install-rubygems</id>
     <content type="html"><![CDATA[<p>Apa itu RubyGems?
 <blockquote><p>RubyGems is a package manager for the Ruby programming language that provides a standard format for distributing Ruby programs and libraries (in a self-contained format called a &ldquo;gem&rdquo;), a tool designed to easily manage the installation of gems, and a server for distributing them. It is analogous to pip for the Python programming language. RubyGems was created in about November 2003 and is now part of the standard library from Ruby version 1.9.</p><footer><strong>RubyGems <a href="http://en.wikipedia.org/wiki/RubyGems">http://en.wikipedia.org/wiki/RubyGems</a> RubyGems - Wikipedia</strong> <cite>The Free Encyclopedia</cite></footer></blockquote></p>
 
@@ -282,9 +282,9 @@ gem install bundler
   
   <entry>
     <title type="html"><![CDATA[Cara Install Ruby Di CentOS]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/09/10/cara-install-ruby-di-centos/"/>
+    <link href="https://sundi3yansyah.com/article/2014/09/10/cara-install-ruby-di-centos/"/>
     <updated>2014-09-10T23:57:17+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/09/10/cara-install-ruby-di-centos</id>
+    <id>https://sundi3yansyah.com/article/2014/09/10/cara-install-ruby-di-centos</id>
     <content type="html"><![CDATA[<p>Pada kesempatan kali ini saya akan mencoba untuk membagi pengalamn saya menggunakan CentOS Server maupun CentOS Dektop untuk menggunakan ruby, secara default ruby di turunan RPM belum terinstall maka kita akan menginstallnya terlebih dahulu sebelum memulai coding script ruby kita. Sebenarnya tidak jauh dari cara menginstall ruby di turunan DEB yaitu Debian/Ubuntu, tapi apa salahnya ya kan jika saya akan membagi pengalaman saya disini, ini murni apa yang saya lakukan di Server CentOS saya dan di Laptop Desktop CentOS saya.</p>
 
 <!-- more -->
@@ -343,9 +343,9 @@ riby --version
   
   <entry>
     <title type="html"><![CDATA[Cara Membuat Plugin Kategori List Di Sidebar Octopress]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/07/03/cara-membuat-plugin-kategori-list-di-sidebar-octopress/"/>
+    <link href="https://sundi3yansyah.com/article/2014/07/03/cara-membuat-plugin-kategori-list-di-sidebar-octopress/"/>
     <updated>2014-07-03T21:24:46+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/07/03/cara-membuat-plugin-kategori-list-di-sidebar-octopress</id>
+    <id>https://sundi3yansyah.com/article/2014/07/03/cara-membuat-plugin-kategori-list-di-sidebar-octopress</id>
     <content type="html"><![CDATA[<p>Pertama kita perlu menulis kode ruby ​​sedikit. Menambahkan file ke direktori plugin yang disebut <code>category_list_tag.rb</code>. Plug-in ini akan mengambil data kategori dari situs dan menghasilkan daftar item untuk setiap kategori. Pada line 17 tag <code>category_list</code> tersedia untuk liquid template engine (Lihat code di bawah).</p>
 
 <p>Pertaman buat file baru menggunakan editor kesukaan kalian, dan isi code Ruby nya seperti ini:</p>
@@ -380,7 +380,7 @@ riby --version
 </span><span class='line'>        <span class="n">posts_in_category</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">registers</span><span class="o">[</span><span class="ss">:site</span><span class="o">].</span><span class="n">categories</span><span class="o">[</span><span class="n">category</span><span class="o">].</span><span class="n">size</span>
 </span><span class='line'>        <span class="n">category_dir</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">registers</span><span class="o">[</span><span class="ss">:site</span><span class="o">].</span><span class="n">config</span><span class="o">[&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">category_dir</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span><span class="o">]</span>
 </span><span class='line'>        <span class="n">category_url</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">category_dir</span><span class="p">,</span> <span class="n">category</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="sr">/_|\P{Word}/</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">-&amp;</span><span class="n">rsquo</span><span class="p">;)</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="sr">/-{2,}/</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">-&amp;</span><span class="n">rsquo</span><span class="p">;)</span><span class="o">.</span><span class="n">downcase</span><span class="p">)</span>
-</span><span class='line'>        <span class="n">html</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">&lt;</span><span class="n">li</span> <span class="n">class</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s1">&#39;http://sundi3yansyah.com/#{category_url}/&#39;</span><span class="o">&gt;</span><span class="c1">#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n&amp;rdquo;</span>
+</span><span class='line'>        <span class="n">html</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">&lt;</span><span class="n">li</span> <span class="n">class</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s1">&#39;https://sundi3yansyah.com/#{category_url}/&#39;</span><span class="o">&gt;</span><span class="c1">#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n&amp;rdquo;</span>
 </span><span class='line'>      <span class="k">end</span>
 </span><span class='line'>      <span class="n">html</span>
 </span><span class='line'>    <span class="k">end</span>

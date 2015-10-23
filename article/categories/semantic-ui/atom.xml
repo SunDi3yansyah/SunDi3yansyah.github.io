@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Semantic-ui | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/semantic-ui/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-10-23T19:32:35+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="https://sundi3yansyah.com/article/categories/semantic-ui/atom.xml" rel="self"/>
+  <link href="https://sundi3yansyah.com/"/>
+  <updated>2015-10-23T19:50:32+07:00</updated>
+  <id>https://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[GitHub API, CodeIgniter, SemanticUI]]></title>
-    <link href="http://sundi3yansyah.com/article/2015/04/12/github-api-codeigniter-semanticui/"/>
+    <link href="https://sundi3yansyah.com/article/2015/04/12/github-api-codeigniter-semanticui/"/>
     <updated>2015-04-12T10:27:40+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2015/04/12/github-api-codeigniter-semanticui</id>
+    <id>https://sundi3yansyah.com/article/2015/04/12/github-api-codeigniter-semanticui</id>
     <content type="html"><![CDATA[<p>Hai&hellip; <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; > udah lama gk bikin post nih&hellip;</p>
 
 <p>Lagi iseng-iseng kemarin main di github nge bundle 3 repositori</p>

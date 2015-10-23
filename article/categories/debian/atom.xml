@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Debian | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/debian/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-10-23T19:32:35+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="https://sundi3yansyah.com/article/categories/debian/atom.xml" rel="self"/>
+  <link href="https://sundi3yansyah.com/"/>
+  <updated>2015-10-23T19:50:32+07:00</updated>
+  <id>https://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install NodeJS Di Debian]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/11/23/cara-install-nodejs-di-debian/"/>
+    <link href="https://sundi3yansyah.com/article/2014/11/23/cara-install-nodejs-di-debian/"/>
     <updated>2014-11-23T17:27:33+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/11/23/cara-install-nodejs-di-debian</id>
+    <id>https://sundi3yansyah.com/article/2014/11/23/cara-install-nodejs-di-debian</id>
     <content type="html"><![CDATA[<p>Kalau kemarin saya sudah share <a href="http://sundi3yansyah.com/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu/">Cara Install NodeJS Dan NPM Di Ubuntu</a>, <a href="http://sundi3yansyah.com/article/2014/09/07/cara-install-nodejs-via-tarball-di-centos-rhel/">Cara Install NodeJS via Tarball Di CentOS/RHEL</a>, <a href="http://sundi3yansyah.com/article/2014/10/25/cara-install-nodejs-di-windows/">Cara Install NodeJS Di Windows</a> &hellip; nah sekarang saya akan memberikan sedikit snippet command line untuk <a href="#">Cara Install NodeJS di Debian</a>, langsaung saja&hellip;
 <code>
 sudo apt-get install python g++ make wget libssl-dev

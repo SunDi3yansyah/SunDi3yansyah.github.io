@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: English | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/english/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-10-23T19:32:35+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="https://sundi3yansyah.com/article/categories/english/atom.xml" rel="self"/>
+  <link href="https://sundi3yansyah.com/"/>
+  <updated>2015-10-23T19:50:32+07:00</updated>
+  <id>https://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[12 Open Source Microblogging Software]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/07/04/12-open-source-microblogging-software/"/>
+    <link href="https://sundi3yansyah.com/article/2014/07/04/12-open-source-microblogging-software/"/>
     <updated>2014-07-04T04:31:25+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/07/04/12-open-source-microblogging-software</id>
+    <id>https://sundi3yansyah.com/article/2014/07/04/12-open-source-microblogging-software</id>
     <content type="html"><![CDATA[<p><strong>Microblogging</strong> is a new trend on internet era. It is latest evolutions of the web  2.0 technology. One of popular <strong>microblogging service</strong> is Twitter. It was created in March 2006 by Jack Dorse. It become one of most popular social media and become rival of facebook. <a href="http://twitter.com/">Twitter</a> have 140 million active users as of 2012 that generating over 340 millions tweets dailyand handling over 1.6 billion search queries per day.</p>
 
 <p>Many people are trying to create microblogging service like Twitter, Tumblr or Plurk. You can use some <a href="http://smashfreakz.com/2012/05/12-open-source-microblogging-software/">microblogging software</a> to make <strong>twitter clone</strong> or other microblogging website. In this post we roundups the 12 open source <strong>microblogging software</strong> that can be used to build twitter clone or other your microblogging website.</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Octopress | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/octopress/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-10-23T19:32:35+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="https://sundi3yansyah.com/article/categories/octopress/atom.xml" rel="self"/>
+  <link href="https://sundi3yansyah.com/"/>
+  <updated>2015-10-23T19:50:32+07:00</updated>
+  <id>https://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Snippets Untuk Octopress Pada Sublimetext]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext/"/>
+    <link href="https://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext/"/>
     <updated>2014-11-19T14:02:37+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext</id>
+    <id>https://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext</id>
     <content type="html"><![CDATA[<p>Kali ini saya akan berbagi code snippets untuk kalian yang suka atau menggunakan framework octopress seperti saya ini dan tentunya menggunakan editor Sublimetext.</p>
 
 <p><strong>Syarat</strong></p>
@@ -52,9 +52,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Konfigurasi SEO Keywords Dan Deskripsi Octopress]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/09/10/cara-konfigurasi-seo-keywords-dan-deskripsi-octopress/"/>
+    <link href="https://sundi3yansyah.com/article/2014/09/10/cara-konfigurasi-seo-keywords-dan-deskripsi-octopress/"/>
     <updated>2014-09-10T03:49:47+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/09/10/cara-konfigurasi-seo-keywords-dan-deskripsi-octopress</id>
+    <id>https://sundi3yansyah.com/article/2014/09/10/cara-konfigurasi-seo-keywords-dan-deskripsi-octopress</id>
     <content type="html"><![CDATA[<p>SEO itu asset terpenting dalam membangun website, tanya donk kenapa? Nanti akan di jawab dengan rumput yang bergoyang. <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a.! Ya pokoknya gitu deh&hellip;</p>
 
 <!-- more -->
@@ -344,9 +344,9 @@ Di taroh dimana ya? Liat contoh dibawah
   
   <entry>
     <title type="html"><![CDATA[Jangan Ngaku Programmer Atau Hacker Kalau Tidak Mengerti Jekyll Dan Octopress]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/09/10/jangan-ngaku-programmer-atau-hacker-kalau-tidak-mengerti-jekyll-dan-octopress/"/>
+    <link href="https://sundi3yansyah.com/article/2014/09/10/jangan-ngaku-programmer-atau-hacker-kalau-tidak-mengerti-jekyll-dan-octopress/"/>
     <updated>2014-09-10T01:01:32+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/09/10/jangan-ngaku-programmer-atau-hacker-kalau-tidak-mengerti-jekyll-dan-octopress</id>
+    <id>https://sundi3yansyah.com/article/2014/09/10/jangan-ngaku-programmer-atau-hacker-kalau-tidak-mengerti-jekyll-dan-octopress</id>
     <content type="html"><![CDATA[<p>Apakah anda Programmer ataupun Hacker? Tidak ada yang mengaku kan, tapi seharusnya anda di akui jika anda punya sebuah project dan saling berkolaborasi, apakah anda punya blog artikel? Pasti kalau programmer dan hacker itu sudah pernah membuat Web blog artikel, tetapi jangan salah, sekarang saya tanya, Platform apa yang anda gunakan untuk nge Blog biar gk goblok? Sepintas pertanyaan tersebut pasti banyak yang menjawab CMS Wordpress, Joomla, Blogspot dan lain sebagainya. Cok&hellip;! Nulis code di Wordpress, Joomla, Blogspot itu kurang mudah. Atau mungkin bisa juga dibilang susah. Setelah itu saya melirik platform lain yaitu <a href="http://squarespace.com">Squarespace</a>, <a href="http://typepad.com">Typepad</a>, <a href="http://posthaven.com">Posthaven</a> dan juga <a href="http://ghost.org">Ghost</a>. Ke 4 platform tersebut mempunyai 1 kesamaan yang cukup menyebalkan. Layanan yang ditawarkan berbayar! Seperti kebanyakan orang Indonesia lainnya, tentu saja saya lebih suka barang gratisan. Tetapi dari ke 4 platform tersebut, jika suatu hari nanti saya sudah kembali ke jalan yang benar (mau membayar), saya akan memilih Ghost. Kenapa? Karena Ghost memenuhi ke 3 kriteria saya dengan sangat baik.</p>
 
 <!-- more -->
@@ -398,9 +398,9 @@ Di taroh dimana ya? Liat contoh dibawah
   
   <entry>
     <title type="html"><![CDATA[Cara Konfigurasi RSS Di Octopress]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/09/06/cara-konfigurasi-rss-di-octopress/"/>
+    <link href="https://sundi3yansyah.com/article/2014/09/06/cara-konfigurasi-rss-di-octopress/"/>
     <updated>2014-09-06T21:30:44+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/09/06/cara-konfigurasi-rss-di-octopress</id>
+    <id>https://sundi3yansyah.com/article/2014/09/06/cara-konfigurasi-rss-di-octopress</id>
     <content type="html"><![CDATA[<p>Langsung saja karena saya anggap anda sudah master<img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >dan sudah mengerti apa arti dari RSS itu sendiri dan gimana cara konfigurasi RSS / Email di Octopress yang secara default masih keadaan kosong di file <code>_config.yml</code> <!-- more --></p>
 
 <pre><code class="yaml"># RSS / Email (optional) subscription links (change if using something like Feedburner)
@@ -450,9 +450,9 @@ email: email@kamu.com
   
   <entry>
     <title type="html"><![CDATA[Cara Buat Post Di Octopress]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/08/27/cara-buat-post-di-octopress/"/>
+    <link href="https://sundi3yansyah.com/article/2014/08/27/cara-buat-post-di-octopress/"/>
     <updated>2014-08-27T11:28:16+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/08/27/cara-buat-post-di-octopress</id>
+    <id>https://sundi3yansyah.com/article/2014/08/27/cara-buat-post-di-octopress</id>
     <content type="html"><![CDATA[<!-- more -->
 
 
