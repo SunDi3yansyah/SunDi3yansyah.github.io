@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Fedora | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.github.io/article/categories/fedora/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.github.io/"/>
-  <updated>2015-10-23T19:30:42+07:00</updated>
-  <id>http://sundi3yansyah.github.io/</id>
+  <link href="http://sundi3yansyah.com/article/categories/fedora/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2015-10-23T19:32:35+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install Ruby Di Fedora]]></title>
-    <link href="http://sundi3yansyah.github.io/article/2014/12/26/cara-install-ruby-di-fedora/"/>
+    <link href="http://sundi3yansyah.com/article/2014/12/26/cara-install-ruby-di-fedora/"/>
     <updated>2014-12-26T03:48:32+07:00</updated>
-    <id>http://sundi3yansyah.github.io/article/2014/12/26/cara-install-ruby-di-fedora</id>
+    <id>http://sundi3yansyah.com/article/2014/12/26/cara-install-ruby-di-fedora</id>
     <content type="html"><![CDATA[<p>Kalau di CentOS, Debian, Ubuntu, Windows dan lain-lainnya silakan di lihat di archive blog saya <strong>kan sudah</strong> nah kali ini saya akan menjelaskan bagaimana jika di <strong>Fedora</strong> kali ini berbeda dengan di Fedora cukup lakukan perintah <strong>yum yum dan yum</strong> kalian sudah bisa mendapatkan versi Ruby dan Gems lainnya dengan versi terbaru, langsung saja.</p>
 
 <p>Buka shell session kalian (terminal)</p>

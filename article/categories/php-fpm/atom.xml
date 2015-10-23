@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Php-fpm | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.github.io/article/categories/php-fpm/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.github.io/"/>
-  <updated>2015-10-23T19:30:42+07:00</updated>
-  <id>http://sundi3yansyah.github.io/</id>
+  <link href="http://sundi3yansyah.com/article/categories/php-fpm/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2015-10-23T19:32:35+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install Nginx, MySQL, PHP Di CentOS]]></title>
-    <link href="http://sundi3yansyah.github.io/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/"/>
+    <link href="http://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/"/>
     <updated>2014-11-25T04:17:41+07:00</updated>
-    <id>http://sundi3yansyah.github.io/article/2014/11/25/cara-install-nginx-mysql-php-di-centos</id>
+    <id>http://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos</id>
     <content type="html"><![CDATA[<p>Pada artikel sebelumnya saya sudah menjelaskan tentang <a href="/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13/">Install LEMP Di CentOS 5-6 Dan Fedora 18-13</a>, namun disini saya akan menjabarkan lebih datail <strong>Cara Install Nginx, MySQL, PHP di CentOS</strong> menggunakan recorder.</p>
 
 <h4>Requirements</h4>
@@ -166,9 +166,9 @@ nano /usr/share/nginx/html/info.php
   
   <entry>
     <title type="html"><![CDATA[Update Versi LEMP CentOS Dan Fedora]]></title>
-    <link href="http://sundi3yansyah.github.io/article/2014/09/05/update-versi-lemp-centos-dan-fedora/"/>
+    <link href="http://sundi3yansyah.com/article/2014/09/05/update-versi-lemp-centos-dan-fedora/"/>
     <updated>2014-09-05T05:47:41+07:00</updated>
-    <id>http://sundi3yansyah.github.io/article/2014/09/05/update-versi-lemp-centos-dan-fedora</id>
+    <id>http://sundi3yansyah.com/article/2014/09/05/update-versi-lemp-centos-dan-fedora</id>
     <content type="html"><![CDATA[<h4>update remi: nginx mysql mysql-server php php-common php-fpm <!-- more --></h4>
 
 <pre><code>yum --enablerepo=remi,remi-test update nginx mysql mysql-server php php-common php-fpm
@@ -218,9 +218,9 @@ Mudah bukan? <img class="<a" src="href="https://assets-cdn.github.com/images/ico
   
   <entry>
     <title type="html"><![CDATA[Install LEMP Di CentOS 5-6 Dan Fedora 18-13]]></title>
-    <link href="http://sundi3yansyah.github.io/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13/"/>
+    <link href="http://sundi3yansyah.com/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13/"/>
     <updated>2014-09-03T13:53:06+07:00</updated>
-    <id>http://sundi3yansyah.github.io/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13</id>
+    <id>http://sundi3yansyah.com/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13</id>
     <content type="html"><![CDATA[<p>Apa itu LEMP bukan Lem yang buat nempelin kertas itu
 LEMP itu singkatan dari Linux, EngineX, MySQL, PHP&hellip; Orang-orang senior menyebutnya dengan LEMP Hmmm&hellip; terus Nginx itu apa? Yah gimana ya saya jelasiinya susah banget, mending googling dulu deh asumsikan kita udah ngerti LEMP disini saya menjelaskan untuk System Opreasi di CentOS/RHEL dan Fedora simak aja nanti repository nya untuk masing-masing versi</p>
 
