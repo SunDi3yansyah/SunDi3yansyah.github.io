@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Editor | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/editor/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-10-23T20:12:19+07:00</updated>
+  <updated>2015-10-26T00:47:09+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -825,7 +825,14 @@ Masih kurang puas dengan package yang saya berikan? Yok kita explorer VIM awesom
 <p><strong>Syarat</strong></p>
 
 <ul>
-<li>Sudah install sublimetext pada OS yang kalian gunakan</li>
+<li>Sudah install Sublime Text pada OS yang kalian gunakan.</li>
+<li>Opsi:
+
+<ul>
+<li>Package Control pada Sublime Text</li>
+<li>GIT</li>
+</ul>
+</li>
 </ul>
 
 
@@ -834,21 +841,46 @@ Masih kurang puas dengan package yang saya berikan? Yok kita explorer VIM awesom
 <!-- more -->
 
 
-<p>Bila anda sudah bergabung di Grup Facebook Octopress Indonesia, anda bisa mendownloadnya disini:</p>
+<p>Apa sih kegunaan snippet pada sublime?</p>
 
-<p><a href="https://www.facebook.com/groups/OctopressID/1501500383467291/">https://www.facebook.com/groups/OctopressID/1501500383467291/</a></p>
+<p>Gunanya yaitu untuk mempercepat kita dalam mengambil sebuah objek code yang akan kita gunakan, anda dapat menggunakan snippet yang sudah saya buat di repository berikut ini:</p>
 
-<p>Tapi alngkah bagusnya jika anda mengambil packages-nya di repository saya, disini</p>
+<div class="github-widget" data-repo="SunDi3yansyah/octopress-snippets"></div>
 
-<p><a href="https://github.com/SunDi3yansyah/SunDi3yansyah.github.io/tree/master/downloads/code/packages/sublimetext">https://github.com/SunDi3yansyah/SunDi3yansyah.github.io/tree/master/downloads/code/packages/sublimetext</a></p>
 
-<p>Karena dengan anda mengambil packages snippets di sana, anda akan mendapatkan packages snippets yang up to date, karena saya akan selalu mengupdatenya.</p>
+<p>Cara installlnya cukup mudah:</p>
 
-<p>Cara menggunakannya silakan langsung saja melihat cuplikan dibawah ini.</p>
+<ol>
+<li>Via GIT</li>
+</ol>
+
+
+<p>masuk ke folder Install pada sublime text dan lakukan command berikut
+<code>bash
+git clone https://github.com/SunDi3yansyah/octopress-snippets
+</code></p>
+
+<ol>
+<li>Via Download Archive</li>
+</ol>
+
+
+<p>Anda cukup download repository saya dan pastekan snippets dari repo tsb ke folder profile user di sublime text masing-masing</p>
+
+<ol>
+<li>Via Package Control (Belum tersedia, karena sedang menunggu pull request dari developer sublime text)</li>
+</ol>
+
+
+<p>Contoh cara menggunakannya silakan langsung saja melihat cuplikan dibawah ini.</p>
 
 <p><img class="center <a" src="href="https://lh5.googleusercontent.com/-EKAt4RR4ikU/VGwameH7NiI/AAAAAAAAAMg/TD5NTqMUXDA/s800/sundi3yansyah.gif">https://lh5.googleusercontent.com/-EKAt4RR4ikU/VGwameH7NiI/AAAAAAAAAMg/TD5NTqMUXDA/s800/sundi3yansyah.gif</a>&#8221; title=&#8221;&lsquo;Snippets untuk Octopress&rsquo; &lsquo;Snippets untuk Octopress&rsquo;&#8221; ></p>
 
 <p><strong>NB:</strong> Berlaku untuk di semua sistem operasi.</p>
+
+<p>Yuk gabung ke Grup Facebook Octopress Indonesia, kebetulan saya dan temen-teman saya adalah pengurusnya.</p>
+
+<p><a href="https://www.facebook.com/groups/OctopressID/1501500383467291/">https://www.facebook.com/groups/OctopressID/1501500383467291/</a></p>
 ]]></content>
   </entry>
   
