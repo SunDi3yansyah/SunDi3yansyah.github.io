@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/octopress/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-10-26T00:47:09+07:00</updated>
+  <updated>2015-10-26T00:54:04+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -48,27 +48,18 @@
 
 <p>Cara installlnya cukup mudah:</p>
 
-<ol>
-<li>Via GIT</li>
-</ol>
-
+<h4>Via GIT</h4>
 
 <p>masuk ke folder Install pada sublime text dan lakukan command berikut
 <code>bash
 git clone https://github.com/SunDi3yansyah/octopress-snippets
 </code></p>
 
-<ol>
-<li>Via Download Archive</li>
-</ol>
-
+<h4>Via Download Archive</h4>
 
 <p>Anda cukup download repository saya dan pastekan snippets dari repo tsb ke folder profile user di sublime text masing-masing</p>
 
-<ol>
-<li>Via Package Control (Belum tersedia, karena sedang menunggu pull request dari developer sublime text)</li>
-</ol>
-
+<h4>Via Package Control (Belum tersedia, karena sedang menunggu pull request dari developer sublime text)</h4>
 
 <p>Contoh cara menggunakannya silakan langsung saja melihat cuplikan dibawah ini.</p>
 
