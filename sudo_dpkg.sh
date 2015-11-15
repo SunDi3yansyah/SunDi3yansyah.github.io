@@ -1,1 +1,0 @@
-sudo dpkg --get-selections
