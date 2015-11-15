@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+{% gist gist_id filename %}
+]]></content>
+octopress gist-tag
+</snippet>

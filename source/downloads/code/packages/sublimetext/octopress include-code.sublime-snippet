@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+{% include_code title lang:languag /path/to/file %}
+]]></content>
+octopress include-code
+</snippet>

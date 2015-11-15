@@ -1,0 +1,371 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+/*body > header{box-sizing:border-box;max-height:164px;}body > header{background-image:url(/images/header.jpg);background-position:top left;}body>header h2{color: #fff;}*/
+body{max-width:1100px;}
+body>header{background:none;padding-bottom: 1em;}
+span.usr_bin_ruby,span.puts,span.ttk2,body>header h1,span.close_puts,span.puts_h2,span.ttk2_h2,body>header h2,span.close_puts_h2{
+font-family: monospace;
+}
+body>header h1,body>header h1 a, body>header h1 a:visited, body>header h1 a:hover{
+font-family: monospace;
+font-size: 30px;
+color: rgb(200, 200, 200);
+}
+body>header h2
+{
+font-size: 18px;
+color: rgb(200, 200, 200);
+display: inline;
+}
+span.usr_bin_ruby {
+color: #AD0000;
+display: block;
+font-size: 15px;
+}
+span.puts {
+color: #888	;
+font-size: 30px;
+}
+span.ttk2 {
+color: rgb(200, 200, 200);
+font-size: 30px;
+}
+span.close_puts{
+color: #888;
+font-size: 30px;
+}
+span.puts_h2 {
+color: #888;
+font-size: 18px;
+}
+span.ttk2_h2 {
+color: rgb(200, 200, 200);
+font-size: 18px;
+}
+span.close_puts_h2 {
+color: #888;
+font-size: 18px;
+}
+a.after_hgroup {
+float: right;
+}
+hgroup i.fa.fa-code {
+font-size: 2.5em;
+margin-top: -20px;
+position: absolute;
+color: #1863a1;
+margin-left: 20px;
+}
+/*i.sundi3yansyah-linux-h {
+right: 155px;
+width: 100px;
+top: 65px;
+position: absolute;
+font-size: 60px;
+}
+i.sundi3yansyah-windows-h {
+right: 100px;
+width: 100px;
+top: 65px;
+position: absolute;
+font-size: 60px;
+}
+div.heartbleed {
+position: absolute;
+top: 55px;
+font-size: 1em;
+color: #f2f2f2;
+font-weight: normal;
+font-family: vallimedium;
+right: 130px;
+width: 250px;
+}*/
+body>nav li+li a:hover,body>nav a:hover{text-decoration: none;}
+body>nav form .search{padding-bottom:5px;height:1.2em;}
+html{background:url(/images/inflicted.png?1404309145) top left;}
+body>footer{color:#444;}
+body>footer a:hover{
+color:#888;
+}
+.entry-content ul,#content article ul{margin-left:50px;}
+aside.sidebar a,.category a,#partner a{text-decoration:none;}
+/*#content .blog-index a[rel=full-article] {
+border: 2px dashed #999;
+padding: 2px 4px;
+font-size: 15px;
+}
+#content .blog-index a[rel=full-article] {
+font-family: "Helvetica Neue", Helvetica, Arial, freesans, sans-serif;
+font-style: italic;
+}
+#content .blog-index a[rel=full-article]:hover {
+background:#999;
+}*/
+#content .blog-index a[rel=full-article]{
+background-color: #0976BC;
+background: rgba(9,118,188,0.8);
+border: 1px solid transparent;
+font-family: "Helvetica Neue", Helvetica, Arial, freesans, sans-serif;
+text-align: center;
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.15);
+border-radius: 4px;
+color: #fff;
+cursor: pointer;
+opacity: 1;
+padding: 0 10px 0 10px;
+transition: all .15s ease-in-out;
+font-size: 15px;
+}
+#content .blog-index a[rel=full-article]:hover{
+background-color: #0976BC;
+background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.15));
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#26000000)";
+border-color: transparent;
+}
+section h4{
+font-size:1.2em;
+}
+aside.sidebar section h4{
+-webkit-box-shadow:#fff 0 1px;
+-moz-box-shadow:#fff 0 1px;
+box-shadow:#fff 0 1px;
+}
+aside.sidebar section h4{
+margin:1.5em 0 0;
+padding-bottom:0.5em;
+border-bottom:1px solid #e0e0e0;
+}
+aside.sidebar section{
+font-family: "Helvetica Neue", Helvetica, Arial, freesans, sans-serif;
+}
+hr{
+margin-bottom:25px;
+}
+body{
+font-family: "Helvetica Neue", Helvetica, Arial, freesans, sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+font-family: "Helvetica Neue", Helvetica, Arial, freesans, sans-serif;
+}
+#content .blog-index article h2 {
+line-height: 1.2em;
+font-size: 30px;
+}
+article header h2 {
+margin: 0;
+line-height: 1.2em;
+}
+#content .blog-index article h2 a {
+color:#4183c4;
+font-weight: normal;
+}
+#content .blog-index article h2 a:hover {
+color:#4183c4;
+text-decoration:underline;
+}
+article header h2 a {
+text-decoration: none;
+}
+
+article blockquote{
+font-size: 17px;
+padding-left: 1em;
+}
+#blog-archives h3 {
+font-size: 1.5em;
+line-height: 1.2em;
+}
+#blog-archives h3 {
+color: #222;
+margin-bottom: .3em;
+}
+#blog-archives h3 a {
+text-decoration: none;
+color: inherit;
+font-weight: normal;
+display: inline-block;
+}
+#octocard1412032470082 .octocard-m-stats li, #octocard1412032470082 .octocard-m-stats a {
+width: 24.33%;
+}
+.blog-feedback{
+font-family: "Helvetica Neue", Helvetica, Arial, freesans, sans-serif;
+margin:0 0 20px 0;
+background-color:#fafafa;
+border:1px solid #ddd;
+border-bottom-color:#ccc;
+border-radius:3px;
+box-shadow:inset 0 1px 0 #fff, 0 1px 5px #f1f1f1;}
+.blog-feedback h2 {
+font-weight: 500;
+line-height: 1.1;
+}
+.blog-feedback-header {
+margin: 0;
+padding: 10px;
+border-bottom: 1px solid #ddd;
+box-shadow: 0 1px 0 #fff;
+font-size: 14px;
+font-weight: bold;
+}
+.blog-feedback-header.with-twitter{
+background:url(//assets-cdn.github.com/assets/icons/twitter-00141fde4f9233b7393bc12679ca2814ace7749f36ed444f9e8ac844048e9412.png) 648px 1px no-repeat;
+background-size:32px auto;}
+.blog-feedback-description{
+font-size:13px;
+margin:0;
+padding:10px;
+color:#999;}
+.blog-feedback a,.blog-feedback-description a{
+color:#4183c4;
+text-decoration:none;}
+section h5{font-size:1em;}
+article>footer{
+padding-bottom:1em;
+}
+.previous-next i{
+font-size:50px;
+}
+article>footer p.previous-next{
+margin-top: 20px;
+}
+span.cat-on-article {
+padding: 10px 5px;
+margin: 0;
+border-radius: 3px;
+border-left: 5px solid #d9534f;
+border-top: 1px solid #eee;
+border-right: 1px solid #eee;
+border-bottom: 1px solid #eee;
+position: absolute;
+}
+.cat-on-article h5{
+color:#d9534f;
+margin:0;
+float:left;
+margin-right:10px;
+}
+article img{
+border-radius: 0;
+box-shadow: none;
+box-sizing: inherit;
+border: none;
+}
+article img.author-avatar{
+border-radius:3px;
+box-shadow:none;
+box-sizing:border-box;
+border:none;
+vertical-align:top;
+margin-top:4px;
+}
+article header p.meta {
+text-transform:capitalize;
+}
+.meta a {
+color:#999;
+text-decoration:none;
+}
+.meta a:hover {
+color:#999;
+text-decoration:underline;
+}
+.meta a:visited {
+color:#999;
+}
+/**/
+a {
+color: #4183c4;
+text-decoration: none;
+}
+a:hover {
+color: #4183c4;
+text-decoration: underline;
+}
+a:visited {
+color: #4183c4;
+}
+/* Category list tag */
+aside.sidebar section h4.cat-h4 {
+padding-left: 15px;
+background-color: #fff;
+border: 1px solid #d8d8d8;
+position: relative;
+display: block;
+text-shadow: 0 1px 0 #fff;
+border-bottom: 1px solid #eee;
+padding-top: 10px;
+margin-top: -0.5em;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+}
+#categories {
+margin-bottom: 15px;
+list-style: none;
+background-color: #fff;
+border: 1px solid #d8d8d8;
+height: 500px;
+overflow: auto;
+padding: 0;
+}
+#categories .category {
+position: relative;
+display: block;
+padding: 8px 15px;
+text-shadow: 0 1px 0 #fff;
+border-bottom: 1px solid #eee;
+margin-left: 2px;
+}
+#categories .category:last-child {
+border-bottom: 0;
+border-bottom-right-radius: 2px;
+border-bottom-left-radius: 2px;
+}
+#categories a {
+color: #4183c4;
+text-decoration: none;
+}
+#categories .category:hover {
+text-decoration: none;
+background-color: #f9f9f9;
+border-radius: 1px;
+border-left: 2px solid #d9534f;
+margin-left: 0;
+}
+.number-cat {
+background: #d9534f;
+border-radius: 2px;
+font-family: tahoma, sans-serif;
+float: right;
+padding: 2px 4px;
+position: relative;
+right: 10px;
+text-align: center;
+text-shadow: 0 -1px 0 #921515;
+color: white;
+margin-left: 5px;
+}
+#find_me {
+padding-left: 20px;
+padding-right: 20px;
+}
+#find_me a {
+font-size: 13px;
+}
+.s_contact_me {
+text-align: center;
+}
+.s_contact_me a {
+font-size: 30px;
+color: #d9534f;
+}
+.s_contact_me a:hover {
+text-decoration: none;
+}
+p code, li code {
+color: #d9534f;
+border-radius: 0;
+}
+.github-widget {
+margin-bottom: 25px;
+}
