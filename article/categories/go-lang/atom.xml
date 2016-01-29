@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Go-lang | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/go-lang/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-12-25T14:30:26+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="https://sundi3yansyah.com/article/categories/go-lang/atom.xml" rel="self"/>
+  <link href="https://sundi3yansyah.com/"/>
+  <updated>2016-01-29T20:57:06+07:00</updated>
+  <id>https://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install Go-lang Di Linux]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/11/27/cara-install-go-lang-di-linux/"/>
+    <link href="https://sundi3yansyah.com/article/2014/11/27/cara-install-go-lang-di-linux/"/>
     <updated>2014-11-27T17:19:52+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/11/27/cara-install-go-lang-di-linux</id>
+    <id>https://sundi3yansyah.com/article/2014/11/27/cara-install-go-lang-di-linux</id>
     <content type="html"><![CDATA[<p>Pertama buka dulu page download arsip go-lang disini <a href="https://golang.org/dl/">https://golang.org/dl/</a> setelah itu ambil file arsipnya sesuai arsitektur pada distro linux kalian (x64 or x86), sebagai contoh:</p>
 
 <p>Buka terminal

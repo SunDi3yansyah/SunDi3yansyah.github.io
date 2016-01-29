@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Sqlite | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/sqlite/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-12-25T14:30:26+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="https://sundi3yansyah.com/article/categories/sqlite/atom.xml" rel="self"/>
+  <link href="https://sundi3yansyah.com/"/>
+  <updated>2016-01-29T20:57:06+07:00</updated>
+  <id>https://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install SQLite Di Linux]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/11/14/cara-install-sqlite-di-linux/"/>
+    <link href="https://sundi3yansyah.com/article/2014/11/14/cara-install-sqlite-di-linux/"/>
     <updated>2014-11-14T02:37:34+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/11/14/cara-install-sqlite-di-linux</id>
+    <id>https://sundi3yansyah.com/article/2014/11/14/cara-install-sqlite-di-linux</id>
     <content type="html"><![CDATA[<p><blockquote><p>SQLite merupakan sebuah sistem manajemen basisdata relasional yang bersifat ACID-compliant dan memiliki ukuran pustaka kode yang relatif kecil, ditulis dalam bahasa C. SQLite merupakan proyek yang bersifat public domain yang dikerjakan oleh D. Richard Hipp.</p></p><p><!-- more --></p><p><br/><p>Tidak seperti pada paradigma client-server umumnya, Inti SQLite bukanlah sebuah sistem yang mandiri yang berkomunikasi dengan sebuah program, melainkan sebagai bagian integral dari sebuah program secara keseluruhan. Sehingga protokol komunikasi utama yang digunakan adalah melalui pemanggilan API secara langsung melalui bahasa pemrograman. Mekanisme seperti ini tentunya membawa keuntungan karena dapat mereduksi overhead, latency times, dan secara keseluruhan lebih sederhana. Seluruh elemen basisdata (definisi data, tabel, indeks, dan data) disimpan sebagai sebuah file. Kesederhanaan dari sisi disain tersebut bisa diraih dengan cara mengunci keseluruhan file basis data pada saat sebuah transaksi dimulai.</p><footer><strong>id.wikipedia <a href="http://id.wikipedia.org/wiki/SQLite">http://id.wikipedia.org/wiki/SQLite</a> SQLite</strong></footer></blockquote></p>
 
 <p>Yah begitulah SQLie&hellip; kali ini saya akan memberikan informasi cara installasinya. Cek dulu apakah di linux kalian sudah ada package SQLite belum, caranya</p>

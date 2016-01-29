@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Dedicated | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/dedicated/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-12-25T14:30:26+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="https://sundi3yansyah.com/article/categories/dedicated/atom.xml" rel="self"/>
+  <link href="https://sundi3yansyah.com/"/>
+  <updated>2016-01-29T20:57:06+07:00</updated>
+  <id>https://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install cPanel Di VPS Dedicated Servers]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/11/22/cara-install-cpanel-di-vps-dedicated-servers/"/>
+    <link href="https://sundi3yansyah.com/article/2014/11/22/cara-install-cpanel-di-vps-dedicated-servers/"/>
     <updated>2014-11-22T11:20:18+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/11/22/cara-install-cpanel-di-vps-dedicated-servers</id>
+    <id>https://sundi3yansyah.com/article/2014/11/22/cara-install-cpanel-di-vps-dedicated-servers</id>
     <content type="html"><![CDATA[<p>Sebelum melakukan cara install cPanel di Server (VPS, Dedicated) Linux, pastikan anda memiliki spesifikasi RAM Server (VPS, Dedicated) minimal 256Mb.</p>
 
 <p>Berikut ini adalah langkah-langkah untuk install cPanel di Server (VPS, Dedicated):

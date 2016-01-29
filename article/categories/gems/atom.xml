@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Gems | SunDi3yansyah]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/gems/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2015-12-25T14:30:26+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="https://sundi3yansyah.com/article/categories/gems/atom.xml" rel="self"/>
+  <link href="https://sundi3yansyah.com/"/>
+  <updated>2016-01-29T20:57:06+07:00</updated>
+  <id>https://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install RubyGems]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/09/11/cara-install-rubygems/"/>
+    <link href="https://sundi3yansyah.com/article/2014/09/11/cara-install-rubygems/"/>
     <updated>2014-09-11T00:24:50+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/09/11/cara-install-rubygems</id>
+    <id>https://sundi3yansyah.com/article/2014/09/11/cara-install-rubygems</id>
     <content type="html"><![CDATA[<p>Apa itu RubyGems?
 <blockquote><p>RubyGems is a package manager for the Ruby programming language that provides a standard format for distributing Ruby programs and libraries (in a self-contained format called a &ldquo;gem&rdquo;), a tool designed to easily manage the installation of gems, and a server for distributing them. It is analogous to pip for the Python programming language. RubyGems was created in about November 2003 and is now part of the standard library from Ruby version 1.9.</p><footer><strong>RubyGems <a href="http://en.wikipedia.org/wiki/RubyGems">http://en.wikipedia.org/wiki/RubyGems</a> RubyGems - Wikipedia</strong> <cite>The Free Encyclopedia</cite></footer></blockquote></p>
 
