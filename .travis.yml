@@ -1,5 +1,8 @@
 language: ruby
 rvm:
-  - 2.0.0
-  - 1.9.3
+- 2.0.0
+- 1.9.3
 script: bundle exec rake install; bundle exec rake generate
+env:
+  global:
+    secure: Ja0vh6QToXQAsuFTJH+eGVorJQFnNkgZy2/nUuqKI5N0ivMIY6gowuhLq7qAu8QnUQAERsvIqXCRjhkAuHRjhcvZmlms1cwOJA0FjwpMHWhbvD8ylJsa96E8Pur4gz3sqYSb/4b+bJU9FfjMa+3UGUF5VLFxWlk24D1sRERF08A=
