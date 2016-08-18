@@ -4,8 +4,8 @@ title: "Jangan Pakai Linux"
 date: 2014-09-11 05:00:29 +0700
 comments: true
 categories: linux
-description: Jangan Pakai Linux"
-keywords: Jangan Pakai Linux"
+description: Jangan Pakai Linux
+keywords: Jangan Pakai Linux
 ---
 {% img right http://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/334px-Tux.svg.png linux %}
 

@@ -27,7 +27,7 @@ This is the story of my brief, so I was born given directly to see a birth certi
 
 <li><i class="fa fa-github"></i> <a href="https://github.com/SunDi3yansyah" target="_blank">GitHub</a></li>
 
-<li><i class="fa fa-linkedin-square"></i> <a href="http://id.linkedin.com/in/sundi3yansyah/" target="_blank">LinkedIn</a></li>
+<li><i class="fa fa-linkedin-square"></i> <a href="https://www..linkedin.com/in/SunDi3yansyah" target="_blank">LinkedIn</a></li>
 
 <li><i class="fa fa-stackoverflow"></i> <a href="http://stackoverflow.com/users/3757627/sundi3yansyah" target="_blank">StackOverflow</a></li>
 
@@ -35,9 +35,9 @@ This is the story of my brief, so I was born given directly to see a birth certi
 
 <li><i class="fa fa-youtube-play"></i> <a href="https://asciinema.org/~SunDi3yansyah" target="_blank">Asciinema</a></li>
 
-<li><i class="fa fa-google-plus"></i> <a href="https://plus.google.com/u/0/113613533694994339551" target="_blank">Google+</a></li>
+<li><i class="fa fa-google-plus"></i> <a href="https://plus.google.com/u/0/+SunDi3yansyahLibrary" target="_blank">Google+</a></li>
 
-<li><i class="fa fa-facebook-square"></i> <a href="https://www.facebook.com/adiebiazajah" target="_blank">Facebook</a></li>
+<li><i class="fa fa-facebook-square"></i> <a href="https://www.facebook.com/SunDi3yansyah" target="_blank">Facebook</a></li>
 
 <li><i class="fa fa-youtube-square"></i> <a href="https://www.youtube.com/user/zpqwify" target="_blank">Youtube</a></li>
 

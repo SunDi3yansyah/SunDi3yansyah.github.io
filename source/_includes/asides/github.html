@@ -1,11 +1,12 @@
 {% if site.github_user %}
 <section>
-  <h1>GitHub Repos</h1>
+  <h1><i class="fa fa-github"></i> GitHub Repository</h1>
   <ul id="gh_repos">
     <li class="loading">Status updating...</li>
   </ul>
   {% if site.github_show_profile_link %}
-  <a href="https://github.com/{{site.github_user}}">@{{site.github_user}}</a> on GitHub
+  <a href="https://github.com/{{site.github_user}}" class="blue">@{{site.github_user}}</a>
+  <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> GitHub
   {% endif %}
   <script type="text/javascript">
     $(document).ready(function(){

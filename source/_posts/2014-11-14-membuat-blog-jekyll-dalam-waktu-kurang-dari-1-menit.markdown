@@ -64,4 +64,4 @@ Hasilnya:
 
 Atau bisa melihat video dibawah ini:
 
-<script type="text/javascript" src="https://asciinema.org/a/14165.js" id="asciicast-14165" async></script>
+<script src="https://asciinema.org/a/14165.js" id="asciicast-14165" async></script>

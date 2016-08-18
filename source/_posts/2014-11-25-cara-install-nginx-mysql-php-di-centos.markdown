@@ -15,7 +15,7 @@ Pada artikel sebelumnya saya sudah menjelaskan tentang [Install LEMP Di CentOS 5
 
 Silakan di simak, recordernya. Remi repositorinya menyesuikan arsitektur OS yang kalian pakai
 <!--more-->
-<script type="text/javascript" src="https://asciinema.org/a/14190.js" id="asciicast-14190" async></script>
+<script src="https://asciinema.org/a/14190.js" id="asciicast-14190" async></script>
 
 Anda bisa melihat command line di bawah ini untuk mengikuti dari recorder di atas.
 

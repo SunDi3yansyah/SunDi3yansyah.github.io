@@ -44,13 +44,13 @@ Kopas salah satu JavaScript-nya ke repository octopress kita, misalnya di `sourc
 Kemudian edit file `source/_includes/custom/head.html` tambahkan code seperti dibawah ini:
 
 {% codeblock root@sundi3yansyah %}
-<script type="text/javascript" src="{{ root_url }}/javascripts/jquery.githubRepoWidget.js"></script>
+<script src="{{ root_url }}/javascripts/jquery.githubRepoWidget.js"></script>
 {% endcodeblock %}
 
 atau
 
 {% codeblock root@sundi3yansyah %}
-<script type="text/javascript" src="{{ root_url }}/javascripts/jquery.githubRepoWidget.min.js"></script>
+<script src="{{ root_url }}/javascripts/jquery.githubRepoWidget.min.js"></script>
 {% endcodeblock %}
 
 Kemudian save.

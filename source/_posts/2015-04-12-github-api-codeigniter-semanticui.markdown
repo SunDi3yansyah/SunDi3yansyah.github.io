@@ -4,8 +4,8 @@ title: "GitHub API, CodeIgniter, SemanticUI"
 date: 2015-04-12 10:27:40 +0700
 comments: true
 categories: [GitHub, CodeIgniter, Semantic-UI, Framework]
-description: "Aplikasi gabungan antara GitHub API, CodeIgniter HMVC, and frontend framework Semantic-UI"
-keywords: "GitHub API, CodeIgniter, SemanticUI"
+description: Aplikasi gabungan antara GitHub API, CodeIgniter HMVC, and frontend framework Semantic-UI
+keywords: GitHub API, CodeIgniter, SemanticUI
 ---
 
 Hai... {% img https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png 20 20 'smiley' 'smiley' %} udah lama gk bikin post nih...
