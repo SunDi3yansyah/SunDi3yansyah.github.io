@@ -62,7 +62,7 @@
   <i class="fa fa-code"></i>
   <br>
   
-  <span class="puts_h2">puts </span><span class="ttk2_h2">&#8220;</span><h2>Server, Web Development, SysAdmin, Linuxer</h2><span class="ttk2_h2">&#8221;</span><span class="close_puts_h2">;</span>
+  <span class="puts_h2">puts </span><span class="ttk2_h2">&#8220;</span><h2>App Server, Database App, Web App</h2><span class="ttk2_h2">&#8221;</span><span class="close_puts_h2">;</span>
   
 </hgroup>
 </header>
@@ -243,20 +243,46 @@
     
   </ul>
 </section>
-<script
-  data-name="SunDi3yansyah"
-  data-modules="base,details,stats,repos,eventsStatis,orgs"
-  data-reposNum="5"
-  src="http://octocard.in/o.js">
-</script><section>
+
+<section>
+  <h1><i class="fa fa-github"></i> GitHub Repository</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/SunDi3yansyah" class="blue">@SunDi3yansyah</a>
+  <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'SunDi3yansyah',
+            count: 7,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+<section>
   <h4><i class="fa fa-search-plus"></i> Find Me</h4>
   <ul id="find_me">
     <li><i class="fa fa-envelope"></i> <a href="mailto:sundi3yansyah@gmail.com">E-Mail</a></li>
     <li><i class="fa fa-github"></i> <a href="https://github.com/SunDi3yansyah" target="_blank">GitHub</a></li>
     <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/SunDi3yansyah" target="_blank">Twitter</a></li>
-    <li><i class="fa fa-google-plus"></i> <a href="https://plus.google.com/u/0/113613533694994339551" target="_blank">Google+</a></li>
-    <li><i class="fa fa-linkedin-square"></i> <a href="http://id.linkedin.com/in/sundi3yansyah/" target="_blank">LinkedIn</a></li>
-    <li><i class="fa fa-facebook-square"></i> <a href="https://www.facebook.com/adiebiazajah" target="_blank">Facebook</a></li>
+    <li><i class="fa fa-google-plus"></i> <a href="https://plus.google.com/u/0/+SunDi3yansyahLibrary" target="_blank">Google+</a></li>
+    <li><i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/SunDi3yansyah" target="_blank">LinkedIn</a></li>
+    <li><i class="fa fa-facebook-square"></i> <a href="https://www.facebook.com/SunDi3yansyah" target="_blank">Facebook</a></li>
     <li><i class="fa fa-youtube-square"></i> <a href="https://www.youtube.com/user/zpqwify" target="_blank">Youtube</a></li>
     <li><i class="fa fa-youtube-play"></i> <a href="https://asciinema.org/~SunDi3yansyah" target="_blank">Asciinema</a></li>
   </ul>
@@ -313,7 +339,6 @@
 
   </li>
 </section>
-
   
 </aside>
 

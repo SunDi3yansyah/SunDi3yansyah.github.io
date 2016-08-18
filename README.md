@@ -10,10 +10,10 @@
 
 * [E-Mail](mailto:sundi3yansyah@gmail.com)
 * [GitHub](https://github.com/SunDi3yansyah)
-* [LinkedIn](http://id.linkedin.com/in/sundi3yansyah/)
+* [LinkedIn](https://www.linkedin.com/in/SunDi3yansyah)
 * [StackOverflow](http://stackoverflow.com/users/3757627/sundi3yansyah)
 * [Twitter](https://twitter.com/SunDi3yansyah)
 * [Asciinema](https://asciinema.org/~SunDi3yansyah)
-* [Google+](https://plus.google.com/u/0/113613533694994339551)
-* [Facebook](https://www.facebook.com/adiebiazajah)
+* [Google+](https://plus.google.com/u/0/+SunDi3yansyahLibrary)
+* [Facebook](https://www.facebook.com/SunDi3yansyah)
 * [Youtube](https://www.youtube.com/user/zpqwify)
