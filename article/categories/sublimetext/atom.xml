@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Sublimetext | SunDi3yansyah]]></title>
-  <link href="https://sundi3yansyah.com/article/categories/sublimetext/atom.xml" rel="self"/>
-  <link href="https://sundi3yansyah.com/"/>
-  <updated>2016-08-18T18:24:08+07:00</updated>
-  <id>https://sundi3yansyah.com/</id>
+  <link href="http://sundi3yansyah.com/article/categories/sublimetext/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2017-02-03T11:42:46+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Snippets Untuk Octopress Pada Sublimetext]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext/"/>
+    <link href="http://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext/"/>
     <updated>2014-11-19T14:02:37+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext</id>
+    <id>http://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext</id>
     <content type="html"><![CDATA[<p>Kali ini saya akan berbagi code snippets untuk kalian yang suka atau menggunakan framework octopress seperti saya ini dan tentunya menggunakan editor Sublimetext.</p>
 
 <p><strong>Syarat</strong></p>
@@ -75,9 +75,9 @@ git clone https://github.com/SunDi3yansyah/octopress-snippets
   
   <entry>
     <title type="html"><![CDATA[Crack Sublime Text 3 Build 3065]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/09/30/crack-sublime-text-3-build-3065/"/>
+    <link href="http://sundi3yansyah.com/article/2014/09/30/crack-sublime-text-3-build-3065/"/>
     <updated>2014-09-30T05:44:13+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/09/30/crack-sublime-text-3-build-3065</id>
+    <id>http://sundi3yansyah.com/article/2014/09/30/crack-sublime-text-3-build-3065</id>
     <content type="html"><![CDATA[<h3>Download Sublimeetxt Build 3065</h3>
 
 <h4><a href="http://www.sublimetext.com/3">http://www.sublimetext.com/3</a></h4>
@@ -197,9 +197,9 @@ git clone https://github.com/SunDi3yansyah/octopress-snippets
   
   <entry>
     <title type="html"><![CDATA[Cara Install Package Di SublimeText]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/08/27/cara-install-package-di-sublimetext/"/>
+    <link href="http://sundi3yansyah.com/article/2014/08/27/cara-install-package-di-sublimetext/"/>
     <updated>2014-08-27T11:26:46+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/08/27/cara-install-package-di-sublimetext</id>
+    <id>http://sundi3yansyah.com/article/2014/08/27/cara-install-package-di-sublimetext</id>
     <content type="html"><![CDATA[<!-- more -->
 
 
@@ -210,9 +210,9 @@ git clone https://github.com/SunDi3yansyah/octopress-snippets
   
   <entry>
     <title type="html"><![CDATA[Guide Sublime Text Part 1 by.sundi3yansyah]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/08/27/guide-sublime-text-part-1-by-dot-sundi3yansyah/"/>
+    <link href="http://sundi3yansyah.com/article/2014/08/27/guide-sublime-text-part-1-by-dot-sundi3yansyah/"/>
     <updated>2014-08-27T11:20:29+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/08/27/guide-sublime-text-part-1-by-dot-sundi3yansyah</id>
+    <id>http://sundi3yansyah.com/article/2014/08/27/guide-sublime-text-part-1-by-dot-sundi3yansyah</id>
     <content type="html"><![CDATA[<!-- more -->
 
 

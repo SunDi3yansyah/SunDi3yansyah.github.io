@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Ubuntu | SunDi3yansyah]]></title>
-  <link href="https://sundi3yansyah.com/article/categories/ubuntu/atom.xml" rel="self"/>
-  <link href="https://sundi3yansyah.com/"/>
-  <updated>2016-08-18T18:24:08+07:00</updated>
-  <id>https://sundi3yansyah.com/</id>
+  <link href="http://sundi3yansyah.com/article/categories/ubuntu/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2017-02-03T11:42:46+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Solusi Pesan “Error the Following Signatures Were Invalid” Pada Ubuntu]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/11/16/solusi-pesan-error-the-following-signatures-were-invalid-pada-ubuntu/"/>
+    <link href="http://sundi3yansyah.com/article/2014/11/16/solusi-pesan-error-the-following-signatures-were-invalid-pada-ubuntu/"/>
     <updated>2014-11-16T18:05:17+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/11/16/solusi-pesan-error-the-following-signatures-were-invalid-pada-ubuntu</id>
+    <id>http://sundi3yansyah.com/article/2014/11/16/solusi-pesan-error-the-following-signatures-were-invalid-pada-ubuntu</id>
     <content type="html"><![CDATA[<h4>Solusi Pesan Error &ldquo;The following signatures were invalid&rdquo; pada Ubuntu</h4>
 
 <p>Contohnya seperti apa?
@@ -60,9 +60,9 @@ apt-get update
   
   <entry>
     <title type="html"><![CDATA[Perbaiki Adobe Flash Player Issue Dalam Chromium Di Ubuntu 14.04]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/11/11/perbaiki-adobe-flash-player-issue-dalam-chromium-di-ubuntu-14-dot-04/"/>
+    <link href="http://sundi3yansyah.com/article/2014/11/11/perbaiki-adobe-flash-player-issue-dalam-chromium-di-ubuntu-14-dot-04/"/>
     <updated>2014-11-11T04:41:38+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/11/11/perbaiki-adobe-flash-player-issue-dalam-chromium-di-ubuntu-14-dot-04</id>
+    <id>http://sundi3yansyah.com/article/2014/11/11/perbaiki-adobe-flash-player-issue-dalam-chromium-di-ubuntu-14-dot-04</id>
     <content type="html"><![CDATA[<p>Salah satu dari beberapa yang pertama hal yang harus dilakukan setelah menginstal Ubuntu 14.04 adalah untuk menginstal Adobe Flash Player. Biasanya, jika Anda menginstal Ubuntu Restricted Extras, Flash Player harus bekerja dan Anda harus dapat menonton video online dari situs-situs seperti You Tube dll</p>
 
 <!-- more -->
@@ -100,9 +100,9 @@ apt-get update
   
   <entry>
     <title type="html"><![CDATA[Exploit AFDFDE for Ruby]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/08/26/exploit-afdfde-for-ruby/"/>
+    <link href="http://sundi3yansyah.com/article/2014/08/26/exploit-afdfde-for-ruby/"/>
     <updated>2014-08-26T23:17:19+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/08/26/exploit-afdfde-for-ruby</id>
+    <id>http://sundi3yansyah.com/article/2014/08/26/exploit-afdfde-for-ruby</id>
     <content type="html"><![CDATA[<h2>ruby-AFDFDE</h2>
 
 <p><em>read this exploit <a href="https://github.com/SurabayaBlackhat/AFDFDE">AFDFDE</a></em></p>
@@ -400,9 +400,9 @@ apt-get update
   
   <entry>
     <title type="html"><![CDATA[Cara Install NodeJS Dan NPM Di Ubuntu]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu/"/>
+    <link href="http://sundi3yansyah.com/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu/"/>
     <updated>2014-07-05T20:58:02+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu</id>
+    <id>http://sundi3yansyah.com/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu</id>
     <content type="html"><![CDATA[<p>Install dulu Depensial dari software python dan menambahkan PPA dari NodeJS untuk ubuntunya.</p>
 
 <p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
@@ -454,9 +454,9 @@ apt-get update
   
   <entry>
     <title type="html"><![CDATA[Cara Install Dan Compile Ruby via Tarball Di Debian/Ubuntu]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/07/03/cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu/"/>
+    <link href="http://sundi3yansyah.com/article/2014/07/03/cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu/"/>
     <updated>2014-07-03T03:21:25+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/07/03/cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu</id>
+    <id>http://sundi3yansyah.com/article/2014/07/03/cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu</id>
     <content type="html"><![CDATA[<p>Banyak cara untuk meng-Install Ruby, tapi kali ini saya akan mengInsall Ruby menggunakan Tarball ini apa yang saya lakukan di Komputer saya, saya menggunakan Ruby versi 1.9.3 jika kalian ingin menginstall di versi atasnya juga gpp tutorial ini teteap berlaku untuk versi berapa saja dan ini saya menggunakan Sistem Operasi Debian/Ubuntu.</p>
 
 <p>Langsung saja buka terminal.

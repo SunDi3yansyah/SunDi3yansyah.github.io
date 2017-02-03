@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Centos | SunDi3yansyah]]></title>
-  <link href="https://sundi3yansyah.com/article/categories/centos/atom.xml" rel="self"/>
-  <link href="https://sundi3yansyah.com/"/>
-  <updated>2016-08-18T18:24:08+07:00</updated>
-  <id>https://sundi3yansyah.com/</id>
+  <link href="http://sundi3yansyah.com/article/categories/centos/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2017-02-03T11:42:46+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install Ruby Di Fedora]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/12/26/cara-install-ruby-di-fedora/"/>
+    <link href="http://sundi3yansyah.com/article/2014/12/26/cara-install-ruby-di-fedora/"/>
     <updated>2014-12-26T03:48:32+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/12/26/cara-install-ruby-di-fedora</id>
+    <id>http://sundi3yansyah.com/article/2014/12/26/cara-install-ruby-di-fedora</id>
     <content type="html"><![CDATA[<p>Kalau di CentOS, Debian, Ubuntu, Windows dan lain-lainnya silakan di lihat di archive blog saya <strong>kan sudah</strong> nah kali ini saya akan menjelaskan bagaimana jika di <strong>Fedora</strong> kali ini berbeda dengan di Fedora cukup lakukan perintah <strong>yum yum dan yum</strong> kalian sudah bisa mendapatkan versi Ruby dan Gems lainnya dengan versi terbaru, langsung saja.</p>
 
 <p>Buka shell session kalian (terminal)</p>
@@ -144,9 +144,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install Atau Upgrade Python Di CentOS]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/11/27/cara-install-atau-upgrade-python-di-centos/"/>
+    <link href="http://sundi3yansyah.com/article/2014/11/27/cara-install-atau-upgrade-python-di-centos/"/>
     <updated>2014-11-27T17:18:37+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/11/27/cara-install-atau-upgrade-python-di-centos</id>
+    <id>http://sundi3yansyah.com/article/2014/11/27/cara-install-atau-upgrade-python-di-centos</id>
     <content type="html"><![CDATA[<p>Pertama tampulkan dulu versi python yang sekarang
 <code>sh
 python --version
@@ -218,9 +218,9 @@ python -V
   
   <entry>
     <title type="html"><![CDATA[Cara Menambah Virtual Hosts Di Nginx]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx/"/>
+    <link href="http://sundi3yansyah.com/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx/"/>
     <updated>2014-11-25T04:48:12+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx</id>
+    <id>http://sundi3yansyah.com/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx</id>
     <content type="html"><![CDATA[<p>Kalau sebelumnya saya sudah menejalaskan tentang <a href="/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/">Cara Install Nginx, MySQL, PHP Di CentOS</a>, sekarang bagaimana jika kita ingin menambahkan domain kita ke server yang pada tempo lalu sudah di install NGINX dan kawan-kawannya? Yah&hellip; tulisan &amp; video di bawah ini yang akan menjawab, ini real saya praktekan langsung di domain saya, namun nama domain tsb adalah nama Nick teman saya <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
 
 <p>Langsung saja ke videonya.</p>
@@ -321,9 +321,9 @@ find . -type f | while read file ; do chmod 644 "$file" ; done
   
   <entry>
     <title type="html"><![CDATA[Cara Install Nginx, MySQL, PHP Di CentOS]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/"/>
+    <link href="http://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/"/>
     <updated>2014-11-25T04:17:41+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos</id>
+    <id>http://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos</id>
     <content type="html"><![CDATA[<p>Pada artikel sebelumnya saya sudah menjelaskan tentang <a href="/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13/">Install LEMP Di CentOS 5-6 Dan Fedora 18-13</a>, namun disini saya akan menjabarkan lebih datail <strong>Cara Install Nginx, MySQL, PHP di CentOS</strong> menggunakan recorder.</p>
 
 <h4>Requirements</h4>
@@ -472,9 +472,9 @@ nano /usr/share/nginx/html/info.php
   
   <entry>
     <title type="html"><![CDATA[Cara Install Ruby Di CentOS]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/09/10/cara-install-ruby-di-centos/"/>
+    <link href="http://sundi3yansyah.com/article/2014/09/10/cara-install-ruby-di-centos/"/>
     <updated>2014-09-10T23:57:17+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/09/10/cara-install-ruby-di-centos</id>
+    <id>http://sundi3yansyah.com/article/2014/09/10/cara-install-ruby-di-centos</id>
     <content type="html"><![CDATA[<p>Pada kesempatan kali ini saya akan mencoba untuk membagi pengalamn saya menggunakan CentOS Server maupun CentOS Dektop untuk menggunakan ruby, secara default ruby di turunan RPM belum terinstall maka kita akan menginstallnya terlebih dahulu sebelum memulai coding script ruby kita. Sebenarnya tidak jauh dari cara menginstall ruby di turunan DEB yaitu Debian/Ubuntu, tapi apa salahnya ya kan jika saya akan membagi pengalaman saya disini, ini murni apa yang saya lakukan di Server CentOS saya dan di Laptop Desktop CentOS saya.</p>
 
 <!-- more -->

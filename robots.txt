@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: https://sundi3yansyah.com/sitemap.xml 
+Sitemap: http://sundi3yansyah.com/sitemap.xml 

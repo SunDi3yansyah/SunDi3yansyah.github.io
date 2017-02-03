@@ -1,437 +1,472 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://sundi3yansyah.com/article/2015/04/12/github-api-codeigniter-semanticui/</loc>
-    <lastmod>2015-04-12T10:27:40+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/12/26/cara-install-ruby-di-fedora/</loc>
-    <lastmod>2014-12-26T03:48:32+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/</loc>
-    <lastmod>2014-12-22T13:12:28+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/27/cara-install-go-lang-di-linux/</loc>
-    <lastmod>2014-11-27T17:19:52+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/27/cara-install-atau-upgrade-python-di-centos/</loc>
-    <lastmod>2014-11-27T17:18:37+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/27/cara-mereset-environment-variable-pada-linux/</loc>
-    <lastmod>2014-11-27T17:18:05+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/27/cara-menambah-environment-variable-pada-linux/</loc>
-    <lastmod>2014-11-27T17:17:52+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/26/cara-install-asciinema-di-linux/</loc>
-    <lastmod>2014-11-26T18:52:38+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/25/cara-update-versi-nodejs/</loc>
-    <lastmod>2014-11-25T07:27:33+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx/</loc>
-    <lastmod>2014-11-25T04:48:12+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/</loc>
-    <lastmod>2014-11-25T04:17:41+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/23/singkat-dan-padat-untuk-turunan-unix/</loc>
-    <lastmod>2014-11-23T21:33:32+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/23/cara-install-nodejs-di-debian/</loc>
-    <lastmod>2014-11-23T17:27:33+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/22/cara-install-cpanel-di-vps-dedicated-servers/</loc>
-    <lastmod>2014-11-22T11:20:18+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/22/cara-install-zpanelcp-10-dot-1-1/</loc>
-    <lastmod>2014-11-22T11:08:28+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/22/cara-install-youtube-dl/</loc>
-    <lastmod>2014-11-22T09:25:12+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext/</loc>
-    <lastmod>2014-11-19T14:02:37+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/18/cara-menghapus-repository-di-github/</loc>
-    <lastmod>2014-11-18T18:58:04+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/18/cara-convert-ogv-ke-mp4-di-linux/</loc>
-    <lastmod>2014-11-18T17:34:27+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/16/perintah-chattr-pada-sistem-linux/</loc>
-    <lastmod>2014-11-16T18:08:09+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/16/solusi-pesan-error-the-following-signatures-were-invalid-pada-ubuntu/</loc>
-    <lastmod>2014-11-16T18:05:17+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/16/cara-install-radio-di-server-linux/</loc>
-    <lastmod>2014-11-16T17:53:24+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/</loc>
-    <lastmod>2014-11-14T03:50:42+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/14/cara-install-sqlite-di-linux/</loc>
-    <lastmod>2014-11-14T02:37:34+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/11/11/perbaiki-adobe-flash-player-issue-dalam-chromium-di-ubuntu-14-dot-04/</loc>
-    <lastmod>2014-11-11T04:41:38+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/10/25/cara-install-nodejs-di-windows/</loc>
-    <lastmod>2014-10-25T11:59:26+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/30/crack-sublime-text-3-build-3065/</loc>
-    <lastmod>2014-09-30T05:44:13+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/12/ketika-programmer-jatuh-cinta/</loc>
-    <lastmod>2014-09-12T05:15:59+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/12/karakter-programmer-berdasarkan-golongan-darah/</loc>
-    <lastmod>2014-09-12T05:12:56+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/12/orang-ter-php-di-dunia/</loc>
-    <lastmod>2014-09-12T04:45:25+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/12/cara-membuat-custom-404-pages-di-github/</loc>
-    <lastmod>2014-09-12T02:55:12+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/12/cara-membuat-halaman-di-github/</loc>
-    <lastmod>2014-09-12T00:12:22+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/11/jangan-pakai-linux/</loc>
-    <lastmod>2014-09-11T05:00:29+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/11/cara-install-rubygems/</loc>
-    <lastmod>2014-09-11T00:24:50+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/10/cara-install-ruby-di-centos/</loc>
-    <lastmod>2014-09-10T23:57:17+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/10/cara-konfigurasi-seo-keywords-dan-deskripsi-octopress/</loc>
-    <lastmod>2014-09-10T03:49:47+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/10/jangan-ngaku-programmer-atau-hacker-kalau-tidak-mengerti-jekyll-dan-octopress/</loc>
-    <lastmod>2014-09-10T01:01:32+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/08/cara-git-set-up-dan-generating-ssh-keys/</loc>
-    <lastmod>2014-09-08T00:48:14+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/07/cara-install-nodejs-via-tarball-di-centos-rhel/</loc>
-    <lastmod>2014-09-07T07:14:13+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/06/cara-konfigurasi-rss-di-octopress/</loc>
-    <lastmod>2014-09-06T21:30:44+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/06/create-sub-domain-for-nginx-aka-virtual-host-by-sundi3yansyah/</loc>
-    <lastmod>2014-09-06T19:34:54+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/05/tutorial-menggunakan-dan-upload-project-ke-github-di-windows/</loc>
-    <lastmod>2014-09-05T09:09:34+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/05/cara-mudah-mendapatkan-follower-twitter-1k/</loc>
-    <lastmod>2014-09-05T06:19:59+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/05/creep3r-exploit-and-vulnerability-search-engine/</loc>
-    <lastmod>2014-09-05T06:17:42+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/05/firephp-pada-nginx-502-bad-gateway/</loc>
-    <lastmod>2014-09-05T06:03:00+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/05/konfigurasi-gzip-di-nginx/</loc>
-    <lastmod>2014-09-05T05:57:40+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/05/cara-menghilangkan-versi-nginx/</loc>
-    <lastmod>2014-09-05T05:52:09+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/05/update-versi-lemp-centos-dan-fedora/</loc>
-    <lastmod>2014-09-05T05:47:41+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/05/cara-mengatasi-emerg-bind-to-0-dot-0-0-dot-0-80-failed-98-address-already-in-use/</loc>
-    <lastmod>2014-09-05T05:40:58+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/05/cara-install-nginx-mysql-php5-di-turunan-debian/</loc>
-    <lastmod>2014-09-05T05:31:36+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/05/cara-mengatasi-500-internal-server-error-pada-nginx/</loc>
-    <lastmod>2014-09-05T05:27:14+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/05/ecommerce-website-by-gsi-blind-sql-injection-discloure/</loc>
-    <lastmod>2014-09-05T05:06:25+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13/</loc>
-    <lastmod>2014-09-03T13:53:06+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/02/cara-memasang-octocard-di-web/</loc>
-    <lastmod>2014-09-02T23:23:02+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/09/02/cara-membuat-widget-github-menggunakan-jquery-di-octopress/</loc>
-    <lastmod>2014-09-02T22:20:35+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/08/30/joomla-com-user-auto-exploit-with-python/</loc>
-    <lastmod>2014-08-30T05:55:39+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/08/29/cara-membuat-automatic-page-generator-di-github/</loc>
-    <lastmod>2014-08-29T00:51:06+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/08/27/cara-membuat-repository-baru-di-github/</loc>
-    <lastmod>2014-08-27T11:29:33+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/08/27/cara-buat-post-di-octopress/</loc>
-    <lastmod>2014-08-27T11:28:16+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/08/27/cara-install-package-di-sublimetext/</loc>
-    <lastmod>2014-08-27T11:26:46+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/08/27/youtube-cara-install-mybb/</loc>
-    <lastmod>2014-08-27T11:24:38+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/08/27/edit-template-mybb-menggunakan-inspect-element-part-1/</loc>
-    <lastmod>2014-08-27T11:23:31+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/08/27/guide-sublime-text-part-1-by-dot-sundi3yansyah/</loc>
-    <lastmod>2014-08-27T11:20:29+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/08/27/ultra-framework-orm/</loc>
-    <lastmod>2014-08-27T01:18:16+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/08/26/exploit-afdfde-for-ruby/</loc>
-    <lastmod>2014-08-26T23:17:19+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu/</loc>
-    <lastmod>2014-07-05T20:58:02+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/07/05/cara-install-mybb/</loc>
-    <lastmod>2014-07-05T00:13:21+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/07/04/12-open-source-microblogging-software/</loc>
-    <lastmod>2014-07-04T04:31:25+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/07/03/cara-membuat-plugin-kategori-list-di-sidebar-octopress/</loc>
-    <lastmod>2014-07-03T21:24:46+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/07/03/cara-membuat-komentar-di-octopress-menggunakan-disqus/</loc>
-    <lastmod>2014-07-03T05:22:27+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/07/03/cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu/</loc>
-    <lastmod>2014-07-03T03:21:25+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/07/03/cara-install-slash-upgrade-versi-git-core-terbaru/</loc>
-    <lastmod>2014-07-03T02:51:47+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/07/02/fix-error-generate-font-awesome-on-octopress/</loc>
-    <lastmod>2014-07-02T22:21:00+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/07/02/blogging-menggunakan-octopress-and-github/</loc>
-    <lastmod>2014-07-02T08:06:29+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/07/02/membuat-halaman-baru-dan-menambahkan-menu-navigasi/</loc>
-    <lastmod>2014-07-02T07:50:26+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/07/02/mengenal-perintah-rake-octopress/</loc>
-    <lastmod>2014-07-02T07:24:59+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/07/02/cara-install-octopress/</loc>
-    <lastmod>2014-07-02T07:19:05+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/article/2014/07/02/first-post/</loc>
-    <lastmod>2014-07-02T00:55:05+07:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/blog/archives/</loc>
-    <lastmod>2016-08-18T18:24:08+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/</loc>
-    <lastmod>2016-08-18T18:24:08+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/history/</loc>
-    <lastmod>2016-08-18T18:24:08+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/service/</loc>
-    <lastmod>2016-08-18T18:24:08+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/googlee8260d982013ce83.html</loc>
-    <lastmod>2015-12-25T14:19:48+07:00</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/404.html</loc>
-    <lastmod>2015-12-25T14:19:47+07:00</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/mac/index.html</loc>
-    <lastmod>2015-12-25T14:19:49+07:00</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sundi3yansyah.com/iNdXULwDEdLtIBaXbjj8s7TuH7o.html</loc>
-    <lastmod>2015-12-25T14:19:48+07:00</lastmod>
-    <priority>0.6</priority>
-  </url>
+<url>
+<loc>http://sundi3yansyah.com/article/2015/04/12/github-api-codeigniter-semanticui/</loc>
+<lastmod>2015-04-12T10:27:40+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/12/26/cara-install-ruby-di-fedora/</loc>
+<lastmod>2014-12-26T03:48:32+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/</loc>
+<lastmod>2014-12-22T13:12:28+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/27/cara-install-go-lang-di-linux/</loc>
+<lastmod>2014-11-27T17:19:52+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/27/cara-install-atau-upgrade-python-di-centos/</loc>
+<lastmod>2014-11-27T17:18:37+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/27/cara-mereset-environment-variable-pada-linux/</loc>
+<lastmod>2014-11-27T17:18:05+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/27/cara-menambah-environment-variable-pada-linux/</loc>
+<lastmod>2014-11-27T17:17:52+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/26/cara-install-asciinema-di-linux/</loc>
+<lastmod>2014-11-26T18:52:38+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/25/cara-update-versi-nodejs/</loc>
+<lastmod>2014-11-25T07:27:33+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx/</loc>
+<lastmod>2014-11-25T04:48:12+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/</loc>
+<lastmod>2014-11-25T04:17:41+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/23/singkat-dan-padat-untuk-turunan-unix/</loc>
+<lastmod>2014-11-23T21:33:32+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/23/cara-install-nodejs-di-debian/</loc>
+<lastmod>2014-11-23T17:27:33+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/22/cara-install-cpanel-di-vps-dedicated-servers/</loc>
+<lastmod>2014-11-22T11:20:18+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/22/cara-install-zpanelcp-10-dot-1-1/</loc>
+<lastmod>2014-11-22T11:08:28+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/22/cara-install-youtube-dl/</loc>
+<lastmod>2014-11-22T09:25:12+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext/</loc>
+<lastmod>2014-11-19T14:02:37+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/18/cara-menghapus-repository-di-github/</loc>
+<lastmod>2014-11-18T18:58:04+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/18/cara-convert-ogv-ke-mp4-di-linux/</loc>
+<lastmod>2014-11-18T17:34:27+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/16/perintah-chattr-pada-sistem-linux/</loc>
+<lastmod>2014-11-16T18:08:09+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/16/solusi-pesan-error-the-following-signatures-were-invalid-pada-ubuntu/</loc>
+<lastmod>2014-11-16T18:05:17+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/16/cara-install-radio-di-server-linux/</loc>
+<lastmod>2014-11-16T17:53:24+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/</loc>
+<lastmod>2014-11-14T03:50:42+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/14/cara-install-sqlite-di-linux/</loc>
+<lastmod>2014-11-14T02:37:34+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/11/11/perbaiki-adobe-flash-player-issue-dalam-chromium-di-ubuntu-14-dot-04/</loc>
+<lastmod>2014-11-11T04:41:38+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/10/25/cara-install-nodejs-di-windows/</loc>
+<lastmod>2014-10-25T11:59:26+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/30/crack-sublime-text-3-build-3065/</loc>
+<lastmod>2014-09-30T05:44:13+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/12/ketika-programmer-jatuh-cinta/</loc>
+<lastmod>2014-09-12T05:15:59+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/12/karakter-programmer-berdasarkan-golongan-darah/</loc>
+<lastmod>2014-09-12T05:12:56+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/12/orang-ter-php-di-dunia/</loc>
+<lastmod>2014-09-12T04:45:25+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/12/cara-membuat-custom-404-pages-di-github/</loc>
+<lastmod>2014-09-12T02:55:12+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/12/cara-membuat-halaman-di-github/</loc>
+<lastmod>2014-09-12T00:12:22+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/11/jangan-pakai-linux/</loc>
+<lastmod>2014-09-11T05:00:29+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/11/cara-install-rubygems/</loc>
+<lastmod>2014-09-11T00:24:50+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/10/cara-install-ruby-di-centos/</loc>
+<lastmod>2014-09-10T23:57:17+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/10/cara-konfigurasi-seo-keywords-dan-deskripsi-octopress/</loc>
+<lastmod>2014-09-10T03:49:47+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/10/jangan-ngaku-programmer-atau-hacker-kalau-tidak-mengerti-jekyll-dan-octopress/</loc>
+<lastmod>2014-09-10T01:01:32+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/08/cara-git-set-up-dan-generating-ssh-keys/</loc>
+<lastmod>2014-09-08T00:48:14+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/07/cara-install-nodejs-via-tarball-di-centos-rhel/</loc>
+<lastmod>2014-09-07T07:14:13+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/06/cara-konfigurasi-rss-di-octopress/</loc>
+<lastmod>2014-09-06T21:30:44+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/06/create-sub-domain-for-nginx-aka-virtual-host-by-sundi3yansyah/</loc>
+<lastmod>2014-09-06T19:34:54+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/05/tutorial-menggunakan-dan-upload-project-ke-github-di-windows/</loc>
+<lastmod>2014-09-05T09:09:34+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/05/cara-mudah-mendapatkan-follower-twitter-1k/</loc>
+<lastmod>2014-09-05T06:19:59+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/05/creep3r-exploit-and-vulnerability-search-engine/</loc>
+<lastmod>2014-09-05T06:17:42+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/05/firephp-pada-nginx-502-bad-gateway/</loc>
+<lastmod>2014-09-05T06:03:00+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/05/konfigurasi-gzip-di-nginx/</loc>
+<lastmod>2014-09-05T05:57:40+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/05/cara-menghilangkan-versi-nginx/</loc>
+<lastmod>2014-09-05T05:52:09+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/05/update-versi-lemp-centos-dan-fedora/</loc>
+<lastmod>2014-09-05T05:47:41+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/05/cara-mengatasi-emerg-bind-to-0-dot-0-0-dot-0-80-failed-98-address-already-in-use/</loc>
+<lastmod>2014-09-05T05:40:58+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/05/cara-install-nginx-mysql-php5-di-turunan-debian/</loc>
+<lastmod>2014-09-05T05:31:36+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/05/cara-mengatasi-500-internal-server-error-pada-nginx/</loc>
+<lastmod>2014-09-05T05:27:14+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/05/ecommerce-website-by-gsi-blind-sql-injection-discloure/</loc>
+<lastmod>2014-09-05T05:06:25+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13/</loc>
+<lastmod>2014-09-03T13:53:06+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/02/cara-memasang-octocard-di-web/</loc>
+<lastmod>2014-09-02T23:23:02+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/09/02/cara-membuat-widget-github-menggunakan-jquery-di-octopress/</loc>
+<lastmod>2014-09-02T22:20:35+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/08/30/joomla-com-user-auto-exploit-with-python/</loc>
+<lastmod>2014-08-30T05:55:39+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/08/29/cara-membuat-automatic-page-generator-di-github/</loc>
+<lastmod>2014-08-29T00:51:06+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/08/27/cara-membuat-repository-baru-di-github/</loc>
+<lastmod>2014-08-27T11:29:33+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/08/27/cara-buat-post-di-octopress/</loc>
+<lastmod>2014-08-27T11:28:16+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/08/27/cara-install-package-di-sublimetext/</loc>
+<lastmod>2014-08-27T11:26:46+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/08/27/youtube-cara-install-mybb/</loc>
+<lastmod>2014-08-27T11:24:38+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/08/27/edit-template-mybb-menggunakan-inspect-element-part-1/</loc>
+<lastmod>2014-08-27T11:23:31+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/08/27/guide-sublime-text-part-1-by-dot-sundi3yansyah/</loc>
+<lastmod>2014-08-27T11:20:29+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/08/27/ultra-framework-orm/</loc>
+<lastmod>2014-08-27T01:18:16+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/08/26/exploit-afdfde-for-ruby/</loc>
+<lastmod>2014-08-26T23:17:19+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu/</loc>
+<lastmod>2014-07-05T20:58:02+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/07/05/cara-install-mybb/</loc>
+<lastmod>2014-07-05T00:13:21+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/07/04/12-open-source-microblogging-software/</loc>
+<lastmod>2014-07-04T04:31:25+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/07/03/cara-membuat-plugin-kategori-list-di-sidebar-octopress/</loc>
+<lastmod>2014-07-03T21:24:46+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/07/03/cara-membuat-komentar-di-octopress-menggunakan-disqus/</loc>
+<lastmod>2014-07-03T05:22:27+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/07/03/cara-install-dan-compile-ruby-via-tarball-di-debian-ubuntu/</loc>
+<lastmod>2014-07-03T03:21:25+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/07/03/cara-install-slash-upgrade-versi-git-core-terbaru/</loc>
+<lastmod>2014-07-03T02:51:47+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/07/02/fix-error-generate-font-awesome-on-octopress/</loc>
+<lastmod>2014-07-02T22:21:00+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/07/02/blogging-menggunakan-octopress-and-github/</loc>
+<lastmod>2014-07-02T08:06:29+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/07/02/membuat-halaman-baru-dan-menambahkan-menu-navigasi/</loc>
+<lastmod>2014-07-02T07:50:26+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/07/02/mengenal-perintah-rake-octopress/</loc>
+<lastmod>2014-07-02T07:24:59+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/07/02/cara-install-octopress/</loc>
+<lastmod>2014-07-02T07:19:05+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2014/07/02/first-post/</loc>
+<lastmod>2014-07-02T00:55:05+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/blog/archives/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/story/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/octopress/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/youtube/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/github/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/git/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/gem/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/ruby/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/rails/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/bundler/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/ubuntu/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/english/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/open-source/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/mybb/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/nodejs/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/npm/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/exploit/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/framework/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/sublimetext/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/python/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/nginx/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/mysql/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/php-fpm/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/php/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/twitter/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/linux/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/jekyll/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/centos/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/gems/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/programmer/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/editor/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/crack/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/windows/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/mac/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/sqlite/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/asciinema/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/server/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/control-panel/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/vps/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/dedicated/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/debian/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/go-lang/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/vim/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/fedora/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/codeigniter/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/categories/semantic-ui/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/iNdXULwDEdLtIBaXbjj8s7TuH7o.html</loc>
+<lastmod>2017-02-03T10:00:27+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/mac/index.html</loc>
+<lastmod>2017-02-03T10:00:27+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/404.html</loc>
+<lastmod>2017-02-03T10:00:27+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/googlee8260d982013ce83.html</loc>
+<lastmod>2017-02-03T10:00:27+07:00</lastmod>
+</url>
 </urlset>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Nginx | SunDi3yansyah]]></title>
-  <link href="https://sundi3yansyah.com/article/categories/nginx/atom.xml" rel="self"/>
-  <link href="https://sundi3yansyah.com/"/>
-  <updated>2016-08-18T18:24:08+07:00</updated>
-  <id>https://sundi3yansyah.com/</id>
+  <link href="http://sundi3yansyah.com/article/categories/nginx/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2017-02-03T11:42:46+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Menambah Virtual Hosts Di Nginx]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx/"/>
+    <link href="http://sundi3yansyah.com/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx/"/>
     <updated>2014-11-25T04:48:12+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx</id>
+    <id>http://sundi3yansyah.com/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx</id>
     <content type="html"><![CDATA[<p>Kalau sebelumnya saya sudah menejalaskan tentang <a href="/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/">Cara Install Nginx, MySQL, PHP Di CentOS</a>, sekarang bagaimana jika kita ingin menambahkan domain kita ke server yang pada tempo lalu sudah di install NGINX dan kawan-kawannya? Yah&hellip; tulisan &amp; video di bawah ini yang akan menjawab, ini real saya praktekan langsung di domain saya, namun nama domain tsb adalah nama Nick teman saya <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
 
 <p>Langsung saja ke videonya.</p>
@@ -118,9 +118,9 @@ find . -type f | while read file ; do chmod 644 "$file" ; done
   
   <entry>
     <title type="html"><![CDATA[Cara Install Nginx, MySQL, PHP Di CentOS]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/"/>
+    <link href="http://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/"/>
     <updated>2014-11-25T04:17:41+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos</id>
+    <id>http://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos</id>
     <content type="html"><![CDATA[<p>Pada artikel sebelumnya saya sudah menjelaskan tentang <a href="/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13/">Install LEMP Di CentOS 5-6 Dan Fedora 18-13</a>, namun disini saya akan menjabarkan lebih datail <strong>Cara Install Nginx, MySQL, PHP di CentOS</strong> menggunakan recorder.</p>
 
 <h4>Requirements</h4>
@@ -269,9 +269,9 @@ nano /usr/share/nginx/html/info.php
   
   <entry>
     <title type="html"><![CDATA[Create Sub Domain for NGINX Aka Virtual Host by. SunDi3yansyah]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/09/06/create-sub-domain-for-nginx-aka-virtual-host-by-sundi3yansyah/"/>
+    <link href="http://sundi3yansyah.com/article/2014/09/06/create-sub-domain-for-nginx-aka-virtual-host-by-sundi3yansyah/"/>
     <updated>2014-09-06T19:34:54+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/09/06/create-sub-domain-for-nginx-aka-virtual-host-by-sundi3yansyah</id>
+    <id>http://sundi3yansyah.com/article/2014/09/06/create-sub-domain-for-nginx-aka-virtual-host-by-sundi3yansyah</id>
     <content type="html"><![CDATA[<h4>Create Sub Domain for NGINX aka Virtual Host by. SunDi3yansyah</h4>
 
 <!-- more -->
@@ -310,9 +310,9 @@ nano /usr/share/nginx/html/info.php
   
   <entry>
     <title type="html"><![CDATA[Firephp Pada Nginx 502 Bad Gateway]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/09/05/firephp-pada-nginx-502-bad-gateway/"/>
+    <link href="http://sundi3yansyah.com/article/2014/09/05/firephp-pada-nginx-502-bad-gateway/"/>
     <updated>2014-09-05T06:03:00+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/09/05/firephp-pada-nginx-502-bad-gateway</id>
+    <id>http://sundi3yansyah.com/article/2014/09/05/firephp-pada-nginx-502-bad-gateway</id>
     <content type="html"><![CDATA[<p>Belum lama ini lagi coba pakai Nginx dan PHP-FPM. Tapi sering muncul 502 Bad Gateway, gak selalu sih, kadang muncul sesekali. Pas dicek error log Nginx-nya, “upstream sent to big header while reading response header from upstream..bla bla bla”. To Big ??, ini php-nya yang gak kuat atau si nginx nya ?? Dicari-cari belum ketemu solusinya.</p>
 
 <!-- more -->
@@ -388,9 +388,9 @@ dan coba refresh kembali website . Semoga jalan dan gak ketemu lagi si 502 Bad G
   
   <entry>
     <title type="html"><![CDATA[Konfigurasi GZIP Di Nginx]]></title>
-    <link href="https://sundi3yansyah.com/article/2014/09/05/konfigurasi-gzip-di-nginx/"/>
+    <link href="http://sundi3yansyah.com/article/2014/09/05/konfigurasi-gzip-di-nginx/"/>
     <updated>2014-09-05T05:57:40+07:00</updated>
-    <id>https://sundi3yansyah.com/article/2014/09/05/konfigurasi-gzip-di-nginx</id>
+    <id>http://sundi3yansyah.com/article/2014/09/05/konfigurasi-gzip-di-nginx</id>
     <content type="html"><![CDATA[<p>Apa itu GZIP google-lieng doloe sana</p>
 
 <!-- more -->
