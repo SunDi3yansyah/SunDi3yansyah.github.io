@@ -7,11 +7,11 @@
   <title>{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} - {% endif %}{{ site.title }}</title>
   <meta name="author" content="{{ site.author }}">
 
-{% capture description %}{% if page.description %}{{ page.description }}{% elsif site.description %}{{ site.description }}{% else %}{{ content | raw_content }}{% endif %}{% endcapture %}
-<meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}" />
+  {% capture description %}{% if page.description %}{{ page.description }}{% elsif site.description %}{{ site.description }}{% else %}{{ content | raw_content }}{% endif %}{% endcapture %}
+  <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}" />
 
-{% capture keywords %}{% if page.keywords %}{{ page.keywords }}{% elsif site.keywords %}{{ site.keywords }}{% endif %}{% endcapture %}
-<meta name="keywords" content="{{ keywords | strip_html | condense_spaces }}" />
+  {% capture keywords %}{% if page.keywords %}{{ page.keywords }}{% elsif site.keywords %}{{ site.keywords }}{% endif %}{% endcapture %}
+  <meta name="keywords" content="{{ keywords | strip_html | condense_spaces }}" />
 
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -23,5 +23,18 @@
   <link href="https://avatars1.githubusercontent.com/u/3952281?v=3&s=32" rel="icon">
   <link href="{{ root_url }}/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} - {% endif %}{{ site.title }}">
+  <meta property="og:image" content="https://avatars0.githubusercontent.com/u/3952281?v=3&s=460">
+  <meta property="twitter:site" content="@{{ site.username }}">
+  <meta property="twitter:site:id" content="75438343">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:title" content="{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} - {% endif %}{{ site.title }}">
+  <meta property="twitter:image:src" content="https://avatars0.githubusercontent.com/u/3952281?v=3&s=460">
+  <meta property="article:publisher" content="https://www.facebook.com/{{ site.username }}">
+  <meta property="article:author" content="{{ site.author }}">
+
   {% include custom/head.html %}
 </head>
