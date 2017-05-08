@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/ruby/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2017-02-03T11:42:46+07:00</updated>
+  <updated>2017-05-08T14:40:46+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -12,6 +12,67 @@
   </author>
   <generator uri="https://ruby-lang.org/">Ruby</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Instal Ruby via RVM]]></title>
+    <link href="http://sundi3yansyah.com/article/2017/05/08/cara-instal-ruby-via-rvm/"/>
+    <updated>2017-05-08T14:06:02+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2017/05/08/cara-instal-ruby-via-rvm</id>
+    <content type="html"><![CDATA[<p>Apa itu RVM?</p>
+
+<p><blockquote><p>Ruby Version Manager, often abbreviated as RVM, is a unix-like software platform designed to manage multiple instalations of Ruby on the same device.</p><footer><strong>Ruby Version Manager <a href="https://en.wikipedia.org/wiki/Ruby_Version_Manager">https://en.wikipedia.org/wiki/Ruby_Version_Manager</a></strong></footer></blockquote></p>
+
+<!-- more -->
+
+
+<p>Jadi intinya kita bisa memasang ruby untuk beberapa versi yang kita inginkan.</p>
+
+<p>Tutorial kali ini hanya untuk sistem operasi keturunan dari <strong>Darwin</strong> dan <strong>Linux</strong></p>
+
+<p>Sebelum menginstalnya kita harus instal <strong>mpapis public key</strong></p>
+
+<pre><code>gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+</code></pre>
+
+<p>Instal RVM</p>
+
+<p>Versi Development</p>
+
+<pre><code>\curl -sSL https://get.rvm.io | bash
+</code></pre>
+
+<p>atau Versi Stable</p>
+
+<pre><code>\curl -sSL https://get.rvm.io | bash -s stable --ruby
+</code></pre>
+
+<p>Teman-teman cukup memilih salah satu versi diatas, dan tunggu proses sampai selesai.</p>
+
+<p>Jika sudah selesai, silakan untuk melisting versi yang telah terinstal dengan cara.</p>
+
+<pre><code>rvm list
+</code></pre>
+
+<p><em>Jika belum keluar outputnya maka restartlah terminal teman-teman.</em></p>
+
+<p>Sekarang buka tautan ruby-lang berikut <a href="https://www.ruby-lang.org/en/downloads/">https://www.ruby-lang.org/en/downloads/</a> , apakah versi yang terinstal sudah sama dengan yang tertera dihalaman ruby-lang tersebut?
+Jika belum maka lakukan instal sesuai versi yang berbeda atau yang terbaru, dengan cara berikut ini.</p>
+
+<p>Misalnya ruby versi terbarunya adalah 0.0.1, maka lakukan perintah:</p>
+
+<pre><code>rvm install 0.0.1
+</code></pre>
+
+<p>Tunggu proses sampai selesai, untuk menggunakan ruby yang telah terinstal lakukan perintah</p>
+
+<pre><code>rvm use 0.0.1 --default
+</code></pre>
+
+<p>Nah sampai disini ruby telah terinstal menggunakan RVM. Untuk melihat semua gems yang terinstal secara bawaan lakukan perintah <code>gem list</code>, sedangkan untuk memperbarui versi gemnya lakukan perintah <code>gem update --system</code>, untuk melakukan perbaruan dari daftar gem yang telah terinstal lakukan <code>gem update</code>.</p>
+
+<p>So far, instalasi sudah selesai. Nantikan tutorial-tutorial dari saya selanjutnya seputar Ruby dan beserta frameworknya seperti Rails, Sinatra dan lain-lain.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cara Install Ruby Di Fedora]]></title>
@@ -338,98 +399,6 @@ atau
 <code>
 riby --version
 </code></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cara Membuat Plugin Kategori List Di Sidebar Octopress]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/07/03/cara-membuat-plugin-kategori-list-di-sidebar-octopress/"/>
-    <updated>2014-07-03T21:24:46+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/07/03/cara-membuat-plugin-kategori-list-di-sidebar-octopress</id>
-    <content type="html"><![CDATA[<p>Pertama kita perlu menulis kode ruby ​​sedikit. Menambahkan file ke direktori plugin yang disebut <code>category_list_tag.rb</code>. Plug-in ini akan mengambil data kategori dari situs dan menghasilkan daftar item untuk setiap kategori. Pada line 17 tag <code>category_list</code> tersedia untuk liquid template engine (Lihat code di bawah).</p>
-
-<p>Pertaman buat file baru menggunakan editor kesukaan kalian, dan isi code Ruby nya seperti ini:</p>
-
-<!-- more -->
-
-
-<p><figure class='code'><figcaption><span>root@sundi3yansyah - category_list_tag.rb </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="k">module</span> <span class="nn">Jekyll</span>
-</span><span class='line'>  <span class="k">class</span> <span class="nc">CategoryListTag</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="no">Liquid</span><span class="o">::</span><span class="no">Tag</span>
-</span><span class='line'>    <span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
-</span><span class='line'>      <span class="n">html</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span>
-</span><span class='line'>      <span class="n">categories</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">registers</span><span class="o">[</span><span class="ss">:site</span><span class="o">].</span><span class="n">categories</span><span class="o">.</span><span class="n">keys</span>
-</span><span class='line'>      <span class="n">categories</span><span class="o">.</span><span class="n">sort</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">category</span><span class="o">|</span>
-</span><span class='line'>        <span class="n">posts_in_category</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">registers</span><span class="o">[</span><span class="ss">:site</span><span class="o">].</span><span class="n">categories</span><span class="o">[</span><span class="n">category</span><span class="o">].</span><span class="n">size</span>
-</span><span class='line'>        <span class="n">category_dir</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">registers</span><span class="o">[</span><span class="ss">:site</span><span class="o">].</span><span class="n">config</span><span class="o">[&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">category_dir</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span><span class="o">]</span>
-</span><span class='line'>        <span class="n">category_url</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">category_dir</span><span class="p">,</span> <span class="n">category</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="sr">/_|\P{Word}/</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">-&amp;</span><span class="n">rsquo</span><span class="p">;)</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="sr">/-{2,}/</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">-&amp;</span><span class="n">rsquo</span><span class="p">;)</span><span class="o">.</span><span class="n">downcase</span><span class="p">)</span>
-</span><span class='line'>        <span class="n">html</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">&lt;</span><span class="n">li</span> <span class="n">class</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s1">&#39;http://sundi3yansyah.com/#{category_url}/&#39;</span><span class="o">&gt;</span><span class="c1">#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n&amp;rdquo;</span>
-</span><span class='line'>      <span class="k">end</span>
-</span><span class='line'>      <span class="n">html</span>
-</span><span class='line'>    <span class="k">end</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="sr">&lt;p&gt;Liquid::Template.register_tag(&amp;lsquo;category_list&amp;rsquo;, Jekyll::CategoryListTag)</span>
-</span></code></pre></td></tr></table></div></figure></p>
-
-<p>Sekarang kita perlu membuat daftar kategori (category_list.html) template di dalam direktori <code>source/_includes/asides</code>, dengan menggunakan &ldquo;category_list&rdquo; tag dari plug-in di atas.</p>
-
-<p>Buat file baru di <code>source/_includes/asides</code> dengan nama <code>category_list.html</code> dengan isi code sebagi berikut:</p>
-
-<p><img class="<a" src="href="http://i40.photobucket.com/albums/e228/sundi3yansyah/category_list_zps7b19c7f9.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/category_list_zps7b19c7f9.png</a>&#8221; title=&#8221;category list&#8221; ></p>
-
-<p>Kemudian yang terakhir adalah meng-edit file <code>_config.yml</code> cari kode berikut ini:</p>
-
-<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>default_asides</span></code></pre></td></tr></table></div></figure></p>
-
-<p>Tambahkan <code>asides/category_list.html</code> ke dalam daftar asides-nya, misalnya punya saya seperti ini:</p>
-
-<p><figure class='code'><figcaption><span>root@sundi3yansyah - _config.yml </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">default_asides</span><span class="p-Indicator">:</span> <span class="p-Indicator">[</span><span class="nv">asides/recent_posts.html</span><span class="p-Indicator">,</span> <span class="nv">asides/github.html</span><span class="p-Indicator">,</span> <span class="nv">asides/delicious.html</span><span class="p-Indicator">,</span> <span class="nv">asides/pinboard.html</span><span class="p-Indicator">,</span> <span class="nv">asides/googleplus.html</span><span class="p-Indicator">,</span> <span class="nv">asides/category_list.html</span><span class="p-Indicator">]</span>
-</span></code></pre></td></tr></table></div></figure></p>
-
-<p>Terakhir memperhabarui dengan perintah rake supaya kita bisa melihat hasilnya</p>
-
-<p>Jika di lokal server</p>
-
-<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake preview</span></code></pre></td></tr></table></div></figure></p>
-
-<p>Jika di server seprti GitHub atau yang lainnya.</p>
-
-<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
-</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure></p>
-
-<p>Maka hasilnya seperti ini kalau punya saya:</p>
-
-<p><img class="<a" src="href="http://i40.photobucket.com/albums/e228/sundi3yansyah/category_list_sundi3yansyah-labs_zps22bf2717.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/category_list_sundi3yansyah-labs_zps22bf2717.png</a>&#8221; title=&#8221;sundi3yansyah category list&#8221; ></p>
-
-<p>Good Luck&hellip;! Happy coding, happy hacking, happy homoer :)</p>
 ]]></content>
   </entry>
   

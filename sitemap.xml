@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://sundi3yansyah.com/article/2017/05/08/cara-instal-ruby-via-rvm/</loc>
+<lastmod>2017-05-08T14:06:02+07:00</lastmod>
+</url>
+<url>
 <loc>http://sundi3yansyah.com/article/2015/04/12/github-api-codeigniter-semanticui/</loc>
 <lastmod>2015-04-12T10:27:40+07:00</lastmod>
 </url>
@@ -313,13 +317,16 @@
 <lastmod>2014-07-02T00:55:05+07:00</lastmod>
 </url>
 <url>
-<loc>http://sundi3yansyah.com/</loc>
-</url>
-<url>
 <loc>http://sundi3yansyah.com/blog/archives/</loc>
 </url>
 <url>
+<loc>http://sundi3yansyah.com/</loc>
+</url>
+<url>
 <loc>http://sundi3yansyah.com/story/</loc>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/gallery/</loc>
 </url>
 <url>
 <loc>http://sundi3yansyah.com/article/categories/octopress/</loc>
@@ -454,16 +461,19 @@
 <loc>http://sundi3yansyah.com/article/categories/semantic-ui/</loc>
 </url>
 <url>
-<loc>http://sundi3yansyah.com/iNdXULwDEdLtIBaXbjj8s7TuH7o.html</loc>
-<lastmod>2017-02-03T10:00:27+07:00</lastmod>
+<loc>http://sundi3yansyah.com/article/categories/rvm/</loc>
 </url>
 <url>
-<loc>http://sundi3yansyah.com/mac/index.html</loc>
+<loc>http://sundi3yansyah.com/iNdXULwDEdLtIBaXbjj8s7TuH7o.html</loc>
 <lastmod>2017-02-03T10:00:27+07:00</lastmod>
 </url>
 <url>
 <loc>http://sundi3yansyah.com/404.html</loc>
 <lastmod>2017-02-03T10:00:27+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/mac/index.html</loc>
+<lastmod>2017-03-25T17:14:12+07:00</lastmod>
 </url>
 <url>
 <loc>http://sundi3yansyah.com/googlee8260d982013ce83.html</loc>

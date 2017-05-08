@@ -4,7 +4,7 @@
   <title><![CDATA[SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2017-02-03T11:42:46+07:00</updated>
+  <updated>2017-05-08T14:40:46+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[SunDi3yansyah]]></name>
@@ -12,6 +12,74 @@
   </author>
   <generator uri="https://ruby-lang.org/">Ruby</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Instal Ruby via RVM]]></title>
+    <link href="http://sundi3yansyah.com/article/2017/05/08/cara-instal-ruby-via-rvm/"/>
+    <updated>2017-05-08T14:06:02+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2017/05/08/cara-instal-ruby-via-rvm</id>
+    <content type="html"><![CDATA[<p>Apa itu RVM?</p>
+
+<blockquote><p>Ruby Version Manager, often abbreviated as RVM, is a unix-like software platform designed to manage multiple instalations of Ruby on the same device.</p><footer><strong>Ruby Version Manager</strong> <cite><a href='https://en.wikipedia.org/wiki/Ruby_Version_Manager'>en.wikipedia.org/wiki/&hellip;</a></cite></footer></blockquote>
+
+
+<!-- more -->
+
+
+<p>Jadi intinya kita bisa memasang ruby untuk beberapa versi yang kita inginkan.</p>
+
+<p>Tutorial kali ini hanya untuk sistem operasi keturunan dari <strong>Darwin</strong> dan <strong>Linux</strong></p>
+
+<p>Sebelum menginstalnya kita harus instal <strong>mpapis public key</strong></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Instal RVM</p>
+
+<p>Versi Development</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>\curl -sSL https://get.rvm.io | bash</span></code></pre></td></tr></table></div></figure>
+
+
+<p>atau Versi Stable</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>\curl -sSL https://get.rvm.io | bash -s stable --ruby</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Teman-teman cukup memilih salah satu versi diatas, dan tunggu proses sampai selesai.</p>
+
+<p>Jika sudah selesai, silakan untuk melisting versi yang telah terinstal dengan cara.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm list</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Jika belum keluar outputnya maka restartlah terminal teman-teman.</em></p>
+
+<p>Sekarang buka tautan ruby-lang berikut <a href="https://www.ruby-lang.org/en/downloads/">https://www.ruby-lang.org/en/downloads/</a> , apakah versi yang terinstal sudah sama dengan yang tertera dihalaman ruby-lang tersebut?
+Jika belum maka lakukan instal sesuai versi yang berbeda atau yang terbaru, dengan cara berikut ini.</p>
+
+<p>Misalnya ruby versi terbarunya adalah 0.0.1, maka lakukan perintah:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm install 0.0.1</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Tunggu proses sampai selesai, untuk menggunakan ruby yang telah terinstal lakukan perintah</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm use 0.0.1 --default</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Nah sampai disini ruby telah terinstal menggunakan RVM. Untuk melihat semua gems yang terinstal secara bawaan lakukan perintah <code>gem list</code>, sedangkan untuk memperbarui versi gemnya lakukan perintah <code>gem update --system</code>, untuk melakukan perbaruan dari daftar gem yang telah terinstal lakukan <code>gem update</code>.</p>
+
+<p>So far, instalasi sudah selesai. Nantikan tutorial-tutorial dari saya selanjutnya seputar Ruby dan beserta frameworknya seperti Rails, Sinatra dan lain-lain.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[GitHub API, CodeIgniter, SemanticUI]]></title>
@@ -2146,72 +2214,6 @@ klik button
 </pre></td><td class='code'><pre><code class='sh'><span class='line'>ffmpeg --help
 </span></code></pre></td></tr></table></div></figure>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Perintah “chattr” Pada Sistem Linux]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/11/16/perintah-chattr-pada-sistem-linux/"/>
-    <updated>2014-11-16T18:08:09+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/11/16/perintah-chattr-pada-sistem-linux</id>
-    <content type="html"><![CDATA[<p>Seringkali secara tidak sengaja sebuah file penting terhapus atau terubah. Pada sistem linux tidak ada fasilitas <strong>undelete</strong>, jadi file yang telah terhapus tidak dapat dikembalikan lagi.
-Perintah <strong>chattr</strong> digunakan untuk melindungi sebuah file sehingga tidak akan dapat dihapus ataupun dirubah dengan perintah apapun. Perintah chattr memberikan attribut ” <strong>i</strong> “ pada file yang dilindungi, perintahnya:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>chattr +i namafile
-</span></code></pre></td></tr></table></div></figure>
-
-
-<!-- more -->
-
-
-<p>misalnya:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>chattr +i sundi3yansyah.txt
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Setelah perintah tersebut dijalankan, gunakan perintah <strong>ls -l</strong> untuk melihat hasilnya:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>ls -l
-</span></code></pre></td></tr></table></div></figure>
-
-
-<blockquote><p>-rw-r–r– 1 rody rody 223901 Dec 23 18:30 sundi3yansyah.txt</p></blockquote>
-
-
-<p>Dapat dilihat pada tampilan diatas, ketika perintah <strong>ls -l</strong> dijalankan, ternyata perubahan yang dilakukan tidak tampak, tetapi ketika file tersebut dihapus, maka akan muncul peringatan bahwa file tersebut dilindungi, tampilannya seperti dibawah ini:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>rm sundi3yansyah.txt
-</span></code></pre></td></tr></table></div></figure>
-
-
-<blockquote><p>rm: remove write-protected reguler file ‘sundi3yansyah.txt’? y</p><p>rm: cannot remove ‘sundi3yansyah.txt’ : Operation not permitted</p></blockquote>
-
-
-<p>Jika suatu ketika file ini akan diedit atau dihapus, terlebih dahulu attribut diatas harus dilepas, untuk melepasnya gunakan perintah berikut ini:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>chattr -i namafile
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Setelah attribut tersebut dilepas, maka file tersebut baru akan dapat dihapus.</p>
-
-<p>Jika untuk folder maka:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>chattr +i -R sundi3yansyah
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Coba untuk melakukan uji coba seperti yang di atas.
-Maka semua file yang ada di folder sundi3yansyah tidak dapat di hapus, edit dan lain sebagainya.</p>
-
-<p>Gak PERCAYA? coba aja ndiri&hellip; <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="smiley" alt="smiley">a</p>
 ]]></content>
   </entry>
   
