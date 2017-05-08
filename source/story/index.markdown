@@ -20,7 +20,7 @@ My name is Cahyadi Triyansyah (male). Born in January 3, 1992 in the city Batura
 <ul>
 <li><i class="fa fa-envelope"></i> <a href="mailto:sundi3yansyah@gmail.com">E-Mail</a></li>
 <li><i class="fa fa-github"></i> <a href="https://github.com/SunDi3yansyah" target="_blank">GitHub</a></li>
-<li><i class="fa fa-linkedin-square"></i> <a href="https://www..linkedin.com/in/SunDi3yansyah" target="_blank">LinkedIn</a></li>
+<li><i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/SunDi3yansyah" target="_blank">LinkedIn</a></li>
 <li><i class="fa fa-stack-overflow"></i> <a href="https://stackoverflow.com/users/3757627/sundi3yansyah?tab=profile" target="_blank">StackOverflow</a></li>
 <li><i class="fa fa-sticky-note"></i> <a href="https://stackoverflow.com/story/sundi3yansyah" target="_blank">My Story on StackOverflow</a></li>
 <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/SunDi3yansyah" target="_blank">Twitter</a></li>

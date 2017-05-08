@@ -1,5 +1,5 @@
 function pinboardNS_fetch_script(url) {
-  //document.writeln('<s'+'cript type="text/javascript" src="' + url + '"></s'+'cript>');
+  //document.writeln('<s'+'cript src="' + url + '"></s'+'cript>');
   (function(){
     var pinboardLinkroll = document.createElement('script');
     pinboardLinkroll.type = 'text/javascript';
