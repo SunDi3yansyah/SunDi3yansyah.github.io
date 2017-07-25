@@ -167,7 +167,7 @@ Secara keseluruhan memiliki struktur sebagai berikut:
 Ini adalah untuk versi __Rails 5.1.2__, akan saya jabarkan sedikit tentang fungsi sebagaian file atau folder yang berada di root dokumen Rails tersebut.
 
 - __app__ berisi assets, channels, controllers, helpers, jobs, mailers, models, views. Kalian akan lebih banyak untuk membuat codingan disini.
-- __bin__ berisi script rails yang gunakan untuk menyiapkan, memperbarui, menyebarkan, atau menjalankan aplikasi.
+- __bin__ berisi script rails yang digunakan untuk menyiapkan, memperbarui, menyebarkan, atau menjalankan aplikasi.
 - __config__ berisi konfigurasi aplikasi, database, dan masih banyak lagi.
 - __config.ru__ konfigurasi untuk server berbasis Rack yang digunakan untuk memulai aplikasi.
 - __db__ berisi skema database kalian saat ini, serta migrasi database.
@@ -180,6 +180,6 @@ Ini adalah untuk versi __Rails 5.1.2__, akan saya jabarkan sedikit tentang fungs
 - __README.md__ ini adalah instruksi manual singkat untuk aplikasi kalian.
 - __test__ tes unit, perlengkapan, dan alat uji lainnya.
 - __tmp__ file sementara (seperti cache dan file pid).
-- __vendor__ tempat untuk semua kode pihak ketiga, ini termasuk permata yang telah dipatenkan.
+- __vendor__ tempat untuk semua kode pihak ketiga, ini termasuk gem yang telah dipatenkan.
 - __.gitignore__ file ini memberitahu git file mana yang harus diabaikan.
 
