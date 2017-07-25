@@ -1,0 +1,645 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Cara Install Rails - SunDi3yansyah</title>
+  <meta name="author" content="Cahyadi Triyansyah">
+
+  
+  <meta name="description" content="Cara Install Rails" />
+
+  
+  <meta name="keywords" content="cara install rails, install rails, setup rails, memasang rails" />
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="p:domain_verify" content="cb5b355ce46b25768e693401dafe6b7c"/>
+
+  
+  <link rel="canonical" href="http://sundi3yansyah.com/article/2017/07/25/cara-install-rails">
+  <link href="https://avatars1.githubusercontent.com/u/3952281?v=3&s=32" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="SunDi3yansyah" type="application/atom+xml">
+
+  <meta property="og:url" content="http://sundi3yansyah.com/article/2017/07/25/cara-install-rails">
+  <meta property="og:site_name" content="SunDi3yansyah">
+  <meta property="og:title" content="Cara Install Rails - SunDi3yansyah">
+  <meta property="og:image" content="https://avatars0.githubusercontent.com/u/3952281?v=3&s=460">
+  <meta property="twitter:site" content="@SunDi3yansyah">
+  <meta property="twitter:site:id" content="75438343">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:title" content="Cara Install Rails - SunDi3yansyah">
+  <meta property="twitter:image:src" content="https://avatars0.githubusercontent.com/u/3952281?v=3&s=460">
+  <meta property="article:publisher" content="https://www.facebook.com/SunDi3yansyah">
+  <meta property="article:author" content="Cahyadi Triyansyah">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/fancybox/style.css" rel="stylesheet">
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <span class="usr_bin_ruby">#!/usr/bin/ruby</span>
+  <span class="puts">puts </span><span class="ttk2">&#8220;</span><h1><a href="/">SunDi3yansyah</a></h1><span class="ttk2">&#8221;</span><span class="close_puts">;</span>
+  <i class="fa fa-code"></i>
+  <br>
+  
+  <span class="puts_h2">puts </span><span class="ttk2_h2">&#8220;</span><h2>App Server, Database App, Web App</h2><span class="ttk2_h2">&#8221;</span><span class="close_puts_h2">;</span>
+  
+</hgroup>
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
+  <li><a href="/atom.xml" target="_blank" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+    <li><a href="feed://feeds.feedburner.com/sundi3yansyah" rel="subscribe-email" title="subscribe via email">Email</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:sundi3yansyah.com">
+    <input class="search" type="text" name="q" results="0" placeholder="Search">
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+  <li><a href="/blog/archives"><i class="fa fa-archive"></i> Archives</a></li>
+  <li><a href="/story/"><i class="fa fa-user-circle"></i> Story</a></li>
+</ul>
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h2 class="entry-title">Cara Install Rails</h2>
+    
+    
+      <p class="meta"><i class="fa fa-calendar"></i>
+        
+
+
+
+
+<time class='entry-date' datetime='2017-07-25T14:40:21+07:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>2:40 pm</span></time>
+         | <i class="fa fa-comments-o"></i> <a class="author-ca" href="#disqus_thread" data-disqus-identifier="http://sundi3yansyah.com">Comments</a> | <img alt="Cahyadi Triyansyah" class="author-avatar" data-user="3952281" height="18" src="https://avatars1.githubusercontent.com/u/3952281?v=3&amp;s=36" width="18"> <a class="author-ca" href="https://github.com/SunDi3yansyah" target="_blank">Cahyadi Triyansyah</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h3>Apa itu Rails?</h3>
+
+<blockquote><p>Ruby on Rails, disebut juga Rails, adalah sebuah kerangka kerja aplikasi web sumber terbuka yang berjalan via bahasa pemrograman Ruby. Ia merupakan kerangka kerja full-stack: memampukan pembuatan laman dan aplikasi yang mengumpulkan informasi dari server web, berkomunikasi dengan atau memanggil sebuah kueri dari server web, dan mengolah templat dari sumber. Sebagai hasilnya, Rails menyajikan fitur sistem routing yang independen dari server web.<br/><!-- more --><br/>Ruby on Rails menegaskan penggunaan pola-pola dan prinsip-prinsip rekayasa perangkat lunak terkenal, seperti pola active record, konvensi diatas konfigurasi (CoC), don&#8217;t repeat yourself (DRY), and model-view-controller (MVC).</p><p>- Perancang:  David Heinemeier Hansson<br/>- Pengembang:  Rails Core Team<br/>- Rilis perdana:    13 Desember 2005<br/>- Rilis stabil:    4.0.4 (14 Maret 2014)<br/>- Rilis pratayang:    4.1.0 RC 1 (18 Februari 2014)<br/>- Status pengembangan:    Active<br/>- Bahasa pemograman: Ruby<br/>- Sistem operasi:  Cross-platform<br/>- Lisensi:   Lisensi MIT<br/>- Situs web resmi:  rubyonrails.org</p><footer><strong>Ruby on Rails</strong> <cite><a href='https://id.wikipedia.org/wiki/Ruby_on_Rails'>id.wikipedia.org/wiki/&hellip;</a></cite></footer></blockquote>
+
+
+<p>Sebelumnya kita dapat menjumpai tutorial saya sebelumnya tentang <a href="https://sundi3yansyah.com/article/2017/05/08/cara-instal-ruby-via-rvm/">Cara Instal Ruby via RVM</a>.
+Jadi saya asumsikan perangkat kalian sudah terpasang Ruby entah itu ruby versi berapa tapi saya sarankan gunakan ruby versi terbaru, dan jangan lupa pula sesuaikan dengan sistem operasi yang kalian gunakan.</p>
+
+<h4>1. Cek Ruby Environment</h4>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ruby -v</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>2. Database untuk Rails</h4>
+
+<p>Disini saya juga sudah mengasumsikan pada kalian untuk sudah memasang database yang akan digunakan di Rails nanti, contohnya seperti: SQLite3, MySQL, PostgreSQL dan lain sebagainya sesuaikan dengan kebutuhan database yang kalian gunakan nanti.
+Untuk memverifikasinya dengan perintah sebagai contoh:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># SQLite3
+</span><span class='line'>sqlite3 --version
+</span><span class='line'>
+</span><span class='line'># MySQL
+</span><span class='line'>mysql --version
+</span><span class='line'>
+</span><span class='line'># PostgreSQL
+</span><span class='line'>psql --version</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Dan lain sebagainya, sesuaikan dengan environment database yang kalian gunakan. Jika output dihasilkan maka database sudah siap dipakai.</p>
+
+<h4>3. Instal Rails</h4>
+
+<p>Sekarang kalian sudah bisa instal Rails dengan perintah:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install rails</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Ini membutuhkan waktu yang lama sesuai koneksi internet dan perangkat yang digunakan.</p>
+
+<h4>4. Verifikasi Rails</h4>
+
+<p>Jika langkah diatas sudah kelar maka langkah selanjutnya kalian verifikasi rails yang sudah di instal dengan perintah:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails -v</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Jika output dihasilkan maka Rails sudah siap dipakai.</p>
+
+<h4>5. Siapkan aplikasi baru</h4>
+
+<p>Untuk memulai aplikasi baru Rails yang sudah di-install langsung saja ketikkan perintah:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>aplikasi-pertamaku</strong> adalah nama nama aplikasi atau nama module atau apakah kalian menyebutnya dan <strong>aplikasi-pertamaku</strong> sekaligus nama folder yang akan dihasilkan, maka langkah selanjutnya masuk ke folder aplikasi tersebut:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd aplikasi-pertamaku</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Sebelum kalian menggunakan perintah <code>rails new aplikasi-pertamaku</code> kalian juga dapat menggunakan paramter yang tersedia sebegai berikut:</p>
+
+<figure class='code'><figcaption><span>Parameter &#8216;rails new &#8211;help&#8217; </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Usage:
+</span><span class='line'>  rails new APP_PATH [options]
+</span><span class='line'>
+</span><span class='line'>Options:
+</span><span class='line'>  -r, [--ruby=PATH]                                      # Path to the Ruby binary of your choice
+</span><span class='line'>                                                         # Default: /home/sundi3yansyah/.rvm/rubies/ruby-2.3.3/bin/ruby
+</span><span class='line'>  -m, [--template=TEMPLATE]                              # Path to some application template (can be a filesystem path or URL)
+</span><span class='line'>  -d, [--database=DATABASE]                              # Preconfigure for selected database (options: mysql/oracle/postgresql/sqlite3/frontbase/ibm_db/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc)
+</span><span class='line'>                                                         # Default: sqlite3
+</span><span class='line'>  -j, [--javascript=JAVASCRIPT]                          # Preconfigure for selected JavaScript library
+</span><span class='line'>                                                         # Default: jquery
+</span><span class='line'>      [--skip-gemfile], [--no-skip-gemfile]              # Don't create a Gemfile
+</span><span class='line'>  -B, [--skip-bundle], [--no-skip-bundle]                # Don't run bundle install
+</span><span class='line'>  -G, [--skip-git], [--no-skip-git]                      # Skip .gitignore file
+</span><span class='line'>      [--skip-keeps], [--no-skip-keeps]                  # Skip source control .keep files
+</span><span class='line'>  -M, [--skip-action-mailer], [--no-skip-action-mailer]  # Skip Action Mailer files
+</span><span class='line'>  -O, [--skip-active-record], [--no-skip-active-record]  # Skip Active Record files
+</span><span class='line'>  -P, [--skip-puma], [--no-skip-puma]                    # Skip Puma related files
+</span><span class='line'>  -C, [--skip-action-cable], [--no-skip-action-cable]    # Skip Action Cable files
+</span><span class='line'>  -S, [--skip-sprockets], [--no-skip-sprockets]          # Skip Sprockets files
+</span><span class='line'>      [--skip-spring], [--no-skip-spring]                # Don't install Spring application preloader
+</span><span class='line'>      [--skip-listen], [--no-skip-listen]                # Don't generate configuration that depends on the listen gem
+</span><span class='line'>  -J, [--skip-javascript], [--no-skip-javascript]        # Skip JavaScript files
+</span><span class='line'>      [--skip-turbolinks], [--no-skip-turbolinks]        # Skip turbolinks gem
+</span><span class='line'>  -T, [--skip-test], [--no-skip-test]                    # Skip test files
+</span><span class='line'>      [--dev], [--no-dev]                                # Setup the application with Gemfile pointing to your Rails checkout
+</span><span class='line'>      [--edge], [--no-edge]                              # Setup the application with Gemfile pointing to Rails repository
+</span><span class='line'>      [--rc=RC]                                          # Path to file containing extra configuration options for rails command
+</span><span class='line'>      [--no-rc], [--no-no-rc]                            # Skip loading of extra configuration options from .railsrc file
+</span><span class='line'>      [--api], [--no-api]                                # Preconfigure smaller stack for API only apps
+</span><span class='line'>
+</span><span class='line'>Runtime options:
+</span><span class='line'>  -f, [--force]                    # Overwrite files that already exist
+</span><span class='line'>  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+</span><span class='line'>  -q, [--quiet], [--no-quiet]      # Suppress status output
+</span><span class='line'>  -s, [--skip], [--no-skip]        # Skip files that already exist
+</span><span class='line'>
+</span><span class='line'>Rails options:
+</span><span class='line'>  -h, [--help], [--no-help]        # Show this help message and quit
+</span><span class='line'>  -v, [--version], [--no-version]  # Show Rails version number and quit
+</span><span class='line'>
+</span><span class='line'>Description:
+</span><span class='line'>    The 'rails new' command creates a new Rails application with a default
+</span><span class='line'>    directory structure and configuration at the path you specify.
+</span><span class='line'>
+</span><span class='line'>    You can specify extra command-line arguments to be used every time
+</span><span class='line'>    'rails new' runs in the .railsrc configuration file in your home directory.
+</span><span class='line'>
+</span><span class='line'>    Note that the arguments specified in the .railsrc file don't affect the
+</span><span class='line'>    defaults values shown above in this help message.
+</span><span class='line'>
+</span><span class='line'>Example:
+</span><span class='line'>    rails new ~/Code/Ruby/weblog
+</span><span class='line'>
+</span><span class='line'>    This generates a skeletal Rails installation in ~/Code/Ruby/weblog.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Sebagai contoh aplikasi rails kita ingin menggunakan database MySQL dengan perintah:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku -d mysql</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Contoh lain aplikasi rails kita ingin digunakan untuk membuat API maka perintahnya:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku --api</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Atau kedua-duanya, maka perintahnya:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku -d mysql --api</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>6. Jalankan Aplikasi</h4>
+
+<p>Jika aplikasi rails kalian sudah yakin benar, untuk menjalankannya aplikasi rails yang sudah dihasilkan gunakan perintah:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails server</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Jika output terminal yang dihasilkan sebagai berikut:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>=> Booting Puma
+</span><span class='line'>=> Rails 5.1.2 application starting in development on http://localhost:3000
+</span><span class='line'>=> Run `rails server -h` for more startup options
+</span><span class='line'>Puma starting in single mode...
+</span><span class='line'>* Version 3.9.1 (ruby 2.3.3-p222), codename: Private Caller
+</span><span class='line'>* Min threads: 5, max threads: 5
+</span><span class='line'>* Environment: development
+</span><span class='line'>* Listening on tcp://0.0.0.0:3000
+</span><span class='line'>Use Ctrl-C to stop</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Maka aplikasi berhasil dijalankan, langkah berikutnya kalian bisa kunjungi alamat <a href="http://localhost:3000">http://localhost:3000</a> pada browser favorit kalian.</p>
+
+<p>Jika output pada browser sebagai berikut:</p>
+
+<p><img src="http://guides.rubyonrails.org/images/getting_started/rails_welcome.png" alt="Rails welcome" /></p>
+
+<p>Maka artikel ini berhasil membantu anda untuk meng-instal Rails pada perangkat kalian.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      <div class="blog-feedback">
+    <h2 class="blog-feedback-header with-twitter">
+      Have feedback on this post? Let <a href="https://twitter.com/intent/tweet?text=@SunDi3yansyah%20&amp;related=SunDi3yansyah&amp;url=http://sundi3yansyah.com/article/2017/07/25/cara-install-rails/" target="blank">@SunDi3yansyah</a> know on Twitter.
+    </h2>
+    <p class="blog-feedback-description">
+      Need help or found a bug? <a href="http://sundi3yansyah.com/story/">Contact us</a>.
+    </p>
+</div>
+      
+
+<span class="categories cat-on-article"><h5>Categories : </h5>
+  
+    <a class='category' href='/article/categories/framework/'>framework</a>, <a class='category' href='/article/categories/rails/'>rails</a>, <a class='category' href='/article/categories/ruby/'>ruby</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing" style="padding-top:50px;">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://sundi3yansyah.com/article/2017/07/25/cara-install-rails/" data-via="SunDi3yansyah" data-counturl="http://sundi3yansyah.com/article/2017/07/25/cara-install-rails/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta previous-next">
+      
+        <a class="basic-alignment left" href="/article/2017/05/08/cara-instal-ruby-via-rvm/" title="Previous Post: Cara Instal Ruby via RVM"><i class="fa fa-mail-reply"></i></a>
+      
+      
+        <a class="basic-alignment right" href="/article/2017/07/25/memulai-dengan-rails/" title="Next Post: Memulai dengan Rails"><i class="fa fa-mail-forward"></i></a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h5>Comments</h5>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section class="mt-25 text-center">
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="sundi3yansyah"><a class="LI-simple-link" href='https://id.linkedin.com/in/sundi3yansyah?trk=profile-badge'>Cahyadi Triyansyah</a></div>
+</section>
+<section>
+  <h4><i class="fa fa-book"></i> &nbsp Recent Posts</h4>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/article/2017/07/25/menggunakan-subdomain-untuk-assets-pada-rails/"><i class="fa fa-sign-out"></i> Menggunakan Subdomain Untuk Assets Pada Rails</a>
+      </li>
+    
+      <li class="post">
+        <a href="/article/2017/07/25/memulai-dengan-rails/"><i class="fa fa-sign-out"></i> Memulai Dengan Rails</a>
+      </li>
+    
+      <li class="post">
+        <a href="/article/2017/07/25/cara-install-rails/"><i class="fa fa-sign-out"></i> Cara Install Rails</a>
+      </li>
+    
+      <li class="post">
+        <a href="/article/2017/05/08/cara-instal-ruby-via-rvm/"><i class="fa fa-sign-out"></i> Cara Instal Ruby via RVM</a>
+      </li>
+    
+      <li class="post">
+        <a href="/article/2015/04/12/github-api-codeigniter-semanticui/"><i class="fa fa-sign-out"></i> GitHub API, CodeIgniter, SemanticUI</a>
+      </li>
+    
+      <li class="post">
+        <a href="/article/2014/12/26/cara-install-ruby-di-fedora/"><i class="fa fa-sign-out"></i> Cara Install Ruby Di Fedora</a>
+      </li>
+    
+      <li class="post">
+        <a href="/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/"><i class="fa fa-sign-out"></i> Cara Konfigurasi VIM Menggunakan Tema Dan Plugin</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1><i class="fa fa-github"></i> &nbsp GitHub Repository</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/SunDi3yansyah" class="blue" target="_blank">@SunDi3yansyah</a>
+  <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> GitHub
+  
+</section>
+
+<section>
+  <h4><i class="fa fa-search"></i> &nbsp Find Me</h4>
+  <ul id="find_me">
+    <li><i class="fa fa-envelope"></i> <a href="mailto:sundi3yansyah@gmail.com">E-Mail</a></li>
+    <li><i class="fa fa-github"></i> <a href="https://github.com/SunDi3yansyah" target="_blank">GitHub</a></li>
+    <li><i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/SunDi3yansyah" target="_blank">LinkedIn</a></li>
+    <li><i class="fa fa-stack-overflow"></i> <a href="https://stackoverflow.com/story/sundi3yansyah" target="_blank">Story on StackOverflow</a></li>
+    <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/SunDi3yansyah" target="_blank">Twitter</a></li>
+    <li><i class="fa fa-google-plus"></i> <a href="https://plus.google.com/u/0/+SunDi3yansyahLibrary" target="_blank">Google+</a></li>
+    <li><i class="fa fa-facebook-square"></i> <a href="https://www.facebook.com/SunDi3yansyah" target="_blank">Facebook</a></li>
+    <li><i class="fa fa-youtube-play"></i> <a href="https://asciinema.org/~SunDi3yansyah" target="_blank">Asciinema</a></li>
+  </ul>
+</section>
+<section style="margin-top:15px;">
+<a class="twitter-timeline" href="https://twitter.com/SunDi3yansyah" data-widget-id="486239207929573376">Tweet oleh @SunDi3yansyah</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section><section>
+  <h4 class="cat-h4"><i class='fa fa-bookmark'></i> Categories</h4>
+  <li id="categories">
+    <a href='/article/categories/asciinema/' class='category'>asciinema<span class='number-cat'>3</span></a>
+<a href='/article/categories/bundler/' class='category'>bundler<span class='number-cat'>1</span></a>
+<a href='/article/categories/centos/' class='category'>centos<span class='number-cat'>5</span></a>
+<a href='/article/categories/codeigniter/' class='category'>codeigniter<span class='number-cat'>1</span></a>
+<a href='/article/categories/control-panel/' class='category'>control panel<span class='number-cat'>1</span></a>
+<a href='/article/categories/crack/' class='category'>crack<span class='number-cat'>1</span></a>
+<a href='/article/categories/debian/' class='category'>debian<span class='number-cat'>1</span></a>
+<a href='/article/categories/dedicated/' class='category'>dedicated<span class='number-cat'>1</span></a>
+<a href='/article/categories/editor/' class='category'>editor<span class='number-cat'>3</span></a>
+<a href='/article/categories/english/' class='category'>english<span class='number-cat'>1</span></a>
+<a href='/article/categories/exploit/' class='category'>exploit<span class='number-cat'>4</span></a>
+<a href='/article/categories/fedora/' class='category'>fedora<span class='number-cat'>1</span></a>
+<a href='/article/categories/framework/' class='category'>framework<span class='number-cat'>3</span></a>
+<a href='/article/categories/gem/' class='category'>gem<span class='number-cat'>1</span></a>
+<a href='/article/categories/gems/' class='category'>gems<span class='number-cat'>1</span></a>
+<a href='/article/categories/git/' class='category'>git<span class='number-cat'>3</span></a>
+<a href='/article/categories/github/' class='category'>github<span class='number-cat'>13</span></a>
+<a href='/article/categories/go-lang/' class='category'>go-lang<span class='number-cat'>1</span></a>
+<a href='/article/categories/jekyll/' class='category'>jekyll<span class='number-cat'>2</span></a>
+<a href='/article/categories/linux/' class='category'>linux<span class='number-cat'>12</span></a>
+<a href='/article/categories/mac/' class='category'>mac<span class='number-cat'>1</span></a>
+<a href='/article/categories/mybb/' class='category'>mybb<span class='number-cat'>3</span></a>
+<a href='/article/categories/mysql/' class='category'>mysql<span class='number-cat'>3</span></a>
+<a href='/article/categories/nginx/' class='category'>nginx<span class='number-cat'>11</span></a>
+<a href='/article/categories/nodejs/' class='category'>nodejs<span class='number-cat'>5</span></a>
+<a href='/article/categories/npm/' class='category'>npm<span class='number-cat'>3</span></a>
+<a href='/article/categories/octopress/' class='category'>octopress<span class='number-cat'>12</span></a>
+<a href='/article/categories/open-source/' class='category'>open source<span class='number-cat'>2</span></a>
+<a href='/article/categories/php/' class='category'>php<span class='number-cat'>3</span></a>
+<a href='/article/categories/php-fpm/' class='category'>php-fpm<span class='number-cat'>3</span></a>
+<a href='/article/categories/programmer/' class='category'>programmer<span class='number-cat'>2</span></a>
+<a href='/article/categories/python/' class='category'>python<span class='number-cat'>2</span></a>
+<a href='/article/categories/rails/' class='category'>rails<span class='number-cat'>4</span></a>
+<a href='/article/categories/ruby/' class='category'>ruby<span class='number-cat'>11</span></a>
+<a href='/article/categories/rvm/' class='category'>rvm<span class='number-cat'>1</span></a>
+<a href='/article/categories/semantic-ui/' class='category'>semantic-ui<span class='number-cat'>1</span></a>
+<a href='/article/categories/server/' class='category'>server<span class='number-cat'>2</span></a>
+<a href='/article/categories/sqlite/' class='category'>sqlite<span class='number-cat'>1</span></a>
+<a href='/article/categories/sublimetext/' class='category'>sublimetext<span class='number-cat'>4</span></a>
+<a href='/article/categories/twitter/' class='category'>twitter<span class='number-cat'>1</span></a>
+<a href='/article/categories/ubuntu/' class='category'>ubuntu<span class='number-cat'>5</span></a>
+<a href='/article/categories/vim/' class='category'>vim<span class='number-cat'>1</span></a>
+<a href='/article/categories/vps/' class='category'>vps<span class='number-cat'>2</span></a>
+<a href='/article/categories/windows/' class='category'>windows<span class='number-cat'>2</span></a>
+<a href='/article/categories/youtube/' class='category'>youtube<span class='number-cat'>9</span></a>
+
+  </li>
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2017 Cahyadi Triyansyah -
+  <span class="credit">Framework <a href="http://octopress.org" target="_blank">Octopress</a>, Built with <a href="https://www.ruby-lang.org" target="_blank">Ruby</a> and Deploy on <a href="https://github.com/" target="_blank">GitHub</a>.</span>
+</p>
+
+</footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-54356681-1']);
+    _gaq.push(['_setDomainName','com']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+<script>
+$(document).ready(function() {
+    if (!window.jXHR) {
+        var jxhr = document.createElement('script');
+        jxhr.type = 'text/javascript';
+        jxhr.src = '/javascripts/libs/jXHR.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(jxhr, s);
+    }
+    github.showRepos({
+        user: 'SunDi3yansyah',
+        count: 7,
+        skip_forks: true,
+        target: '#gh_repos'
+    });
+});
+</script>
+<script src="/javascripts/github.js"></script>
+<script>
+var host = "sundi3yansyah.com";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+</script>
+<script src="/javascripts/modernizr-2.0.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+<script src="/javascripts/octo.js"></script>
+<script src="/javascripts/jquery.githubRepoWidget.min.js"></script>
+<script src="/javascripts/instagram.js"></script>
+<script src="/javascripts/fancybox.js"></script>
+
+
+
+<script>
+      var disqus_shortname = 'sundi3yansyahlabs';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://sundi3yansyah.com/article/2017/07/25/cara-install-rails/';
+        var disqus_url = 'http://sundi3yansyah.com/article/2017/07/25/cara-install-rails/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script>
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script>
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

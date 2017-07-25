@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://sundi3yansyah.com/article/2017/07/25/menggunakan-subdomain-untuk-assets-pada-rails/</loc>
+<lastmod>2017-07-25T14:47:25+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2017/07/25/memulai-dengan-rails/</loc>
+<lastmod>2017-07-25T14:43:55+07:00</lastmod>
+</url>
+<url>
+<loc>http://sundi3yansyah.com/article/2017/07/25/cara-install-rails/</loc>
+<lastmod>2017-07-25T14:40:21+07:00</lastmod>
+</url>
+<url>
 <loc>http://sundi3yansyah.com/article/2017/05/08/cara-instal-ruby-via-rvm/</loc>
 <lastmod>2017-05-08T14:06:02+07:00</lastmod>
 </url>

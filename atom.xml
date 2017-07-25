@@ -4,7 +4,7 @@
   <title><![CDATA[SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2017-05-08T15:20:17+07:00</updated>
+  <updated>2017-07-25T21:21:31+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[Cahyadi Triyansyah]]></name>
@@ -12,6 +12,754 @@
   </author>
   <generator uri="https://ruby-lang.org/">Ruby</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Menggunakan Subdomain Untuk Assets Pada Rails]]></title>
+    <link href="http://sundi3yansyah.com/article/2017/07/25/menggunakan-subdomain-untuk-assets-pada-rails/"/>
+    <updated>2017-07-25T14:47:25+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2017/07/25/menggunakan-subdomain-untuk-assets-pada-rails</id>
+    <content type="html"><![CDATA[<p>Disini saya akan mencoba memberikan pengalaman saya bagaimana cara menggunakan subdomain untuk assets pada Rails, saya selalu menggunakan subdomain untuk memisahkan asset file pada aplikasi Rails tentunya untuk production, kebetulan ada beberapa teman saya yang minta panduan gimana sih caranya bikin kaya gitu.</p>
+
+<!-- more -->
+
+
+<p>Loh keuntunganya apa? Sebaiknya kalian cari tau dulu gih&hellip;</p>
+
+<p>Saya enggak tau mau cerita apa lagi ;v langsung ke langkah-langkahnya aja ya.</p>
+
+<p>Asumsikan ini untuk:</p>
+
+<ul>
+<li>Environment production.</li>
+<li>Aplikasi rails yang sudah siap disajikan.</li>
+</ul>
+
+
+<p>Buka file <code>config/environments/production.rb</code> dan cari bagian baris seperti ini:</p>
+
+<figure class='code'><figcaption><span>Editor </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="c1"># config.action_controller.asset_host = &#39;http://assets.example.com&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Rubahlah menjadi seperti ini:</p>
+
+<figure class='code'><figcaption><span>Editor </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">action_controller</span><span class="o">.</span><span class="n">asset_host</span> <span class="o">=</span> <span class="s1">&#39;http://assets.domain.tld&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Tentukan protokol apakah menggunkan SSL atau tidak.</li>
+<li>Tentukan domain TLD dan string subdomain yang digunakan.</li>
+</ul>
+
+
+<p>Jadi jika kalian masih dalam development maka akan tetap menggunakan <a href="http://localhost:port,">http://localhost:port,</a> sedangkan jika sudah dalam production akan menjadi <a href="http://assets.domain.tld">http://assets.domain.tld</a> secara otomatis dengan syarat kalian harus selalu menggunakan helper assets bawaan Rails.</p>
+
+<p>Sebagai contoh untuk memanggil assets CSS menggunakan tag <code>stylesheet_link_tag</code>, memanggil assets JS menggunakan tag <code>javascript_include_tag</code> dan tag-tag asset lainnya. Kalian tidak boleh memanggil alamat assets tanpa menggunakan tag helper bawaan Rails.</p>
+
+<p>Untuk tahap production assets harus di precompile, kan perintahnya seperti ini:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bundle exec rake assets:precompile RAILS_ENV=production</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Atau</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails assets:precompile RAILS_ENV=production</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Nah sampai disini destinasi assets akan berada di <code>public/assets/</code></p>
+
+<p>Tugas kita selanjutnya hanya memindahkan assets tersebut ke document root untuk subdomain yang sudah kita tentukan, dengan perintah:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mv public/assets/ ../assets-domain-tld/ -f</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah bash diatas adalah asumsi jika document root assets setara dengan direktori root rails.
+Untuk codeblock konfigurasi virtual host web server yang kita gunakan adalah statis.</p>
+
+<p>Karena saya sudah terbiasa dengan web server nginx maka saya akan kasih contoh server block sebagai berikut:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class='nginx'><span class='line'><span class="k">server</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kn">listen</span> <span class="mi">80</span><span class="p">;</span>
+</span><span class='line'>  <span class="kn">server_name</span> <span class="s">assets.domain.tld</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kn">add_header</span> <span class="s">X-Frame-Options</span> <span class="s">SAMEORIGIN</span><span class="p">;</span>
+</span><span class='line'>  <span class="kn">add_header</span> <span class="s">X-Content-Type-Options</span> <span class="s">nosniff</span><span class="p">;</span>
+</span><span class='line'>  <span class="kn">add_header</span> <span class="s">X-XSS-Protection</span> <span class="s">&quot;1</span><span class="p">;</span> <span class="kn">mode=block&quot;</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kn">root</span> <span class="s">/path/assets-domain-tld</span><span class="p">;</span>
+</span><span class='line'>  <span class="kn">index</span> <span class="s">index.html</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+</span><span class='line'>      <span class="kn">try_files</span> <span class="nv">$uri</span> <span class="nv">$uri/</span> <span class="p">=</span><span class="mi">404</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kn">location</span> <span class="p">~</span> <span class="sr">\.(ico|css|js|gif|jpe?g|png)(\?[0-9]+)?$</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kn">expires</span> <span class="s">30d</span><span class="p">;</span>
+</span><span class='line'>    <span class="kn">add_header</span> <span class="s">Pragma</span> <span class="s">public</span><span class="p">;</span>
+</span><span class='line'>    <span class="kn">add_header</span> <span class="s">Cache-Control</span> <span class="s">&quot;public&quot;</span><span class="p">;</span>
+</span><span class='line'>    <span class="kn">add_header</span> <span class="s">ETag</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
+</span><span class='line'>    <span class="kn">log_not_found</span> <span class="no">off</span><span class="p">;</span>
+</span><span class='line'>    <span class="kn">access_log</span> <span class="no">off</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kn">location</span> <span class="p">~</span> <span class="sr">\.(eot|ttf|woff|woff2|svg|json)$</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kn">add_header</span> <span class="s">Access-Control-Allow-Origin</span> <span class="s">*</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kn">location</span> <span class="p">~</span> <span class="sr">\.(git|sh)?$</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kn">deny</span> <span class="s">all</span><span class="p">;</span>
+</span><span class='line'>    <span class="kn">log_not_found</span> <span class="no">off</span><span class="p">;</span>
+</span><span class='line'>    <span class="kn">access_log</span> <span class="no">off</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Untuk selanjutnya silakan kalian kembangkan sendiri cara praktis deployement untuk cara-cara diatas, karena saya tidak tau keterbiasaan kalian itu gimana jadi ya silakan gunakan metode kalian sendiri.</p>
+
+<p>Tutorial selanjutnya adalah bagaimana jika untuk file upload dijadikan subdomain juga ^_^</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Memulai Dengan Rails]]></title>
+    <link href="http://sundi3yansyah.com/article/2017/07/25/memulai-dengan-rails/"/>
+    <updated>2017-07-25T14:43:55+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2017/07/25/memulai-dengan-rails</id>
+    <content type="html"><![CDATA[<p>Kemarin kita udah tau bagaimana cara instal Ruby, bagaimana cara instal Rails, nah kali ini bagaimana cara memulai menggunakan Rails intinya artikel ini menganalkan struktur komponen yang ada di Rails.</p>
+
+<!-- more -->
+
+
+<p>Pada dasarnya Rails memiliki struktur kerangka kerja sebagai berikut:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>.
+</span><span class='line'>├── app
+</span><span class='line'>│   ├── assets
+</span><span class='line'>│   │   ├── config
+</span><span class='line'>│   │   ├── images
+</span><span class='line'>│   │   ├── javascripts
+</span><span class='line'>│   │   │   └── channels
+</span><span class='line'>│   │   └── stylesheets
+</span><span class='line'>│   ├── channels
+</span><span class='line'>│   │   └── application_cable
+</span><span class='line'>│   ├── controllers
+</span><span class='line'>│   │   └── concerns
+</span><span class='line'>│   ├── helpers
+</span><span class='line'>│   ├── jobs
+</span><span class='line'>│   ├── mailers
+</span><span class='line'>│   ├── models
+</span><span class='line'>│   │   └── concerns
+</span><span class='line'>│   └── views
+</span><span class='line'>│       └── layouts
+</span><span class='line'>├── bin
+</span><span class='line'>├── config
+</span><span class='line'>│   ├── environments
+</span><span class='line'>│   ├── initializers
+</span><span class='line'>│   └── locales
+</span><span class='line'>├── db
+</span><span class='line'>├── lib
+</span><span class='line'>│   ├── assets
+</span><span class='line'>│   └── tasks
+</span><span class='line'>├── log
+</span><span class='line'>├── public
+</span><span class='line'>├── test
+</span><span class='line'>│   ├── controllers
+</span><span class='line'>│   ├── fixtures
+</span><span class='line'>│   │   └── files
+</span><span class='line'>│   ├── helpers
+</span><span class='line'>│   ├── integration
+</span><span class='line'>│   ├── mailers
+</span><span class='line'>│   ├── models
+</span><span class='line'>│   └── system
+</span><span class='line'>├── tmp
+</span><span class='line'>│   └── cache
+</span><span class='line'>│       └── assets
+</span><span class='line'>└── vendor</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Secara keseluruhan memiliki struktur sebagai berikut:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>.
+</span><span class='line'>├── app
+</span><span class='line'>│   ├── assets
+</span><span class='line'>│   │   ├── config
+</span><span class='line'>│   │   │   └── manifest.js
+</span><span class='line'>│   │   ├── images
+</span><span class='line'>│   │   ├── javascripts
+</span><span class='line'>│   │   │   ├── application.js
+</span><span class='line'>│   │   │   ├── cable.js
+</span><span class='line'>│   │   │   └── channels
+</span><span class='line'>│   │   └── stylesheets
+</span><span class='line'>│   │       └── application.css
+</span><span class='line'>│   ├── channels
+</span><span class='line'>│   │   └── application_cable
+</span><span class='line'>│   │       ├── channel.rb
+</span><span class='line'>│   │       └── connection.rb
+</span><span class='line'>│   ├── controllers
+</span><span class='line'>│   │   ├── application_controller.rb
+</span><span class='line'>│   │   └── concerns
+</span><span class='line'>│   ├── helpers
+</span><span class='line'>│   │   └── application_helper.rb
+</span><span class='line'>│   ├── jobs
+</span><span class='line'>│   │   └── application_job.rb
+</span><span class='line'>│   ├── mailers
+</span><span class='line'>│   │   └── application_mailer.rb
+</span><span class='line'>│   ├── models
+</span><span class='line'>│   │   ├── application_record.rb
+</span><span class='line'>│   │   └── concerns
+</span><span class='line'>│   └── views
+</span><span class='line'>│       └── layouts
+</span><span class='line'>│           ├── application.html.erb
+</span><span class='line'>│           ├── mailer.html.erb
+</span><span class='line'>│           └── mailer.text.erb
+</span><span class='line'>├── bin
+</span><span class='line'>│   ├── bundle
+</span><span class='line'>│   ├── rails
+</span><span class='line'>│   ├── rake
+</span><span class='line'>│   ├── setup
+</span><span class='line'>│   ├── spring
+</span><span class='line'>│   ├── update
+</span><span class='line'>│   └── yarn
+</span><span class='line'>├── config
+</span><span class='line'>│   ├── application.rb
+</span><span class='line'>│   ├── boot.rb
+</span><span class='line'>│   ├── cable.yml
+</span><span class='line'>│   ├── database.yml
+</span><span class='line'>│   ├── environment.rb
+</span><span class='line'>│   ├── environments
+</span><span class='line'>│   │   ├── development.rb
+</span><span class='line'>│   │   ├── production.rb
+</span><span class='line'>│   │   └── test.rb
+</span><span class='line'>│   ├── initializers
+</span><span class='line'>│   │   ├── application_controller_renderer.rb
+</span><span class='line'>│   │   ├── assets.rb
+</span><span class='line'>│   │   ├── backtrace_silencers.rb
+</span><span class='line'>│   │   ├── cookies_serializer.rb
+</span><span class='line'>│   │   ├── filter_parameter_logging.rb
+</span><span class='line'>│   │   ├── inflections.rb
+</span><span class='line'>│   │   ├── mime_types.rb
+</span><span class='line'>│   │   └── wrap_parameters.rb
+</span><span class='line'>│   ├── locales
+</span><span class='line'>│   │   └── en.yml
+</span><span class='line'>│   ├── puma.rb
+</span><span class='line'>│   ├── routes.rb
+</span><span class='line'>│   ├── secrets.yml
+</span><span class='line'>│   └── spring.rb
+</span><span class='line'>├── config.ru
+</span><span class='line'>├── db
+</span><span class='line'>│   └── seeds.rb
+</span><span class='line'>├── Gemfile
+</span><span class='line'>├── Gemfile.lock
+</span><span class='line'>├── lib
+</span><span class='line'>│   ├── assets
+</span><span class='line'>│   └── tasks
+</span><span class='line'>├── log
+</span><span class='line'>├── package.json
+</span><span class='line'>├── public
+</span><span class='line'>│   ├── 404.html
+</span><span class='line'>│   ├── 422.html
+</span><span class='line'>│   ├── 500.html
+</span><span class='line'>│   ├── apple-touch-icon.png
+</span><span class='line'>│   ├── apple-touch-icon-precomposed.png
+</span><span class='line'>│   ├── favicon.ico
+</span><span class='line'>│   └── robots.txt
+</span><span class='line'>├── Rakefile
+</span><span class='line'>├── README.md
+</span><span class='line'>├── test
+</span><span class='line'>│   ├── application_system_test_case.rb
+</span><span class='line'>│   ├── controllers
+</span><span class='line'>│   ├── fixtures
+</span><span class='line'>│   │   └── files
+</span><span class='line'>│   ├── helpers
+</span><span class='line'>│   ├── integration
+</span><span class='line'>│   ├── mailers
+</span><span class='line'>│   ├── models
+</span><span class='line'>│   ├── system
+</span><span class='line'>│   └── test_helper.rb
+</span><span class='line'>├── tmp
+</span><span class='line'>│   └── cache
+</span><span class='line'>│       └── assets
+</span><span class='line'>└── vendor</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Ini adalah untuk versi <strong>Rails 5.1.2</strong>, akan saya jabarkan sedikit tentang fungsi sebagaian file atau folder yang berada di root dokumen Rails tersebut.</p>
+
+<ul>
+<li><strong>app</strong> berisi assets, channels, controllers, helpers, jobs, mailers, models, views. Kalian akan lebih banyak untuk membuat codingan disini.</li>
+<li><strong>bin</strong> berisi script rails yang gunakan untuk menyiapkan, memperbarui, menyebarkan, atau menjalankan aplikasi.</li>
+<li><strong>config</strong> berisi konfigurasi aplikasi, database, dan masih banyak lagi.</li>
+<li><strong>config.ru</strong> konfigurasi untuk server berbasis Rack yang digunakan untuk memulai aplikasi.</li>
+<li><strong>db</strong> berisi skema database kalian saat ini, serta migrasi database.</li>
+<li><strong>Gemfile &amp; Gemfile.lock</strong> file ini memungkinkan kalian menentukan dependensi gem apa yang dibutuhkan untuk aplikasi Rails kalian, file ini digunakan oleh gem Bundler.</li>
+<li><strong>lib</strong> modul yang diperluas untuk aplikasi kalian.</li>
+<li><strong>log</strong> file log aplikasi.</li>
+<li><strong>package.json</strong> file ini untuk kolaborasi dengan nodejs, file ini baru saja di tambahkan di rails versi 5.1 keatas.</li>
+<li><strong>public</strong> satu-satunya folder yang dilihat oleh client. Berisi file statis dan asset yang dikompilasi.</li>
+<li><strong>Rakefile</strong> file ini menempatkan dan memuat perintah yang bisa dijalankan dari command line atau terminal.</li>
+<li><strong>README.md</strong> ini adalah instruksi manual singkat untuk aplikasi kalian.</li>
+<li><strong>test</strong> tes unit, perlengkapan, dan alat uji lainnya.</li>
+<li><strong>tmp</strong> file sementara (seperti cache dan file pid).</li>
+<li><strong>vendor</strong> tempat untuk semua kode pihak ketiga, ini termasuk permata yang telah dipatenkan.</li>
+<li><strong>.gitignore</strong> file ini memberitahu git file mana yang harus diabaikan.</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Rails]]></title>
+    <link href="http://sundi3yansyah.com/article/2017/07/25/cara-install-rails/"/>
+    <updated>2017-07-25T14:40:21+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2017/07/25/cara-install-rails</id>
+    <content type="html"><![CDATA[<h3>Apa itu Rails?</h3>
+
+<blockquote><p>Ruby on Rails, disebut juga Rails, adalah sebuah kerangka kerja aplikasi web sumber terbuka yang berjalan via bahasa pemrograman Ruby. Ia merupakan kerangka kerja full-stack: memampukan pembuatan laman dan aplikasi yang mengumpulkan informasi dari server web, berkomunikasi dengan atau memanggil sebuah kueri dari server web, dan mengolah templat dari sumber. Sebagai hasilnya, Rails menyajikan fitur sistem routing yang independen dari server web.<br/><!-- more --><br/>Ruby on Rails menegaskan penggunaan pola-pola dan prinsip-prinsip rekayasa perangkat lunak terkenal, seperti pola active record, konvensi diatas konfigurasi (CoC), don&#8217;t repeat yourself (DRY), and model-view-controller (MVC).</p><p>- Perancang:  David Heinemeier Hansson<br/>- Pengembang:  Rails Core Team<br/>- Rilis perdana:    13 Desember 2005<br/>- Rilis stabil:    4.0.4 (14 Maret 2014)<br/>- Rilis pratayang:    4.1.0 RC 1 (18 Februari 2014)<br/>- Status pengembangan:    Active<br/>- Bahasa pemograman: Ruby<br/>- Sistem operasi:  Cross-platform<br/>- Lisensi:   Lisensi MIT<br/>- Situs web resmi:  rubyonrails.org</p><footer><strong>Ruby on Rails</strong> <cite><a href='https://id.wikipedia.org/wiki/Ruby_on_Rails'>id.wikipedia.org/wiki/&hellip;</a></cite></footer></blockquote>
+
+
+<p>Sebelumnya kita dapat menjumpai tutorial saya sebelumnya tentang <a href="https://sundi3yansyah.com/article/2017/05/08/cara-instal-ruby-via-rvm/">Cara Instal Ruby via RVM</a>.
+Jadi saya asumsikan perangkat kalian sudah terpasang Ruby entah itu ruby versi berapa tapi saya sarankan gunakan ruby versi terbaru, dan jangan lupa pula sesuaikan dengan sistem operasi yang kalian gunakan.</p>
+
+<h4>1. Cek Ruby Environment</h4>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ruby -v</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>2. Database untuk Rails</h4>
+
+<p>Disini saya juga sudah mengasumsikan pada kalian untuk sudah memasang database yang akan digunakan di Rails nanti, contohnya seperti: SQLite3, MySQL, PostgreSQL dan lain sebagainya sesuaikan dengan kebutuhan database yang kalian gunakan nanti.
+Untuk memverifikasinya dengan perintah sebagai contoh:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># SQLite3
+</span><span class='line'>sqlite3 --version
+</span><span class='line'>
+</span><span class='line'># MySQL
+</span><span class='line'>mysql --version
+</span><span class='line'>
+</span><span class='line'># PostgreSQL
+</span><span class='line'>psql --version</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Dan lain sebagainya, sesuaikan dengan environment database yang kalian gunakan. Jika output dihasilkan maka database sudah siap dipakai.</p>
+
+<h4>3. Instal Rails</h4>
+
+<p>Sekarang kalian sudah bisa instal Rails dengan perintah:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install rails</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Ini membutuhkan waktu yang lama sesuai koneksi internet dan perangkat yang digunakan.</p>
+
+<h4>4. Verifikasi Rails</h4>
+
+<p>Jika langkah diatas sudah kelar maka langkah selanjutnya kalian verifikasi rails yang sudah di instal dengan perintah:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails -v</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Jika output dihasilkan maka Rails sudah siap dipakai.</p>
+
+<h4>5. Siapkan aplikasi baru</h4>
+
+<p>Untuk memulai aplikasi baru Rails yang sudah di-install langsung saja ketikkan perintah:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>aplikasi-pertamaku</strong> adalah nama nama aplikasi atau nama module atau apakah kalian menyebutnya dan <strong>aplikasi-pertamaku</strong> sekaligus nama folder yang akan dihasilkan, maka langkah selanjutnya masuk ke folder aplikasi tersebut:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd aplikasi-pertamaku</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Sebelum kalian menggunakan perintah <code>rails new aplikasi-pertamaku</code> kalian juga dapat menggunakan paramter yang tersedia sebegai berikut:</p>
+
+<figure class='code'><figcaption><span>Parameter &#8216;rails new &#8211;help&#8217; </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Usage:
+</span><span class='line'>  rails new APP_PATH [options]
+</span><span class='line'>
+</span><span class='line'>Options:
+</span><span class='line'>  -r, [--ruby=PATH]                                      # Path to the Ruby binary of your choice
+</span><span class='line'>                                                         # Default: /home/sundi3yansyah/.rvm/rubies/ruby-2.3.3/bin/ruby
+</span><span class='line'>  -m, [--template=TEMPLATE]                              # Path to some application template (can be a filesystem path or URL)
+</span><span class='line'>  -d, [--database=DATABASE]                              # Preconfigure for selected database (options: mysql/oracle/postgresql/sqlite3/frontbase/ibm_db/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc)
+</span><span class='line'>                                                         # Default: sqlite3
+</span><span class='line'>  -j, [--javascript=JAVASCRIPT]                          # Preconfigure for selected JavaScript library
+</span><span class='line'>                                                         # Default: jquery
+</span><span class='line'>      [--skip-gemfile], [--no-skip-gemfile]              # Don't create a Gemfile
+</span><span class='line'>  -B, [--skip-bundle], [--no-skip-bundle]                # Don't run bundle install
+</span><span class='line'>  -G, [--skip-git], [--no-skip-git]                      # Skip .gitignore file
+</span><span class='line'>      [--skip-keeps], [--no-skip-keeps]                  # Skip source control .keep files
+</span><span class='line'>  -M, [--skip-action-mailer], [--no-skip-action-mailer]  # Skip Action Mailer files
+</span><span class='line'>  -O, [--skip-active-record], [--no-skip-active-record]  # Skip Active Record files
+</span><span class='line'>  -P, [--skip-puma], [--no-skip-puma]                    # Skip Puma related files
+</span><span class='line'>  -C, [--skip-action-cable], [--no-skip-action-cable]    # Skip Action Cable files
+</span><span class='line'>  -S, [--skip-sprockets], [--no-skip-sprockets]          # Skip Sprockets files
+</span><span class='line'>      [--skip-spring], [--no-skip-spring]                # Don't install Spring application preloader
+</span><span class='line'>      [--skip-listen], [--no-skip-listen]                # Don't generate configuration that depends on the listen gem
+</span><span class='line'>  -J, [--skip-javascript], [--no-skip-javascript]        # Skip JavaScript files
+</span><span class='line'>      [--skip-turbolinks], [--no-skip-turbolinks]        # Skip turbolinks gem
+</span><span class='line'>  -T, [--skip-test], [--no-skip-test]                    # Skip test files
+</span><span class='line'>      [--dev], [--no-dev]                                # Setup the application with Gemfile pointing to your Rails checkout
+</span><span class='line'>      [--edge], [--no-edge]                              # Setup the application with Gemfile pointing to Rails repository
+</span><span class='line'>      [--rc=RC]                                          # Path to file containing extra configuration options for rails command
+</span><span class='line'>      [--no-rc], [--no-no-rc]                            # Skip loading of extra configuration options from .railsrc file
+</span><span class='line'>      [--api], [--no-api]                                # Preconfigure smaller stack for API only apps
+</span><span class='line'>
+</span><span class='line'>Runtime options:
+</span><span class='line'>  -f, [--force]                    # Overwrite files that already exist
+</span><span class='line'>  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+</span><span class='line'>  -q, [--quiet], [--no-quiet]      # Suppress status output
+</span><span class='line'>  -s, [--skip], [--no-skip]        # Skip files that already exist
+</span><span class='line'>
+</span><span class='line'>Rails options:
+</span><span class='line'>  -h, [--help], [--no-help]        # Show this help message and quit
+</span><span class='line'>  -v, [--version], [--no-version]  # Show Rails version number and quit
+</span><span class='line'>
+</span><span class='line'>Description:
+</span><span class='line'>    The 'rails new' command creates a new Rails application with a default
+</span><span class='line'>    directory structure and configuration at the path you specify.
+</span><span class='line'>
+</span><span class='line'>    You can specify extra command-line arguments to be used every time
+</span><span class='line'>    'rails new' runs in the .railsrc configuration file in your home directory.
+</span><span class='line'>
+</span><span class='line'>    Note that the arguments specified in the .railsrc file don't affect the
+</span><span class='line'>    defaults values shown above in this help message.
+</span><span class='line'>
+</span><span class='line'>Example:
+</span><span class='line'>    rails new ~/Code/Ruby/weblog
+</span><span class='line'>
+</span><span class='line'>    This generates a skeletal Rails installation in ~/Code/Ruby/weblog.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Sebagai contoh aplikasi rails kita ingin menggunakan database MySQL dengan perintah:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku -d mysql</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Contoh lain aplikasi rails kita ingin digunakan untuk membuat API maka perintahnya:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku --api</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Atau kedua-duanya, maka perintahnya:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku -d mysql --api</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>6. Jalankan Aplikasi</h4>
+
+<p>Jika aplikasi rails kalian sudah yakin benar, untuk menjalankannya aplikasi rails yang sudah dihasilkan gunakan perintah:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails server</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Jika output terminal yang dihasilkan sebagai berikut:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>=> Booting Puma
+</span><span class='line'>=> Rails 5.1.2 application starting in development on http://localhost:3000
+</span><span class='line'>=> Run `rails server -h` for more startup options
+</span><span class='line'>Puma starting in single mode...
+</span><span class='line'>* Version 3.9.1 (ruby 2.3.3-p222), codename: Private Caller
+</span><span class='line'>* Min threads: 5, max threads: 5
+</span><span class='line'>* Environment: development
+</span><span class='line'>* Listening on tcp://0.0.0.0:3000
+</span><span class='line'>Use Ctrl-C to stop</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Maka aplikasi berhasil dijalankan, langkah berikutnya kalian bisa kunjungi alamat <a href="http://localhost:3000">http://localhost:3000</a> pada browser favorit kalian.</p>
+
+<p>Jika output pada browser sebagai berikut:</p>
+
+<p><img src="http://guides.rubyonrails.org/images/getting_started/rails_welcome.png" alt="Rails welcome" /></p>
+
+<p>Maka artikel ini berhasil membantu anda untuk meng-instal Rails pada perangkat kalian.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cara Instal Ruby via RVM]]></title>
@@ -2080,140 +2828,6 @@ Demikian tutorial Cara install cPanel di Server (VPS, Dedicated) Linux, semoga b
 
 
 <p>Tapi biasanya sudah terinstall <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" width="20" height="20" title="smile" alt="smile"></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Snippets Untuk Octopress Pada Sublimetext]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext/"/>
-    <updated>2014-11-19T14:02:37+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext</id>
-    <content type="html"><![CDATA[<p>Kali ini saya akan berbagi code snippets untuk kalian yang suka atau menggunakan framework octopress seperti saya ini dan tentunya menggunakan editor Sublimetext.</p>
-
-<p><strong>Syarat</strong></p>
-
-<ul>
-<li>Sudah install Sublime Text pada OS yang kalian gunakan.</li>
-<li>Opsi:
-
-<ul>
-<li>Package Control pada Sublime Text</li>
-<li>GIT</li>
-</ul>
-</li>
-</ul>
-
-
-<p><strong>How to Use?</strong></p>
-
-<!-- more -->
-
-
-<p>Apa sih kegunaan snippet pada sublime?</p>
-
-<p>Gunanya yaitu untuk mempercepat kita dalam mengambil sebuah objek code yang akan kita gunakan, anda dapat menggunakan snippet yang sudah saya buat di repository berikut ini:</p>
-
-<div class="github-widget" data-repo="SunDi3yansyah/octopress-snippets"></div>
-
-
-<p>Cara installlnya cukup mudah:</p>
-
-<h4>Via GIT</h4>
-
-<p>masuk ke folder Install pada Sublime Text dan lakukan command berikut</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>git clone https://github.com/SunDi3yansyah/octopress-snippets
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>Via Download Archive</h4>
-
-<p>Anda cukup download repository saya dan pastekan isi dari snippets repo tersebut ke folder Install pada Sublime Text kalian.</p>
-
-<h4>Via Package Control (Belum tersedia, karena sedang menunggu pull request dari developer sublime text)</h4>
-
-<p><strong>NB:</strong> Berlaku untuk di semua sistem operasi.</p>
-
-<p>Contoh cara menggunakannya silakan langsung saja melihat cuplikan dibawah ini.</p>
-
-<p><img class="center" src="https://lh5.googleusercontent.com/-EKAt4RR4ikU/VGwameH7NiI/AAAAAAAAAMg/TD5NTqMUXDA/s800/sundi3yansyah.gif" title="Snippets untuk Octopress" alt="Snippets untuk Octopress"></p>
-
-<p><img class="center" src="https://lh3.googleusercontent.com/-aPrFJN3BRMc/Vi0XTm9wPiI/AAAAAAAAA7U/62XgdROiDOw/w783-h298-no/Screenshot%2Bfrom%2B2015-10-26%2B00%253A52%253A08.png" title="octopress indonesia" alt="octopress indonesia"></p>
-
-<p>Yuk gabung ke Grup <a href="https://www.facebook.com/groups/OctopressID/">Facebook Octopress Indonesia</a>, kebetulan saya dan temen-teman saya adalah pengurusnya.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cara Menghapus Repository Di GitHub]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/11/18/cara-menghapus-repository-di-github/"/>
-    <updated>2014-11-18T18:58:04+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/11/18/cara-menghapus-repository-di-github</id>
-    <content type="html"><![CDATA[<p>Masuk ke repos nya misalnya:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://github.com/username/username.github.io</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Klik wedget <strong>Settings</strong> disebelah kanan
-atau bisa juga kunjungi dengan URL sbb:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://github.com/username/username.github.io/settings</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Kemudian scroll kebawan sampai di box</p>
-
-<p><strong>Danger Zone</strong> > <strong>Delete this repository</strong>
-klik button
-<strong>Delete this repository</strong> nanti ada pop up baru masukan nama repos nya, misalnya</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>username.github.io</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Atau liat rekaman dibawah ini</p>
-
-<p><img class="center" src="https://lh6.googleusercontent.com/-nc-RsyLjBAY/VGve1G_8h1I/AAAAAAAAAKY/lVT6_ykBrB4/s800/menghapus+repos+github.gif" title="Cara Menghapus Repository di GitHub" alt="Cara Menghapus Repository di GitHub"></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cara Convert .ogv Ke .mp4 Di Linux]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/11/18/cara-convert-ogv-ke-mp4-di-linux/"/>
-    <updated>2014-11-18T17:34:27+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/11/18/cara-convert-ogv-ke-mp4-di-linux</id>
-    <content type="html"><![CDATA[<p>Biasanya saya kalau habis record desktop ubuntu saya hasil jadi adalah dengan format <code>.ogv</code> lantas bagaimana jika saya ingin mengupload video desktop saya terutama tutor-tutor yang ingin saya bagikan ke youtube? nah saya disini menggunakan converter <strong>ffmpeg</strong>. Pertama install dulu packages yang di butuhkan</p>
-
-<!-- more -->
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo [spm] install ffmpeg</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>spm adalah <strong>software package manager</strong></h4>
-
-<p>misalnya debian/ubuntu:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install ffmpeg</span></code></pre></td></tr></table></div></figure>
-
-
-<p>nah cara menggunakannya sebagai berikut:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>ffmpeg -i out.ogv -acodec aac -strict experimental demo.mp4
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Dan bisa juga di jadikan <code>.avi</code> <code>.mkv</code> dan lain sebagainya, tinggal kita baca saja halaman <em>_help</em> pada ffmpeg di terminal</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>ffmpeg --help
-</span></code></pre></td></tr></table></div></figure>
-
 ]]></content>
   </entry>
   

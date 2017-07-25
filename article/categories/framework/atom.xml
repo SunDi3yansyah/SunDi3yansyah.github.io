@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Framework | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/framework/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2017-05-08T15:20:17+07:00</updated>
+  <updated>2017-07-25T21:21:31+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[Cahyadi Triyansyah]]></name>
@@ -12,6 +12,275 @@
   </author>
   <generator uri="https://ruby-lang.org/">Ruby</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Rails]]></title>
+    <link href="http://sundi3yansyah.com/article/2017/07/25/cara-install-rails/"/>
+    <updated>2017-07-25T14:40:21+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2017/07/25/cara-install-rails</id>
+    <content type="html"><![CDATA[<h3>Apa itu Rails?</h3>
+
+<p><blockquote><p>Ruby on Rails, disebut juga Rails, adalah sebuah kerangka kerja aplikasi web sumber terbuka yang berjalan via bahasa pemrograman Ruby. Ia merupakan kerangka kerja full-stack: memampukan pembuatan laman dan aplikasi yang mengumpulkan informasi dari server web, berkomunikasi dengan atau memanggil sebuah kueri dari server web, dan mengolah templat dari sumber. Sebagai hasilnya, Rails menyajikan fitur sistem routing yang independen dari server web.</p></p><p><!-- more --></p><p><br/><p>Ruby on Rails menegaskan penggunaan pola-pola dan prinsip-prinsip rekayasa perangkat lunak terkenal, seperti pola active record, konvensi diatas konfigurasi (CoC), don&rsquo;t repeat yourself (DRY), and model-view-controller (MVC).</p></p><p><ul><br/><li>Perancang:    David Heinemeier Hansson</li><br/><li>Pengembang:   Rails Core Team</li><br/><li>Rilis perdana:    13 Desember 2005</li><br/><li>Rilis stabil: 4.0.4 (14 Maret 2014)</li><br/><li>Rilis pratayang:  4.1.0 RC 1 (18 Februari 2014)</li><br/><li>Status pengembangan:  Active</li><br/><li>Bahasa pemograman:    Ruby</li><br/><li>Sistem operasi:   Cross-platform</li><br/><li>Lisensi:  Lisensi MIT</li><br/><li>Situs web resmi:  rubyonrails.org</p><footer><strong>Ruby on Rails <a href="https://id.wikipedia.org/wiki/Ruby_on_Rails">https://id.wikipedia.org/wiki/Ruby_on_Rails</a></strong></footer></blockquote></li>
+</ul>
+
+
+<p>Sebelumnya kita dapat menjumpai tutorial saya sebelumnya tentang <a href="https://sundi3yansyah.com/article/2017/05/08/cara-instal-ruby-via-rvm/">Cara Instal Ruby via RVM</a>.
+Jadi saya asumsikan perangkat kalian sudah terpasang Ruby entah itu ruby versi berapa tapi saya sarankan gunakan ruby versi terbaru, dan jangan lupa pula sesuaikan dengan sistem operasi yang kalian gunakan.</p>
+
+<h4>1. Cek Ruby Environment</h4>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ruby -v</span></code></pre></td></tr></table></div></figure></p>
+
+<h4>2. Database untuk Rails</h4>
+
+<p>Disini saya juga sudah mengasumsikan pada kalian untuk sudah memasang database yang akan digunakan di Rails nanti, contohnya seperti: SQLite3, MySQL, PostgreSQL dan lain sebagainya sesuaikan dengan kebutuhan database yang kalian gunakan nanti.
+Untuk memverifikasinya dengan perintah sebagai contoh:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>SQLite3&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>sqlite3 &ndash;version&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>MySQL&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>mysql &ndash;version&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>PostgreSQL&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>psql &ndash;version</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Dan lain sebagainya, sesuaikan dengan environment database yang kalian gunakan. Jika output dihasilkan maka database sudah siap dipakai.</p>
+
+<h4>3. Instal Rails</h4>
+
+<p>Sekarang kalian sudah bisa instal Rails dengan perintah:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install rails</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Ini membutuhkan waktu yang lama sesuai koneksi internet dan perangkat yang digunakan.</p>
+
+<h4>4. Verifikasi Rails</h4>
+
+<p>Jika langkah diatas sudah kelar maka langkah selanjutnya kalian verifikasi rails yang sudah di instal dengan perintah:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails -v</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Jika output dihasilkan maka Rails sudah siap dipakai.</p>
+
+<h4>5. Siapkan aplikasi baru</h4>
+
+<p>Untuk memulai aplikasi baru Rails yang sudah di-install langsung saja ketikkan perintah:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku</span></code></pre></td></tr></table></div></figure></p>
+
+<p><strong>aplikasi-pertamaku</strong> adalah nama nama aplikasi atau nama module atau apakah kalian menyebutnya dan <strong>aplikasi-pertamaku</strong> sekaligus nama folder yang akan dihasilkan, maka langkah selanjutnya masuk ke folder aplikasi tersebut:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd aplikasi-pertamaku</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Sebelum kalian menggunakan perintah <code>rails new aplikasi-pertamaku</code> kalian juga dapat menggunakan paramter yang tersedia sebegai berikut:</p>
+
+<p><figure class='code'><figcaption><span>Parameter &lsquo;rails new &ndash;help&rsquo; </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Usage:
+</span><span class='line'>  rails new APP_PATH [options]&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>Options:
+</span><span class='line'>  -r, [&ndash;ruby=PATH]                                      # Path to the Ruby binary of your choice
+</span><span class='line'>                                                         # Default: /home/sundi3yansyah/.rvm/rubies/ruby-2.3.3/bin/ruby
+</span><span class='line'>  -m, [&ndash;template=TEMPLATE]                              # Path to some application template (can be a filesystem path or URL)
+</span><span class='line'>  -d, [&ndash;database=DATABASE]                              # Preconfigure for selected database (options: mysql/oracle/postgresql/sqlite3/frontbase/ibm_db/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc)
+</span><span class='line'>                                                         # Default: sqlite3
+</span><span class='line'>  -j, [&ndash;javascript=JAVASCRIPT]                          # Preconfigure for selected JavaScript library
+</span><span class='line'>                                                         # Default: jquery
+</span><span class='line'>      [&ndash;skip-gemfile], [&ndash;no-skip-gemfile]              # Don&rsquo;t create a Gemfile
+</span><span class='line'>  -B, [&ndash;skip-bundle], [&ndash;no-skip-bundle]                # Don&rsquo;t run bundle install
+</span><span class='line'>  -G, [&ndash;skip-git], [&ndash;no-skip-git]                      # Skip .gitignore file
+</span><span class='line'>      [&ndash;skip-keeps], [&ndash;no-skip-keeps]                  # Skip source control .keep files
+</span><span class='line'>  -M, [&ndash;skip-action-mailer], [&ndash;no-skip-action-mailer]  # Skip Action Mailer files
+</span><span class='line'>  -O, [&ndash;skip-active-record], [&ndash;no-skip-active-record]  # Skip Active Record files
+</span><span class='line'>  -P, [&ndash;skip-puma], [&ndash;no-skip-puma]                    # Skip Puma related files
+</span><span class='line'>  -C, [&ndash;skip-action-cable], [&ndash;no-skip-action-cable]    # Skip Action Cable files
+</span><span class='line'>  -S, [&ndash;skip-sprockets], [&ndash;no-skip-sprockets]          # Skip Sprockets files
+</span><span class='line'>      [&ndash;skip-spring], [&ndash;no-skip-spring]                # Don&rsquo;t install Spring application preloader
+</span><span class='line'>      [&ndash;skip-listen], [&ndash;no-skip-listen]                # Don&rsquo;t generate configuration that depends on the listen gem
+</span><span class='line'>  -J, [&ndash;skip-javascript], [&ndash;no-skip-javascript]        # Skip JavaScript files
+</span><span class='line'>      [&ndash;skip-turbolinks], [&ndash;no-skip-turbolinks]        # Skip turbolinks gem
+</span><span class='line'>  -T, [&ndash;skip-test], [&ndash;no-skip-test]                    # Skip test files
+</span><span class='line'>      [&ndash;dev], [&ndash;no-dev]                                # Setup the application with Gemfile pointing to your Rails checkout
+</span><span class='line'>      [&ndash;edge], [&ndash;no-edge]                              # Setup the application with Gemfile pointing to Rails repository
+</span><span class='line'>      [&ndash;rc=RC]                                          # Path to file containing extra configuration options for rails command
+</span><span class='line'>      [&ndash;no-rc], [&ndash;no-no-rc]                            # Skip loading of extra configuration options from .railsrc file
+</span><span class='line'>      [&ndash;api], [&ndash;no-api]                                # Preconfigure smaller stack for API only apps&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>Runtime options:
+</span><span class='line'>  -f, [&ndash;force]                    # Overwrite files that already exist
+</span><span class='line'>  -p, [&ndash;pretend], [&ndash;no-pretend]  # Run but do not make any changes
+</span><span class='line'>  -q, [&ndash;quiet], [&ndash;no-quiet]      # Suppress status output
+</span><span class='line'>  -s, [&ndash;skip], [&ndash;no-skip]        # Skip files that already exist&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>Rails options:
+</span><span class='line'>  -h, [&ndash;help], [&ndash;no-help]        # Show this help message and quit
+</span><span class='line'>  -v, [&ndash;version], [&ndash;no-version]  # Show Rails version number and quit&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>Description:
+</span><span class='line'>    The &lsquo;rails new&rsquo; command creates a new Rails application with a default
+</span><span class='line'>    directory structure and configuration at the path you specify.&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>You can specify extra command-line arguments to be used every time
+</span><span class='line'>'rails new' runs in the .railsrc configuration file in your home directory.
+</span><span class='line'>
+</span><span class='line'>Note that the arguments specified in the .railsrc file don't affect the
+</span><span class='line'>defaults values shown above in this help message.
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>Example:
+</span><span class='line'>    rails new ~/Code/Ruby/weblog&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>This generates a skeletal Rails installation in ~/Code/Ruby/weblog.
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></p>
+
+<p>Sebagai contoh aplikasi rails kita ingin menggunakan database MySQL dengan perintah:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku -d mysql</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Contoh lain aplikasi rails kita ingin digunakan untuk membuat API maka perintahnya:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku &ndash;api</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Atau kedua-duanya, maka perintahnya:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku -d mysql &ndash;api</span></code></pre></td></tr></table></div></figure></p>
+
+<h4>6. Jalankan Aplikasi</h4>
+
+<p>Jika aplikasi rails kalian sudah yakin benar, untuk menjalankannya aplikasi rails yang sudah dihasilkan gunakan perintah:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails server</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Jika output terminal yang dihasilkan sebagai berikut:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>=> Booting Puma
+</span><span class='line'>=> Rails 5.1.2 application starting in development on &lt;a href="http://localhost:3000">http://localhost:3000&lt;/a>
+</span><span class='line'>=> Run &lt;code>rails server -h&lt;/code> for more startup options
+</span><span class='line'>Puma starting in single mode&hellip;
+</span><span class='line'>* Version 3.9.1 (ruby 2.3.3-p222), codename: Private Caller
+</span><span class='line'>* Min threads: 5, max threads: 5
+</span><span class='line'>* Environment: development
+</span><span class='line'>* Listening on tcp://0.0.0.0:3000
+</span><span class='line'>Use Ctrl-C to stop</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Maka aplikasi berhasil dijalankan, langkah berikutnya kalian bisa kunjungi alamat <a href="http://localhost:3000">http://localhost:3000</a> pada browser favorit kalian.</p>
+
+<p>Jika output pada browser sebagai berikut:</p>
+
+<p><img src="http://guides.rubyonrails.org/images/getting_started/rails_welcome.png" alt="Rails welcome" /></p>
+
+<p>Maka artikel ini berhasil membantu anda untuk meng-instal Rails pada perangkat kalian.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[GitHub API, CodeIgniter, SemanticUI]]></title>
