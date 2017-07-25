@@ -3,7 +3,7 @@ layout: post
 title: "Cara Instal Ruby via RVM"
 date: 2017-05-08 14:06:02 +0700
 comments: true
-categories: [rails, ruby, rvm]
+categories: [ruby, rvm]
 description: cara install ruby via RVM
 keywords: cara install ruby via RVM, cara install ruby, cara install rvm
 ---
