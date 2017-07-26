@@ -101,7 +101,7 @@
 
 <div class="entry-content"><h3>Apa itu Gemfile?</h3>
 
-<p>Gemfile adalah file konfigurasi pada bahasa pemrograman ruby, semua dependensi gem atau kebanyakan orang menyebutnya adalah library atau perpustakaan yang dapat kita temukan di <a href="https://rubygems.org">RubyGems</a>. Siapaun dapat membuat, menambah, mengolah gem milik kalian bahkan kita juga dapat berkolaborasi di hosting git. Sedangkan pengoprasiannya dapat dilakukan dengan <a href="http://bundler.io">bundler</a> dan perintahnya menggunakan <code>bundle</code></p>
+<p>Gemfile adalah file konfigurasi pada bahasa pemrograman ruby, semua dependensi gem atau kebanyakan orang menyebutnya adalah library atau perpustakaan yang dapat kita temukan di <a href="https://rubygems.org">RubyGems</a>. Siapaun dapat membuat, menambah, mengolah gem milik kalian bahkan kita juga dapat berkolaborasi di hosting git. Sedangkan pengoprasiannya dapat dilakukan dengan <a href="http://bundler.io">bundler</a> dan perintahnya menggunakan <code>bundle</code>.</p>
 
 <!-- more -->
 
@@ -527,6 +527,7 @@
   </script>
 
 
+
 <script>
 $(document).ready(function() {
     if (!window.jXHR) {
@@ -544,12 +545,21 @@ $(document).ready(function() {
     });
 });
 </script>
+
 <script src="/javascripts/github.js"></script>
+
 <script>
 var host = "sundi3yansyah.com";
 if ((host == window.location.host) && (window.location.protocol != "https:"))
     window.location.protocol = "https";
 </script>
+
+<script>
+$(document.links).filter(function() {
+    return this.hostname != window.location.hostname;
+}).attr('target', '_blank');
+</script>
+
 <script src="/javascripts/modernizr-2.0.js"></script>
 <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
 <script src="/javascripts/octo.js"></script>

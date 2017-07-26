@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Gemfile | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/gemfile/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2017-07-26T23:04:04+07:00</updated>
+  <updated>2017-07-26T23:25:12+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[Cahyadi Triyansyah]]></name>
@@ -20,7 +20,7 @@
     <id>http://sundi3yansyah.com/article/2017/07/26/perkenalan-dengan-gemfile-pada-ruby-atau-ruby-on-rails</id>
     <content type="html"><![CDATA[<h3>Apa itu Gemfile?</h3>
 
-<p>Gemfile adalah file konfigurasi pada bahasa pemrograman ruby, semua dependensi gem atau kebanyakan orang menyebutnya adalah library atau perpustakaan yang dapat kita temukan di <a href="https://rubygems.org">RubyGems</a>. Siapaun dapat membuat, menambah, mengolah gem milik kalian bahkan kita juga dapat berkolaborasi di hosting git. Sedangkan pengoprasiannya dapat dilakukan dengan <a href="http://bundler.io">bundler</a> dan perintahnya menggunakan <code>bundle</code></p>
+<p>Gemfile adalah file konfigurasi pada bahasa pemrograman ruby, semua dependensi gem atau kebanyakan orang menyebutnya adalah library atau perpustakaan yang dapat kita temukan di <a href="https://rubygems.org">RubyGems</a>. Siapaun dapat membuat, menambah, mengolah gem milik kalian bahkan kita juga dapat berkolaborasi di hosting git. Sedangkan pengoprasiannya dapat dilakukan dengan <a href="http://bundler.io">bundler</a> dan perintahnya menggunakan <code>bundle</code>.</p>
 
 <!-- more -->
 
