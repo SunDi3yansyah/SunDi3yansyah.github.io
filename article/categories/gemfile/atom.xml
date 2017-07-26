@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Gemfile | SunDi3yansyah]]></title>
+  <link href="http://sundi3yansyah.com/article/categories/gemfile/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.com/"/>
+  <updated>2017-07-26T23:04:04+07:00</updated>
+  <id>http://sundi3yansyah.com/</id>
+  <author>
+    <name><![CDATA[Cahyadi Triyansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Perkenalan Dengan Gemfile Pada Ruby Atau Ruby on Rails]]></title>
+    <link href="http://sundi3yansyah.com/article/2017/07/26/perkenalan-dengan-gemfile-pada-ruby-atau-ruby-on-rails/"/>
+    <updated>2017-07-26T17:55:42+07:00</updated>
+    <id>http://sundi3yansyah.com/article/2017/07/26/perkenalan-dengan-gemfile-pada-ruby-atau-ruby-on-rails</id>
+    <content type="html"><![CDATA[<h3>Apa itu Gemfile?</h3>
+
+<p>Gemfile adalah file konfigurasi pada bahasa pemrograman ruby, semua dependensi gem atau kebanyakan orang menyebutnya adalah library atau perpustakaan yang dapat kita temukan di <a href="https://rubygems.org">RubyGems</a>. Siapaun dapat membuat, menambah, mengolah gem milik kalian bahkan kita juga dapat berkolaborasi di hosting git. Sedangkan pengoprasiannya dapat dilakukan dengan <a href="http://bundler.io">bundler</a> dan perintahnya menggunakan <code>bundle</code></p>
+
+<!-- more -->
+
+
+<p>Jika kita ingin membuat sebuah proyek berbasis bahasa ruby biasanya Gemfile akan selalu dipakai mungkin malah harus menggunakannya.</p>
+
+<p>Saya disini tidak akan membahasa tentang cara penggunaan gem pada situs rubygems.org, tapi lebih bagaimana mendefinisikan isi dari Gemfile pada bahasa ruby.</p>
+
+<p>Yang pertama kita harus menginisialiasi sumber atau source alamat yang akan kita gunakan, sebagai contoh:</p>
+
+<p><figure class='code'><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">source</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;https://rubygems.org&quot;</span><span class="o">&gt;</span><span class="ss">https</span><span class="p">:</span><span class="sr">//</span><span class="n">rubygems</span><span class="o">.</span><span class="n">org</span><span class="o">&lt;</span><span class="sr">/a&gt;&amp;rsquo;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Yang selenjutnya adalah bagaimana kita mendefinisikan gem yang akan kita gunakan, jadi misal kita ingin menggunakan gem <a href="https://rubygems.org/gems/json"><strong>json</strong></a> maka:</p>
+
+<p><figure class='code'><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">gem</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">json</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<ul>
+<li><strong>gem</strong> adalah perintah untuk memanggila nama gem tersebut</li>
+<li><strong>json</strong> dari mana? json adalah nama yang diambil dari situs resminya rubygems.org disini <a href="https://rubygems.org/gems/json">https://rubygems.org/gems/json</a></li>
+</ul>
+
+
+<p>Yang selanjutnya adalah bagaimana jika kita ingin mendefinisikan versinya juga? karena setiap gem itu memiliki versi, contoh diatas tidak mendefinisikan versi maka akan menggunakan versi yang terbaru. Jika kita ingin mendefinisikan dengan versinya maka:</p>
+
+<p><figure class='code'><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">gem</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">json</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="mi">2</span><span class="o">.</span><span class="mi">1</span><span class="o">.</span><span class="mi">0</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+atau
+<figure class='code'><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">gem</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">json</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">~&gt;</span> <span class="mi">2</span><span class="o">.</span><span class="mi">1</span><span class="o">.</span><span class="mi">0</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<ul>
+<li><strong>~></strong> adalah operator yang berarti sama dengan</li>
+<li><strong>2.1.0</strong> adalah nilai dari versinya, nilai versi ini harus tersedia di <a href="https://rubygems.org/gems/json,">https://rubygems.org/gems/json,</a> kalian bisa melihat dibagian <strong>VERSION</strong>, saya mengambil versi yang terbaru saat ini.</li>
+</ul>
+
+
+<p>Adapun operator lain yang dapat digunakan:</p>
+
+<ul>
+<li><strong>>=</strong> adalah operator yang berarti lebih besar atau sama dengan</li>
+<li><strong>&lt;</strong> adalah operator yang berarti lebih kecil</li>
+</ul>
+
+
+<p>Yang selanjutnya kita mengenal group, mungkin kalian akan langsung paham jika melihat kode dibawah:</p>
+
+<p><figure class='code'><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">group</span> <span class="ss">:development</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">gem</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">json</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Kita bisa melihat kode diatas bahwa <code>gem 'json'</code> diapit oleh <code>group :development</code>, development yang artinya bahwa gem json hanya dapat digunakan pada environment development.</p>
+
+<p>Selain group <strong>development</strong> kita bisa juga menggunakan group <strong>production</strong> dan <strong>test</strong></p>
+
+<p>Sekarang saya kenalkan Gemfile milik Rails versi 5.1.2</p>
+
+<p><figure class='code'><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">source</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;https://rubygems.org&quot;</span><span class="o">&gt;</span><span class="ss">https</span><span class="p">:</span><span class="sr">//</span><span class="n">rubygems</span><span class="o">.</span><span class="n">org</span><span class="o">&lt;</span><span class="sr">/a&gt;&amp;rsquo;&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="n">git_source</span><span class="p">(</span><span class="ss">:github</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">repo_name</span><span class="o">|</span>
+</span><span class='line'>  <span class="n">repo_name</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="c1">#{repo_name}/#{repo_name}&amp;rdquo; unless repo_name.include?(&amp;ldquo;/&amp;rdquo;)</span>
+</span><span class='line'>  <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;https://github.com/#&quot;</span><span class="o">&gt;</span><span class="ss">https</span><span class="p">:</span><span class="sr">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="c1">#&lt;/a&gt;{repo_name}.git&amp;rdquo;</span>
+</span><span class='line'><span class="k">end</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;h1&gt;Bundle edge Rails instead: gem &amp;lsquo;rails&amp;rsquo;, github: &amp;lsquo;rails/</span><span class="n">rails</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span><span class="o">&lt;</span><span class="sr">/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;gem &amp;lsquo;rails&amp;rsquo;, &amp;lsquo;~&gt; 5.1.2&amp;rsquo;&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="no">Use</span> <span class="n">sqlite3</span> <span class="n">as</span> <span class="n">the</span> <span class="n">database</span> <span class="k">for</span> <span class="no">Active</span> <span class="no">Record</span><span class="o">&lt;</span><span class="sr">/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;gem &amp;lsquo;sqlite3&amp;rsquo;&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="no">Use</span> <span class="no">Puma</span> <span class="n">as</span> <span class="n">the</span> <span class="n">app</span> <span class="n">server</span><span class="o">&lt;</span><span class="sr">/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;gem &amp;lsquo;puma&amp;rsquo;, &amp;lsquo;~&gt; 3.7&amp;rsquo;&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="no">Use</span> <span class="no">SCSS</span> <span class="k">for</span> <span class="n">stylesheets</span><span class="o">&lt;</span><span class="sr">/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;gem &amp;lsquo;sass-rails&amp;rsquo;, &amp;lsquo;~&gt; 5.0&amp;rsquo;&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="no">Use</span> <span class="no">Uglifier</span> <span class="n">as</span> <span class="n">compressor</span> <span class="k">for</span> <span class="no">JavaScript</span> <span class="n">assets</span><span class="o">&lt;</span><span class="sr">/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;gem &amp;lsquo;uglifier&amp;rsquo;, &amp;lsquo;&gt;= 1.3.0&amp;rsquo;&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="no">See</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;https://github.com/rails/execjs#readme&quot;</span><span class="o">&gt;</span><span class="ss">https</span><span class="p">:</span><span class="sr">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">rails</span><span class="o">/</span><span class="n">execjs</span><span class="c1">#readme&lt;/a&gt; for more supported runtimes&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">gem</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">therubyracer</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="ss">platforms</span><span class="p">:</span> <span class="ss">:ruby</span><span class="o">&lt;</span><span class="sr">/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;h1&gt;Use CoffeeScript for .coffee assets and views&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="n">gem</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">coffee</span><span class="o">-</span><span class="n">rails</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="o">~&gt;</span> <span class="mi">4</span><span class="o">.</span><span class="mi">2</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;h1&gt;Turbolinks makes navigating your web application faster. Read more: &lt;a href=&quot;https:/</span><span class="o">/</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">turbolinks</span><span class="o">/</span><span class="n">turbolinks</span><span class="s2">&quot;&gt;https://github.com/turbolinks/turbolinks&lt;/a&gt;&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&lt;p&gt;gem &amp;lsquo;turbolinks&amp;rsquo;, &amp;lsquo;~&gt; 5&amp;rsquo;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&lt;h1&gt;Build JSON APIs with ease. Read more: &lt;a href=&quot;</span><span class="ss">https</span><span class="p">:</span><span class="sr">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">rails</span><span class="o">/</span><span class="n">jbuilder</span><span class="s2">&quot;&gt;https://github.com/rails/jbuilder&lt;/a&gt;&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&lt;p&gt;gem &amp;lsquo;jbuilder&amp;rsquo;, &amp;lsquo;~&gt; 2.5&amp;rsquo;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&lt;h1&gt;Use Redis adapter to run Action Cable in production&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&lt;h1&gt;gem &amp;lsquo;redis&amp;rsquo;, &amp;lsquo;~&gt; 3.0&amp;rsquo;&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&lt;h1&gt;Use ActiveModel has_secure_password&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&lt;h1&gt;gem &amp;lsquo;bcrypt&amp;rsquo;, &amp;lsquo;~&gt; 3.1.7&amp;rsquo;&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&lt;h1&gt;Use Capistrano for deployment&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&lt;h1&gt;gem &amp;lsquo;capistrano-rails&amp;rsquo;, group: :development&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&lt;p&gt;group :development, :test do</span>
+</span><span class='line'><span class="s2">  # Call &amp;lsquo;byebug&amp;rsquo; anywhere in the code to stop execution and get a debugger console</span>
+</span><span class='line'><span class="s2">  gem &amp;lsquo;byebug&amp;rsquo;, platforms: [:mri, :mingw, :x64_mingw]</span>
+</span><span class='line'><span class="s2">  # Adds support for Capybara system testing and selenium driver</span>
+</span><span class='line'><span class="s2">  gem &amp;lsquo;capybara&amp;rsquo;, &amp;lsquo;~&gt; 2.13&amp;rsquo;</span>
+</span><span class='line'><span class="s2">  gem &amp;lsquo;selenium-webdriver&amp;rsquo;</span>
+</span><span class='line'><span class="s2">end&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&lt;p&gt;group :development do</span>
+</span><span class='line'><span class="s2">  # Access an IRB console on exception pages or by using &amp;lt;%= console %&gt; anywhere in the code.</span>
+</span><span class='line'><span class="s2">  gem &amp;lsquo;web-console&amp;rsquo;, &amp;lsquo;&gt;= 3.3.0&amp;rsquo;</span>
+</span><span class='line'><span class="s2">  gem &amp;lsquo;listen&amp;rsquo;, &amp;lsquo;&gt;= 3.0.5&amp;rsquo;, &amp;lsquo;&amp;lt; 3.2&amp;rsquo;</span>
+</span><span class='line'><span class="s2">  # Spring speeds up development by keeping your application running in the background. Read more: &lt;a href=&quot;</span><span class="ss">https</span><span class="p">:</span><span class="sr">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">rails</span><span class="o">/</span><span class="n">spring</span><span class="s2">&quot;&gt;https://github.com/rails/spring&lt;/a&gt;</span>
+</span><span class='line'><span class="s2">  gem &amp;lsquo;spring&amp;rsquo;</span>
+</span><span class='line'><span class="s2">  gem &amp;lsquo;spring-watcher-listen&amp;rsquo;, &amp;lsquo;~&gt; 2.0.0&amp;rsquo;</span>
+</span><span class='line'><span class="s2">end&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&lt;h1&gt;Windows does not include zoneinfo files, so bundle the tzinfo-data gem&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&lt;p&gt;gem &amp;lsquo;tzinfo-data&amp;rsquo;, platforms: [:mingw, :mswin, :x64_mingw, :jruby]</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Maka dari sini saya rasa anda cukup bisa memahaminya, ya kan? Yes&hellip;</p>
+
+<p>Namun kita lihat disana ada <strong>platforms</strong> yang belum kita definisikan, kita ambil kutipan kode diatas:</p>
+
+<p><figure class='code'><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">group</span> <span class="ss">:development</span><span class="p">,</span> <span class="ss">:test</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">gem</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">byebug</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="ss">platforms</span><span class="p">:</span> <span class="o">[</span><span class="ss">:mri</span><span class="p">,</span> <span class="ss">:mingw</span><span class="p">,</span> <span class="ss">:x64_mingw</span><span class="o">]</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Gem <strong>byebug</strong> akan digunakan oleh nilai array yang ada didalam <strong>platforms</strong>.</p>
+
+<p>Dan satu lagi, dari kutipan kode dibawah ini:</p>
+
+<p><figure class='code'><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="n">git_source</span><span class="p">(</span><span class="ss">:github</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">repo_name</span><span class="o">|</span>
+</span><span class='line'>  <span class="n">repo_name</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="c1">#{repo_name}/#{repo_name}&amp;rdquo; unless repo_name.include?(&amp;ldquo;/&amp;rdquo;)</span>
+</span><span class='line'>  <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;https://github.com/#&quot;</span><span class="o">&gt;</span><span class="ss">https</span><span class="p">:</span><span class="sr">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="c1">#&lt;/a&gt;{repo_name}.git&amp;rdquo;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Bahwa source dapat diambil dari hosting git langsung yaitu GitHub. Revisi kode pada Gemfile ini baru muncul di Rails versi 5 keatas.</p>
+
+<p>Sebenarnya masih ada beberapa fungsi yang bisa digunakan di Gemfile ini, tapi saya rasa bacaan ini cukup sekian dulu lah ya ^_^, nantikan bacaan saya selanjutnya tentang Ruby / Ruby on Rails ataupun pengetahuan lainnya.</p>
+]]></content>
+  </entry>
+  
+</feed>

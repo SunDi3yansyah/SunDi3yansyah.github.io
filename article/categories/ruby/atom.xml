@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | SunDi3yansyah]]></title>
   <link href="http://sundi3yansyah.com/article/categories/ruby/atom.xml" rel="self"/>
   <link href="http://sundi3yansyah.com/"/>
-  <updated>2017-07-25T22:21:17+07:00</updated>
+  <updated>2017-07-26T23:04:04+07:00</updated>
   <id>http://sundi3yansyah.com/</id>
   <author>
     <name><![CDATA[Cahyadi Triyansyah]]></name>
@@ -174,7 +174,7 @@ Untuk codeblock konfigurasi virtual host web server yang kita gunakan adalah sta
     <link href="http://sundi3yansyah.com/article/2017/07/25/memulai-dengan-rails/"/>
     <updated>2017-07-25T14:43:55+07:00</updated>
     <id>http://sundi3yansyah.com/article/2017/07/25/memulai-dengan-rails</id>
-    <content type="html"><![CDATA[<p>Kemarin kita udah tau bagaimana cara instal Ruby, bagaimana cara instal Rails, nah kali ini bagaimana cara memulai menggunakan Rails intinya artikel ini menganalkan struktur komponen yang ada di Rails.</p>
+    <content type="html"><![CDATA[<p>Sebelumnya kita udah tau bagaimana cara instal Ruby, bagaimana cara instal Rails, nah kali ini bagaimana cara memulai menggunakan Rails intinya artikel ini menganalkan struktur komponen yang ada di Rails.</p>
 
 <!-- more -->
 
@@ -582,13 +582,7 @@ Untuk memverifikasinya dengan perintah sebagai contoh:</p>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku</span></code></pre></td></tr></table></div></figure></p>
 
-<p><strong>aplikasi-pertamaku</strong> adalah nama nama aplikasi atau nama module atau apakah kalian menyebutnya dan <strong>aplikasi-pertamaku</strong> sekaligus nama folder yang akan dihasilkan, maka langkah selanjutnya masuk ke folder aplikasi tersebut:</p>
-
-<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cd aplikasi-pertamaku</span></code></pre></td></tr></table></div></figure></p>
-
-<p>Sebelum kalian menggunakan perintah <code>rails new aplikasi-pertamaku</code> kalian juga dapat menggunakan paramter yang tersedia sebegai berikut:</p>
+<p>Sebelum kalian menggunakan perintah <code>rails new aplikasi-pertamaku</code> kalian juga dapat menggunakan parameter yang tersedia sebegai berikut:</p>
 
 <p><figure class='code'><figcaption><span>Parameter &lsquo;rails new &ndash;help&rsquo; </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -728,6 +722,12 @@ Untuk memverifikasinya dengan perintah sebagai contoh:</p>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku -d mysql &ndash;api</span></code></pre></td></tr></table></div></figure></p>
 
+<p><strong>aplikasi-pertamaku</strong> adalah nama aplikasi atau nama module atau apakah kalian menyebutnya dan <strong>aplikasi-pertamaku</strong> sekaligus nama folder yang akan dihasilkan, maka langkah selanjutnya masuk ke folder aplikasi tersebut:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd aplikasi-pertamaku</span></code></pre></td></tr></table></div></figure></p>
+
 <h4>6. Jalankan Aplikasi</h4>
 
 <p>Jika aplikasi rails kalian sudah yakin benar, untuk menjalankannya aplikasi rails yang sudah dihasilkan gunakan perintah:</p>
@@ -736,7 +736,7 @@ Untuk memverifikasinya dengan perintah sebagai contoh:</p>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>rails server</span></code></pre></td></tr></table></div></figure></p>
 
-<p>Jika output terminal yang dihasilkan sebagai berikut:</p>
+<p>Jika output terminal yang dihasilkan kurang lebih sebagai berikut:</p>
 
 <p><figure class='code'><figcaption><span>Terminal </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
