@@ -8,7 +8,7 @@ description: Memulai dengan Rails
 keywords: Memulai dengan Rails
 ---
 
-Kemarin kita udah tau bagaimana cara instal Ruby, bagaimana cara instal Rails, nah kali ini bagaimana cara memulai menggunakan Rails intinya artikel ini menganalkan struktur komponen yang ada di Rails.
+Sebelumnya kita udah tau bagaimana cara instal Ruby, bagaimana cara instal Rails, nah kali ini bagaimana cara memulai menggunakan Rails intinya artikel ini menganalkan struktur komponen yang ada di Rails.
 <!-- more -->
 Pada dasarnya Rails memiliki struktur kerangka kerja sebagai berikut:
 

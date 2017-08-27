@@ -83,13 +83,7 @@ Untuk memulai aplikasi baru Rails yang sudah di-install langsung saja ketikkan p
 rails new aplikasi-pertamaku
 {% endcodeblock %}
 
-__aplikasi-pertamaku__ adalah nama nama aplikasi atau nama module atau apakah kalian menyebutnya dan __aplikasi-pertamaku__ sekaligus nama folder yang akan dihasilkan, maka langkah selanjutnya masuk ke folder aplikasi tersebut:
-
-{% codeblock Terminal %}
-cd aplikasi-pertamaku
-{% endcodeblock %}
-
-Sebelum kalian menggunakan perintah `rails new aplikasi-pertamaku` kalian juga dapat menggunakan paramter yang tersedia sebegai berikut:
+Sebelum kalian menggunakan perintah `rails new aplikasi-pertamaku` kalian juga dapat menggunakan parameter yang tersedia sebegai berikut:
 
 {% codeblock Parameter 'rails new --help' %}
 Usage:
@@ -167,6 +161,12 @@ Atau kedua-duanya, maka perintahnya:
 rails new aplikasi-pertamaku -d mysql --api
 {% endcodeblock %}
 
+__aplikasi-pertamaku__ adalah nama aplikasi atau nama module atau apakah kalian menyebutnya dan __aplikasi-pertamaku__ sekaligus nama folder yang akan dihasilkan, maka langkah selanjutnya masuk ke folder aplikasi tersebut:
+
+{% codeblock Terminal %}
+cd aplikasi-pertamaku
+{% endcodeblock %}
+
 #### 6. Jalankan Aplikasi
 
 Jika aplikasi rails kalian sudah yakin benar, untuk menjalankannya aplikasi rails yang sudah dihasilkan gunakan perintah:
@@ -175,7 +175,7 @@ Jika aplikasi rails kalian sudah yakin benar, untuk menjalankannya aplikasi rail
 rails server
 {% endcodeblock %}
 
-Jika output terminal yang dihasilkan sebagai berikut:
+Jika output terminal yang dihasilkan kurang lebih sebagai berikut:
 
 {% codeblock Terminal %}
 => Booting Puma
