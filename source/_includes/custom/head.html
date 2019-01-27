@@ -9,21 +9,25 @@
 {% include google_analytics.html %}
 
 <script>
-$(document).ready(function() {
-    if (!window.jXHR) {
-        var jxhr = document.createElement('script');
-        jxhr.type = 'text/javascript';
-        jxhr.src = '{{ root_url}}/javascripts/libs/jXHR.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(jxhr, s);
-    }
-    github.showRepos({
-        user: '{{site.github_user}}',
-        count: {{site.github_repo_count}},
-        skip_forks: {{site.github_skip_forks}},
-        target: '#gh_repos'
+var ready = function() {
+    $(document).ready(function() {
+        if (!window.jXHR) {
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '{{ root_url}}/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+        github.showRepos({
+            user: '{{site.github_user}}',
+            count: {{site.github_repo_count}},
+            skip_forks: {{site.github_skip_forks}},
+            target: '#gh_repos'
+        });
     });
-});
+}
+
+jQuery(document).on("turbolinks:load", ready);
 </script>
 
 <script src="{{ root_url }}/javascripts/github.js"></script>

@@ -55,7 +55,14 @@ titlecase: true       # Converts page and post titles to titlecase
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [custom/asides/about.html, asides/recent_posts.html, asides/github.html, asides/find_me.html, asides/twitter_wjs.html, asides/category_list.html]
+default_asides: [
+  custom/asides/about.html,
+  asides/recent_posts.html,
+  asides/github.html,
+  asides/find_me.html,
+  # asides/twitter_wjs.html,
+  asides/category_list.html
+]
 # asides/google_adsense.html, asides/googleplus.html, asides/twitter.html, asides/delicious.html, asides/pinboard.html, asides/octocard.html
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
