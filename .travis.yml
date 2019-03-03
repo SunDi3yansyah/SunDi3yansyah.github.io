@@ -1,5 +1,24 @@
+sudo: false
 language: ruby
 rvm:
-- 2.0.0
-- 1.9.3
-script: bundle exec rake install; bundle exec rake generate
+  - 2.4.5
+  - 2.5.3
+  - 2.6.1
+  - ruby-head
+branches:
+  only:
+    - source
+cache:
+  bundler: true
+  directories:
+    - vendor/bundle
+    - $HOME/.rvm
+install:
+  - travis_retry gem update --system
+  - travis_retry gem install bundler
+  - travis_retry bundle
+  - rm Gemfile.lock
+  - bundle exec rake install
+  - bundle exec rake generate
+notifications:
+  email: false
