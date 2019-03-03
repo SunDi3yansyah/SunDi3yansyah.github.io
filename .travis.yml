@@ -18,7 +18,6 @@ install:
   - travis_retry gem install bundler
   - travis_retry bundle
   - rm Gemfile.lock
-  - bundle exec rake install
   - bundle exec rake generate
 notifications:
   email: false
