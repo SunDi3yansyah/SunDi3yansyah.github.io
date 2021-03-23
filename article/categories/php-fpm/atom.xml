@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Php-fpm | Cahyadi Triyansyah (SunDi3yansyah)]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/php-fpm/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2020-03-15T21:07:24+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="http://sundi3yansyah.github.io/article/categories/php-fpm/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2021-03-23T20:42:20+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
   <author>
     <name><![CDATA[Cahyadi Triyansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install Nginx, MySQL, PHP Di CentOS]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/"/>
     <updated>2014-11-25T04:17:41+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/11/25/cara-install-nginx-mysql-php-di-centos</id>
+    <id>http://sundi3yansyah.github.io/article/2014/11/25/cara-install-nginx-mysql-php-di-centos</id>
     <content type="html"><![CDATA[<p>Pada artikel sebelumnya saya sudah menjelaskan tentang <a href="/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13/">Install LEMP Di CentOS 5-6 Dan Fedora 18-13</a>, namun disini saya akan menjabarkan lebih datail <strong>Cara Install Nginx, MySQL, PHP di CentOS</strong> menggunakan recorder.</p>
 
 <h4>Requirements</h4>
@@ -166,9 +166,9 @@ nano /usr/share/nginx/html/info.php
   
   <entry>
     <title type="html"><![CDATA[Update Versi LEMP CentOS Dan Fedora]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/09/05/update-versi-lemp-centos-dan-fedora/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/09/05/update-versi-lemp-centos-dan-fedora/"/>
     <updated>2014-09-05T05:47:41+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/09/05/update-versi-lemp-centos-dan-fedora</id>
+    <id>http://sundi3yansyah.github.io/article/2014/09/05/update-versi-lemp-centos-dan-fedora</id>
     <content type="html"><![CDATA[<h4>update remi: nginx mysql mysql-server php php-common php-fpm <!-- more --></h4>
 
 <pre><code>yum --enablerepo=remi,remi-test update nginx mysql mysql-server php php-common php-fpm
@@ -210,7 +210,7 @@ enabled=1
 <code>
 y
 </code>
-Mudah bukan? <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a</p>
+Mudah bukan? {% img <a href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png</a> 20 20 &lsquo;smiley&rsquo; &lsquo;smiley&rsquo; %}a</p>
 
 <p>semoga berhasil&hellip;</p>
 ]]></content>
@@ -218,9 +218,9 @@ Mudah bukan? <img class="<a" src="href="https://assets-cdn.github.com/images/ico
   
   <entry>
     <title type="html"><![CDATA[Install LEMP Di CentOS 5-6 Dan Fedora 18-13]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13/"/>
     <updated>2014-09-03T13:53:06+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13</id>
+    <id>http://sundi3yansyah.github.io/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13</id>
     <content type="html"><![CDATA[<p>Apa itu LEMP bukan Lem yang buat nempelin kertas itu
 LEMP itu singkatan dari Linux, EngineX, MySQL, PHP&hellip; Orang-orang senior menyebutnya dengan LEMP Hmmm&hellip; terus Nginx itu apa? Yah gimana ya saya jelasiinya susah banget, mending googling dulu deh asumsikan kita udah ngerti LEMP disini saya menjelaskan untuk System Opreasi di CentOS/RHEL dan Fedora simak aja nanti repository nya untuk masing-masing versi</p>
 
@@ -308,31 +308,23 @@ nano /etc/yum.repos.d/nginx.repo
 
 <h6>Isinya seperti ini untuk RHEL 6.3/6.2/6.1/6/5.8</h6>
 
-<p><figure class='code'><figcaption><span>nginx </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>[nginx]
-</span><span class='line'>name=nginx repo
-</span><span class='line'>baseurl=&lt;a href="http://nginx.org/packages/rhel/$releasever/$basearch/">http://nginx.org/packages/rhel/$releasever/$basearch/&lt;/a>
-</span><span class='line'>gpgcheck=0
-</span><span class='line'>enabled=1</span></code></pre></td></tr></table></div></figure></p>
+<p>{% codeblock nginx %}
+[nginx]
+name=nginx repo
+baseurl=<a href="http://nginx.org/packages/rhel/$releasever/$basearch/">http://nginx.org/packages/rhel/$releasever/$basearch/</a>
+gpgcheck=0
+enabled=1
+{% endcodeblock %}</p>
 
 <h6>Isinya seperti ini untuk CentOS 6.3/6.2/6.1/6/5.8</h6>
 
-<p><figure class='code'><figcaption><span>nginx </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>[nginx]
-</span><span class='line'>name=nginx repo
-</span><span class='line'>baseurl=&lt;a href="http://nginx.org/packages/centos/$releasever/$basearch/">http://nginx.org/packages/centos/$releasever/$basearch/&lt;/a>
-</span><span class='line'>gpgcheck=0
-</span><span class='line'>enabled=1</span></code></pre></td></tr></table></div></figure></p>
+<p>{% codeblock nginx %}
+[nginx]
+name=nginx repo
+baseurl=<a href="http://nginx.org/packages/centos/$releasever/$basearch/">http://nginx.org/packages/centos/$releasever/$basearch/</a>
+gpgcheck=0
+enabled=1
+{% endcodeblock %}</p>
 
 <h5>Install Ngnix, MySQL 5.5.29, PHP 5.4.11 &amp; PHP-FPM</h5>
 
@@ -460,45 +452,27 @@ include /etc/nginx/conf.d/*.conf;
 <code>sh
 nano /etc/nginx/sites-available/domain.com
 </code>
-<figure class='code'><figcaption><span>domain </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>server {
-</span><span class='line'>    server_name domain.com;
-</span><span class='line'>    access_log /srv/www/domain.com/logs/access.log;
-</span><span class='line'>    error_log /srv/www/domain.com/logs/error.log;
-</span><span class='line'>    root /srv/www/domain.com/public_html;&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;pre>&lt;code>location / {
-</span><span class='line'>    index index.html index.htm index.php;
-</span><span class='line'>}
-</span><span class='line'>
-</span><span class='line'>location ~ .php$ {
-</span><span class='line'>    include /etc/nginx/fastcgi_params;
-</span><span class='line'>    fastcgi_pass  127.0.0.1:9000;
-</span><span class='line'>    fastcgi_index index.php;
-</span><span class='line'>    fastcgi_param SCRIPT_FILENAME /srv/www/domain.com/public_html$fastcgi_script_name;
-</span><span class='line'>}
-</span><span class='line'>&lt;/code>&lt;/pre>
-</span><span class='line'>
-</span><span class='line'>&lt;p>}</span></code></pre></td></tr></table></div></figure>
+{% codeblock domain %}
+server {
+    server_name domain.com;
+    access_log /srv/www/domain.com/logs/access.log;
+    error_log /srv/www/domain.com/logs/error.log;
+    root /srv/www/domain.com/public_html;</p>
+
+<pre><code>location / {
+    index index.html index.htm index.php;
+}
+
+location ~ .php$ {
+    include /etc/nginx/fastcgi_params;
+    fastcgi_pass  127.0.0.1:9000;
+    fastcgi_index index.php;
+    fastcgi_param SCRIPT_FILENAME /srv/www/domain.com/public_html$fastcgi_script_name;
+}
+</code></pre>
+
+<p>}
+{% endcodeblock %}
 <code>sh
 cd /etc/nginx/sites-enabled/
 </code>
@@ -522,14 +496,11 @@ Coba tampilkan PHP Info
 <code>sh
 nano /srv/www/domain.com/public_html/phpinfo.php
 </code>
-<figure class='code'><figcaption><span>phpinfo.php </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">?</span><span class="nx">php</span>
-</span><span class='line'>     <span class="nb">phpinfo</span> <span class="p">();</span>
-</span><span class='line'><span class="cp">?&gt;</span><span class="x"></span>
-</span></code></pre></td></tr></table></div></figure></p>
+{% codeblock phpinfo.php %}
+&lt;?php
+     phpinfo ();
+?>
+{% endcodeblock %}</p>
 
 <p>Jika muncul maka anda sudah berhasil.
 Happy coding, happy config ^_^</p>

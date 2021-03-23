@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Rvm | Cahyadi Triyansyah (SunDi3yansyah)]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/rvm/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2020-03-15T21:07:24+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="http://sundi3yansyah.github.io/article/categories/rvm/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2021-03-23T20:42:20+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
   <author>
     <name><![CDATA[Cahyadi Triyansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,12 +15,14 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Instal Ruby via RVM]]></title>
-    <link href="http://sundi3yansyah.com/article/2017/05/08/cara-instal-ruby-via-rvm/"/>
+    <link href="http://sundi3yansyah.github.io/article/2017/05/08/cara-instal-ruby-via-rvm/"/>
     <updated>2017-05-08T14:06:02+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2017/05/08/cara-instal-ruby-via-rvm</id>
+    <id>http://sundi3yansyah.github.io/article/2017/05/08/cara-instal-ruby-via-rvm</id>
     <content type="html"><![CDATA[<p>Apa itu RVM?</p>
 
-<p><blockquote><p>Ruby Version Manager, often abbreviated as RVM, is a unix-like software platform designed to manage multiple instalations of Ruby on the same device.</p><footer><strong>Ruby Version Manager <a href="https://en.wikipedia.org/wiki/Ruby_Version_Manager">https://en.wikipedia.org/wiki/Ruby_Version_Manager</a></strong></footer></blockquote></p>
+<p>{% blockquote Ruby Version Manager <a href="https://en.wikipedia.org/wiki/Ruby_Version_Manager">https://en.wikipedia.org/wiki/Ruby_Version_Manager</a> %}
+Ruby Version Manager, often abbreviated as RVM, is a unix-like software platform designed to manage multiple instalations of Ruby on the same device.
+{% endblockquote %}</p>
 
 <!-- more -->
 

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Windows | Cahyadi Triyansyah (SunDi3yansyah)]]></title>
-  <link href="http://sundi3yansyah.com/article/categories/windows/atom.xml" rel="self"/>
-  <link href="http://sundi3yansyah.com/"/>
-  <updated>2020-03-15T21:07:24+07:00</updated>
-  <id>http://sundi3yansyah.com/</id>
+  <link href="http://sundi3yansyah.github.io/article/categories/windows/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2021-03-23T20:42:20+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
   <author>
     <name><![CDATA[Cahyadi Triyansyah]]></name>
     <email><![CDATA[sundi3yansyah@gmail.com]]></email>
@@ -15,12 +15,12 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Install NodeJS Di Windows]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/10/25/cara-install-nodejs-di-windows/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/10/25/cara-install-nodejs-di-windows/"/>
     <updated>2014-10-25T11:59:26+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/10/25/cara-install-nodejs-di-windows</id>
+    <id>http://sundi3yansyah.github.io/article/2014/10/25/cara-install-nodejs-di-windows</id>
     <content type="html"><![CDATA[<h4>Cara Install NodeJS di Windows</h4>
 
-<p>Wah gampang banget ternyata, gw yakin kalian semua pasti bisa<img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >&hellip;</p>
+<p>Wah gampang banget ternyata, gw yakin kalian semua pasti bisa{% img <a href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png</a> 20 20 &lsquo;smiley&rsquo; &lsquo;smiley&rsquo; %}&hellip;</p>
 
 <p>Buka URL disini <a href="http://nodejs.org/download/">http://nodejs.org/download/</a>
 Kemudian download sesui arsitektur OS windows kalian x86 atau x64, mau yang Windows Installer (.msi) atau Windows Binary (.exe) sama saja&hellip;</p>
@@ -31,14 +31,16 @@ Kemudian download sesui arsitektur OS windows kalian x86 atau x64, mau yang Wind
   
   <entry>
     <title type="html"><![CDATA[Crack Sublime Text 3 Build 3065]]></title>
-    <link href="http://sundi3yansyah.com/article/2014/09/30/crack-sublime-text-3-build-3065/"/>
+    <link href="http://sundi3yansyah.github.io/article/2014/09/30/crack-sublime-text-3-build-3065/"/>
     <updated>2014-09-30T05:44:13+07:00</updated>
-    <id>http://sundi3yansyah.com/article/2014/09/30/crack-sublime-text-3-build-3065</id>
+    <id>http://sundi3yansyah.github.io/article/2014/09/30/crack-sublime-text-3-build-3065</id>
     <content type="html"><![CDATA[<h3>Download Sublimeetxt Build 3065</h3>
 
 <h4><a href="http://www.sublimetext.com/3">http://www.sublimetext.com/3</a></h4>
 
-<p><blockquote><p>Release Date: 29 August 2014</p></blockquote></p>
+<p>{% blockquote %}
+Release Date: 29 August 2014
+{% endblockquote %}</p>
 
 <p><strong>Download sesuai OS yang kalian gunakan kemudian install dan lakukan crack di bawah ini sesuai dengan OS kalian.</strong></p>
 
