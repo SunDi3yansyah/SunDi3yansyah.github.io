@@ -27,9 +27,9 @@ You can provide custom 404 error pages when people try to access non-existent pa
 
 > Asumsikan anda sudah mempunyai repositori GitHub Pages, jika anda belum mempunyai silakan cari di blog saya ini untuk memperlajari bagaimana kita berkerja di GitHub Pages, baik itu menggunakan Static Manual Pages, menggunakan Jekyll Ruby, atau menggunakan Framework lainnya seperti Octopress dan masih banyak Framework Jekyll lainnya. Saya mempunyai beberapa refrensi untuk anda di bawah ini.
 
-*   [Cara Membuat Halaman Di Github](http://sundi3yansyah.com/article/2014/09/12/cara-membuat-halaman-di-github/)
-*   [Cara Membuat Repository Baru Di Github](http://sundi3yansyah.com/article/2014/08/27/cara-membuat-repository-baru-di-github/)
-*   [Cara Install Octopress](http://sundi3yansyah.com/article/2014/07/02/cara-install-octopress/)
+*   [Cara Membuat Halaman Di Github](http://sundi3yansyah.github.io/article/2014/09/12/cara-membuat-halaman-di-github/)
+*   [Cara Membuat Repository Baru Di Github](http://sundi3yansyah.github.io/article/2014/08/27/cara-membuat-repository-baru-di-github/)
+*   [Cara Install Octopress](http://sundi3yansyah.github.io/article/2014/07/02/cara-install-octopress/)
 
 **Oke... langsung saja, disini saya tidak akan menjelaskan secara rinci tetapi saya akan menjelaskan dengan LOGIKA**
 
@@ -44,12 +44,12 @@ You can provide custom 404 error pages when people try to access non-existent pa
 > Jika menggunakan Octopress atau Jekyll anda bisa juga membuat dengan Generator Markdown.
 
 #### Demo:
-[SunDi3yansyah - 404 Not Found](http://sundi3yansyah.com/gantengs)
+[SunDi3yansyah - 404 Not Found](http://sundi3yansyah.github.io/gantengs)
 
 #### Source Code
 ``` html 404 https://github.com/SunDi3yansyah/SunDi3yansyah.github.io/blob/master/404.html 404.html
 <html>
-<head><title>404 Not Found</title><meta http-equiv="refresh" content="5;url=http://sundi3yansyah.com"></head>
+<head><title>404 Not Found</title><meta http-equiv="refresh" content="5;url=http://sundi3yansyah.github.io"></head>
 <body bgcolor="white">
 <center><h1>404 Not Found</h1></center>
 <hr><center>nginx</center>

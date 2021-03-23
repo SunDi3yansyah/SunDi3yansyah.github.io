@@ -27,7 +27,7 @@ Ruby on Rails menegaskan penggunaan pola-pola dan prinsip-prinsip rekayasa peran
 - Situs web resmi:	rubyonrails.org
 {% endblockquote %}
 
-Sebelumnya kita dapat menjumpai tutorial saya sebelumnya tentang [Cara Instal Ruby via RVM](https://sundi3yansyah.com/article/2017/05/08/cara-instal-ruby-via-rvm/).
+Sebelumnya kita dapat menjumpai tutorial saya sebelumnya tentang [Cara Instal Ruby via RVM](https://sundi3yansyah.github.io/article/2017/05/08/cara-instal-ruby-via-rvm/).
 Jadi saya asumsikan perangkat kalian sudah terpasang Ruby entah itu ruby versi berapa tapi saya sarankan gunakan ruby versi terbaru, dan jangan lupa pula sesuaikan dengan sistem operasi yang kalian gunakan.
 
 

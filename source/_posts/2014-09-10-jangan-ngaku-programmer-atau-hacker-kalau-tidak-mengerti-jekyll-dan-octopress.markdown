@@ -51,4 +51,4 @@ Semua postingan jekyll/octopress saya terbuka, gk percaya? Silakan kunjungin rep
 
 Kalau anda mengatakan `dimana file public_html dan database blog saya ini` ya disana. :LOL: ~> {% img https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png 20 20 'smiley' 'smiley' %}a...
 
-Anda sudah membaca artikel saya sebelumnya belum? [Blogging Menggunakan Octopress & Github](http://sundi3yansyah.com/article/2014/07/02/blogging-menggunakan-octopress-and-github/), memang sedikit hampir sama cuma disini saya menjelaskan sedikit spesifik kepenggunaanya dan melestarikan para pengguna Jekyll, Octopress dan Github.
+Anda sudah membaca artikel saya sebelumnya belum? [Blogging Menggunakan Octopress & Github](http://sundi3yansyah.github.io/article/2014/07/02/blogging-menggunakan-octopress-and-github/), memang sedikit hampir sama cuma disini saya menjelaskan sedikit spesifik kepenggunaanya dan melestarikan para pengguna Jekyll, Octopress dan Github.

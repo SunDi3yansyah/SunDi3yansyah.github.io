@@ -7,7 +7,7 @@ categories: [nodejs, debian]
 description: Cara Install NodeJS di Debian
 keywords: Cara Install NodeJS di Debian
 ---
-Kalau kemarin saya sudah share [Cara Install NodeJS Dan NPM Di Ubuntu](http://sundi3yansyah.com/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu/), [Cara Install NodeJS via Tarball Di CentOS/RHEL](http://sundi3yansyah.com/article/2014/09/07/cara-install-nodejs-via-tarball-di-centos-rhel/), [Cara Install NodeJS Di Windows](http://sundi3yansyah.com/article/2014/10/25/cara-install-nodejs-di-windows/) ... nah sekarang saya akan memberikan sedikit snippet command line untuk [Cara Install NodeJS di Debian](#), langsaung saja...
+Kalau kemarin saya sudah share [Cara Install NodeJS Dan NPM Di Ubuntu](http://sundi3yansyah.github.io/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu/), [Cara Install NodeJS via Tarball Di CentOS/RHEL](http://sundi3yansyah.github.io/article/2014/09/07/cara-install-nodejs-via-tarball-di-centos-rhel/), [Cara Install NodeJS Di Windows](http://sundi3yansyah.github.io/article/2014/10/25/cara-install-nodejs-di-windows/) ... nah sekarang saya akan memberikan sedikit snippet command line untuk [Cara Install NodeJS di Debian](#), langsaung saja...
 ```
 sudo apt-get install python g++ make wget libssl-dev
 ```

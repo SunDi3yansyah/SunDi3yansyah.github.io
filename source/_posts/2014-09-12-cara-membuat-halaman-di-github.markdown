@@ -9,7 +9,7 @@ keywords: Cara Membuat Halaman di Github, GitHub Pages, username github, buat ha
 ---
 {% img center http://www.wakanda.org/sites/default/files/blog/blog-github.png github %}
 
-Pada kesempatan kali ini saya akan membahas sedikit tentang GitHub Pages. Anda pernah melihat halaman web atau blog orang dengan URL seperti ini `username.github.io`? ooohhh... pasti sering lihat kan kalau suka nongkrong di Google, {% img https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png 20 20 'smiley' 'smiley' %}a. Seperti blog saya ini sebelumnya adalah `sundi3yansyah.github.io` Yah itu yang akan nanti saya bahas. Sebelumnya saya pernah membuat tutorial tentang [Cara Membuat Repository Baru Di Github](http://sundi3yansyah.com/article/2014/08/27/cara-membuat-repository-baru-di-github/) dan [Cara Install Octopress](http://sundi3yansyah.com/article/2014/07/02/cara-install-octopress/) ya semua itu adalah hasil commiting repository ke github. Tetapi disini akan saya jelaskan secara General. Seperti yang di jelaskan di GitHub Pages
+Pada kesempatan kali ini saya akan membahas sedikit tentang GitHub Pages. Anda pernah melihat halaman web atau blog orang dengan URL seperti ini `username.github.io`? ooohhh... pasti sering lihat kan kalau suka nongkrong di Google, {% img https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png 20 20 'smiley' 'smiley' %}a. Seperti blog saya ini sebelumnya adalah `sundi3yansyah.github.io` Yah itu yang akan nanti saya bahas. Sebelumnya saya pernah membuat tutorial tentang [Cara Membuat Repository Baru Di Github](http://sundi3yansyah.github.io/article/2014/08/27/cara-membuat-repository-baru-di-github/) dan [Cara Install Octopress](http://sundi3yansyah.github.io/article/2014/07/02/cara-install-octopress/) ya semua itu adalah hasil commiting repository ke github. Tetapi disini akan saya jelaskan secara General. Seperti yang di jelaskan di GitHub Pages
 <!-- more -->
 {% blockquote GitHub Pages https://pages.github.com/ GitHub %}
 Websites for you and your projects.
@@ -56,7 +56,7 @@ Ngerti kgk...? Secara default page 404 GitHub Page kita sudah di atur dengan Git
 Disini saya akan menjelaskan untuk di Platform Sistem Operasi Linux, bagaimana cara install Git di Linux?
 
 *   [Versi Official](http://git-scm.com/download/linux)
-*   [Cara Install/Upgrade Versi Git Core Terbaru di Ubuntu](http://sundi3yansyah.com/article/2014/07/03/cara-install-slash-upgrade-versi-git-core-terbaru/)
+*   [Cara Install/Upgrade Versi Git Core Terbaru di Ubuntu](http://sundi3yansyah.github.io/article/2014/07/03/cara-install-slash-upgrade-versi-git-core-terbaru/)
 
 {% img [left:right] http://i1183.photobucket.com/albums/x469/adiemuse/Screenshotfrom2014-09-12012345_zps2fb6b58a.png Cara Membuat Halaman di Github Step git OS %}
 

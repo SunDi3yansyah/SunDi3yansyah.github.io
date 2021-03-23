@@ -1,4 +1,4 @@
-# Octopress by SunDi3yansyah
+# Octopress by Cahyadi Triyansyah
 
 [![Build Status](https://travis-ci.org/SunDi3yansyah/SunDi3yansyah.github.io.svg?branch=source)](https://travis-ci.org/SunDi3yansyah/SunDi3yansyah.github.io)
 [![License](https://img.shields.io/github/license/SunDi3yansyah/SunDi3yansyah.github.io.svg)](LICENSE)

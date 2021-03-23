@@ -13,7 +13,7 @@ keywords: membuat jekyll, membuat blog jekyll, cara membuat blog jekyll, Membuat
 Jekyll is an open source program, written in Ruby by Tom Preston-Werner, GitHub's co-founder. Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. It is a file-based CMS; instead of using databases, Jekyll takes the content, renders Markdown or Textile and Liquid templates, and produces a complete, static website ready to be served by Apache HTTP Server, Nginx or another web server.[1] Jekyll is the engine behind GitHub Pages,[2] a GitHub feature that allows users to host websites based on their GitHub repositories.
 {% endblockquote %}
 <!-- more -->
-{% blockquote id.wikipedia http://sundi3yansyah.com/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/ wikipedia version google translate %}
+{% blockquote id.wikipedia http://sundi3yansyah.github.io/article/2014/11/14/membuat-blog-jekyll-dalam-waktu-kurang-dari-1-menit/ wikipedia version google translate %}
 Jekyll merupakan open source program yang ditulis dalam Ruby oleh Tom Preston-Werner , GitHub yang co-founder. Jekyll adalah, sederhana blog -aware, situs statis generator situs pribadi, proyek, atau organisasi. Ini adalah file berbasis CMS ; alih-alih menggunakan database , Jekyll mengambil konten, membuat penurunan harga atau tekstil dan template Liquid , dan menghasilkan lengkap, website statis siap disajikan oleh Apache HTTP Server , Nginx atau server web lain. [ 1 ] Jekyll adalah mesin belakang GitHub Pages , [ 2 ] fitur GitHub yang memungkinkan pengguna untuk meng-host situs web berdasarkan repositori GitHub mereka.
 {% endblockquote %}
 
@@ -21,8 +21,8 @@ Terdengar aneh dengan judul ini? Yup...emang benar bikin blog pakai jekyll cepat
 
 Asumsikan:
 
-1. [Sudah install Ruby](http://sundi3yansyah.com/article/categories/ruby/)
-2. [Sudah install RubyGems](http://sundi3yansyah.com/article/categories/ruby/)
+1. [Sudah install Ruby](http://sundi3yansyah.github.io/article/categories/ruby/)
+2. [Sudah install RubyGems](http://sundi3yansyah.github.io/article/categories/ruby/)
 3. Sudah install jekyll `gem install jekyll`
 
 Oke langcung ajah eak... :*
