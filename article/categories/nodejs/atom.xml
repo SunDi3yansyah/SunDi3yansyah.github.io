@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Nodejs | Cahyadi Triyansyah (SunDi3yansyah)]]></title>
+  <link href="http://sundi3yansyah.github.io/article/categories/nodejs/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2023-12-28T22:07:32+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
+  <author>
+    <name><![CDATA[Cahyadi Triyansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Update Versi NodeJS]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/25/cara-update-versi-nodejs/"/>
+    <updated>2014-11-25T07:27:33+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/25/cara-update-versi-nodejs</id>
+    <content type="html"><![CDATA[<p>Cek dulu versi node kalian, caranya</p>
+
+<pre><code>node -v
+</code></pre>
+
+<p>kemudian buka <a href="http://nodejs.org/">NODEJS.ORG</a> liat di bagian atas button <strong>DOWNLOAD</strong>, jika versi nodejs kalian berbeda dengan yang ada disana maka untuk mengupdatenya.</p>
+
+<!--more-->
+
+
+<pre><code>sudo npm install n -g
+</code></pre>
+
+<p>tunggu sampai selesai
+<code>
+sudo n stable
+</code>
+tunggu sampai selesai proses download/update nya, jika sudah selesai, silakan di verifikasi untuk melihatnya</p>
+
+<pre><code>node -v
+</code></pre>
+
+<p><strong>NB: Tidak support untuk Windows</strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install NodeJS Di Debian]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/23/cara-install-nodejs-di-debian/"/>
+    <updated>2014-11-23T17:27:33+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/23/cara-install-nodejs-di-debian</id>
+    <content type="html"><![CDATA[<p>Kalau kemarin saya sudah share <a href="http://sundi3yansyah.github.io/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu/">Cara Install NodeJS Dan NPM Di Ubuntu</a>, <a href="http://sundi3yansyah.github.io/article/2014/09/07/cara-install-nodejs-via-tarball-di-centos-rhel/">Cara Install NodeJS via Tarball Di CentOS/RHEL</a>, <a href="http://sundi3yansyah.github.io/article/2014/10/25/cara-install-nodejs-di-windows/">Cara Install NodeJS Di Windows</a> &hellip; nah sekarang saya akan memberikan sedikit snippet command line untuk <a href="#">Cara Install NodeJS di Debian</a>, langsaung saja&hellip;
+<code>
+sudo apt-get install python g++ make wget libssl-dev
+</code></p>
+
+<!--more-->
+
+
+<pre><code>wget http://nodejs.org/dist/node-latest.tar.gz
+</code></pre>
+
+<pre><code>tar xvfvz node-latest.tar.gz
+</code></pre>
+
+<p>atau bisa juga
+<code>
+tar xzvf node-latest.tar.gz
+</code>
+<code>
+cd node-latest
+</code>
+<code>
+./configure
+</code>
+<code>
+make
+</code>
+<code>
+sudo make install
+</code></p>
+
+<p>Nah kesimpulannya apa? Hampir sama kan cara install di distro lainnya, hanya berbeda di devlopment untuk mengcimpilienya, karena beda nama package <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install NodeJS Di Windows]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/10/25/cara-install-nodejs-di-windows/"/>
+    <updated>2014-10-25T11:59:26+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/10/25/cara-install-nodejs-di-windows</id>
+    <content type="html"><![CDATA[<h4>Cara Install NodeJS di Windows</h4>
+
+<p>Wah gampang banget ternyata, gw yakin kalian semua pasti bisa<img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >&hellip;</p>
+
+<p>Buka URL disini <a href="http://nodejs.org/download/">http://nodejs.org/download/</a>
+Kemudian download sesui arsitektur OS windows kalian x86 atau x64, mau yang Windows Installer (.msi) atau Windows Binary (.exe) sama saja&hellip;</p>
+
+<p>Kalau sudah di download ya tinggal di klik 2 kali nanti ada box suduh run administrator klik YES/OK saja terus di NEXT NEXT dan NEXT terus sampai selesai, GAMPANG kan?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install NodeJS via Tarball Di CentOS/RHEL]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/09/07/cara-install-nodejs-via-tarball-di-centos-rhel/"/>
+    <updated>2014-09-07T07:14:13+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/09/07/cara-install-nodejs-via-tarball-di-centos-rhel</id>
+    <content type="html"><![CDATA[<p>Masuk terminal, langsung saja:</p>
+
+<!-- more -->
+
+
+<pre><code>su -
+</code></pre>
+
+<p>Kenapa kita membutuhkan <code>Super User</code>? Ya karena nanti kita akan mengakses lokasi <code>/usr/local/src</code>
+<code>
+yum install gcc gcc-c++ openssl-devel
+</code>
+<code>
+cd /usr/local/src
+</code>
+<code>
+wget http://nodejs.org/dist/node-latest.tar.gz
+</code>
+Atau jika anda ingin menentukan versinya silakan kunjungi webiste nodejs disini <a href="http://nodejs.org/download/">http://nodejs.org/download/</a> kemudian pilih bagian <strong>Linux Binaries (.tar.gz)</strong> lalu pilih sesuai arsitektur CentOS/RHEL kalian, menggunakan 32bit atau 64bit
+contohnya:
+<code>
+wget http://nodejs.org/dist/v0.10.33/node-v0.10.33-linux-x64.tar.gz
+</code>
+itu yang artinya saya mengambil binari source nodejs versi v0.10.33 dengan arsitektur 64bit, Oke <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; > lanjutkan, setelah download (Asumsikan anda sudah paham).
+<code>
+tar zxvf node-latest.tar.gz
+</code>
+<code>
+cd node-v*
+</code>
+<code>
+./configure
+</code>
+<code>
+make
+</code>
+<code>
+make install
+</code></p>
+
+<p>Gampang kan <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+
+<p>Cara mengerahuinya
+<code>
+node -v ; npm -v
+</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install NodeJS Dan NPM Di Ubuntu]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu/"/>
+    <updated>2014-07-05T20:58:02+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu</id>
+    <content type="html"><![CDATA[<p>Install dulu Depensial dari software python dan menambahkan PPA dari NodeJS untuk ubuntunya.</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install python-software-properties
+</span><span class='line'>apt-add-repository ppa:chris-lea/node.js
+</span><span class='line'>apt-get update</span></code></pre></td></tr></table></div></figure></p>
+
+<!-- more -->
+
+
+<p>Kalau sudah lanjut ke installasi</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install nodejs</span></code></pre></td></tr></table></div></figure></p>
+
+<p>NB: Jika ada persetujuan di <b>Y</b></p>
+
+<p>Untuk melihat versi yang sudah terinstall tadi, caranya:</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>node -v</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Contoh outputnya</p>
+
+<p><code>v0.10.29</code></p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install npm</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Untuk melihat versi yang sudah terinstall tadi, caranya:</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>npm -v</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Contoh outputnya</p>
+
+<p><code>1.4.14</code></p>
+
+<h4>Ini berlaku juga untuk untuk semua distro based <em>Ubuntu</em></h4>
+]]></content>
+  </entry>
+  
+</feed>

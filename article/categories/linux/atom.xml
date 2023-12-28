@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Linux | Cahyadi Triyansyah (SunDi3yansyah)]]></title>
+  <link href="http://sundi3yansyah.github.io/article/categories/linux/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2023-12-28T22:07:32+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
+  <author>
+    <name><![CDATA[Cahyadi Triyansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Go-lang Di Linux]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/27/cara-install-go-lang-di-linux/"/>
+    <updated>2014-11-27T17:19:52+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/27/cara-install-go-lang-di-linux</id>
+    <content type="html"><![CDATA[<p>Pertama buka dulu page download arsip go-lang disini <a href="https://golang.org/dl/">https://golang.org/dl/</a> setelah itu ambil file arsipnya sesuai arsitektur pada distro linux kalian (x64 or x86), sebagai contoh:</p>
+
+<p>Buka terminal
+<code>
+cd Downloads ; mkdir go-lang ; cd go-lang
+</code></p>
+
+<!--more-->
+
+
+<p>x64
+<code>
+wget https://storage.googleapis.com/golang/go1.3.3.linux-amd64.tar.gz
+</code>
+x86
+<code>
+wget https://storage.googleapis.com/golang/go1.3.3.linux-386.tar.gz
+</code>
+Setelah itu buka arsipnya, dan di copy + paste ke direktori <code>/usr/local</code>
+x64
+<code>
+tar -C /usr/local -xzf go1.3.3.linux-amd64.tar.gz
+</code>
+x86
+<code>
+tar -C /usr/local -xzf go1.3.3.linux-386.tar.gz
+</code></p>
+
+<p>Setelah itu tambahkan <strong>Environment Variable</strong> nya</p>
+
+<pre><code>export PATH=$PATH:/usr/local/go/bin
+</code></pre>
+
+<p>Sekarang kita buat contoh apakah sudah work atau belum.</p>
+
+<pre><code>nano test.go
+</code></pre>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>package main&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>import &ldquo;fmt&rdquo;&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>func main() {
+</span><span class='line'>    fmt.Printf(&ldquo;Hallo, dunia\n&rdquo;)
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Sekarang di jalankan</p>
+
+<pre><code>go run test.go
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Mereset Environment Variable Pada Linux]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/27/cara-mereset-environment-variable-pada-linux/"/>
+    <updated>2014-11-27T17:18:05+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/27/cara-mereset-environment-variable-pada-linux</id>
+    <content type="html"><![CDATA[<p>Cara reset environment variables, tampilkan dulu environment variables yang sudah ada
+<code>
+echo $PATH
+</code></p>
+
+<!--more-->
+
+
+<p>Contoh output:</p>
+
+<pre><code>/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/go/bin
+</code></pre>
+
+<p>Jika ingin ingin di seret, maka:
+<code>
+export PATH=/usr/local/sbin:/usr/local/bin
+</code>
+Maka environment variables yang ada sekarang hanya <code>/usr/local/sbin:/usr/local/bin</code></p>
+
+<p>Mudah bukan <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Menambah Environment Variable Pada Linux]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/27/cara-menambah-environment-variable-pada-linux/"/>
+    <updated>2014-11-27T17:17:52+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/27/cara-menambah-environment-variable-pada-linux</id>
+    <content type="html"><![CDATA[<p>tampilkan dulu environment variables yang sudah ada
+<code>
+echo $PATH
+</code></p>
+
+<!--more-->
+
+
+<p>Cara menambahkan environment variablenya jalankan perintah ini di terminal
+<code>
+export PATH=$PATH:/usr/local/go/bin
+</code>
+Itu yang artinya saya baru saja menambahkan environment variable dari bahasa pemrograman <strong>GOlang</strong> atau <strong>GO</strong></p>
+
+<p>Mudah bukan <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Asciinema Di Linux]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/26/cara-install-asciinema-di-linux/"/>
+    <updated>2014-11-26T18:52:38+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/26/cara-install-asciinema-di-linux</id>
+    <content type="html"><![CDATA[<p><img class="center <a" src="href="https://lh5.googleusercontent.com/-pLbkxy3l_oY/VHXFK4PJ0mI/AAAAAAAAASo/o_DUioz5j_U/s800/Screenshot+from+2014-11-26+18:54:05.png">https://lh5.googleusercontent.com/-pLbkxy3l_oY/VHXFK4PJ0mI/AAAAAAAAASo/o_DUioz5j_U/s800/Screenshot+from+2014-11-26+18:54:05.png</a>&#8221; title=&#8221;&lsquo;asciinema&rsquo; &lsquo;asciinema&rsquo;&#8221; ></p>
+
+<p>Apa itu ASCIINEMA?</p>
+
+<p>Dari kata-kata ASCII</p>
+
+<!--more-->
+
+
+<p><blockquote><p>Kode Standar Amerika untuk Pertukaran Informasi atau ASCII (American Standard Code for Information Interchange) merupakan suatu standar internasional dalam kode huruf dan simbol seperti Hex dan Unicode tetapi ASCII lebih bersifat universal, contohnya 124 adalah untuk karakter &ldquo;|&rdquo;.</p><footer><strong>wikipedia <a href="http://id.wikipedia.org/wiki/ASCII">http://id.wikipedia.org/wiki/ASCII</a> ASCII</strong></footer></blockquote></p>
+
+<p>Dan dari kata NEMA - Cinema kwkkwkwk <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; ></p>
+
+<p><blockquote><p>Sinema (akar kata dari cinema = kinematik = gerak). Film sebenarnya merupakan lapisan-lapisan cairan selulosa, biasa di kenal di dunia para sineas seluloid.</p></p><p><p>Pengertian secara harafiah film (sinema) adalah Cinemathographie yang berasal dari Cinema + tho = phytos (cahaya) + graphie = grhap (tulisan = gambar = citra), jadi pengertiannya adalah melukis gerak dengan cahaya. Agar kita dapat melukis gerak dengan cahaya, kita harus menggunakan alat khusus, yang biasa kita sebut dengan kamera V</p><footer><strong>wikipedia <a href="http://id.wikipedia.org/wiki/Sinema">http://id.wikipedia.org/wiki/Sinema</a> Sinema</strong></footer></blockquote></p>
+
+<p>Yah gitu lah, tapi jangan di gabungin, intinya Asciinema itu packages yang bisa merekam session di dalam terminal. Gini aja kalian buka aja profile saya disini <a href="https://asciinema.org/~SunDi3yansyah">https://asciinema.org/~SunDi3yansyah</a> dan scroll ke bawh, ada list videonya coba di pilih 1 dan di play, maka yang di rekam hanyalah di bagian windows terminalnya saja. Oke paham&hellip;? Sip&hellip; <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+
+<p>Saya disini akan menjelaskan cara install di Linux.</p>
+
+<h4>Ubuntu</h4>
+
+<pre><code>sudo apt-add-repository ppa:zanchey/asciinema
+</code></pre>
+
+<pre><code>sudo apt-get update
+</code></pre>
+
+<pre><code>sudo apt-get install asciinema
+</code></pre>
+
+<h4>Fedora (Fedora 19 dan 20)</h4>
+
+<pre><code>sudo yum install asciinema
+</code></pre>
+
+<h4>Arch Linux</h4>
+
+<pre><code>sudo yaourt -S asciinema
+</code></pre>
+
+<h4>Gentoo Linux</h4>
+
+<pre><code>sudo emerge asciinema
+</code></pre>
+
+<p>Source: <a href="https://asciinema.org/docs/installation">https://asciinema.org/docs/installation</a></p>
+
+<p>Nah setelah kalian install, kalian di berkenankan membuat akun disana, jangan lupa di verifikasi emailnya, setelah itu kalian bisa menggunakan asciinema ini di session terminal, tapi sebelum menggunakan saya sarankan untuk membuat auth config di asccinema kalian dengan akun di asscinema.org, cara nya buka terminal dan ketik ini
+<code>
+asciinema auth
+</code>
+Copy dan paste link yang ada di output kemudian di pastekan ke browser yang kalian pakai tadi untuk register ke asciinema.org.</p>
+
+<p>Setelah itu kalian bisa menggunakannya, dengan perintah di terminal.
+<code>
+asciinema rec
+</code>
+Maka akan membersihkan halaman terminal baru dan siap di rekam. Untuk keluar ketik perintah
+<code>
+exit
+</code>
+dan ENTER.
+Atau bisa juga dengan menekan tombil <strong>CTRL + D</strong></p>
+
+<p>Nah ketika akan berhenti dari rekaman kalian akan di beri perintah</p>
+
+<p><strong>Rekaman yang barusan di rekam mau di upload atau tidak?</strong></p>
+
+<p>Jika iya, maka ketik perintah <strong>Y</strong> dan tekan <strong>ENTER</strong> jika tidak ingin menguploadnya maka ketik perintah <strong>N</strong> dan tekan <strong>ENTER</strong>.</p>
+
+<p>Lama gak ya uploadnya?
+Jawabannya <strong>TIDAK</strong> seberapa lama anda merekam maka uploadnya akan tetap cepat, gak percaya? Silakan di buktikan&hellip; <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+
+<p>Jika memerlukan bantuan lebih lengkapnya, ketik perintah ini
+<code>
+asciinema -h
+</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Singkat Dan Padat Untuk Turunan UNIX]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/23/singkat-dan-padat-untuk-turunan-unix/"/>
+    <updated>2014-11-23T21:33:32+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/23/singkat-dan-padat-untuk-turunan-unix</id>
+    <content type="html"><![CDATA[<p>Unix adalah salah satu pondasi dari berbagai sistem operasi yang saat ini dikenal. Bahkan mungkin yang sekarang anda pakai, adalah turunan atau cucu-cucu dari UNIX. Unix sendiri diakui resmi dirilis oleh Laboratorium Bell (Bell Labs) oleh Ken Thompson dan Dennies Ritchie yang merupakan hacker Old-School paling kuerens…
+Mungkin lebih jelas jika anda melihat diagram time-stamp (jejak waktu) dari lahirnya anak-anak sampai cucu-cucunya Unix berikut :</p>
+
+<!--more-->
+
+
+<p><img class="center <a" src="href="http://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Unix_history.en.svg/655px-Unix_history.en.svg.png">http://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Unix_history.en.svg/655px-Unix_history.en.svg.png</a>&#8221; title=&#8221;&lsquo;Turunan UNIX&rsquo; &lsquo;Turunan UNIX&rsquo;&#8221; ></p>
+
+<p>Fakta yang menarik dan mungkin mengagetkan anda adalah Microsoft pernah merilis sebuah varian Unix dengan nama Xenix OS. Namun, entah karena kesulitan berkembang atau sedang terhimpit keadaan, Xenix akhirnya dijual kepada SCO (Santa Cruz Operation) yang kemudian membredeli dan menjualnya dengan nama SCO Unix .
+Wadooh, nah loe. Bukan tidak mungkin Windows yang sekarang kalian pake adalah hasil inspirasi dari Unix. , karena ada beberapa fitur windows yang mencontoh Unix nih.
+Fakta lain adalah OS yang paling cantik, Mac OS, ternyata adalah salah satu cucu dari Unix. Dia bersama kembarannya, Darwin OS, adalah keturunan dari NextStep, sebuah OS buatan Apple yang dikembangkan dari UNix. …
+Dan tak lupa, Linux, yang saat ini menjadi cucu linux yang paling banyak berkembang biak menjadi banyak sekali distro.</p>
+]]></content>
+  </entry>
+  
+</feed>

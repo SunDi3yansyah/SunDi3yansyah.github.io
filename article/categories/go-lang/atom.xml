@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Go-lang | Cahyadi Triyansyah (SunDi3yansyah)]]></title>
+  <link href="http://sundi3yansyah.github.io/article/categories/go-lang/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2023-12-28T22:07:32+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
+  <author>
+    <name><![CDATA[Cahyadi Triyansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Go-lang Di Linux]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/27/cara-install-go-lang-di-linux/"/>
+    <updated>2014-11-27T17:19:52+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/27/cara-install-go-lang-di-linux</id>
+    <content type="html"><![CDATA[<p>Pertama buka dulu page download arsip go-lang disini <a href="https://golang.org/dl/">https://golang.org/dl/</a> setelah itu ambil file arsipnya sesuai arsitektur pada distro linux kalian (x64 or x86), sebagai contoh:</p>
+
+<p>Buka terminal
+<code>
+cd Downloads ; mkdir go-lang ; cd go-lang
+</code></p>
+
+<!--more-->
+
+
+<p>x64
+<code>
+wget https://storage.googleapis.com/golang/go1.3.3.linux-amd64.tar.gz
+</code>
+x86
+<code>
+wget https://storage.googleapis.com/golang/go1.3.3.linux-386.tar.gz
+</code>
+Setelah itu buka arsipnya, dan di copy + paste ke direktori <code>/usr/local</code>
+x64
+<code>
+tar -C /usr/local -xzf go1.3.3.linux-amd64.tar.gz
+</code>
+x86
+<code>
+tar -C /usr/local -xzf go1.3.3.linux-386.tar.gz
+</code></p>
+
+<p>Setelah itu tambahkan <strong>Environment Variable</strong> nya</p>
+
+<pre><code>export PATH=$PATH:/usr/local/go/bin
+</code></pre>
+
+<p>Sekarang kita buat contoh apakah sudah work atau belum.</p>
+
+<pre><code>nano test.go
+</code></pre>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>package main&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>import &ldquo;fmt&rdquo;&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>func main() {
+</span><span class='line'>    fmt.Printf(&ldquo;Hallo, dunia\n&rdquo;)
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Sekarang di jalankan</p>
+
+<pre><code>go run test.go
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

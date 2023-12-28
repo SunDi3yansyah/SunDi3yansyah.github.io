@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Framework | Cahyadi Triyansyah (SunDi3yansyah)]]></title>
+  <link href="http://sundi3yansyah.github.io/article/categories/framework/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2023-12-28T22:07:32+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
+  <author>
+    <name><![CDATA[Cahyadi Triyansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Rails]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2017/07/25/cara-install-rails/"/>
+    <updated>2017-07-25T14:40:21+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2017/07/25/cara-install-rails</id>
+    <content type="html"><![CDATA[<h3>Apa itu Rails?</h3>
+
+<p><blockquote><p>Ruby on Rails, disebut juga Rails, adalah sebuah kerangka kerja aplikasi web sumber terbuka yang berjalan via bahasa pemrograman Ruby. Ia merupakan kerangka kerja full-stack: memampukan pembuatan laman dan aplikasi yang mengumpulkan informasi dari server web, berkomunikasi dengan atau memanggil sebuah kueri dari server web, dan mengolah templat dari sumber. Sebagai hasilnya, Rails menyajikan fitur sistem routing yang independen dari server web.</p></p><p><!-- more --></p><p><br/><p>Ruby on Rails menegaskan penggunaan pola-pola dan prinsip-prinsip rekayasa perangkat lunak terkenal, seperti pola active record, konvensi diatas konfigurasi (CoC), don&rsquo;t repeat yourself (DRY), and model-view-controller (MVC).</p></p><p><ul><br/><li>Perancang:    David Heinemeier Hansson</li><br/><li>Pengembang:   Rails Core Team</li><br/><li>Rilis perdana:    13 Desember 2005</li><br/><li>Rilis stabil: 4.0.4 (14 Maret 2014)</li><br/><li>Rilis pratayang:  4.1.0 RC 1 (18 Februari 2014)</li><br/><li>Status pengembangan:  Active</li><br/><li>Bahasa pemograman:    Ruby</li><br/><li>Sistem operasi:   Cross-platform</li><br/><li>Lisensi:  Lisensi MIT</li><br/><li>Situs web resmi:  rubyonrails.org</p><footer><strong>Ruby on Rails <a href="https://id.wikipedia.org/wiki/Ruby_on_Rails">https://id.wikipedia.org/wiki/Ruby_on_Rails</a></strong></footer></blockquote></li>
+</ul>
+
+
+<p>Sebelumnya kita dapat menjumpai tutorial saya sebelumnya tentang <a href="https://sundi3yansyah.github.io/article/2017/05/08/cara-instal-ruby-via-rvm/">Cara Instal Ruby via RVM</a>.
+Jadi saya asumsikan perangkat kalian sudah terpasang Ruby entah itu ruby versi berapa tapi saya sarankan gunakan ruby versi terbaru, dan jangan lupa pula sesuaikan dengan sistem operasi yang kalian gunakan.</p>
+
+<h4>1. Cek Ruby Environment</h4>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ruby -v</span></code></pre></td></tr></table></div></figure></p>
+
+<h4>2. Database untuk Rails</h4>
+
+<p>Disini saya juga sudah mengasumsikan pada kalian untuk sudah memasang database yang akan digunakan di Rails nanti, contohnya seperti: SQLite3, MySQL, PostgreSQL dan lain sebagainya sesuaikan dengan kebutuhan database yang kalian gunakan nanti.
+Untuk memverifikasinya dengan perintah sebagai contoh:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>SQLite3&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>sqlite3 &ndash;version&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>MySQL&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>mysql &ndash;version&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>PostgreSQL&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>psql &ndash;version</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Dan lain sebagainya, sesuaikan dengan environment database yang kalian gunakan. Jika output dihasilkan maka database sudah siap dipakai.</p>
+
+<h4>3. Instal Rails</h4>
+
+<p>Sekarang kalian sudah bisa instal Rails dengan perintah:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install rails</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Ini membutuhkan waktu yang lama sesuai koneksi internet dan perangkat yang digunakan.</p>
+
+<h4>4. Verifikasi Rails</h4>
+
+<p>Jika langkah diatas sudah kelar maka langkah selanjutnya kalian verifikasi rails yang sudah di instal dengan perintah:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails -v</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Jika output dihasilkan maka Rails sudah siap dipakai.</p>
+
+<h4>5. Siapkan aplikasi baru</h4>
+
+<p>Untuk memulai aplikasi baru Rails yang sudah di-install langsung saja ketikkan perintah:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Sebelum kalian menggunakan perintah <code>rails new aplikasi-pertamaku</code> kalian juga dapat menggunakan parameter yang tersedia sebegai berikut:</p>
+
+<p><figure class='code'><figcaption><span>Parameter &lsquo;rails new &ndash;help&rsquo; </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Usage:
+</span><span class='line'>  rails new APP_PATH [options]&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>Options:
+</span><span class='line'>  -r, [&ndash;ruby=PATH]                                      # Path to the Ruby binary of your choice
+</span><span class='line'>                                                         # Default: /home/sundi3yansyah/.rvm/rubies/ruby-2.3.3/bin/ruby
+</span><span class='line'>  -m, [&ndash;template=TEMPLATE]                              # Path to some application template (can be a filesystem path or URL)
+</span><span class='line'>  -d, [&ndash;database=DATABASE]                              # Preconfigure for selected database (options: mysql/oracle/postgresql/sqlite3/frontbase/ibm_db/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc)
+</span><span class='line'>                                                         # Default: sqlite3
+</span><span class='line'>  -j, [&ndash;javascript=JAVASCRIPT]                          # Preconfigure for selected JavaScript library
+</span><span class='line'>                                                         # Default: jquery
+</span><span class='line'>      [&ndash;skip-gemfile], [&ndash;no-skip-gemfile]              # Don&rsquo;t create a Gemfile
+</span><span class='line'>  -B, [&ndash;skip-bundle], [&ndash;no-skip-bundle]                # Don&rsquo;t run bundle install
+</span><span class='line'>  -G, [&ndash;skip-git], [&ndash;no-skip-git]                      # Skip .gitignore file
+</span><span class='line'>      [&ndash;skip-keeps], [&ndash;no-skip-keeps]                  # Skip source control .keep files
+</span><span class='line'>  -M, [&ndash;skip-action-mailer], [&ndash;no-skip-action-mailer]  # Skip Action Mailer files
+</span><span class='line'>  -O, [&ndash;skip-active-record], [&ndash;no-skip-active-record]  # Skip Active Record files
+</span><span class='line'>  -P, [&ndash;skip-puma], [&ndash;no-skip-puma]                    # Skip Puma related files
+</span><span class='line'>  -C, [&ndash;skip-action-cable], [&ndash;no-skip-action-cable]    # Skip Action Cable files
+</span><span class='line'>  -S, [&ndash;skip-sprockets], [&ndash;no-skip-sprockets]          # Skip Sprockets files
+</span><span class='line'>      [&ndash;skip-spring], [&ndash;no-skip-spring]                # Don&rsquo;t install Spring application preloader
+</span><span class='line'>      [&ndash;skip-listen], [&ndash;no-skip-listen]                # Don&rsquo;t generate configuration that depends on the listen gem
+</span><span class='line'>  -J, [&ndash;skip-javascript], [&ndash;no-skip-javascript]        # Skip JavaScript files
+</span><span class='line'>      [&ndash;skip-turbolinks], [&ndash;no-skip-turbolinks]        # Skip turbolinks gem
+</span><span class='line'>  -T, [&ndash;skip-test], [&ndash;no-skip-test]                    # Skip test files
+</span><span class='line'>      [&ndash;dev], [&ndash;no-dev]                                # Setup the application with Gemfile pointing to your Rails checkout
+</span><span class='line'>      [&ndash;edge], [&ndash;no-edge]                              # Setup the application with Gemfile pointing to Rails repository
+</span><span class='line'>      [&ndash;rc=RC]                                          # Path to file containing extra configuration options for rails command
+</span><span class='line'>      [&ndash;no-rc], [&ndash;no-no-rc]                            # Skip loading of extra configuration options from .railsrc file
+</span><span class='line'>      [&ndash;api], [&ndash;no-api]                                # Preconfigure smaller stack for API only apps&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>Runtime options:
+</span><span class='line'>  -f, [&ndash;force]                    # Overwrite files that already exist
+</span><span class='line'>  -p, [&ndash;pretend], [&ndash;no-pretend]  # Run but do not make any changes
+</span><span class='line'>  -q, [&ndash;quiet], [&ndash;no-quiet]      # Suppress status output
+</span><span class='line'>  -s, [&ndash;skip], [&ndash;no-skip]        # Skip files that already exist&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>Rails options:
+</span><span class='line'>  -h, [&ndash;help], [&ndash;no-help]        # Show this help message and quit
+</span><span class='line'>  -v, [&ndash;version], [&ndash;no-version]  # Show Rails version number and quit&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>Description:
+</span><span class='line'>    The &lsquo;rails new&rsquo; command creates a new Rails application with a default
+</span><span class='line'>    directory structure and configuration at the path you specify.&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>You can specify extra command-line arguments to be used every time
+</span><span class='line'>'rails new' runs in the .railsrc configuration file in your home directory.
+</span><span class='line'>
+</span><span class='line'>Note that the arguments specified in the .railsrc file don't affect the
+</span><span class='line'>defaults values shown above in this help message.
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>Example:
+</span><span class='line'>    rails new ~/Code/Ruby/weblog&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>This generates a skeletal Rails installation in ~/Code/Ruby/weblog.
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></p>
+
+<p>Sebagai contoh aplikasi rails kita ingin menggunakan database MySQL dengan perintah:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku -d mysql</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Contoh lain aplikasi rails kita ingin digunakan untuk membuat API maka perintahnya:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku &ndash;api</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Atau kedua-duanya, maka perintahnya:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku -d mysql &ndash;api</span></code></pre></td></tr></table></div></figure></p>
+
+<p><strong>aplikasi-pertamaku</strong> adalah nama aplikasi atau nama module atau apakah kalian menyebutnya dan <strong>aplikasi-pertamaku</strong> sekaligus nama folder yang akan dihasilkan, maka langkah selanjutnya masuk ke folder aplikasi tersebut:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd aplikasi-pertamaku</span></code></pre></td></tr></table></div></figure></p>
+
+<h4>6. Jalankan Aplikasi</h4>
+
+<p>Jika aplikasi rails kalian sudah yakin benar, untuk menjalankannya aplikasi rails yang sudah dihasilkan gunakan perintah:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails server</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Jika output terminal yang dihasilkan kurang lebih sebagai berikut:</p>
+
+<p><figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>=> Booting Puma
+</span><span class='line'>=> Rails 5.1.2 application starting in development on &lt;a href="http://localhost:3000">http://localhost:3000&lt;/a>
+</span><span class='line'>=> Run &lt;code>rails server -h&lt;/code> for more startup options
+</span><span class='line'>Puma starting in single mode&hellip;
+</span><span class='line'>* Version 3.9.1 (ruby 2.3.3-p222), codename: Private Caller
+</span><span class='line'>* Min threads: 5, max threads: 5
+</span><span class='line'>* Environment: development
+</span><span class='line'>* Listening on tcp://0.0.0.0:3000
+</span><span class='line'>Use Ctrl-C to stop</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Maka aplikasi berhasil dijalankan, langkah berikutnya kalian bisa kunjungi alamat <a href="http://localhost:3000">http://localhost:3000</a> pada browser favorit kalian.</p>
+
+<p>Jika output pada browser sebagai berikut:</p>
+
+<p><img src="http://guides.rubyonrails.org/images/getting_started/rails_welcome.png" alt="Rails welcome" /></p>
+
+<p>Maka artikel ini berhasil membantu anda untuk meng-instal Rails pada perangkat kalian.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GitHub API, CodeIgniter, SemanticUI]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2015/04/12/github-api-codeigniter-semanticui/"/>
+    <updated>2015-04-12T10:27:40+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2015/04/12/github-api-codeigniter-semanticui</id>
+    <content type="html"><![CDATA[<p>Hai&hellip; <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; > udah lama gk bikin post nih&hellip;</p>
+
+<p>Lagi iseng-iseng kemarin main di github nge bundle 3 repositori</p>
+
+<ul>
+<li>GitHub API</li>
+<li>CodeIgniter</li>
+<li>Semantic UI</li>
+</ul>
+
+
+<p>Apa aja yg ada disana?</p>
+
+<!-- more -->
+
+
+<p>Saya cuma menggabungkan andatara ketiga repo tersebut dan menambahkan HMVC dari CodeIgniter itu sendiri dan di GitHub api yg akan di jadikan konten, sebenernya gk cuma itu nanti saya akan ngebuilt sebuah repo repo lain nya di sertai demo, open source, dan yang pasti berhubungan dengan backend.</p>
+
+<p>Kalian bisa lihat langsung demonya yg saya push ke heroku disini:</p>
+
+<p><a href="http://sundi3yansyah.herokuapp.com">http://sundi3yansyah.herokuapp.com</a></p>
+
+<p>Mau fork? mau download? mau make juga? silakan&hellip; jangan lupa juga yak baca readme nya <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; > tapi bahasa ingggris gpp yak, sengaja biar kelihatan internasional nya <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; ></p>
+
+<div class="github-widget" data-repo="SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI"></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ultra Framework ORM]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/08/27/ultra-framework-orm/"/>
+    <updated>2014-08-27T01:18:16+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/08/27/ultra-framework-orm</id>
+    <content type="html"><![CDATA[<p>Kali ini saya akan membagikan sebuah framework ala yudi purwanto yang saya berinama Ultra Framework Versi ORM. Dari yang sebelumnya belum mendukung ORM.</p>
+
+<p>Aplikasi yang dibuat sangat sederhana namun memungkinkan kita untuk memahami cara kerjanya.</p>
+
+<p><strong>Object Relaional Mapping(ORM)</strong> : Salah satu teknik memetakkan basisdata relational ke model object. : Salah satu teknik memetakkan basisdata relational ke model object.</p>
+
+<!-- more -->
+
+
+<p><strong>MVC</strong> pada awalnya banyak digunakan dalam aplikasi GUI dekstop, tetapi saat ini dengan perkembangan dan kematangan bahasa pemrograman web, bermunculanlah beberapa framework yang menggunakan arsitektur ini.</p>
+
+<p><strong>MVC</strong>, singkatnya adalah cara yang efisien, bersih dan cepat untuk memisahkan kode program dari kode HTML, atau antar muka lain yang kita pilih.</p>
+
+<p>MVC berarti, <strong>Model</strong> – <strong>View</strong> – <strong>Controller</strong>.</p>
+
+<p><strong>Model</strong>: bertanggungjawab terhadap pengelolaan data seperti SQL databases dan operasi SELECT, UPDATE, DELETE,dsb, dst, dll</p>
+
+<p><strong>View</strong>: menampilkan antarmuka (UI), html, css, javascript dan sebagainya</p>
+
+<p><strong>Controller</strong>: Jantung dan otak dari arsitektur MVC, tempat semua request masuk, controller adalah yang menjembatani antara view dan model.</p>
+
+<p><em>Ultra Framework versi ORM ini menggunakan Default Driver Mysql tetapi tidak menutup kemungkinan tidak bisa menggunakan Sqlite dan Postgres, Itu jelas salah tentu saja bisa.</em></p>
+
+<p>Disini akan saya berikan Dokumentasi dan cara penggunaan Framework Versi ini.</p>
+
+<ul>
+<li>Langkah pertama download file yang ada di github.</li>
+<li>Langkah kedua konfigurasi di Config.php yang ada dalam root dir/base/Config.php</li>
+</ul>
+
+
+<p>Setting nama semua yang ada di Config.php sesuaikan kebutuhan.</p>
+
+<p>Seperti Host, Database, User, Password dan url</p>
+
+<h4>Penjelasan</h4>
+
+<p>Jika anda menggunakan Mysql isi bagian mysql, tetapi jika anda menggunakan Sqlite atau Postgres</p>
+
+<p>hapus comment Configurasi dari masing masing Driver.</p>
+
+<p>Untuk pengaturan Congfigurasi yang lain Di App.php yang berada di base/App.php</p>
+
+<p>Oke kita masuk ketahap penggunaannya.</p>
+
+<p>Disini saya memberikan contoh penggunaan dengan database.</p>
+
+<p>Karena saat ini dalam contoh menggunakan Mysql jadi Setting di Config.php seperti berikut :</p>
+
+<p><figure class='code'><figcaption><span>Config </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ORM::configure(&lsquo;mysql:host=localhost; dbname=perpustakaan&rsquo;);
+</span><span class='line'>ORM::configure(&lsquo;username&rsquo;, &lsquo;root&rsquo;);
+</span><span class='line'>ORM::configure(&lsquo;password&rsquo;, &lsquo;1&rsquo;);</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Secara default sudah bisa berjalan dengan lancar jika diakses <a href="http://domain.com">http://domain.com</a> atau <a href="http://localhost/folder">http://localhost/folder</a> dan dicontrollers sudah ada file indexController.php dan testController.php.</p>
+
+<p>Buat sebuah database dengan nama perpustakaan</p>
+
+<p>Lalu buat sebuah tabel dengan nama books</p>
+
+<p><figure class='code'><figcaption><span>books </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>CREATE TABLE IF NOT EXISTS &lt;code>books&lt;/code> (
+</span><span class='line'>&lt;code>id&lt;/code> int(11) NOT NULL,
+</span><span class='line'>  &lt;code>author&lt;/code> int(11) NOT NULL,
+</span><span class='line'>  &lt;code>title&lt;/code> varchar(70) NOT NULL,
+</span><span class='line'>  &lt;code>isbn&lt;/code> varchar(20) DEFAULT NULL,
+</span><span class='line'>  &lt;code>publisher&lt;/code> varchar(30) NOT NULL,
+</span><span class='line'>  &lt;code>year&lt;/code> int(4) NOT NULL,
+</span><span class='line'>  &lt;code>summary&lt;/code> text,
+</span><span class='line'>  &lt;code>coverMime&lt;/code> varchar(20) DEFAULT NULL,
+</span><span class='line'>  &lt;code>coverImage&lt;/code> blob,
+</span><span class='line'>  &lt;code>copies&lt;/code> tinyint(4) NOT NULL DEFAULT &lsquo;1&rsquo;
+</span><span class='line'>) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>INSERT INTO &lt;code>books&lt;/code> (&lt;code>id&lt;/code>, &lt;code>author&lt;/code>, &lt;code>title&lt;/code>, &lt;code>isbn&lt;/code>, &lt;code>publisher&lt;/code>, &lt;code>year&lt;/code>, &lt;code>summary&lt;/code>, &lt;code>coverMime&lt;/code>, &lt;code>coverImage&lt;/code>, &lt;code>copies&lt;/code>) VALUES
+</span><span class='line'>(1, 1, &lsquo;Creating your MySQL Database: Practical Design Tips and\r\nTechniques&rsquo;, &lsquo;1904811302&rsquo;, &lsquo;Packt Publishing Ltd&rsquo;, 2006, &lsquo;A short guide for everyone on how to structure your data and\r\nset-up your MySQL database tables efficiently and easily.&rsquo;, NULL, NULL, 1),
+</span><span class='line'>(2, 2, &lsquo;ImageMagick Tricks&rsquo;, &lsquo;1904811868&rsquo;, &lsquo;Packt Publishing\r\nLtd&rsquo;, 2006, &lsquo;Unleash the power of ImageMagick with this fast, friendly\r\ntutorial, and tips guide&rsquo;, NULL, NULL, 1),
+</span><span class='line'>(3, 3, &lsquo;Building Websites with Plone&rsquo;, &lsquo;1904811027&rsquo;, &lsquo;Packt\r\nPublishing Ltd&rsquo;, 2004, &lsquo;An in-depth and comprehensive guide to the Plone content\r\nmanagement system&rsquo;, NULL, NULL, 1);</span></code></pre></td></tr></table></div></figure></p>
+
+<h4>Model</h4>
+
+<p>Pembuatan model sangat mudah sebagai contoh seperti dibawah ini</p>
+
+<p>Buat sebuah file didalam folder models dengan nama SiteModel.php dengan nama tabel books,</p>
+
+<p>terlebih dahulu setting Configurasi database.</p>
+
+<p><figure class='code'><figcaption><span>SiteModel </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;?php
+</span><span class='line'>/**&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;hr />
+</span><span class='line'>
+</span><span class='line'>&lt;ul>
+</span><span class='line'>&lt;li>@author : Yudi Purwanto&lt;/li>
+</span><span class='line'>&lt;li>@link   : &lt;a href="http://yudi-purwanto.com">http://yudi-purwanto.com&lt;/a>&lt;/li>
+</span><span class='line'>&lt;li>@since  : 14 May 2014&lt;/li>
+</span><span class='line'>&lt;li>File    : SiteModel.php&lt;/li>
+</span><span class='line'>&lt;li>&lt;/li>
+</span><span class='line'>&lt;li>&lt;p>**************************************/
+</span><span class='line'>class SiteModel extends Model
+</span><span class='line'>{
+</span><span class='line'>public function getBooks()
+</span><span class='line'>{
+</span><span class='line'>$list = ORM::table(&lsquo;books&rsquo;)->find_many();
+</span><span class='line'>return $list;
+</span><span class='line'>}
+</span><span class='line'>}&lt;/p>&lt;/li>
+</span><span class='line'>&lt;/ul>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>&lt;p>/&lt;em> End of file SiteModel.php &lt;/em>/
+</span><span class='line'>/&lt;em> Location: ./models/SiteModel.php &lt;/em>/</span></code></pre></td></tr></table></div></figure></p>
+
+<p><strong>Note : Untuk load sebuah model didalam sebuah controller dengan cara :</strong></p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$this->loadModel(&lsquo;NamaModel&rsquo;);</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Contoh :</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$this->loadModel(&lsquo;Site&rsquo;);</span></code></pre></td></tr></table></div></figure></p>
+
+<h4>Controller</h4>
+
+<p>Kita bahas membuat sebuah controller disini saya contohkan testController.php yang mana sudah ada didalam folder controllers, nanti anda bisa mengakses <a href="http://localhost/folder/test">http://localhost/folder/test</a></p>
+
+<p>Membuat sebuah controller, sebagai contoh :</p>
+
+<p><figure class='code'><figcaption><span>testController </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;?php
+</span><span class='line'>/**&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;hr />
+</span><span class='line'>
+</span><span class='line'>&lt;ul>
+</span><span class='line'>&lt;li>@author : Yudi Purwanto&lt;/li>
+</span><span class='line'>&lt;li>@link     : &lt;a href="http://yudi-purwanto.com">http://yudi-purwanto.com&lt;/a>&lt;/li>
+</span><span class='line'>&lt;li>@since   : 14 May 2014&lt;/li>
+</span><span class='line'>&lt;li>File         : testController.php&lt;/li>
+</span><span class='line'>&lt;li>&lt;/li>
+</span><span class='line'>&lt;li>&lt;p>**************************************/
+</span><span class='line'>class testController extends Controller
+</span><span class='line'>{ &lt;br/>
+</span><span class='line'> //&lt;&ndash; * Index Error * &mdash;>
+</span><span class='line'> public function index() {
+</span><span class='line'>     header (&lsquo;HTTP/1.0 404 Not Found&rsquo;);
+</span><span class='line'>     include &lsquo;public/error/404.php&rsquo;; // Show Error 404
+</span><span class='line'> }&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p> public function test()
+</span><span class='line'> {
+</span><span class='line'>  $output = $this->loadModel(&lsquo;Site&rsquo;);
+</span><span class='line'>  $this->view->title = &ldquo;Testing controller&rdquo;;
+</span><span class='line'>  $this->view->list = $output->getBooks();
+</span><span class='line'>/&lt;em> Show Views &lt;/em>/
+</span><span class='line'>     $this->view->render(&lsquo;index&rsquo;, null);
+</span><span class='line'> }
+</span><span class='line'>}&lt;/p>&lt;/li>
+</span><span class='line'>&lt;/ul>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>&lt;p>/&lt;em> End of file indexController.php &lt;/em>/
+</span><span class='line'>/&lt;em> Location: ./controllers/indexController.php &lt;/em>/</span></code></pre></td></tr></table></div></figure></p>
+
+<h4>View</h4>
+
+<p>View, seperti halnya membuat sebuah Model dan Controller, langsung saja kita ke langkah pembuatannya dari pembuatan Model dan Controller kita akan menampilkan dengan view ini. Simak contoh berikut.</p>
+
+<p><strong>Exstensi file view adalah .phtml jadi setiap membuat view dengan exstensi phtml</strong></p>
+
+<p><figure class='code'><figcaption><span>php Exstensi file view adalah .phtml jadi setiap membuat view dengan exstensi phtml </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;!DOCTYPE html>
+</span><span class='line'>&lt;html>
+</span><span class='line'>&lt;head>
+</span><span class='line'> &lt;title>&lt;?php echo $this->title; ?>&lt;/title>
+</span><span class='line'> &lt;link rel=&ldquo;stylesheet&rdquo; type=&ldquo;text/css&rdquo; href=&ldquo;&lt;?php echo $layout['css']; ?>bootstrap.min.css&rdquo;>
+</span><span class='line'>&lt;/head>
+</span><span class='line'>&lt;body>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;div class="container">
+</span><span class='line'>
+</span><span class='line'>&lt;nav class="navbar navbar-inverse">
+</span><span class='line'> &lt;div class="navbar-header">
+</span><span class='line'>  &lt;a class="navbar-brand" href="&lt;?php echo url; ?>">Crud&lt;/a>
+</span><span class='line'> &lt;/div>
+</span><span class='line'>&lt;/nav>
+</span><span class='line'>&lt;h1>All Data&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;table class="table table-striped table-bordered">
+</span><span class='line'> &lt;thead>
+</span><span class='line'>  &lt;tr>
+</span><span class='line'>  &lt;td>Author and Title&lt;/td>
+</span><span class='line'>  &lt;td>ISBN&lt;/td>
+</span><span class='line'>  &lt;td>Publisher&lt;/td>
+</span><span class='line'>  &lt;td>Year&lt;/td>
+</span><span class='line'>  &lt;td>Summary&lt;/td>
+</span><span class='line'>  &lt;td>Copies&lt;/td>
+</span><span class='line'>  &lt;/tr>
+</span><span class='line'> &lt;/thead>
+</span><span class='line'> &lt;tbody>
+</span><span class='line'>  &lt;?php
+</span><span class='line'>  $data = $this->list;
+</span><span class='line'>  foreach($data as $value):
+</span><span class='line'>  ?>
+</span><span class='line'>  &lt;tr>
+</span><span class='line'>  &lt;td>&lt;?php echo $value->title; ?>&lt;/td>
+</span><span class='line'>  &lt;td>&lt;?php echo $value->isbn; ?>&lt;/td>
+</span><span class='line'>  &lt;td>&lt;?php echo $value->publisher; ?>&lt;/td>
+</span><span class='line'>  &lt;td>&lt;?php echo $value->year; ?>&lt;/td>
+</span><span class='line'>  &lt;td>&lt;?php echo $value->summary; ?>&lt;/td>
+</span><span class='line'>  &lt;td>&lt;?php echo $value->copies; ?>&lt;/td>
+</span><span class='line'>  &lt;/tr>
+</span><span class='line'>  &lt;?php endforeach ?>
+</span><span class='line'> &lt;/tbody>
+</span><span class='line'>&lt;/table>
+</span><span class='line'>&lt;/div>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>&lt;p>&lt;/body>
+</span><span class='line'>&lt;/html></span></code></pre></td></tr></table></div></figure></p>
+
+<h4>Router</h4>
+
+<p>Pada dasarnya jika anda membuat sebuah Controller, anda harus mendaftarkan ke <code>router.php</code></p>
+
+<p>di <code>base/Router.php</code>, dengan cara sebagai berikut.</p>
+
+<p>Perhatikan baik baik, bisa dibilang susah susah gampang disaat mendaftarkan controller ke router.</p>
+
+<p><figure class='code'><figcaption><span>Router </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;?php
+</span><span class='line'>/**&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;hr />
+</span><span class='line'>
+</span><span class='line'>&lt;ul>
+</span><span class='line'>&lt;li>@author : Yudi Purwanto&lt;/li>
+</span><span class='line'>&lt;li>@link   : &lt;a href="http://yudi-purwanto.com">http://yudi-purwanto.com&lt;/a>&lt;/li>
+</span><span class='line'>&lt;li>@since  : 14 May 2014&lt;/li>
+</span><span class='line'>&lt;li>File    : Router.php&lt;/li>
+</span><span class='line'>&lt;li>&lt;/li>
+</span><span class='line'>&lt;li>&lt;p>**************************************/
+</span><span class='line'>class Router
+</span><span class='line'>{
+</span><span class='line'> private $&lt;em>controller;
+</span><span class='line'> private $&lt;/em>method;&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p> public function &lt;em>_construct() {
+</span><span class='line'>     $page        = $&lt;/em>GET[&lsquo;test&rsquo;];   //Test eg: &lt;a href="http:website.com/test">http:website.com/test&lt;/a> dan jangan lupa setting htaccess&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code> /* function method controller */
+</span><span class='line'> $staticPages = array(
+</span><span class='line'>                 'test'
+</span><span class='line'> );
+</span><span class='line'>
+</span><span class='line'> //&lt;-- *  Pages Default * --&gt;
+</span><span class='line'> if( !in_array( $page, $staticPages ) 
+</span><span class='line'>     &amp;&amp; isset( $page ) 
+</span><span class='line'> ) {
+</span><span class='line'>      $this-&gt;_c $page );
+</span><span class='line'>     $this-&gt;_method     = strtolower( $page );
+</span><span class='line'>
+</span><span class='line'> }
+</span><span class='line'> //&lt;--- ************* Pages ********* ---&gt;
+</span><span class='line'> else if( isset( $page ) 
+</span><span class='line'>         &amp;&amp; in_array( $page, $staticPages )
+</span><span class='line'> ) {
+</span><span class='line'>     //load nama controller adalah test = load nama folder test di dalam folder views, jadi harus sama
+</span><span class='line'>      $this-&gt;_c
+</span><span class='line'>     $this-&gt;_method     = strtolower( $page );
+</span><span class='line'> }
+</span><span class='line'>
+</span><span class='line'> //&lt;-- * if no have variables defined $ _GET showed index * --&gt;
+</span><span class='line'> if( !$this-&gt;_controller ) {
+</span><span class='line'>      $this-&gt;_c
+</span><span class='line'> }
+</span><span class='line'>
+</span><span class='line'> if( !$this-&gt;_method ) {
+</span><span class='line'>     $this-&gt;_method = 'index';
+</span><span class='line'> }
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p> } //&lt;&mdash; * End * &ndash;>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p> public function getController() {
+</span><span class='line'>     return $this->_controller;
+</span><span class='line'> }&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p> public function getMethod() {
+</span><span class='line'>     return $this->_method;
+</span><span class='line'> }&lt;/p>&lt;/li>
+</span><span class='line'>&lt;/ul>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>&lt;p>} //&lt;&ndash; * End Class * &ndash;>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>/&lt;em> End of file Router.php &lt;/em>/
+</span><span class='line'>/&lt;em> Location: ./base/Router.php &lt;/em>/</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Untuk file htaccessnya anda bisa menambahkan seperti ini :</p>
+
+<p><figure class='code'><figcaption><span>.htaccess </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Test&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>RewriteRule ^([a-zA-Z0-9-_]+)$ index.php?test=$1 [QSA,L]</span></code></pre></td></tr></table></div></figure></p>
+
+<p><strong>Selamat Mencoba&hellip;!!!</strong></p>
+
+<h3><a href="https://github.com/zhiephie/ultra-framework-orm">View Project on Github</a></h3>
+
+<div class="github-widget" data-repo="zhiephie/ultra-framework-orm"></div>
+
+
+<p><strong> <a href="http://www.yudi-purwanto.com/index.php/show/detail/framework-ultra-framework-orm">Source</a> </strong></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Debian | Cahyadi Triyansyah (SunDi3yansyah)]]></title>
+  <link href="http://sundi3yansyah.github.io/article/categories/debian/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2023-12-28T22:07:32+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
+  <author>
+    <name><![CDATA[Cahyadi Triyansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install NodeJS Di Debian]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/23/cara-install-nodejs-di-debian/"/>
+    <updated>2014-11-23T17:27:33+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/23/cara-install-nodejs-di-debian</id>
+    <content type="html"><![CDATA[<p>Kalau kemarin saya sudah share <a href="http://sundi3yansyah.github.io/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu/">Cara Install NodeJS Dan NPM Di Ubuntu</a>, <a href="http://sundi3yansyah.github.io/article/2014/09/07/cara-install-nodejs-via-tarball-di-centos-rhel/">Cara Install NodeJS via Tarball Di CentOS/RHEL</a>, <a href="http://sundi3yansyah.github.io/article/2014/10/25/cara-install-nodejs-di-windows/">Cara Install NodeJS Di Windows</a> &hellip; nah sekarang saya akan memberikan sedikit snippet command line untuk <a href="#">Cara Install NodeJS di Debian</a>, langsaung saja&hellip;
+<code>
+sudo apt-get install python g++ make wget libssl-dev
+</code></p>
+
+<!--more-->
+
+
+<pre><code>wget http://nodejs.org/dist/node-latest.tar.gz
+</code></pre>
+
+<pre><code>tar xvfvz node-latest.tar.gz
+</code></pre>
+
+<p>atau bisa juga
+<code>
+tar xzvf node-latest.tar.gz
+</code>
+<code>
+cd node-latest
+</code>
+<code>
+./configure
+</code>
+<code>
+make
+</code>
+<code>
+sudo make install
+</code></p>
+
+<p>Nah kesimpulannya apa? Hampir sama kan cara install di distro lainnya, hanya berbeda di devlopment untuk mengcimpilienya, karena beda nama package <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+]]></content>
+  </entry>
+  
+</feed>

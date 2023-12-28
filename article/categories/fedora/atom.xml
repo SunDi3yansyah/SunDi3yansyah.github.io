@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Fedora | Cahyadi Triyansyah (SunDi3yansyah)]]></title>
+  <link href="http://sundi3yansyah.github.io/article/categories/fedora/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2023-12-28T22:07:32+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
+  <author>
+    <name><![CDATA[Cahyadi Triyansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Ruby Di Fedora]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/12/26/cara-install-ruby-di-fedora/"/>
+    <updated>2014-12-26T03:48:32+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/12/26/cara-install-ruby-di-fedora</id>
+    <content type="html"><![CDATA[<p>Kalau di CentOS, Debian, Ubuntu, Windows dan lain-lainnya silakan di lihat di archive blog saya <strong>kan sudah</strong> nah kali ini saya akan menjelaskan bagaimana jika di <strong>Fedora</strong> kali ini berbeda dengan di Fedora cukup lakukan perintah <strong>yum yum dan yum</strong> kalian sudah bisa mendapatkan versi Ruby dan Gems lainnya dengan versi terbaru, langsung saja.</p>
+
+<p>Buka shell session kalian (terminal)</p>
+
+<pre><code>yum update
+</code></pre>
+
+<!-- more -->
+
+
+<p>untuk mengupdate repository kalian jika masih belum up to date.</p>
+
+<p>install ruby</p>
+
+<pre><code>yum install ruby
+</code></pre>
+
+<p>nanti kalian akan di beri ruby versi ke old stable, yaitu versi old stable sekarang 2.0, itu sudah menjadi versi ruby yang bisa kompetibel dengan aplikasi apapun.</p>
+
+<p>kemudian update gems nya</p>
+
+<pre><code>gem -v
+</code></pre>
+
+<p>silakan buka situs rubygems di <a href="https://rubygems.org/">https://rubygems.org/</a> jika versi di OS kalian dengan di situs berbeda maka lakukan update</p>
+
+<pre><code>gem update --system
+</code></pre>
+
+<p>next, update gem list yang ada</p>
+
+<pre><code>gem update
+</code></pre>
+
+<p>NOTE: Jika terjadi error seperti ini:</p>
+
+<p><figure class='code'><figcaption><span>error_required   </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Updating rubygems-update
+</span><span class='line'>Fetching: rubygems-update-2.4.5.gem (100%)
+</span><span class='line'>Successfully installed rubygems-update-2.4.5
+</span><span class='line'>Parsing documentation for rubygems-update-2.4.5
+</span><span class='line'>Installing ri documentation for rubygems-update-2.4.5
+</span><span class='line'>Installing darkfish documentation for rubygems-update-2.4.5
+</span><span class='line'>Done installing documentation for rubygems-update after 11 seconds
+</span><span class='line'>Installing RubyGems 2.4.5
+</span><span class='line'>RubyGems 2.4.5 installed
+</span><span class='line'>/usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in &lt;code>require': cannot load such file -- json/pure (LoadError)
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in&lt;/code>require'
+</span><span class='line'>    from /usr/share/gems/gems/json-1.7.7/lib/json.rb:60:in &lt;code>rescue in &lt;module:JSON&gt;'
+</span><span class='line'>    from /usr/share/gems/gems/json-1.7.7/lib/json.rb:57:in&lt;/code>&lt;module:JSON>&lsquo;
+</span><span class='line'>    from /usr/share/gems/gems/json-1.7.7/lib/json.rb:54:in &lt;code>&lt;top (required)&gt;'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in&lt;/code>require&rsquo;
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in &lt;code>require'
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/text.rb:16:in&lt;/code>&lt;top (required)>&lsquo;
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/code_object.rb:28:in &lt;code>&lt;class:CodeObject&gt;'
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/code_object.rb:26:in&lt;/code>&lt;top (required)>&rsquo;
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/generator/markup.rb:59:in &lt;code>&lt;top (required)&gt;'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in&lt;/code>require'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in &lt;code>require'
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/generator/darkfish.rb:6:in&lt;/code>&lt;top (required)>&lsquo;
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in &lt;code>require'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in&lt;/code>require&rsquo;
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/rdoc.rb:565:in &lt;code>&lt;top (required)&gt;'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in&lt;/code>require'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in &lt;code>require'
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/rubygems_hook.rb:73:in&lt;/code>load_rdoc'
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/rubygems_hook.rb:238:in &lt;code>setup'
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/rubygems_hook.rb:151:in&lt;/code>generate'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/commands/setup_command.rb:317:in &lt;code>install_rdoc'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/commands/setup_command.rb:148:in&lt;/code>execute'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/command.rb:307:in &lt;code>invoke_with_build_args'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/command_manager.rb:168:in&lt;/code>process_args'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/command_manager.rb:138:in &lt;code>run'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/gem_runner.rb:54:in&lt;/code>run'
+</span><span class='line'>    from setup.rb:45:in `&lt;main>&lsquo;</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Maka lakukan install gems json_pure</p>
+
+<pre><code>gem install json_pure
+</code></pre>
+
+<p>Kemudian lakukan update step sebelumnya. Oke,,, sekian dari saya, selamat ngoding&hellip;</p>
+]]></content>
+  </entry>
+  
+</feed>

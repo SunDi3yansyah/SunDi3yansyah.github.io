@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Rvm | Cahyadi Triyansyah (SunDi3yansyah)]]></title>
+  <link href="http://sundi3yansyah.github.io/article/categories/rvm/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2023-12-28T22:07:32+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
+  <author>
+    <name><![CDATA[Cahyadi Triyansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Instal Ruby via RVM]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2017/05/08/cara-instal-ruby-via-rvm/"/>
+    <updated>2017-05-08T14:06:02+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2017/05/08/cara-instal-ruby-via-rvm</id>
+    <content type="html"><![CDATA[<p>Apa itu RVM?</p>
+
+<p><blockquote><p>Ruby Version Manager, often abbreviated as RVM, is a unix-like software platform designed to manage multiple instalations of Ruby on the same device.</p><footer><strong>Ruby Version Manager <a href="https://en.wikipedia.org/wiki/Ruby_Version_Manager">https://en.wikipedia.org/wiki/Ruby_Version_Manager</a></strong></footer></blockquote></p>
+
+<!-- more -->
+
+
+<p>Jadi intinya kita bisa memasang ruby untuk beberapa versi yang kita inginkan.</p>
+
+<p>Tutorial kali ini hanya untuk sistem operasi keturunan dari <strong>Darwin</strong> dan <strong>Linux</strong></p>
+
+<p>Sebelum menginstalnya kita harus instal <strong>mpapis public key</strong></p>
+
+<pre><code>gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+</code></pre>
+
+<p>Instal RVM</p>
+
+<p>Versi Development</p>
+
+<pre><code>\curl -sSL https://get.rvm.io | bash
+</code></pre>
+
+<p>atau Versi Stable</p>
+
+<pre><code>\curl -sSL https://get.rvm.io | bash -s stable --ruby
+</code></pre>
+
+<p>Teman-teman cukup memilih salah satu versi diatas, dan tunggu proses sampai selesai.</p>
+
+<p>Jika sudah selesai, silakan untuk melisting versi yang telah terinstal dengan cara.</p>
+
+<pre><code>rvm list
+</code></pre>
+
+<p><em>Jika belum keluar outputnya maka restartlah terminal teman-teman.</em></p>
+
+<p>Sekarang buka tautan ruby-lang berikut <a href="https://www.ruby-lang.org/en/downloads/">https://www.ruby-lang.org/en/downloads/</a> , apakah versi yang terinstal sudah sama dengan yang tertera dihalaman ruby-lang tersebut?
+Jika belum maka lakukan instal sesuai versi yang berbeda atau yang terbaru, dengan cara berikut ini.</p>
+
+<p>Misalnya ruby versi terbarunya adalah 0.0.1, maka lakukan perintah:</p>
+
+<pre><code>rvm install 0.0.1
+</code></pre>
+
+<p>Tunggu proses sampai selesai, untuk menggunakan ruby yang telah terinstal lakukan perintah</p>
+
+<pre><code>rvm use 0.0.1 --default
+</code></pre>
+
+<p>Nah sampai disini ruby telah terinstal menggunakan RVM. Untuk melihat semua gems yang terinstal secara bawaan lakukan perintah <code>gem list</code>, sedangkan untuk memperbarui versi gemnya lakukan perintah <code>gem update --system</code>, untuk melakukan perbaruan dari daftar gem yang telah terinstal lakukan <code>gem update</code>.</p>
+
+<p>So far, instalasi sudah selesai. Nantikan tutorial-tutorial dari saya selanjutnya seputar Ruby dan beserta frameworknya seperti Rails, Sinatra dan lain-lain.</p>
+]]></content>
+  </entry>
+  
+</feed>

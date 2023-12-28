@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Youtube | Cahyadi Triyansyah (SunDi3yansyah)]]></title>
+  <link href="http://sundi3yansyah.github.io/article/categories/youtube/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2023-12-28T22:07:32+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
+  <author>
+    <name><![CDATA[Cahyadi Triyansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Youtube-dl]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/22/cara-install-youtube-dl/"/>
+    <updated>2014-11-22T09:25:12+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/22/cara-install-youtube-dl</id>
+    <content type="html"><![CDATA[<p>Menggunakan CURL</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo curl &lt;a href="https://yt-dl.org/downloads/2014.11.21.1/youtube-dl">https://yt-dl.org/downloads/2014.11.21.1/youtube-dl&lt;/a> -o /usr/local/bin/youtube-dl</span></code></pre></td></tr></table></div></figure>
+NEXT
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo chmod a+x /usr/local/bin/youtube-dl</span></code></pre></td></tr></table></div></figure></p>
+
+<!--more-->
+
+
+<p>Bisa juga menggunakan WGET</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo wget &lt;a href="https://yt-dl.org/downloads/2014.11.21.1/youtube-dl">https://yt-dl.org/downloads/2014.11.21.1/youtube-dl&lt;/a> -O /usr/local/bin/youtube-dl</span></code></pre></td></tr></table></div></figure></p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo chmod a+x /usr/local/bin/youtube-dl</span></code></pre></td></tr></table></div></figure></p>
+
+<p><strong>NOTE:</strong> Jika belum terinstall dari salah satu diatas maka install terlebih dahulu</p>
+
+<pre><code>sudo apt-get install curl wget
+</code></pre>
+
+<p>Tapi biasanya sudah terinstall <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Git Set Up Dan Generating SSH Keys]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/09/08/cara-git-set-up-dan-generating-ssh-keys/"/>
+    <updated>2014-09-08T00:48:14+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/09/08/cara-git-set-up-dan-generating-ssh-keys</id>
+    <content type="html"><![CDATA[<p>Oke kali ini saya akan memberikan tutorial <strong>Cara Git Set Up dan Generating SSH Keys di GitHUb</strong></p>
+
+<!-- more -->
+
+
+<h4>asked</h4>
+
+<blockquote><p>Emang fungsinya untuk apa sih itu?</p></blockquote>
+
+<h4>answer</h4>
+
+<blockquote><p><strong>Git Set Up</strong> adalah untuk menkonfugurasi akun git kita di komputer/laptop lokal.
+<strong>Generating SSH Keys</strong> sebuah identifikasi yang akan di buat di komputer/laptop kita, selayaknya password, yang merupakan kunci publik akun kita di github yang bersifat Secure Shell, tetapi sama sekali tidak bersangkutan dengan password kita di github lho&hellip; :P Jadi setelah komputer/laptop kita ter-Restart (reboot) dan di setiap kita akan menGenerate sebuah repository ke github kita akan memasukan sebuah <code>passphrase key</code>.</p></blockquote>
+
+<p>Seperti yang sudah di jelaskan dari halaman <code>help.github.com</code></p>
+
+<p><blockquote><p>At the heart of GitHub is an open source version control system (VCS) called Git. Git is responsible for everything GitHub-related that happens locally on your computer.</p><footer><strong>Set Up Git <a href="https://help.github.com/articles/set-up-git">https://help.github.com/articles/set-up-git</a></strong></footer></blockquote></p>
+
+<p><blockquote><p>SSH keys are a way to identify trusted computers, without involving passwords. The steps below will walk you through generating an SSH key and then adding the public key to your GitHub account.</p><footer><strong>Generating SSH Keys <a href="https://help.github.com/articles/generating-ssh-keys">https://help.github.com/articles/generating-ssh-keys</a></strong></footer></blockquote></p>
+
+<p>Kali ini saya akan memberikan tutorial langsung berupa video yang sudah saya upload ke youtube. Jadi silakan untuk langsung di simak yak videonya xD</p>
+
+<iframe width="675" height="415" src="//www.youtube.com/embed/BBzHl_j86bc" frameborder="0" allowfullscreen></iframe>
+
+
+<h6>Credit: SunDi3yansyah</h6>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Membuat Repository Baru Di Github]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/08/27/cara-membuat-repository-baru-di-github/"/>
+    <updated>2014-08-27T11:29:33+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/08/27/cara-membuat-repository-baru-di-github</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<iframe width="675" height="415" src="//www.youtube.com/embed/vcn551khLDs" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Buat Post Di Octopress]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/08/27/cara-buat-post-di-octopress/"/>
+    <updated>2014-08-27T11:28:16+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/08/27/cara-buat-post-di-octopress</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<iframe width="675" height="415" src="//www.youtube.com/embed/4OIPZ9gaNv0" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Package Di SublimeText]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/08/27/cara-install-package-di-sublimetext/"/>
+    <updated>2014-08-27T11:26:46+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/08/27/cara-install-package-di-sublimetext</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<iframe width="675" height="415" src="//www.youtube.com/embed/eLWgwaiqlv8" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
+  
+</feed>

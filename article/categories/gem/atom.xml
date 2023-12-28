@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Gem | Cahyadi Triyansyah (SunDi3yansyah)]]></title>
+  <link href="http://sundi3yansyah.github.io/article/categories/gem/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2023-12-28T22:07:32+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
+  <author>
+    <name><![CDATA[Cahyadi Triyansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Blogging Menggunakan Octopress &amp; Github]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/07/02/blogging-menggunakan-octopress-and-github/"/>
+    <updated>2014-07-02T08:06:29+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/07/02/blogging-menggunakan-octopress-and-github</id>
+    <content type="html"><![CDATA[<p>Setelah lama menggunakan wordpress, blogger, joomla sebagai media untuk blogging akhirnya saya memutuskan untuk bermigrasi menggunakan octopress. Hmmm sebenernya ini tulisannya mas sugeng karena saya juga sejalan dengan beliau maka saya ingin menuliskannya kembali di blog saya ini&hellip;hehe&hellip; Alasan kenapa saya bermigrasi sebagai berikut:</p>
+
+<h3>Plugin Wordpress terlalu banyak</h3>
+
+<p>Salah satu keunggulan worpress adalah tersedianya plugin yang banyak, namun untuk mengelola plugin-plugin yang terinstall terlalu makan waktu sehingga terkadang malah tidak fokus pada tujuan nge-blog yaitu menulis.</p>
+
+<!-- more -->
+
+
+<h3>Cepat dan Efisien</h3>
+
+<p>Octopress framework menggunakan <a href="https://github.com/mojombo/jekyll">Jekyll</a> untuk menggenerate halaman-halaman websitenya. Semua halaman blog adalah static page sehingga tidak membutuhkan proses yang berat pada server dan dapat didownload secepatnya ke browser client.</p>
+
+<h3>Hosting di Github Pages</h3>
+
+<p>Web static octopress bisa dihosting-kan di <a href="https://help.github.com/articles/what-are-github-pages">Github pages</a> yang notabene gratis. Terlebih github selalu online dan waktu respon yang cepat.</p>
+
+<h3>Mudah digunakan</h3>
+
+<p>Workflow penggunaan octopress juga sangat mudah, cukup dengan perintah command line posting blog lansung selesai.</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake new_post[&lsquo;Judul Posting&rsquo;]
+</span><span class='line'>rake generate
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure></p>
+
+<h3>Markdown</h3>
+
+<p>Sebagai editor, octopress menggunakan <a href="http://daringfireball.net/projects/markdown/">Markdown</a>. Menggunakan markdown lebih simple dan cepat daripada wordpress editor. Untuk markdown editor di Linux saya menggunakan <a href="http://pad.haroopress.com/user.html#download">Haroopad</a>.</p>
+
+<h3>Tidak menggunakan database/Static pages</h3>
+
+<p><strong>apa? tidak menggunakan database??</strong> Ya, octopress tidak memerlukan database content sehingga tidak ada query yang memberatkan server. Config file disimpan di file <code>_config</code> kemudian halaman blog digenerate oleh <code>jekyll</code>.</p>
+
+<h3>Security yang lebih baik</h3>
+
+<p>Tentunya dengan menggunakan service kepunyaan github, securitas dari blog lebih kuat.</p>
+
+<h3>Tersedia Plugin</h3>
+
+<p>Octoress tentunya juga memiliki plugin-plugin yang dapat dipakai seperti Disqus, Twitter, Facebook, Github, dll..</p>
+
+<p>Untuk sementara mungkin hal diatas yang bisa saya pikirkan. Dan sampai sekarang saya cukup puas menggunakan octopress.</p>
+
+<p>Src: <a href="http://catatan.sugengweb.net/2013/11/22/blogging-menggunakan-octopress-and-heroku/">Blogging Menggunakan Octopress &amp; Heroku</a></p>
+]]></content>
+  </entry>
+  
+</feed>

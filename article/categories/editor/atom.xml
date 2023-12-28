@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Editor | Cahyadi Triyansyah (SunDi3yansyah)]]></title>
+  <link href="http://sundi3yansyah.github.io/article/categories/editor/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2023-12-28T22:07:32+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
+  <author>
+    <name><![CDATA[Cahyadi Triyansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Konfigurasi VIM Menggunakan Tema Dan Plugin]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/"/>
+    <updated>2014-12-22T13:12:28+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin</id>
+    <content type="html"><![CDATA[<p>Pertama liat dulu penampakannya</p>
+
+<p><img src="https://lh4.googleusercontent.com/-EL817E9o1AQ/VJe2F8KdpmI/AAAAAAAAAdg/IdB5ryWNfks/s800/Screenshot+from+2014-12-22+13:08:19.png" alt="sundi3yansyah vim" /></p>
+
+<p>Mau? Yok&hellip; <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; >
+Saya menggunakan Distro Ubuntu dan bisa di pasang di distro lainnya</p>
+
+<!--more-->
+
+
+<p>pastikan sudah terinstall VIM minimal versi 7.3, jika belum kita install dulu</p>
+
+<p><figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install vim</span></code></pre></td></tr></table></div></figure></p>
+
+<p>jika di distro lain beda paket manager tinggal di ganti saja <strong>apt-get</strong> nya
+lanjut buat direktorinya</p>
+
+<p><figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir ~/.vim
+</span><span class='line'>mkdir ~/.vim/colors
+</span><span class='line'>mkdir ~/.vim/bundle
+</span><span class='line'>mkdir ~/.vim/tmp
+</span><span class='line'>mkdir ~/.vim/tmp/undo
+</span><span class='line'>mkdir ~/.vim/tmp/backup
+</span><span class='line'>mkdir ~/.vim/tmp/swap</span></code></pre></td></tr></table></div></figure></p>
+
+<h3>molokai</h3>
+
+<p>simpan kode di bawah ini ke folder <strong>~/.vim/colors/</strong> dengan nama <strong>molokai.vim</strong></p>
+
+<p>source code</p>
+
+<div class="github-widget" data-repo="tomasr/molokai"></div>
+
+
+<h3>pathogen</h3>
+
+<p>install plugin vim pathogen</p>
+
+<p><figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir -p ~/.vim/autoload ~/.vim/bundle &amp;&amp; \
+</span><span class='line'>curl -LSso ~/.vim/autoload/pathogen.vim &lt;a href="https://tpo.pe/pathogen.vim">https://tpo.pe/pathogen.vim&lt;/a></span></code></pre></td></tr></table></div></figure></p>
+
+<p>source code</p>
+
+<div class="github-widget" data-repo="tpope/vim-pathogen"></div>
+
+
+<h3>powerline</h3>
+
+<p>install plugin vim powerline, pastikan sudah install git</p>
+
+<p>clone dulu repo powerline
+<figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ~/.vim/
+</span><span class='line'>git clone git://github.com/Lokaltog/vim-powerline.git bundle/powerline</span></code></pre></td></tr></table></div></figure></p>
+
+<p>kita akan membutuhkan font <strong>DejaVuSansMono-Powerline</strong></p>
+
+<p><figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget &lt;a href="https://gist.github.com/toupeira/1630581/raw/bb7b21a7ad38a781b8975bcf6655d307237289c6/DejaVuSansMono-Powerline.ttf">https://gist.github.com/toupeira/1630581/raw/bb7b21a7ad38a781b8975bcf6655d307237289c6/DejaVuSansMono-Powerline.ttf&lt;/a>
+</span><span class='line'>sudo cp DejaVuSansMono-Powerline.ttf /usr/share/fonts/truetype</span></code></pre></td></tr></table></div></figure></p>
+
+<p>source code</p>
+
+<div class="github-widget" data-repo="Lokaltog/vim-powerline"></div>
+
+
+<h3>numbers</h3>
+
+<p>langsung saja clone numbers vim nya</p>
+
+<p><figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone &lt;a href="https://github.com/myusuf3/numbers.vim.git">https://github.com/myusuf3/numbers.vim.git&lt;/a> ~/.vim/bundle/numbers</span></code></pre></td></tr></table></div></figure></p>
+
+<p>source code</p>
+
+<div class="github-widget" data-repo="myusuf3/numbers.vim"></div>
+
+
+<hr />
+
+<p>Apa sih fungsi dari plugin-plugin di atas? silakan di baca saja README nya di setiap packagenya <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; >
+Masih kurang puas dengan package yang saya berikan? Yok kita explorer VIM awesome berikut ini <a href="http://vimawesome.com/">vimawesome</a> <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Snippets Untuk Octopress Pada Sublimetext]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext/"/>
+    <updated>2014-11-19T14:02:37+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/19/snippets-untuk-octopress-pada-sublimetext</id>
+    <content type="html"><![CDATA[<p>Kali ini saya akan berbagi code snippets untuk kalian yang suka atau menggunakan framework octopress seperti saya ini dan tentunya menggunakan editor Sublimetext.</p>
+
+<p><strong>Syarat</strong></p>
+
+<ul>
+<li>Sudah install Sublime Text pada OS yang kalian gunakan.</li>
+<li>Opsi:
+
+<ul>
+<li>Package Control pada Sublime Text</li>
+<li>GIT</li>
+</ul>
+</li>
+</ul>
+
+
+<p><strong>How to Use?</strong></p>
+
+<!-- more -->
+
+
+<p>Apa sih kegunaan snippet pada sublime?</p>
+
+<p>Gunanya yaitu untuk mempercepat kita dalam mengambil sebuah objek code yang akan kita gunakan, anda dapat menggunakan snippet yang sudah saya buat di repository berikut ini:</p>
+
+<div class="github-widget" data-repo="SunDi3yansyah/octopress-snippets"></div>
+
+
+<p>Cara installlnya cukup mudah:</p>
+
+<h4>Via GIT</h4>
+
+<p>masuk ke folder Install pada Sublime Text dan lakukan command berikut
+<code>
+git clone https://github.com/SunDi3yansyah/octopress-snippets
+</code></p>
+
+<h4>Via Download Archive</h4>
+
+<p>Anda cukup download repository saya dan pastekan isi dari snippets repo tersebut ke folder Install pada Sublime Text kalian.</p>
+
+<h4>Via Package Control (Belum tersedia, karena sedang menunggu pull request dari developer sublime text)</h4>
+
+<p><strong>NB:</strong> Berlaku untuk di semua sistem operasi.</p>
+
+<p>Contoh cara menggunakannya silakan langsung saja melihat cuplikan dibawah ini.</p>
+
+<p><img class="center <a" src="href="https://lh5.googleusercontent.com/-EKAt4RR4ikU/VGwameH7NiI/AAAAAAAAAMg/TD5NTqMUXDA/s800/sundi3yansyah.gif">https://lh5.googleusercontent.com/-EKAt4RR4ikU/VGwameH7NiI/AAAAAAAAAMg/TD5NTqMUXDA/s800/sundi3yansyah.gif</a>&#8221; title=&#8221;&lsquo;Snippets untuk Octopress&rsquo; &lsquo;Snippets untuk Octopress&rsquo;&#8221; ></p>
+
+<p><img class="center <a" src="href="https://lh3.googleusercontent.com/-aPrFJN3BRMc/Vi0XTm9wPiI/AAAAAAAAA7U/62XgdROiDOw/w783-h298-no/Screenshot%2Bfrom%2B2015-10-26%2B00%253A52%253A08.png">https://lh3.googleusercontent.com/-aPrFJN3BRMc/Vi0XTm9wPiI/AAAAAAAAA7U/62XgdROiDOw/w783-h298-no/Screenshot%2Bfrom%2B2015-10-26%2B00%253A52%253A08.png</a>&#8221; title=&#8221;&lsquo;octopress indonesia&rsquo; &lsquo;octopress indonesia&rsquo;&#8221; ></p>
+
+<p>Yuk gabung ke Grup <a href="https://www.facebook.com/groups/OctopressID/">Facebook Octopress Indonesia</a>, kebetulan saya dan temen-teman saya adalah pengurusnya.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Crack Sublime Text 3 Build 3065]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/09/30/crack-sublime-text-3-build-3065/"/>
+    <updated>2014-09-30T05:44:13+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/09/30/crack-sublime-text-3-build-3065</id>
+    <content type="html"><![CDATA[<h3>Download Sublimeetxt Build 3065</h3>
+
+<h4><a href="http://www.sublimetext.com/3">http://www.sublimetext.com/3</a></h4>
+
+<p><blockquote><p>Release Date: 29 August 2014</p></blockquote></p>
+
+<p><strong>Download sesuai OS yang kalian gunakan kemudian install dan lakukan crack di bawah ini sesuai dengan OS kalian.</strong></p>
+
+<h4>MacOS</h4>
+
+<p>Download cracknya:</p>
+
+<p><a href="https://db.tt/UkPLsKrd">https://db.tt/UkPLsKrd</a></p>
+
+<p>atau</p>
+
+<p><a href="http://cl.ly/XJUe/Sublime%20Text%20mac%203065%20cracked%20build%203065">http://cl.ly/XJUe/Sublime%20Text%20mac%203065%20cracked%20build%203065</a></p>
+
+<p>Ubah nama file cracknya menjadi</p>
+
+<pre><code>Sublime Text
+</code></pre>
+
+<p>Ubah file menjadi executable</p>
+
+<pre><code>chmod u+x Sublime\ Text
+</code></pre>
+
+<p>Tumpuk file dengan</p>
+
+<pre><code>Sublime Text.app =&gt; Contents =&gt; MacOS =&gt; "Sublime Text"
+</code></pre>
+
+<!-- more -->
+
+
+<h4>Windows x64</h4>
+
+<p>Download cracknya:</p>
+
+<p><a href="https://db.tt/rviitEyS">https://db.tt/rviitEyS</a></p>
+
+<p>atau</p>
+
+<p><a href="http://cl.ly/2b2b171Z3J1C/sublime_text%20cracked%20win64%20build%203065.exe">http://cl.ly/2b2b171Z3J1C/sublime_text%20cracked%20win64%20build%203065.exe</a></p>
+
+<p>Ubah nama file cracknya menjadi</p>
+
+<pre><code>sublime_text.exe
+</code></pre>
+
+<p>Tumpuk file crack ke folder installasi sublime_text, contoh:</p>
+
+<pre><code>C:\Program Files\sublime_text.exe
+</code></pre>
+
+<h4>Windows x86</h4>
+
+<p>Download cracknya:</p>
+
+<p><a href="https://db.tt/1lnRdzW3">https://db.tt/1lnRdzW3</a></p>
+
+<p>atau</p>
+
+<p><a href="http://cl.ly/1w2G0t3P133x/sublime_text%20cracked%20x86%20build%203065.exe">http://cl.ly/1w2G0t3P133x/sublime_text%20cracked%20x86%20build%203065.exe</a></p>
+
+<p>Ubah nama file cracknya menjadi</p>
+
+<pre><code>sublime_text.exe
+</code></pre>
+
+<p>Tumpuk file crack ke folder installasi sublime_text, contoh:</p>
+
+<pre><code>C:\Program Files\sublime_text.exe
+</code></pre>
+
+<h4>Linux x64</h4>
+
+<p>Download cracknya:</p>
+
+<p><a href="https://db.tt/zBKKF6Ba">https://db.tt/zBKKF6Ba</a></p>
+
+<p>atau</p>
+
+<p><a href="http://cl.ly/1z0S25150Y0I/sublime_text%20crack%20linux%2064%20build%203065">http://cl.ly/1z0S25150Y0I/sublime_text%20crack%20linux%2064%20build%203065</a></p>
+
+<p>Ubah nama file cracknya menjadi</p>
+
+<pre><code>sublime_text
+</code></pre>
+
+<p>Ubah file menjadi executable</p>
+
+<pre><code>chmod u+x sublime_text
+</code></pre>
+
+<p>Tumpuk file crack ke folder installasi sublime_text, contoh:</p>
+
+<pre><code>/opt/sublime_text/
+</code></pre>
+
+<h4>Linux x86 (NOT AVAILABLE)</h4>
+
+<hr />
+
+<h3>Alternative</h3>
+
+<h5>Link - 3059 ALL: <a href="http://cl.ly/3H2O2E3v233t">http://cl.ly/3H2O2E3v233t</a></h5>
+
+<h5>Link 2 - 3059 ALL: <a href="https://db.tt/nPK0r9e0">https://db.tt/nPK0r9e0</a></h5>
+
+<h5>Alternative Link - 3065 ALL: <a href="https://db.tt/EH5QQIzK">https://db.tt/EH5QQIzK</a></h5>
+
+<h5>Alternative Link 2 - 3065 ALL: <a href="http://cl.ly/1w2R230G2u14">http://cl.ly/1w2R230G2u14</a></h5>
+]]></content>
+  </entry>
+  
+</feed>

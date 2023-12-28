@@ -1,0 +1,2267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Cahyadi Triyansyah (SunDi3yansyah)]]></title>
+  <link href="http://sundi3yansyah.github.io/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2023-12-28T22:07:32+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
+  <author>
+    <name><![CDATA[Cahyadi Triyansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Perkenalan Dengan Gemfile Pada Ruby Atau Ruby on Rails]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2017/07/26/perkenalan-dengan-gemfile-pada-ruby-atau-ruby-on-rails/"/>
+    <updated>2017-07-26T17:55:42+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2017/07/26/perkenalan-dengan-gemfile-pada-ruby-atau-ruby-on-rails</id>
+    <content type="html"><![CDATA[<h3>Apa itu Gemfile?</h3>
+
+<p>Gemfile adalah file konfigurasi pada bahasa pemrograman ruby, semua dependensi gem atau kebanyakan orang menyebutnya adalah library atau perpustakaan yang dapat kita temukan di <a href="https://rubygems.org">RubyGems</a>. Siapaun dapat membuat, menambah, mengolah gem milik kalian bahkan kita juga dapat berkolaborasi di hosting git. Sedangkan pengoprasiannya dapat dilakukan dengan <a href="http://bundler.io">bundler</a> dan perintahnya menggunakan <code>bundle</code>.</p>
+
+<!-- more -->
+
+
+<p>Jika kita ingin membuat sebuah proyek berbasis bahasa ruby biasanya Gemfile akan selalu dipakai mungkin malah harus menggunakannya.</p>
+
+<p>Saya disini tidak akan membahasa tentang cara penggunaan gem pada situs rubygems.org, tapi lebih bagaimana mendefinisikan isi dari Gemfile pada bahasa ruby.</p>
+
+<p>Yang pertama kita harus menginisialiasi sumber atau source alamat yang akan kita gunakan, sebagai contoh:</p>
+
+<figure class='code'><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>source 'https://rubygems.org'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Yang selenjutnya adalah bagaimana kita mendefinisikan gem yang akan kita gunakan, jadi misal kita ingin menggunakan gem <a href="https://rubygems.org/gems/json"><strong>json</strong></a> maka:</p>
+
+<figure class='code'><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem 'json'</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><strong>gem</strong> adalah perintah untuk memanggila nama gem tersebut</li>
+<li><strong>json</strong> dari mana? json adalah nama yang diambil dari situs resminya rubygems.org disini <a href="https://rubygems.org/gems/json">https://rubygems.org/gems/json</a></li>
+</ul>
+
+
+<p>Yang selanjutnya adalah bagaimana jika kita ingin mendefinisikan versinya juga? karena setiap gem itu memiliki versi, contoh diatas tidak mendefinisikan versi maka akan menggunakan versi yang terbaru. Jika kita ingin mendefinisikan dengan versinya maka:</p>
+
+<figure class='code'><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem 'json', '2.1.0'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>atau</p>
+
+<figure class='code'><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem 'json', '~> 2.1.0'</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><strong>~></strong> adalah operator yang berarti sama dengan</li>
+<li><strong>2.1.0</strong> adalah nilai dari versinya, nilai versi ini harus tersedia di <a href="https://rubygems.org/gems/json,">https://rubygems.org/gems/json,</a> kalian bisa melihat dibagian <strong>VERSION</strong>, saya mengambil versi yang terbaru saat ini.</li>
+</ul>
+
+
+<p>Adapun operator lain yang dapat digunakan:</p>
+
+<ul>
+<li><strong>>=</strong> adalah operator yang berarti lebih besar atau sama dengan</li>
+<li><strong>&lt;</strong> adalah operator yang berarti lebih kecil</li>
+</ul>
+
+
+<p>Yang selanjutnya kita mengenal group, mungkin kalian akan langsung paham jika melihat kode dibawah:</p>
+
+<figure class='code'><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>group :development do
+</span><span class='line'>  gem 'json'
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Kita bisa melihat kode diatas bahwa <code>gem 'json'</code> diapit oleh <code>group :development</code>, development yang artinya bahwa gem json hanya dapat digunakan pada environment development.</p>
+
+<p>Selain group <strong>development</strong> kita bisa juga menggunakan group <strong>production</strong> dan <strong>test</strong></p>
+
+<p>Sekarang saya kenalkan Gemfile milik Rails versi 5.1.2</p>
+
+<figure class='code'><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>source 'https://rubygems.org'
+</span><span class='line'>
+</span><span class='line'>git_source(:github) do |repo_name|
+</span><span class='line'>  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+</span><span class='line'>  "https://github.com/#{repo_name}.git"
+</span><span class='line'>end
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'># Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+</span><span class='line'>gem 'rails', '~> 5.1.2'
+</span><span class='line'># Use sqlite3 as the database for Active Record
+</span><span class='line'>gem 'sqlite3'
+</span><span class='line'># Use Puma as the app server
+</span><span class='line'>gem 'puma', '~> 3.7'
+</span><span class='line'># Use SCSS for stylesheets
+</span><span class='line'>gem 'sass-rails', '~> 5.0'
+</span><span class='line'># Use Uglifier as compressor for JavaScript assets
+</span><span class='line'>gem 'uglifier', '>= 1.3.0'
+</span><span class='line'># See https://github.com/rails/execjs#readme for more supported runtimes
+</span><span class='line'># gem 'therubyracer', platforms: :ruby
+</span><span class='line'>
+</span><span class='line'># Use CoffeeScript for .coffee assets and views
+</span><span class='line'>gem 'coffee-rails', '~> 4.2'
+</span><span class='line'># Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
+</span><span class='line'>gem 'turbolinks', '~> 5'
+</span><span class='line'># Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+</span><span class='line'>gem 'jbuilder', '~> 2.5'
+</span><span class='line'># Use Redis adapter to run Action Cable in production
+</span><span class='line'># gem 'redis', '~> 3.0'
+</span><span class='line'># Use ActiveModel has_secure_password
+</span><span class='line'># gem 'bcrypt', '~> 3.1.7'
+</span><span class='line'>
+</span><span class='line'># Use Capistrano for deployment
+</span><span class='line'># gem 'capistrano-rails', group: :development
+</span><span class='line'>
+</span><span class='line'>group :development, :test do
+</span><span class='line'>  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+</span><span class='line'>  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+</span><span class='line'>  # Adds support for Capybara system testing and selenium driver
+</span><span class='line'>  gem 'capybara', '~> 2.13'
+</span><span class='line'>  gem 'selenium-webdriver'
+</span><span class='line'>end
+</span><span class='line'>
+</span><span class='line'>group :development do
+</span><span class='line'>  # Access an IRB console on exception pages or by using &lt;%= console %> anywhere in the code.
+</span><span class='line'>  gem 'web-console', '>= 3.3.0'
+</span><span class='line'>  gem 'listen', '>= 3.0.5', '&lt; 3.2'
+</span><span class='line'>  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+</span><span class='line'>  gem 'spring'
+</span><span class='line'>  gem 'spring-watcher-listen', '~> 2.0.0'
+</span><span class='line'>end
+</span><span class='line'>
+</span><span class='line'># Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+</span><span class='line'>gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Maka dari sini saya rasa anda cukup bisa memahaminya, ya kan? Yes&hellip;</p>
+
+<p>Namun kita lihat disana ada <strong>platforms</strong> yang belum kita definisikan, kita ambil kutipan kode diatas:</p>
+
+<figure class='code'><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>group :development, :test do
+</span><span class='line'>  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Gem <strong>byebug</strong> akan digunakan oleh nilai array yang ada didalam <strong>platforms</strong>.</p>
+
+<p>Dan satu lagi, dari kutipan kode dibawah ini:</p>
+
+<figure class='code'><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git_source(:github) do |repo_name|
+</span><span class='line'>  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+</span><span class='line'>  "https://github.com/#{repo_name}.git"
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Bahwa source dapat diambil dari hosting git langsung yaitu GitHub. Revisi kode pada Gemfile ini baru muncul di Rails versi 5 keatas.</p>
+
+<p>Sebenarnya masih ada beberapa fungsi yang bisa digunakan di Gemfile ini, tapi saya rasa bacaan ini cukup sekian dulu lah ya ^_^, nantikan bacaan saya selanjutnya tentang Ruby / Ruby on Rails ataupun pengetahuan lainnya.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Menggunakan Subdomain Untuk Assets Pada Rails]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2017/07/25/menggunakan-subdomain-untuk-assets-pada-rails/"/>
+    <updated>2017-07-25T14:47:25+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2017/07/25/menggunakan-subdomain-untuk-assets-pada-rails</id>
+    <content type="html"><![CDATA[<p>Disini saya akan mencoba memberikan pengalaman saya bagaimana cara menggunakan subdomain untuk assets pada Rails, saya selalu menggunakan subdomain untuk memisahkan asset file pada aplikasi Rails tentunya untuk production, kebetulan ada beberapa teman saya yang minta panduan gimana sih caranya bikin kaya gitu.</p>
+
+<!-- more -->
+
+
+<p>Loh keuntunganya apa? Sebaiknya kalian cari tau dulu gih&hellip;</p>
+
+<p>Saya enggak tau mau cerita apa lagi ;v langsung ke langkah-langkahnya aja ya.</p>
+
+<p>Asumsikan ini untuk:</p>
+
+<ul>
+<li>Environment production.</li>
+<li>Aplikasi rails yang sudah siap disajikan.</li>
+</ul>
+
+
+<p>Buka file <code>config/environments/production.rb</code> dan cari bagian baris seperti ini:</p>
+
+<figure class='code'><figcaption><span>Editor </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># config.action_controller.asset_host = 'http://assets.example.com'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Rubahlah menjadi seperti ini:</p>
+
+<figure class='code'><figcaption><span>Editor </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>config.action_controller.asset_host = 'http://assets.domain.tld'</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Tentukan protokol apakah menggunkan SSL atau tidak.</li>
+<li>Tentukan domain TLD dan string subdomain yang digunakan.</li>
+</ul>
+
+
+<p>Jadi jika kalian masih dalam development maka akan tetap menggunakan <a href="http://localhost:port,">http://localhost:port,</a> sedangkan jika sudah dalam production akan menjadi <a href="http://assets.domain.tld">http://assets.domain.tld</a> secara otomatis dengan syarat kalian harus selalu menggunakan helper assets bawaan Rails.</p>
+
+<p>Sebagai contoh untuk memanggil assets CSS menggunakan tag <code>stylesheet_link_tag</code>, memanggil assets JS menggunakan tag <code>javascript_include_tag</code> dan tag-tag asset lainnya. Kalian tidak boleh memanggil alamat assets tanpa menggunakan tag helper bawaan Rails.</p>
+
+<p>Untuk tahap production assets harus di precompile, kan perintahnya seperti ini:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bundle exec rake assets:precompile RAILS_ENV=production</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Atau</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails assets:precompile RAILS_ENV=production</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Nah sampai disini destinasi assets akan berada di <code>public/assets/</code></p>
+
+<p>Tugas kita selanjutnya hanya memindahkan assets tersebut ke document root untuk subdomain yang sudah kita tentukan, dengan perintah:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mv public/assets/ ../assets-domain-tld/ -f</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perintah bash diatas adalah asumsi jika document root assets setara dengan direktori root rails.
+Untuk codeblock konfigurasi virtual host web server yang kita gunakan adalah statis.</p>
+
+<p>Karena saya sudah terbiasa dengan web server nginx maka saya akan kasih contoh server block sebagai berikut:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>server {
+</span><span class='line'>  listen 80;
+</span><span class='line'>  server_name assets.domain.tld;
+</span><span class='line'>
+</span><span class='line'>  add_header X-Frame-Options SAMEORIGIN;
+</span><span class='line'>  add_header X-Content-Type-Options nosniff;
+</span><span class='line'>  add_header X-XSS-Protection "1; mode=block";
+</span><span class='line'>
+</span><span class='line'>  root /path/assets-domain-tld;
+</span><span class='line'>  index index.html;
+</span><span class='line'>  
+</span><span class='line'>  location / {
+</span><span class='line'>      try_files $uri $uri/ =404;
+</span><span class='line'>  }
+</span><span class='line'>
+</span><span class='line'>  location ~ \.(ico|css|js|gif|jpe?g|png)(\?[0-9]+)?$ {
+</span><span class='line'>    expires 30d;
+</span><span class='line'>    add_header Pragma public;
+</span><span class='line'>    add_header Cache-Control "public";
+</span><span class='line'>    add_header ETag "";
+</span><span class='line'>    log_not_found off;
+</span><span class='line'>    access_log off;
+</span><span class='line'>  }
+</span><span class='line'>
+</span><span class='line'>  location ~ \.(eot|ttf|woff|woff2|svg|json)$ {
+</span><span class='line'>    add_header Access-Control-Allow-Origin *;
+</span><span class='line'>  }
+</span><span class='line'>
+</span><span class='line'>  location ~ \.(git|sh)?$ {
+</span><span class='line'>    deny all;
+</span><span class='line'>    log_not_found off;
+</span><span class='line'>    access_log off;
+</span><span class='line'>  }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Untuk selanjutnya silakan kalian kembangkan sendiri cara praktis deployement untuk cara-cara diatas, karena saya tidak tau keterbiasaan kalian itu gimana jadi ya silakan gunakan metode kalian sendiri.</p>
+
+<p>Tutorial selanjutnya adalah bagaimana jika untuk file upload dijadikan subdomain juga ^_^</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Memulai Dengan Rails]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2017/07/25/memulai-dengan-rails/"/>
+    <updated>2017-07-25T14:43:55+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2017/07/25/memulai-dengan-rails</id>
+    <content type="html"><![CDATA[<p>Sebelumnya kita udah tau bagaimana cara instal Ruby, bagaimana cara instal Rails, nah kali ini bagaimana cara memulai menggunakan Rails intinya artikel ini menganalkan struktur komponen yang ada di Rails.</p>
+
+<!-- more -->
+
+
+<p>Pada dasarnya Rails memiliki struktur kerangka kerja sebagai berikut:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>.
+</span><span class='line'>├── app
+</span><span class='line'>│   ├── assets
+</span><span class='line'>│   │   ├── config
+</span><span class='line'>│   │   ├── images
+</span><span class='line'>│   │   ├── javascripts
+</span><span class='line'>│   │   │   └── channels
+</span><span class='line'>│   │   └── stylesheets
+</span><span class='line'>│   ├── channels
+</span><span class='line'>│   │   └── application_cable
+</span><span class='line'>│   ├── controllers
+</span><span class='line'>│   │   └── concerns
+</span><span class='line'>│   ├── helpers
+</span><span class='line'>│   ├── jobs
+</span><span class='line'>│   ├── mailers
+</span><span class='line'>│   ├── models
+</span><span class='line'>│   │   └── concerns
+</span><span class='line'>│   └── views
+</span><span class='line'>│       └── layouts
+</span><span class='line'>├── bin
+</span><span class='line'>├── config
+</span><span class='line'>│   ├── environments
+</span><span class='line'>│   ├── initializers
+</span><span class='line'>│   └── locales
+</span><span class='line'>├── db
+</span><span class='line'>├── lib
+</span><span class='line'>│   ├── assets
+</span><span class='line'>│   └── tasks
+</span><span class='line'>├── log
+</span><span class='line'>├── public
+</span><span class='line'>├── test
+</span><span class='line'>│   ├── controllers
+</span><span class='line'>│   ├── fixtures
+</span><span class='line'>│   │   └── files
+</span><span class='line'>│   ├── helpers
+</span><span class='line'>│   ├── integration
+</span><span class='line'>│   ├── mailers
+</span><span class='line'>│   ├── models
+</span><span class='line'>│   └── system
+</span><span class='line'>├── tmp
+</span><span class='line'>│   └── cache
+</span><span class='line'>│       └── assets
+</span><span class='line'>└── vendor</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Secara keseluruhan memiliki struktur sebagai berikut:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>.
+</span><span class='line'>├── app
+</span><span class='line'>│   ├── assets
+</span><span class='line'>│   │   ├── config
+</span><span class='line'>│   │   │   └── manifest.js
+</span><span class='line'>│   │   ├── images
+</span><span class='line'>│   │   ├── javascripts
+</span><span class='line'>│   │   │   ├── application.js
+</span><span class='line'>│   │   │   ├── cable.js
+</span><span class='line'>│   │   │   └── channels
+</span><span class='line'>│   │   └── stylesheets
+</span><span class='line'>│   │       └── application.css
+</span><span class='line'>│   ├── channels
+</span><span class='line'>│   │   └── application_cable
+</span><span class='line'>│   │       ├── channel.rb
+</span><span class='line'>│   │       └── connection.rb
+</span><span class='line'>│   ├── controllers
+</span><span class='line'>│   │   ├── application_controller.rb
+</span><span class='line'>│   │   └── concerns
+</span><span class='line'>│   ├── helpers
+</span><span class='line'>│   │   └── application_helper.rb
+</span><span class='line'>│   ├── jobs
+</span><span class='line'>│   │   └── application_job.rb
+</span><span class='line'>│   ├── mailers
+</span><span class='line'>│   │   └── application_mailer.rb
+</span><span class='line'>│   ├── models
+</span><span class='line'>│   │   ├── application_record.rb
+</span><span class='line'>│   │   └── concerns
+</span><span class='line'>│   └── views
+</span><span class='line'>│       └── layouts
+</span><span class='line'>│           ├── application.html.erb
+</span><span class='line'>│           ├── mailer.html.erb
+</span><span class='line'>│           └── mailer.text.erb
+</span><span class='line'>├── bin
+</span><span class='line'>│   ├── bundle
+</span><span class='line'>│   ├── rails
+</span><span class='line'>│   ├── rake
+</span><span class='line'>│   ├── setup
+</span><span class='line'>│   ├── spring
+</span><span class='line'>│   ├── update
+</span><span class='line'>│   └── yarn
+</span><span class='line'>├── config
+</span><span class='line'>│   ├── application.rb
+</span><span class='line'>│   ├── boot.rb
+</span><span class='line'>│   ├── cable.yml
+</span><span class='line'>│   ├── database.yml
+</span><span class='line'>│   ├── environment.rb
+</span><span class='line'>│   ├── environments
+</span><span class='line'>│   │   ├── development.rb
+</span><span class='line'>│   │   ├── production.rb
+</span><span class='line'>│   │   └── test.rb
+</span><span class='line'>│   ├── initializers
+</span><span class='line'>│   │   ├── application_controller_renderer.rb
+</span><span class='line'>│   │   ├── assets.rb
+</span><span class='line'>│   │   ├── backtrace_silencers.rb
+</span><span class='line'>│   │   ├── cookies_serializer.rb
+</span><span class='line'>│   │   ├── filter_parameter_logging.rb
+</span><span class='line'>│   │   ├── inflections.rb
+</span><span class='line'>│   │   ├── mime_types.rb
+</span><span class='line'>│   │   └── wrap_parameters.rb
+</span><span class='line'>│   ├── locales
+</span><span class='line'>│   │   └── en.yml
+</span><span class='line'>│   ├── puma.rb
+</span><span class='line'>│   ├── routes.rb
+</span><span class='line'>│   ├── secrets.yml
+</span><span class='line'>│   └── spring.rb
+</span><span class='line'>├── config.ru
+</span><span class='line'>├── db
+</span><span class='line'>│   └── seeds.rb
+</span><span class='line'>├── Gemfile
+</span><span class='line'>├── Gemfile.lock
+</span><span class='line'>├── lib
+</span><span class='line'>│   ├── assets
+</span><span class='line'>│   └── tasks
+</span><span class='line'>├── log
+</span><span class='line'>├── package.json
+</span><span class='line'>├── public
+</span><span class='line'>│   ├── 404.html
+</span><span class='line'>│   ├── 422.html
+</span><span class='line'>│   ├── 500.html
+</span><span class='line'>│   ├── apple-touch-icon.png
+</span><span class='line'>│   ├── apple-touch-icon-precomposed.png
+</span><span class='line'>│   ├── favicon.ico
+</span><span class='line'>│   └── robots.txt
+</span><span class='line'>├── Rakefile
+</span><span class='line'>├── README.md
+</span><span class='line'>├── test
+</span><span class='line'>│   ├── application_system_test_case.rb
+</span><span class='line'>│   ├── controllers
+</span><span class='line'>│   ├── fixtures
+</span><span class='line'>│   │   └── files
+</span><span class='line'>│   ├── helpers
+</span><span class='line'>│   ├── integration
+</span><span class='line'>│   ├── mailers
+</span><span class='line'>│   ├── models
+</span><span class='line'>│   ├── system
+</span><span class='line'>│   └── test_helper.rb
+</span><span class='line'>├── tmp
+</span><span class='line'>│   └── cache
+</span><span class='line'>│       └── assets
+</span><span class='line'>└── vendor</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Ini adalah untuk versi <strong>Rails 5.1.2</strong>, akan saya jabarkan sedikit tentang fungsi sebagaian file atau folder yang berada di root dokumen Rails tersebut.</p>
+
+<ul>
+<li><strong>app</strong> berisi assets, channels, controllers, helpers, jobs, mailers, models, views. Kalian akan lebih banyak untuk membuat codingan disini.</li>
+<li><strong>bin</strong> berisi script rails yang digunakan untuk menyiapkan, memperbarui, menyebarkan, atau menjalankan aplikasi.</li>
+<li><strong>config</strong> berisi konfigurasi aplikasi, database, dan masih banyak lagi.</li>
+<li><strong>config.ru</strong> konfigurasi untuk server berbasis Rack yang digunakan untuk memulai aplikasi.</li>
+<li><strong>db</strong> berisi skema database kalian saat ini, serta migrasi database.</li>
+<li><strong>Gemfile &amp; Gemfile.lock</strong> file ini memungkinkan kalian menentukan dependensi gem apa yang dibutuhkan untuk aplikasi Rails kalian, file ini digunakan oleh gem Bundler.</li>
+<li><strong>lib</strong> modul yang diperluas untuk aplikasi kalian.</li>
+<li><strong>log</strong> file log aplikasi.</li>
+<li><strong>package.json</strong> file ini untuk kolaborasi dengan nodejs, file ini baru saja di tambahkan di rails versi 5.1 keatas.</li>
+<li><strong>public</strong> satu-satunya folder yang dilihat oleh client. Berisi file statis dan asset yang dikompilasi.</li>
+<li><strong>Rakefile</strong> file ini menempatkan dan memuat perintah yang bisa dijalankan dari command line atau terminal.</li>
+<li><strong>README.md</strong> ini adalah instruksi manual singkat untuk aplikasi kalian.</li>
+<li><strong>test</strong> tes unit, perlengkapan, dan alat uji lainnya.</li>
+<li><strong>tmp</strong> file sementara (seperti cache dan file pid).</li>
+<li><strong>vendor</strong> tempat untuk semua kode pihak ketiga, ini termasuk gem yang telah dipatenkan.</li>
+<li><strong>.gitignore</strong> file ini memberitahu git file mana yang harus diabaikan.</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Rails]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2017/07/25/cara-install-rails/"/>
+    <updated>2017-07-25T14:40:21+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2017/07/25/cara-install-rails</id>
+    <content type="html"><![CDATA[<h3>Apa itu Rails?</h3>
+
+<blockquote><p>Ruby on Rails, disebut juga Rails, adalah sebuah kerangka kerja aplikasi web sumber terbuka yang berjalan via bahasa pemrograman Ruby. Ia merupakan kerangka kerja full-stack: memampukan pembuatan laman dan aplikasi yang mengumpulkan informasi dari server web, berkomunikasi dengan atau memanggil sebuah kueri dari server web, dan mengolah templat dari sumber. Sebagai hasilnya, Rails menyajikan fitur sistem routing yang independen dari server web.<br/><!-- more --><br/>Ruby on Rails menegaskan penggunaan pola-pola dan prinsip-prinsip rekayasa perangkat lunak terkenal, seperti pola active record, konvensi diatas konfigurasi (CoC), don&#8217;t repeat yourself (DRY), and model-view-controller (MVC).</p><p>- Perancang:  David Heinemeier Hansson<br/>- Pengembang:  Rails Core Team<br/>- Rilis perdana:    13 Desember 2005<br/>- Rilis stabil:    4.0.4 (14 Maret 2014)<br/>- Rilis pratayang:    4.1.0 RC 1 (18 Februari 2014)<br/>- Status pengembangan:    Active<br/>- Bahasa pemograman: Ruby<br/>- Sistem operasi:  Cross-platform<br/>- Lisensi:   Lisensi MIT<br/>- Situs web resmi:  rubyonrails.org</p><footer><strong>Ruby on Rails</strong> <cite><a href='https://id.wikipedia.org/wiki/Ruby_on_Rails'>id.wikipedia.org/wiki/&hellip;</a></cite></footer></blockquote>
+
+
+<p>Sebelumnya kita dapat menjumpai tutorial saya sebelumnya tentang <a href="https://sundi3yansyah.github.io/article/2017/05/08/cara-instal-ruby-via-rvm/">Cara Instal Ruby via RVM</a>.
+Jadi saya asumsikan perangkat kalian sudah terpasang Ruby entah itu ruby versi berapa tapi saya sarankan gunakan ruby versi terbaru, dan jangan lupa pula sesuaikan dengan sistem operasi yang kalian gunakan.</p>
+
+<h4>1. Cek Ruby Environment</h4>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ruby -v</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>2. Database untuk Rails</h4>
+
+<p>Disini saya juga sudah mengasumsikan pada kalian untuk sudah memasang database yang akan digunakan di Rails nanti, contohnya seperti: SQLite3, MySQL, PostgreSQL dan lain sebagainya sesuaikan dengan kebutuhan database yang kalian gunakan nanti.
+Untuk memverifikasinya dengan perintah sebagai contoh:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># SQLite3
+</span><span class='line'>sqlite3 --version
+</span><span class='line'>
+</span><span class='line'># MySQL
+</span><span class='line'>mysql --version
+</span><span class='line'>
+</span><span class='line'># PostgreSQL
+</span><span class='line'>psql --version</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Dan lain sebagainya, sesuaikan dengan environment database yang kalian gunakan. Jika output dihasilkan maka database sudah siap dipakai.</p>
+
+<h4>3. Instal Rails</h4>
+
+<p>Sekarang kalian sudah bisa instal Rails dengan perintah:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install rails</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Ini membutuhkan waktu yang lama sesuai koneksi internet dan perangkat yang digunakan.</p>
+
+<h4>4. Verifikasi Rails</h4>
+
+<p>Jika langkah diatas sudah kelar maka langkah selanjutnya kalian verifikasi rails yang sudah di instal dengan perintah:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails -v</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Jika output dihasilkan maka Rails sudah siap dipakai.</p>
+
+<h4>5. Siapkan aplikasi baru</h4>
+
+<p>Untuk memulai aplikasi baru Rails yang sudah di-install langsung saja ketikkan perintah:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Sebelum kalian menggunakan perintah <code>rails new aplikasi-pertamaku</code> kalian juga dapat menggunakan parameter yang tersedia sebegai berikut:</p>
+
+<figure class='code'><figcaption><span>Parameter &#8216;rails new &#8211;help&#8217; </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Usage:
+</span><span class='line'>  rails new APP_PATH [options]
+</span><span class='line'>
+</span><span class='line'>Options:
+</span><span class='line'>  -r, [--ruby=PATH]                                      # Path to the Ruby binary of your choice
+</span><span class='line'>                                                         # Default: /home/sundi3yansyah/.rvm/rubies/ruby-2.3.3/bin/ruby
+</span><span class='line'>  -m, [--template=TEMPLATE]                              # Path to some application template (can be a filesystem path or URL)
+</span><span class='line'>  -d, [--database=DATABASE]                              # Preconfigure for selected database (options: mysql/oracle/postgresql/sqlite3/frontbase/ibm_db/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc)
+</span><span class='line'>                                                         # Default: sqlite3
+</span><span class='line'>  -j, [--javascript=JAVASCRIPT]                          # Preconfigure for selected JavaScript library
+</span><span class='line'>                                                         # Default: jquery
+</span><span class='line'>      [--skip-gemfile], [--no-skip-gemfile]              # Don't create a Gemfile
+</span><span class='line'>  -B, [--skip-bundle], [--no-skip-bundle]                # Don't run bundle install
+</span><span class='line'>  -G, [--skip-git], [--no-skip-git]                      # Skip .gitignore file
+</span><span class='line'>      [--skip-keeps], [--no-skip-keeps]                  # Skip source control .keep files
+</span><span class='line'>  -M, [--skip-action-mailer], [--no-skip-action-mailer]  # Skip Action Mailer files
+</span><span class='line'>  -O, [--skip-active-record], [--no-skip-active-record]  # Skip Active Record files
+</span><span class='line'>  -P, [--skip-puma], [--no-skip-puma]                    # Skip Puma related files
+</span><span class='line'>  -C, [--skip-action-cable], [--no-skip-action-cable]    # Skip Action Cable files
+</span><span class='line'>  -S, [--skip-sprockets], [--no-skip-sprockets]          # Skip Sprockets files
+</span><span class='line'>      [--skip-spring], [--no-skip-spring]                # Don't install Spring application preloader
+</span><span class='line'>      [--skip-listen], [--no-skip-listen]                # Don't generate configuration that depends on the listen gem
+</span><span class='line'>  -J, [--skip-javascript], [--no-skip-javascript]        # Skip JavaScript files
+</span><span class='line'>      [--skip-turbolinks], [--no-skip-turbolinks]        # Skip turbolinks gem
+</span><span class='line'>  -T, [--skip-test], [--no-skip-test]                    # Skip test files
+</span><span class='line'>      [--dev], [--no-dev]                                # Setup the application with Gemfile pointing to your Rails checkout
+</span><span class='line'>      [--edge], [--no-edge]                              # Setup the application with Gemfile pointing to Rails repository
+</span><span class='line'>      [--rc=RC]                                          # Path to file containing extra configuration options for rails command
+</span><span class='line'>      [--no-rc], [--no-no-rc]                            # Skip loading of extra configuration options from .railsrc file
+</span><span class='line'>      [--api], [--no-api]                                # Preconfigure smaller stack for API only apps
+</span><span class='line'>
+</span><span class='line'>Runtime options:
+</span><span class='line'>  -f, [--force]                    # Overwrite files that already exist
+</span><span class='line'>  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+</span><span class='line'>  -q, [--quiet], [--no-quiet]      # Suppress status output
+</span><span class='line'>  -s, [--skip], [--no-skip]        # Skip files that already exist
+</span><span class='line'>
+</span><span class='line'>Rails options:
+</span><span class='line'>  -h, [--help], [--no-help]        # Show this help message and quit
+</span><span class='line'>  -v, [--version], [--no-version]  # Show Rails version number and quit
+</span><span class='line'>
+</span><span class='line'>Description:
+</span><span class='line'>    The 'rails new' command creates a new Rails application with a default
+</span><span class='line'>    directory structure and configuration at the path you specify.
+</span><span class='line'>
+</span><span class='line'>    You can specify extra command-line arguments to be used every time
+</span><span class='line'>    'rails new' runs in the .railsrc configuration file in your home directory.
+</span><span class='line'>
+</span><span class='line'>    Note that the arguments specified in the .railsrc file don't affect the
+</span><span class='line'>    defaults values shown above in this help message.
+</span><span class='line'>
+</span><span class='line'>Example:
+</span><span class='line'>    rails new ~/Code/Ruby/weblog
+</span><span class='line'>
+</span><span class='line'>    This generates a skeletal Rails installation in ~/Code/Ruby/weblog.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Sebagai contoh aplikasi rails kita ingin menggunakan database MySQL dengan perintah:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku -d mysql</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Contoh lain aplikasi rails kita ingin digunakan untuk membuat API maka perintahnya:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku --api</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Atau kedua-duanya, maka perintahnya:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new aplikasi-pertamaku -d mysql --api</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>aplikasi-pertamaku</strong> adalah nama aplikasi atau nama module atau apakah kalian menyebutnya dan <strong>aplikasi-pertamaku</strong> sekaligus nama folder yang akan dihasilkan, maka langkah selanjutnya masuk ke folder aplikasi tersebut:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd aplikasi-pertamaku</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>6. Jalankan Aplikasi</h4>
+
+<p>Jika aplikasi rails kalian sudah yakin benar, untuk menjalankannya aplikasi rails yang sudah dihasilkan gunakan perintah:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails server</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Jika output terminal yang dihasilkan kurang lebih sebagai berikut:</p>
+
+<figure class='code'><figcaption><span>Terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>=> Booting Puma
+</span><span class='line'>=> Rails 5.1.2 application starting in development on http://localhost:3000
+</span><span class='line'>=> Run `rails server -h` for more startup options
+</span><span class='line'>Puma starting in single mode...
+</span><span class='line'>* Version 3.9.1 (ruby 2.3.3-p222), codename: Private Caller
+</span><span class='line'>* Min threads: 5, max threads: 5
+</span><span class='line'>* Environment: development
+</span><span class='line'>* Listening on tcp://0.0.0.0:3000
+</span><span class='line'>Use Ctrl-C to stop</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Maka aplikasi berhasil dijalankan, langkah berikutnya kalian bisa kunjungi alamat <a href="http://localhost:3000">http://localhost:3000</a> pada browser favorit kalian.</p>
+
+<p>Jika output pada browser sebagai berikut:</p>
+
+<p><img src="http://guides.rubyonrails.org/images/getting_started/rails_welcome.png" alt="Rails welcome" /></p>
+
+<p>Maka artikel ini berhasil membantu anda untuk meng-instal Rails pada perangkat kalian.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Instal Ruby via RVM]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2017/05/08/cara-instal-ruby-via-rvm/"/>
+    <updated>2017-05-08T14:06:02+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2017/05/08/cara-instal-ruby-via-rvm</id>
+    <content type="html"><![CDATA[<p>Apa itu RVM?</p>
+
+<blockquote><p>Ruby Version Manager, often abbreviated as RVM, is a unix-like software platform designed to manage multiple instalations of Ruby on the same device.</p><footer><strong>Ruby Version Manager</strong> <cite><a href='https://en.wikipedia.org/wiki/Ruby_Version_Manager'>en.wikipedia.org/wiki/&hellip;</a></cite></footer></blockquote>
+
+
+<!-- more -->
+
+
+<p>Jadi intinya kita bisa memasang ruby untuk beberapa versi yang kita inginkan.</p>
+
+<p>Tutorial kali ini hanya untuk sistem operasi keturunan dari <strong>Darwin</strong> dan <strong>Linux</strong></p>
+
+<p>Sebelum menginstalnya kita harus instal <strong>mpapis public key</strong></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Instal RVM</p>
+
+<p>Versi Development</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>\curl -sSL https://get.rvm.io | bash</span></code></pre></td></tr></table></div></figure>
+
+
+<p>atau Versi Stable</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>\curl -sSL https://get.rvm.io | bash -s stable --ruby</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Teman-teman cukup memilih salah satu versi diatas, dan tunggu proses sampai selesai.</p>
+
+<p>Jika sudah selesai, silakan untuk melisting versi yang telah terinstal dengan cara.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm list</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Jika belum keluar outputnya maka restartlah terminal teman-teman.</em></p>
+
+<p>Sekarang buka tautan ruby-lang berikut <a href="https://www.ruby-lang.org/en/downloads/">https://www.ruby-lang.org/en/downloads/</a> , apakah versi yang terinstal sudah sama dengan yang tertera dihalaman ruby-lang tersebut?
+Jika belum maka lakukan instal sesuai versi yang berbeda atau yang terbaru, dengan cara berikut ini.</p>
+
+<p>Misalnya ruby versi terbarunya adalah 0.0.1, maka lakukan perintah:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm install 0.0.1</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Tunggu proses sampai selesai, untuk menggunakan ruby yang telah terinstal lakukan perintah</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm use 0.0.1 --default</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Nah sampai disini ruby telah terinstal menggunakan RVM. Untuk melihat semua gems yang terinstal secara bawaan lakukan perintah <code>gem list</code>, sedangkan untuk memperbarui versi gemnya lakukan perintah <code>gem update --system</code>, untuk melakukan perbaruan dari daftar gem yang telah terinstal lakukan <code>gem update</code>.</p>
+
+<p>So far, instalasi sudah selesai. Nantikan tutorial-tutorial dari saya selanjutnya seputar Ruby dan beserta frameworknya seperti Rails, Sinatra dan lain-lain.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GitHub API, CodeIgniter, SemanticUI]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2015/04/12/github-api-codeigniter-semanticui/"/>
+    <updated>2015-04-12T10:27:40+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2015/04/12/github-api-codeigniter-semanticui</id>
+    <content type="html"><![CDATA[<p>Hai&hellip; <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="smiley" alt="smiley"> udah lama gk bikin post nih&hellip;</p>
+
+<p>Lagi iseng-iseng kemarin main di github nge bundle 3 repositori</p>
+
+<ul>
+<li>GitHub API</li>
+<li>CodeIgniter</li>
+<li>Semantic UI</li>
+</ul>
+
+
+<p>Apa aja yg ada disana?</p>
+
+<!-- more -->
+
+
+<p>Saya cuma menggabungkan andatara ketiga repo tersebut dan menambahkan HMVC dari CodeIgniter itu sendiri dan di GitHub api yg akan di jadikan konten, sebenernya gk cuma itu nanti saya akan ngebuilt sebuah repo repo lain nya di sertai demo, open source, dan yang pasti berhubungan dengan backend.</p>
+
+<p>Kalian bisa lihat langsung demonya yg saya push ke heroku disini:</p>
+
+<p><a href="http://sundi3yansyah.herokuapp.com">http://sundi3yansyah.herokuapp.com</a></p>
+
+<p>Mau fork? mau download? mau make juga? silakan&hellip; jangan lupa juga yak baca readme nya <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" width="20" height="20" title="smile" alt="smile"> tapi bahasa ingggris gpp yak, sengaja biar kelihatan internasional nya <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="smiley" alt="smiley"></p>
+
+<div class="github-widget" data-repo="SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI"></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Ruby Di Fedora]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/12/26/cara-install-ruby-di-fedora/"/>
+    <updated>2014-12-26T03:48:32+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/12/26/cara-install-ruby-di-fedora</id>
+    <content type="html"><![CDATA[<p>Kalau di CentOS, Debian, Ubuntu, Windows dan lain-lainnya silakan di lihat di archive blog saya <strong>kan sudah</strong> nah kali ini saya akan menjelaskan bagaimana jika di <strong>Fedora</strong> kali ini berbeda dengan di Fedora cukup lakukan perintah <strong>yum yum dan yum</strong> kalian sudah bisa mendapatkan versi Ruby dan Gems lainnya dengan versi terbaru, langsung saja.</p>
+
+<p>Buka shell session kalian (terminal)</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>yum update</span></code></pre></td></tr></table></div></figure>
+
+
+<!-- more -->
+
+
+<p>untuk mengupdate repository kalian jika masih belum up to date.</p>
+
+<p>install ruby</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>yum install ruby</span></code></pre></td></tr></table></div></figure>
+
+
+<p>nanti kalian akan di beri ruby versi ke old stable, yaitu versi old stable sekarang 2.0, itu sudah menjadi versi ruby yang bisa kompetibel dengan aplikasi apapun.</p>
+
+<p>kemudian update gems nya</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem -v</span></code></pre></td></tr></table></div></figure>
+
+
+<p>silakan buka situs rubygems di <a href="https://rubygems.org/">https://rubygems.org/</a> jika versi di OS kalian dengan di situs berbeda maka lakukan update</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem update --system</span></code></pre></td></tr></table></div></figure>
+
+
+<p>next, update gem list yang ada</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem update</span></code></pre></td></tr></table></div></figure>
+
+
+<p>NOTE: Jika terjadi error seperti ini:</p>
+
+<figure class='code'><figcaption><span>error_required   </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Updating rubygems-update
+</span><span class='line'>Fetching: rubygems-update-2.4.5.gem (100%)
+</span><span class='line'>Successfully installed rubygems-update-2.4.5
+</span><span class='line'>Parsing documentation for rubygems-update-2.4.5
+</span><span class='line'>Installing ri documentation for rubygems-update-2.4.5
+</span><span class='line'>Installing darkfish documentation for rubygems-update-2.4.5
+</span><span class='line'>Done installing documentation for rubygems-update after 11 seconds
+</span><span class='line'>Installing RubyGems 2.4.5
+</span><span class='line'>RubyGems 2.4.5 installed
+</span><span class='line'>/usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in `require': cannot load such file -- json/pure (LoadError)
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in `require'
+</span><span class='line'>    from /usr/share/gems/gems/json-1.7.7/lib/json.rb:60:in `rescue in &lt;module:JSON>'
+</span><span class='line'>    from /usr/share/gems/gems/json-1.7.7/lib/json.rb:57:in `&lt;module:JSON>'
+</span><span class='line'>    from /usr/share/gems/gems/json-1.7.7/lib/json.rb:54:in `&lt;top (required)>'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in `require'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in `require'
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/text.rb:16:in `&lt;top (required)>'
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/code_object.rb:28:in `&lt;class:CodeObject>'
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/code_object.rb:26:in `&lt;top (required)>'
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/generator/markup.rb:59:in `&lt;top (required)>'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in `require'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in `require'
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/generator/darkfish.rb:6:in `&lt;top (required)>'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in `require'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in `require'
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/rdoc.rb:565:in `&lt;top (required)>'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in `require'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/core_ext/kernel_require.rb:54:in `require'
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/rubygems_hook.rb:73:in `load_rdoc'
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/rubygems_hook.rb:238:in `setup'
+</span><span class='line'>    from /usr/share/gems/gems/rdoc-4.0.1/lib/rdoc/rubygems_hook.rb:151:in `generate'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/commands/setup_command.rb:317:in `install_rdoc'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/commands/setup_command.rb:148:in `execute'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/command.rb:307:in `invoke_with_build_args'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/command_manager.rb:168:in `process_args'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/command_manager.rb:138:in `run'
+</span><span class='line'>    from /usr/local/share/gems/gems/rubygems-update-2.4.5/lib/rubygems/gem_runner.rb:54:in `run'
+</span><span class='line'>    from setup.rb:45:in `&lt;main>'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Maka lakukan install gems json_pure</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install json_pure</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Kemudian lakukan update step sebelumnya. Oke,,, sekian dari saya, selamat ngoding&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Konfigurasi VIM Menggunakan Tema Dan Plugin]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/"/>
+    <updated>2014-12-22T13:12:28+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin</id>
+    <content type="html"><![CDATA[<p>Pertama liat dulu penampakannya</p>
+
+<p><img src="https://lh4.googleusercontent.com/-EL817E9o1AQ/VJe2F8KdpmI/AAAAAAAAAdg/IdB5ryWNfks/s800/Screenshot+from+2014-12-22+13:08:19.png" alt="sundi3yansyah vim" /></p>
+
+<p>Mau? Yok&hellip; <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" width="20" height="20" title="smile" alt="smile">
+Saya menggunakan Distro Ubuntu dan bisa di pasang di distro lainnya</p>
+
+<!--more-->
+
+
+<p>pastikan sudah terinstall VIM minimal versi 7.3, jika belum kita install dulu</p>
+
+<figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install vim</span></code></pre></td></tr></table></div></figure>
+
+
+<p>jika di distro lain beda paket manager tinggal di ganti saja <strong>apt-get</strong> nya
+lanjut buat direktorinya</p>
+
+<figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir ~/.vim
+</span><span class='line'>mkdir ~/.vim/colors
+</span><span class='line'>mkdir ~/.vim/bundle
+</span><span class='line'>mkdir ~/.vim/tmp
+</span><span class='line'>mkdir ~/.vim/tmp/undo
+</span><span class='line'>mkdir ~/.vim/tmp/backup
+</span><span class='line'>mkdir ~/.vim/tmp/swap</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>molokai</h3>
+
+<p>simpan kode di bawah ini ke folder <strong>~/.vim/colors/</strong> dengan nama <strong>molokai.vim</strong></p>
+
+<p>source code</p>
+
+<div class="github-widget" data-repo="tomasr/molokai"></div>
+
+
+<h3>pathogen</h3>
+
+<p>install plugin vim pathogen</p>
+
+<figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+</span><span class='line'>curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim</span></code></pre></td></tr></table></div></figure>
+
+
+<p>source code</p>
+
+<div class="github-widget" data-repo="tpope/vim-pathogen"></div>
+
+
+<h3>powerline</h3>
+
+<p>install plugin vim powerline, pastikan sudah install git</p>
+
+<p>clone dulu repo powerline</p>
+
+<figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ~/.vim/
+</span><span class='line'>git clone git://github.com/Lokaltog/vim-powerline.git bundle/powerline</span></code></pre></td></tr></table></div></figure>
+
+
+<p>kita akan membutuhkan font <strong>DejaVuSansMono-Powerline</strong></p>
+
+<figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget https://gist.github.com/toupeira/1630581/raw/bb7b21a7ad38a781b8975bcf6655d307237289c6/DejaVuSansMono-Powerline.ttf
+</span><span class='line'>sudo cp DejaVuSansMono-Powerline.ttf /usr/share/fonts/truetype</span></code></pre></td></tr></table></div></figure>
+
+
+<p>source code</p>
+
+<div class="github-widget" data-repo="Lokaltog/vim-powerline"></div>
+
+
+<h3>numbers</h3>
+
+<p>langsung saja clone numbers vim nya</p>
+
+<figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://github.com/myusuf3/numbers.vim.git ~/.vim/bundle/numbers</span></code></pre></td></tr></table></div></figure>
+
+
+<p>source code</p>
+
+<div class="github-widget" data-repo="myusuf3/numbers.vim"></div>
+
+
+<hr />
+
+<p>Apa sih fungsi dari plugin-plugin di atas? silakan di baca saja README nya di setiap packagenya <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" width="20" height="20" title="smile" alt="smile">
+Masih kurang puas dengan package yang saya berikan? Yok kita explorer VIM awesome berikut ini <a href="http://vimawesome.com/">vimawesome</a> <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="smiley" alt="smiley"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Go-lang Di Linux]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/27/cara-install-go-lang-di-linux/"/>
+    <updated>2014-11-27T17:19:52+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/27/cara-install-go-lang-di-linux</id>
+    <content type="html"><![CDATA[<p>Pertama buka dulu page download arsip go-lang disini <a href="https://golang.org/dl/">https://golang.org/dl/</a> setelah itu ambil file arsipnya sesuai arsitektur pada distro linux kalian (x64 or x86), sebagai contoh:</p>
+
+<p>Buka terminal</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd Downloads ; mkdir go-lang ; cd go-lang</span></code></pre></td></tr></table></div></figure>
+
+
+<!--more-->
+
+
+<p>x64</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget https://storage.googleapis.com/golang/go1.3.3.linux-amd64.tar.gz</span></code></pre></td></tr></table></div></figure>
+
+
+<p>x86</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget https://storage.googleapis.com/golang/go1.3.3.linux-386.tar.gz</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Setelah itu buka arsipnya, dan di copy + paste ke direktori <code>/usr/local</code>
+x64</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>tar -C /usr/local -xzf go1.3.3.linux-amd64.tar.gz</span></code></pre></td></tr></table></div></figure>
+
+
+<p>x86</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>tar -C /usr/local -xzf go1.3.3.linux-386.tar.gz</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Setelah itu tambahkan <strong>Environment Variable</strong> nya</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>export PATH=$PATH:/usr/local/go/bin</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Sekarang kita buat contoh apakah sudah work atau belum.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>nano test.go</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>package main
+</span><span class='line'>
+</span><span class='line'>import "fmt"
+</span><span class='line'>
+</span><span class='line'>func main() {
+</span><span class='line'>    fmt.Printf("Hallo, dunia\n")
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Sekarang di jalankan</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>go run test.go</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Atau Upgrade Python Di CentOS]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/27/cara-install-atau-upgrade-python-di-centos/"/>
+    <updated>2014-11-27T17:18:37+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/27/cara-install-atau-upgrade-python-di-centos</id>
+    <content type="html"><![CDATA[<p>Pertama tampulkan dulu versi python yang sekarang</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>python --version</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Jika versi di bawah 2.7.8 maka itu sudah kuno dan sudah saatnya di update <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" width="20" height="20" title="smile" alt="smile"></p>
+
+<!--more-->
+
+
+<p>update dulu systemnya</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>yum -y update</span></code></pre></td></tr></table></div></figure>
+
+
+<p>install development tools</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>yum groupinstall -y 'development tools'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>setelah itu install depensi yang di butuhkan</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>yum install -y zlib-devel bzip2-devel openssl-devel xz-libs sqlite-devel</span></code></pre></td></tr></table></div></figure>
+
+
+<p>download python-nya, dan pilih salah satu saja.
+version 2.7.6</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget http://www.python.org/ftp/python/2.7.6/Python-2.7.6.tar.xz</span></code></pre></td></tr></table></div></figure>
+
+
+<p>version 3.3.3</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget http://www.python.org/ftp/python/3.3.3/Python-3.3.3.tar.xz</span></code></pre></td></tr></table></div></figure>
+
+
+<p>kemudian di buka arsipnya</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>xz -d Python-*.tar.xz</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>tar -xvf Python-*.tar</span></code></pre></td></tr></table></div></figure>
+
+
+<p>masuk ke direktorinya</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd Python-*</span></code></pre></td></tr></table></div></figure>
+
+
+<p>jalankan configure nya</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>./configure --prefix=/usr/local</span></code></pre></td></tr></table></div></figure>
+
+
+<p>lakukan compile, ini akan membutuhkan waktu yang lumayan lama <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" width="20" height="20" title="smile" alt="smile"></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>make</span></code></pre></td></tr></table></div></figure>
+
+
+<p>dan install</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>make altinstall</span></code></pre></td></tr></table></div></figure>
+
+
+<p>jika sudah selesai maka coba kita lihat versinya</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>python -V</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Mudah bukan <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" width="20" height="20" title="smile" alt="smile"></p>
+
+<p>Jika belum juga berubah dan tidak muncul output dengan versi yang kita compile tadi maka lakukan dengan menambah Environment Variable, anda bisa cari artikel saya sebelumnya <strong>Cara Menambah Environment Variable pada Linux</strong></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>exit</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Mereset Environment Variable Pada Linux]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/27/cara-mereset-environment-variable-pada-linux/"/>
+    <updated>2014-11-27T17:18:05+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/27/cara-mereset-environment-variable-pada-linux</id>
+    <content type="html"><![CDATA[<p>Cara reset environment variables, tampilkan dulu environment variables yang sudah ada</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>echo $PATH</span></code></pre></td></tr></table></div></figure>
+
+
+<!--more-->
+
+
+<p>Contoh output:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/go/bin</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Jika ingin ingin di seret, maka:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>export PATH=/usr/local/sbin:/usr/local/bin</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Maka environment variables yang ada sekarang hanya <code>/usr/local/sbin:/usr/local/bin</code></p>
+
+<p>Mudah bukan <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" width="20" height="20" title="smile" alt="smile"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Menambah Environment Variable Pada Linux]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/27/cara-menambah-environment-variable-pada-linux/"/>
+    <updated>2014-11-27T17:17:52+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/27/cara-menambah-environment-variable-pada-linux</id>
+    <content type="html"><![CDATA[<p>tampilkan dulu environment variables yang sudah ada</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>echo $PATH</span></code></pre></td></tr></table></div></figure>
+
+
+<!--more-->
+
+
+<p>Cara menambahkan environment variablenya jalankan perintah ini di terminal</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>export PATH=$PATH:/usr/local/go/bin</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Itu yang artinya saya baru saja menambahkan environment variable dari bahasa pemrograman <strong>GOlang</strong> atau <strong>GO</strong></p>
+
+<p>Mudah bukan <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" width="20" height="20" title="smile" alt="smile"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Asciinema Di Linux]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/26/cara-install-asciinema-di-linux/"/>
+    <updated>2014-11-26T18:52:38+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/26/cara-install-asciinema-di-linux</id>
+    <content type="html"><![CDATA[<p><img class="center" src="https://lh5.googleusercontent.com/-pLbkxy3l_oY/VHXFK4PJ0mI/AAAAAAAAASo/o_DUioz5j_U/s800/Screenshot+from+2014-11-26+18:54:05.png" title="asciinema" alt="asciinema"></p>
+
+<p>Apa itu ASCIINEMA?</p>
+
+<p>Dari kata-kata ASCII</p>
+
+<!--more-->
+
+
+<blockquote><p>Kode Standar Amerika untuk Pertukaran Informasi atau ASCII (American Standard Code for Information Interchange) merupakan suatu standar internasional dalam kode huruf dan simbol seperti Hex dan Unicode tetapi ASCII lebih bersifat universal, contohnya 124 adalah untuk karakter &#8220;|&#8221;.</p><footer><strong>wikipedia</strong> <cite><a href='http://id.wikipedia.org/wiki/ASCII'>ASCII</a></cite></footer></blockquote>
+
+
+<p>Dan dari kata NEMA - Cinema kwkkwkwk <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" width="20" height="20" title="smiley" alt="smiley"></p>
+
+<blockquote><p>Sinema (akar kata dari cinema = kinematik = gerak). Film sebenarnya merupakan lapisan-lapisan cairan selulosa, biasa di kenal di dunia para sineas seluloid.</p><p>Pengertian secara harafiah film (sinema) adalah Cinemathographie yang berasal dari Cinema + tho = phytos (cahaya) + graphie = grhap (tulisan = gambar = citra), jadi pengertiannya adalah melukis gerak dengan cahaya. Agar kita dapat melukis gerak dengan cahaya, kita harus menggunakan alat khusus, yang biasa kita sebut dengan kamera V</p><footer><strong>wikipedia</strong> <cite><a href='http://id.wikipedia.org/wiki/Sinema'>Sinema</a></cite></footer></blockquote>
+
+
+<p>Yah gitu lah, tapi jangan di gabungin, intinya Asciinema itu packages yang bisa merekam session di dalam terminal. Gini aja kalian buka aja profile saya disini <a href="https://asciinema.org/~SunDi3yansyah">https://asciinema.org/~SunDi3yansyah</a> dan scroll ke bawh, ada list videonya coba di pilih 1 dan di play, maka yang di rekam hanyalah di bagian windows terminalnya saja. Oke paham&hellip;? Sip&hellip; <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" width="20" height="20" title="smile" alt="smile"></p>
+
+<p>Saya disini akan menjelaskan cara install di Linux.</p>
+
+<h4>Ubuntu</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-add-repository ppa:zanchey/asciinema</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get update</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install asciinema</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Fedora (Fedora 19 dan 20)</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo yum install asciinema</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Arch Linux</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo yaourt -S asciinema</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Gentoo Linux</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo emerge asciinema</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Source: <a href="https://asciinema.org/docs/installation">https://asciinema.org/docs/installation</a></p>
+
+<p>Nah setelah kalian install, kalian di berkenankan membuat akun disana, jangan lupa di verifikasi emailnya, setelah itu kalian bisa menggunakan asciinema ini di session terminal, tapi sebelum menggunakan saya sarankan untuk membuat auth config di asccinema kalian dengan akun di asscinema.org, cara nya buka terminal dan ketik ini</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>asciinema auth</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Copy dan paste link yang ada di output kemudian di pastekan ke browser yang kalian pakai tadi untuk register ke asciinema.org.</p>
+
+<p>Setelah itu kalian bisa menggunakannya, dengan perintah di terminal.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>asciinema rec</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Maka akan membersihkan halaman terminal baru dan siap di rekam. Untuk keluar ketik perintah</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>exit</span></code></pre></td></tr></table></div></figure>
+
+
+<p>dan ENTER.
+Atau bisa juga dengan menekan tombil <strong>CTRL + D</strong></p>
+
+<p>Nah ketika akan berhenti dari rekaman kalian akan di beri perintah</p>
+
+<p><strong>Rekaman yang barusan di rekam mau di upload atau tidak?</strong></p>
+
+<p>Jika iya, maka ketik perintah <strong>Y</strong> dan tekan <strong>ENTER</strong> jika tidak ingin menguploadnya maka ketik perintah <strong>N</strong> dan tekan <strong>ENTER</strong>.</p>
+
+<p>Lama gak ya uploadnya?
+Jawabannya <strong>TIDAK</strong> seberapa lama anda merekam maka uploadnya akan tetap cepat, gak percaya? Silakan di buktikan&hellip; <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" width="20" height="20" title="smile" alt="smile"></p>
+
+<p>Jika memerlukan bantuan lebih lengkapnya, ketik perintah ini</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>asciinema -h</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Update Versi NodeJS]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/25/cara-update-versi-nodejs/"/>
+    <updated>2014-11-25T07:27:33+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/25/cara-update-versi-nodejs</id>
+    <content type="html"><![CDATA[<p>Cek dulu versi node kalian, caranya</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>node -v</span></code></pre></td></tr></table></div></figure>
+
+
+<p>kemudian buka <a href="http://nodejs.org/">NODEJS.ORG</a> liat di bagian atas button <strong>DOWNLOAD</strong>, jika versi nodejs kalian berbeda dengan yang ada disana maka untuk mengupdatenya.</p>
+
+<!--more-->
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo npm install n -g</span></code></pre></td></tr></table></div></figure>
+
+
+<p>tunggu sampai selesai</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo n stable</span></code></pre></td></tr></table></div></figure>
+
+
+<p>tunggu sampai selesai proses download/update nya, jika sudah selesai, silakan di verifikasi untuk melihatnya</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>node -v</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>NB: Tidak support untuk Windows</strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Menambah Virtual Hosts Di Nginx]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx/"/>
+    <updated>2014-11-25T04:48:12+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/25/cara-menambah-virtual-hosts-di-nginx</id>
+    <content type="html"><![CDATA[<p>Kalau sebelumnya saya sudah menejalaskan tentang <a href="http://sundi3yansyah.github.io/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/">Cara Install Nginx, MySQL, PHP Di CentOS</a>, sekarang bagaimana jika kita ingin menambahkan domain kita ke server yang pada tempo lalu sudah di install NGINX dan kawan-kawannya? Yah&hellip; tulisan &amp; video di bawah ini yang akan menjawab, ini real saya praktekan langsung di domain saya, namun nama domain tsb adalah nama Nick teman saya <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" width="20" height="20" title="smile" alt="smile"></p>
+
+<p>Langsung saja ke videonya.</p>
+
+<!--more-->
+
+
+<script src="https://asciinema.org/a/14192.js" id="asciicast-14192" async></script>
+
+
+<p>Anda bisa melihat command line di bawah ini untuk mengikuti dari recorder di atas.</p>
+
+<p>Direktori root bisa dimana saja, silakan disesuaikan</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir -p /srv/www/formatdongkrak.com/logs</span></code></pre></td></tr></table></div></figure>
+
+
+<p>for security secure, keep using chown root</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>nano /etc/php.ini</span></code></pre></td></tr></table></div></figure>
+
+
+<p>press on the keyboard <code>CTRL+W</code>
+find</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cgi.fix_pathinfo</span></code></pre></td></tr></table></div></figure>
+
+
+<p>you will see like this</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>;cgi.fix_pathinfo=0</span></code></pre></td></tr></table></div></figure>
+
+
+<p>replace</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cgi.fix_pathinfo=0</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir /etc/nginx/sites-available</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir /etc/nginx/sites-enabled</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>nano /etc/nginx/nginx.conf</span></code></pre></td></tr></table></div></figure>
+
+
+<p>add the code below, to the bottom before the closing <code>}</code></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>include /etc/nginx/sites-enabled/*;</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>nano /etc/nginx/sites-available/formatdongkrak.com</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>server {
+</span><span class='line'>    server_name formatdongkrak.com;
+</span><span class='line'>    access_log /srv/www/formatdongkrak.com/logs/access.log;
+</span><span class='line'>    error_log /srv/www/formatdongkrak.com/logs/error.log;
+</span><span class='line'>    root /srv/www/formatdongkrak.com;
+</span><span class='line'>
+</span><span class='line'>    location / {
+</span><span class='line'>        index index.php index.html index.htm;
+</span><span class='line'>    }
+</span><span class='line'>    location ~ .php$ {
+</span><span class='line'>        include fastcgi_params;
+</span><span class='line'>        fastcgi_pass  127.0.0.1:9000;
+</span><span class='line'>        fastcgi_index index.php;
+</span><span class='line'>        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+</span><span class='line'>        fastcgi_buffer_size 16k;
+</span><span class='line'>        fastcgi_buffers 4 16k;
+</span><span class='line'>    }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd /etc/nginx/sites-enabled/</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ln -s /etc/nginx/sites-available/formatdongkrak.com</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>service nginx restart</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>nano /srv/www/formatdongkrak.com/info.php</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If permission denied</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd /srv/www</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>find . -type d | while read folder ; do chmod 755 "$folder" ; done</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>find . -type f | while read file ; do chmod 644 "$file" ; done</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Nginx, MySQL, PHP Di CentOS]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/25/cara-install-nginx-mysql-php-di-centos/"/>
+    <updated>2014-11-25T04:17:41+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/25/cara-install-nginx-mysql-php-di-centos</id>
+    <content type="html"><![CDATA[<p>Pada artikel sebelumnya saya sudah menjelaskan tentang <a href="http://sundi3yansyah.github.io/article/2014/09/03/install-lemp-di-centos-5-6-dan-fedora-18-13/">Install LEMP Di CentOS 5-6 Dan Fedora 18-13</a>, namun disini saya akan menjabarkan lebih datail <strong>Cara Install Nginx, MySQL, PHP di CentOS</strong> menggunakan recorder.</p>
+
+<h4>Requirements</h4>
+
+<ul>
+<li> CentOS 6.*</li>
+<li> Architecture i386, x86_64</li>
+</ul>
+
+
+<p>Silakan di simak, recordernya. Remi repositorinya menyesuikan arsitektur OS yang kalian pakai</p>
+
+<!--more-->
+
+
+<script src="https://asciinema.org/a/14190.js" id="asciicast-14190" async></script>
+
+
+<p>Anda bisa melihat command line di bawah ini untuk mengikuti dari recorder di atas.</p>
+
+<p>64bit / x86_x64</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm</span></code></pre></td></tr></table></div></figure>
+
+
+<p>32bit / i386</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Jika gagal download silakan menggunakan mirror, ganti <code>dl.fedoraproject.org</code> dengan <code>download.fedoraproject.org</code> tapi tetap hati-hati menggunakan mirror, takut terjadi gagal atau repositorinya 404, lanjutkan dibawah ini:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>nano /etc/yum.repos.d/nginx.repo</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[nginx]
+</span><span class='line'>name=nginx repo
+</span><span class='line'>baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+</span><span class='line'>gpgcheck=0
+</span><span class='line'>enabled=1</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>yum --enablerepo=remi,remi-test install nginx mysql mysql-server php php-common php-fpm</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>yum --enablerepo=remi,remi-test install php-mysql php-pgsql php-sqlite php-pecl-memcache php-gd php-mbstring php-mcrypt php-xml php-pecl-apc php-cli php-pear php-pdo</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>chkconfig --levels 235 httpd off</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>service httpd stop</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>chkconfig --add nginx</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>chkconfig --add mysqld</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>chkconfig --add php-fpm</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>chkconfig --levels 235 nginx on</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>chkconfig --levels 235 mysqld on</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>chkconfig --levels 235 php-fpm on</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>service nginx start</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>service mysqld start</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Konfigurasi MySQL</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/usr/bin/mysql_secure_installation</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>service php-fpm start</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Merubah user dan group</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>nano /etc/php-fpm.d/www.conf</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>user = nginx
+</span><span class='line'>group = nginx</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>nano /etc/nginx/conf.d/default.conf</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Merubah config default server</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>server {
+</span><span class='line'>    listen 80;
+</span><span class='line'>    server_name DOMAINorIP;
+</span><span class='line'>
+</span><span class='line'>    location / {
+</span><span class='line'>        root   /usr/share/nginx/html;
+</span><span class='line'>        index index.php index.html index.htm;
+</span><span class='line'>    }
+</span><span class='line'>
+</span><span class='line'>    error_page  404              /404.html;
+</span><span class='line'>    location = /404.html {
+</span><span class='line'>        root   /usr/share/nginx/html;
+</span><span class='line'>    }
+</span><span class='line'>
+</span><span class='line'>    error_page   500 502 503 504  /50x.html;
+</span><span class='line'>    location = /50x.html {
+</span><span class='line'>        root   /usr/share/nginx/html;
+</span><span class='line'>    }
+</span><span class='line'>
+</span><span class='line'>    location ~ \.php$ {
+</span><span class='line'>        root           /usr/share/nginx/html;
+</span><span class='line'>        fastcgi_pass   127.0.0.1:9000;
+</span><span class='line'>        fastcgi_index  index.php;
+</span><span class='line'>        fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
+</span><span class='line'>        include        fastcgi_params;
+</span><span class='line'>    }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Selesai merubah config default server</p>
+
+<p>Test php info</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>nano /usr/share/nginx/html/info.php</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>service nginx restart</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>service php-fpm restart</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Singkat Dan Padat Untuk Turunan UNIX]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/23/singkat-dan-padat-untuk-turunan-unix/"/>
+    <updated>2014-11-23T21:33:32+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/23/singkat-dan-padat-untuk-turunan-unix</id>
+    <content type="html"><![CDATA[<p>Unix adalah salah satu pondasi dari berbagai sistem operasi yang saat ini dikenal. Bahkan mungkin yang sekarang anda pakai, adalah turunan atau cucu-cucu dari UNIX. Unix sendiri diakui resmi dirilis oleh Laboratorium Bell (Bell Labs) oleh Ken Thompson dan Dennies Ritchie yang merupakan hacker Old-School paling kuerens…
+Mungkin lebih jelas jika anda melihat diagram time-stamp (jejak waktu) dari lahirnya anak-anak sampai cucu-cucunya Unix berikut :</p>
+
+<!--more-->
+
+
+<p><img class="center" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Unix_history.en.svg/655px-Unix_history.en.svg.png" title="Turunan UNIX" alt="Turunan UNIX"></p>
+
+<p>Fakta yang menarik dan mungkin mengagetkan anda adalah Microsoft pernah merilis sebuah varian Unix dengan nama Xenix OS. Namun, entah karena kesulitan berkembang atau sedang terhimpit keadaan, Xenix akhirnya dijual kepada SCO (Santa Cruz Operation) yang kemudian membredeli dan menjualnya dengan nama SCO Unix .
+Wadooh, nah loe. Bukan tidak mungkin Windows yang sekarang kalian pake adalah hasil inspirasi dari Unix. , karena ada beberapa fitur windows yang mencontoh Unix nih.
+Fakta lain adalah OS yang paling cantik, Mac OS, ternyata adalah salah satu cucu dari Unix. Dia bersama kembarannya, Darwin OS, adalah keturunan dari NextStep, sebuah OS buatan Apple yang dikembangkan dari UNix. …
+Dan tak lupa, Linux, yang saat ini menjadi cucu linux yang paling banyak berkembang biak menjadi banyak sekali distro.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install NodeJS Di Debian]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/23/cara-install-nodejs-di-debian/"/>
+    <updated>2014-11-23T17:27:33+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/23/cara-install-nodejs-di-debian</id>
+    <content type="html"><![CDATA[<p>Kalau kemarin saya sudah share <a href="http://sundi3yansyah.github.io/article/2014/07/05/cara-install-nodejs-dan-npm-di-ubuntu/">Cara Install NodeJS Dan NPM Di Ubuntu</a>, <a href="http://sundi3yansyah.github.io/article/2014/09/07/cara-install-nodejs-via-tarball-di-centos-rhel/">Cara Install NodeJS via Tarball Di CentOS/RHEL</a>, <a href="http://sundi3yansyah.github.io/article/2014/10/25/cara-install-nodejs-di-windows/">Cara Install NodeJS Di Windows</a> &hellip; nah sekarang saya akan memberikan sedikit snippet command line untuk <a href="#">Cara Install NodeJS di Debian</a>, langsaung saja&hellip;</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install python g++ make wget libssl-dev</span></code></pre></td></tr></table></div></figure>
+
+
+<!--more-->
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget http://nodejs.org/dist/node-latest.tar.gz</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>tar xvfvz node-latest.tar.gz</span></code></pre></td></tr></table></div></figure>
+
+
+<p>atau bisa juga</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>tar xzvf node-latest.tar.gz</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd node-latest</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>./configure</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>make</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo make install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Nah kesimpulannya apa? Hampir sama kan cara install di distro lainnya, hanya berbeda di devlopment untuk mengcimpilienya, karena beda nama package <img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" width="20" height="20" title="smile" alt="smile"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install cPanel Di VPS Dedicated Servers]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/22/cara-install-cpanel-di-vps-dedicated-servers/"/>
+    <updated>2014-11-22T11:20:18+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/22/cara-install-cpanel-di-vps-dedicated-servers</id>
+    <content type="html"><![CDATA[<p>Sebelum melakukan cara install cPanel di Server (VPS, Dedicated) Linux, pastikan anda memiliki spesifikasi RAM Server (VPS, Dedicated) minimal 256Mb.</p>
+
+<p>Berikut ini adalah langkah-langkah untuk install cPanel di Server (VPS, Dedicated):
+Login SSH ke Server (VPS, Dedicated) menggunakan akses root</p>
+
+<!--more-->
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir /home/cpins</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd /home/cpins</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget http://layer1.cpanel.net/latest</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sh latest</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Ikuti configurasi yang dibutuhkan cPanel</p>
+
+<p>Proses install melalui console normalnya membutuhkan waktu 1-2 jam jika Server (VPS, Dedicated) USA dan 3-5 jam untuk server Indonesia.</p>
+
+<p>Setelah installasi melalui console selesai, login ke cpanel menggunakan IP dengan alamat <a href="https://IP_SERVER:2087,">https://IP_SERVER:2087,</a> kemudian lanjutkan proses installasi melalui website (WHM).</p>
+
+<p>Gampang banget kan
+Demikian tutorial Cara install cPanel di Server (VPS, Dedicated) Linux, semoga bermanfaat.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install ZPanelCP 10.1.1]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/22/cara-install-zpanelcp-10-dot-1-1/"/>
+    <updated>2014-11-22T11:08:28+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/22/cara-install-zpanelcp-10-dot-1-1</id>
+    <content type="html"><![CDATA[<p>PEMBERITAHUAN: cek installer / upgrader untuk 32 atau 64 bit secara otomatis! Hanya satu script yang dibutuhkan.</p>
+
+<p>Ubuntu</p>
+
+<figure class='code'><figcaption><span>installer ubuntu </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bash &lt;(curl -Ss https://raw.github.com/zpanel/installers/master/install/Ubuntu-12_04/10_1_1.sh)</span></code></pre></td></tr></table></div></figure>
+
+
+<!--more-->
+
+
+<p>CentOS</p>
+
+<figure class='code'><figcaption><span>installer centos </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bash &lt;(curl -Ss https://raw.github.com/zpanel/installers/master/install/CentOS-6_4/10_1_1.sh)</span></code></pre></td></tr></table></div></figure>
+
+
+<hr />
+
+<p>Jika dari ZPanel kalian dalam keadaan versi 10.1.0, lakukan upgrade dibawah ini:</p>
+
+<p>Ubuntu</p>
+
+<figure class='code'><figcaption><span>installer ubuntu </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bash &lt;(curl -Ss https://raw.github.com/zpanel/installers/master/upgrade/Ubuntu-12_04/10_1_1.sh)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>CentOS</p>
+
+<figure class='code'><figcaption><span>installer centos </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bash &lt;(curl -Ss https://raw.github.com/zpanel/installers/master/upgrade/CentOS-6_4/10_1_1.sh)</span></code></pre></td></tr></table></div></figure>
+
+
+<hr />
+
+<p>Installers for Microsoft Windows (10.1.0)</p>
+
+<p><a href="http://sourceforge.net/projects/zpanelcp/files/server_stack/10.0.2/zpanel-stack-1_0_2_php53.exe/download">Application Stack (Apache, PHP, MySQL etc.) Installer for Microsoft® Windows™</a>
+<a href="https://github.com/zpanel/zpanelx/releases/download/10.1.0/installer-10_1_0-win32.exe">ZPanel Installer (installs ZPanel on top of the Application stack)</a></p>
+
+<p>Upgrade for Microsoft Windows (10.1.0 to 10.1.1)</p>
+
+<p>For new 10.1.1 installs: Install as noted above (10.1.0) then follow the instructions below:
+<a href="http://forums.zpanelcp.com/Thread-HOW-TO-UPGRADE-10-1-1-WINDOWS?pid=76365#pid76365">Manual Update Tutorial for Microsoft Windows</a> Manually upgrade from ZPanel version 10.1.0 to 10.1.1</p>
+
+<p>Upgrade tools for Microsoft Windows (10.0.1/10.0.2 to 10.1.0)</p>
+
+<p><a href="https://github.com/zpanel/zpanelx/releases/download/10.1.0/updater-10_1_0-win32.exe">Updater for Microsoft Windows</a> Automatically upgrades from ZPanel version 10.0.1 or 10.0.2 to 10.1.0</p>
+
+<p>Bug yang di termukan adalah:</p>
+
+<p><a href="http://forums.zpanelcp.com/Thread-RoundCube-Urgent-Security-HotFix">RoundCube Vulnerability Bug</a>
+<a href="http://forums.zpanelcp.com/Thread-Pcharts-Urgent-Vulnerability-Fix">Pcharts Vulnerability Bug</a></p>
+]]></content>
+  </entry>
+  
+</feed>

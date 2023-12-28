@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Mybb | Cahyadi Triyansyah (SunDi3yansyah)]]></title>
+  <link href="http://sundi3yansyah.github.io/article/categories/mybb/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2023-12-28T22:07:32+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
+  <author>
+    <name><![CDATA[Cahyadi Triyansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Youtube Cara Install MyBB]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/08/27/youtube-cara-install-mybb/"/>
+    <updated>2014-08-27T11:24:38+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/08/27/youtube-cara-install-mybb</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<iframe width="675" height="415" src="//www.youtube.com/embed/_RDir8vSBB8" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Edit Template MyBB Menggunakan Inspect Element PART-1]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/08/27/edit-template-mybb-menggunakan-inspect-element-part-1/"/>
+    <updated>2014-08-27T11:23:31+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/08/27/edit-template-mybb-menggunakan-inspect-element-part-1</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<iframe width="675" height="415" src="//www.youtube.com/embed/10MTYoiZVdg" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install MyBB]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/07/05/cara-install-mybb/"/>
+    <updated>2014-07-05T00:13:21+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/07/05/cara-install-mybb</id>
+    <content type="html"><![CDATA[<p>Langsung saja nonton videonya:</p>
+
+<h3>Cara Install MyBB</h3>
+
+<iframe width="675" height="415" src="//www.youtube.com/embed/_RDir8vSBB8" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
+  
+</feed>

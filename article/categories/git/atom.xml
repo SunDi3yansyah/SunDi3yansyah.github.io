@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Git | Cahyadi Triyansyah (SunDi3yansyah)]]></title>
+  <link href="http://sundi3yansyah.github.io/article/categories/git/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2023-12-28T22:07:32+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
+  <author>
+    <name><![CDATA[Cahyadi Triyansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Git Set Up Dan Generating SSH Keys]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/09/08/cara-git-set-up-dan-generating-ssh-keys/"/>
+    <updated>2014-09-08T00:48:14+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/09/08/cara-git-set-up-dan-generating-ssh-keys</id>
+    <content type="html"><![CDATA[<p>Oke kali ini saya akan memberikan tutorial <strong>Cara Git Set Up dan Generating SSH Keys di GitHUb</strong></p>
+
+<!-- more -->
+
+
+<h4>asked</h4>
+
+<blockquote><p>Emang fungsinya untuk apa sih itu?</p></blockquote>
+
+<h4>answer</h4>
+
+<blockquote><p><strong>Git Set Up</strong> adalah untuk menkonfugurasi akun git kita di komputer/laptop lokal.
+<strong>Generating SSH Keys</strong> sebuah identifikasi yang akan di buat di komputer/laptop kita, selayaknya password, yang merupakan kunci publik akun kita di github yang bersifat Secure Shell, tetapi sama sekali tidak bersangkutan dengan password kita di github lho&hellip; :P Jadi setelah komputer/laptop kita ter-Restart (reboot) dan di setiap kita akan menGenerate sebuah repository ke github kita akan memasukan sebuah <code>passphrase key</code>.</p></blockquote>
+
+<p>Seperti yang sudah di jelaskan dari halaman <code>help.github.com</code></p>
+
+<p><blockquote><p>At the heart of GitHub is an open source version control system (VCS) called Git. Git is responsible for everything GitHub-related that happens locally on your computer.</p><footer><strong>Set Up Git <a href="https://help.github.com/articles/set-up-git">https://help.github.com/articles/set-up-git</a></strong></footer></blockquote></p>
+
+<p><blockquote><p>SSH keys are a way to identify trusted computers, without involving passwords. The steps below will walk you through generating an SSH key and then adding the public key to your GitHub account.</p><footer><strong>Generating SSH Keys <a href="https://help.github.com/articles/generating-ssh-keys">https://help.github.com/articles/generating-ssh-keys</a></strong></footer></blockquote></p>
+
+<p>Kali ini saya akan memberikan tutorial langsung berupa video yang sudah saya upload ke youtube. Jadi silakan untuk langsung di simak yak videonya xD</p>
+
+<iframe width="675" height="415" src="//www.youtube.com/embed/BBzHl_j86bc" frameborder="0" allowfullscreen></iframe>
+
+
+<h6>Credit: SunDi3yansyah</h6>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install/Upgrade Versi Git Core Terbaru]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/07/03/cara-install-slash-upgrade-versi-git-core-terbaru/"/>
+    <updated>2014-07-03T02:51:47+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/07/03/cara-install-slash-upgrade-versi-git-core-terbaru</id>
+    <content type="html"><![CDATA[<p>Secara bawan OS khususnya basis Unix biasanya sudah terinstall <b>git</b>, jika belum maka:</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install git</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Itu akan menghasilkan versi 1.7.9.5 biasanya:</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git &ndash;version</span></code></pre></td></tr></table></div></figure></p>
+
+<!-- more -->
+
+
+<p>Output:</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git version 1.7.9.5</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Nah biasanya lagi nih, <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; >a banyak software-software atau module lainnya yang membutuhkan git di atas versi tersebut, maka kita harus update <b>git</b> kita:</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install python-software-properties
+</span><span class='line'>sudo add-apt-repository ppa:git-core/ppa
+</span><span class='line'>sudo apt-get update
+</span><span class='line'>sudo apt-get install git</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Jika sudah selesai maka lakukan cek versi:</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git &ndash;version</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Output:</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git version 2.0.1</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Baik cukup disini selamat bermain <b>git</b>, selamat hacking, selamat coding. Hahaha&hellip;</p>
+
+<p><figure class='code'><figcaption><span>root@sundi3yansyah </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>exit</span></code></pre></td></tr></table></div></figure></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Blogging Menggunakan Octopress &amp; Github]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/07/02/blogging-menggunakan-octopress-and-github/"/>
+    <updated>2014-07-02T08:06:29+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/07/02/blogging-menggunakan-octopress-and-github</id>
+    <content type="html"><![CDATA[<p>Setelah lama menggunakan wordpress, blogger, joomla sebagai media untuk blogging akhirnya saya memutuskan untuk bermigrasi menggunakan octopress. Hmmm sebenernya ini tulisannya mas sugeng karena saya juga sejalan dengan beliau maka saya ingin menuliskannya kembali di blog saya ini&hellip;hehe&hellip; Alasan kenapa saya bermigrasi sebagai berikut:</p>
+
+<h3>Plugin Wordpress terlalu banyak</h3>
+
+<p>Salah satu keunggulan worpress adalah tersedianya plugin yang banyak, namun untuk mengelola plugin-plugin yang terinstall terlalu makan waktu sehingga terkadang malah tidak fokus pada tujuan nge-blog yaitu menulis.</p>
+
+<!-- more -->
+
+
+<h3>Cepat dan Efisien</h3>
+
+<p>Octopress framework menggunakan <a href="https://github.com/mojombo/jekyll">Jekyll</a> untuk menggenerate halaman-halaman websitenya. Semua halaman blog adalah static page sehingga tidak membutuhkan proses yang berat pada server dan dapat didownload secepatnya ke browser client.</p>
+
+<h3>Hosting di Github Pages</h3>
+
+<p>Web static octopress bisa dihosting-kan di <a href="https://help.github.com/articles/what-are-github-pages">Github pages</a> yang notabene gratis. Terlebih github selalu online dan waktu respon yang cepat.</p>
+
+<h3>Mudah digunakan</h3>
+
+<p>Workflow penggunaan octopress juga sangat mudah, cukup dengan perintah command line posting blog lansung selesai.</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake new_post[&lsquo;Judul Posting&rsquo;]
+</span><span class='line'>rake generate
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure></p>
+
+<h3>Markdown</h3>
+
+<p>Sebagai editor, octopress menggunakan <a href="http://daringfireball.net/projects/markdown/">Markdown</a>. Menggunakan markdown lebih simple dan cepat daripada wordpress editor. Untuk markdown editor di Linux saya menggunakan <a href="http://pad.haroopress.com/user.html#download">Haroopad</a>.</p>
+
+<h3>Tidak menggunakan database/Static pages</h3>
+
+<p><strong>apa? tidak menggunakan database??</strong> Ya, octopress tidak memerlukan database content sehingga tidak ada query yang memberatkan server. Config file disimpan di file <code>_config</code> kemudian halaman blog digenerate oleh <code>jekyll</code>.</p>
+
+<h3>Security yang lebih baik</h3>
+
+<p>Tentunya dengan menggunakan service kepunyaan github, securitas dari blog lebih kuat.</p>
+
+<h3>Tersedia Plugin</h3>
+
+<p>Octoress tentunya juga memiliki plugin-plugin yang dapat dipakai seperti Disqus, Twitter, Facebook, Github, dll..</p>
+
+<p>Untuk sementara mungkin hal diatas yang bisa saya pikirkan. Dan sampai sekarang saya cukup puas menggunakan octopress.</p>
+
+<p>Src: <a href="http://catatan.sugengweb.net/2013/11/22/blogging-menggunakan-octopress-and-heroku/">Blogging Menggunakan Octopress &amp; Heroku</a></p>
+]]></content>
+  </entry>
+  
+</feed>

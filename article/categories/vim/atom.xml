@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Vim | Cahyadi Triyansyah (SunDi3yansyah)]]></title>
+  <link href="http://sundi3yansyah.github.io/article/categories/vim/atom.xml" rel="self"/>
+  <link href="http://sundi3yansyah.github.io/"/>
+  <updated>2023-12-28T22:07:32+07:00</updated>
+  <id>http://sundi3yansyah.github.io/</id>
+  <author>
+    <name><![CDATA[Cahyadi Triyansyah]]></name>
+    <email><![CDATA[sundi3yansyah@gmail.com]]></email>
+  </author>
+  <generator uri="https://ruby-lang.org/">Ruby</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Konfigurasi VIM Menggunakan Tema Dan Plugin]]></title>
+    <link href="http://sundi3yansyah.github.io/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin/"/>
+    <updated>2014-12-22T13:12:28+07:00</updated>
+    <id>http://sundi3yansyah.github.io/article/2014/12/22/cara-konfigurasi-vim-menggunakan-tema-dan-plugin</id>
+    <content type="html"><![CDATA[<p>Pertama liat dulu penampakannya</p>
+
+<p><img src="https://lh4.googleusercontent.com/-EL817E9o1AQ/VJe2F8KdpmI/AAAAAAAAAdg/IdB5ryWNfks/s800/Screenshot+from+2014-12-22+13:08:19.png" alt="sundi3yansyah vim" /></p>
+
+<p>Mau? Yok&hellip; <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; >
+Saya menggunakan Distro Ubuntu dan bisa di pasang di distro lainnya</p>
+
+<!--more-->
+
+
+<p>pastikan sudah terinstall VIM minimal versi 7.3, jika belum kita install dulu</p>
+
+<p><figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install vim</span></code></pre></td></tr></table></div></figure></p>
+
+<p>jika di distro lain beda paket manager tinggal di ganti saja <strong>apt-get</strong> nya
+lanjut buat direktorinya</p>
+
+<p><figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir ~/.vim
+</span><span class='line'>mkdir ~/.vim/colors
+</span><span class='line'>mkdir ~/.vim/bundle
+</span><span class='line'>mkdir ~/.vim/tmp
+</span><span class='line'>mkdir ~/.vim/tmp/undo
+</span><span class='line'>mkdir ~/.vim/tmp/backup
+</span><span class='line'>mkdir ~/.vim/tmp/swap</span></code></pre></td></tr></table></div></figure></p>
+
+<h3>molokai</h3>
+
+<p>simpan kode di bawah ini ke folder <strong>~/.vim/colors/</strong> dengan nama <strong>molokai.vim</strong></p>
+
+<p>source code</p>
+
+<div class="github-widget" data-repo="tomasr/molokai"></div>
+
+
+<h3>pathogen</h3>
+
+<p>install plugin vim pathogen</p>
+
+<p><figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir -p ~/.vim/autoload ~/.vim/bundle &amp;&amp; \
+</span><span class='line'>curl -LSso ~/.vim/autoload/pathogen.vim &lt;a href="https://tpo.pe/pathogen.vim">https://tpo.pe/pathogen.vim&lt;/a></span></code></pre></td></tr></table></div></figure></p>
+
+<p>source code</p>
+
+<div class="github-widget" data-repo="tpope/vim-pathogen"></div>
+
+
+<h3>powerline</h3>
+
+<p>install plugin vim powerline, pastikan sudah install git</p>
+
+<p>clone dulu repo powerline
+<figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ~/.vim/
+</span><span class='line'>git clone git://github.com/Lokaltog/vim-powerline.git bundle/powerline</span></code></pre></td></tr></table></div></figure></p>
+
+<p>kita akan membutuhkan font <strong>DejaVuSansMono-Powerline</strong></p>
+
+<p><figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget &lt;a href="https://gist.github.com/toupeira/1630581/raw/bb7b21a7ad38a781b8975bcf6655d307237289c6/DejaVuSansMono-Powerline.ttf">https://gist.github.com/toupeira/1630581/raw/bb7b21a7ad38a781b8975bcf6655d307237289c6/DejaVuSansMono-Powerline.ttf&lt;/a>
+</span><span class='line'>sudo cp DejaVuSansMono-Powerline.ttf /usr/share/fonts/truetype</span></code></pre></td></tr></table></div></figure></p>
+
+<p>source code</p>
+
+<div class="github-widget" data-repo="Lokaltog/vim-powerline"></div>
+
+
+<h3>numbers</h3>
+
+<p>langsung saja clone numbers vim nya</p>
+
+<p><figure class='code'><figcaption><span>terminal </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone &lt;a href="https://github.com/myusuf3/numbers.vim.git">https://github.com/myusuf3/numbers.vim.git&lt;/a> ~/.vim/bundle/numbers</span></code></pre></td></tr></table></div></figure></p>
+
+<p>source code</p>
+
+<div class="github-widget" data-repo="myusuf3/numbers.vim"></div>
+
+
+<hr />
+
+<p>Apa sih fungsi dari plugin-plugin di atas? silakan di baca saja README nya di setiap packagenya <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smile&rsquo; &lsquo;smile&rsquo;&#8221; >
+Masih kurang puas dengan package yang saya berikan? Yok kita explorer VIM awesome berikut ini <a href="http://vimawesome.com/">vimawesome</a> <img class="<a" src="href="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png">https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png</a>&#8221; width=&#8221;20&#8221; height=&#8221;20&#8221; title=&#8221;&lsquo;smiley&rsquo; &lsquo;smiley&rsquo;&#8221; ></p>
+]]></content>
+  </entry>
+  
+</feed>
