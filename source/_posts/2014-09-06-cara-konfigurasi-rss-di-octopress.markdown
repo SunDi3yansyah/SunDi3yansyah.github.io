@@ -10,7 +10,7 @@ keywords: Cara Konfigurasi RSS di Octopress
 
 Langsung saja karena saya anggap anda sudah master{% img https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png 20 20 'smiley' 'smiley' %}dan sudah mengerti apa arti dari RSS itu sendiri dan gimana cara konfigurasi RSS / Email di Octopress yang secara default masih keadaan kosong di file `_config.yml` <!-- more -->
 
-``` yaml
+```
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml
 subscribe_email: 
@@ -25,7 +25,7 @@ Edit file `_config.yml`
 
 cari:
 
-``` yaml
+```
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml
 subscribe_email: 
@@ -34,7 +34,7 @@ email:
 ```
 Rubah kurang lebih seperti ini:
 
-``` yaml
+```
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml
 subscribe_email: feed://feeds.feedburner.com/FeedAddressKamu

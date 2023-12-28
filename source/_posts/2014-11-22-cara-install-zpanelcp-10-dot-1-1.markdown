@@ -11,13 +11,13 @@ PEMBERITAHUAN: cek installer / upgrader untuk 32 atau 64 bit secara otomatis! Ha
 
 Ubuntu
 
-{% codeblock lang:sh installer ubuntu %}
+{% codeblock installer ubuntu %}
 bash <(curl -Ss https://raw.github.com/zpanel/installers/master/install/Ubuntu-12_04/10_1_1.sh)
 {% endcodeblock %}
 <!--more-->
 CentOS
 
-{% codeblock lang:sh installer centos %}
+{% codeblock installer centos %}
 bash <(curl -Ss https://raw.github.com/zpanel/installers/master/install/CentOS-6_4/10_1_1.sh)
 {% endcodeblock %}
 
@@ -27,13 +27,13 @@ Jika dari ZPanel kalian dalam keadaan versi 10.1.0, lakukan upgrade dibawah ini:
 
 Ubuntu
 
-{% codeblock lang:sh installer ubuntu %}
+{% codeblock installer ubuntu %}
 bash <(curl -Ss https://raw.github.com/zpanel/installers/master/upgrade/Ubuntu-12_04/10_1_1.sh)
 {% endcodeblock %}
 
 CentOS
 
-{% codeblock lang:sh installer centos %}
+{% codeblock installer centos %}
 bash <(curl -Ss https://raw.github.com/zpanel/installers/master/upgrade/CentOS-6_4/10_1_1.sh)
 {% endcodeblock %}
 

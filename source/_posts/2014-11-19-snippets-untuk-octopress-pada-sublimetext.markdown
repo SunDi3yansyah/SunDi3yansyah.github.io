@@ -30,7 +30,7 @@ Cara installlnya cukup mudah:
 #### Via GIT
 
 masuk ke folder Install pada Sublime Text dan lakukan command berikut
-``` bash
+```
 git clone https://github.com/SunDi3yansyah/octopress-snippets
 ```
 

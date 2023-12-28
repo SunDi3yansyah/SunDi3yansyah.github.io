@@ -52,7 +52,7 @@ Disini saya memberikan contoh penggunaan dengan database.
 
 Karena saat ini dalam contoh menggunakan Mysql jadi Setting di Config.php seperti berikut :
 
-{% codeblock Config.php %}
+{% codeblock Config %}
 ORM::configure('mysql:host=localhost; dbname=perpustakaan');
 ORM::configure('username', 'root');
 ORM::configure('password', '1');
@@ -64,7 +64,7 @@ Buat sebuah database dengan nama perpustakaan
 
 Lalu buat sebuah tabel dengan nama books
 
-{% codeblock books.sql %}
+{% codeblock books %}
 CREATE TABLE IF NOT EXISTS `books` (
 `id` int(11) NOT NULL,
   `author` int(11) NOT NULL,
@@ -94,7 +94,7 @@ Buat sebuah file didalam folder models dengan nama SiteModel.php dengan nama tab
 
 terlebih dahulu setting Configurasi database.
 
-{% codeblock SiteModel.php %}
+{% codeblock SiteModel %}
 <?php
 /**
  * ************************************
@@ -136,7 +136,7 @@ Kita bahas membuat sebuah controller disini saya contohkan testController.php ya
 
 Membuat sebuah controller, sebagai contoh :
 
-{% codeblock testController.php %}
+{% codeblock testController %}
 <?php
 /**
  * ************************************
@@ -232,7 +232,7 @@ di `base/Router.php`, dengan cara sebagai berikut.
 
 Perhatikan baik baik, bisa dibilang susah susah gampang disaat mendaftarkan controller ke router.
 
-{% codeblock Router.php %}
+{% codeblock Router %}
 <?php
 /**
  * ************************************

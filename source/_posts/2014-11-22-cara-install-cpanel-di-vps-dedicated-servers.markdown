@@ -12,16 +12,16 @@ Sebelum melakukan cara install cPanel di Server (VPS, Dedicated) Linux, pastikan
 Berikut ini adalah langkah-langkah untuk install cPanel di Server (VPS, Dedicated):
 Login SSH ke Server (VPS, Dedicated) menggunakan akses root
 <!--more-->
-``` sh
+```
 mkdir /home/cpins
 ```
-``` sh
+```
 cd /home/cpins
 ```
-``` sh
+```
 wget http://layer1.cpanel.net/latest
 ```
-``` sh
+```
 sh latest
 ```
 

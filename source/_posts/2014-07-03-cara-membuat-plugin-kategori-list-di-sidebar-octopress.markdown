@@ -11,7 +11,7 @@ Pertama kita perlu menulis kode ruby ​​sedikit. Menambahkan file ke direktor
 
 Pertaman buat file baru menggunakan editor kesukaan kalian, dan isi code Ruby nya seperti ini:
 <!-- more -->
-{% codeblock root@sundi3yansyah - category_list_tag.rb %}
+{% codeblock root@sundi3yansyah - category_list_tag %}
 module Jekyll
   class CategoryListTag < Liquid::Tag
     def render(context)
@@ -45,7 +45,7 @@ default_asides
 
 Tambahkan `asides/category_list.html` ke dalam daftar asides-nya, misalnya punya saya seperti ini:
 
-{% codeblock root@sundi3yansyah - _config.yml %}
+{% codeblock root@sundi3yansyah - _config %}
 default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html, asides/category_list.html]
 {% endcodeblock %}
 

@@ -56,7 +56,7 @@ Maka jalankan ini lagi setelah kalian menggnati port`nya
 ./sc_serv sc_serv.conf
 ```
 Terus aku pingin radionya muncul di blog atau web jenis apa saja. Paman bisa google cara membuat script audio di HTML, saya kasih contoh radio kampoeng ( http://www.radiokampoeng.com/ ) seperti ini:
-``` html
+```
 <embed width="450" height="20" quality="best" src="http://www.radiokampoeng.com/flash_radio.swf" flashvars="file=http://127.0.0.1:8000/;stream.nsv&amp;type=mp3&amp;volume=120&amp;autostart=true" type="application/x-shockwave-flash">
 ```
 Note:

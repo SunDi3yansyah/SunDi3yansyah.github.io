@@ -17,14 +17,14 @@ Tidak seperti pada paradigma client-server umumnya, Inti SQLite bukanlah sebuah 
 Yah begitulah SQLie... kali ini saya akan memberikan informasi cara installasinya. Cek dulu apakah di linux kalian sudah ada package SQLite belum, caranya
 
 
-{% codeblock lang:sh check version sqlite3 %}
+{% codeblock check version sqlite3 %}
 sqlite3 --version
 {% endcodeblock %}
 
 dan kalau mau masuk ke SQLite nya ketik
 
 
-{% codeblock lang:sh open sqlite3 %}
+{% codeblock open sqlite3 %}
 sqlite3
 {% endcodeblock %}
 
@@ -42,7 +42,7 @@ Oke langsung saja.....
 Buka archive download dari SQLite disini [http://www.sqlite.org/download.html](http://www.sqlite.org/download.html) cari yang di bagian __source code__ kemudian download kurang lebih seperti ini namanya `sqlite-autoconf-*.tar.gz`, bintang (*) adalah mewakili dari nomer versi saat ini, kemudian di  __DOWNLOAD__.
 
 Sebagai contoh
-{% codeblock lang:sh %}
+{% codeblock %}
 http://www.sqlite.org/2014/sqlite-autoconf-3080702.tar.gz
 {% endcodeblock %}
 
@@ -50,25 +50,25 @@ Oke... saya anggap download sudah berhasil dan buka terminal kalian, asumsikan k
 
 Kemudian langsung saja buka archivenya
 
-{% codeblock lang:sh %}
+{% codeblock %}
 tar xvfz sqlite-autoconf-*.tar.gz
 {% endcodeblock %}
 
-{% codeblock lang:sh %}
+{% codeblock %}
 cd sqlite-autoconf-*
 {% endcodeblock %}
 
 **NB: Install depencies jika belum terinstall, seperti compiller etc.**
 
-{% codeblock lang:sh %}
+{% codeblock %}
 ./configure --prefix=/usr/local
 {% endcodeblock %}
 
-{% codeblock lang:sh %}
+{% codeblock %}
 make
 {% endcodeblock %}
 dan yang terakhir kita
-{% codeblock lang:sh %}
+{% codeblock %}
 make install
 {% endcodeblock %}
 
@@ -76,7 +76,7 @@ Kalau terjadi error atau Not Permission ya gunakan `sudo`
 
 Kemudian verifikasi untuk melihat versi sqlite3 yang barusan kita install
 
-``` sh
+```
 sqlite3 --version
 ```
 Jika tidak muncul, seperti ini
@@ -90,17 +90,17 @@ Maka salin file `libsqlite3.so.0.8.6` ke `/usr/lib/$arch`
 Misalnya
 
 x86
-``` sh
+```
 cp /usr/local/lib/libsqlite3.so.0.8.6 /usr/lib/i386-linux-gnu/libsqlite3.so.0.8.6
 ```
 x64
-``` sh
+```
 cp /usr/local/lib/libsqlite3.so.0.8.6 /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
 ```
 
 Silakan di cek kembali dengan
 
-``` sh
+```
 sqlite3 --version
 ```
 

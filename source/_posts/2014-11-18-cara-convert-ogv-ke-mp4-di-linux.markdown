@@ -19,13 +19,13 @@ misalnya debian/ubuntu:
 sudo apt-get install ffmpeg
 ```
 nah cara menggunakannya sebagai berikut:
-{% codeblock lang:sh %}
+{% codeblock %}
 ffmpeg -i out.ogv -acodec aac -strict experimental demo.mp4
 {% endcodeblock %}
 
 Dan bisa juga di jadikan `.avi` `.mkv` dan lain sebagainya, tinggal kita baca saja halaman __help_ pada ffmpeg di terminal
 
 
-{% codeblock lang:sh %}
+{% codeblock %}
 ffmpeg --help
 {% endcodeblock %}

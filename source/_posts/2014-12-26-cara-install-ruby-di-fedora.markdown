@@ -46,7 +46,7 @@ gem update
 
 NOTE: Jika terjadi error seperti ini:
 
-{% codeblock lang:sh error_required   %}
+{% codeblock error_required   %}
 Updating rubygems-update
 Fetching: rubygems-update-2.4.5.gem (100%)
 Successfully installed rubygems-update-2.4.5

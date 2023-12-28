@@ -10,7 +10,9 @@ keywords: Create Sub Domain for NGINX aka Virtual Host
 #### Create Sub Domain for NGINX aka Virtual Host by. SunDi3yansyah
 <!-- more -->
 
-``` nginx sub domain for nginx by sundi3yansyah https://gist.githubusercontent.com/SunDi3yansyah/966c7164eff435c59f5a/raw/f833b4a05baaf59b1e142ccc4528dfe8e3459436/sub.domain_nginx.conf
+sub domain for nginx by sundi3yansyah https://gist.githubusercontent.com/SunDi3yansyah/966c7164eff435c59f5a/raw/f833b4a05baaf59b1e142ccc4528dfe8e3459436/sub.domain_nginx.conf
+
+```
 server {
     server_name sub.domain;
     access_log /usr/share/nginx/html/sub.domain/access.log;

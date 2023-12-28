@@ -55,13 +55,13 @@ kemudian edit file `_config.yml` cari konfigurasi seperti ini:
 
 Misalnya:
 
-{% codeblock _config.yml %}
+{% codeblock _config %}
 default_asides: [asides/widget-1.html, asides/widget-2.html]
 {% endcodeblock %}
 
 Tambahkan valuenya untuk widget octocard seperti ini:
 
-{% codeblock _config.yml %}
+{% codeblock _config %}
 default_asides: [asides/widget-1.html, asides/octocard.html, asides/widget-2.html]
 {% endcodeblock %}
 

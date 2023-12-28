@@ -83,44 +83,51 @@ rake generate
 
 Perintah ini digunakan untuk meregenerasi file-file Octopress. Perintah ini juga akan sering digunakan, karena disetiap kita melakukan perubahan pada suatu file dan atau penambahan suatu file kedalam Octopress, maka perintah ini harus terlebih dahulu digunakan sebelum perintah lain. Perintah ini ibarat fungsi update pada perangkat lunak, tanpa perintah ini, file-file yang baru saja dimodifikasi atau dibuat tidak akan ditampilkan pada Browser. Perintah ini akan lebih dimengerti saat mengenal perintah berikutnya.
 
-{% codeblock root@sundi3yansyah %}rake watch
+{% codeblock root@sundi3yansyah %}
+rake watch
 {% endcodeblock %}
 
 
 Perintah ini merupakan lanjutan perintah `rake generate` hanya saja ada sedikit perbedaan dan penempatan. `rake generate` biasanya digunakan untuk meyakinkan kita bahwa semua file Octopress telah memasuki final dan siap untuk diterbitkan sehingga penggunaannya biasanya disandingkan dengan perintah-perintah dalam kategori publikasi. Sedangkan perintah `rake watch` digunakan untuk meyakinkan bahwa setiap kita melakukan perubahan pada file-file Octopress maka otomatis file-file tersebut di __generate__ tanpa harus lagi menggunakan perintah `rake generate`. Ini perintah __realtime__ untuk memantau perubahan yang terjadi pada file-file Octopress. Disetiap kita melakukan perubahan pada file Octopress dan kemudian menyimpannya maka jendela Git Bash akan menampilkan informasi bahwa perubahan data telah diregenerasi. Contoh informasi yang ditampilkan Git Bash.
 `[2013-06-18 01:39:09] regeneration: 1 files changed`
 
-{% codeblock root@sundi3yansyah %}rake preview
+{% codeblock root@sundi3yansyah %}
+rake preview
 {% endcodeblock %}
 
 
 Perintah diatas merupakan perintah __multitask__ (gabungan perintah) atau satu perintah yang menjalankan beberapa perintah sekaligus. Jika perintah `rake generate` digunakan hanya untuk meregenerasi perubahan atau penambahan file namun tidak digunakan secara __realtime__ untuk memantau perubahan atau penambahan file. Perintah `rake watch` digunakan sebagai perintah __realtime__ untuk memantau sekaligus meregenerasi perubahan atau penambahan file. Sedangkan perintah `rake preview` digunakan untuk; meregenerasi file, memantau perubahan atau penambahan file dan menjalankan server Ruby Jekyll localhost agar bisa ditampilkan pada browser.
 
-{% codeblock root@sundi3yansyah %}rake isolate[filename]
+{% codeblock root@sundi3yansyah %}
+rake isolate[filename]
 {% endcodeblock %}
 
 
 Perintah ini digunakan untuk mengisolasi artikel (yang disebutkan pada `[filename]`) dan memindahkan artikel lainnya (yang tidak disebutkan pada `[filename]`) untuk dipindahkan dari folder `posts` ke folder `stash`. Ini biasanya digunakan untuk mempercepat proses regenerasi (__generate__) file. Misal; artikel yang kita buat sudah mencapai 500 artikel, maka disetiap kita melakukan regenerasi baik menggunakan `generate`, `watch` atau `preview` maka semua artikel tersebut sekaligus artikel yang baru saja kita buat akan diregenerasi, hal ini tentunya menghabiskan banyak sekali waktu. Maka untuk mempercepat proses regenerasi, kita hanya akan melakukan regenerasi pada file atau artikel yang baru saja kita buat, sedangkan artikel yang sudah kita buat dan terbitkan tidak akan diregenerasi.
 
-{% codeblock root@sundi3yansyah %}rake integrate
+{% codeblock root@sundi3yansyah %}
+rake integrate
 {% endcodeblock %}
 
 
 Perintah diatas merupakan kebalikan dari perintah `rake isolate` yaitu untuk mengembalikan artikel-artikel dari folder `stash` kedalam folder `posts`. Perintah ini biasanya digunakan ketika kita sudah yakin bahwa artikel terbaru telah siap untuk dipublikasikan.
 
-{% codeblock root@sundi3yansyah %}rake update_source[theme]
+{% codeblock root@sundi3yansyah %}
+rake update_source[theme]
 {% endcodeblock %}
 
 
 Perintah ini digunakan untuk meng-update file-file yang terdapat pada folder `source`. Perintah ini akan memindahkan semua file-file yang ada pada folder `source` ke dalam folder `source.old`. Jika folder `source.old` belum tersedia maka perintah ini akan otomatis menciptakan folder `source.old` tersebut. Lebih tepatnya, perintah ini digunakan untuk mem-__backup__ atau membuat salinan cadangan file-file yang terdapat pada folder `source`. Perintah ini kita gunakan pada saat akan melakukan modifikasi pada file-file yang terdapat pada folder `source`. Misal; kita akan menambah menu navigasi, maka lakukan perintah ini untuk membuat cadangan sebelum dilakukan perubahan, jika suatu hari kita membutuhkan file asal maka kita tinggal mengambilnya dari folder `source.old`.
 
-{% codeblock root@sundi3yansyah %}rake update_style[theme]
+{% codeblock root@sundi3yansyah %}
+rake update_style[theme]
 {% endcodeblock %}
 
 
 Perintah ini hampir mirip dengan perintah `rake update_source` hanya saja berbeda target folder. Perintah ini digunakan untuk membuat salinan file SASS yang terdapat pada folder `sass` dan kemudian menyalinnya pada folder `sass.old`. Perintah ini biasanya digunakan saat kita ingin meng-__install__ theme baru atau ingin memodifikasi style yang sudah ada. Jika kemudian hari style tersebut gagal atau kita ingin kembali ke style semula, maka kita tinggal mengambilnya dari folder `sass.old`.
 
-{% codeblock root@sundi3yansyah %}rake clean
+{% codeblock root@sundi3yansyah %}
+rake clean
 {% endcodeblock %}
 
 
@@ -135,43 +142,50 @@ rake set_root_dir[dir]
 
 Perintah ini digunakan untuk menge-set ulang atau meng-konfigurasi direktori root atau sub direktori yang akan diterbitkan sebagai direktori blog pada repositori. Mungkin masih agak membingungkan, karena hal ini berhubungan dengan subdirektori yangn justru digunakan sebagai blog-nya, bukan pada root direktori. Jika blog anda berada pada root direktori, maka perintah ini tidak usah digunakan. Penggunaan perintah ini mempengaruhi setting pada `_config.yml`. Ini akan dibahas pada artikel terpisah atau anda bisa baca pada artikel “[Deploying to a Subdirectory](http://octopress.org/docs/deploying/subdir/) ”.
 
-{% codeblock root@sundi3yansyah %}rake setup_github_pages[repo]
+{% codeblock root@sundi3yansyah %}
+rake setup_github_pages[repo]
 {% endcodeblock %}
 
 
 Perintah ini digunakan untuk men-setting dan atau mensinkronisasi folder antara localhost dengan repository pada Github. Perintah ini dilakukan sejak awal ketika kita berencana ingin membuat blog Octopress pada Github. Ini akan dibahas pada artikel tepisah atau baca pada artikel “[Deploying to Github Pages](http://octopress.org/docs/deploying/github/) ”.
 
-{% codeblock root@sundi3yansyah %}rake copydot[source,dest]
+{% codeblock root@sundi3yansyah %}
+rake copydot[source,dest]
 {% endcodeblock %}
 
 
 Perintah ini digunakan untuk menyalin dan memindahkan file atau direktori yang akan dideploy. Perintah ini jarang digunakan bagi mereka yang hanya sekedar membuat Octopress sebagai platform Blog. Akan dibahas lebih lanjut pada artikel terpisah.
 
-{% codeblock root@sundi3yansyah %}rake deploy
+{% codeblock root@sundi3yansyah %}
+rake deploy
 {% endcodeblock %}
 
 
 Ini perintah yang lebih lengkap daripada `copydot`, karena selain menyalin dan memindahkan file atau direktori, perintah ini digunakan untuk meregenerasi file jika teryata ditemukan bahwa ada artikel yang telah dibuat tetapi tidak ditampilkan pada browser. Perintah ini digunakan apabila PC anda sudah tersedia aplikasi [RSync](http://www.rsync.net/) . Jika belum tersedia aplikasi RSync maka Git Bash akan menampilkan pesan “## Deploying website via Rsync FAILED”.
 
-{% codeblock root@sundi3yansyah %}rake gen_deploy
+{% codeblock root@sundi3yansyah %}
+rake gen_deploy
 {% endcodeblock %}
 
 
 Perintah ini digunakan ketika file atau artikel Octopress siap di-deploy. Perintah ini merupakan rangkuman dari 3 perintah yaitu; `integrate`, `generate` dan `deploy`. Jika sudah memahami masing-masing perintah itu, berarti kita sudah memahami perintah `gen_deploy`.
 
-{% codeblock root@sundi3yansyah %}rake rsync
+{% codeblock root@sundi3yansyah %}
+rake rsync
 {% endcodeblock %}
 
 
 Perintah ini digunakan untuk men-deploy Octopress melalui aplikasi RSync. Tentang RSync akan dibahas pada artikel terpisah atau baca pada artikel “[Deploying With Rsync](http://octopress.org/docs/deploying/rsync/)”.
 
-{% codeblock root@sundi3yansyah %}rake push
+{% codeblock root@sundi3yansyah %}
+rake push
 {% endcodeblock %}
 
 
 Perintah ini digunakan untuk men-deploy Octopress ke webservice repository Github. Sedangkan untuk pengguna repository non Github tidak cocok menggunakan perintah ini. Pada artikel mendatang akan dibahas cara deploy ke repository non Github.
 
-{% codeblock root@sundi3yansyah %}rake terbitkan
+{% codeblock root@sundi3yansyah %}
+rake terbitkan
 {% endcodeblock %}
 
 

@@ -8,12 +8,12 @@ description: Cara Menambah Environment Variable pada Linux
 keywords: Cara Menambah Environment Variable pada Linux
 ---
 tampilkan dulu environment variables yang sudah ada
-``` sh
+```
 echo $PATH
 ```
 <!--more-->
 Cara menambahkan environment variablenya jalankan perintah ini di terminal
-``` sh
+```
 export PATH=$PATH:/usr/local/go/bin
 ```
 Itu yang artinya saya baru saja menambahkan environment variable dari bahasa pemrograman __GOlang__ atau __GO__

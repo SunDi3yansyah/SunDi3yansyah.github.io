@@ -16,14 +16,14 @@ Saya menggunakan Distro Ubuntu dan bisa di pasang di distro lainnya
 <!--more-->
 pastikan sudah terinstall VIM minimal versi 7.3, jika belum kita install dulu 
 
-{% codeblock lang:sh terminal %}
+{% codeblock terminal %}
 sudo apt-get install vim
 {% endcodeblock %}
 
 jika di distro lain beda paket manager tinggal di ganti saja __apt-get__ nya
 lanjut buat direktorinya
 
-{% codeblock lang:sh terminal %}
+{% codeblock terminal %}
 mkdir ~/.vim
 mkdir ~/.vim/colors
 mkdir ~/.vim/bundle
@@ -37,8 +37,6 @@ mkdir ~/.vim/tmp/swap
 
 simpan kode di bawah ini ke folder __~/.vim/colors/__ dengan nama __molokai.vim__
 
-{% include_code new file lang:vim vim/colors/molokai.vim %}
-
 source code
 <div class="github-widget" data-repo="tomasr/molokai"></div>
 
@@ -48,7 +46,7 @@ source code
 
 install plugin vim pathogen
 
-{% codeblock lang:sh terminal %}
+{% codeblock terminal %}
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 {% endcodeblock %}
@@ -63,14 +61,14 @@ source code
 install plugin vim powerline, pastikan sudah install git
 
 clone dulu repo powerline
-{% codeblock lang:sh terminal %}
+{% codeblock terminal %}
 cd ~/.vim/
 git clone git://github.com/Lokaltog/vim-powerline.git bundle/powerline
 {% endcodeblock %}
 
 kita akan membutuhkan font __DejaVuSansMono-Powerline__
 
-{% codeblock lang:sh terminal %}
+{% codeblock terminal %}
 wget https://gist.github.com/toupeira/1630581/raw/bb7b21a7ad38a781b8975bcf6655d307237289c6/DejaVuSansMono-Powerline.ttf
 sudo cp DejaVuSansMono-Powerline.ttf /usr/share/fonts/truetype
 {% endcodeblock %}
@@ -84,20 +82,12 @@ source code
 
 langsung saja clone numbers vim nya
 
-{% codeblock lang:sh terminal %}
+{% codeblock terminal %}
 git clone https://github.com/myusuf3/numbers.vim.git ~/.vim/bundle/numbers
 {% endcodeblock %}
 
 source code
 <div class="github-widget" data-repo="myusuf3/numbers.vim"></div>
-
-
-
-### .vimrc
-
-pakailah __.vimrc__ saya ini, ke dalam __.vimrc__ kalian di __~/.vimrc__
-
-{% include_code new file lang:sh .vimrc %}
 
 ----
 

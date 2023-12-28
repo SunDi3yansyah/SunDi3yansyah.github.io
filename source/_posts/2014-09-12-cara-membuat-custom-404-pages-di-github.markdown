@@ -47,7 +47,9 @@ You can provide custom 404 error pages when people try to access non-existent pa
 [SunDi3yansyah - 404 Not Found](http://sundi3yansyah.github.io/gantengs)
 
 #### Source Code
-``` html 404 https://github.com/SunDi3yansyah/SunDi3yansyah.github.io/blob/master/404.html 404.html
+404 https://github.com/SunDi3yansyah/SunDi3yansyah.github.io/blob/master/404.html 404.html
+
+```
 <html>
 <head><title>404 Not Found</title><meta http-equiv="refresh" content="5;url=http://sundi3yansyah.github.io"></head>
 <body bgcolor="white">

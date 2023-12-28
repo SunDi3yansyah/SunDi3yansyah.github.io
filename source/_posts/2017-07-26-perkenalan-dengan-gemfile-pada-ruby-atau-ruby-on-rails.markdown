@@ -18,13 +18,13 @@ Saya disini tidak akan membahasa tentang cara penggunaan gem pada situs rubygems
 
 Yang pertama kita harus menginisialiasi sumber atau source alamat yang akan kita gunakan, sebagai contoh:
 
-{% codeblock lang:rb Gemfile %}
+{% codeblock Gemfile %}
 source 'https://rubygems.org'
 {% endcodeblock %}
 
 Yang selenjutnya adalah bagaimana kita mendefinisikan gem yang akan kita gunakan, jadi misal kita ingin menggunakan gem [__json__](https://rubygems.org/gems/json) maka:
 
-{% codeblock lang:rb Gemfile %}
+{% codeblock Gemfile %}
 gem 'json'
 {% endcodeblock %}
 
@@ -33,11 +33,11 @@ gem 'json'
 
 Yang selanjutnya adalah bagaimana jika kita ingin mendefinisikan versinya juga? karena setiap gem itu memiliki versi, contoh diatas tidak mendefinisikan versi maka akan menggunakan versi yang terbaru. Jika kita ingin mendefinisikan dengan versinya maka:
 
-{% codeblock lang:rb Gemfile %}
+{% codeblock Gemfile %}
 gem 'json', '2.1.0'
 {% endcodeblock %}
 atau
-{% codeblock lang:rb Gemfile %}
+{% codeblock Gemfile %}
 gem 'json', '~> 2.1.0'
 {% endcodeblock %}
 
@@ -51,7 +51,7 @@ Adapun operator lain yang dapat digunakan:
 
 Yang selanjutnya kita mengenal group, mungkin kalian akan langsung paham jika melihat kode dibawah:
 
-{% codeblock lang:rb Gemfile %}
+{% codeblock Gemfile %}
 group :development do
   gem 'json'
 end
@@ -63,7 +63,7 @@ Selain group __development__ kita bisa juga menggunakan group __production__ dan
 
 Sekarang saya kenalkan Gemfile milik Rails versi 5.1.2
 
-{% codeblock lang:rb Gemfile %}
+{% codeblock Gemfile %}
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
@@ -124,7 +124,7 @@ Maka dari sini saya rasa anda cukup bisa memahaminya, ya kan? Yes...
 
 Namun kita lihat disana ada __platforms__ yang belum kita definisikan, kita ambil kutipan kode diatas:
 
-{% codeblock lang:rb Gemfile %}
+{% codeblock Gemfile %}
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -134,7 +134,7 @@ Gem __byebug__ akan digunakan oleh nilai array yang ada didalam __platforms__.
 
 Dan satu lagi, dari kutipan kode dibawah ini:
 
-{% codeblock lang:rb Gemfile %}
+{% codeblock Gemfile %}
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"

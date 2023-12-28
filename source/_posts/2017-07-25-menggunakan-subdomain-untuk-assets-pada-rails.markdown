@@ -21,13 +21,13 @@ Asumsikan ini untuk:
 
 Buka file `config/environments/production.rb` dan cari bagian baris seperti ini:
 
-{% codeblock lang:rb Editor %}
+{% codeblock Editor %}
 # config.action_controller.asset_host = 'http://assets.example.com'
 {% endcodeblock %}
 
 Rubahlah menjadi seperti ini:
 
-{% codeblock lang:rb Editor %}
+{% codeblock Editor %}
 config.action_controller.asset_host = 'http://assets.domain.tld'
 {% endcodeblock %}
 
@@ -63,7 +63,7 @@ Untuk codeblock konfigurasi virtual host web server yang kita gunakan adalah sta
 
 Karena saya sudah terbiasa dengan web server nginx maka saya akan kasih contoh server block sebagai berikut:
 
-{% codeblock lang:nginx Terminal %}
+{% codeblock Terminal %}
 server {
   listen 80;
   server_name assets.domain.tld;

@@ -29,7 +29,7 @@ Oke langcung ajah eak... :*
 
 #### Install jekyll dari gems, jika belum kalian install
 
-{% codeblock lang:sh install jekyll %}
+{% codeblock install jekyll %}
 gem install jekyll
 {% endcodeblock %}
 
@@ -39,15 +39,15 @@ Asumsikan posisi saya ada di `/home/user/`
 
 Saya akan membuat blog jekyll baru dengan folder `nggak-ada-1-menit`{% img https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png 20 20 'smiley' 'smiley' %}maka:
 
-{% codeblock lang:sh new jekyll blog %}
+{% codeblock new jekyll blog %}
 jekyll new nggak-ada-1-menit
 {% endcodeblock %}
 
-{% codeblock lang:sh masuk ke foldernya %}
+{% codeblock masuk ke foldernya %}
 cd nggak-ada-1-menit
 {% endcodeblock %}
 
-{% codeblock lang:sh jalankan generate jekyll %}
+{% codeblock jalankan generate jekyll %}
 jekyll serve
 {% endcodeblock %}
 

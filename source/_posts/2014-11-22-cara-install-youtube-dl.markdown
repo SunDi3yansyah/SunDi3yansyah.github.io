@@ -10,21 +10,21 @@ keywords: Cara Install youtube-dl
 
 Menggunakan CURL
 
-{% codeblock lang:sh %}
+{% codeblock %}
 sudo curl https://yt-dl.org/downloads/2014.11.21.1/youtube-dl -o /usr/local/bin/youtube-dl
 {% endcodeblock %}
 NEXT
-{% codeblock lang:sh %}
+{% codeblock %}
 sudo chmod a+x /usr/local/bin/youtube-dl
 {% endcodeblock %}
 <!--more-->
 Bisa juga menggunakan WGET
 
-{% codeblock lang:sh %}
+{% codeblock %}
 sudo wget https://yt-dl.org/downloads/2014.11.21.1/youtube-dl -O /usr/local/bin/youtube-dl
 {% endcodeblock %}
 
-{% codeblock lang:sh %}
+{% codeblock %}
 sudo chmod a+x /usr/local/bin/youtube-dl
 {% endcodeblock %}
 
