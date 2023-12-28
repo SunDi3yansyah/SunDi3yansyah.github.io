@@ -76,7 +76,7 @@ Kalau terjadi error atau Not Permission ya gunakan `sudo`
 
 Kemudian verifikasi untuk melihat versi sqlite3 yang barusan kita install
 
-```sh
+``` sh
 sqlite3 --version
 ```
 Jika tidak muncul, seperti ini
@@ -90,17 +90,17 @@ Maka salin file `libsqlite3.so.0.8.6` ke `/usr/lib/$arch`
 Misalnya
 
 x86
-```sh
+``` sh
 cp /usr/local/lib/libsqlite3.so.0.8.6 /usr/lib/i386-linux-gnu/libsqlite3.so.0.8.6
 ```
 x64
-```sh
+``` sh
 cp /usr/local/lib/libsqlite3.so.0.8.6 /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
 ```
 
 Silakan di cek kembali dengan
 
-```sh
+``` sh
 sqlite3 --version
 ```
 

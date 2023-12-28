@@ -9,12 +9,12 @@ keywords: Perintah chattr Pada Sistem Linux
 ---
 Seringkali secara tidak sengaja sebuah file penting terhapus atau terubah. Pada sistem linux tidak ada fasilitas **undelete**, jadi file yang telah terhapus tidak dapat dikembalikan lagi.
 Perintah **chattr** digunakan untuk melindungi sebuah file sehingga tidak akan dapat dihapus ataupun dirubah dengan perintah apapun. Perintah chattr memberikan attribut ” **i** “ pada file yang dilindungi, perintahnya:
-```sh
+``` sh
 chattr +i namafile
 ```
 <!-- more -->
 misalnya:
-```sh
+``` sh
 chattr +i sundi3yansyah.txt
 ```
 Setelah perintah tersebut dijalankan, gunakan perintah **ls -l** untuk melihat hasilnya:

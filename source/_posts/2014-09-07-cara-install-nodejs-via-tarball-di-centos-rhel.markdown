@@ -25,7 +25,7 @@ wget http://nodejs.org/dist/node-latest.tar.gz
 ```
 Atau jika anda ingin menentukan versinya silakan kunjungi webiste nodejs disini [http://nodejs.org/download/](http://nodejs.org/download/) kemudian pilih bagian **Linux Binaries (.tar.gz)** lalu pilih sesuai arsitektur CentOS/RHEL kalian, menggunakan 32bit atau 64bit
 contohnya:
-```sh
+``` sh
 wget http://nodejs.org/dist/v0.10.33/node-v0.10.33-linux-x64.tar.gz
 ```
 itu yang artinya saya mengambil binari source nodejs versi v0.10.33 dengan arsitektur 64bit, Oke {% img https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png 20 20 'smile' 'smile' %} lanjutkan, setelah download (Asumsikan anda sudah paham).
@@ -48,6 +48,6 @@ make install
 Gampang kan {% img https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png 20 20 'smile' 'smile' %}
 
 Cara mengerahuinya
-```sh
+``` sh
 node -v ; npm -v
 ```

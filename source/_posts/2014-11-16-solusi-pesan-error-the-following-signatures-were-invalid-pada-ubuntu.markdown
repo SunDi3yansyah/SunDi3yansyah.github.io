@@ -9,7 +9,7 @@ keywords: Solusi Pesan Error The following signatures were invalid pada Ubuntu
 ---
 #### Solusi Pesan Error "The following signatures were invalid" pada Ubuntu
 Contohnya seperti apa?
-```sh
+``` sh
 Reading package lists... Done
 W: GPG error: http://extras.ubuntu.com precise Release: The following signatures were invalid: BADSIG 16126D3A3E5C1192 Ubuntu Extras Archive Automatic Signing Key <ftpmaster@ubuntu.com>
 ```
@@ -19,24 +19,24 @@ Cara mengatasinya:
 Buka terminal.
 
 Masuk sebagai root
-```sh
+``` sh
 sido -s
 ```
 Masukin passowrdnya...
 
 NEXT:
-```sh
+``` sh
 apt-get clean
 ```
-```sh
+``` sh
 mv /var/lib/apt/lists /tmp
 ```
-```sh
+``` sh
 mkdir -p /var/lib/apt/lists/partial
 ```
-```sh
+``` sh
 apt-get clean
 ```
-```sh
+``` sh
 apt-get update
 ```

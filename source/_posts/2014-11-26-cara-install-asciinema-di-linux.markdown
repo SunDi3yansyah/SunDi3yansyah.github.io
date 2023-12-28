@@ -31,42 +31,42 @@ Saya disini akan menjelaskan cara install di Linux.
 
 #### Ubuntu
 
-```sh
+``` sh
 sudo apt-add-repository ppa:zanchey/asciinema
 ```
-```sh
+``` sh
 sudo apt-get update
 ```
-```sh
+``` sh
 sudo apt-get install asciinema
 ```
 #### Fedora (Fedora 19 dan 20)
-```sh
+``` sh
 sudo yum install asciinema
 ```
 #### Arch Linux
-```sh
+``` sh
 sudo yaourt -S asciinema
 ```
 #### Gentoo Linux
-```sh
+``` sh
 sudo emerge asciinema
 ```
 
 Source: https://asciinema.org/docs/installation
 
 Nah setelah kalian install, kalian di berkenankan membuat akun disana, jangan lupa di verifikasi emailnya, setelah itu kalian bisa menggunakan asciinema ini di session terminal, tapi sebelum menggunakan saya sarankan untuk membuat auth config di asccinema kalian dengan akun di asscinema.org, cara nya buka terminal dan ketik ini
-```sh
+``` sh
 asciinema auth
 ```
 Copy dan paste link yang ada di output kemudian di pastekan ke browser yang kalian pakai tadi untuk register ke asciinema.org.
 
 Setelah itu kalian bisa menggunakannya, dengan perintah di terminal.
-```sh
+``` sh
 asciinema rec
 ```
 Maka akan membersihkan halaman terminal baru dan siap di rekam. Untuk keluar ketik perintah
-```sh
+``` sh
 exit
 ```
 dan ENTER.
@@ -82,6 +82,6 @@ Lama gak ya uploadnya?
 Jawabannya **TIDAK** seberapa lama anda merekam maka uploadnya akan tetap cepat, gak percaya? Silakan di buktikan... {% img https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png 20 20 'smile' 'smile' %}
 
 Jika memerlukan bantuan lebih lengkapnya, ketik perintah ini
-```sh
+``` sh
 asciinema -h
 ```
